@@ -1,0 +1,1943 @@
+<!DOCTYPE html> 
+
+
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Concise Binary Object Representation Maintenance and Extensions (cbor) - Documents</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://www.ietf.org/lib/dt/7.46.0/ptmono/stylesheet.css" rel='stylesheet' type='text/css'>
+    <link href="https://www.ietf.org/lib/dt/7.46.0/ptsans/stylesheet.css" rel='stylesheet' type='text/css'>
+    <link href="https://www.ietf.org/lib/dt/7.46.0/ptserif/stylesheet.css" rel='stylesheet' type='text/css'>
+    
+
+    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/ietf/font-datatracker/css/font-datatracker.css">
+    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/ietf/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/ietf/bootstrap/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/ietf/css/ietf.css">
+    
+    <style>
+     
+    </style>
+
+    
+<link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/jquery.tablesorter/css/theme.bootstrap.min.css">
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.46.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.46.0/ietf/images/apple-touch-icon.png">
+  <script async src='/cdn-cgi/bm/cv/669835187/api.js'></script></head>
+
+  <body  data-group-menu-data-url="/group/groupmenu.json">
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+	  <div class="navbar-header">
+	    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+	      <span class="sr-only">Toggle navigation</span>
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+	    </button>
+	    <a class="navbar-brand" href="/">
+	       <img alt="IETF Logo" src="https://www.ietf.org/lib/dt/7.46.0/ietf/images/ietflogo-small-transparent.png">
+	       
+		  
+		  Datatracker
+		  
+	       
+	    </a>
+	  </div>
+
+	  <noscript>
+	    <p class="navbar-text"><small>Enable Javascript for full functionality.</small></p>
+	  </noscript>
+
+	  <div class="collapse navbar-collapse" id="navbar-collapse">
+	    <ul class="hidden-nojs nav navbar-nav">
+              
+
+
+
+
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+  
+  Groups
+  
+    </a>
+    <ul class="dropdown-menu" role="menu">
+
+    <li class="dropdown-header visible-lg-block">By area/parent</li>
+  
+        
+
+  <li class="hidden-nojs dropdown-submenu group-menu group-parent-2010">
+    <a href="/wg/#art">Apps &amp; Realtime</a>
+  </li>
+
+  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1008">
+    <a href="/wg/#gen">General</a>
+  </li>
+
+  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1052">
+    <a href="/wg/#int">Internet</a>
+  </li>
+
+  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1193">
+    <a href="/wg/#ops">Ops &amp; Mgmt</a>
+  </li>
+
+  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1249">
+    <a href="/wg/#rtg">Routing</a>
+  </li>
+
+  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1260">
+    <a href="/wg/#sec">Security</a>
+  </li>
+
+  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1324">
+    <a href="/wg/#tsv">Transport</a>
+  </li>
+
+  <li class="hidden-nojs dropdown-submenu group-menu group-parent-7">
+    <a href="/program/">IAB</a>
+  </li>
+
+  <li class="hidden-nojs dropdown-submenu group-menu group-parent-3">
+    <a href="/rg/">IRTF</a>
+  </li>
+
+  <li class="hidden-nojs dropdown-submenu group-menu group-parent-2309">
+    <a href="/adm/">IETF LLC</a>
+  </li>
+
+
+        <li class="dropdown-submenu group-menu"><a href="/group/">Other</a>
+<ul class="dropdown-menu" role="menu">
+
+  <li>
+    <a href="/ag/">Active AGs</a>
+  </li>
+
+  <li>
+    <a href="/area/">Active Areas</a>
+  </li>
+
+  <li>
+    <a href="/dir/">Active Directorates</a>
+  </li>
+
+  <li>
+    <a href="/program/">Active Programs</a>
+  </li>
+
+  <li>
+    <a href="/rag/">Active RAGs</a>
+  </li>
+
+  <li>
+    <a href="/team/">Active Teams</a>
+  </li>
+
+
+  <li>
+    <a href="/group/rsoc/">RSOC</a>
+  </li>
+
+</ul>
+ </li>
+
+  <li class="divider hidden-xs"></li>
+  <li class="dropdown-header hidden-xs">New work</li>
+  <li><a href="/group/chartering/">Chartering groups</a></li>
+  <li><a href="/wg/bofs/">BOFs</a></li>
+  <li><a href="/doc/bof-requests">BOF Requests</a></li>
+
+  <li class="divider hidden-xs"></li>
+  <li class="dropdown-header hidden-xs">Other groups</li>
+  <li><a href="/group/concluded/">Concluded groups</a></li>
+  <li><a href="/list/nonwg">Non-WG lists</a></li>
+
+</ul>
+</li>
+
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+  
+  Documents
+  
+    </a>
+    <ul class="dropdown-menu" role="menu">
+  
+  <li><a href="/doc/search">Search</a></li>
+  <li><a href="/doc/recent">Recent drafts</a></li>
+  <li><a href="/submit/">Draft submission</a></li>
+
+  
+
+
+  <li class="divider hidden-xs"></li>
+  <li class="dropdown-header hidden-xs">RFC streams</li>
+        <li><a href="/stream/iab/">IAB</a></li>
+        <li><a href="/stream/irtf/">IRTF</a></li>
+        <li><a href="/stream/ise/">ISE</a></li>
+
+</ul>
+</li>
+
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+  
+  Meetings
+  
+    </a>
+    <ul class="dropdown-menu" role="menu">
+  
+
+
+  
+  <li class="dropdown-header visible-lg-block">Next meeting</li>
+  
+  <li><a href="/meeting/agenda/">Agenda</a></li>
+  <li><a href="/meeting/materials/">Materials</a></li>
+  <li><a href="/meeting/floor-plan/">Floor plan</a></li>
+  <li><a href="https://www.ietf.org/how/meetings/register/">Registration</a></li>
+  <li><a href="/meeting/important-dates/">Important dates</a></li>
+  <li><a href="/secr/sreq/">Request a session</a></li>
+  <li><a href="/meeting/requests">Session requests</a></li>
+  
+  <li class="divider hidden-xs"></li>
+  <li class="dropdown-header visible-lg-block">Upcoming meetings</li>
+  
+  <li><a href="/meeting/upcoming">Upcoming meetings</a></li>
+  
+  <li class="divider hidden-xs"></li>
+  <li class="dropdown-header visible-lg-block">Past meetings</li>
+  
+  <li><a href="/meeting/past">Past meetings</a></li>
+  <li><a href="https://www.ietf.org/how/meetings/past/">Meeting proceedings</a></li>
+</ul>
+</li>
+
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+  
+  Other
+  
+    </a>
+    <ul class="dropdown-menu" role="menu">
+  
+
+  <li><a href="/ipr/">IPR disclosures</a></li>
+  <li><a href="/liaison/">Liaison statements</a></li>
+  <li><a href="/iesg/agenda/">IESG agenda</a></li>
+  <li><a href="/nomcom/">NomComs</a></li>
+  <li><a href="/doc/downref/">Downref registry</a></li>
+  <li class="dropdown-submenu">
+    <a href="/stats/">Statistics</a>
+    <ul class="dropdown-menu">
+      <li><a href="/stats/document/">Drafts/RFCs</a></li>
+      <li><a href="/stats/meeting/">Meetings</a></li>
+      
+    </ul>
+  </li>
+  <li><a href="/group/edu/materials/">Tutorials</a></li>
+  <li><a href="/api/">API Help</a></li>  
+  <li><a href="/release/">Release notes</a></li>
+  <li class="divider hidden-xs"></li>
+  <li><a href="https://trac.ietf.org/trac/ietfdb/newticket"><span class="fa fa-bug"></span> Report a bug</a></li>
+</ul>
+</li>
+
+
+  
+
+
+<li class="dropdown">
+  
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+     User 
+  </a>
+  <ul class="dropdown-menu" role="menu">
+  
+
+  
+    
+      <li><a rel="nofollow" href="/accounts/login/?next=/wg/cbor/documents/">Sign in</a></li>
+      <li><a rel="nofollow" href="/accounts/reset/">Password reset</a></li>
+      <li><a href="/accounts/settings/" rel="nofollow">Preferences</a></li>
+    
+    <li><a href="/help/personal-information">Handling of personal information</a></li>  
+  
+
+  
+    <li><a href="/accounts/create/">New account</a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</ul>
+
+            </ul>
+        
+            <p class="navbar-text"></p>
+            <a class="btn btn-warning btn-sm navbar-btn" rel="nofollow" href="/accounts/login/?next=/wg/cbor/documents/">Sign in</a>
+        
+
+	    <form class="navbar-form navbar-right hidden-xs" action="/doc/search/">
+	      <div class="form-group">
+	        <input class="form-control input-sm" type="text" name="name" placeholder="Document search" required>
+	        <input type="hidden" name="activedrafts" value="on">
+	        <input type="hidden" name="rfcs" value="on">
+	      </div>
+	    </form>
+	  </div>
+        </div>
+      </nav>
+      <div class="container-fluid-narrow">
+        
+        
+        
+	  <div class="col-md-12 col-sm-12" id="content">
+        
+        
+  
+
+  <h1>Concise Binary Object Representation Maintenance and Extensions (cbor)
+    
+    
+    
+  </h1>
+
+  <ul class="nav nav-tabs" role="tablist">
+    
+      <li >
+        <a href="/wg/cbor/about/">About</a>
+      </li>
+    
+      <li class="active">
+        <a href="/wg/cbor/documents/">Documents</a>
+      </li>
+    
+      <li >
+        <a href="/wg/cbor/meetings/">Meetings</a>
+      </li>
+    
+      <li >
+        <a href="/wg/cbor/history/">History</a>
+      </li>
+    
+      <li >
+        <a href="/wg/cbor/photos/">Photos</a>
+      </li>
+    
+      <li >
+        <a href="/wg/cbor/email/">Email expansions</a>
+      </li>
+    
+      <li >
+        <a href="https://www.ietf.org/mail-archive/web/cbor/current/maillist.html">List archive &raquo;</a>
+      </li>
+    
+  </ul>
+
+  <div class="buttonlist">
+    
+      
+    
+  </div>
+
+  
+  
+  
+    
+
+
+
+
+  
+
+  
+  <table class="table table-condensed table-striped tablesorter">
+    <thead>
+      <tr>
+        <th class="sorter-false"></th>
+
+        
+          
+            <th data-header="document">
+	      
+	        Document
+	      
+            </th>
+          
+        
+          
+        
+          
+            <th data-header="date">
+	      
+	        Date
+	      
+            </th>
+          
+        
+          
+            <th data-header="status">
+	      
+	        Status
+	      
+            </th>
+          
+        
+          
+            <th data-header="ipr">
+	      
+	        IPR
+	      
+            </th>
+          
+        
+          
+            <th data-header="ad">
+	      
+	        AD / Shepherd
+	      
+            </th>
+          
+        
+
+        
+      </tr>
+    </thead>
+
+    
+
+      
+    <tbody>
+        <tr class="info">
+          <th></th>
+          
+              <th colspan="5">
+          
+	    Active Internet-Drafts (2 hits)
+          </th>
+        </tr>
+    </tbody>
+
+    <tbody>
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-ietf-cbor-file-magic/">draft-ietf-cbor-file-magic-11</a>
+
+      
+      <br>
+      <b>On storing CBOR encoded items on stable storage</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+
+       <a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-cbor-file-magic-11">
+       
+
+    
+          2022-04-04
+    
+       </a>
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">19 pages</small>
+    
+
+    
+    <wbr><div class="pull-right"><span class="label label-success">New</span></div>
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-cbor-file-magic">
+    
+  </div>
+
+  
+    
+      In Last Call (ends 2022-04-15)
+    
+
+    
+
+    <wbr>
+
+    <wbr><span class="ietf-small">for 12 days</span>
+    
+    
+      <br>IESG telechat: 2022-04-21
+    
+
+    
+      
+    
+
+    
+      <br>
+      
+	Submitted to IESG for Publication:<wbr>
+      
+    
+
+    
+      Proposed Standard
+    
+
+    
+
+    
+      <br>Reviews:
+      
+        artart, 
+      
+        genart, 
+      
+        secdir
+      
+    
+
+    
+
+    
+        <br>Action Holders:
+        
+            <wbr><a title="Responsible AD" href="/person/francesca.palombini@ericsson.com"><span class="">Francesca Palombini</span></a>&nbsp;<a href="mailto:francesca.palombini%40ericsson.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+        
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/francesca.palombini@ericsson.com"><span class="">Francesca Palombini</span></a>&nbsp;<a href="mailto:francesca.palombini%40ericsson.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/christian@amsuess.com"><span class="small text-muted">Christian Amsüss</span></a>&nbsp;<a href="mailto:christian%40amsuess.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-ietf-cbor-packed/">draft-ietf-cbor-packed-04</a>
+
+      
+      <br>
+      <b>Packed CBOR</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2022-02-13
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">18 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-cbor-packed">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+      <br>
+      
+	WG Document
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      <a title="Shepherd" href="/person/barryleiba@computer.org"><span class="small text-muted">Barry Leiba</span></a>&nbsp;<a href="mailto:barryleiba%40computer.org"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+      
+    <tbody>
+        <tr class="info">
+          <th></th>
+          
+              <th colspan="5">
+          
+	    RFCs (8 hits)
+          </th>
+        </tr>
+    </tbody>
+
+    <tbody>
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc8610/">RFC 8610</a>
+
+      
+        <i>(was draft-ietf-cbor-cddl)</i>
+      
+      <br>
+      <b>Concise Data Definition Language (CDDL): A Notational Convention to Express Concise Binary Object Representation (CBOR) and JSON Data Structures</b>
+      
+        <a class="label label-danger pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=8610">Errata</a>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2019-06
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">64 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-cbor-cddl">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/alexey.melnikov@isode.com"><span class="">Alexey Melnikov</span></a>&nbsp;<a href="mailto:alexey.melnikov%40isode.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/barryleiba@computer.org"><span class="small text-muted">Barry Leiba</span></a>&nbsp;<a href="mailto:barryleiba%40computer.org"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc8742/">RFC 8742</a>
+
+      
+        <i>(was draft-ietf-cbor-sequence)</i>
+      
+      <br>
+      <b>Concise Binary Object Representation (CBOR) Sequences</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2020-02
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">10 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-cbor-sequence">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/alexey.melnikov@isode.com"><span class="">Alexey Melnikov</span></a>&nbsp;<a href="mailto:alexey.melnikov%40isode.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/ietf@augustcellars.com"><span class="small text-muted">Jim Schaad</span></a>&nbsp;<a href="mailto:ietf%40augustcellars.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc8746/">RFC 8746</a>
+
+      
+        <i>(was draft-ietf-cbor-array-tags)</i>
+      
+      <br>
+      <b>Concise Binary Object Representation (CBOR) Tags for Typed Arrays</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2020-02
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">13 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-cbor-array-tags">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/alexey.melnikov@isode.com"><span class="">Alexey Melnikov</span></a>&nbsp;<a href="mailto:alexey.melnikov%40isode.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/francesca.palombini@ericsson.com"><span class="small text-muted">Francesca Palombini</span></a>&nbsp;<a href="mailto:francesca.palombini%40ericsson.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc8943/">RFC 8943</a>
+
+      
+        <i>(was draft-ietf-cbor-date-tag)</i>
+      
+      <br>
+      <b>Concise Binary Object Representation (CBOR) Tags for Date</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2020-11
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">6 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-cbor-date-tag">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/barryleiba@gmail.com"><span class="">Barry Leiba</span></a>&nbsp;<a href="mailto:barryleiba%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/francesca.palombini@ericsson.com"><span class="small text-muted">Francesca Palombini</span></a>&nbsp;<a href="mailto:francesca.palombini%40ericsson.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc8949/">RFC 8949</a>
+
+      
+        <i>(was draft-ietf-cbor-7049bis)</i>
+      
+      <br>
+      <b>Concise Binary Object Representation (CBOR)</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2020-12
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">66 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-cbor-7049bis">
+    
+  </div>
+
+  
+    Internet Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/barryleiba@gmail.com"><span class="">Barry Leiba</span></a>&nbsp;<a href="mailto:barryleiba%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/francesca.palombini@ericsson.com"><span class="small text-muted">Francesca Palombini</span></a>&nbsp;<a href="mailto:francesca.palombini%40ericsson.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc9090/">RFC 9090</a>
+
+      
+        <i>(was draft-ietf-cbor-tags-oid)</i>
+      
+      <br>
+      <b>Concise Binary Object Representation (CBOR) Tags for Object Identifiers</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2021-07
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">13 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-cbor-tags-oid">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/francesca.palombini@ericsson.com"><span class="">Francesca Palombini</span></a>&nbsp;<a href="mailto:francesca.palombini%40ericsson.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/christian@amsuess.com"><span class="small text-muted">Christian Amsüss</span></a>&nbsp;<a href="mailto:christian%40amsuess.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc9164/">RFC 9164</a>
+
+      
+        <i>(was draft-ietf-cbor-network-addresses)</i>
+      
+      <br>
+      <b>Concise Binary Object Representation (CBOR) Tags for IPv4 and IPv6 Addresses and Prefixes</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2021-12
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">10 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-cbor-network-addresses">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/francesca.palombini@ericsson.com"><span class="">Francesca Palombini</span></a>&nbsp;<a href="mailto:francesca.palombini%40ericsson.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/barryleiba@computer.org"><span class="small text-muted">Barry Leiba</span></a>&nbsp;<a href="mailto:barryleiba%40computer.org"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc9165/">RFC 9165</a>
+
+      
+        <i>(was draft-ietf-cbor-cddl-control)</i>
+      
+      <br>
+      <b>Additional Control Operators for the Concise Data Definition Language (CDDL)</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2021-12
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">11 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-cbor-cddl-control">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/francesca.palombini@ericsson.com"><span class="">Francesca Palombini</span></a>&nbsp;<a href="mailto:francesca.palombini%40ericsson.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/christian@amsuess.com"><span class="small text-muted">Christian Amsüss</span></a>&nbsp;<a href="mailto:christian%40amsuess.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+      
+    </tbody>
+  </table>
+
+
+  
+  
+
+
+
+
+  
+
+  
+  <table class="table table-condensed table-striped tablesorter">
+    <thead>
+      <tr>
+        <th class="sorter-false"></th>
+
+        
+          
+            <th data-header="document">
+	      
+	        Document
+	      
+            </th>
+          
+        
+          
+        
+          
+            <th data-header="date">
+	      
+	        Date
+	      
+            </th>
+          
+        
+          
+            <th data-header="status">
+	      
+	        Status
+	      
+            </th>
+          
+        
+          
+            <th data-header="ipr">
+	      
+	        IPR
+	      
+            </th>
+          
+        
+          
+            <th data-header="ad">
+	      
+	        AD / Shepherd
+	      
+            </th>
+          
+        
+
+        
+      </tr>
+    </thead>
+
+    
+
+      
+    <tbody>
+        <tr class="info">
+          <th></th>
+          
+              <th colspan="5">
+          
+	    Related Internet-Drafts (3 hits)
+          </th>
+        </tr>
+    </tbody>
+
+    <tbody>
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-bormann-cbor-cddl-csv/">draft-bormann-cbor-cddl-csv-00</a>
+
+      
+      <br>
+      <b>Using CDDL for CSVs</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2022-02-24
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">6 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-bormann-cbor-cddl-csv">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-bormann-cbor-cddl-freezer/">draft-bormann-cbor-cddl-freezer-09</a>
+
+      
+      <br>
+      <b>A feature freezer for the Concise Data Definition Language (CDDL)</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2021-12-26
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">14 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-bormann-cbor-cddl-freezer">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-bormann-cbor-notable-tags/">draft-bormann-cbor-notable-tags-06</a>
+
+      
+      <br>
+      <b>Notable CBOR Tags</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2022-02-23
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">26 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-bormann-cbor-notable-tags">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+      
+    </tbody>
+  </table>
+
+
+  <ul class="list-inline pull-right" style="margin-top:1em;">
+  <li>
+    <label id="list-feeds">Atom feed:</label>
+    <div class="btn-group" role="group" aria-labelledby="list-feeds">
+      <a class="btn btn-default" title="Feed of all changes" href="/group/cbor/documents/feed/">All changes</a>
+      <a class="btn btn-default" title="Feed of only significant state changes" href="/group/cbor/documents/feed/?significant=1">Significant</a>
+    </div>
+  </li>
+
+  
+    <li><a class="btn btn-default" href="/group/cbor/documents/subscription/">
+      <i class="glyphicon glyphicon-envelope"></i>
+      
+        Subscribe to changes
+      
+    </a></li>
+  
+
+  <li><a class="btn btn-default" href="/group/cbor/documents/csv/"><i class="glyphicon glyphicon-list"></i> Export as CSV</a></li>
+</ul>
+
+
+
+
+
+        
+        
+	  </div>
+        
+
+	
+	<hr>
+	  <div class="col-md-12 col-sm-12">
+	    <div class="text-center padded">
+	        <a href="https://www.rfc-editor.org/" class="padded">RFC&nbsp;Editor</a>
+	        <a href="https://www.ietf.org/llc/" class="padded">IASA&nbsp;&amp;&nbsp;IETF&nbsp;LLC</a>
+	        <a href="https://trustee.ietf.org/" class="padded">IETF&nbsp;Trust</a>
+	        <a href="https://www.irtf.org/" class="padded">IRTF</a>
+	        <a href="https://www.ietf.org/" class="padded">IETF</a>
+	        <a href="https://www.ietf.org/iesg/" class="padded">IESG</a>
+	        <a href="https://www.iab.org/" class="padded">IAB</a>
+	        <a href="https://www.iana.org/" class="padded">IANA</a>
+	        <a href="https://www.ietf.org/privacy-statement/" class="padded">Privacy&nbsp;Statement</a>
+	    </div>
+	  </div>
+
+
+        <footer class="col-md-12 col-sm-12">
+	  <div class="col-md-12">
+	    <div class="text-center">
+	      <p class="small text-muted">
+	        
+		  <a href="/release/about">About</a> |
+	          IETF Datatracker |
+	          <a href="/release/7.46.0.p4/">Version 7.46.0.p4</a> |
+	          2022-03-10 |
+	        
+		Report a bug:
+	        <a href="https://trac.ietf.org/trac/ietfdb/newticket">Tracker:<span class="fa fa-bug"></span></a>
+                
+	        <a href="mailto:datatracker-project@ietf.org">Email:<span class="fa fa-envelope"></span></a>
+                
+		<br>
+                Python 3.6.12 |
+		Django 2.2.27
+	      </p>
+	    </div>
+	  </div>
+        </footer>
+	
+
+      </div>
+
+      
+
+
+
+
+      <script src="https://www.ietf.org/lib/dt/7.46.0/jquery/jquery.min.js"></script>
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      <script src="https://www.ietf.org/lib/dt/7.46.0/js-cookie/src/js.cookie.js"></script>
+      <script src="https://www.ietf.org/lib/dt/7.46.0/ietf/bootstrap/js/bootstrap.min.js"></script>
+      <script src="https://www.ietf.org/lib/dt/7.46.0/ietf/js/ietf.js"></script>
+      
+<script src="https://www.ietf.org/lib/dt/7.46.0/jquery.tablesorter/js/jquery.tablesorter.combined.min.js"></script>
+
+      
+  <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6fb2a6f1fa62a361',m:'_0XEiN5S980OCvGoVsWzWLxllFVOo26qSHttw1JNgAg-1649836661-0-AZlbhXZTYivIu26tZQPNzEx/MRclIsUD+3JQMiI4Efu9fV5hDTDlwTc40wdabOEDBUHPIfnUC4WePehESClUWGJ6LbEQo2QpNO2GRhRJyDXecc5Q5nu2qQmuN0GFBUwkYOKP3tL+4ik//Efqi6sF35o=',s:[0xdc21164c13,0xd47ef32167],}})();</script></body>
+</html>

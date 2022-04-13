@@ -1,0 +1,10456 @@
+<!DOCTYPE html> 
+
+
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dynamic Host Configuration (dhc) - Documents</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://www.ietf.org/lib/dt/7.46.0/ptmono/stylesheet.css" rel='stylesheet' type='text/css'>
+    <link href="https://www.ietf.org/lib/dt/7.46.0/ptsans/stylesheet.css" rel='stylesheet' type='text/css'>
+    <link href="https://www.ietf.org/lib/dt/7.46.0/ptserif/stylesheet.css" rel='stylesheet' type='text/css'>
+    
+
+    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/ietf/font-datatracker/css/font-datatracker.css">
+    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/ietf/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/ietf/bootstrap/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/ietf/css/ietf.css">
+    
+    <style>
+     
+    </style>
+
+    
+<link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/jquery.tablesorter/css/theme.bootstrap.min.css">
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.46.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.46.0/ietf/images/apple-touch-icon.png">
+  <script async src='/cdn-cgi/bm/cv/669835187/api.js'></script></head>
+
+  <body  data-group-menu-data-url="/group/groupmenu.json">
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+	  <div class="navbar-header">
+	    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+	      <span class="sr-only">Toggle navigation</span>
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+	    </button>
+	    <a class="navbar-brand" href="/">
+	       <img alt="IETF Logo" src="https://www.ietf.org/lib/dt/7.46.0/ietf/images/ietflogo-small-transparent.png">
+	       
+		  
+		  Datatracker
+		  
+	       
+	    </a>
+	  </div>
+
+	  <noscript>
+	    <p class="navbar-text"><small>Enable Javascript for full functionality.</small></p>
+	  </noscript>
+
+	  <div class="collapse navbar-collapse" id="navbar-collapse">
+	    <ul class="hidden-nojs nav navbar-nav">
+              
+
+
+
+
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+  
+  Groups
+  
+    </a>
+    <ul class="dropdown-menu" role="menu">
+
+    <li class="dropdown-header visible-lg-block">By area/parent</li>
+  
+        
+
+  <li class="hidden-nojs dropdown-submenu group-menu group-parent-2010">
+    <a href="/wg/#art">Apps &amp; Realtime</a>
+  </li>
+
+  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1008">
+    <a href="/wg/#gen">General</a>
+  </li>
+
+  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1052">
+    <a href="/wg/#int">Internet</a>
+  </li>
+
+  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1193">
+    <a href="/wg/#ops">Ops &amp; Mgmt</a>
+  </li>
+
+  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1249">
+    <a href="/wg/#rtg">Routing</a>
+  </li>
+
+  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1260">
+    <a href="/wg/#sec">Security</a>
+  </li>
+
+  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1324">
+    <a href="/wg/#tsv">Transport</a>
+  </li>
+
+  <li class="hidden-nojs dropdown-submenu group-menu group-parent-7">
+    <a href="/program/">IAB</a>
+  </li>
+
+  <li class="hidden-nojs dropdown-submenu group-menu group-parent-3">
+    <a href="/rg/">IRTF</a>
+  </li>
+
+  <li class="hidden-nojs dropdown-submenu group-menu group-parent-2309">
+    <a href="/adm/">IETF LLC</a>
+  </li>
+
+
+        <li class="dropdown-submenu group-menu"><a href="/group/">Other</a>
+<ul class="dropdown-menu" role="menu">
+
+  <li>
+    <a href="/ag/">Active AGs</a>
+  </li>
+
+  <li>
+    <a href="/area/">Active Areas</a>
+  </li>
+
+  <li>
+    <a href="/dir/">Active Directorates</a>
+  </li>
+
+  <li>
+    <a href="/program/">Active Programs</a>
+  </li>
+
+  <li>
+    <a href="/rag/">Active RAGs</a>
+  </li>
+
+  <li>
+    <a href="/team/">Active Teams</a>
+  </li>
+
+
+  <li>
+    <a href="/group/rsoc/">RSOC</a>
+  </li>
+
+</ul>
+ </li>
+
+  <li class="divider hidden-xs"></li>
+  <li class="dropdown-header hidden-xs">New work</li>
+  <li><a href="/group/chartering/">Chartering groups</a></li>
+  <li><a href="/wg/bofs/">BOFs</a></li>
+  <li><a href="/doc/bof-requests">BOF Requests</a></li>
+
+  <li class="divider hidden-xs"></li>
+  <li class="dropdown-header hidden-xs">Other groups</li>
+  <li><a href="/group/concluded/">Concluded groups</a></li>
+  <li><a href="/list/nonwg">Non-WG lists</a></li>
+
+</ul>
+</li>
+
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+  
+  Documents
+  
+    </a>
+    <ul class="dropdown-menu" role="menu">
+  
+  <li><a href="/doc/search">Search</a></li>
+  <li><a href="/doc/recent">Recent drafts</a></li>
+  <li><a href="/submit/">Draft submission</a></li>
+
+  
+
+
+  <li class="divider hidden-xs"></li>
+  <li class="dropdown-header hidden-xs">RFC streams</li>
+        <li><a href="/stream/iab/">IAB</a></li>
+        <li><a href="/stream/irtf/">IRTF</a></li>
+        <li><a href="/stream/ise/">ISE</a></li>
+
+</ul>
+</li>
+
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+  
+  Meetings
+  
+    </a>
+    <ul class="dropdown-menu" role="menu">
+  
+
+
+  
+  <li class="dropdown-header visible-lg-block">Next meeting</li>
+  
+  <li><a href="/meeting/agenda/">Agenda</a></li>
+  <li><a href="/meeting/materials/">Materials</a></li>
+  <li><a href="/meeting/floor-plan/">Floor plan</a></li>
+  <li><a href="https://www.ietf.org/how/meetings/register/">Registration</a></li>
+  <li><a href="/meeting/important-dates/">Important dates</a></li>
+  <li><a href="/secr/sreq/">Request a session</a></li>
+  <li><a href="/meeting/requests">Session requests</a></li>
+  
+  <li class="divider hidden-xs"></li>
+  <li class="dropdown-header visible-lg-block">Upcoming meetings</li>
+  
+  <li><a href="/meeting/upcoming">Upcoming meetings</a></li>
+  
+  <li class="divider hidden-xs"></li>
+  <li class="dropdown-header visible-lg-block">Past meetings</li>
+  
+  <li><a href="/meeting/past">Past meetings</a></li>
+  <li><a href="https://www.ietf.org/how/meetings/past/">Meeting proceedings</a></li>
+</ul>
+</li>
+
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+  
+  Other
+  
+    </a>
+    <ul class="dropdown-menu" role="menu">
+  
+
+  <li><a href="/ipr/">IPR disclosures</a></li>
+  <li><a href="/liaison/">Liaison statements</a></li>
+  <li><a href="/iesg/agenda/">IESG agenda</a></li>
+  <li><a href="/nomcom/">NomComs</a></li>
+  <li><a href="/doc/downref/">Downref registry</a></li>
+  <li class="dropdown-submenu">
+    <a href="/stats/">Statistics</a>
+    <ul class="dropdown-menu">
+      <li><a href="/stats/document/">Drafts/RFCs</a></li>
+      <li><a href="/stats/meeting/">Meetings</a></li>
+      
+    </ul>
+  </li>
+  <li><a href="/group/edu/materials/">Tutorials</a></li>
+  <li><a href="/api/">API Help</a></li>  
+  <li><a href="/release/">Release notes</a></li>
+  <li class="divider hidden-xs"></li>
+  <li><a href="https://trac.ietf.org/trac/ietfdb/newticket"><span class="fa fa-bug"></span> Report a bug</a></li>
+</ul>
+</li>
+
+
+  
+
+
+<li class="dropdown">
+  
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+     User 
+  </a>
+  <ul class="dropdown-menu" role="menu">
+  
+
+  
+    
+      <li><a rel="nofollow" href="/accounts/login/?next=/wg/dhc/documents/">Sign in</a></li>
+      <li><a rel="nofollow" href="/accounts/reset/">Password reset</a></li>
+      <li><a href="/accounts/settings/" rel="nofollow">Preferences</a></li>
+    
+    <li><a href="/help/personal-information">Handling of personal information</a></li>  
+  
+
+  
+    <li><a href="/accounts/create/">New account</a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</ul>
+
+            </ul>
+        
+            <p class="navbar-text"></p>
+            <a class="btn btn-warning btn-sm navbar-btn" rel="nofollow" href="/accounts/login/?next=/wg/dhc/documents/">Sign in</a>
+        
+
+	    <form class="navbar-form navbar-right hidden-xs" action="/doc/search/">
+	      <div class="form-group">
+	        <input class="form-control input-sm" type="text" name="name" placeholder="Document search" required>
+	        <input type="hidden" name="activedrafts" value="on">
+	        <input type="hidden" name="rfcs" value="on">
+	      </div>
+	    </form>
+	  </div>
+        </div>
+      </nav>
+      <div class="container-fluid-narrow">
+        
+        
+        
+	  <div class="col-md-12 col-sm-12" id="content">
+        
+        
+  
+
+  <h1>Dynamic Host Configuration (dhc)
+    
+    
+    
+  </h1>
+
+  <ul class="nav nav-tabs" role="tablist">
+    
+      <li >
+        <a href="/wg/dhc/about/">About</a>
+      </li>
+    
+      <li class="active">
+        <a href="/wg/dhc/documents/">Documents</a>
+      </li>
+    
+      <li >
+        <a href="/wg/dhc/meetings/">Meetings</a>
+      </li>
+    
+      <li >
+        <a href="/wg/dhc/history/">History</a>
+      </li>
+    
+      <li >
+        <a href="/wg/dhc/photos/">Photos</a>
+      </li>
+    
+      <li >
+        <a href="/wg/dhc/email/">Email expansions</a>
+      </li>
+    
+      <li >
+        <a href="https://mailarchive.ietf.org/arch/browse/dhcwg/">List archive &raquo;</a>
+      </li>
+    
+  </ul>
+
+  <div class="buttonlist">
+    
+      
+    
+  </div>
+
+  
+  
+  
+    
+
+
+
+
+  
+
+  
+  <table class="table table-condensed table-striped tablesorter">
+    <thead>
+      <tr>
+        <th class="sorter-false"></th>
+
+        
+          
+            <th data-header="document">
+	      
+	        Document
+	      
+            </th>
+          
+        
+          
+        
+          
+            <th data-header="date">
+	      
+	        Date
+	      
+            </th>
+          
+        
+          
+            <th data-header="status">
+	      
+	        Status
+	      
+            </th>
+          
+        
+          
+            <th data-header="ipr">
+	      
+	        IPR
+	      
+            </th>
+          
+        
+          
+            <th data-header="ad">
+	      
+	        AD / Shepherd
+	      
+            </th>
+          
+        
+
+        
+      </tr>
+    </thead>
+
+    
+
+      
+    <tbody>
+        <tr class="info">
+          <th></th>
+          
+              <th colspan="5">
+          
+	    Active Internet-Draft (1 hit)
+          </th>
+        </tr>
+    </tbody>
+
+    <tbody>
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-ietf-dhc-dhcpv6-yang/">draft-ietf-dhc-dhcpv6-yang-25</a>
+
+      
+      <br>
+      <b>YANG Data Model for DHCPv6 Configuration</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2022-03-07
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">106 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-dhcpv6-yang">
+    
+  </div>
+
+  
+    
+      RFC Ed Queue
+    
+
+    
+      <wbr>: <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-dhc-dhcpv6-yang">EDIT</a>
+    
+
+    <wbr>
+
+    <wbr><span class="ietf-small">for 22 days</span>
+    
+    
+
+    
+      
+    
+
+    
+      <br>
+      
+	Submitted to IESG for Publication:<wbr>
+      
+    
+
+    
+      Proposed Standard
+    
+
+    
+
+    
+      <br>Reviews:
+      
+        opsdir, 
+      
+        secdir, 
+      
+        yangdoctors
+      
+    
+
+    
+      <br>
+      <span title="Part of dhc milestone: WGLC draft-ietf-dhc-dhcpv6-yang" class="milestone">Jul 2021</span>
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/evyncke@cisco.com"><span class="">Éric Vyncke</span></a>&nbsp;<a href="mailto:evyncke%40cisco.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/tim@qacafe.com"><span class="small text-muted">Timothy Winters</span></a>&nbsp;<a href="mailto:tim%40qacafe.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+      
+    <tbody>
+        <tr class="info">
+          <th></th>
+          
+              <th colspan="5">
+          
+	    RFCs (104 hits)
+          </th>
+        </tr>
+    </tbody>
+
+    <tbody>
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc1531/">RFC 1531</a>
+
+      
+        <i>(was draft-ietf-dhc-protocol)</i>
+      
+      <br>
+      <b>Dynamic Host Configuration Protocol</b>
+      
+        <a class="label label-danger pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=1531">Errata</a>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          1993-10
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">39 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-protocol">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+      <br>Obsoleted by <a href="/doc/rfc1541/">RFC 1541</a>
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc1532/">RFC 1532</a>
+
+      
+        <i>(was draft-ietf-dhc-bootp)</i>
+      
+      <br>
+      <b>Clarifications and Extensions for the Bootstrap Protocol</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          1993-10
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">22 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-bootp">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+      <br>Obsoleted by <a href="/doc/rfc1542/">RFC 1542</a>
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc1533/">RFC 1533</a>
+
+      
+        <i>(was draft-ietf-dhc-options)</i>
+      
+      <br>
+      <b>DHCP Options and BOOTP Vendor Extensions</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          1993-10
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">30 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-options">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+      <br>Obsoleted by <a href="/doc/rfc2132/">RFC 2132</a>
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc1534/">RFC 1534</a>
+
+      
+        <i>(was draft-ietf-dhc-between-bootp)</i>
+      
+      <br>
+      <b>Interoperation Between DHCP and BOOTP</b>
+      
+        <a class="label label-danger pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=1534">Errata</a>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          1993-10
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">4 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-between-bootp">
+    
+  </div>
+
+  
+    Draft Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc2131/">RFC 2131</a>
+
+      
+        <i>(was draft-ietf-dhc-dhcp)</i>
+      
+      <br>
+      <b>Dynamic Host Configuration Protocol</b>
+      
+        <a class="label label-danger pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=2131">Errata</a>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          1997-03
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">45 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-dhcp">
+    
+  </div>
+
+  
+    Draft Standard RFC
+
+    
+
+    
+      <br>Updated by <a href="/doc/rfc3396/">RFC 3396</a>, <a href="/doc/rfc4361/">RFC 4361</a>, <a href="/doc/rfc5494/">RFC 5494</a>, <a href="/doc/rfc6842/">RFC 6842</a>
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-dhc-dhcp">
+        <span class="label label-default">1</span>
+      </a>
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc2132/">RFC 2132</a>
+
+      
+        <i>(was draft-ietf-dhc-options-1533update)</i>
+      
+      <br>
+      <b>DHCP Options and BOOTP Vendor Extensions</b>
+      
+        <a class="label label-danger pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=2132">Errata</a>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          1997-03
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">34 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-options-1533update">
+    
+  </div>
+
+  
+    Draft Standard RFC
+
+    
+
+    
+      <br>Updated by <a href="/doc/rfc3442/">RFC 3442</a>, <a href="/doc/rfc3942/">RFC 3942</a>, <a href="/doc/rfc4361/">RFC 4361</a>, <a href="/doc/rfc4833/">RFC 4833</a>, <a href="/doc/rfc5494/">RFC 5494</a>
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc2241/">RFC 2241</a>
+
+      
+        <i>(was draft-provan-dhcp-options-dir-serv)</i>
+      
+      <br>
+      <b>DHCP Options for Novell Directory Services</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          1997-11
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">5 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-provan-dhcp-options-dir-serv">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc2242/">RFC 2242</a>
+
+      
+        <i>(was draft-ietf-dhc-netware-options)</i>
+      
+      <br>
+      <b>NetWare/IP Domain Name and Information</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          1997-11
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">6 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-netware-options">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc2485/">RFC 2485</a>
+
+      
+        <i>(was draft-ietf-dhc-options-uap)</i>
+      
+      <br>
+      <b>DHCP Option for The Open Group&#39;s User Authentication Protocol</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          1999-01
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">4 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-options-uap">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc2489/">RFC 2489</a>
+
+      
+        <i>(was draft-ietf-dhc-new-options)</i>
+      
+      <br>
+      <b>Procedure for Defining New DHCP Options</b>
+      
+        <a class="label label-danger pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=2489">Errata</a>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          1999-01
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">5 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-new-options">
+    
+  </div>
+
+  
+    Best Current Practice RFC
+
+    
+      <br>Obsoleted by <a href="/doc/rfc2939/">RFC 2939</a>
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc2563/">RFC 2563</a>
+
+      
+        <i>(was draft-ietf-dhc-autoconfig)</i>
+      
+      <br>
+      <b>DHCP Option to Disable Stateless Auto-Configuration in IPv4 Clients</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          1999-05
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">9 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-autoconfig">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+      <br>Updated by <a href="/doc/rfc8925/">RFC 8925</a>
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc2610/">RFC 2610</a>
+
+      
+        <i>(was draft-ietf-dhc-slp)</i>
+      
+      <br>
+      <b>DHCP Options for Service Location Protocol</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          1999-06
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">6 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-slp">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc2937/">RFC 2937</a>
+
+      
+        <i>(was draft-ietf-dhc-nsso)</i>
+      
+      <br>
+      <b>The Name Service Search Option for DHCP</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2000-09
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">5 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-nsso">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc2939/">RFC 2939</a>
+
+      
+        <i>(was draft-ietf-dhc-new-opt-msg)</i>
+      
+      <br>
+      <b>Procedures and IANA Guidelines for Definition of New DHCP Options and Message Types</b>
+      
+        <a class="label label-danger pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=2939">Errata</a>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2000-09
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">7 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-new-opt-msg">
+    
+  </div>
+
+  
+    Best Current Practice RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc3004/">RFC 3004</a>
+
+      
+        <i>(was draft-ietf-dhc-userclass)</i>
+      
+      <br>
+      <b>The User Class Option for DHCP</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2000-11
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">6 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-userclass">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc3011/">RFC 3011</a>
+
+      
+        <i>(was draft-ietf-dhc-subnet-option)</i>
+      
+      <br>
+      <b>The IPv4 Subnet Selection Option for DHCP</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2000-11
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">7 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-subnet-option">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc3046/">RFC 3046</a>
+
+      
+        <i>(was draft-ietf-dhc-agent-options)</i>
+      
+      <br>
+      <b>DHCP Relay Agent Information Option</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2001-01
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">14 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-agent-options">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+      <br>Updated by <a href="/doc/rfc6607/">RFC 6607</a>
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc3074/">RFC 3074</a>
+
+      
+        <i>(was draft-ietf-dhc-loadb)</i>
+      
+      <br>
+      <b>DHC Load Balancing Algorithm</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2001-02
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">10 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-loadb">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc3118/">RFC 3118</a>
+
+      
+        <i>(was draft-ietf-dhc-authentication)</i>
+      
+      <br>
+      <b>Authentication for DHCP Messages</b>
+      
+        <a class="label label-danger pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=3118">Errata</a>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2001-06
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">17 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-authentication">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc3203/">RFC 3203</a>
+
+      
+        <i>(was draft-ietf-dhc-pv4-reconfigure)</i>
+      
+      <br>
+      <b>DHCP reconfigure extension</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2001-12
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">6 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-pv4-reconfigure">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+      <br>Updated by <a href="/doc/rfc6704/">RFC 6704</a>
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc3256/">RFC 3256</a>
+
+      
+        <i>(was draft-ietf-dhc-agentoptions-device-class)</i>
+      
+      <br>
+      <b>The DOCSIS (Data-Over-Cable Service Interface Specifications) Device Class DHCP (Dynamic Host Configuration Protocol) Relay Agent Information Sub-option</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2002-04
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">5 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-agentoptions-device-class">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc3315/">RFC 3315</a>
+
+      
+        <i>(was draft-ietf-dhc-dhcpv6)</i>
+      
+      <br>
+      <b>Dynamic Host Configuration Protocol for IPv6 (DHCPv6)</b>
+      
+        <a class="label label-danger pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=3315">Errata</a>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2003-07
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">101 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-dhcpv6">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+      <br>Obsoleted by <a href="/doc/rfc8415/">RFC 8415</a>
+    
+
+    
+      <br>Updated by <a href="/doc/rfc4361/">RFC 4361</a>, <a href="/doc/rfc5494/">RFC 5494</a>, <a href="/doc/rfc6221/">RFC 6221</a>, <a href="/doc/rfc6422/">RFC 6422</a>, <a href="/doc/rfc6644/">RFC 6644</a>, <a href="/doc/rfc7083/">RFC 7083</a>, <a href="/doc/rfc7227/">RFC 7227</a>, <a href="/doc/rfc7283/">RFC 7283</a>, <a href="/doc/rfc7550/">RFC 7550</a>
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/narten@cs.duke.edu"><span class="">Thomas Narten</span></a>&nbsp;<a href="mailto:narten%40cs.duke.edu"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc3396/">RFC 3396</a>
+
+      
+        <i>(was draft-ietf-dhc-concat)</i>
+      
+      <br>
+      <b>Encoding Long Options in the Dynamic Host Configuration Protocol (DHCPv4)</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2002-11
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">9 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-concat">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/narten@cs.duke.edu"><span class="">Thomas Narten</span></a>&nbsp;<a href="mailto:narten%40cs.duke.edu"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc3442/">RFC 3442</a>
+
+      
+        <i>(was draft-ietf-dhc-csr)</i>
+      
+      <br>
+      <b>The Classless Static Route Option for Dynamic Host Configuration Protocol (DHCP) version 4</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2002-12
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">9 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-csr">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/narten@cs.duke.edu"><span class="">Thomas Narten</span></a>&nbsp;<a href="mailto:narten%40cs.duke.edu"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc3495/">RFC 3495</a>
+
+      
+        <i>(was draft-ietf-dhc-packetcable)</i>
+      
+      <br>
+      <b>Dynamic Host Configuration Protocol (DHCP) Option for CableLabs Client Configuration</b>
+      
+        <a class="label label-warning pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=3495">Errata</a>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2003-03
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">13 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-packetcable">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/narten@cs.duke.edu"><span class="">Thomas Narten</span></a>&nbsp;<a href="mailto:narten%40cs.duke.edu"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc3527/">RFC 3527</a>
+
+      
+        <i>(was draft-ietf-dhc-agent-subnet-selection)</i>
+      
+      <br>
+      <b>Link Selection sub-option for the Relay Agent Information Option for DHCPv4</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2003-04
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">9 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-agent-subnet-selection">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/narten@cs.duke.edu"><span class="">Thomas Narten</span></a>&nbsp;<a href="mailto:narten%40cs.duke.edu"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc3594/">RFC 3594</a>
+
+      
+        <i>(was draft-ietf-dhc-pktc-kerb-tckt)</i>
+      
+      <br>
+      <b>PacketCable Security Ticket Control Sub-Option for the DHCP CableLabs Client Configuration (CCC) Option</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2003-09
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">7 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-pktc-kerb-tckt">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/narten@cs.duke.edu"><span class="">Thomas Narten</span></a>&nbsp;<a href="mailto:narten%40cs.duke.edu"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc3633/">RFC 3633</a>
+
+      
+        <i>(was draft-ietf-dhc-dhcpv6-opt-prefix-delegation)</i>
+      
+      <br>
+      <b>IPv6 Prefix Options for Dynamic Host Configuration Protocol (DHCP) version 6</b>
+      
+        <a class="label label-danger pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=3633">Errata</a>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2003-12
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">19 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-dhcpv6-opt-prefix-delegation">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+      <br>Obsoleted by <a href="/doc/rfc8415/">RFC 8415</a>
+    
+
+    
+      <br>Updated by <a href="/doc/rfc6603/">RFC 6603</a>, <a href="/doc/rfc7550/">RFC 7550</a>
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/narten@cs.duke.edu"><span class="">Thomas Narten</span></a>&nbsp;<a href="mailto:narten%40cs.duke.edu"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc3634/">RFC 3634</a>
+
+      
+        <i>(was draft-ietf-dhc-suboptions-kdc-serveraddress)</i>
+      
+      <br>
+      <b>Key Distribution Center (KDC) Server Address Sub-option for the Dynamic Host Configuration Protocol (DHCP) CableLabs Client Configuration (CCC) Option</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2003-12
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">7 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-suboptions-kdc-serveraddress">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/mrcullen42@gmail.com"><span class="">Margaret Cullen</span></a>&nbsp;<a href="mailto:mrcullen42%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc3646/">RFC 3646</a>
+
+      
+        <i>(was draft-ietf-dhc-dhcpv6-opt-dnsconfig)</i>
+      
+      <br>
+      <b>DNS Configuration options for Dynamic Host Configuration Protocol for IPv6 (DHCPv6)</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2003-12
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">7 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-dhcpv6-opt-dnsconfig">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/narten@cs.duke.edu"><span class="">Thomas Narten</span></a>&nbsp;<a href="mailto:narten%40cs.duke.edu"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc3679/">RFC 3679</a>
+
+      
+        <i>(was draft-ietf-dhc-unused-optioncodes)</i>
+      
+      <br>
+      <b>Unused Dynamic Host Configuration Protocol (DHCP) Option Codes</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2004-01
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">8 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-unused-optioncodes">
+    
+  </div>
+
+  
+    Informational RFC
+
+    
+
+    
+      <br>Updated by <a href="/doc/rfc8910/">RFC 8910</a>
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/mrcullen42@gmail.com"><span class="">Margaret Cullen</span></a>&nbsp;<a href="mailto:mrcullen42%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc3736/">RFC 3736</a>
+
+      
+        <i>(was draft-ietf-dhc-dhcpv6-stateless)</i>
+      
+      <br>
+      <b>Stateless Dynamic Host Configuration Protocol (DHCP) Service for IPv6</b>
+      
+        <a class="label label-danger pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=3736">Errata</a>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2004-04
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">9 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-dhcpv6-stateless">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+      <br>Obsoleted by <a href="/doc/rfc8415/">RFC 8415</a>
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/mrcullen42@gmail.com"><span class="">Margaret Cullen</span></a>&nbsp;<a href="mailto:mrcullen42%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc3898/">RFC 3898</a>
+
+      
+        <i>(was draft-ietf-dhc-dhcpv6-opt-nisconfig)</i>
+      
+      <br>
+      <b>Network Information Service (NIS) Configuration Options for Dynamic Host Configuration Protocol for IPv6 (DHCPv6)</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2004-10
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">7 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-dhcpv6-opt-nisconfig">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/mrcullen42@gmail.com"><span class="">Margaret Cullen</span></a>&nbsp;<a href="mailto:mrcullen42%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc3925/">RFC 3925</a>
+
+      
+        <i>(was draft-ietf-dhc-vendor)</i>
+      
+      <br>
+      <b>Vendor-Identifying Vendor Options for Dynamic Host Configuration Protocol version 4 (DHCPv4)</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2004-10
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">9 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-vendor">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/mrcullen42@gmail.com"><span class="">Margaret Cullen</span></a>&nbsp;<a href="mailto:mrcullen42%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc3942/">RFC 3942</a>
+
+      
+        <i>(was draft-ietf-dhc-reclassify-options)</i>
+      
+      <br>
+      <b>Reclassifying Dynamic Host Configuration Protocol version 4 (DHCPv4) Options</b>
+      
+        <a class="label label-warning pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=3942">Errata</a>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2004-11
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">7 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-reclassify-options">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/mrcullen42@gmail.com"><span class="">Margaret Cullen</span></a>&nbsp;<a href="mailto:mrcullen42%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc3993/">RFC 3993</a>
+
+      
+        <i>(was draft-ietf-dhc-subscriber-id)</i>
+      
+      <br>
+      <b>Subscriber-ID Suboption for the Dynamic Host Configuration Protocol (DHCP) Relay Agent Option</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2005-03
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">7 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-subscriber-id">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-dhc-subscriber-id">
+        <span class="label label-default">3</span>
+      </a>
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/mrcullen42@gmail.com"><span class="">Margaret Cullen</span></a>&nbsp;<a href="mailto:mrcullen42%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc4014/">RFC 4014</a>
+
+      
+        <i>(was draft-ietf-dhc-agentopt-radius)</i>
+      
+      <br>
+      <b>Remote Authentication Dial-In User Service (RADIUS) Attributes Suboption for the Dynamic Host Configuration Protocol (DHCP) Relay Agent Information Option</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2005-02
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">8 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-agentopt-radius">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/mrcullen42@gmail.com"><span class="">Margaret Cullen</span></a>&nbsp;<a href="mailto:mrcullen42%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc4030/">RFC 4030</a>
+
+      
+        <i>(was draft-ietf-dhc-auth-suboption)</i>
+      
+      <br>
+      <b>The Authentication Suboption for the Dynamic Host Configuration Protocol (DHCP) Relay Agent Option</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2005-04
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">15 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-auth-suboption">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/mrcullen42@gmail.com"><span class="">Margaret Cullen</span></a>&nbsp;<a href="mailto:mrcullen42%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc4039/">RFC 4039</a>
+
+      
+        <i>(was draft-ietf-dhc-rapid-commit-opt)</i>
+      
+      <br>
+      <b>Rapid Commit Option for the Dynamic Host Configuration Protocol version 4 (DHCPv4)</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2005-03
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">10 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-rapid-commit-opt">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-dhc-rapid-commit-opt">
+        <span class="label label-default">1</span>
+      </a>
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/mrcullen42@gmail.com"><span class="">Margaret Cullen</span></a>&nbsp;<a href="mailto:mrcullen42%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc4075/">RFC 4075</a>
+
+      
+        <i>(was draft-ietf-dhc-dhcpv6-opt-sntp)</i>
+      
+      <br>
+      <b>Simple Network Time Protocol (SNTP) Configuration Option for DHCPv6</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2005-05
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">5 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-dhcpv6-opt-sntp">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/mrcullen42@gmail.com"><span class="">Margaret Cullen</span></a>&nbsp;<a href="mailto:mrcullen42%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc4076/">RFC 4076</a>
+
+      
+        <i>(was draft-ietf-dhc-stateless-dhcpv6-renumbering)</i>
+      
+      <br>
+      <b>Renumbering Requirements for Stateless Dynamic Host Configuration Protocol for IPv6 (DHCPv6)</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2005-05
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">8 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-stateless-dhcpv6-renumbering">
+    
+  </div>
+
+  
+    Informational RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/mrcullen42@gmail.com"><span class="">Margaret Cullen</span></a>&nbsp;<a href="mailto:mrcullen42%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc4174/">RFC 4174</a>
+
+      
+        <i>(was draft-ietf-dhc-isnsoption)</i>
+      
+      <br>
+      <b>The IPv4 Dynamic Host Configuration Protocol (DHCP) Option for the Internet Storage Name Service</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2005-09
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">13 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-isnsoption">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+      <br>Updated by <a href="/doc/rfc7146/">RFC 7146</a>
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/narten@cs.duke.edu"><span class="">Thomas Narten</span></a>&nbsp;<a href="mailto:narten%40cs.duke.edu"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc4242/">RFC 4242</a>
+
+      
+        <i>(was draft-ietf-dhc-lifetime)</i>
+      
+      <br>
+      <b>Information Refresh Time Option for Dynamic Host Configuration Protocol for IPv6 (DHCPv6)</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2005-11
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">8 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-lifetime">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+      <br>Obsoleted by <a href="/doc/rfc8415/">RFC 8415</a>
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/mrcullen42@gmail.com"><span class="">Margaret Cullen</span></a>&nbsp;<a href="mailto:mrcullen42%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc4243/">RFC 4243</a>
+
+      
+        <i>(was draft-ietf-dhc-vendor-suboption)</i>
+      
+      <br>
+      <b>Vendor-Specific Information Suboption for the Dynamic Host Configuration Protocol (DHCP) Relay Agent Option</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2005-12
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">7 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-vendor-suboption">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/mrcullen42@gmail.com"><span class="">Margaret Cullen</span></a>&nbsp;<a href="mailto:mrcullen42%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc4280/">RFC 4280</a>
+
+      
+        <i>(was draft-ietf-dhc-bcmc-options)</i>
+      
+      <br>
+      <b>Dynamic Host Configuration Protocol (DHCP) Options for Broadcast and Multicast Control Servers</b>
+      
+        <a class="label label-warning pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=4280">Errata</a>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2005-12
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">11 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-bcmc-options">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/mrcullen42@gmail.com"><span class="">Margaret Cullen</span></a>&nbsp;<a href="mailto:mrcullen42%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc4361/">RFC 4361</a>
+
+      
+        <i>(was draft-ietf-dhc-3315id-for-v4)</i>
+      
+      <br>
+      <b>Node-specific Client Identifiers for Dynamic Host Configuration Protocol Version Four (DHCPv4)</b>
+      
+        <a class="label label-danger pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=4361">Errata</a>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2006-02
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">12 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-3315id-for-v4">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+      <br>Updated by <a href="/doc/rfc5494/">RFC 5494</a>
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/mrcullen42@gmail.com"><span class="">Margaret Cullen</span></a>&nbsp;<a href="mailto:mrcullen42%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc4388/">RFC 4388</a>
+
+      
+        <i>(was draft-ietf-dhc-leasequery)</i>
+      
+      <br>
+      <b>Dynamic Host Configuration Protocol (DHCP) Leasequery</b>
+      
+        <a class="label label-danger pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=4388">Errata</a>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2006-02
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">27 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-leasequery">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+      <br>Updated by <a href="/doc/rfc6148/">RFC 6148</a>
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/mrcullen42@gmail.com"><span class="">Margaret Cullen</span></a>&nbsp;<a href="mailto:mrcullen42%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc4436/">RFC 4436</a>
+
+      
+        <i>(was draft-ietf-dhc-dna-ipv4)</i>
+      
+      <br>
+      <b>Detecting Network Attachment in IPv4 (DNAv4)</b>
+      
+        <a class="label label-danger pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=4436">Errata</a>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2006-03
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">15 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-dna-ipv4">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/mrcullen42@gmail.com"><span class="">Margaret Cullen</span></a>&nbsp;<a href="mailto:mrcullen42%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc4477/">RFC 4477</a>
+
+      
+        <i>(was draft-ietf-dhc-dual-stack)</i>
+      
+      <br>
+      <b>Dynamic Host Configuration Protocol (DHCP): IPv4 and IPv6 Dual-Stack Issues</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2006-05
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">14 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-dual-stack">
+    
+  </div>
+
+  
+    Informational RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/mrcullen42@gmail.com"><span class="">Margaret Cullen</span></a>&nbsp;<a href="mailto:mrcullen42%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc4578/">RFC 4578</a>
+
+      
+        <i>(was draft-ietf-dhc-pxe-options)</i>
+      
+      <br>
+      <b>Dynamic Host Configuration Protocol (DHCP) Options for the Intel Preboot eXecution Environment (PXE)</b>
+      
+        <a class="label label-danger pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=4578">Errata</a>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2006-11
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">7 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-pxe-options">
+    
+  </div>
+
+  
+    Informational RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/mrcullen42@gmail.com"><span class="">Margaret Cullen</span></a>&nbsp;<a href="mailto:mrcullen42%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc4580/">RFC 4580</a>
+
+      
+        <i>(was draft-ietf-dhc-dhcpv6-subid)</i>
+      
+      <br>
+      <b>Dynamic Host Configuration Protocol for IPv6 (DHCPv6) Relay Agent Subscriber-ID Option</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2006-06
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">6 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-dhcpv6-subid">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/mrcullen42@gmail.com"><span class="">Margaret Cullen</span></a>&nbsp;<a href="mailto:mrcullen42%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc4649/">RFC 4649</a>
+
+      
+        <i>(was draft-ietf-dhc-dhcpv6-remoteid)</i>
+      
+      <br>
+      <b>Dynamic Host Configuration Protocol for IPv6 (DHCPv6) Relay Agent Remote-ID Option</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2006-08
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">6 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-dhcpv6-remoteid">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/mrcullen42@gmail.com"><span class="">Margaret Cullen</span></a>&nbsp;<a href="mailto:mrcullen42%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc4702/">RFC 4702</a>
+
+      
+        <i>(was draft-ietf-dhc-fqdn-option)</i>
+      
+      <br>
+      <b>The Dynamic Host Configuration Protocol (DHCP) Client Fully Qualified Domain Name (FQDN) Option</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2006-10
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">17 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-fqdn-option">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/mrcullen42@gmail.com"><span class="">Margaret Cullen</span></a>&nbsp;<a href="mailto:mrcullen42%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc4703/">RFC 4703</a>
+
+      
+        <i>(was draft-ietf-dhc-ddns-resolution)</i>
+      
+      <br>
+      <b>Resolution of Fully Qualified Domain Name (FQDN) Conflicts among Dynamic Host Configuration Protocol (DHCP) Clients</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2006-10
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">13 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-ddns-resolution">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/mrcullen42@gmail.com"><span class="">Margaret Cullen</span></a>&nbsp;<a href="mailto:mrcullen42%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc4704/">RFC 4704</a>
+
+      
+        <i>(was draft-ietf-dhc-dhcpv6-fqdn)</i>
+      
+      <br>
+      <b>The Dynamic Host Configuration Protocol for IPv6 (DHCPv6) Client Fully Qualified Domain Name (FQDN) Option</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2006-10
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">15 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-dhcpv6-fqdn">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/mrcullen42@gmail.com"><span class="">Margaret Cullen</span></a>&nbsp;<a href="mailto:mrcullen42%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc4833/">RFC 4833</a>
+
+      
+        <i>(was draft-ietf-dhc-timezone-option)</i>
+      
+      <br>
+      <b>Timezone Options for DHCP</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2007-04
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">10 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-timezone-option">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/jari.arkko@ericsson.com"><span class="">Jari Arkko</span></a>&nbsp;<a href="mailto:jari.arkko%40ericsson.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc4994/">RFC 4994</a>
+
+      
+        <i>(was draft-ietf-dhc-dhcpv6-ero)</i>
+      
+      <br>
+      <b>DHCPv6 Relay Agent Echo Request Option</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2007-09
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">6 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-dhcpv6-ero">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/jari.arkko@ericsson.com"><span class="">Jari Arkko</span></a>&nbsp;<a href="mailto:jari.arkko%40ericsson.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc5007/">RFC 5007</a>
+
+      
+        <i>(was draft-ietf-dhc-dhcpv6-leasequery)</i>
+      
+      <br>
+      <b>DHCPv6 Leasequery</b>
+      
+        <a class="label label-danger pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=5007">Errata</a>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2007-09
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">23 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-dhcpv6-leasequery">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/jari.arkko@ericsson.com"><span class="">Jari Arkko</span></a>&nbsp;<a href="mailto:jari.arkko%40ericsson.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc5010/">RFC 5010</a>
+
+      
+        <i>(was draft-ietf-dhc-relay-agent-flags)</i>
+      
+      <br>
+      <b>The Dynamic Host Configuration Protocol Version 4 (DHCPv4) Relay Agent Flags Suboption</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2007-09
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">7 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-relay-agent-flags">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/jari.arkko@ericsson.com"><span class="">Jari Arkko</span></a>&nbsp;<a href="mailto:jari.arkko%40ericsson.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc5071/">RFC 5071</a>
+
+      
+        <i>(was draft-ietf-dhc-pxelinux)</i>
+      
+      <br>
+      <b>Dynamic Host Configuration Protocol Options Used by PXELINUX</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2007-12
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">14 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-pxelinux">
+    
+  </div>
+
+  
+    Informational RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/jari.arkko@ericsson.com"><span class="">Jari Arkko</span></a>&nbsp;<a href="mailto:jari.arkko%40ericsson.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc5107/">RFC 5107</a>
+
+      
+        <i>(was draft-ietf-dhc-server-override)</i>
+      
+      <br>
+      <b>DHCP Server Identifier Override Suboption</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2008-02
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">7 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-server-override">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-dhc-server-override">
+        <span class="label label-default">5</span>
+      </a>
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/jari.arkko@ericsson.com"><span class="">Jari Arkko</span></a>&nbsp;<a href="mailto:jari.arkko%40ericsson.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc5192/">RFC 5192</a>
+
+      
+        <i>(was draft-ietf-dhc-paa-option)</i>
+      
+      <br>
+      <b>DHCP Options for Protocol for Carrying Authentication for Network Access (PANA) Authentication Agents</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2008-05
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">8 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-paa-option">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/jari.arkko@ericsson.com"><span class="">Jari Arkko</span></a>&nbsp;<a href="mailto:jari.arkko%40ericsson.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc5460/">RFC 5460</a>
+
+      
+        <i>(was draft-ietf-dhc-dhcpv6-bulk-leasequery)</i>
+      
+      <br>
+      <b>DHCPv6 Bulk Leasequery</b>
+      
+        <a class="label label-danger pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=5460">Errata</a>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2009-02
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">18 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-dhcpv6-bulk-leasequery">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+      <br>Updated by <a href="/doc/rfc7653/">RFC 7653</a>
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/jari.arkko@ericsson.com"><span class="">Jari Arkko</span></a>&nbsp;<a href="mailto:jari.arkko%40ericsson.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc5970/">RFC 5970</a>
+
+      
+        <i>(was draft-ietf-dhc-dhcpv6-opt-netboot)</i>
+      
+      <br>
+      <b>DHCPv6 Options for Network Boot</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2010-09
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">11 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-dhcpv6-opt-netboot">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/rdroms.ietf@gmail.com"><span class="">Ralph Droms</span></a>&nbsp;<a href="mailto:rdroms.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc6148/">RFC 6148</a>
+
+      
+        <i>(was draft-ietf-dhc-leasequery-by-remote-id)</i>
+      
+      <br>
+      <b>DHCPv4 Lease Query by Relay Agent Remote ID</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2011-02
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">13 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-leasequery-by-remote-id">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/rdroms.ietf@gmail.com"><span class="">Ralph Droms</span></a>&nbsp;<a href="mailto:rdroms.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc6221/">RFC 6221</a>
+
+      
+        <i>(was draft-ietf-dhc-dhcpv6-ldra)</i>
+      
+      <br>
+      <b>Lightweight DHCPv6 Relay Agent</b>
+      
+        <a class="label label-warning pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=6221">Errata</a>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2011-05
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">17 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-dhcpv6-ldra">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/rdroms.ietf@gmail.com"><span class="">Ralph Droms</span></a>&nbsp;<a href="mailto:rdroms.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc6355/">RFC 6355</a>
+
+      
+        <i>(was draft-ietf-dhc-duid-uuid)</i>
+      
+      <br>
+      <b>Definition of the UUID-Based DHCPv6 Unique Identifier (DUID-UUID)</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2011-08
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">5 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-duid-uuid">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/rdroms.ietf@gmail.com"><span class="">Ralph Droms</span></a>&nbsp;<a href="mailto:rdroms.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc6422/">RFC 6422</a>
+
+      
+        <i>(was draft-ietf-dhc-dhcpv6-relay-supplied-options)</i>
+      
+      <br>
+      <b>Relay-Supplied DHCP Options</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2011-12
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">8 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-dhcpv6-relay-supplied-options">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/rdroms.ietf@gmail.com"><span class="">Ralph Droms</span></a>&nbsp;<a href="mailto:rdroms.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc6603/">RFC 6603</a>
+
+      
+        <i>(was draft-ietf-dhc-pd-exclude)</i>
+      
+      <br>
+      <b>Prefix Exclude Option for DHCPv6-based Prefix Delegation</b>
+      
+        <a class="label label-danger pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=6603">Errata</a>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2012-05
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">10 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-pd-exclude">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/rdroms.ietf@gmail.com"><span class="">Ralph Droms</span></a>&nbsp;<a href="mailto:rdroms.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc6607/">RFC 6607</a>
+
+      
+        <i>(was draft-ietf-dhc-vpn-option)</i>
+      
+      <br>
+      <b>Virtual Subnet Selection Options for DHCPv4 and DHCPv6</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2012-04
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">26 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-vpn-option">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-dhc-vpn-option">
+        <span class="label label-default">1</span>
+      </a>
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/rdroms.ietf@gmail.com"><span class="">Ralph Droms</span></a>&nbsp;<a href="mailto:rdroms.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc6644/">RFC 6644</a>
+
+      
+        <i>(was draft-ietf-dhc-dhcpv6-reconfigure-rebind)</i>
+      
+      <br>
+      <b>Rebind Capability in DHCPv6 Reconfigure Messages</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2012-07
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">10 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-dhcpv6-reconfigure-rebind">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/brian@innovationslab.net"><span class="">Brian Haberman</span></a>&nbsp;<a href="mailto:brian%40innovationslab.net"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc6656/">RFC 6656</a>
+
+      
+        <i>(was draft-ietf-dhc-subnet-alloc)</i>
+      
+      <br>
+      <b>Description of Cisco Systems&#39; Subnet Allocation Option for DHCPv4</b>
+      
+        <a class="label label-warning pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=6656">Errata</a>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2012-07
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">24 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-subnet-alloc">
+    
+  </div>
+
+  
+    Informational RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-dhc-subnet-alloc">
+        <span class="label label-default">2</span>
+      </a>
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/rdroms.ietf@gmail.com"><span class="">Ralph Droms</span></a>&nbsp;<a href="mailto:rdroms.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc6704/">RFC 6704</a>
+
+      
+        <i>(was draft-ietf-dhc-forcerenew-nonce)</i>
+      
+      <br>
+      <b>Forcerenew Nonce Authentication</b>
+      
+        <a class="label label-danger pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=6704">Errata</a>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2012-08
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">12 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-forcerenew-nonce">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/rdroms.ietf@gmail.com"><span class="">Ralph Droms</span></a>&nbsp;<a href="mailto:rdroms.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc6842/">RFC 6842</a>
+
+      
+        <i>(was draft-ietf-dhc-client-id)</i>
+      
+      <br>
+      <b>Client Identifier Option in DHCP Server Replies</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2013-01
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">5 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-client-id">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/rdroms.ietf@gmail.com"><span class="">Ralph Droms</span></a>&nbsp;<a href="mailto:rdroms.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc6853/">RFC 6853</a>
+
+      
+        <i>(was draft-ietf-dhc-dhcpv6-redundancy-consider)</i>
+      
+      <br>
+      <b>DHCPv6 Redundancy Deployment Considerations</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2013-02
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">16 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-dhcpv6-redundancy-consider">
+    
+  </div>
+
+  
+    Best Current Practice RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/rdroms.ietf@gmail.com"><span class="">Ralph Droms</span></a>&nbsp;<a href="mailto:rdroms.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc6925/">RFC 6925</a>
+
+      
+        <i>(was draft-ietf-dhc-relay-id-suboption)</i>
+      
+      <br>
+      <b>The DHCPv4 Relay Agent Identifier Sub-Option</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2013-04
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">8 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-relay-id-suboption">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/rdroms.ietf@gmail.com"><span class="">Ralph Droms</span></a>&nbsp;<a href="mailto:rdroms.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc6926/">RFC 6926</a>
+
+      
+        <i>(was draft-ietf-dhc-dhcpv4-bulk-leasequery)</i>
+      
+      <br>
+      <b>DHCPv4 Bulk Leasequery</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2013-04
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">41 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-dhcpv4-bulk-leasequery">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+      <br>Updated by <a href="/doc/rfc7724/">RFC 7724</a>
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/rdroms.ietf@gmail.com"><span class="">Ralph Droms</span></a>&nbsp;<a href="mailto:rdroms.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc6939/">RFC 6939</a>
+
+      
+        <i>(was draft-ietf-dhc-dhcpv6-client-link-layer-addr-opt)</i>
+      
+      <br>
+      <b>Client Link-Layer Address Option in DHCPv6</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2013-05
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">7 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-dhcpv6-client-link-layer-addr-opt">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-dhc-dhcpv6-client-link-layer-addr-opt">
+        <span class="label label-default">1</span>
+      </a>
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/rdroms.ietf@gmail.com"><span class="">Ralph Droms</span></a>&nbsp;<a href="mailto:rdroms.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc6977/">RFC 6977</a>
+
+      
+        <i>(was draft-ietf-dhc-triggered-reconfigure)</i>
+      
+      <br>
+      <b>Triggering DHCPv6 Reconfiguration from Relay Agents</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2013-07
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">13 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-triggered-reconfigure">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/mellon@fugue.com"><span class="">Ted Lemon</span></a>&nbsp;<a href="mailto:mellon%40fugue.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/volz@cisco.com"><span class="small text-muted">Bernie Volz</span></a>&nbsp;<a href="mailto:volz%40cisco.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc7031/">RFC 7031</a>
+
+      
+        <i>(was draft-ietf-dhc-dhcpv6-failover-requirements)</i>
+      
+      <br>
+      <b>DHCPv6 Failover Requirements</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2013-09
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">17 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-dhcpv6-failover-requirements">
+    
+  </div>
+
+  
+    Informational RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/mellon@fugue.com"><span class="">Ted Lemon</span></a>&nbsp;<a href="mailto:mellon%40fugue.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/volz@cisco.com"><span class="small text-muted">Bernie Volz</span></a>&nbsp;<a href="mailto:volz%40cisco.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc7037/">RFC 7037</a>
+
+      
+        <i>(was draft-ietf-dhc-dhcpv6-radius-opt)</i>
+      
+      <br>
+      <b>RADIUS Option for the DHCPv6 Relay Agent</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2013-10
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">10 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-dhcpv6-radius-opt">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-dhc-dhcpv6-radius-opt">
+        <span class="label label-default">1</span>
+      </a>
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/mellon@fugue.com"><span class="">Ted Lemon</span></a>&nbsp;<a href="mailto:mellon%40fugue.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/tomasz.mrugalski@eti.pg.gda.pl"><span class="small text-muted">Tomek Mrugalski</span></a>&nbsp;<a href="mailto:tomasz.mrugalski%40eti.pg.gda.pl"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc7083/">RFC 7083</a>
+
+      
+        <i>(was draft-ietf-dhc-dhcpv6-solmaxrt-update)</i>
+      
+      <br>
+      <b>Modification to Default Values of SOL_MAX_RT and INF_MAX_RT</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2013-11
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">7 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-dhcpv6-solmaxrt-update">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+      <br>Obsoleted by <a href="/doc/rfc8415/">RFC 8415</a>
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/mellon@fugue.com"><span class="">Ted Lemon</span></a>&nbsp;<a href="mailto:mellon%40fugue.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/tomasz.mrugalski@eti.pg.gda.pl"><span class="small text-muted">Tomek Mrugalski</span></a>&nbsp;<a href="mailto:tomasz.mrugalski%40eti.pg.gda.pl"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc7227/">RFC 7227</a>
+
+      
+        <i>(was draft-ietf-dhc-option-guidelines)</i>
+      
+      <br>
+      <b>Guidelines for Creating New DHCPv6 Options</b>
+      
+        <a class="label label-danger pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=7227">Errata</a>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2014-05
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">35 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-option-guidelines">
+    
+  </div>
+
+  
+    Best Current Practice RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/mellon@fugue.com"><span class="">Ted Lemon</span></a>&nbsp;<a href="mailto:mellon%40fugue.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/volz@cisco.com"><span class="small text-muted">Bernie Volz</span></a>&nbsp;<a href="mailto:volz%40cisco.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc7283/">RFC 7283</a>
+
+      
+        <i>(was draft-ietf-dhc-dhcpv6-unknown-msg)</i>
+      
+      <br>
+      <b>Handling Unknown DHCPv6 Messages</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2014-07
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">7 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-dhcpv6-unknown-msg">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+      <br>Obsoleted by <a href="/doc/rfc8415/">RFC 8415</a>
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/brian@innovationslab.net"><span class="">Brian Haberman</span></a>&nbsp;<a href="mailto:brian%40innovationslab.net"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/jiangsheng@huawei.com"><span class="small text-muted">Sheng Jiang</span></a>&nbsp;<a href="mailto:jiangsheng%40huawei.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc7341/">RFC 7341</a>
+
+      
+        <i>(was draft-ietf-dhc-dhcpv4-over-dhcpv6)</i>
+      
+      <br>
+      <b>DHCPv4-over-DHCPv6 (DHCP 4o6) Transport</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2014-08
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">16 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-dhcpv4-over-dhcpv6">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/mellon@fugue.com"><span class="">Ted Lemon</span></a>&nbsp;<a href="mailto:mellon%40fugue.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/volz@cisco.com"><span class="small text-muted">Bernie Volz</span></a>&nbsp;<a href="mailto:volz%40cisco.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc7550/">RFC 7550</a>
+
+      
+        <i>(was draft-ietf-dhc-dhcpv6-stateful-issues)</i>
+      
+      <br>
+      <b>Issues and Recommendations with Multiple Stateful DHCPv6 Options</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2015-05
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">24 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-dhcpv6-stateful-issues">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+      <br>Obsoleted by <a href="/doc/rfc8415/">RFC 8415</a>
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/mellon@fugue.com"><span class="">Ted Lemon</span></a>&nbsp;<a href="mailto:mellon%40fugue.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/tomasz.mrugalski@eti.pg.gda.pl"><span class="small text-muted">Tomek Mrugalski</span></a>&nbsp;<a href="mailto:tomasz.mrugalski%40eti.pg.gda.pl"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc7618/">RFC 7618</a>
+
+      
+        <i>(was draft-ietf-dhc-dynamic-shared-v4allocation)</i>
+      
+      <br>
+      <b>Dynamic Allocation of Shared IPv4 Addresses</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2015-08
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">15 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-dynamic-shared-v4allocation">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-dhc-dynamic-shared-v4allocation">
+        <span class="label label-default">3</span>
+      </a>
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/brian@innovationslab.net"><span class="">Brian Haberman</span></a>&nbsp;<a href="mailto:brian%40innovationslab.net"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/volz@cisco.com"><span class="small text-muted">Bernie Volz</span></a>&nbsp;<a href="mailto:volz%40cisco.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc7653/">RFC 7653</a>
+
+      
+        <i>(was draft-ietf-dhc-dhcpv6-active-leasequery)</i>
+      
+      <br>
+      <b>DHCPv6 Active Leasequery</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2015-10
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">30 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-dhcpv6-active-leasequery">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-dhc-dhcpv6-active-leasequery">
+        <span class="label label-default">1</span>
+      </a>
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/brian@innovationslab.net"><span class="">Brian Haberman</span></a>&nbsp;<a href="mailto:brian%40innovationslab.net"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/jiangsheng@huawei.com"><span class="small text-muted">Sheng Jiang</span></a>&nbsp;<a href="mailto:jiangsheng%40huawei.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc7724/">RFC 7724</a>
+
+      
+        <i>(was draft-ietf-dhc-dhcpv4-active-leasequery)</i>
+      
+      <br>
+      <b>Active DHCPv4 Lease Query</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2015-12
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">28 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-dhcpv4-active-leasequery">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-dhc-dhcpv4-active-leasequery">
+        <span class="label label-default">1</span>
+      </a>
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/brian@innovationslab.net"><span class="">Brian Haberman</span></a>&nbsp;<a href="mailto:brian%40innovationslab.net"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/tomasz.mrugalski@gmail.com"><span class="small text-muted">Tomek Mrugalski</span></a>&nbsp;<a href="mailto:tomasz.mrugalski%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc7819/">RFC 7819</a>
+
+      
+        <i>(was draft-ietf-dhc-dhcp-privacy)</i>
+      
+      <br>
+      <b>Privacy Considerations for DHCP</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2016-04
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">14 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-dhcp-privacy">
+    
+  </div>
+
+  
+    Informational RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/brian@innovationslab.net"><span class="">Brian Haberman</span></a>&nbsp;<a href="mailto:brian%40innovationslab.net"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/volz@cisco.com"><span class="small text-muted">Bernie Volz</span></a>&nbsp;<a href="mailto:volz%40cisco.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc7824/">RFC 7824</a>
+
+      
+        <i>(was draft-ietf-dhc-dhcpv6-privacy)</i>
+      
+      <br>
+      <b>Privacy Considerations for DHCPv6</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2016-05
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">18 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-dhcpv6-privacy">
+    
+  </div>
+
+  
+    Informational RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/brian@innovationslab.net"><span class="">Brian Haberman</span></a>&nbsp;<a href="mailto:brian%40innovationslab.net"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/volz@cisco.com"><span class="small text-muted">Bernie Volz</span></a>&nbsp;<a href="mailto:volz%40cisco.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc7839/">RFC 7839</a>
+
+      
+        <i>(was draft-ietf-dhc-access-network-identifier)</i>
+      
+      <br>
+      <b>Access-Network-Identifier Option in DHCP</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2016-06
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">20 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-access-network-identifier">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/brian@innovationslab.net"><span class="">Brian Haberman</span></a>&nbsp;<a href="mailto:brian%40innovationslab.net"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/jiangsheng@huawei.com"><span class="small text-muted">Sheng Jiang</span></a>&nbsp;<a href="mailto:jiangsheng%40huawei.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc7844/">RFC 7844</a>
+
+      
+        <i>(was draft-ietf-dhc-anonymity-profile)</i>
+      
+      <br>
+      <b>Anonymity Profiles for DHCP Clients</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2016-05
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">26 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-anonymity-profile">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-dhc-anonymity-profile">
+        <span class="label label-default">1</span>
+      </a>
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/brian@innovationslab.net"><span class="">Brian Haberman</span></a>&nbsp;<a href="mailto:brian%40innovationslab.net"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/volz@cisco.com"><span class="small text-muted">Bernie Volz</span></a>&nbsp;<a href="mailto:volz%40cisco.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc7969/">RFC 7969</a>
+
+      
+        <i>(was draft-ietf-dhc-topo-conf)</i>
+      
+      <br>
+      <b>Customizing DHCP Configuration on the Basis of Network Topology</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2016-10
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">20 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-topo-conf">
+    
+  </div>
+
+  
+    Informational RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/suresh@kaloom.com"><span class="">Suresh Krishnan</span></a>&nbsp;<a href="mailto:suresh%40kaloom.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/volz@cisco.com"><span class="small text-muted">Bernie Volz</span></a>&nbsp;<a href="mailto:volz%40cisco.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc8156/">RFC 8156</a>
+
+      
+        <i>(was draft-ietf-dhc-dhcpv6-failover-protocol)</i>
+      
+      <br>
+      <b>DHCPv6 Failover Protocol</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2017-06
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">96 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-dhcpv6-failover-protocol">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/suresh@kaloom.com"><span class="">Suresh Krishnan</span></a>&nbsp;<a href="mailto:suresh%40kaloom.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/volz@cisco.com"><span class="small text-muted">Bernie Volz</span></a>&nbsp;<a href="mailto:volz%40cisco.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc8168/">RFC 8168</a>
+
+      
+        <i>(was draft-ietf-dhc-dhcpv6-prefix-length-hint-issue)</i>
+      
+      <br>
+      <b>DHCPv6 Prefix-Length Hint Issues</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2017-05
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">9 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-dhcpv6-prefix-length-hint-issue">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/suresh@kaloom.com"><span class="">Suresh Krishnan</span></a>&nbsp;<a href="mailto:suresh%40kaloom.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/volz@cisco.com"><span class="small text-muted">Bernie Volz</span></a>&nbsp;<a href="mailto:volz%40cisco.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc8213/">RFC 8213</a>
+
+      
+        <i>(was draft-ietf-dhc-relay-server-security)</i>
+      
+      <br>
+      <b>Security of Messages Exchanged between Servers and Relay Agents</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2017-08
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">8 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-relay-server-security">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/suresh@kaloom.com"><span class="">Suresh Krishnan</span></a>&nbsp;<a href="mailto:suresh%40kaloom.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/tomasz.mrugalski@gmail.com"><span class="small text-muted">Tomek Mrugalski</span></a>&nbsp;<a href="mailto:tomasz.mrugalski%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc8357/">RFC 8357</a>
+
+      
+        <i>(was draft-ietf-dhc-relay-port)</i>
+      
+      <br>
+      <b>Generalized UDP Source Port for DHCP Relay</b>
+      
+        <a class="label label-warning pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=8357">Errata</a>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2018-03
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">10 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-relay-port">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/suresh@kaloom.com"><span class="">Suresh Krishnan</span></a>&nbsp;<a href="mailto:suresh%40kaloom.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/tomasz.mrugalski@gmail.com"><span class="small text-muted">Tomek Mrugalski</span></a>&nbsp;<a href="mailto:tomasz.mrugalski%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc8415/">RFC 8415</a>
+
+      
+        <i>(was draft-ietf-dhc-rfc3315bis)</i>
+      
+      <br>
+      <b>Dynamic Host Configuration Protocol for IPv6 (DHCPv6)</b>
+      
+        <a class="label label-danger pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=8415">Errata</a>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2018-11
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">154 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-rfc3315bis">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/suresh@kaloom.com"><span class="">Suresh Krishnan</span></a>&nbsp;<a href="mailto:suresh%40kaloom.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/rdroms.ietf@gmail.com"><span class="small text-muted">Ralph Droms</span></a>&nbsp;<a href="mailto:rdroms.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc8539/">RFC 8539</a>
+
+      
+        <i>(was draft-ietf-dhc-dhcp4o6-saddr-opt)</i>
+      
+      <br>
+      <b>Softwire Provisioning Using DHCPv4 over DHCPv6</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2019-03
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">18 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-dhcp4o6-saddr-opt">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/suresh@kaloom.com"><span class="">Suresh Krishnan</span></a>&nbsp;<a href="mailto:suresh%40kaloom.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/volz@cisco.com"><span class="small text-muted">Bernie Volz</span></a>&nbsp;<a href="mailto:volz%40cisco.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc8925/">RFC 8925</a>
+
+      
+        <i>(was draft-ietf-dhc-v6only)</i>
+      
+      <br>
+      <b>IPv6-Only Preferred Option for DHCPv4</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2020-10
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">12 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-v6only">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/evyncke@cisco.com"><span class="">Éric Vyncke</span></a>&nbsp;<a href="mailto:evyncke%40cisco.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/volz@cisco.com"><span class="small text-muted">Bernie Volz</span></a>&nbsp;<a href="mailto:volz%40cisco.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc8947/">RFC 8947</a>
+
+      
+        <i>(was draft-ietf-dhc-mac-assign)</i>
+      
+      <br>
+      <b>Link-Layer Address Assignment Mechanism for DHCPv6</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2020-12
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">18 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-mac-assign">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/evyncke@cisco.com"><span class="">Éric Vyncke</span></a>&nbsp;<a href="mailto:evyncke%40cisco.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/ianfarrer@gmx.com"><span class="small text-muted">Ian Farrer</span></a>&nbsp;<a href="mailto:ianfarrer%40gmx.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc8948/">RFC 8948</a>
+
+      
+        <i>(was draft-ietf-dhc-slap-quadrant)</i>
+      
+      <br>
+      <b>Structured Local Address Plan (SLAP) Quadrant Selection Option for DHCPv6</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2020-12
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">16 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-slap-quadrant">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-dhc-slap-quadrant">
+        <span class="label label-default">2</span>
+      </a>
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/evyncke@cisco.com"><span class="">Éric Vyncke</span></a>&nbsp;<a href="mailto:evyncke%40cisco.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/ianfarrer@gmx.com"><span class="small text-muted">Ian Farrer</span></a>&nbsp;<a href="mailto:ianfarrer%40gmx.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc8987/">RFC 8987</a>
+
+      
+        <i>(was draft-ietf-dhc-dhcpv6-pd-relay-requirements)</i>
+      
+      <br>
+      <b>DHCPv6 Prefix Delegating Relay Requirements</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2021-02
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">11 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dhc-dhcpv6-pd-relay-requirements">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/evyncke@cisco.com"><span class="">Éric Vyncke</span></a>&nbsp;<a href="mailto:evyncke%40cisco.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/volz@cisco.com"><span class="small text-muted">Bernie Volz</span></a>&nbsp;<a href="mailto:volz%40cisco.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+      
+    </tbody>
+  </table>
+
+
+  
+  
+
+
+
+
+  
+
+  
+  <table class="table table-condensed table-striped tablesorter">
+    <thead>
+      <tr>
+        <th class="sorter-false"></th>
+
+        
+          
+            <th data-header="document">
+	      
+	        Document
+	      
+            </th>
+          
+        
+          
+        
+          
+            <th data-header="date">
+	      
+	        Date
+	      
+            </th>
+          
+        
+          
+            <th data-header="status">
+	      
+	        Status
+	      
+            </th>
+          
+        
+          
+            <th data-header="ipr">
+	      
+	        IPR
+	      
+            </th>
+          
+        
+          
+            <th data-header="ad">
+	      
+	        AD / Shepherd
+	      
+            </th>
+          
+        
+
+        
+      </tr>
+    </thead>
+
+    
+
+      
+    <tbody>
+        <tr class="info">
+          <th></th>
+          
+              <th colspan="5">
+          
+	    Related Internet-Drafts (2 hits)
+          </th>
+        </tr>
+    </tbody>
+
+    <tbody>
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-rhl-dhc-dhcpv6-extensions/">draft-rhl-dhc-dhcpv6-extensions-00</a>
+
+      
+      <br>
+      <b>DHCPv6 Extension Practices and Considerations</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2021-12-21
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">15 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-rhl-dhc-dhcpv6-extensions">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-wkumari-dhc-addr-notification/">draft-wkumari-dhc-addr-notification-00</a>
+
+      
+      <br>
+      <b>Registering Self-generated IPv6 Addresses using DHCPv6</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2022-03-07
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">10 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-wkumari-dhc-addr-notification">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+      
+    </tbody>
+  </table>
+
+
+  <ul class="list-inline pull-right" style="margin-top:1em;">
+  <li>
+    <label id="list-feeds">Atom feed:</label>
+    <div class="btn-group" role="group" aria-labelledby="list-feeds">
+      <a class="btn btn-default" title="Feed of all changes" href="/group/dhc/documents/feed/">All changes</a>
+      <a class="btn btn-default" title="Feed of only significant state changes" href="/group/dhc/documents/feed/?significant=1">Significant</a>
+    </div>
+  </li>
+
+  
+    <li><a class="btn btn-default" href="/group/dhc/documents/subscription/">
+      <i class="glyphicon glyphicon-envelope"></i>
+      
+        Subscribe to changes
+      
+    </a></li>
+  
+
+  <li><a class="btn btn-default" href="/group/dhc/documents/csv/"><i class="glyphicon glyphicon-list"></i> Export as CSV</a></li>
+</ul>
+
+
+
+
+
+        
+        
+	  </div>
+        
+
+	
+	<hr>
+	  <div class="col-md-12 col-sm-12">
+	    <div class="text-center padded">
+	        <a href="https://www.rfc-editor.org/" class="padded">RFC&nbsp;Editor</a>
+	        <a href="https://www.ietf.org/llc/" class="padded">IASA&nbsp;&amp;&nbsp;IETF&nbsp;LLC</a>
+	        <a href="https://trustee.ietf.org/" class="padded">IETF&nbsp;Trust</a>
+	        <a href="https://www.irtf.org/" class="padded">IRTF</a>
+	        <a href="https://www.ietf.org/" class="padded">IETF</a>
+	        <a href="https://www.ietf.org/iesg/" class="padded">IESG</a>
+	        <a href="https://www.iab.org/" class="padded">IAB</a>
+	        <a href="https://www.iana.org/" class="padded">IANA</a>
+	        <a href="https://www.ietf.org/privacy-statement/" class="padded">Privacy&nbsp;Statement</a>
+	    </div>
+	  </div>
+
+
+        <footer class="col-md-12 col-sm-12">
+	  <div class="col-md-12">
+	    <div class="text-center">
+	      <p class="small text-muted">
+	        
+		  <a href="/release/about">About</a> |
+	          IETF Datatracker |
+	          <a href="/release/7.46.0.p4/">Version 7.46.0.p4</a> |
+	          2022-03-10 |
+	        
+		Report a bug:
+	        <a href="https://trac.ietf.org/trac/ietfdb/newticket">Tracker:<span class="fa fa-bug"></span></a>
+                
+	        <a href="mailto:datatracker-project@ietf.org">Email:<span class="fa fa-envelope"></span></a>
+                
+		<br>
+                Python 3.6.12 |
+		Django 2.2.27
+	      </p>
+	    </div>
+	  </div>
+        </footer>
+	
+
+      </div>
+
+      
+
+
+
+
+      <script src="https://www.ietf.org/lib/dt/7.46.0/jquery/jquery.min.js"></script>
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      <script src="https://www.ietf.org/lib/dt/7.46.0/js-cookie/src/js.cookie.js"></script>
+      <script src="https://www.ietf.org/lib/dt/7.46.0/ietf/bootstrap/js/bootstrap.min.js"></script>
+      <script src="https://www.ietf.org/lib/dt/7.46.0/ietf/js/ietf.js"></script>
+      
+<script src="https://www.ietf.org/lib/dt/7.46.0/jquery.tablesorter/js/jquery.tablesorter.combined.min.js"></script>
+
+      
+  <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6fb2a93388596a8a',m:'a8C_6t.9_UHEsy5LhTEIvZAP1TSZQNgGbEF9W_bBlwo-1649836758-0-ARpbkJJu8t1EounYX74arHOWtRFrZSQU/rxWGAlyIaSPTcn/SroshuAeFBFvSUdasZK22Ft+lrkV2hJj/Kj9xZ750XWoZhTwUCtw0sBwpINNA3dp7AAX7Zh8nnLs0HgY4OnERoGNWDKELd86VYGiYhM=',s:[0xd1982f8cae,0xe283b45df4],}})();</script></body>
+</html>

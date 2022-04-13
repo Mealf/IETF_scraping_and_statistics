@@ -1,0 +1,2678 @@
+<!DOCTYPE html> 
+
+
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Distributed Mobility Management (dmm) - Documents</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://www.ietf.org/lib/dt/7.46.0/ptmono/stylesheet.css" rel='stylesheet' type='text/css'>
+    <link href="https://www.ietf.org/lib/dt/7.46.0/ptsans/stylesheet.css" rel='stylesheet' type='text/css'>
+    <link href="https://www.ietf.org/lib/dt/7.46.0/ptserif/stylesheet.css" rel='stylesheet' type='text/css'>
+    
+
+    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/ietf/font-datatracker/css/font-datatracker.css">
+    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/ietf/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/ietf/bootstrap/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/ietf/css/ietf.css">
+    
+    <style>
+     
+    </style>
+
+    
+<link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/jquery.tablesorter/css/theme.bootstrap.min.css">
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.46.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.46.0/ietf/images/apple-touch-icon.png">
+  <script async src='/cdn-cgi/bm/cv/669835187/api.js'></script></head>
+
+  <body  data-group-menu-data-url="/group/groupmenu.json">
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+	  <div class="navbar-header">
+	    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+	      <span class="sr-only">Toggle navigation</span>
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+	    </button>
+	    <a class="navbar-brand" href="/">
+	       <img alt="IETF Logo" src="https://www.ietf.org/lib/dt/7.46.0/ietf/images/ietflogo-small-transparent.png">
+	       
+		  
+		  Datatracker
+		  
+	       
+	    </a>
+	  </div>
+
+	  <noscript>
+	    <p class="navbar-text"><small>Enable Javascript for full functionality.</small></p>
+	  </noscript>
+
+	  <div class="collapse navbar-collapse" id="navbar-collapse">
+	    <ul class="hidden-nojs nav navbar-nav">
+              
+
+
+
+
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+  
+  Groups
+  
+    </a>
+    <ul class="dropdown-menu" role="menu">
+
+    <li class="dropdown-header visible-lg-block">By area/parent</li>
+  
+        
+
+  <li class="hidden-nojs dropdown-submenu group-menu group-parent-2010">
+    <a href="/wg/#art">Apps &amp; Realtime</a>
+  </li>
+
+  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1008">
+    <a href="/wg/#gen">General</a>
+  </li>
+
+  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1052">
+    <a href="/wg/#int">Internet</a>
+  </li>
+
+  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1193">
+    <a href="/wg/#ops">Ops &amp; Mgmt</a>
+  </li>
+
+  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1249">
+    <a href="/wg/#rtg">Routing</a>
+  </li>
+
+  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1260">
+    <a href="/wg/#sec">Security</a>
+  </li>
+
+  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1324">
+    <a href="/wg/#tsv">Transport</a>
+  </li>
+
+  <li class="hidden-nojs dropdown-submenu group-menu group-parent-7">
+    <a href="/program/">IAB</a>
+  </li>
+
+  <li class="hidden-nojs dropdown-submenu group-menu group-parent-3">
+    <a href="/rg/">IRTF</a>
+  </li>
+
+  <li class="hidden-nojs dropdown-submenu group-menu group-parent-2309">
+    <a href="/adm/">IETF LLC</a>
+  </li>
+
+
+        <li class="dropdown-submenu group-menu"><a href="/group/">Other</a>
+<ul class="dropdown-menu" role="menu">
+
+  <li>
+    <a href="/ag/">Active AGs</a>
+  </li>
+
+  <li>
+    <a href="/area/">Active Areas</a>
+  </li>
+
+  <li>
+    <a href="/dir/">Active Directorates</a>
+  </li>
+
+  <li>
+    <a href="/program/">Active Programs</a>
+  </li>
+
+  <li>
+    <a href="/rag/">Active RAGs</a>
+  </li>
+
+  <li>
+    <a href="/team/">Active Teams</a>
+  </li>
+
+
+  <li>
+    <a href="/group/rsoc/">RSOC</a>
+  </li>
+
+</ul>
+ </li>
+
+  <li class="divider hidden-xs"></li>
+  <li class="dropdown-header hidden-xs">New work</li>
+  <li><a href="/group/chartering/">Chartering groups</a></li>
+  <li><a href="/wg/bofs/">BOFs</a></li>
+  <li><a href="/doc/bof-requests">BOF Requests</a></li>
+
+  <li class="divider hidden-xs"></li>
+  <li class="dropdown-header hidden-xs">Other groups</li>
+  <li><a href="/group/concluded/">Concluded groups</a></li>
+  <li><a href="/list/nonwg">Non-WG lists</a></li>
+
+</ul>
+</li>
+
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+  
+  Documents
+  
+    </a>
+    <ul class="dropdown-menu" role="menu">
+  
+  <li><a href="/doc/search">Search</a></li>
+  <li><a href="/doc/recent">Recent drafts</a></li>
+  <li><a href="/submit/">Draft submission</a></li>
+
+  
+
+
+  <li class="divider hidden-xs"></li>
+  <li class="dropdown-header hidden-xs">RFC streams</li>
+        <li><a href="/stream/iab/">IAB</a></li>
+        <li><a href="/stream/irtf/">IRTF</a></li>
+        <li><a href="/stream/ise/">ISE</a></li>
+
+</ul>
+</li>
+
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+  
+  Meetings
+  
+    </a>
+    <ul class="dropdown-menu" role="menu">
+  
+
+
+  
+  <li class="dropdown-header visible-lg-block">Next meeting</li>
+  
+  <li><a href="/meeting/agenda/">Agenda</a></li>
+  <li><a href="/meeting/materials/">Materials</a></li>
+  <li><a href="/meeting/floor-plan/">Floor plan</a></li>
+  <li><a href="https://www.ietf.org/how/meetings/register/">Registration</a></li>
+  <li><a href="/meeting/important-dates/">Important dates</a></li>
+  <li><a href="/secr/sreq/">Request a session</a></li>
+  <li><a href="/meeting/requests">Session requests</a></li>
+  
+  <li class="divider hidden-xs"></li>
+  <li class="dropdown-header visible-lg-block">Upcoming meetings</li>
+  
+  <li><a href="/meeting/upcoming">Upcoming meetings</a></li>
+  
+  <li class="divider hidden-xs"></li>
+  <li class="dropdown-header visible-lg-block">Past meetings</li>
+  
+  <li><a href="/meeting/past">Past meetings</a></li>
+  <li><a href="https://www.ietf.org/how/meetings/past/">Meeting proceedings</a></li>
+</ul>
+</li>
+
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+  
+  Other
+  
+    </a>
+    <ul class="dropdown-menu" role="menu">
+  
+
+  <li><a href="/ipr/">IPR disclosures</a></li>
+  <li><a href="/liaison/">Liaison statements</a></li>
+  <li><a href="/iesg/agenda/">IESG agenda</a></li>
+  <li><a href="/nomcom/">NomComs</a></li>
+  <li><a href="/doc/downref/">Downref registry</a></li>
+  <li class="dropdown-submenu">
+    <a href="/stats/">Statistics</a>
+    <ul class="dropdown-menu">
+      <li><a href="/stats/document/">Drafts/RFCs</a></li>
+      <li><a href="/stats/meeting/">Meetings</a></li>
+      
+    </ul>
+  </li>
+  <li><a href="/group/edu/materials/">Tutorials</a></li>
+  <li><a href="/api/">API Help</a></li>  
+  <li><a href="/release/">Release notes</a></li>
+  <li class="divider hidden-xs"></li>
+  <li><a href="https://trac.ietf.org/trac/ietfdb/newticket"><span class="fa fa-bug"></span> Report a bug</a></li>
+</ul>
+</li>
+
+
+  
+
+
+<li class="dropdown">
+  
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+     User 
+  </a>
+  <ul class="dropdown-menu" role="menu">
+  
+
+  
+    
+      <li><a rel="nofollow" href="/accounts/login/?next=/wg/dmm/documents/">Sign in</a></li>
+      <li><a rel="nofollow" href="/accounts/reset/">Password reset</a></li>
+      <li><a href="/accounts/settings/" rel="nofollow">Preferences</a></li>
+    
+    <li><a href="/help/personal-information">Handling of personal information</a></li>  
+  
+
+  
+    <li><a href="/accounts/create/">New account</a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</ul>
+
+            </ul>
+        
+            <p class="navbar-text"></p>
+            <a class="btn btn-warning btn-sm navbar-btn" rel="nofollow" href="/accounts/login/?next=/wg/dmm/documents/">Sign in</a>
+        
+
+	    <form class="navbar-form navbar-right hidden-xs" action="/doc/search/">
+	      <div class="form-group">
+	        <input class="form-control input-sm" type="text" name="name" placeholder="Document search" required>
+	        <input type="hidden" name="activedrafts" value="on">
+	        <input type="hidden" name="rfcs" value="on">
+	      </div>
+	    </form>
+	  </div>
+        </div>
+      </nav>
+      <div class="container-fluid-narrow">
+        
+        
+        
+	  <div class="col-md-12 col-sm-12" id="content">
+        
+        
+  
+
+  <h1>Distributed Mobility Management (dmm)
+    
+    
+    
+  </h1>
+
+  <ul class="nav nav-tabs" role="tablist">
+    
+      <li >
+        <a href="/wg/dmm/about/">About</a>
+      </li>
+    
+      <li class="active">
+        <a href="/wg/dmm/documents/">Documents</a>
+      </li>
+    
+      <li >
+        <a href="/wg/dmm/meetings/">Meetings</a>
+      </li>
+    
+      <li >
+        <a href="/wg/dmm/history/">History</a>
+      </li>
+    
+      <li >
+        <a href="/wg/dmm/photos/">Photos</a>
+      </li>
+    
+      <li >
+        <a href="/wg/dmm/email/">Email expansions</a>
+      </li>
+    
+      <li >
+        <a href="https://mailarchive.ietf.org/arch/browse/dmm/">List archive &raquo;</a>
+      </li>
+    
+  </ul>
+
+  <div class="buttonlist">
+    
+      
+    
+  </div>
+
+  
+  
+  
+    
+
+
+
+
+  
+
+  
+  <table class="table table-condensed table-striped tablesorter">
+    <thead>
+      <tr>
+        <th class="sorter-false"></th>
+
+        
+          
+            <th data-header="document">
+	      
+	        Document
+	      
+            </th>
+          
+        
+          
+        
+          
+            <th data-header="date">
+	      
+	        Date
+	      
+            </th>
+          
+        
+          
+            <th data-header="status">
+	      
+	        Status
+	      
+            </th>
+          
+        
+          
+            <th data-header="ipr">
+	      
+	        IPR
+	      
+            </th>
+          
+        
+          
+            <th data-header="ad">
+	      
+	        AD / Shepherd
+	      
+            </th>
+          
+        
+
+        
+      </tr>
+    </thead>
+
+    
+
+      
+    <tbody>
+        <tr class="info">
+          <th></th>
+          
+              <th colspan="5">
+          
+	    Active Internet-Drafts (2 hits)
+          </th>
+        </tr>
+    </tbody>
+
+    <tbody>
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-ietf-dmm-srv6-mobile-uplane/">draft-ietf-dmm-srv6-mobile-uplane-20</a>
+
+      
+      <br>
+      <b>Segment Routing IPv6 for Mobile User Plane</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+
+       <a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-dmm-srv6-mobile-uplane-20">
+       
+
+    
+          2022-04-12
+    
+       </a>
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">33 pages</small>
+    
+
+    
+    <wbr><div class="pull-right"><span class="label label-success">New</span></div>
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dmm-srv6-mobile-uplane">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+      <br>
+      
+	WG Document
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-dmm-srv6-mobile-uplane">
+        <span class="label label-default">3</span>
+      </a>
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-ietf-dmm-tn-aware-mobility/">draft-ietf-dmm-tn-aware-mobility-03</a>
+
+      
+      <br>
+      <b>Mobility aware Transport Network Slicing for 5G</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2022-03-05
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">24 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dmm-tn-aware-mobility">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+      <br>
+      
+	WG Document
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+      
+    <tbody>
+        <tr class="info">
+          <th></th>
+          
+              <th colspan="5">
+          
+	    RFCs (9 hits)
+          </th>
+        </tr>
+    </tbody>
+
+    <tbody>
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc7333/">RFC 7333</a>
+
+      
+        <i>(was draft-ietf-dmm-requirements)</i>
+      
+      <br>
+      <b>Requirements for Distributed Mobility Management</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2014-08
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">24 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dmm-requirements">
+    
+  </div>
+
+  
+    Informational RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/brian@innovationslab.net"><span class="">Brian Haberman</span></a>&nbsp;<a href="mailto:brian%40innovationslab.net"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/peter.mccann@huawei.com"><span class="small text-muted">Pete McCann</span></a>&nbsp;<a href="mailto:peter.mccann%40huawei.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc7429/">RFC 7429</a>
+
+      
+        <i>(was draft-ietf-dmm-best-practices-gap-analysis)</i>
+      
+      <br>
+      <b>Distributed Mobility Management: Current Practices and Gap Analysis</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2015-01
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">34 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dmm-best-practices-gap-analysis">
+    
+  </div>
+
+  
+    Informational RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/brian@innovationslab.net"><span class="">Brian Haberman</span></a>&nbsp;<a href="mailto:brian%40innovationslab.net"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/jounikor@gmail.com"><span class="small text-muted">Jouni Korhonen</span></a>&nbsp;<a href="mailto:jounikor%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc8127/">RFC 8127</a>
+
+      
+        <i>(was draft-ietf-dmm-lma-controlled-mag-params)</i>
+      
+      <br>
+      <b>Mobile Access Gateway Configuration Parameters Controlled by the Local Mobility Anchor</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2017-08
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">14 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dmm-lma-controlled-mag-params">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/suresh@kaloom.com"><span class="">Suresh Krishnan</span></a>&nbsp;<a href="mailto:suresh%40kaloom.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/max.ldp@alibaba-inc.com"><span class="small text-muted">Dapeng Liu</span></a>&nbsp;<a href="mailto:max.ldp%40alibaba-inc.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc8191/">RFC 8191</a>
+
+      
+        <i>(was draft-ietf-dmm-hnprenum)</i>
+      
+      <br>
+      <b>Home Network Prefix Renumbering in Proxy Mobile IPv6 (PMIPv6)</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2017-08
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">10 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dmm-hnprenum">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/suresh@kaloom.com"><span class="">Suresh Krishnan</span></a>&nbsp;<a href="mailto:suresh%40kaloom.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/max.ldp@alibaba-inc.com"><span class="small text-muted">Dapeng Liu</span></a>&nbsp;<a href="mailto:max.ldp%40alibaba-inc.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc8278/">RFC 8278</a>
+
+      
+        <i>(was draft-ietf-dmm-mag-multihoming)</i>
+      
+      <br>
+      <b>Mobile Access Gateway (MAG) Multipath Options</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2018-01
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">15 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dmm-mag-multihoming">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-dmm-mag-multihoming">
+        <span class="label label-default">1</span>
+      </a>
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/suresh@kaloom.com"><span class="">Suresh Krishnan</span></a>&nbsp;<a href="mailto:suresh%40kaloom.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/jouni.nospam@gmail.com"><span class="small text-muted">Jouni Korhonen</span></a>&nbsp;<a href="mailto:jouni.nospam%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc8371/">RFC 8371</a>
+
+      
+        <i>(was draft-ietf-dmm-4283mnids)</i>
+      
+      <br>
+      <b>Mobile Node Identifier Types for MIPv6</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2018-07
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">16 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dmm-4283mnids">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/suresh@kaloom.com"><span class="">Suresh Krishnan</span></a>&nbsp;<a href="mailto:suresh%40kaloom.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/max.ldp@alibaba-inc.com"><span class="small text-muted">Dapeng Liu</span></a>&nbsp;<a href="mailto:max.ldp%40alibaba-inc.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc8653/">RFC 8653</a>
+
+      
+        <i>(was draft-ietf-dmm-ondemand-mobility)</i>
+      
+      <br>
+      <b>On-Demand Mobility Management</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2019-10
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">12 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dmm-ondemand-mobility">
+    
+  </div>
+
+  
+    Informational RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-dmm-ondemand-mobility">
+        <span class="label label-default">4</span>
+      </a>
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/suresh@kaloom.com"><span class="">Suresh Krishnan</span></a>&nbsp;<a href="mailto:suresh%40kaloom.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/sgundave@cisco.com"><span class="small text-muted">Sri Gundavelli</span></a>&nbsp;<a href="mailto:sgundave%40cisco.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc8818/">RFC 8818</a>
+
+      
+        <i>(was draft-ietf-dmm-distributed-mobility-anchoring)</i>
+      
+      <br>
+      <b>Distributed Mobility Anchoring</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2020-10
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">18 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dmm-distributed-mobility-anchoring">
+    
+  </div>
+
+  
+    Informational RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-dmm-distributed-mobility-anchoring">
+        <span class="label label-default">1</span>
+      </a>
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/suresh@kaloom.com"><span class="">Suresh Krishnan</span></a>&nbsp;<a href="mailto:suresh%40kaloom.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/maxpassion@gmail.com"><span class="small text-muted">Dapeng Liu</span></a>&nbsp;<a href="mailto:maxpassion%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc8885/">RFC 8885</a>
+
+      
+        <i>(was draft-ietf-dmm-pmipv6-dlif)</i>
+      
+      <br>
+      <b>Proxy Mobile IPv6 Extensions for Distributed Mobility Management</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2020-10
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">25 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-dmm-pmipv6-dlif">
+    
+  </div>
+
+  
+    Experimental RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-dmm-pmipv6-dlif">
+        <span class="label label-default">3</span>
+      </a>
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/suresh@kaloom.com"><span class="">Suresh Krishnan</span></a>&nbsp;<a href="mailto:suresh%40kaloom.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/max.ldp@alibaba-inc.com"><span class="small text-muted">Dapeng Liu</span></a>&nbsp;<a href="mailto:max.ldp%40alibaba-inc.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+      
+    </tbody>
+  </table>
+
+
+  
+  
+
+
+
+
+  
+
+  
+  <table class="table table-condensed table-striped tablesorter">
+    <thead>
+      <tr>
+        <th class="sorter-false"></th>
+
+        
+          
+            <th data-header="document">
+	      
+	        Document
+	      
+            </th>
+          
+        
+          
+        
+          
+            <th data-header="date">
+	      
+	        Date
+	      
+            </th>
+          
+        
+          
+            <th data-header="status">
+	      
+	        Status
+	      
+            </th>
+          
+        
+          
+            <th data-header="ipr">
+	      
+	        IPR
+	      
+            </th>
+          
+        
+          
+            <th data-header="ad">
+	      
+	        AD / Shepherd
+	      
+            </th>
+          
+        
+
+        
+      </tr>
+    </thead>
+
+    
+
+      
+    <tbody>
+        <tr class="info">
+          <th></th>
+          
+              <th colspan="5">
+          
+	    Related Internet-Drafts (9 hits)
+          </th>
+        </tr>
+    </tbody>
+
+    <tbody>
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-bernardos-dmm-sfc-mobility/">draft-bernardos-dmm-sfc-mobility-04</a>
+
+      
+      <br>
+      <b>SFC function mobility with Mobile IPv6</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2022-03-21
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">12 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-bernardos-dmm-sfc-mobility">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+      <a href="/ipr/search/?submit=draft&amp;id=draft-bernardos-dmm-sfc-mobility">
+        <span class="label label-default">1</span>
+      </a>
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-kohno-dmm-srv6mob-arch/">draft-kohno-dmm-srv6mob-arch-05</a>
+
+      
+      <br>
+      <b>Architecture Discussion on SRv6 Mobile User plane</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2021-11-08
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">11 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-kohno-dmm-srv6mob-arch">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-mhkk-dmm-srv6mup-architecture/">draft-mhkk-dmm-srv6mup-architecture-03</a>
+
+      
+      <br>
+      <b>Segment Routing IPv6 Mobile User Plane Architecture for Distributed Mobility Management</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2022-03-20
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">19 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-mhkk-dmm-srv6mup-architecture">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-murakami-dmm-user-plane-message-encoding/">draft-murakami-dmm-user-plane-message-encoding-05</a>
+
+      
+      <br>
+      <b>User Plane Message Encoding</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2022-03-05
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">10 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-murakami-dmm-user-plane-message-encoding">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-tjiang-dmm-5g-dupf-5mbs/">draft-tjiang-dmm-5g-dupf-5mbs-00</a>
+
+      
+      <br>
+      <b>5G Distributed UPFs for 5G Multicast and Broadcast Services (5MBS)</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2022-03-07
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">7 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-tjiang-dmm-5g-dupf-5mbs">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-yan-dmm-man/">draft-yan-dmm-man-09</a>
+
+      
+      <br>
+      <b>Mobility Capability Negotiation as a 5G Mobility Pattern</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2022-01-27
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">13 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-yan-dmm-man">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-zpm-dmm-mup-bgp-signaling/">draft-zpm-dmm-mup-bgp-signaling-00</a>
+
+      
+      <br>
+      <b>BGP Signaling for Mobile User Plane</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2022-03-07
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">9 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-zpm-dmm-mup-bgp-signaling">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-zzhang-dmm-5g-distributed-upf/">draft-zzhang-dmm-5g-distributed-upf-00</a>
+
+      
+      <br>
+      <b>5G Distributed UPFs</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2022-03-06
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">9 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-zzhang-dmm-5g-distributed-upf">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-zzhang-dmm-mup-evolution/">draft-zzhang-dmm-mup-evolution-00</a>
+
+      
+      <br>
+      <b>Mobile User Plane Evolution</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2022-03-06
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">8 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-zzhang-dmm-mup-evolution">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+      <a href="/ipr/search/?submit=draft&amp;id=draft-zzhang-dmm-mup-evolution">
+        <span class="label label-default">1</span>
+      </a>
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+      
+    </tbody>
+  </table>
+
+
+  <ul class="list-inline pull-right" style="margin-top:1em;">
+  <li>
+    <label id="list-feeds">Atom feed:</label>
+    <div class="btn-group" role="group" aria-labelledby="list-feeds">
+      <a class="btn btn-default" title="Feed of all changes" href="/group/dmm/documents/feed/">All changes</a>
+      <a class="btn btn-default" title="Feed of only significant state changes" href="/group/dmm/documents/feed/?significant=1">Significant</a>
+    </div>
+  </li>
+
+  
+    <li><a class="btn btn-default" href="/group/dmm/documents/subscription/">
+      <i class="glyphicon glyphicon-envelope"></i>
+      
+        Subscribe to changes
+      
+    </a></li>
+  
+
+  <li><a class="btn btn-default" href="/group/dmm/documents/csv/"><i class="glyphicon glyphicon-list"></i> Export as CSV</a></li>
+</ul>
+
+
+
+
+
+        
+        
+	  </div>
+        
+
+	
+	<hr>
+	  <div class="col-md-12 col-sm-12">
+	    <div class="text-center padded">
+	        <a href="https://www.rfc-editor.org/" class="padded">RFC&nbsp;Editor</a>
+	        <a href="https://www.ietf.org/llc/" class="padded">IASA&nbsp;&amp;&nbsp;IETF&nbsp;LLC</a>
+	        <a href="https://trustee.ietf.org/" class="padded">IETF&nbsp;Trust</a>
+	        <a href="https://www.irtf.org/" class="padded">IRTF</a>
+	        <a href="https://www.ietf.org/" class="padded">IETF</a>
+	        <a href="https://www.ietf.org/iesg/" class="padded">IESG</a>
+	        <a href="https://www.iab.org/" class="padded">IAB</a>
+	        <a href="https://www.iana.org/" class="padded">IANA</a>
+	        <a href="https://www.ietf.org/privacy-statement/" class="padded">Privacy&nbsp;Statement</a>
+	    </div>
+	  </div>
+
+
+        <footer class="col-md-12 col-sm-12">
+	  <div class="col-md-12">
+	    <div class="text-center">
+	      <p class="small text-muted">
+	        
+		  <a href="/release/about">About</a> |
+	          IETF Datatracker |
+	          <a href="/release/7.46.0.p4/">Version 7.46.0.p4</a> |
+	          2022-03-10 |
+	        
+		Report a bug:
+	        <a href="https://trac.ietf.org/trac/ietfdb/newticket">Tracker:<span class="fa fa-bug"></span></a>
+                
+	        <a href="mailto:datatracker-project@ietf.org">Email:<span class="fa fa-envelope"></span></a>
+                
+		<br>
+                Python 3.6.12 |
+		Django 2.2.27
+	      </p>
+	    </div>
+	  </div>
+        </footer>
+	
+
+      </div>
+
+      
+
+
+
+
+      <script src="https://www.ietf.org/lib/dt/7.46.0/jquery/jquery.min.js"></script>
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      <script src="https://www.ietf.org/lib/dt/7.46.0/js-cookie/src/js.cookie.js"></script>
+      <script src="https://www.ietf.org/lib/dt/7.46.0/ietf/bootstrap/js/bootstrap.min.js"></script>
+      <script src="https://www.ietf.org/lib/dt/7.46.0/ietf/js/ietf.js"></script>
+      
+<script src="https://www.ietf.org/lib/dt/7.46.0/jquery.tablesorter/js/jquery.tablesorter.combined.min.js"></script>
+
+      
+  <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6fb2a964de3d6b6f',m:'r858efrp23LxSeR2ejZAy8zpO86pRKoHfFdX9.4sQtg-1649836761-0-AWbvpRdPEnkbRr8ux8rmWVH7rpPgD72NO/RBevR3vqB8rPZTfvllkYmfuoaPNKyXEBN92T7Theu9Lg4OUH0NKbvaY+Mn9YafmTd5hiCbh23wj0Qg1SFqXpz6BIH+Y+SzO7XKfci4bcnRzOVU2YokzHg=',s:[0x9cfbf9cfc3,0x9df19d1f3a],}})();</script></body>
+</html>

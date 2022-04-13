@@ -1,0 +1,6743 @@
+<!DOCTYPE html> 
+
+
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Routing Area Working Group (rtgwg) - Documents</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://www.ietf.org/lib/dt/7.46.0/ptmono/stylesheet.css" rel='stylesheet' type='text/css'>
+    <link href="https://www.ietf.org/lib/dt/7.46.0/ptsans/stylesheet.css" rel='stylesheet' type='text/css'>
+    <link href="https://www.ietf.org/lib/dt/7.46.0/ptserif/stylesheet.css" rel='stylesheet' type='text/css'>
+    
+
+    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/ietf/font-datatracker/css/font-datatracker.css">
+    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/ietf/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/ietf/bootstrap/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/ietf/css/ietf.css">
+    
+    <style>
+     
+    </style>
+
+    
+<link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/jquery.tablesorter/css/theme.bootstrap.min.css">
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.46.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.46.0/ietf/images/apple-touch-icon.png">
+  <script async src='/cdn-cgi/bm/cv/669835187/api.js'></script></head>
+
+  <body  data-group-menu-data-url="/group/groupmenu.json">
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+	  <div class="navbar-header">
+	    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+	      <span class="sr-only">Toggle navigation</span>
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+	    </button>
+	    <a class="navbar-brand" href="/">
+	       <img alt="IETF Logo" src="https://www.ietf.org/lib/dt/7.46.0/ietf/images/ietflogo-small-transparent.png">
+	       
+		  
+		  Datatracker
+		  
+	       
+	    </a>
+	  </div>
+
+	  <noscript>
+	    <p class="navbar-text"><small>Enable Javascript for full functionality.</small></p>
+	  </noscript>
+
+	  <div class="collapse navbar-collapse" id="navbar-collapse">
+	    <ul class="hidden-nojs nav navbar-nav">
+              
+
+
+
+
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+  
+  Groups
+  
+    </a>
+    <ul class="dropdown-menu" role="menu">
+
+    <li class="dropdown-header visible-lg-block">By area/parent</li>
+  
+        
+
+  <li class="hidden-nojs dropdown-submenu group-menu group-parent-2010">
+    <a href="/wg/#art">Apps &amp; Realtime</a>
+  </li>
+
+  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1008">
+    <a href="/wg/#gen">General</a>
+  </li>
+
+  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1052">
+    <a href="/wg/#int">Internet</a>
+  </li>
+
+  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1193">
+    <a href="/wg/#ops">Ops &amp; Mgmt</a>
+  </li>
+
+  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1249">
+    <a href="/wg/#rtg">Routing</a>
+  </li>
+
+  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1260">
+    <a href="/wg/#sec">Security</a>
+  </li>
+
+  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1324">
+    <a href="/wg/#tsv">Transport</a>
+  </li>
+
+  <li class="hidden-nojs dropdown-submenu group-menu group-parent-7">
+    <a href="/program/">IAB</a>
+  </li>
+
+  <li class="hidden-nojs dropdown-submenu group-menu group-parent-3">
+    <a href="/rg/">IRTF</a>
+  </li>
+
+  <li class="hidden-nojs dropdown-submenu group-menu group-parent-2309">
+    <a href="/adm/">IETF LLC</a>
+  </li>
+
+
+        <li class="dropdown-submenu group-menu"><a href="/group/">Other</a>
+<ul class="dropdown-menu" role="menu">
+
+  <li>
+    <a href="/ag/">Active AGs</a>
+  </li>
+
+  <li>
+    <a href="/area/">Active Areas</a>
+  </li>
+
+  <li>
+    <a href="/dir/">Active Directorates</a>
+  </li>
+
+  <li>
+    <a href="/program/">Active Programs</a>
+  </li>
+
+  <li>
+    <a href="/rag/">Active RAGs</a>
+  </li>
+
+  <li>
+    <a href="/team/">Active Teams</a>
+  </li>
+
+
+  <li>
+    <a href="/group/rsoc/">RSOC</a>
+  </li>
+
+</ul>
+ </li>
+
+  <li class="divider hidden-xs"></li>
+  <li class="dropdown-header hidden-xs">New work</li>
+  <li><a href="/group/chartering/">Chartering groups</a></li>
+  <li><a href="/wg/bofs/">BOFs</a></li>
+  <li><a href="/doc/bof-requests">BOF Requests</a></li>
+
+  <li class="divider hidden-xs"></li>
+  <li class="dropdown-header hidden-xs">Other groups</li>
+  <li><a href="/group/concluded/">Concluded groups</a></li>
+  <li><a href="/list/nonwg">Non-WG lists</a></li>
+
+</ul>
+</li>
+
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+  
+  Documents
+  
+    </a>
+    <ul class="dropdown-menu" role="menu">
+  
+  <li><a href="/doc/search">Search</a></li>
+  <li><a href="/doc/recent">Recent drafts</a></li>
+  <li><a href="/submit/">Draft submission</a></li>
+
+  
+
+
+  <li class="divider hidden-xs"></li>
+  <li class="dropdown-header hidden-xs">RFC streams</li>
+        <li><a href="/stream/iab/">IAB</a></li>
+        <li><a href="/stream/irtf/">IRTF</a></li>
+        <li><a href="/stream/ise/">ISE</a></li>
+
+</ul>
+</li>
+
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+  
+  Meetings
+  
+    </a>
+    <ul class="dropdown-menu" role="menu">
+  
+
+
+  
+  <li class="dropdown-header visible-lg-block">Next meeting</li>
+  
+  <li><a href="/meeting/agenda/">Agenda</a></li>
+  <li><a href="/meeting/materials/">Materials</a></li>
+  <li><a href="/meeting/floor-plan/">Floor plan</a></li>
+  <li><a href="https://www.ietf.org/how/meetings/register/">Registration</a></li>
+  <li><a href="/meeting/important-dates/">Important dates</a></li>
+  <li><a href="/secr/sreq/">Request a session</a></li>
+  <li><a href="/meeting/requests">Session requests</a></li>
+  
+  <li class="divider hidden-xs"></li>
+  <li class="dropdown-header visible-lg-block">Upcoming meetings</li>
+  
+  <li><a href="/meeting/upcoming">Upcoming meetings</a></li>
+  
+  <li class="divider hidden-xs"></li>
+  <li class="dropdown-header visible-lg-block">Past meetings</li>
+  
+  <li><a href="/meeting/past">Past meetings</a></li>
+  <li><a href="https://www.ietf.org/how/meetings/past/">Meeting proceedings</a></li>
+</ul>
+</li>
+
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+  
+  Other
+  
+    </a>
+    <ul class="dropdown-menu" role="menu">
+  
+
+  <li><a href="/ipr/">IPR disclosures</a></li>
+  <li><a href="/liaison/">Liaison statements</a></li>
+  <li><a href="/iesg/agenda/">IESG agenda</a></li>
+  <li><a href="/nomcom/">NomComs</a></li>
+  <li><a href="/doc/downref/">Downref registry</a></li>
+  <li class="dropdown-submenu">
+    <a href="/stats/">Statistics</a>
+    <ul class="dropdown-menu">
+      <li><a href="/stats/document/">Drafts/RFCs</a></li>
+      <li><a href="/stats/meeting/">Meetings</a></li>
+      
+    </ul>
+  </li>
+  <li><a href="/group/edu/materials/">Tutorials</a></li>
+  <li><a href="/api/">API Help</a></li>  
+  <li><a href="/release/">Release notes</a></li>
+  <li class="divider hidden-xs"></li>
+  <li><a href="https://trac.ietf.org/trac/ietfdb/newticket"><span class="fa fa-bug"></span> Report a bug</a></li>
+</ul>
+</li>
+
+
+  
+
+
+<li class="dropdown">
+  
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+     User 
+  </a>
+  <ul class="dropdown-menu" role="menu">
+  
+
+  
+    
+      <li><a rel="nofollow" href="/accounts/login/?next=/wg/rtgwg/documents/">Sign in</a></li>
+      <li><a rel="nofollow" href="/accounts/reset/">Password reset</a></li>
+      <li><a href="/accounts/settings/" rel="nofollow">Preferences</a></li>
+    
+    <li><a href="/help/personal-information">Handling of personal information</a></li>  
+  
+
+  
+    <li><a href="/accounts/create/">New account</a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</ul>
+
+            </ul>
+        
+            <p class="navbar-text"></p>
+            <a class="btn btn-warning btn-sm navbar-btn" rel="nofollow" href="/accounts/login/?next=/wg/rtgwg/documents/">Sign in</a>
+        
+
+	    <form class="navbar-form navbar-right hidden-xs" action="/doc/search/">
+	      <div class="form-group">
+	        <input class="form-control input-sm" type="text" name="name" placeholder="Document search" required>
+	        <input type="hidden" name="activedrafts" value="on">
+	        <input type="hidden" name="rfcs" value="on">
+	      </div>
+	    </form>
+	  </div>
+        </div>
+      </nav>
+      <div class="container-fluid-narrow">
+        
+        
+        
+	  <div class="col-md-12 col-sm-12" id="content">
+        
+        
+  
+
+  <h1>Routing Area Working Group (rtgwg)
+    
+    
+    
+  </h1>
+
+  <ul class="nav nav-tabs" role="tablist">
+    
+      <li >
+        <a href="/wg/rtgwg/about/">About</a>
+      </li>
+    
+      <li class="active">
+        <a href="/wg/rtgwg/documents/">Documents</a>
+      </li>
+    
+      <li >
+        <a href="/wg/rtgwg/meetings/">Meetings</a>
+      </li>
+    
+      <li >
+        <a href="/wg/rtgwg/history/">History</a>
+      </li>
+    
+      <li >
+        <a href="/wg/rtgwg/photos/">Photos</a>
+      </li>
+    
+      <li >
+        <a href="/wg/rtgwg/email/">Email expansions</a>
+      </li>
+    
+      <li >
+        <a href="https://mailarchive.ietf.org/arch/browse/rtgwg/">List archive &raquo;</a>
+      </li>
+    
+  </ul>
+
+  <div class="buttonlist">
+    
+      
+    
+  </div>
+
+  
+  
+  
+    
+
+
+
+
+  
+
+  
+  <table class="table table-condensed table-striped tablesorter">
+    <thead>
+      <tr>
+        <th class="sorter-false"></th>
+
+        
+          
+            <th data-header="document">
+	      
+	        Document
+	      
+            </th>
+          
+        
+          
+        
+          
+            <th data-header="date">
+	      
+	        Date
+	      
+            </th>
+          
+        
+          
+            <th data-header="status">
+	      
+	        Status
+	      
+            </th>
+          
+        
+          
+            <th data-header="ipr">
+	      
+	        IPR
+	      
+            </th>
+          
+        
+          
+            <th data-header="ad">
+	      
+	        AD / Shepherd
+	      
+            </th>
+          
+        
+
+        
+      </tr>
+    </thead>
+
+    
+
+      
+    <tbody>
+        <tr class="info">
+          <th></th>
+          
+              <th colspan="5">
+          
+	    Active Internet-Drafts (8 hits)
+          </th>
+        </tr>
+    </tbody>
+
+    <tbody>
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-ietf-rtgwg-atn-bgp/">draft-ietf-rtgwg-atn-bgp-16</a>
+
+      
+      <br>
+      <b>A Simple BGP-based Mobile Routing System for the Aeronautical Telecommunications Network</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+
+       <a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-rtgwg-atn-bgp-16">
+       
+
+    
+          2022-04-07
+    
+       </a>
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">27 pages</small>
+    
+
+    
+    <wbr><div class="pull-right"><span class="label label-success">New</span></div>
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-rtgwg-atn-bgp">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+      <br>
+      
+	WG Document
+      
+    
+
+    
+
+    
+
+    
+      <br>Reviews:
+      
+        intdir, 
+      
+        opsdir, 
+      
+        rtgdir, 
+      
+        secdir, 
+      
+        tsvart
+      
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      <a title="Shepherd" href="/person/yingzhen.ietf@gmail.com"><span class="small text-muted">Yingzhen Qu</span></a>&nbsp;<a href="mailto:yingzhen.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-ietf-rtgwg-bgp-pic/">draft-ietf-rtgwg-bgp-pic-18</a>
+
+      
+      <br>
+      <b>BGP Prefix Independent Convergence</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+
+       <a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-rtgwg-bgp-pic-18">
+       
+
+    
+          2022-04-09
+    
+       </a>
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">31 pages</small>
+    
+
+    
+    <wbr><div class="pull-right"><span class="label label-success">New</span></div>
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-rtgwg-bgp-pic">
+    
+  </div>
+
+  
+    
+      Publication Requested
+    
+
+    
+
+    <wbr>
+
+    <wbr><span class="label label-danger" title="Goal is &lt;7 days">for 179 days</span>
+    
+    
+
+    
+      
+    
+
+    
+      <br>
+      
+	Submitted to IESG for Publication:<wbr>
+      
+    
+
+    
+      Informational
+    
+
+    
+
+    
+      <br>Reviews:
+      
+        genart, 
+      
+        iotdir, 
+      
+        opsdir, 
+      
+        rtgdir, 
+      
+        secdir, 
+      
+        tsvart
+      
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-rtgwg-bgp-pic">
+        <span class="label label-default">2</span>
+      </a>
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/aretana.ietf@gmail.com"><span class="">Alvaro Retana</span></a>&nbsp;<a href="mailto:aretana.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/yingzhen.ietf@gmail.com"><span class="small text-muted">Yingzhen Qu</span></a>&nbsp;<a href="mailto:yingzhen.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-ietf-rtgwg-net2cloud-problem-statement/">draft-ietf-rtgwg-net2cloud-problem-statement-12</a>
+
+      
+      <br>
+      <b>Dynamic Networks to Hybrid Cloud DCs Problem Statement</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2022-03-07
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">19 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-rtgwg-net2cloud-problem-statement">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+      <br>
+      
+	WG Document
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-ietf-rtgwg-qos-model/">draft-ietf-rtgwg-qos-model-07</a>
+
+      
+      <br>
+      <b>YANG Models for Quality of Service (QoS)</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2022-03-06
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">93 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-rtgwg-qos-model">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+      <br>
+      
+	WG Document
+      
+    
+
+    
+
+    
+
+    
+      <br>Reviews:
+      
+        yangdoctors
+      
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      <a title="Shepherd" href="/person/yingzhen.ietf@gmail.com"><span class="small text-muted">Yingzhen Qu</span></a>&nbsp;<a href="mailto:yingzhen.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-ietf-rtgwg-segment-routing-ti-lfa/">draft-ietf-rtgwg-segment-routing-ti-lfa-08</a>
+
+      
+      <br>
+      <b>Topology Independent Fast Reroute using Segment Routing</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2022-01-21
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">23 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-rtgwg-segment-routing-ti-lfa">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+      <br>
+      
+	WG Document
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-rtgwg-segment-routing-ti-lfa">
+        <span class="label label-default">1</span>
+      </a>
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      <a title="Shepherd" href="/person/stewart.bryant@gmail.com"><span class="small text-muted">Stewart Bryant</span></a>&nbsp;<a href="mailto:stewart.bryant%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-ietf-rtgwg-srv6-egress-protection/">draft-ietf-rtgwg-srv6-egress-protection-04</a>
+
+      
+      <br>
+      <b>SRv6 Path Egress Protection</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2021-10-17
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">19 pages</small>
+    
+
+    
+
+    
+      <wbr><span class="label label-warning">Expires soon</span>
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-rtgwg-srv6-egress-protection">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+      <br>
+      
+	WG Document
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-rtgwg-srv6-egress-protection">
+        <span class="label label-default">2</span>
+      </a>
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-ietf-rtgwg-vrrp-p2mp-bfd/">draft-ietf-rtgwg-vrrp-p2mp-bfd-02</a>
+
+      
+      <br>
+      <b>Applicability of Bidirectional Forwarding Detection (BFD) for Multi-point Networks in Virtual Router Redundancy Protocol (VRRP)</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+
+       <a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-rtgwg-vrrp-p2mp-bfd-02">
+       
+
+    
+          2022-03-31
+    
+       </a>
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">6 pages</small>
+    
+
+    
+    <wbr><div class="pull-right"><span class="label label-success">New</span></div>
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-rtgwg-vrrp-p2mp-bfd">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+      <br>
+      
+	WG Document
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-rtgwg-vrrp-p2mp-bfd">
+        <span class="label label-default">3</span>
+      </a>
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-ietf-rtgwg-yang-rib-extend/">draft-ietf-rtgwg-yang-rib-extend-09</a>
+
+      
+      <br>
+      <b>RIB Extension YANG Data Model</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2021-10-17
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">25 pages</small>
+    
+
+    
+
+    
+      <wbr><span class="label label-warning">Expires soon</span>
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-rtgwg-yang-rib-extend">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+      <br>
+      
+	WG Document
+      
+    
+
+    
+
+    
+
+    
+      <br>Reviews:
+      
+        rtgdir, 
+      
+        yangdoctors
+      
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+      
+    <tbody>
+        <tr class="info">
+          <th></th>
+          
+              <th colspan="5">
+          
+	    RFCs (28 hits)
+          </th>
+        </tr>
+    </tbody>
+
+    <tbody>
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc3906/">RFC 3906</a>
+
+      
+        <i>(was draft-ietf-rtgwg-igp-shortcut)</i>
+      
+      <br>
+      <b>Calculating Interior Gateway Protocol (IGP) Routes Over Traffic Engineering Tunnels</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2004-10
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">8 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-rtgwg-igp-shortcut">
+    
+  </div>
+
+  
+    Informational RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/alex.zinin@alcatel.com"><span class="">Alex Zinin</span></a>&nbsp;<a href="mailto:alex.zinin%40alcatel.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc5082/">RFC 5082</a>
+
+      
+        <i>(was draft-ietf-rtgwg-rfc3682bis)</i>
+      
+      <br>
+      <b>The Generalized TTL Security Mechanism (GTSM)</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2007-10
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">16 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-rtgwg-rfc3682bis">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/rcallon@juniper.net"><span class="">Ross Callon</span></a>&nbsp;<a href="mailto:rcallon%40juniper.net"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc5286/">RFC 5286</a>
+
+      
+        <i>(was draft-ietf-rtgwg-ipfrr-spec-base)</i>
+      
+      <br>
+      <b>Basic Specification for IP Fast Reroute: Loop-Free Alternates</b>
+      
+        <a class="label label-danger pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=5286">Errata</a>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2008-09
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">31 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-rtgwg-ipfrr-spec-base">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+      <br>Updated by <a href="/doc/rfc8518/">RFC 8518</a>
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-rtgwg-ipfrr-spec-base">
+        <span class="label label-default">2</span>
+      </a>
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/wardd@cisco.com"><span class="">David Ward</span></a>&nbsp;<a href="mailto:wardd%40cisco.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc5714/">RFC 5714</a>
+
+      
+        <i>(was draft-ietf-rtgwg-ipfrr-framework)</i>
+      
+      <br>
+      <b>IP Fast Reroute Framework</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2010-01
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">15 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-rtgwg-ipfrr-framework">
+    
+  </div>
+
+  
+    Informational RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/rcallon@juniper.net"><span class="">Ross Callon</span></a>&nbsp;<a href="mailto:rcallon%40juniper.net"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc5715/">RFC 5715</a>
+
+      
+        <i>(was draft-ietf-rtgwg-lf-conv-frmwk)</i>
+      
+      <br>
+      <b>A Framework for Loop-Free Convergence</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2010-01
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">22 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-rtgwg-lf-conv-frmwk">
+    
+  </div>
+
+  
+    Informational RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-rtgwg-lf-conv-frmwk">
+        <span class="label label-default">2</span>
+      </a>
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/rcallon@juniper.net"><span class="">Ross Callon</span></a>&nbsp;<a href="mailto:rcallon%40juniper.net"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc6571/">RFC 6571</a>
+
+      
+        <i>(was draft-ietf-rtgwg-lfa-applicability)</i>
+      
+      <br>
+      <b>Loop-Free Alternate (LFA) Applicability in Service Provider (SP) Networks</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2012-06
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">35 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-rtgwg-lfa-applicability">
+    
+  </div>
+
+  
+    Informational RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/stewart.bryant@gmail.com"><span class="">Stewart Bryant</span></a>&nbsp;<a href="mailto:stewart.bryant%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/aretana@cisco.com"><span class="small text-muted">Alvaro Retana</span></a>&nbsp;<a href="mailto:aretana%40cisco.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc6976/">RFC 6976</a>
+
+      
+        <i>(was draft-ietf-rtgwg-ordered-fib)</i>
+      
+      <br>
+      <b>Framework for Loop-Free Convergence Using the Ordered Forwarding Information Base (oFIB) Approach</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2013-07
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">28 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-rtgwg-ordered-fib">
+    
+  </div>
+
+  
+    Informational RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-rtgwg-ordered-fib">
+        <span class="label label-default">1</span>
+      </a>
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/adrian@olddog.co.uk"><span class="">Adrian Farrel</span></a>&nbsp;<a href="mailto:adrian%40olddog.co.uk"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/aretana@cisco.com"><span class="small text-muted">Alvaro Retana</span></a>&nbsp;<a href="mailto:aretana%40cisco.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc6981/">RFC 6981</a>
+
+      
+        <i>(was draft-ietf-rtgwg-ipfrr-notvia-addresses)</i>
+      
+      <br>
+      <b>A Framework for IP and MPLS Fast Reroute Using Not-Via Addresses</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2013-08
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">34 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-rtgwg-ipfrr-notvia-addresses">
+    
+  </div>
+
+  
+    Informational RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-rtgwg-ipfrr-notvia-addresses">
+        <span class="label label-default">3</span>
+      </a>
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/adrian@olddog.co.uk"><span class="">Adrian Farrel</span></a>&nbsp;<a href="mailto:adrian%40olddog.co.uk"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/aretana@cisco.com"><span class="small text-muted">Alvaro Retana</span></a>&nbsp;<a href="mailto:aretana%40cisco.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc7226/">RFC 7226</a>
+
+      
+        <i>(was draft-ietf-rtgwg-cl-requirement)</i>
+      
+      <br>
+      <b>Requirements for Advanced Multipath in MPLS Networks</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2014-05
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">17 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-rtgwg-cl-requirement">
+    
+  </div>
+
+  
+    Informational RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/akatlas@gmail.com"><span class="">Alia Atlas</span></a>&nbsp;<a href="mailto:akatlas%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/akatlas@gmail.com"><span class="small text-muted">Alia Atlas</span></a>&nbsp;<a href="mailto:akatlas%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc7431/">RFC 7431</a>
+
+      
+        <i>(was draft-ietf-rtgwg-mofrr)</i>
+      
+      <br>
+      <b>Multicast-Only Fast Reroute</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2015-08
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">14 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-rtgwg-mofrr">
+    
+  </div>
+
+  
+    Informational RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-rtgwg-mofrr">
+        <span class="label label-default">3</span>
+      </a>
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/akatlas@gmail.com"><span class="">Alia Atlas</span></a>&nbsp;<a href="mailto:akatlas%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/aretana@cisco.com"><span class="small text-muted">Alvaro Retana</span></a>&nbsp;<a href="mailto:aretana%40cisco.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc7490/">RFC 7490</a>
+
+      
+        <i>(was draft-ietf-rtgwg-remote-lfa)</i>
+      
+      <br>
+      <b>Remote Loop-Free Alternate (LFA) Fast Reroute (FRR)</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2015-04
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">29 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-rtgwg-remote-lfa">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-rtgwg-remote-lfa">
+        <span class="label label-default">3</span>
+      </a>
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/akatlas@gmail.com"><span class="">Alia Atlas</span></a>&nbsp;<a href="mailto:akatlas%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/aretana@cisco.com"><span class="small text-muted">Alvaro Retana</span></a>&nbsp;<a href="mailto:aretana%40cisco.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc7811/">RFC 7811</a>
+
+      
+        <i>(was draft-ietf-rtgwg-mrt-frr-algorithm)</i>
+      
+      <br>
+      <b>An Algorithm for Computing IP/LDP Fast Reroute Using Maximally Redundant Trees (MRT-FRR)</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2016-06
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">118 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-rtgwg-mrt-frr-algorithm">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/aretana.ietf@gmail.com"><span class="">Alvaro Retana</span></a>&nbsp;<a href="mailto:aretana.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/janos.farkas@ericsson.com"><span class="small text-muted">János Farkas</span></a>&nbsp;<a href="mailto:janos.farkas%40ericsson.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc7812/">RFC 7812</a>
+
+      
+        <i>(was draft-ietf-rtgwg-mrt-frr-architecture)</i>
+      
+      <br>
+      <b>An Architecture for IP/LDP Fast Reroute Using Maximally Redundant Trees (MRT-FRR)</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2016-06
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">44 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-rtgwg-mrt-frr-architecture">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-rtgwg-mrt-frr-architecture">
+        <span class="label label-default">3</span>
+      </a>
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/aretana.ietf@gmail.com"><span class="">Alvaro Retana</span></a>&nbsp;<a href="mailto:aretana.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/janos.farkas@ericsson.com"><span class="small text-muted">János Farkas</span></a>&nbsp;<a href="mailto:janos.farkas%40ericsson.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc7916/">RFC 7916</a>
+
+      
+        <i>(was draft-ietf-rtgwg-lfa-manageability)</i>
+      
+      <br>
+      <b>Operational Management of Loop-Free Alternates</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2016-07
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">31 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-rtgwg-lfa-manageability">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-rtgwg-lfa-manageability">
+        <span class="label label-default">3</span>
+      </a>
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/akatlas@gmail.com"><span class="">Alia Atlas</span></a>&nbsp;<a href="mailto:akatlas%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/jeff.tantsura@ericsson.com"><span class="small text-muted">Jeff Tantsura</span></a>&nbsp;<a href="mailto:jeff.tantsura%40ericsson.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc7938/">RFC 7938</a>
+
+      
+        <i>(was draft-ietf-rtgwg-bgp-routing-large-dc)</i>
+      
+      <br>
+      <b>Use of BGP for Routing in Large-Scale Data Centers</b>
+      
+        <a class="label label-warning pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=7938">Errata</a>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2016-08
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">35 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-rtgwg-bgp-routing-large-dc">
+    
+  </div>
+
+  
+    Informational RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/akatlas@gmail.com"><span class="">Alia Atlas</span></a>&nbsp;<a href="mailto:akatlas%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/jeff.tantsura@ericsson.com"><span class="small text-muted">Jeff Tantsura</span></a>&nbsp;<a href="mailto:jeff.tantsura%40ericsson.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc8102/">RFC 8102</a>
+
+      
+        <i>(was draft-ietf-rtgwg-rlfa-node-protection)</i>
+      
+      <br>
+      <b>Remote-LFA Node Protection and Manageability</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2017-03
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">22 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-rtgwg-rlfa-node-protection">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-rtgwg-rlfa-node-protection">
+        <span class="label label-default">2</span>
+      </a>
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/akatlas@gmail.com"><span class="">Alia Atlas</span></a>&nbsp;<a href="mailto:akatlas%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/jrmitche@puck.nether.net"><span class="small text-muted">Jon Mitchell</span></a>&nbsp;<a href="mailto:jrmitche%40puck.nether.net"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc8177/">RFC 8177</a>
+
+      
+        <i>(was draft-ietf-rtgwg-yang-key-chain)</i>
+      
+      <br>
+      <b>YANG Data Model for Key Chains</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2017-06
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">25 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-rtgwg-yang-key-chain">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/akatlas@gmail.com"><span class="">Alia Atlas</span></a>&nbsp;<a href="mailto:akatlas%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/jefftant.ietf@gmail.com"><span class="small text-muted">Jeff Tantsura</span></a>&nbsp;<a href="mailto:jefftant.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc8294/">RFC 8294</a>
+
+      
+        <i>(was draft-ietf-rtgwg-routing-types)</i>
+      
+      <br>
+      <b>Common YANG Data Types for the Routing Area</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2017-12
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">43 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-rtgwg-routing-types">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/akatlas@gmail.com"><span class="">Alia Atlas</span></a>&nbsp;<a href="mailto:akatlas%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/jefftant.ietf@gmail.com"><span class="small text-muted">Jeff Tantsura</span></a>&nbsp;<a href="mailto:jefftant.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc8333/">RFC 8333</a>
+
+      
+        <i>(was draft-ietf-rtgwg-uloop-delay)</i>
+      
+      <br>
+      <b>Micro-loop Prevention by Introducing a Local Convergence Delay</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2018-03
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">26 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-rtgwg-uloop-delay">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-rtgwg-uloop-delay">
+        <span class="label label-default">1</span>
+      </a>
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/akatlas@gmail.com"><span class="">Alia Atlas</span></a>&nbsp;<a href="mailto:akatlas%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/chrisbowers.ietf@gmail.com"><span class="small text-muted">Chris Bowers</span></a>&nbsp;<a href="mailto:chrisbowers.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc8347/">RFC 8347</a>
+
+      
+        <i>(was draft-ietf-rtgwg-yang-vrrp)</i>
+      
+      <br>
+      <b>A YANG Data Model for the Virtual Router Redundancy Protocol (VRRP)</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2018-03
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">45 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-rtgwg-yang-vrrp">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/akatlas@gmail.com"><span class="">Alia Atlas</span></a>&nbsp;<a href="mailto:akatlas%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/yingzhen.qu@huawei.com"><span class="small text-muted">Yingzhen Qu</span></a>&nbsp;<a href="mailto:yingzhen.qu%40huawei.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc8405/">RFC 8405</a>
+
+      
+        <i>(was draft-ietf-rtgwg-backoff-algo)</i>
+      
+      <br>
+      <b>Shortest Path First (SPF) Back-Off Delay Algorithm for Link-State IGPs</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2018-06
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">14 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-rtgwg-backoff-algo">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/akatlas@gmail.com"><span class="">Alia Atlas</span></a>&nbsp;<a href="mailto:akatlas%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/uma.chunduri@huawei.com"><span class="small text-muted">Uma Chunduri</span></a>&nbsp;<a href="mailto:uma.chunduri%40huawei.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc8518/">RFC 8518</a>
+
+      
+        <i>(was draft-ietf-rtgwg-multihomed-prefix-lfa)</i>
+      
+      <br>
+      <b>Selection of Loop-Free Alternates for Multi-Homed Prefixes</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2019-03
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">20 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-rtgwg-multihomed-prefix-lfa">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-rtgwg-multihomed-prefix-lfa">
+        <span class="label label-default">2</span>
+      </a>
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/martin.vigoureux@nokia.com"><span class="">Martin Vigoureux</span></a>&nbsp;<a href="mailto:martin.vigoureux%40nokia.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/stewart.bryant@gmail.com"><span class="small text-muted">Stewart Bryant</span></a>&nbsp;<a href="mailto:stewart.bryant%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc8529/">RFC 8529</a>
+
+      
+        <i>(was draft-ietf-rtgwg-ni-model)</i>
+      
+      <br>
+      <b>YANG Data Model for Network Instances</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2019-03
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">44 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-rtgwg-ni-model">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/akatlas@gmail.com"><span class="">Alia Atlas</span></a>&nbsp;<a href="mailto:akatlas%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/yingzhen.ietf@gmail.com"><span class="small text-muted">Yingzhen Qu</span></a>&nbsp;<a href="mailto:yingzhen.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc8530/">RFC 8530</a>
+
+      
+        <i>(was draft-ietf-rtgwg-lne-model)</i>
+      
+      <br>
+      <b>YANG Model for Logical Network Elements</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2019-03
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">49 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-rtgwg-lne-model">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/akatlas@gmail.com"><span class="">Alia Atlas</span></a>&nbsp;<a href="mailto:akatlas%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/yingzhen.ietf@gmail.com"><span class="small text-muted">Yingzhen Qu</span></a>&nbsp;<a href="mailto:yingzhen.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc8541/">RFC 8541</a>
+
+      
+        <i>(was draft-ietf-rtgwg-spf-uloop-pb-statement)</i>
+      
+      <br>
+      <b>Impact of Shortest Path First (SPF) Trigger and Delay Strategies on IGP Micro-loops</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2019-03
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">15 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-rtgwg-spf-uloop-pb-statement">
+    
+  </div>
+
+  
+    Informational RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/martin.vigoureux@nokia.com"><span class="">Martin Vigoureux</span></a>&nbsp;<a href="mailto:martin.vigoureux%40nokia.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/chrisbowers.ietf@gmail.com"><span class="small text-muted">Chris Bowers</span></a>&nbsp;<a href="mailto:chrisbowers.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc8678/">RFC 8678</a>
+
+      
+        <i>(was draft-ietf-rtgwg-enterprise-pa-multihoming)</i>
+      
+      <br>
+      <b>Enterprise Multihoming using Provider-Assigned IPv6 Addresses without Network Prefix Translation: Requirements and Solutions</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2019-12
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">43 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-rtgwg-enterprise-pa-multihoming">
+    
+  </div>
+
+  
+    Informational RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/martin.vigoureux@nokia.com"><span class="">Martin Vigoureux</span></a>&nbsp;<a href="mailto:martin.vigoureux%40nokia.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/rbonica@juniper.net"><span class="small text-muted">Ron Bonica</span></a>&nbsp;<a href="mailto:rbonica%40juniper.net"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc8695/">RFC 8695</a>
+
+      
+        <i>(was draft-ietf-rtgwg-yang-rip)</i>
+      
+      <br>
+      <b>A YANG Data Model for the Routing Information Protocol (RIP)</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2020-02
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">40 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-rtgwg-yang-rip">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/martin.vigoureux@nokia.com"><span class="">Martin Vigoureux</span></a>&nbsp;<a href="mailto:martin.vigoureux%40nokia.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/yingzhen.qu@huawei.com"><span class="small text-muted">Yingzhen Qu</span></a>&nbsp;<a href="mailto:yingzhen.qu%40huawei.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc9067/">RFC 9067</a>
+
+      
+        <i>(was draft-ietf-rtgwg-policy-model)</i>
+      
+      <br>
+      <b>A YANG Data Model for Routing Policy</b>
+      
+        <a class="label label-warning pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=9067">Errata</a>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2021-10
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">38 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-rtgwg-policy-model">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/aretana.ietf@gmail.com"><span class="">Alvaro Retana</span></a>&nbsp;<a href="mailto:aretana.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/chrisbowers.ietf@gmail.com"><span class="small text-muted">Chris Bowers</span></a>&nbsp;<a href="mailto:chrisbowers.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+      
+    </tbody>
+  </table>
+
+
+  
+  
+
+
+
+
+  
+
+  
+  <table class="table table-condensed table-striped tablesorter">
+    <thead>
+      <tr>
+        <th class="sorter-false"></th>
+
+        
+          
+            <th data-header="document">
+	      
+	        Document
+	      
+            </th>
+          
+        
+          
+        
+          
+            <th data-header="date">
+	      
+	        Date
+	      
+            </th>
+          
+        
+          
+            <th data-header="status">
+	      
+	        Status
+	      
+            </th>
+          
+        
+          
+            <th data-header="ipr">
+	      
+	        IPR
+	      
+            </th>
+          
+        
+          
+            <th data-header="ad">
+	      
+	        AD / Shepherd
+	      
+            </th>
+          
+        
+
+        
+      </tr>
+    </thead>
+
+    
+
+      
+    <tbody>
+        <tr class="info">
+          <th></th>
+          
+              <th colspan="5">
+          
+	    Related Internet-Drafts (23 hits)
+          </th>
+        </tr>
+    </tbody>
+
+    <tbody>
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-addogra-rtgwg-vrrp-rfc5798bis/">draft-addogra-rtgwg-vrrp-rfc5798bis-07</a>
+
+      
+      <br>
+      <b>Virtual Router Redundancy Protocol (VRRP) Version 3 for IPv4 and IPv6</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+
+       <a href="https://www.ietf.org/rfcdiff?url2=draft-addogra-rtgwg-vrrp-rfc5798bis-07">
+       
+
+    
+          2022-04-12
+    
+       </a>
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">37 pages</small>
+    
+
+    
+    <wbr><div class="pull-right"><span class="label label-success">New</span></div>
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-addogra-rtgwg-vrrp-rfc5798bis">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-asechoud-rtgwg-qos-oper-model/">draft-asechoud-rtgwg-qos-oper-model-10</a>
+
+      
+      <br>
+      <b>YANG Model for QoS Operational Parameters</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2022-03-07
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">16 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-asechoud-rtgwg-qos-oper-model">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-bashandy-rtgwg-segment-routing-uloop/">draft-bashandy-rtgwg-segment-routing-uloop-12</a>
+
+      
+      <br>
+      <b>Loop avoidance using Segment Routing</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2021-12-22
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">7 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-bashandy-rtgwg-segment-routing-uloop">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+
+    
+
+    
+
+    
+      <br>Reviews:
+      
+        rtgdir
+      
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+      <a href="/ipr/search/?submit=draft&amp;id=draft-bashandy-rtgwg-segment-routing-uloop">
+        <span class="label label-default">2</span>
+      </a>
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-bcx-rtgwg-tcr/">draft-bcx-rtgwg-tcr-01</a>
+
+      
+      <br>
+      <b>Token Cell Routing Data Plane Concepts</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2021-10-19
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">39 pages</small>
+    
+
+    
+
+    
+      <wbr><span class="label label-warning">Expires soon</span>
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-bcx-rtgwg-tcr">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+      <a href="/ipr/search/?submit=draft&amp;id=draft-bcx-rtgwg-tcr">
+        <span class="label label-default">2</span>
+      </a>
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-bookham-rtgwg-nfix-arch/">draft-bookham-rtgwg-nfix-arch-04</a>
+
+      
+      <br>
+      <b>An Architecture for Network Function Interconnect</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2022-01-05
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">46 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-bookham-rtgwg-nfix-arch">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-bryant-rtgwg-plfa/">draft-bryant-rtgwg-plfa-03</a>
+
+      
+      <br>
+      <b>Preferred Path Loop-Free Alternate (pLFA)</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2021-12-24
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">20 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-bryant-rtgwg-plfa">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+      <a href="/ipr/search/?submit=draft&amp;id=draft-bryant-rtgwg-plfa">
+        <span class="label label-default">2</span>
+      </a>
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-chen-rtgwg-srv6-midpoint-protection/">draft-chen-rtgwg-srv6-midpoint-protection-06</a>
+
+      
+      <br>
+      <b>SRv6 Midpoint Protection</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2021-12-19
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">10 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-chen-rtgwg-srv6-midpoint-protection">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-chunduri-rtgwg-preferred-path-routing/">draft-chunduri-rtgwg-preferred-path-routing-01</a>
+
+      
+      <br>
+      <b>Preferred Path Routing Framework</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2021-10-25
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">24 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-chunduri-rtgwg-preferred-path-routing">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-cth-rtgwg-bgp-control/">draft-cth-rtgwg-bgp-control-08</a>
+
+      
+      <br>
+      <b>Architecture for Use of BGP as Central Controller</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2022-02-22
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">21 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-cth-rtgwg-bgp-control">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-hegde-rtgwg-egress-protection-sr-networks/">draft-hegde-rtgwg-egress-protection-sr-networks-02</a>
+
+      
+      <br>
+      <b>Egress Protection for Segment Routing (SR) networks</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2022-03-02
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">10 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-hegde-rtgwg-egress-protection-sr-networks">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-kw-rtgwg-satellite-rtg-add-challanges/">draft-kw-rtgwg-satellite-rtg-add-challanges-00</a>
+
+      
+      <br>
+      <b>Routing and Addressing Challenges Introduced by New Satellite Constellations</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2022-03-07
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">10 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-kw-rtgwg-satellite-rtg-add-challanges">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-lanzhangwang-rtgwg-npmnrp/">draft-lanzhangwang-rtgwg-npmnrp-13</a>
+
+      
+      <br>
+      <b>Node Potential Oriented Multi-NextHop Routing Protocol</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+
+       <a href="https://www.ietf.org/rfcdiff?url2=draft-lanzhangwang-rtgwg-npmnrp-13">
+       
+
+    
+          2022-04-12
+    
+       </a>
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">26 pages</small>
+    
+
+    
+    <wbr><div class="pull-right"><span class="label label-success">New</span></div>
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-lanzhangwang-rtgwg-npmnrp">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-li-rtgwg-enhanced-ti-lfa/">draft-li-rtgwg-enhanced-ti-lfa-05</a>
+
+      
+      <br>
+      <b>Enhanced Topology Independent Loop-free Alternate Fast Re-route</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2021-10-21
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">12 pages</small>
+    
+
+    
+
+    
+      <wbr><span class="label label-warning">Expires soon</span>
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-li-rtgwg-enhanced-ti-lfa">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-li-rtgwg-photonic-firewall-rsa/">draft-li-rtgwg-photonic-firewall-rsa-02</a>
+
+      
+      <br>
+      <b>Photonic firewall oriented routing and spectrum allocation strategy in optical networks</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2021-12-26
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">9 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-li-rtgwg-photonic-firewall-rsa">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-liu-rtgwg-srv6-protection-considerations/">draft-liu-rtgwg-srv6-protection-considerations-01</a>
+
+      
+      <br>
+      <b>Considerations for Protection of SRv6 Networks</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2022-03-03
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">18 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-liu-rtgwg-srv6-protection-considerations">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-miao-rtgwg-hpccplus/">draft-miao-rtgwg-hpccplus-00</a>
+
+      
+      <br>
+      <b>HPCC++: Enhanced High Precision Congestion Control</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2022-03-07
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">20 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-miao-rtgwg-hpccplus">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-mtm-rtgwg-bfd-mc-lag/">draft-mtm-rtgwg-bfd-mc-lag-04</a>
+
+      
+      <br>
+      <b>Bidirectional Forwarding Detection (BFD) on Multi-chassis Link Aggregation Group (MC-LAG) Interfaces</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+
+       <a href="https://www.ietf.org/rfcdiff?url2=draft-mtm-rtgwg-bfd-mc-lag-04">
+       
+
+    
+          2022-03-30
+    
+       </a>
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">5 pages</small>
+    
+
+    
+    <wbr><div class="pull-right"><span class="label label-success">New</span></div>
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-mtm-rtgwg-bfd-mc-lag">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+      <a href="/ipr/search/?submit=draft&amp;id=draft-mtm-rtgwg-bfd-mc-lag">
+        <span class="label label-default">2</span>
+      </a>
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-pfeifer-rtgwg-dmpr/">draft-pfeifer-rtgwg-dmpr-01</a>
+
+      
+      <br>
+      <b>Dynamic MultiPath Routing Protocol</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2021-11-27
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">22 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-pfeifer-rtgwg-dmpr">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-sl-rtgwg-far-dcn/">draft-sl-rtgwg-far-dcn-17</a>
+
+      
+      <br>
+      <b>Generic Fault-Avoidance Routing Protocol for Data Center Networks</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2021-11-28
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">37 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-sl-rtgwg-far-dcn">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+      <br>
+      
+	Response to Review Needed:<wbr>
+      
+    
+
+    
+      Informational
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      <a title="Shepherd" href="/person/rfc-ise@rfc-editor.org"><span class="small text-muted">Eliot Lear</span></a>&nbsp;<a href="mailto:rfc-ise%40rfc-editor.org"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-trossen-rtgwg-impact-of-dlts/">draft-trossen-rtgwg-impact-of-dlts-01</a>
+
+      
+      <br>
+      <b>Impact of DLTs on Provider Networks</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2022-03-02
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">18 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-trossen-rtgwg-impact-of-dlts">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-trossen-rtgwg-routing-beyond-reachability/">draft-trossen-rtgwg-routing-beyond-reachability-00</a>
+
+      
+      <br>
+      <b>Continuing to Evolve Internet Routing Beyond &#39;Mere&#39; Reachability</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2022-02-08
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">25 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-trossen-rtgwg-routing-beyond-reachability">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-wang-rtgwg-cloud-network-integration/">draft-wang-rtgwg-cloud-network-integration-00</a>
+
+      
+      <br>
+      <b>cloud-network integration</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2021-10-25
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">7 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-wang-rtgwg-cloud-network-integration">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-xu-rtgwg-twod-ip-routing/">draft-xu-rtgwg-twod-ip-routing-01</a>
+
+      
+      <br>
+      <b>Two Dimensional IP Routing Architecture</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2022-03-24
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">13 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-xu-rtgwg-twod-ip-routing">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+      
+    </tbody>
+  </table>
+
+
+  <ul class="list-inline pull-right" style="margin-top:1em;">
+  <li>
+    <label id="list-feeds">Atom feed:</label>
+    <div class="btn-group" role="group" aria-labelledby="list-feeds">
+      <a class="btn btn-default" title="Feed of all changes" href="/group/rtgwg/documents/feed/">All changes</a>
+      <a class="btn btn-default" title="Feed of only significant state changes" href="/group/rtgwg/documents/feed/?significant=1">Significant</a>
+    </div>
+  </li>
+
+  
+    <li><a class="btn btn-default" href="/group/rtgwg/documents/subscription/">
+      <i class="glyphicon glyphicon-envelope"></i>
+      
+        Subscribe to changes
+      
+    </a></li>
+  
+
+  <li><a class="btn btn-default" href="/group/rtgwg/documents/csv/"><i class="glyphicon glyphicon-list"></i> Export as CSV</a></li>
+</ul>
+
+
+
+
+
+        
+        
+	  </div>
+        
+
+	
+	<hr>
+	  <div class="col-md-12 col-sm-12">
+	    <div class="text-center padded">
+	        <a href="https://www.rfc-editor.org/" class="padded">RFC&nbsp;Editor</a>
+	        <a href="https://www.ietf.org/llc/" class="padded">IASA&nbsp;&amp;&nbsp;IETF&nbsp;LLC</a>
+	        <a href="https://trustee.ietf.org/" class="padded">IETF&nbsp;Trust</a>
+	        <a href="https://www.irtf.org/" class="padded">IRTF</a>
+	        <a href="https://www.ietf.org/" class="padded">IETF</a>
+	        <a href="https://www.ietf.org/iesg/" class="padded">IESG</a>
+	        <a href="https://www.iab.org/" class="padded">IAB</a>
+	        <a href="https://www.iana.org/" class="padded">IANA</a>
+	        <a href="https://www.ietf.org/privacy-statement/" class="padded">Privacy&nbsp;Statement</a>
+	    </div>
+	  </div>
+
+
+        <footer class="col-md-12 col-sm-12">
+	  <div class="col-md-12">
+	    <div class="text-center">
+	      <p class="small text-muted">
+	        
+		  <a href="/release/about">About</a> |
+	          IETF Datatracker |
+	          <a href="/release/7.46.0.p4/">Version 7.46.0.p4</a> |
+	          2022-03-10 |
+	        
+		Report a bug:
+	        <a href="https://trac.ietf.org/trac/ietfdb/newticket">Tracker:<span class="fa fa-bug"></span></a>
+                
+	        <a href="mailto:datatracker-project@ietf.org">Email:<span class="fa fa-envelope"></span></a>
+                
+		<br>
+                Python 3.6.12 |
+		Django 2.2.27
+	      </p>
+	    </div>
+	  </div>
+        </footer>
+	
+
+      </div>
+
+      
+
+
+
+
+      <script src="https://www.ietf.org/lib/dt/7.46.0/jquery/jquery.min.js"></script>
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      <script src="https://www.ietf.org/lib/dt/7.46.0/js-cookie/src/js.cookie.js"></script>
+      <script src="https://www.ietf.org/lib/dt/7.46.0/ietf/bootstrap/js/bootstrap.min.js"></script>
+      <script src="https://www.ietf.org/lib/dt/7.46.0/ietf/js/ietf.js"></script>
+      
+<script src="https://www.ietf.org/lib/dt/7.46.0/jquery.tablesorter/js/jquery.tablesorter.combined.min.js"></script>
+
+      
+  <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6fb2add93f890768',m:'fM6L4hcMP9MjkMNZIqAuvtWyau7BEoKfeNaBKQhBTfQ-1649836946-0-AfC0h8kLflRFFDIuCUfPEK9ryftLyAYK1jqzDZEGBNlNFKQjMoYmA5i97N76nEJbEUim4Pq/izHmHBl0j3GKFaeVSB2B55lU49PDPwA2Nq0GW5j3m4BM6T+vRclRpXLaMR5Y5LtBecy5QZ5bOuNLRq0=',s:[0x34d605d063,0x57f3734e14],}})();</script></body>
+</html>

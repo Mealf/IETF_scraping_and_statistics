@@ -1,0 +1,3221 @@
+<!DOCTYPE html> 
+
+
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Application-Layer Traffic Optimization (alto) - Documents</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://www.ietf.org/lib/dt/7.46.0/ptmono/stylesheet.css" rel='stylesheet' type='text/css'>
+    <link href="https://www.ietf.org/lib/dt/7.46.0/ptsans/stylesheet.css" rel='stylesheet' type='text/css'>
+    <link href="https://www.ietf.org/lib/dt/7.46.0/ptserif/stylesheet.css" rel='stylesheet' type='text/css'>
+    
+
+    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/ietf/font-datatracker/css/font-datatracker.css">
+    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/ietf/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/ietf/bootstrap/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/ietf/css/ietf.css">
+    
+    <style>
+     
+    </style>
+
+    
+<link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/jquery.tablesorter/css/theme.bootstrap.min.css">
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.46.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.46.0/ietf/images/apple-touch-icon.png">
+  <script async src='/cdn-cgi/bm/cv/669835187/api.js'></script></head>
+
+  <body  data-group-menu-data-url="/group/groupmenu.json">
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+	  <div class="navbar-header">
+	    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+	      <span class="sr-only">Toggle navigation</span>
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+	    </button>
+	    <a class="navbar-brand" href="/">
+	       <img alt="IETF Logo" src="https://www.ietf.org/lib/dt/7.46.0/ietf/images/ietflogo-small-transparent.png">
+	       
+		  
+		  Datatracker
+		  
+	       
+	    </a>
+	  </div>
+
+	  <noscript>
+	    <p class="navbar-text"><small>Enable Javascript for full functionality.</small></p>
+	  </noscript>
+
+	  <div class="collapse navbar-collapse" id="navbar-collapse">
+	    <ul class="hidden-nojs nav navbar-nav">
+              
+
+
+
+
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+  
+  Groups
+  
+    </a>
+    <ul class="dropdown-menu" role="menu">
+
+    <li class="dropdown-header visible-lg-block">By area/parent</li>
+  
+        
+
+  <li class="hidden-nojs dropdown-submenu group-menu group-parent-2010">
+    <a href="/wg/#art">Apps &amp; Realtime</a>
+  </li>
+
+  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1008">
+    <a href="/wg/#gen">General</a>
+  </li>
+
+  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1052">
+    <a href="/wg/#int">Internet</a>
+  </li>
+
+  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1193">
+    <a href="/wg/#ops">Ops &amp; Mgmt</a>
+  </li>
+
+  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1249">
+    <a href="/wg/#rtg">Routing</a>
+  </li>
+
+  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1260">
+    <a href="/wg/#sec">Security</a>
+  </li>
+
+  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1324">
+    <a href="/wg/#tsv">Transport</a>
+  </li>
+
+  <li class="hidden-nojs dropdown-submenu group-menu group-parent-7">
+    <a href="/program/">IAB</a>
+  </li>
+
+  <li class="hidden-nojs dropdown-submenu group-menu group-parent-3">
+    <a href="/rg/">IRTF</a>
+  </li>
+
+  <li class="hidden-nojs dropdown-submenu group-menu group-parent-2309">
+    <a href="/adm/">IETF LLC</a>
+  </li>
+
+
+        <li class="dropdown-submenu group-menu"><a href="/group/">Other</a>
+<ul class="dropdown-menu" role="menu">
+
+  <li>
+    <a href="/ag/">Active AGs</a>
+  </li>
+
+  <li>
+    <a href="/area/">Active Areas</a>
+  </li>
+
+  <li>
+    <a href="/dir/">Active Directorates</a>
+  </li>
+
+  <li>
+    <a href="/program/">Active Programs</a>
+  </li>
+
+  <li>
+    <a href="/rag/">Active RAGs</a>
+  </li>
+
+  <li>
+    <a href="/team/">Active Teams</a>
+  </li>
+
+
+  <li>
+    <a href="/group/rsoc/">RSOC</a>
+  </li>
+
+</ul>
+ </li>
+
+  <li class="divider hidden-xs"></li>
+  <li class="dropdown-header hidden-xs">New work</li>
+  <li><a href="/group/chartering/">Chartering groups</a></li>
+  <li><a href="/wg/bofs/">BOFs</a></li>
+  <li><a href="/doc/bof-requests">BOF Requests</a></li>
+
+  <li class="divider hidden-xs"></li>
+  <li class="dropdown-header hidden-xs">Other groups</li>
+  <li><a href="/group/concluded/">Concluded groups</a></li>
+  <li><a href="/list/nonwg">Non-WG lists</a></li>
+
+</ul>
+</li>
+
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+  
+  Documents
+  
+    </a>
+    <ul class="dropdown-menu" role="menu">
+  
+  <li><a href="/doc/search">Search</a></li>
+  <li><a href="/doc/recent">Recent drafts</a></li>
+  <li><a href="/submit/">Draft submission</a></li>
+
+  
+
+
+  <li class="divider hidden-xs"></li>
+  <li class="dropdown-header hidden-xs">RFC streams</li>
+        <li><a href="/stream/iab/">IAB</a></li>
+        <li><a href="/stream/irtf/">IRTF</a></li>
+        <li><a href="/stream/ise/">ISE</a></li>
+
+</ul>
+</li>
+
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+  
+  Meetings
+  
+    </a>
+    <ul class="dropdown-menu" role="menu">
+  
+
+
+  
+  <li class="dropdown-header visible-lg-block">Next meeting</li>
+  
+  <li><a href="/meeting/agenda/">Agenda</a></li>
+  <li><a href="/meeting/materials/">Materials</a></li>
+  <li><a href="/meeting/floor-plan/">Floor plan</a></li>
+  <li><a href="https://www.ietf.org/how/meetings/register/">Registration</a></li>
+  <li><a href="/meeting/important-dates/">Important dates</a></li>
+  <li><a href="/secr/sreq/">Request a session</a></li>
+  <li><a href="/meeting/requests">Session requests</a></li>
+  
+  <li class="divider hidden-xs"></li>
+  <li class="dropdown-header visible-lg-block">Upcoming meetings</li>
+  
+  <li><a href="/meeting/upcoming">Upcoming meetings</a></li>
+  
+  <li class="divider hidden-xs"></li>
+  <li class="dropdown-header visible-lg-block">Past meetings</li>
+  
+  <li><a href="/meeting/past">Past meetings</a></li>
+  <li><a href="https://www.ietf.org/how/meetings/past/">Meeting proceedings</a></li>
+</ul>
+</li>
+
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+  
+  Other
+  
+    </a>
+    <ul class="dropdown-menu" role="menu">
+  
+
+  <li><a href="/ipr/">IPR disclosures</a></li>
+  <li><a href="/liaison/">Liaison statements</a></li>
+  <li><a href="/iesg/agenda/">IESG agenda</a></li>
+  <li><a href="/nomcom/">NomComs</a></li>
+  <li><a href="/doc/downref/">Downref registry</a></li>
+  <li class="dropdown-submenu">
+    <a href="/stats/">Statistics</a>
+    <ul class="dropdown-menu">
+      <li><a href="/stats/document/">Drafts/RFCs</a></li>
+      <li><a href="/stats/meeting/">Meetings</a></li>
+      
+    </ul>
+  </li>
+  <li><a href="/group/edu/materials/">Tutorials</a></li>
+  <li><a href="/api/">API Help</a></li>  
+  <li><a href="/release/">Release notes</a></li>
+  <li class="divider hidden-xs"></li>
+  <li><a href="https://trac.ietf.org/trac/ietfdb/newticket"><span class="fa fa-bug"></span> Report a bug</a></li>
+</ul>
+</li>
+
+
+  
+
+
+<li class="dropdown">
+  
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+     User 
+  </a>
+  <ul class="dropdown-menu" role="menu">
+  
+
+  
+    
+      <li><a rel="nofollow" href="/accounts/login/?next=/wg/alto/documents/">Sign in</a></li>
+      <li><a rel="nofollow" href="/accounts/reset/">Password reset</a></li>
+      <li><a href="/accounts/settings/" rel="nofollow">Preferences</a></li>
+    
+    <li><a href="/help/personal-information">Handling of personal information</a></li>  
+  
+
+  
+    <li><a href="/accounts/create/">New account</a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</ul>
+
+            </ul>
+        
+            <p class="navbar-text"></p>
+            <a class="btn btn-warning btn-sm navbar-btn" rel="nofollow" href="/accounts/login/?next=/wg/alto/documents/">Sign in</a>
+        
+
+	    <form class="navbar-form navbar-right hidden-xs" action="/doc/search/">
+	      <div class="form-group">
+	        <input class="form-control input-sm" type="text" name="name" placeholder="Document search" required>
+	        <input type="hidden" name="activedrafts" value="on">
+	        <input type="hidden" name="rfcs" value="on">
+	      </div>
+	    </form>
+	  </div>
+        </div>
+      </nav>
+      <div class="container-fluid-narrow">
+        
+        
+        
+	  <div class="col-md-12 col-sm-12" id="content">
+        
+        
+  
+
+  <h1>Application-Layer Traffic Optimization (alto)
+    
+    
+    
+  </h1>
+
+  <ul class="nav nav-tabs" role="tablist">
+    
+      <li >
+        <a href="/wg/alto/about/">About</a>
+      </li>
+    
+      <li class="active">
+        <a href="/wg/alto/documents/">Documents</a>
+      </li>
+    
+      <li >
+        <a href="/wg/alto/meetings/">Meetings</a>
+      </li>
+    
+      <li >
+        <a href="/wg/alto/history/">History</a>
+      </li>
+    
+      <li >
+        <a href="/wg/alto/photos/">Photos</a>
+      </li>
+    
+      <li >
+        <a href="/wg/alto/email/">Email expansions</a>
+      </li>
+    
+      <li >
+        <a href="https://mailarchive.ietf.org/arch/browse/alto/">List archive &raquo;</a>
+      </li>
+    
+  </ul>
+
+  <div class="buttonlist">
+    
+      
+    
+  </div>
+
+  
+  
+  
+    
+
+
+
+
+  
+
+  
+  <table class="table table-condensed table-striped tablesorter">
+    <thead>
+      <tr>
+        <th class="sorter-false"></th>
+
+        
+          
+            <th data-header="document">
+	      
+	        Document
+	      
+            </th>
+          
+        
+          
+        
+          
+            <th data-header="date">
+	      
+	        Date
+	      
+            </th>
+          
+        
+          
+            <th data-header="status">
+	      
+	        Status
+	      
+            </th>
+          
+        
+          
+            <th data-header="ipr">
+	      
+	        IPR
+	      
+            </th>
+          
+        
+          
+            <th data-header="ad">
+	      
+	        AD / Shepherd
+	      
+            </th>
+          
+        
+
+        
+      </tr>
+    </thead>
+
+    
+
+      
+    <tbody>
+        <tr class="info">
+          <th></th>
+          
+              <th colspan="5">
+          
+	    Active Internet-Drafts (6 hits)
+          </th>
+        </tr>
+    </tbody>
+
+    <tbody>
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-ietf-alto-cdni-request-routing-alto/">draft-ietf-alto-cdni-request-routing-alto-22</a>
+
+      
+      <br>
+      <b>Content Delivery Network Interconnection (CDNI) Request Routing: CDNI Footprint and Capabilities Advertisement using ALTO</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2022-02-16
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">44 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-alto-cdni-request-routing-alto">
+    
+  </div>
+
+  
+    
+      RFC Ed Queue
+    
+
+    
+      <wbr>: <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-alto-cdni-request-routing-alto">EDIT</a>
+    
+
+    <wbr>
+
+    <wbr><span class="ietf-small">for 49 days</span>
+    
+    
+
+    
+      
+    
+
+    
+      <br>
+      
+	Submitted to IESG for Publication:<wbr>
+      
+    
+
+    
+      Proposed Standard
+    
+
+    
+
+    
+      <br>Reviews:
+      
+        artart, 
+      
+        genart, 
+      
+        intdir, 
+      
+        opsdir, 
+      
+        secdir
+      
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/martin.h.duke@gmail.com"><span class="">Martin Duke</span></a>&nbsp;<a href="mailto:martin.h.duke%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/vijay.gurbani@gmail.com"><span class="small text-muted">Vijay Gurbani</span></a>&nbsp;<a href="mailto:vijay.gurbani%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-ietf-alto-cost-mode/">draft-ietf-alto-cost-mode-01</a>
+
+      
+      <br>
+      <b>A Cost Mode Registry for the Application-Layer Traffic Optimization (ALTO) Protocol</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+
+       <a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-alto-cost-mode-01">
+       
+
+    
+          2022-04-11
+    
+       </a>
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">6 pages</small>
+    
+
+    
+    <wbr><div class="pull-right"><span class="label label-success">New</span></div>
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-alto-cost-mode">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+      <br>
+      
+	WG Consensus: Waiting for Write-Up:<wbr>
+      
+    
+
+    
+      Proposed Standard
+    
+
+    
+
+    
+
+    
+      <br>
+      <span title="Part of alto milestone: Send Cost Modes Update to IESG for publication" class="milestone">Apr 2022</span>
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      <a title="Shepherd" href="/person/kaigao@scu.edu.cn"><span class="small text-muted">Kai Gao</span></a>&nbsp;<a href="mailto:kaigao%40scu.edu.cn"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-ietf-alto-oam-yang/">draft-ietf-alto-oam-yang-00</a>
+
+      
+      <br>
+      <b>A Yang Data Model for OAM and Management of ALTO Protocol</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+
+       <a href="https://www.ietf.org/rfcdiff?url1=draft-zhang-alto-oam-yang-02.txt&url2=draft-ietf-alto-oam-yang-00">
+
+    
+          2022-04-12
+    
+       </a>
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">36 pages</small>
+    
+
+    
+    <wbr><div class="pull-right"><span class="label label-success">New</span></div>
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-alto-oam-yang">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+      <br>
+      
+	WG Document
+      
+    
+
+    
+
+    
+
+    
+
+    
+      <br>
+      <span title="Part of alto milestone: ALTO OAM Document/YANG Model" class="milestone">Dec 2022</span>
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-ietf-alto-path-vector/">draft-ietf-alto-path-vector-25</a>
+
+      
+      <br>
+      <b>An ALTO Extension: Path Vector</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2022-03-20
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">69 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-alto-path-vector">
+    
+  </div>
+
+  
+    
+      RFC Ed Queue
+    
+
+    
+      <wbr>: <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-alto-path-vector">MISSREF</a>
+    
+
+    <wbr>
+
+    <wbr><span class="ietf-small">for 23 days</span>
+    
+    
+
+    
+      
+    
+
+    
+      <br>
+      
+	Submitted to IESG for Publication:<wbr>
+      
+    
+
+    
+      Experimental
+    
+
+    
+
+    
+      <br>Reviews:
+      
+        artart, 
+      
+        genart, 
+      
+        opsdir, 
+      
+        secdir
+      
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/martin.h.duke@gmail.com"><span class="">Martin Duke</span></a>&nbsp;<a href="mailto:martin.h.duke%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/vijay.gurbani@gmail.com"><span class="small text-muted">Vijay Gurbani</span></a>&nbsp;<a href="mailto:vijay.gurbani%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-ietf-alto-performance-metrics/">draft-ietf-alto-performance-metrics-28</a>
+
+      
+      <br>
+      <b>ALTO Performance Cost Metrics</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2022-03-21
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">39 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-alto-performance-metrics">
+    
+  </div>
+
+  
+    
+      RFC Ed Queue
+    
+
+    
+      <wbr>: <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-alto-performance-metrics">MISSREF</a>
+    
+
+    <wbr>
+
+    <wbr><span class="ietf-small">for 23 days</span>
+    
+    
+
+    
+      
+    
+
+    
+      <br>
+      
+	Submitted to IESG for Publication:<wbr>
+      
+    
+
+    
+      Proposed Standard
+    
+
+    
+
+    
+      <br>Reviews:
+      
+        artart, 
+      
+        opsdir, 
+      
+        secdir, 
+      
+        tsvart
+      
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/martin.h.duke@gmail.com"><span class="">Martin Duke</span></a>&nbsp;<a href="mailto:martin.h.duke%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/ietf@j-f-s.de"><span class="small text-muted">Jan Seedorf</span></a>&nbsp;<a href="mailto:ietf%40j-f-s.de"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-ietf-alto-unified-props-new/">draft-ietf-alto-unified-props-new-24</a>
+
+      
+      <br>
+      <b>An ALTO Extension: Entity Property Maps</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2022-02-28
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">63 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-alto-unified-props-new">
+    
+  </div>
+
+  
+    
+      RFC Ed Queue
+    
+
+    
+      <wbr>: <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-alto-unified-props-new">EDIT</a>
+    
+
+    <wbr>
+
+    <wbr><span class="ietf-small">for 44 days</span>
+    
+    
+
+    
+      
+    
+
+    
+      <br>
+      
+	Submitted to IESG for Publication:<wbr>
+      
+    
+
+    
+      Proposed Standard
+    
+
+    
+
+    
+      <br>Reviews:
+      
+        artart, 
+      
+        opsdir, 
+      
+        secdir
+      
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/martin.h.duke@gmail.com"><span class="">Martin Duke</span></a>&nbsp;<a href="mailto:martin.h.duke%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/vijay.gurbani@gmail.com"><span class="small text-muted">Vijay Gurbani</span></a>&nbsp;<a href="mailto:vijay.gurbani%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+      
+    <tbody>
+        <tr class="info">
+          <th></th>
+          
+              <th colspan="5">
+          
+	    RFCs (9 hits)
+          </th>
+        </tr>
+    </tbody>
+
+    <tbody>
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc5693/">RFC 5693</a>
+
+      
+        <i>(was draft-ietf-alto-problem-statement)</i>
+      
+      <br>
+      <b>Application-Layer Traffic Optimization (ALTO) Problem Statement</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2009-10
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">14 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-alto-problem-statement">
+    
+  </div>
+
+  
+    Informational RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/lisa.dusseault@gmail.com"><span class="">Lisa Dusseault</span></a>&nbsp;<a href="mailto:lisa.dusseault%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc6708/">RFC 6708</a>
+
+      
+        <i>(was draft-ietf-alto-reqs)</i>
+      
+      <br>
+      <b>Application-Layer Traffic Optimization (ALTO) Requirements</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2012-09
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">20 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-alto-reqs">
+    
+  </div>
+
+  
+    Informational RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/wes@mti-systems.com"><span class="">Wesley Eddy</span></a>&nbsp;<a href="mailto:wes%40mti-systems.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/enrico.marocco@telecomitalia.it"><span class="small text-muted">Enrico Marocco</span></a>&nbsp;<a href="mailto:enrico.marocco%40telecomitalia.it"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc7285/">RFC 7285</a>
+
+      
+        <i>(was draft-ietf-alto-protocol)</i>
+      
+      <br>
+      <b>Application-Layer Traffic Optimization (ALTO) Protocol</b>
+      
+        <a class="label label-danger pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=7285">Errata</a>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2014-09
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">91 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-alto-protocol">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/spencerdawkins.ietf@gmail.com"><span class="">Spencer Dawkins</span></a>&nbsp;<a href="mailto:spencerdawkins.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/enrico.marocco@telecomitalia.it"><span class="small text-muted">Enrico Marocco</span></a>&nbsp;<a href="mailto:enrico.marocco%40telecomitalia.it"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc7286/">RFC 7286</a>
+
+      
+        <i>(was draft-ietf-alto-server-discovery)</i>
+      
+      <br>
+      <b>Application-Layer Traffic Optimization (ALTO) Server Discovery</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2014-11
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">15 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-alto-server-discovery">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-alto-server-discovery">
+        <span class="label label-default">1</span>
+      </a>
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/spencerdawkins.ietf@gmail.com"><span class="">Spencer Dawkins</span></a>&nbsp;<a href="mailto:spencerdawkins.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/vijay.gurbani@alcatel-lucent.com"><span class="small text-muted">Vijay Gurbani</span></a>&nbsp;<a href="mailto:vijay.gurbani%40alcatel-lucent.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc7971/">RFC 7971</a>
+
+      
+        <i>(was draft-ietf-alto-deployments)</i>
+      
+      <br>
+      <b>Application-Layer Traffic Optimization (ALTO) Deployment Considerations</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2016-10
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">77 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-alto-deployments">
+    
+  </div>
+
+  
+    Informational RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-alto-deployments">
+        <span class="label label-default">1</span>
+      </a>
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/ietf@kuehlewind.net"><span class="">Mirja Kühlewind</span></a>&nbsp;<a href="mailto:ietf%40kuehlewind.net"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/vkg@bell-labs.com"><span class="small text-muted">Vijay Gurbani</span></a>&nbsp;<a href="mailto:vkg%40bell-labs.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc8189/">RFC 8189</a>
+
+      
+        <i>(was draft-ietf-alto-multi-cost)</i>
+      
+      <br>
+      <b>Multi-Cost Application-Layer Traffic Optimization (ALTO)</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2017-10
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">29 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-alto-multi-cost">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-alto-multi-cost">
+        <span class="label label-default">2</span>
+      </a>
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/ietf@kuehlewind.net"><span class="">Mirja Kühlewind</span></a>&nbsp;<a href="mailto:ietf%40kuehlewind.net"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/ietf@j-f-s.de"><span class="small text-muted">Jan Seedorf</span></a>&nbsp;<a href="mailto:ietf%40j-f-s.de"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc8686/">RFC 8686</a>
+
+      
+        <i>(was draft-ietf-alto-xdom-disc)</i>
+      
+      <br>
+      <b>Application-Layer Traffic Optimization (ALTO) Cross-Domain Server Discovery</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2020-02
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">34 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-alto-xdom-disc">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/ietf@kuehlewind.net"><span class="">Mirja Kühlewind</span></a>&nbsp;<a href="mailto:ietf%40kuehlewind.net"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/jan.seedorf@hft-stuttgart.de"><span class="small text-muted">Jan Seedorf</span></a>&nbsp;<a href="mailto:jan.seedorf%40hft-stuttgart.de"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc8895/">RFC 8895</a>
+
+      
+        <i>(was draft-ietf-alto-incr-update-sse)</i>
+      
+      <br>
+      <b>Application-Layer Traffic Optimization (ALTO) Incremental Updates Using Server-Sent Events (SSE)</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2020-11
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">52 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-alto-incr-update-sse">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/ietf@kuehlewind.net"><span class="">Mirja Kühlewind</span></a>&nbsp;<a href="mailto:ietf%40kuehlewind.net"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/vkg@bell-labs.com"><span class="small text-muted">Vijay Gurbani</span></a>&nbsp;<a href="mailto:vkg%40bell-labs.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc8896/">RFC 8896</a>
+
+      
+        <i>(was draft-ietf-alto-cost-calendar)</i>
+      
+      <br>
+      <b>Application-Layer Traffic Optimization (ALTO) Cost Calendar</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2020-11
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">35 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-alto-cost-calendar">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-alto-cost-calendar">
+        <span class="label label-default">1</span>
+      </a>
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/ietf@kuehlewind.net"><span class="">Mirja Kühlewind</span></a>&nbsp;<a href="mailto:ietf%40kuehlewind.net"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/vijay.gurbani@nokia.com"><span class="small text-muted">Vijay Gurbani</span></a>&nbsp;<a href="mailto:vijay.gurbani%40nokia.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+      
+    </tbody>
+  </table>
+
+
+  
+  
+
+
+
+
+  
+
+  
+  <table class="table table-condensed table-striped tablesorter">
+    <thead>
+      <tr>
+        <th class="sorter-false"></th>
+
+        
+          
+            <th data-header="document">
+	      
+	        Document
+	      
+            </th>
+          
+        
+          
+        
+          
+            <th data-header="date">
+	      
+	        Date
+	      
+            </th>
+          
+        
+          
+            <th data-header="status">
+	      
+	        Status
+	      
+            </th>
+          
+        
+          
+            <th data-header="ipr">
+	      
+	        IPR
+	      
+            </th>
+          
+        
+          
+            <th data-header="ad">
+	      
+	        AD / Shepherd
+	      
+            </th>
+          
+        
+
+        
+      </tr>
+    </thead>
+
+    
+
+      
+    <tbody>
+        <tr class="info">
+          <th></th>
+          
+              <th colspan="5">
+          
+	    Related Internet-Drafts (9 hits)
+          </th>
+        </tr>
+    </tbody>
+
+    <tbody>
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-contreras-alto-ietf-nef/">draft-contreras-alto-ietf-nef-00</a>
+
+      
+      <br>
+      <b>Considering ALTO as IETF Network Exposure Function</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2021-10-25
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">10 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-contreras-alto-ietf-nef">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-contreras-alto-service-edge/">draft-contreras-alto-service-edge-04</a>
+
+      
+      <br>
+      <b>Use of ALTO for Determining Service Edge</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2022-03-01
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">9 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-contreras-alto-service-edge">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-giraltyellamraju-alto-bsg-requirements/">draft-giraltyellamraju-alto-bsg-requirements-01</a>
+
+      
+      <br>
+      <b>Supporting Bottleneck Structure Graphs in ALTO: Use Cases and Requirements</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2022-03-23
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">36 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-giraltyellamraju-alto-bsg-requirements">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+      <a href="/ipr/search/?submit=draft&amp;id=draft-giraltyellamraju-alto-bsg-requirements">
+        <span class="label label-default">6</span>
+      </a>
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-liu-alto-can-usecase/">draft-liu-alto-can-usecase-01</a>
+
+      
+      <br>
+      <b>Computing-aware Networking Use case of ALTO</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2022-01-19
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">11 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-liu-alto-can-usecase">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-schott-alto-new-transport/">draft-schott-alto-new-transport-00</a>
+
+      
+      <br>
+      <b>ALTO New Transport using HTTP/2</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2022-03-07
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">15 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-schott-alto-new-transport">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-xing-alto-sdn-controller-aware-mptcp-mpquic/">draft-xing-alto-sdn-controller-aware-mptcp-mpquic-02</a>
+
+      
+      <br>
+      <b>The SDN-based MPTCP-aware and MPQUIC-aware Transmission Control Model using ALTO</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+
+       <a href="https://www.ietf.org/rfcdiff?url2=draft-xing-alto-sdn-controller-aware-mptcp-mpquic-02">
+       
+
+    
+          2022-04-12
+    
+       </a>
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">12 pages</small>
+    
+
+    
+    <wbr><div class="pull-right"><span class="label label-success">New</span></div>
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-xing-alto-sdn-controller-aware-mptcp-mpquic">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-yang-alto-deliver-functions-over-networks/">draft-yang-alto-deliver-functions-over-networks-03</a>
+
+      
+      <br>
+      <b>Delivering Functions over Networks: Traffic and Performance Optimization for Edge Computing using ALTO</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2022-03-21
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">13 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-yang-alto-deliver-functions-over-networks">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-yang-alto-http2-transport/">draft-yang-alto-http2-transport-01</a>
+
+      
+      <br>
+      <b>ALTO Transport using HTTP/2</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2021-10-25
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">8 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-yang-alto-http2-transport">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-yang-alto-transport-analysis/">draft-yang-alto-transport-analysis-00</a>
+
+      
+      <br>
+      <b>ALTO Transport Analysis</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2021-10-25
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">4 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-yang-alto-transport-analysis">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+      
+    </tbody>
+  </table>
+
+
+  <ul class="list-inline pull-right" style="margin-top:1em;">
+  <li>
+    <label id="list-feeds">Atom feed:</label>
+    <div class="btn-group" role="group" aria-labelledby="list-feeds">
+      <a class="btn btn-default" title="Feed of all changes" href="/group/alto/documents/feed/">All changes</a>
+      <a class="btn btn-default" title="Feed of only significant state changes" href="/group/alto/documents/feed/?significant=1">Significant</a>
+    </div>
+  </li>
+
+  
+    <li><a class="btn btn-default" href="/group/alto/documents/subscription/">
+      <i class="glyphicon glyphicon-envelope"></i>
+      
+        Subscribe to changes
+      
+    </a></li>
+  
+
+  <li><a class="btn btn-default" href="/group/alto/documents/csv/"><i class="glyphicon glyphicon-list"></i> Export as CSV</a></li>
+</ul>
+
+
+
+
+
+        
+        
+	  </div>
+        
+
+	
+	<hr>
+	  <div class="col-md-12 col-sm-12">
+	    <div class="text-center padded">
+	        <a href="https://www.rfc-editor.org/" class="padded">RFC&nbsp;Editor</a>
+	        <a href="https://www.ietf.org/llc/" class="padded">IASA&nbsp;&amp;&nbsp;IETF&nbsp;LLC</a>
+	        <a href="https://trustee.ietf.org/" class="padded">IETF&nbsp;Trust</a>
+	        <a href="https://www.irtf.org/" class="padded">IRTF</a>
+	        <a href="https://www.ietf.org/" class="padded">IETF</a>
+	        <a href="https://www.ietf.org/iesg/" class="padded">IESG</a>
+	        <a href="https://www.iab.org/" class="padded">IAB</a>
+	        <a href="https://www.iana.org/" class="padded">IANA</a>
+	        <a href="https://www.ietf.org/privacy-statement/" class="padded">Privacy&nbsp;Statement</a>
+	    </div>
+	  </div>
+
+
+        <footer class="col-md-12 col-sm-12">
+	  <div class="col-md-12">
+	    <div class="text-center">
+	      <p class="small text-muted">
+	        
+		  <a href="/release/about">About</a> |
+	          IETF Datatracker |
+	          <a href="/release/7.46.0.p4/">Version 7.46.0.p4</a> |
+	          2022-03-10 |
+	        
+		Report a bug:
+	        <a href="https://trac.ietf.org/trac/ietfdb/newticket">Tracker:<span class="fa fa-bug"></span></a>
+                
+	        <a href="mailto:datatracker-project@ietf.org">Email:<span class="fa fa-envelope"></span></a>
+                
+		<br>
+                Python 3.6.12 |
+		Django 2.2.27
+	      </p>
+	    </div>
+	  </div>
+        </footer>
+	
+
+      </div>
+
+      
+
+
+
+
+      <script src="https://www.ietf.org/lib/dt/7.46.0/jquery/jquery.min.js"></script>
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      <script src="https://www.ietf.org/lib/dt/7.46.0/js-cookie/src/js.cookie.js"></script>
+      <script src="https://www.ietf.org/lib/dt/7.46.0/ietf/bootstrap/js/bootstrap.min.js"></script>
+      <script src="https://www.ietf.org/lib/dt/7.46.0/ietf/js/ietf.js"></script>
+      
+<script src="https://www.ietf.org/lib/dt/7.46.0/jquery.tablesorter/js/jquery.tablesorter.combined.min.js"></script>
+
+      
+  <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6fb2afe2fb3d6b72',m:'exy_SKS7sqZCgMjs3k.G0ZGHl2foa7Lzq6XgjZfln48-1649837027-0-ARxC4M49j4B6V+w13J0A9NuaBYcnfCDXoCVzxo45hDKFNWgJiR6kF3d+hmjJnwRWEL8j+1KbyCu3N/c/d1MLoz0BEFwon9AF/bpnLNUUfmRUOJL0R0M6N9mkTBuKVjbRZ3qJdXz98WEeyxc2bccSyx0=',s:[0xf156c4cbff,0xcb2bfd4b20],}})();</script></body>
+</html>

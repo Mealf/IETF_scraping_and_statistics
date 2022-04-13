@@ -1,0 +1,10809 @@
+<!DOCTYPE html> 
+
+
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>IP Performance Measurement (ippm) - Documents</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://www.ietf.org/lib/dt/7.46.0/ptmono/stylesheet.css" rel='stylesheet' type='text/css'>
+    <link href="https://www.ietf.org/lib/dt/7.46.0/ptsans/stylesheet.css" rel='stylesheet' type='text/css'>
+    <link href="https://www.ietf.org/lib/dt/7.46.0/ptserif/stylesheet.css" rel='stylesheet' type='text/css'>
+    
+
+    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/ietf/font-datatracker/css/font-datatracker.css">
+    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/ietf/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/ietf/bootstrap/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/ietf/css/ietf.css">
+    
+    <style>
+     
+    </style>
+
+    
+<link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/jquery.tablesorter/css/theme.bootstrap.min.css">
+
+
+    
+    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.46.0/ietf/images/ietf-icon-blue3.png">
+    
+    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.46.0/ietf/images/apple-touch-icon.png">
+  <script async src='/cdn-cgi/bm/cv/669835187/api.js'></script></head>
+
+  <body  data-group-menu-data-url="/group/groupmenu.json">
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+	  <div class="navbar-header">
+	    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+	      <span class="sr-only">Toggle navigation</span>
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+	    </button>
+	    <a class="navbar-brand" href="/">
+	       <img alt="IETF Logo" src="https://www.ietf.org/lib/dt/7.46.0/ietf/images/ietflogo-small-transparent.png">
+	       
+		  
+		  Datatracker
+		  
+	       
+	    </a>
+	  </div>
+
+	  <noscript>
+	    <p class="navbar-text"><small>Enable Javascript for full functionality.</small></p>
+	  </noscript>
+
+	  <div class="collapse navbar-collapse" id="navbar-collapse">
+	    <ul class="hidden-nojs nav navbar-nav">
+              
+
+
+
+
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+  
+  Groups
+  
+    </a>
+    <ul class="dropdown-menu" role="menu">
+
+    <li class="dropdown-header visible-lg-block">By area/parent</li>
+  
+        
+
+  <li class="hidden-nojs dropdown-submenu group-menu group-parent-2010">
+    <a href="/wg/#art">Apps &amp; Realtime</a>
+  </li>
+
+  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1008">
+    <a href="/wg/#gen">General</a>
+  </li>
+
+  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1052">
+    <a href="/wg/#int">Internet</a>
+  </li>
+
+  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1193">
+    <a href="/wg/#ops">Ops &amp; Mgmt</a>
+  </li>
+
+  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1249">
+    <a href="/wg/#rtg">Routing</a>
+  </li>
+
+  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1260">
+    <a href="/wg/#sec">Security</a>
+  </li>
+
+  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1324">
+    <a href="/wg/#tsv">Transport</a>
+  </li>
+
+  <li class="hidden-nojs dropdown-submenu group-menu group-parent-7">
+    <a href="/program/">IAB</a>
+  </li>
+
+  <li class="hidden-nojs dropdown-submenu group-menu group-parent-3">
+    <a href="/rg/">IRTF</a>
+  </li>
+
+  <li class="hidden-nojs dropdown-submenu group-menu group-parent-2309">
+    <a href="/adm/">IETF LLC</a>
+  </li>
+
+
+        <li class="dropdown-submenu group-menu"><a href="/group/">Other</a>
+<ul class="dropdown-menu" role="menu">
+
+  <li>
+    <a href="/ag/">Active AGs</a>
+  </li>
+
+  <li>
+    <a href="/area/">Active Areas</a>
+  </li>
+
+  <li>
+    <a href="/dir/">Active Directorates</a>
+  </li>
+
+  <li>
+    <a href="/program/">Active Programs</a>
+  </li>
+
+  <li>
+    <a href="/rag/">Active RAGs</a>
+  </li>
+
+  <li>
+    <a href="/team/">Active Teams</a>
+  </li>
+
+
+  <li>
+    <a href="/group/rsoc/">RSOC</a>
+  </li>
+
+</ul>
+ </li>
+
+  <li class="divider hidden-xs"></li>
+  <li class="dropdown-header hidden-xs">New work</li>
+  <li><a href="/group/chartering/">Chartering groups</a></li>
+  <li><a href="/wg/bofs/">BOFs</a></li>
+  <li><a href="/doc/bof-requests">BOF Requests</a></li>
+
+  <li class="divider hidden-xs"></li>
+  <li class="dropdown-header hidden-xs">Other groups</li>
+  <li><a href="/group/concluded/">Concluded groups</a></li>
+  <li><a href="/list/nonwg">Non-WG lists</a></li>
+
+</ul>
+</li>
+
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+  
+  Documents
+  
+    </a>
+    <ul class="dropdown-menu" role="menu">
+  
+  <li><a href="/doc/search">Search</a></li>
+  <li><a href="/doc/recent">Recent drafts</a></li>
+  <li><a href="/submit/">Draft submission</a></li>
+
+  
+
+
+  <li class="divider hidden-xs"></li>
+  <li class="dropdown-header hidden-xs">RFC streams</li>
+        <li><a href="/stream/iab/">IAB</a></li>
+        <li><a href="/stream/irtf/">IRTF</a></li>
+        <li><a href="/stream/ise/">ISE</a></li>
+
+</ul>
+</li>
+
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+  
+  Meetings
+  
+    </a>
+    <ul class="dropdown-menu" role="menu">
+  
+
+
+  
+  <li class="dropdown-header visible-lg-block">Next meeting</li>
+  
+  <li><a href="/meeting/agenda/">Agenda</a></li>
+  <li><a href="/meeting/materials/">Materials</a></li>
+  <li><a href="/meeting/floor-plan/">Floor plan</a></li>
+  <li><a href="https://www.ietf.org/how/meetings/register/">Registration</a></li>
+  <li><a href="/meeting/important-dates/">Important dates</a></li>
+  <li><a href="/secr/sreq/">Request a session</a></li>
+  <li><a href="/meeting/requests">Session requests</a></li>
+  
+  <li class="divider hidden-xs"></li>
+  <li class="dropdown-header visible-lg-block">Upcoming meetings</li>
+  
+  <li><a href="/meeting/upcoming">Upcoming meetings</a></li>
+  
+  <li class="divider hidden-xs"></li>
+  <li class="dropdown-header visible-lg-block">Past meetings</li>
+  
+  <li><a href="/meeting/past">Past meetings</a></li>
+  <li><a href="https://www.ietf.org/how/meetings/past/">Meeting proceedings</a></li>
+</ul>
+</li>
+
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+  
+  Other
+  
+    </a>
+    <ul class="dropdown-menu" role="menu">
+  
+
+  <li><a href="/ipr/">IPR disclosures</a></li>
+  <li><a href="/liaison/">Liaison statements</a></li>
+  <li><a href="/iesg/agenda/">IESG agenda</a></li>
+  <li><a href="/nomcom/">NomComs</a></li>
+  <li><a href="/doc/downref/">Downref registry</a></li>
+  <li class="dropdown-submenu">
+    <a href="/stats/">Statistics</a>
+    <ul class="dropdown-menu">
+      <li><a href="/stats/document/">Drafts/RFCs</a></li>
+      <li><a href="/stats/meeting/">Meetings</a></li>
+      
+    </ul>
+  </li>
+  <li><a href="/group/edu/materials/">Tutorials</a></li>
+  <li><a href="/api/">API Help</a></li>  
+  <li><a href="/release/">Release notes</a></li>
+  <li class="divider hidden-xs"></li>
+  <li><a href="https://trac.ietf.org/trac/ietfdb/newticket"><span class="fa fa-bug"></span> Report a bug</a></li>
+</ul>
+</li>
+
+
+  
+
+
+<li class="dropdown">
+  
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+     User 
+  </a>
+  <ul class="dropdown-menu" role="menu">
+  
+
+  
+    
+      <li><a rel="nofollow" href="/accounts/login/?next=/wg/ippm/documents/">Sign in</a></li>
+      <li><a rel="nofollow" href="/accounts/reset/">Password reset</a></li>
+      <li><a href="/accounts/settings/" rel="nofollow">Preferences</a></li>
+    
+    <li><a href="/help/personal-information">Handling of personal information</a></li>  
+  
+
+  
+    <li><a href="/accounts/create/">New account</a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</ul>
+
+            </ul>
+        
+            <p class="navbar-text"></p>
+            <a class="btn btn-warning btn-sm navbar-btn" rel="nofollow" href="/accounts/login/?next=/wg/ippm/documents/">Sign in</a>
+        
+
+	    <form class="navbar-form navbar-right hidden-xs" action="/doc/search/">
+	      <div class="form-group">
+	        <input class="form-control input-sm" type="text" name="name" placeholder="Document search" required>
+	        <input type="hidden" name="activedrafts" value="on">
+	        <input type="hidden" name="rfcs" value="on">
+	      </div>
+	    </form>
+	  </div>
+        </div>
+      </nav>
+      <div class="container-fluid-narrow">
+        
+        
+        
+	  <div class="col-md-12 col-sm-12" id="content">
+        
+        
+  
+
+  <h1>IP Performance Measurement (ippm)
+    
+    
+    
+  </h1>
+
+  <ul class="nav nav-tabs" role="tablist">
+    
+      <li >
+        <a href="/wg/ippm/about/">About</a>
+      </li>
+    
+      <li class="active">
+        <a href="/wg/ippm/documents/">Documents</a>
+      </li>
+    
+      <li >
+        <a href="/wg/ippm/meetings/">Meetings</a>
+      </li>
+    
+      <li >
+        <a href="/wg/ippm/history/">History</a>
+      </li>
+    
+      <li >
+        <a href="/wg/ippm/photos/">Photos</a>
+      </li>
+    
+      <li >
+        <a href="/wg/ippm/email/">Email expansions</a>
+      </li>
+    
+      <li >
+        <a href="https://mailarchive.ietf.org/arch/browse/ippm/">List archive &raquo;</a>
+      </li>
+    
+  </ul>
+
+  <div class="buttonlist">
+    
+      
+    
+  </div>
+
+  
+  
+  
+    
+
+
+
+
+  
+
+  
+  <table class="table table-condensed table-striped tablesorter">
+    <thead>
+      <tr>
+        <th class="sorter-false"></th>
+
+        
+          
+            <th data-header="document">
+	      
+	        Document
+	      
+            </th>
+          
+        
+          
+        
+          
+            <th data-header="date">
+	      
+	        Date
+	      
+            </th>
+          
+        
+          
+            <th data-header="status">
+	      
+	        Status
+	      
+            </th>
+          
+        
+          
+            <th data-header="ipr">
+	      
+	        IPR
+	      
+            </th>
+          
+        
+          
+            <th data-header="ad">
+	      
+	        AD / Shepherd
+	      
+            </th>
+          
+        
+
+        
+      </tr>
+    </thead>
+
+    
+
+      
+    <tbody>
+        <tr class="info">
+          <th></th>
+          
+              <th colspan="5">
+          
+	    Active Internet-Drafts (16 hits)
+          </th>
+        </tr>
+    </tbody>
+
+    <tbody>
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-elkins-ippm-encrypted-pdmv2/">draft-elkins-ippm-encrypted-pdmv2-02</a>
+
+      
+      <br>
+      <b>IPv6 Performance and Diagnostic Metrics Version 2 (PDMv2) Destination Option</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2022-02-28
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">17 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-elkins-ippm-encrypted-pdmv2">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+      <br>
+      
+	Adopted by a WG:<wbr>
+      
+    
+
+    
+      Proposed Standard
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-ietf-ippm-capacity-protocol/">draft-ietf-ippm-capacity-protocol-01</a>
+
+      
+      <br>
+      <b>Test Protocol for One-way IP Capacity Measurement</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2022-02-25
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">32 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-ippm-capacity-protocol">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+      <br>
+      
+	WG Document
+      
+    
+
+    
+
+    
+
+    
+      <br>Reviews:
+      
+        secdir
+      
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-ietf-ippm-connectivity-monitoring/">draft-ietf-ippm-connectivity-monitoring-03</a>
+
+      
+      <br>
+      <b>A Connectivity Monitoring Metric for IPPM</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2021-11-07
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">29 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-ippm-connectivity-monitoring">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+      <br>
+      
+	WG Document:<wbr>
+      
+    
+
+    
+      Proposed Standard
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-ietf-ippm-encrypted-pdmv2/">draft-ietf-ippm-encrypted-pdmv2-00</a>
+
+      
+      <br>
+      <b>IPv6 Performance and Diagnostic Metrics Version 2 (PDMv2) Destination Option</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+
+       
+
+    
+          2022-04-12
+    
+       
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">17 pages</small>
+    
+
+    
+    <wbr><div class="pull-right"><span class="label label-success">New</span></div>
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-ippm-encrypted-pdmv2">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+      <br>
+      
+	WG Document
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-ietf-ippm-explicit-flow-measurements/">draft-ietf-ippm-explicit-flow-measurements-00</a>
+
+      
+      <br>
+      <b>Explicit Flow Measurements Techniques</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2021-10-25
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">41 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-ippm-explicit-flow-measurements">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+      <br>
+      
+	WG Document
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-ippm-explicit-flow-measurements">
+        <span class="label label-default">7</span>
+      </a>
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-ietf-ippm-ioam-conf-state/">draft-ietf-ippm-ioam-conf-state-03</a>
+
+      
+      <br>
+      <b>Echo Request/Reply for Enabled In-situ OAM Capabilities</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2022-01-26
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">18 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-ippm-ioam-conf-state">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+      <br>
+      
+	In WG Last Call
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-ippm-ioam-conf-state">
+        <span class="label label-default">1</span>
+      </a>
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-ietf-ippm-ioam-data/">draft-ietf-ippm-ioam-data-17</a>
+
+      
+      <br>
+      <b>Data Fields for In-situ OAM</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2021-12-13
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">48 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-ippm-ioam-data">
+    
+  </div>
+
+  
+    
+      RFC Ed Queue
+    
+
+    
+      <wbr>: <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-ippm-ioam-data">AUTH48</a>
+    
+
+    <wbr><span class="label label-info" title="AUTH48">AUTH48</span>
+
+    <wbr><span class="label label-danger" title="Goal is &lt;60 days">for 121 days</span>
+    
+    
+
+    
+      
+    
+
+    
+      <br>
+      
+	Submitted to IESG for Publication:<wbr>
+      
+    
+
+    
+      Proposed Standard
+    
+
+    
+
+    
+      <br>Reviews:
+      
+        genart, 
+      
+        intdir, 
+      
+        secdir
+      
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-ippm-ioam-data">
+        <span class="label label-default">1</span>
+      </a>
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/martin.h.duke@gmail.com"><span class="">Martin Duke</span></a>&nbsp;<a href="mailto:martin.h.duke%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/acm@research.att.com"><span class="small text-muted">Al Morton</span></a>&nbsp;<a href="mailto:acm%40research.att.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-ietf-ippm-ioam-data-integrity/">draft-ietf-ippm-ioam-data-integrity-01</a>
+
+      
+      <br>
+      <b>Integrity of In-situ OAM Data Fields</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2022-03-02
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">15 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-ippm-ioam-data-integrity">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+      <br>
+      
+	WG Document:<wbr>
+      
+    
+
+    
+      Proposed Standard
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-ietf-ippm-ioam-deployment/">draft-ietf-ippm-ioam-deployment-01</a>
+
+      
+      <br>
+      <b>In-situ OAM Deployment</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+
+       <a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-ippm-ioam-deployment-01">
+       
+
+    
+          2022-04-11
+    
+       </a>
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">24 pages</small>
+    
+
+    
+    <wbr><div class="pull-right"><span class="label label-success">New</span></div>
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-ippm-ioam-deployment">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+      <br>
+      
+	WG Document
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-ietf-ippm-ioam-direct-export/">draft-ietf-ippm-ioam-direct-export-07</a>
+
+      
+      <br>
+      <b>In-situ OAM Direct Exporting</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2021-10-13
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">14 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-ippm-ioam-direct-export">
+    
+  </div>
+
+  
+    
+      AD Evaluation::<wbr>Revised I-D Needed
+    
+
+    
+
+    <wbr>
+
+    <wbr><span class="ietf-small">for 5 days</span>
+    
+    
+
+    
+      
+    
+
+    
+      <br>
+      
+	Submitted to IESG for Publication:<wbr>
+      
+    
+
+    
+      Proposed Standard
+    
+
+    
+
+    
+      <br>Reviews:
+      
+        secdir, 
+      
+        tsvart
+      
+    
+
+    
+
+    
+        <br>Action Holders:
+        
+            <wbr><a title="Responsible AD" href="/person/martin.h.duke@gmail.com"><span class="">Martin Duke</span></a>&nbsp;<a href="mailto:martin.h.duke%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<span class="label label-danger" title="Goal is &lt;20 days">for 42 days</span>, 
+        
+            <wbr><a title="Author" href="/person/fbrockne@cisco.com"><span class="">Frank Brockners</span></a>&nbsp;<a href="mailto:fbrockne%40cisco.com"><span class="fa fa-envelope-o tiny"></span></a>
+, 
+        
+            <wbr><a title="Author" href="/person/tal.mizrahi.phd@gmail.com"><span class="">Tal Mizrahi</span></a>&nbsp;<a href="mailto:tal.mizrahi.phd%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+, 
+        
+            <wbr><a title="Author" href="/person/lizhenbin@huawei.com"><span class="">Zhenbin Li</span></a>&nbsp;<a href="mailto:lizhenbin%40huawei.com"><span class="fa fa-envelope-o tiny"></span></a>
+, 
+        
+            <wbr><a title="Author" href="/person/shwetha.bhandari@gmail.com"><span class="">Shwetha Bhandari</span></a>&nbsp;<a href="mailto:shwetha.bhandari%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+, 
+        
+            <wbr><a title="Author" href="/person/zhoutianran@huawei.com"><span class="">Tianran Zhou</span></a>&nbsp;<a href="mailto:zhoutianran%40huawei.com"><span class="fa fa-envelope-o tiny"></span></a>
+, 
+        
+            <wbr><a title="Author" href="/person/gbarak@nvidia.com"><span class="">Barak Gafni</span></a>&nbsp;<a href="mailto:gbarak%40nvidia.com"><span class="fa fa-envelope-o tiny"></span></a>
+, 
+        
+            <wbr><a title="Author" href="/person/haoyu.song@futurewei.com"><span class="">Haoyu Song</span></a>&nbsp;<a href="mailto:haoyu.song%40futurewei.com"><span class="fa fa-envelope-o tiny"></span></a>
+, 
+        
+            <wbr><a title="Author" href="/person/sramesh@cisco.com"><span class="">Ramesh Sivakolundu</span></a>&nbsp;<a href="mailto:sramesh%40cisco.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+        
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-ippm-ioam-direct-export">
+        <span class="label label-default">3</span>
+      </a>
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/martin.h.duke@gmail.com"><span class="">Martin Duke</span></a>&nbsp;<a href="mailto:martin.h.duke%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/tpauly@apple.com"><span class="small text-muted">Tommy Pauly</span></a>&nbsp;<a href="mailto:tpauly%40apple.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-ietf-ippm-ioam-flags/">draft-ietf-ippm-ioam-flags-07</a>
+
+      
+      <br>
+      <b>In-situ OAM Loopback and Active Flags</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2021-10-13
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">14 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-ippm-ioam-flags">
+    
+  </div>
+
+  
+    
+      AD Evaluation::<wbr>Revised I-D Needed
+    
+
+    
+
+    <wbr>
+
+    <wbr><span class="ietf-small">for 5 days</span>
+    
+    
+
+    
+      
+    
+
+    
+      <br>
+      
+	Submitted to IESG for Publication:<wbr>
+      
+    
+
+    
+      Proposed Standard
+    
+
+    
+
+    
+      <br>Reviews:
+      
+        secdir, 
+      
+        tsvart
+      
+    
+
+    
+
+    
+        <br>Action Holders:
+        
+            <wbr><a title="Responsible AD" href="/person/martin.h.duke@gmail.com"><span class="">Martin Duke</span></a>&nbsp;<a href="mailto:martin.h.duke%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<span class="label label-danger" title="Goal is &lt;20 days">for 42 days</span>, 
+        
+            <wbr><a title="Author" href="/person/fbrockne@cisco.com"><span class="">Frank Brockners</span></a>&nbsp;<a href="mailto:fbrockne%40cisco.com"><span class="fa fa-envelope-o tiny"></span></a>
+, 
+        
+            <wbr><a title="Author" href="/person/cpignata@gmail.com"><span class="">Carlos Pignataro</span></a>&nbsp;<a href="mailto:cpignata%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+, 
+        
+            <wbr><a title="Author" href="/person/tal.mizrahi.phd@gmail.com"><span class="">Tal Mizrahi</span></a>&nbsp;<a href="mailto:tal.mizrahi.phd%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+, 
+        
+            <wbr><a title="Author" href="/person/shwetha.bhandari@gmail.com"><span class="">Shwetha Bhandari</span></a>&nbsp;<a href="mailto:shwetha.bhandari%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+, 
+        
+            <wbr><a title="Author" href="/person/gbarak@nvidia.com"><span class="">Barak Gafni</span></a>&nbsp;<a href="mailto:gbarak%40nvidia.com"><span class="fa fa-envelope-o tiny"></span></a>
+, 
+        
+            <wbr><a title="Author" href="/person/sramesh@cisco.com"><span class="">Ramesh Sivakolundu</span></a>&nbsp;<a href="mailto:sramesh%40cisco.com"><span class="fa fa-envelope-o tiny"></span></a>
+, 
+        
+            <wbr><a title="Author" href="/person/avivk@mellanox.com"><span class="">Aviv Kfir</span></a>&nbsp;<a href="mailto:avivk%40mellanox.com"><span class="fa fa-envelope-o tiny"></span></a>
+, 
+        
+            <wbr><a title="Author" href="/person/mickey.spiegel@intel.com"><span class="">Mickey Spiegel</span></a>&nbsp;<a href="mailto:mickey.spiegel%40intel.com"><span class="fa fa-envelope-o tiny"></span></a>
+, 
+        
+            <wbr><a title="Author" href="/person/jennifer.lemon@broadcom.com"><span class="">Jennifer Lemon</span></a>&nbsp;<a href="mailto:jennifer.lemon%40broadcom.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+        
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/martin.h.duke@gmail.com"><span class="">Martin Duke</span></a>&nbsp;<a href="mailto:martin.h.duke%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/tpauly@apple.com"><span class="small text-muted">Tommy Pauly</span></a>&nbsp;<a href="mailto:tpauly%40apple.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-ietf-ippm-ioam-ipv6-options/">draft-ietf-ippm-ioam-ipv6-options-07</a>
+
+      
+      <br>
+      <b>In-situ OAM IPv6 Options</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2022-02-06
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">13 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-ippm-ioam-ipv6-options">
+    
+  </div>
+
+  
+    
+      Publication Requested
+    
+
+    
+
+    <wbr>
+
+    <wbr><span class="ietf-small">for 1 day</span>
+    
+    
+
+    
+      
+    
+
+    
+      <br>
+      
+	Submitted to IESG for Publication:<wbr>
+      
+    
+
+    
+      Proposed Standard
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-ippm-ioam-ipv6-options">
+        <span class="label label-default">1</span>
+      </a>
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/martin.h.duke@gmail.com"><span class="">Martin Duke</span></a>&nbsp;<a href="mailto:martin.h.duke%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/marcus.ihlar@ericsson.com"><span class="small text-muted">Marcus Ihlar</span></a>&nbsp;<a href="mailto:marcus.ihlar%40ericsson.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-ietf-ippm-ioam-yang/">draft-ietf-ippm-ioam-yang-03</a>
+
+      
+      <br>
+      <b>A YANG Data Model for In-Situ OAM</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2022-01-25
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">26 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-ippm-ioam-yang">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+      <br>
+      
+	WG Document
+      
+    
+
+    
+
+    
+
+    
+      <br>Reviews:
+      
+        yangdoctors
+      
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-ippm-ioam-yang">
+        <span class="label label-default">1</span>
+      </a>
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-ietf-ippm-responsiveness/">draft-ietf-ippm-responsiveness-00</a>
+
+      
+      <br>
+      <b>Responsiveness under Working Conditions</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2022-03-07
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">15 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-ippm-responsiveness">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+      <br>
+      
+	WG Document
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-ietf-ippm-route/">draft-ietf-ippm-route-10</a>
+
+      
+      <br>
+      <b>Advanced Unidirectional Route Assessment (AURA)</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2020-08-13
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">27 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-ippm-route">
+    
+  </div>
+
+  
+    
+      RFC Ed Queue
+    
+
+    
+      <wbr>: <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-ippm-route">AUTH48</a>
+    
+
+    <wbr><span class="label label-info" title="AUTH48">AUTH48</span>
+
+    <wbr><span class="label label-danger" title="Goal is &lt;60 days">for 601 days</span>
+    
+    
+
+    
+      
+    
+
+    
+      <br>
+      
+	Submitted to IESG for Publication:<wbr>
+      
+    
+
+    
+      Proposed Standard
+    
+
+    
+
+    
+      <br>Reviews:
+      
+        rtgdir, 
+      
+        secdir
+      
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/martin.h.duke@gmail.com"><span class="">Martin Duke</span></a>&nbsp;<a href="mailto:martin.h.duke%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/ietf@trammell.ch"><span class="small text-muted">Brian Trammell</span></a>&nbsp;<a href="mailto:ietf%40trammell.ch"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-ietf-ippm-stamp-srpm/">draft-ietf-ippm-stamp-srpm-03</a>
+
+      
+      <br>
+      <b>Simple TWAMP (STAMP) Extensions for Segment Routing Networks</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2022-02-02
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">16 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-ippm-stamp-srpm">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+      <br>
+      
+	WG Document
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+      
+    <tbody>
+        <tr class="info">
+          <th></th>
+          
+              <th colspan="5">
+          
+	    RFCs (56 hits)
+          </th>
+        </tr>
+    </tbody>
+
+    <tbody>
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc2330/">RFC 2330</a>
+
+      
+        <i>(was draft-ietf-ippm-framework)</i>
+      
+      <br>
+      <b>Framework for IP Performance Metrics</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          1998-05
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">40 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-ippm-framework">
+    
+  </div>
+
+  
+    Informational RFC
+
+    
+
+    
+      <br>Updated by <a href="/doc/rfc7312/">RFC 7312</a>, <a href="/doc/rfc8468/">RFC 8468</a>
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc2498/">RFC 2498</a>
+
+      
+        <i>(was draft-ietf-ippm-connectivity)</i>
+      
+      <br>
+      <b>IPPM Metrics for Measuring Connectivity</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          1999-01
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">10 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-ippm-connectivity">
+    
+  </div>
+
+  
+    Experimental RFC
+
+    
+      <br>Obsoleted by <a href="/doc/rfc2678/">RFC 2678</a>
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc2679/">RFC 2679</a>
+
+      
+        <i>(was draft-ietf-ippm-delay)</i>
+      
+      <br>
+      <b>A One-way Delay Metric for IPPM</b>
+      
+        <a class="label label-warning pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=2679">Errata</a>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          1999-09
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">20 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-ippm-delay">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+      <br>Obsoleted by <a href="/doc/rfc7679/">RFC 7679</a>
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc2680/">RFC 2680</a>
+
+      
+        <i>(was draft-ietf-ippm-loss)</i>
+      
+      <br>
+      <b>A One-way Packet Loss Metric for IPPM</b>
+      
+        <a class="label label-danger pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=2680">Errata</a>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          1999-09
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">15 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-ippm-loss">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+      <br>Obsoleted by <a href="/doc/rfc7680/">RFC 7680</a>
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc2681/">RFC 2681</a>
+
+      
+        <i>(was draft-ietf-ippm-rt-delay)</i>
+      
+      <br>
+      <b>A Round-trip Delay Metric for IPPM</b>
+      
+        <a class="label label-warning pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=2681">Errata</a>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          1999-09
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">20 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-ippm-rt-delay">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc3148/">RFC 3148</a>
+
+      
+        <i>(was draft-ietf-ippm-btc-framework)</i>
+      
+      <br>
+      <b>A Framework for Defining Empirical Bulk Transfer Capacity Metrics</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2001-07
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">16 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-ippm-btc-framework">
+    
+  </div>
+
+  
+    Informational RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc3357/">RFC 3357</a>
+
+      
+        <i>(was draft-ietf-ippm-loss-pattern)</i>
+      
+      <br>
+      <b>One-way Loss Pattern Sample Metrics</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2002-08
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">15 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-ippm-loss-pattern">
+    
+  </div>
+
+  
+    Informational RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/mankin@isi.edu"><span class="">Allison Mankin</span></a>&nbsp;<a href="mailto:mankin%40isi.edu"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc3393/">RFC 3393</a>
+
+      
+        <i>(was draft-ietf-ippm-ipdv)</i>
+      
+      <br>
+      <b>IP Packet Delay Variation Metric for IP Performance Metrics (IPPM)</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2002-11
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">21 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-ippm-ipdv">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/mankin@isi.edu"><span class="">Allison Mankin</span></a>&nbsp;<a href="mailto:mankin%40isi.edu"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc3432/">RFC 3432</a>
+
+      
+        <i>(was draft-ietf-ippm-npmps)</i>
+      
+      <br>
+      <b>Network performance measurement with periodic streams</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2002-12
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">23 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-ippm-npmps">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/mankin@isi.edu"><span class="">Allison Mankin</span></a>&nbsp;<a href="mailto:mankin%40isi.edu"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc3763/">RFC 3763</a>
+
+      
+        <i>(was draft-ietf-ippm-owdp-reqs)</i>
+      
+      <br>
+      <b>One-way Active Measurement Protocol (OWAMP) Requirements</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2004-04
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">11 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-ippm-owdp-reqs">
+    
+  </div>
+
+  
+    Informational RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/mankin@isi.edu"><span class="">Allison Mankin</span></a>&nbsp;<a href="mailto:mankin%40isi.edu"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc4148/">RFC 4148</a>
+
+      
+        <i>(was draft-ietf-ippm-metrics-registry)</i>
+      
+      <br>
+      <b>IP Performance Metrics (IPPM) Metrics Registry</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2005-08
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">14 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-ippm-metrics-registry">
+    
+  </div>
+
+  
+    Best Current Practice RFC
+
+    
+      <br>Obsoleted by <a href="/doc/rfc6248/">RFC 6248</a>
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/mankin@isi.edu"><span class="">Allison Mankin</span></a>&nbsp;<a href="mailto:mankin%40isi.edu"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc4656/">RFC 4656</a>
+
+      
+        <i>(was draft-ietf-ippm-owdp)</i>
+      
+      <br>
+      <b>A One-way Active Measurement Protocol (OWAMP)</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2006-09
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">56 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-ippm-owdp">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+      <br>Updated by <a href="/doc/rfc7717/">RFC 7717</a>, <a href="/doc/rfc7718/">RFC 7718</a>, <a href="/doc/rfc8545/">RFC 8545</a>
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-ippm-owdp">
+        <span class="label label-default">2</span>
+      </a>
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/mankin@isi.edu"><span class="">Allison Mankin</span></a>&nbsp;<a href="mailto:mankin%40isi.edu"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc4737/">RFC 4737</a>
+
+      
+        <i>(was draft-ietf-ippm-reordering)</i>
+      
+      <br>
+      <b>Packet Reordering Metrics</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2006-11
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">45 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-ippm-reordering">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+      <br>Updated by <a href="/doc/rfc6248/">RFC 6248</a>
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/lars@eggert.org"><span class="">Lars Eggert</span></a>&nbsp;<a href="mailto:lars%40eggert.org"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc5136/">RFC 5136</a>
+
+      
+        <i>(was draft-ietf-ippm-bw-capacity)</i>
+      
+      <br>
+      <b>Defining Network Capacity</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2008-02
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">14 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-ippm-bw-capacity">
+    
+  </div>
+
+  
+    Informational RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/lars@eggert.org"><span class="">Lars Eggert</span></a>&nbsp;<a href="mailto:lars%40eggert.org"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc5357/">RFC 5357</a>
+
+      
+        <i>(was draft-ietf-ippm-twamp)</i>
+      
+      <br>
+      <b>A Two-Way Active Measurement Protocol (TWAMP)</b>
+      
+        <a class="label label-danger pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=5357">Errata</a>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2008-10
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">26 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-ippm-twamp">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+      <br>Updated by <a href="/doc/rfc5618/">RFC 5618</a>, <a href="/doc/rfc5938/">RFC 5938</a>, <a href="/doc/rfc6038/">RFC 6038</a>, <a href="/doc/rfc7717/">RFC 7717</a>, <a href="/doc/rfc7750/">RFC 7750</a>, <a href="/doc/rfc8545/">RFC 8545</a>
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-ippm-twamp">
+        <span class="label label-default">1</span>
+      </a>
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/lars@eggert.org"><span class="">Lars Eggert</span></a>&nbsp;<a href="mailto:lars%40eggert.org"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc5388/">RFC 5388</a>
+
+      
+        <i>(was draft-ietf-ippm-storetraceroutes)</i>
+      
+      <br>
+      <b>Information Model and XML Data Model for Traceroute Measurements</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2008-12
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">75 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-ippm-storetraceroutes">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/lars@eggert.org"><span class="">Lars Eggert</span></a>&nbsp;<a href="mailto:lars%40eggert.org"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc5481/">RFC 5481</a>
+
+      
+        <i>(was draft-ietf-ippm-delay-var-as)</i>
+      
+      <br>
+      <b>Packet Delay Variation Applicability Statement</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2009-03
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">39 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-ippm-delay-var-as">
+    
+  </div>
+
+  
+    Informational RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/lars@eggert.org"><span class="">Lars Eggert</span></a>&nbsp;<a href="mailto:lars%40eggert.org"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc5560/">RFC 5560</a>
+
+      
+        <i>(was draft-ietf-ippm-duplicate)</i>
+      
+      <br>
+      <b>A One-Way Packet Duplication Metric</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2009-05
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">14 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-ippm-duplicate">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+      <br>Updated by <a href="/doc/rfc6248/">RFC 6248</a>
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/lars@eggert.org"><span class="">Lars Eggert</span></a>&nbsp;<a href="mailto:lars%40eggert.org"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc5618/">RFC 5618</a>
+
+      
+        <i>(was draft-ietf-ippm-more-twamp)</i>
+      
+      <br>
+      <b>Mixed Security Mode for the Two-Way Active Measurement Protocol (TWAMP)</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2009-08
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">8 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-ippm-more-twamp">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/lars@eggert.org"><span class="">Lars Eggert</span></a>&nbsp;<a href="mailto:lars%40eggert.org"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc5644/">RFC 5644</a>
+
+      
+        <i>(was draft-ietf-ippm-multimetrics)</i>
+      
+      <br>
+      <b>IP Performance Metrics (IPPM): Spatial and Multicast</b>
+      
+        <a class="label label-warning pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=5644">Errata</a>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2009-10
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">57 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-ippm-multimetrics">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+      <br>Updated by <a href="/doc/rfc6248/">RFC 6248</a>
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/lars@eggert.org"><span class="">Lars Eggert</span></a>&nbsp;<a href="mailto:lars%40eggert.org"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc5835/">RFC 5835</a>
+
+      
+        <i>(was draft-ietf-ippm-framework-compagg)</i>
+      
+      <br>
+      <b>Framework for Metric Composition</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2010-04
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">18 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-ippm-framework-compagg">
+    
+  </div>
+
+  
+    Informational RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/lars@eggert.org"><span class="">Lars Eggert</span></a>&nbsp;<a href="mailto:lars%40eggert.org"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc5938/">RFC 5938</a>
+
+      
+        <i>(was draft-ietf-ippm-twamp-session-cntrl)</i>
+      
+      <br>
+      <b>Individual Session Control Feature for the Two-Way Active Measurement Protocol (TWAMP)</b>
+      
+        <a class="label label-danger pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=5938">Errata</a>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2010-08
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">17 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-ippm-twamp-session-cntrl">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/lars@eggert.org"><span class="">Lars Eggert</span></a>&nbsp;<a href="mailto:lars%40eggert.org"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc6038/">RFC 6038</a>
+
+      
+        <i>(was draft-ietf-ippm-twamp-reflect-octets)</i>
+      
+      <br>
+      <b>Two-Way Active Measurement Protocol (TWAMP) Reflect Octets and Symmetrical Size Features</b>
+      
+        <a class="label label-danger pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=6038">Errata</a>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2010-10
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">18 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-ippm-twamp-reflect-octets">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/lars@eggert.org"><span class="">Lars Eggert</span></a>&nbsp;<a href="mailto:lars%40eggert.org"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc6049/">RFC 6049</a>
+
+      
+        <i>(was draft-ietf-ippm-spatial-composition)</i>
+      
+      <br>
+      <b>Spatial Composition of Metrics</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2011-01
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">29 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-ippm-spatial-composition">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+      <br>Updated by <a href="/doc/rfc6248/">RFC 6248</a>
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/lars@eggert.org"><span class="">Lars Eggert</span></a>&nbsp;<a href="mailto:lars%40eggert.org"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc6248/">RFC 6248</a>
+
+      
+        <i>(was draft-morton-ippm-rfc4148-obsolete)</i>
+      
+      <br>
+      <b>RFC 4148 and the IP Performance Metrics (IPPM) Registry of Metrics Are Obsolete</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2011-04
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">6 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-morton-ippm-rfc4148-obsolete">
+    
+  </div>
+
+  
+    Informational RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/lars@eggert.org"><span class="">Lars Eggert</span></a>&nbsp;<a href="mailto:lars%40eggert.org"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc6349/">RFC 6349</a>
+
+      
+        <i>(was draft-ietf-ippm-tcp-throughput-tm)</i>
+      
+      <br>
+      <b>Framework for TCP Throughput Testing</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2011-08
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">27 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-ippm-tcp-throughput-tm">
+    
+  </div>
+
+  
+    Informational RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/wes@mti-systems.com"><span class="">Wesley Eddy</span></a>&nbsp;<a href="mailto:wes%40mti-systems.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc6534/">RFC 6534</a>
+
+      
+        <i>(was draft-ietf-ippm-loss-episode-metrics)</i>
+      
+      <br>
+      <b>Loss Episode Metrics for IP Performance Metrics (IPPM)</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2012-05
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">21 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-ippm-loss-episode-metrics">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-ippm-loss-episode-metrics">
+        <span class="label label-default">1</span>
+      </a>
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/wes@mti-systems.com"><span class="">Wesley Eddy</span></a>&nbsp;<a href="mailto:wes%40mti-systems.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc6576/">RFC 6576</a>
+
+      
+        <i>(was draft-ietf-ippm-metrictest)</i>
+      
+      <br>
+      <b>IP Performance Metrics (IPPM) Standard Advancement Testing</b>
+      
+        <a class="label label-danger pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=6576">Errata</a>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2012-03
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">37 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-ippm-metrictest">
+    
+  </div>
+
+  
+    Best Current Practice RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/wes@mti-systems.com"><span class="">Wesley Eddy</span></a>&nbsp;<a href="mailto:wes%40mti-systems.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc6673/">RFC 6673</a>
+
+      
+        <i>(was draft-ietf-ippm-rt-loss)</i>
+      
+      <br>
+      <b>Round-Trip Packet Loss Metrics</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2012-08
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">14 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-ippm-rt-loss">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/wes@mti-systems.com"><span class="">Wesley Eddy</span></a>&nbsp;<a href="mailto:wes%40mti-systems.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc6703/">RFC 6703</a>
+
+      
+        <i>(was draft-ietf-ippm-reporting-metrics)</i>
+      
+      <br>
+      <b>Reporting IP Network Performance Metrics: Different Points of View</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2012-08
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">27 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-ippm-reporting-metrics">
+    
+  </div>
+
+  
+    Informational RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/wes@mti-systems.com"><span class="">Wesley Eddy</span></a>&nbsp;<a href="mailto:wes%40mti-systems.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc6802/">RFC 6802</a>
+
+      
+        <i>(was draft-ietf-ippm-twamp-value-added-octets)</i>
+      
+      <br>
+      <b>Ericsson Two-Way Active Measurement Protocol (TWAMP) Value-Added Octets</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2012-11
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">15 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-ippm-twamp-value-added-octets">
+    
+  </div>
+
+  
+    Informational RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-ippm-twamp-value-added-octets">
+        <span class="label label-default">2</span>
+      </a>
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/wes@mti-systems.com"><span class="">Wesley Eddy</span></a>&nbsp;<a href="mailto:wes%40mti-systems.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc6808/">RFC 6808</a>
+
+      
+        <i>(was draft-ietf-ippm-testplan-rfc2679)</i>
+      
+      <br>
+      <b>Test Plan and Results Supporting Advancement of RFC 2679 on the Standards Track</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2012-12
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">29 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-ippm-testplan-rfc2679">
+    
+  </div>
+
+  
+    Informational RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/wes@mti-systems.com"><span class="">Wesley Eddy</span></a>&nbsp;<a href="mailto:wes%40mti-systems.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc7290/">RFC 7290</a>
+
+      
+        <i>(was draft-ietf-ippm-testplan-rfc2680)</i>
+      
+      <br>
+      <b>Test Plan and Results for Advancing RFC 2680 on the Standards Track</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2014-07
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">31 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-ippm-testplan-rfc2680">
+    
+  </div>
+
+  
+    Informational RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/spencerdawkins.ietf@gmail.com"><span class="">Spencer Dawkins</span></a>&nbsp;<a href="mailto:spencerdawkins.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/ietf@trammell.ch"><span class="small text-muted">Brian Trammell</span></a>&nbsp;<a href="mailto:ietf%40trammell.ch"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc7312/">RFC 7312</a>
+
+      
+        <i>(was draft-ietf-ippm-2330-update)</i>
+      
+      <br>
+      <b>Advanced Stream and Sampling Framework for IP Performance Metrics (IPPM)</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2014-08
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">17 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-ippm-2330-update">
+    
+  </div>
+
+  
+    Informational RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/spencerdawkins.ietf@gmail.com"><span class="">Spencer Dawkins</span></a>&nbsp;<a href="mailto:spencerdawkins.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/ietf@wjcerveny.com"><span class="small text-muted">Bill Cerveny</span></a>&nbsp;<a href="mailto:ietf%40wjcerveny.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc7398/">RFC 7398</a>
+
+      
+        <i>(was draft-ietf-ippm-lmap-path)</i>
+      
+      <br>
+      <b>A Reference Path and Measurement Points for Large-Scale Measurement of Broadband Performance</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2015-02
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">17 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-ippm-lmap-path">
+    
+  </div>
+
+  
+    Informational RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/spencerdawkins.ietf@gmail.com"><span class="">Spencer Dawkins</span></a>&nbsp;<a href="mailto:spencerdawkins.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/ietf@trammell.ch"><span class="small text-muted">Brian Trammell</span></a>&nbsp;<a href="mailto:ietf%40trammell.ch"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc7497/">RFC 7497</a>
+
+      
+        <i>(was draft-ietf-ippm-rate-problem)</i>
+      
+      <br>
+      <b>Rate Measurement Test Protocol Problem Statement and Requirements</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2015-04
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">14 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-ippm-rate-problem">
+    
+  </div>
+
+  
+    Informational RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/spencerdawkins.ietf@gmail.com"><span class="">Spencer Dawkins</span></a>&nbsp;<a href="mailto:spencerdawkins.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/ietf@wjcerveny.com"><span class="small text-muted">Bill Cerveny</span></a>&nbsp;<a href="mailto:ietf%40wjcerveny.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc7679/">RFC 7679</a>
+
+      
+        <i>(was draft-ietf-ippm-2679-bis)</i>
+      
+      <br>
+      <b>A One-Way Delay Metric for IP Performance Metrics (IPPM)</b>
+      
+        <a class="label label-danger pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=7679">Errata</a>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2016-01
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">27 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-ippm-2679-bis">
+    
+  </div>
+
+  
+    Internet Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/spencerdawkins.ietf@gmail.com"><span class="">Spencer Dawkins</span></a>&nbsp;<a href="mailto:spencerdawkins.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/ietf@wjcerveny.com"><span class="small text-muted">Bill Cerveny</span></a>&nbsp;<a href="mailto:ietf%40wjcerveny.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc7680/">RFC 7680</a>
+
+      
+        <i>(was draft-ietf-ippm-2680-bis)</i>
+      
+      <br>
+      <b>A One-Way Loss Metric for IP Performance Metrics (IPPM)</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2016-01
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">22 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-ippm-2680-bis">
+    
+  </div>
+
+  
+    Internet Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/spencerdawkins.ietf@gmail.com"><span class="">Spencer Dawkins</span></a>&nbsp;<a href="mailto:spencerdawkins.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/ietf@wjcerveny.com"><span class="small text-muted">Bill Cerveny</span></a>&nbsp;<a href="mailto:ietf%40wjcerveny.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc7717/">RFC 7717</a>
+
+      
+        <i>(was draft-ietf-ippm-ipsec)</i>
+      
+      <br>
+      <b>IKEv2-Derived Shared Secret Key for the One-Way Active Measurement Protocol (OWAMP) and Two-Way Active Measurement Protocol (TWAMP)</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2015-12
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">15 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-ippm-ipsec">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/spencerdawkins.ietf@gmail.com"><span class="">Spencer Dawkins</span></a>&nbsp;<a href="mailto:spencerdawkins.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/ietf@trammell.ch"><span class="small text-muted">Brian Trammell</span></a>&nbsp;<a href="mailto:ietf%40trammell.ch"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc7718/">RFC 7718</a>
+
+      
+        <i>(was draft-ietf-ippm-owamp-registry)</i>
+      
+      <br>
+      <b>Registries for the One-Way Active Measurement Protocol (OWAMP)</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2015-12
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">7 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-ippm-owamp-registry">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/spencerdawkins.ietf@gmail.com"><span class="">Spencer Dawkins</span></a>&nbsp;<a href="mailto:spencerdawkins.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/ietf@wjcerveny.com"><span class="small text-muted">Bill Cerveny</span></a>&nbsp;<a href="mailto:ietf%40wjcerveny.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc7750/">RFC 7750</a>
+
+      
+        <i>(was draft-ietf-ippm-type-p-monitor)</i>
+      
+      <br>
+      <b>Differentiated Service Code Point and Explicit Congestion Notification Monitoring in the Two-Way Active Measurement Protocol (TWAMP)</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2016-02
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">11 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-ippm-type-p-monitor">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/spencerdawkins.ietf@gmail.com"><span class="">Spencer Dawkins</span></a>&nbsp;<a href="mailto:spencerdawkins.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/ietf@trammell.ch"><span class="small text-muted">Brian Trammell</span></a>&nbsp;<a href="mailto:ietf%40trammell.ch"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc7799/">RFC 7799</a>
+
+      
+        <i>(was draft-ietf-ippm-active-passive)</i>
+      
+      <br>
+      <b>Active and Passive Metrics and Methods (with Hybrid Types In-Between)</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2016-05
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">14 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-ippm-active-passive">
+    
+  </div>
+
+  
+    Informational RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/spencerdawkins.ietf@gmail.com"><span class="">Spencer Dawkins</span></a>&nbsp;<a href="mailto:spencerdawkins.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/ietf@trammell.ch"><span class="small text-muted">Brian Trammell</span></a>&nbsp;<a href="mailto:ietf%40trammell.ch"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc7820/">RFC 7820</a>
+
+      
+        <i>(was draft-ietf-ippm-checksum-trailer)</i>
+      
+      <br>
+      <b>UDP Checksum Complement in the One-Way Active Measurement Protocol (OWAMP) and Two-Way Active Measurement Protocol (TWAMP)</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2016-03
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">15 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-ippm-checksum-trailer">
+    
+  </div>
+
+  
+    Experimental RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-ippm-checksum-trailer">
+        <span class="label label-default">1</span>
+      </a>
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/spencerdawkins.ietf@gmail.com"><span class="">Spencer Dawkins</span></a>&nbsp;<a href="mailto:spencerdawkins.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/acmorton@att.com"><span class="small text-muted">Al Morton</span></a>&nbsp;<a href="mailto:acmorton%40att.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc8186/">RFC 8186</a>
+
+      
+        <i>(was draft-ietf-ippm-twamp-time-format)</i>
+      
+      <br>
+      <b>Support of the IEEE 1588 Timestamp Format in a Two-Way Active Measurement Protocol (TWAMP)</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2017-06
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">8 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-ippm-twamp-time-format">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-ippm-twamp-time-format">
+        <span class="label label-default">2</span>
+      </a>
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/spencerdawkins.ietf@gmail.com"><span class="">Spencer Dawkins</span></a>&nbsp;<a href="mailto:spencerdawkins.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/ietf@wjcerveny.com"><span class="small text-muted">Bill Cerveny</span></a>&nbsp;<a href="mailto:ietf%40wjcerveny.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc8250/">RFC 8250</a>
+
+      
+        <i>(was draft-ietf-ippm-6man-pdm-option)</i>
+      
+      <br>
+      <b>IPv6 Performance and Diagnostic Metrics (PDM) Destination Option</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2017-09
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">30 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-ippm-6man-pdm-option">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-ippm-6man-pdm-option">
+        <span class="label label-default">1</span>
+      </a>
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/spencerdawkins.ietf@gmail.com"><span class="">Spencer Dawkins</span></a>&nbsp;<a href="mailto:spencerdawkins.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/acmorton@att.com"><span class="small text-muted">Al Morton</span></a>&nbsp;<a href="mailto:acmorton%40att.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc8321/">RFC 8321</a>
+
+      
+        <i>(was draft-ietf-ippm-alt-mark)</i>
+      
+      <br>
+      <b>Alternate-Marking Method for Passive and Hybrid Performance Monitoring</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2018-01
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">33 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-ippm-alt-mark">
+    
+  </div>
+
+  
+    Experimental RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-ippm-alt-mark">
+        <span class="label label-default">7</span>
+      </a>
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/spencerdawkins.ietf@gmail.com"><span class="">Spencer Dawkins</span></a>&nbsp;<a href="mailto:spencerdawkins.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/cpignata@cisco.com"><span class="small text-muted">Carlos Pignataro</span></a>&nbsp;<a href="mailto:cpignata%40cisco.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc8337/">RFC 8337</a>
+
+      
+        <i>(was draft-ietf-ippm-model-based-metrics)</i>
+      
+      <br>
+      <b>Model-Based Metrics for Bulk Transport Capacity</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2018-03
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">55 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-ippm-model-based-metrics">
+    
+  </div>
+
+  
+    Experimental RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/spencerdawkins.ietf@gmail.com"><span class="">Spencer Dawkins</span></a>&nbsp;<a href="mailto:spencerdawkins.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/ietf@trammell.ch"><span class="small text-muted">Brian Trammell</span></a>&nbsp;<a href="mailto:ietf%40trammell.ch"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc8468/">RFC 8468</a>
+
+      
+        <i>(was draft-ietf-ippm-2330-ipv6)</i>
+      
+      <br>
+      <b>IPv4, IPv6, and IPv4-IPv6 Coexistence: Updates for the IP Performance Metrics (IPPM) Framework</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2018-11
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">15 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-ippm-2330-ipv6">
+    
+  </div>
+
+  
+    Informational RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/spencerdawkins.ietf@gmail.com"><span class="">Spencer Dawkins</span></a>&nbsp;<a href="mailto:spencerdawkins.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/n.brownlee@auckland.ac.nz"><span class="small text-muted">Nevil Brownlee</span></a>&nbsp;<a href="mailto:n.brownlee%40auckland.ac.nz"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc8545/">RFC 8545</a>
+
+      
+        <i>(was draft-ietf-ippm-port-twamp-test)</i>
+      
+      <br>
+      <b>Well-Known Port Assignments for the One-Way Active Measurement Protocol (OWAMP) and the Two-Way Active Measurement Protocol (TWAMP)</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2019-03
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">11 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-ippm-port-twamp-test">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/ietf@kuehlewind.net"><span class="">Mirja Kühlewind</span></a>&nbsp;<a href="mailto:ietf%40kuehlewind.net"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/zhoutianran@huawei.com"><span class="small text-muted">Tianran Zhou</span></a>&nbsp;<a href="mailto:zhoutianran%40huawei.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc8762/">RFC 8762</a>
+
+      
+        <i>(was draft-ietf-ippm-stamp)</i>
+      
+      <br>
+      <b>Simple Two-Way Active Measurement Protocol</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2020-03
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">15 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-ippm-stamp">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+      <br>Updated by <a href="/doc/rfc8972/">RFC 8972</a>
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/ietf@kuehlewind.net"><span class="">Mirja Kühlewind</span></a>&nbsp;<a href="mailto:ietf%40kuehlewind.net"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/tal.mizrahi.phd@gmail.com"><span class="small text-muted">Tal Mizrahi</span></a>&nbsp;<a href="mailto:tal.mizrahi.phd%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc8889/">RFC 8889</a>
+
+      
+        <i>(was draft-ietf-ippm-multipoint-alt-mark)</i>
+      
+      <br>
+      <b>Multipoint Alternate-Marking Method for Passive and Hybrid Performance Monitoring</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2020-08
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">23 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-ippm-multipoint-alt-mark">
+    
+  </div>
+
+  
+    Experimental RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-ippm-multipoint-alt-mark">
+        <span class="label label-default">3</span>
+      </a>
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/ietf@kuehlewind.net"><span class="">Mirja Kühlewind</span></a>&nbsp;<a href="mailto:ietf%40kuehlewind.net"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/tal.mizrahi.phd@gmail.com"><span class="small text-muted">Tal Mizrahi</span></a>&nbsp;<a href="mailto:tal.mizrahi.phd%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc8911/">RFC 8911</a>
+
+      
+        <i>(was draft-ietf-ippm-metric-registry)</i>
+      
+      <br>
+      <b>Registry for Performance Metrics</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2021-11
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">35 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-ippm-metric-registry">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/ietf@kuehlewind.net"><span class="">Mirja Kühlewind</span></a>&nbsp;<a href="mailto:ietf%40kuehlewind.net"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/ietf@wjcerveny.com"><span class="small text-muted">Bill Cerveny</span></a>&nbsp;<a href="mailto:ietf%40wjcerveny.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc8912/">RFC 8912</a>
+
+      
+        <i>(was draft-ietf-ippm-initial-registry)</i>
+      
+      <br>
+      <b>Initial Performance Metrics Registry Entries</b>
+      
+        <a class="label label-danger pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=8912">Errata</a>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2021-11
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">71 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-ippm-initial-registry">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/ietf@kuehlewind.net"><span class="">Mirja Kühlewind</span></a>&nbsp;<a href="mailto:ietf%40kuehlewind.net"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/ietf@trammell.ch"><span class="small text-muted">Brian Trammell</span></a>&nbsp;<a href="mailto:ietf%40trammell.ch"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc8913/">RFC 8913</a>
+
+      
+        <i>(was draft-ietf-ippm-twamp-yang)</i>
+      
+      <br>
+      <b>Two-Way Active Measurement Protocol (TWAMP) YANG Data Model</b>
+      
+        <a class="label label-danger pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=8913">Errata</a>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2021-11
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">60 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-ippm-twamp-yang">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/ietf@kuehlewind.net"><span class="">Mirja Kühlewind</span></a>&nbsp;<a href="mailto:ietf%40kuehlewind.net"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/nalini.elkins@insidethestack.com"><span class="small text-muted">Nalini Elkins</span></a>&nbsp;<a href="mailto:nalini.elkins%40insidethestack.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc8972/">RFC 8972</a>
+
+      
+        <i>(was draft-ietf-ippm-stamp-option-tlv)</i>
+      
+      <br>
+      <b>Simple Two-Way Active Measurement Protocol Optional Extensions</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2021-01
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">29 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-ippm-stamp-option-tlv">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/martin.h.duke@gmail.com"><span class="">Martin Duke</span></a>&nbsp;<a href="mailto:martin.h.duke%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/wangyali11@huawei.com"><span class="small text-muted">Yali Wang</span></a>&nbsp;<a href="mailto:wangyali11%40huawei.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/rfc9097/">RFC 9097</a>
+
+      
+        <i>(was draft-ietf-ippm-capacity-metric-method)</i>
+      
+      <br>
+      <b>Metrics and Methods for One-Way IP Capacity</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2021-11
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">33 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-ietf-ippm-capacity-metric-method">
+    
+  </div>
+
+  
+    Proposed Standard RFC
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/martin.h.duke@gmail.com"><span class="">Martin Duke</span></a>&nbsp;<a href="mailto:martin.h.duke%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      <a title="Shepherd" href="/person/tpauly@apple.com"><span class="small text-muted">Tommy Pauly</span></a>&nbsp;<a href="mailto:tpauly%40apple.com"><span class="fa fa-envelope-o tiny"></span></a>
+
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+      
+    </tbody>
+  </table>
+
+
+  
+  
+
+
+
+
+  
+
+  
+  <table class="table table-condensed table-striped tablesorter">
+    <thead>
+      <tr>
+        <th class="sorter-false"></th>
+
+        
+          
+            <th data-header="document">
+	      
+	        Document
+	      
+            </th>
+          
+        
+          
+        
+          
+            <th data-header="date">
+	      
+	        Date
+	      
+            </th>
+          
+        
+          
+            <th data-header="status">
+	      
+	        Status
+	      
+            </th>
+          
+        
+          
+            <th data-header="ipr">
+	      
+	        IPR
+	      
+            </th>
+          
+        
+          
+            <th data-header="ad">
+	      
+	        AD / Shepherd
+	      
+            </th>
+          
+        
+
+        
+      </tr>
+    </thead>
+
+    
+
+      
+    <tbody>
+        <tr class="info">
+          <th></th>
+          
+              <th colspan="5">
+          
+	    Related Internet-Drafts (28 hits)
+          </th>
+        </tr>
+    </tbody>
+
+    <tbody>
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-cnbf-ippm-user-devices-explicit-monitoring/">draft-cnbf-ippm-user-devices-explicit-monitoring-03</a>
+
+      
+      <br>
+      <b>User Devices Explicit Monitoring</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2021-10-25
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">8 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-cnbf-ippm-user-devices-explicit-monitoring">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+      <a href="/ipr/search/?submit=draft&amp;id=draft-cnbf-ippm-user-devices-explicit-monitoring">
+        <span class="label label-default">1</span>
+      </a>
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-du-ippm-self-contained-alt-mark/">draft-du-ippm-self-contained-alt-mark-00</a>
+
+      
+      <br>
+      <b>Self-Contained Alternate-Marking Mechanism for Performance Monitoring in High-Quality Network</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2021-10-24
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">6 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-du-ippm-self-contained-alt-mark">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-dunbar-ippm-5g-edge-compute-ip-layer-metrics/">draft-dunbar-ippm-5g-edge-compute-ip-layer-metrics-02</a>
+
+      
+      <br>
+      <b>IP Layer Metrics for 5G Edge Computing Service</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2022-02-03
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">18 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-dunbar-ippm-5g-edge-compute-ip-layer-metrics">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-fioccola-rfc8321bis/">draft-fioccola-rfc8321bis-04</a>
+
+      
+      <br>
+      <b>Alternate-Marking Method</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+
+       <a href="https://www.ietf.org/rfcdiff?url2=draft-fioccola-rfc8321bis-04">
+       
+
+    
+          2022-04-05
+    
+       </a>
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">27 pages</small>
+    
+
+    
+    <wbr><div class="pull-right"><span class="label label-success">New</span></div>
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-fioccola-rfc8321bis">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+      <br>
+      
+	Call For Adoption By WG Issued:<wbr>
+      
+    
+
+    
+      Proposed Standard
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/martin.h.duke@gmail.com"><span class="">Martin Duke</span></a>&nbsp;<a href="mailto:martin.h.duke%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-fioccola-rfc8889bis/">draft-fioccola-rfc8889bis-04</a>
+
+      
+      <br>
+      <b>Multipoint Alternate-Marking Method</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+
+       <a href="https://www.ietf.org/rfcdiff?url2=draft-fioccola-rfc8889bis-04">
+       
+
+    
+          2022-04-05
+    
+       </a>
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">27 pages</small>
+    
+
+    
+    <wbr><div class="pull-right"><span class="label label-success">New</span></div>
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-fioccola-rfc8889bis">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+      <br>
+      
+	Call For Adoption By WG Issued:<wbr>
+      
+    
+
+    
+      Proposed Standard
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+        <a title="Area Director" href="/person/martin.h.duke@gmail.com"><span class="">Martin Duke</span></a>&nbsp;<a href="mailto:martin.h.duke%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
+<br>
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-gandhi-ippm-simple-direct-loss/">draft-gandhi-ippm-simple-direct-loss-02</a>
+
+      
+      <br>
+      <b>Simple Two-Way Direct Loss Measurement Procedure</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2022-02-04
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">16 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-gandhi-ippm-simple-direct-loss">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+      <a href="/ipr/search/?submit=draft&amp;id=draft-gandhi-ippm-simple-direct-loss">
+        <span class="label label-default">1</span>
+      </a>
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-hwyh-ippm-ps-inband-flow-learning/">draft-hwyh-ippm-ps-inband-flow-learning-01</a>
+
+      
+      <br>
+      <b>Problem Statement and Requirement for Inband Flow Learning</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2021-10-25
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">8 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-hwyh-ippm-ps-inband-flow-learning">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-kumar-ippm-ifa/">draft-kumar-ippm-ifa-04</a>
+
+      
+      <br>
+      <b>Inband Flow Analyzer</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2022-01-20
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">33 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-kumar-ippm-ifa">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-li-ippm-deterministic-owd-measurement/">draft-li-ippm-deterministic-owd-measurement-01</a>
+
+      
+      <br>
+      <b>One-way Delay Measurement Based on Deterministic Networking</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2022-02-09
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">9 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-li-ippm-deterministic-owd-measurement">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-li-ippm-ioam-path-protection/">draft-li-ippm-ioam-path-protection-00</a>
+
+      
+      <br>
+      <b>IOAM Linkage Solution for the Protection Cases of 5G Bearer Network</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2022-03-20
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">10 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-li-ippm-ioam-path-protection">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-li-ippm-otwamp-on-lag/">draft-li-ippm-otwamp-on-lag-03</a>
+
+      
+      <br>
+      <b>One-way/Two-way Active Measurement Protocol Extensions for Performance Measurement on LAG</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2022-03-06
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">13 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-li-ippm-otwamp-on-lag">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-li-ippm-ref-delay-measurement/">draft-li-ippm-ref-delay-measurement-02</a>
+
+      
+      <br>
+      <b>One-way Delay Measurement Based on Reference Delay</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2022-02-09
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">10 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-li-ippm-ref-delay-measurement">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-li-ippm-stamp-on-lag/">draft-li-ippm-stamp-on-lag-02</a>
+
+      
+      <br>
+      <b>Simple Two-Way Active Measurement Protocol Extensions for Performance Measurement on LAG</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2022-03-06
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">8 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-li-ippm-stamp-on-lag">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-mfm-ippm-sfc-nsh-pmamm/">draft-mfm-ippm-sfc-nsh-pmamm-00</a>
+
+      
+      <br>
+      <b>Performance Measurement (PM) with Alternate Marking Method in Service Function Chaining (SFC) Network Service Header (NSH) Domain</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+
+       <a href="https://www.ietf.org/rfcdiff?url1=draft-mirsky-sfc-pmamm-14.txt&url2=draft-mfm-ippm-sfc-nsh-pmamm-00">
+
+    
+          2022-04-01
+    
+       </a>
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">9 pages</small>
+    
+
+    
+    <wbr><div class="pull-right"><span class="label label-success">New</span></div>
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-mfm-ippm-sfc-nsh-pmamm">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+      <a href="/ipr/search/?submit=draft&amp;id=draft-mfm-ippm-sfc-nsh-pmamm">
+        <span class="label label-default">1</span>
+      </a>
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-mhmcsfh-ippm-pam/">draft-mhmcsfh-ippm-pam-00</a>
+
+      
+      <br>
+      <b>Precision Availability Metrics for SLO-Governed End-to-End Services</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2022-03-04
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">13 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-mhmcsfh-ippm-pam">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-mirsky-ippm-hybrid-two-step/">draft-mirsky-ippm-hybrid-two-step-12</a>
+
+      
+      <br>
+      <b>Hybrid Two-Step Performance Measurement Method</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2022-01-26
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">19 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-mirsky-ippm-hybrid-two-step">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+      <a href="/ipr/search/?submit=draft&amp;id=draft-mirsky-ippm-hybrid-two-step">
+        <span class="label label-default">1</span>
+      </a>
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-mizrahi-ippm-ioam-linux-profile/">draft-mizrahi-ippm-ioam-linux-profile-02</a>
+
+      
+      <br>
+      <b>In Situ OAM Profile for the Linux Kernel Implementation</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2022-01-13
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">8 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-mizrahi-ippm-ioam-linux-profile">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-mizrahi-ippm-ioam-profile/">draft-mizrahi-ippm-ioam-profile-06</a>
+
+      
+      <br>
+      <b>In Situ OAM Profiles</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2022-02-17
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">9 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-mizrahi-ippm-ioam-profile">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-mizrahi-ippm-marking/">draft-mizrahi-ippm-marking-00</a>
+
+      
+      <br>
+      <b>Marking Methods for Performance Measurement</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2021-10-25
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">25 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-mizrahi-ippm-marking">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-song-ippm-inband-e2e-rtt-measurement/">draft-song-ippm-inband-e2e-rtt-measurement-02</a>
+
+      
+      <br>
+      <b>In-band Edge-to-Edge Round Trip Time Measurement</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2021-11-29
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">7 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-song-ippm-inband-e2e-rtt-measurement">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-song-ippm-postcard-based-telemetry/">draft-song-ippm-postcard-based-telemetry-11</a>
+
+      
+      <br>
+      <b>In-Situ OAM Marking-based Direct Export</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2021-11-15
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">12 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-song-ippm-postcard-based-telemetry">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-spiegel-ippm-ioam-rawexport/">draft-spiegel-ippm-ioam-rawexport-06</a>
+
+      
+      <br>
+      <b>In-situ OAM raw data export with IPFIX</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2022-02-21
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">23 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-spiegel-ippm-ioam-rawexport">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+      <a href="/ipr/search/?submit=draft&amp;id=draft-spiegel-ippm-ioam-rawexport">
+        <span class="label label-default">1</span>
+      </a>
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-wang-ippm-ipv6-distribted-flow-measurement/">draft-wang-ippm-ipv6-distribted-flow-measurement-00</a>
+
+      
+      <br>
+      <b>Distributed Flow Measurement in IPv6</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2022-03-04
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">17 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-wang-ippm-ipv6-distribted-flow-measurement">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-wang-ippm-ipv6-flow-measurement/">draft-wang-ippm-ipv6-flow-measurement-01</a>
+
+      
+      <br>
+      <b>Flow Measurement in IPv6 Network</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2022-03-03
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">13 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-wang-ippm-ipv6-flow-measurement">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-weis-ippm-ioam-eth/">draft-weis-ippm-ioam-eth-05</a>
+
+      
+      <br>
+      <b>EtherType Protocol Identification of In-situ OAM Data</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2022-02-21
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">11 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-weis-ippm-ioam-eth">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+      <a href="/ipr/search/?submit=draft&amp;id=draft-weis-ippm-ioam-eth">
+        <span class="label label-default">1</span>
+      </a>
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-weng-ippm-srpm-path-consistency-over-srv6/">draft-weng-ippm-srpm-path-consistency-over-srv6-00</a>
+
+      
+      <br>
+      <b>SRPM Path Consistency over SRv6</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2022-03-02
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">13 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-weng-ippm-srpm-path-consistency-over-srv6">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-yang-ippm-pnmp/">draft-yang-ippm-pnmp-01</a>
+
+      
+      <br>
+      <b>Precise Network Measurement Protocol</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2021-10-25
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">10 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-yang-ippm-pnmp">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+          
+
+
+
+
+
+<tr >
+
+  <td>
+    
+    
+
+    
+  </td>
+
+  <td class="doc">
+    <div>
+      <a href="/doc/draft-zhou-ippm-enhanced-alternate-marking/">draft-zhou-ippm-enhanced-alternate-marking-09</a>
+
+      
+      <br>
+      <b>Enhanced Alternate Marking Method</b>
+      
+    </div>
+
+    
+  </td>
+
+  <td>
+    <span class="text-nowrap">
+
+    
+          2022-02-28
+    
+    </span>
+
+
+
+    
+      <br><small class="text-muted">9 pages</small>
+    
+
+    
+
+    
+
+  </td>
+
+  
+
+
+<td class="status">
+  <div class="pull-right" id="ballot-icon-draft-zhou-ippm-enhanced-alternate-marking">
+    
+  </div>
+
+  
+    
+      I-D Exists
+    
+
+    
+
+    <wbr>
+
+    <wbr>
+    
+    
+
+    
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+
+</td>
+
+
+  <td class="ipr text-center">
+    
+      <a href="/ipr/search/?submit=draft&amp;id=draft-zhou-ippm-enhanced-alternate-marking">
+        <span class="label label-default">2</span>
+      </a>
+    
+  </td>
+
+  
+    <td class="area-director">
+      
+      
+    </td>
+  
+
+  
+  
+</tr>
+
+        
+      
+    </tbody>
+  </table>
+
+
+  <ul class="list-inline pull-right" style="margin-top:1em;">
+  <li>
+    <label id="list-feeds">Atom feed:</label>
+    <div class="btn-group" role="group" aria-labelledby="list-feeds">
+      <a class="btn btn-default" title="Feed of all changes" href="/group/ippm/documents/feed/">All changes</a>
+      <a class="btn btn-default" title="Feed of only significant state changes" href="/group/ippm/documents/feed/?significant=1">Significant</a>
+    </div>
+  </li>
+
+  
+    <li><a class="btn btn-default" href="/group/ippm/documents/subscription/">
+      <i class="glyphicon glyphicon-envelope"></i>
+      
+        Subscribe to changes
+      
+    </a></li>
+  
+
+  <li><a class="btn btn-default" href="/group/ippm/documents/csv/"><i class="glyphicon glyphicon-list"></i> Export as CSV</a></li>
+</ul>
+
+
+
+
+
+        
+        
+	  </div>
+        
+
+	
+	<hr>
+	  <div class="col-md-12 col-sm-12">
+	    <div class="text-center padded">
+	        <a href="https://www.rfc-editor.org/" class="padded">RFC&nbsp;Editor</a>
+	        <a href="https://www.ietf.org/llc/" class="padded">IASA&nbsp;&amp;&nbsp;IETF&nbsp;LLC</a>
+	        <a href="https://trustee.ietf.org/" class="padded">IETF&nbsp;Trust</a>
+	        <a href="https://www.irtf.org/" class="padded">IRTF</a>
+	        <a href="https://www.ietf.org/" class="padded">IETF</a>
+	        <a href="https://www.ietf.org/iesg/" class="padded">IESG</a>
+	        <a href="https://www.iab.org/" class="padded">IAB</a>
+	        <a href="https://www.iana.org/" class="padded">IANA</a>
+	        <a href="https://www.ietf.org/privacy-statement/" class="padded">Privacy&nbsp;Statement</a>
+	    </div>
+	  </div>
+
+
+        <footer class="col-md-12 col-sm-12">
+	  <div class="col-md-12">
+	    <div class="text-center">
+	      <p class="small text-muted">
+	        
+		  <a href="/release/about">About</a> |
+	          IETF Datatracker |
+	          <a href="/release/7.46.0.p4/">Version 7.46.0.p4</a> |
+	          2022-03-10 |
+	        
+		Report a bug:
+	        <a href="https://trac.ietf.org/trac/ietfdb/newticket">Tracker:<span class="fa fa-bug"></span></a>
+                
+	        <a href="mailto:datatracker-project@ietf.org">Email:<span class="fa fa-envelope"></span></a>
+                
+		<br>
+                Python 3.6.12 |
+		Django 2.2.27
+	      </p>
+	    </div>
+	  </div>
+        </footer>
+	
+
+      </div>
+
+      
+
+
+
+
+      <script src="https://www.ietf.org/lib/dt/7.46.0/jquery/jquery.min.js"></script>
+      
+      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
+      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
+      <script src="https://www.ietf.org/lib/dt/7.46.0/js-cookie/src/js.cookie.js"></script>
+      <script src="https://www.ietf.org/lib/dt/7.46.0/ietf/bootstrap/js/bootstrap.min.js"></script>
+      <script src="https://www.ietf.org/lib/dt/7.46.0/ietf/js/ietf.js"></script>
+      
+<script src="https://www.ietf.org/lib/dt/7.46.0/jquery.tablesorter/js/jquery.tablesorter.combined.min.js"></script>
+
+      
+  <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6fb2b0023f69a3a0',m:'hHSbZHJt9kOeTL1irm_iZrQ5SfHvQ_kpxYtKytWww3M-1649837037-0-AW7WhTX8wDeSp5z7aDb+a8CPXuwAu3L6ntWZpaiGWeNrPF7+X2SkXoOv8lYPK4c+GVop65Lzk3FMPeHqyOFrX/KSUkshTbmLZDRQlJox5n2nBGfORqzd45bD1UGRX9UelH+fcWktiReUz6unnX0KM2Y=',s:[0x741fa3143d,0x76dbfe4827],}})();</script></body>
+</html>
