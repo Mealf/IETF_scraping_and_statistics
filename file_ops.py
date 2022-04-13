@@ -6,11 +6,15 @@ from os.path import exists
 from datetime import datetime
 from bs4 import BeautifulSoup
 
-def save_to_csv(result: list[list[int]], file_name: str = 'result') -> None:
-    file_name += '.csv'
+def save_to_csv(result: list[list[str]], file_name: str = 'result.csv') -> None:
+    #file_name += '.csv'
     with open(file_name, 'w', encoding='utf-8') as f:
         for row in result:
-            f.write(f'{row[0]}, {row[1]}\n')
+            for col in range(len(row)):
+                if col == len(row) - 1:
+                    f.write(f'{row[col]}\n')
+                else:
+                    f.write(f'{row[col]},')
 
 
 def read_keyword_list() -> list[str]:

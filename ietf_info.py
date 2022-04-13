@@ -133,8 +133,33 @@ def get_RFCs_order_by_WGs(rfc_list: bool = True) -> list[dict[str, int, list[str
     return result
 
 
+def get_RFC_keyword():
+    result = []
+
+    script_location = Path(__file__).absolute().parent
+    file_location = script_location / 'cache_file' / 'RFC_keywords.csv'
+
+    url = r'https://www.rfc-editor.org/rfc-index.xml'
+    r = requests.get(url)
+
+    soup = BeautifulSoup(r.text, 'lxml')
+    rfcs = soup.find_all('rfc-entry')
+
+    for rfc in rfcs:
+        id = rfc.find('doc-id').string
+        kws = rfc.find_all('kw')
+        for kw in kws:
+            if kw.string is None:
+                continue
+            
+            kw = keyword_normalize(kw.string)
+            result.append([id, kw])
+    
+    save_to_csv(result, file_location)
+    
+    
+
 if __name__ == '__main__':
     start_time = time.time()
-    #print(get_rfc_list('ace'))
-    print(*get_RFCs_order_by_WGs(rfc_list=False), sep='\n')
+    get_RFC_keyword()
     print("--- %s seconds ---" % (time.time() - start_time))
