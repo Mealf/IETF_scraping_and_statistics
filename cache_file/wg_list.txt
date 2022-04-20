@@ -17,7 +17,6 @@ jmap
 jsonpath
 mediaman
 mmusic
-perc
 regext
 rtcweb
 rum

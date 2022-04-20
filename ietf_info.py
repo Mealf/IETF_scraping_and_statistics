@@ -29,7 +29,7 @@ def get_working_groups_list(use_cache: bool = True) -> list[str]:
             a_tags = table.find_all('a')
             for a_tag in a_tags:
                 if re.match('^/wg/.*', a_tag['href']):
-                    wgs_name.append(a_tag.text)
+                    wgs_name.append(a_tag.text.strip())
 
         # create/update cache file
         os.makedirs(os.path.dirname(file_location), exist_ok=True)
@@ -161,5 +161,6 @@ def get_RFC_keyword():
 
 if __name__ == '__main__':
     start_time = time.time()
-    get_RFC_keyword()
+    #get_RFC_keyword()
+    print(get_working_groups_list(use_cache=False))
     print("--- %s seconds ---" % (time.time() - start_time))
