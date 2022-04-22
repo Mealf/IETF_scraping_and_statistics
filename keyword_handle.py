@@ -1,12 +1,12 @@
 import re
 import time
-from file_ops import read_keyword_list
+from file_ops import get_keyword_list
 from keyword_normalize import *
 
 
 
 def get_keyword_from_text(text: str) -> list[str]:
-    keyword_list = read_keyword_list()
+    keyword_list = get_keyword_list()
     result = set()
 
     text = text.replace('\n', '')
@@ -40,7 +40,7 @@ def get_keyword_from_text(text: str) -> list[str]:
 
 
 def get_keyword_list_max_token() -> int:
-    keyword_list = read_keyword_list()
+    keyword_list = get_keyword_list()
     max_token = 0
 
     for kw in keyword_list:

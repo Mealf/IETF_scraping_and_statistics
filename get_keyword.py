@@ -10,7 +10,7 @@ def get_RFC_keyword():
     result = []
 
     script_location = Path(__file__).absolute().parent
-    file_location = script_location / 'cache_file' / 'RFC_keywords.csv'
+    file_location = script_location / 'data' / 'RFC_keywords.csv'
 
     url = r'https://www.rfc-editor.org/rfc-index.xml'
     r = requests.get(url)
@@ -20,24 +20,31 @@ def get_RFC_keyword():
 
     for rfc in rfcs:
         id = rfc.find('doc-id').string
-        kws = rfc.find_all('kw')
-        for kw in kws:
-            if kw.string is None:
+        kw_tags = rfc.find_all('kw')
+        for kw_tag in kw_tags:
+            kw = kw_tag.string
+            if kw is None:
                 continue
             
-            kw = keyword_normalize(kw.string)
-            result.append([id, kw])
+            # avoid ',' in <kw></kw>
+            for kw in kw.split(','):
+                kw = keyword_normalize(kw)
+                if kw != '':
+                    result.append([id, kw])
     
     save_to_csv(result, file_location)
 
+    return result
+
 
 def get_keyword_from_title():
+    ''' 從RFC與draft的標題中取得關鍵字 '''
     # TODO: 重複關鍵字問題
     script_location = Path(__file__).absolute().parent
-    file_location = script_location / 'cache_file' / 'title_keyword.csv'
+    file_location = script_location / 'data' / 'title_keyword.csv'
 
     wgs = get_working_groups_list()
-    keyword_list = read_keyword_list()
+    keyword_list = get_keyword_list()
 
     result = []
 
@@ -57,8 +64,10 @@ def get_keyword_from_title():
 
     save_to_csv(result, file_location)
 
+    return result
+
 
 if __name__ == '__main__':
     start_time = time.time()
-    get_keyword_from_title()
+    get_RFC_keyword()
     print("--- %s seconds ---" % (time.time() - start_time))

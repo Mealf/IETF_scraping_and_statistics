@@ -17,7 +17,7 @@ def save_to_csv(result: list[list[str]], file_name: str = 'result.csv') -> None:
                     f.write(f'{row[col]},')
 
 
-def read_keyword_list() -> list[str]:
+def get_keyword_list() -> list[str]:
     kws = []
     script_location = Path(__file__).absolute().parent
     file_location = script_location / 'cache_file' / 'keywords.txt'
@@ -48,13 +48,17 @@ def update_keyword_list() -> None:
     rfcs = soup.find_all('rfc-entry')
     
     for rfc in rfcs:
-        kws = rfc.find_all('kw')
-        for kw in kws:
-            if kw.string is None:
+        kw_tags = rfc.find_all('kw')
+        for kw_tag in kw_tags:
+            kw = kw_tag.string
+            if kw is None:
                 continue
             
-            kw = keyword_normalize(kw.string)
-            keywords.add(kw)
+            # avoid ',' in <kw></kw>
+            for kw in kw.split(','):
+                kw = keyword_normalize(kw)
+                if kw != '':
+                    keywords.add(kw)
     
     # Save result
     with open(file_location, 'w', encoding='utf-8') as f:
@@ -72,4 +76,4 @@ def is_cache_file_available(file_path:str) -> bool:
     return dt_m.date() == datetime.today().date()
 
 if __name__ == '__main__':
-    print(read_keyword_list())
+    update_keyword_list()
