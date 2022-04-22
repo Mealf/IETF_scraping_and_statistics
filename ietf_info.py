@@ -41,9 +41,7 @@ def get_working_groups_list(use_cache: bool = True) -> list[str]:
 
 
 def get_doc_list(wg_name, rfc=True, draft=True, use_cache=True):
-    '''
-    Return all doc(rfc and draft)'s id, title and url
-    '''
+    ''' Return all doc(rfc and draft)'s id, title and url '''
 
     script_location = Path(__file__).absolute().parent
     file_location = script_location / \
@@ -81,32 +79,30 @@ def get_doc_list(wg_name, rfc=True, draft=True, use_cache=True):
             status = row.find('td', class_='status')
             if 'Replaced by' in status.text:
                 continue
-
+            
+            if doc_id.startswith('rfc'):
+                doc_id = doc_id.replace('rfc', 'RFC', 1)
             docs.append({'id': doc_id, 'title': title, 'url': document_url})
 
     return docs
 
 
 def get_draft_list(wg_name: str, use_cache: bool = True) -> list[dict[str, str]]:
-    '''
-    Return all draft's id, title and url
-    '''
+    ''' Return all draft's id, title and url '''
 
     return get_doc_list(wg_name, rfc=False, draft=True, use_cache=use_cache)
 
 
 def get_rfc_list(wg_name: str, use_cache: bool = True) -> list[dict[str, str]]:
-    '''
-    Return all rfc's id, tilte and url
-    '''
+    ''' Return all rfc's id, tilte and url '''
 
     return get_doc_list(wg_name, rfc=True, draft=False, use_cache=use_cache)
 
 
 def get_RFCs_order_by_WGs(rfc_list: bool = True) -> list[dict[str, int, list[str]]]:
     '''
-    Return the number of RFCs per working group
-    exec time: 439 sec
+        Return the number of RFCs per working group
+        exec time: 439 sec
     '''
 
     wgs = get_working_groups_list(use_cache=True)
@@ -132,35 +128,11 @@ def get_RFCs_order_by_WGs(rfc_list: bool = True) -> list[dict[str, int, list[str
     result.sort(key=lambda wg_info: wg_info['count'], reverse=True)
     return result
 
-
-def get_RFC_keyword():
-    result = []
-
-    script_location = Path(__file__).absolute().parent
-    file_location = script_location / 'cache_file' / 'RFC_keywords.csv'
-
-    url = r'https://www.rfc-editor.org/rfc-index.xml'
-    r = requests.get(url)
-
-    soup = BeautifulSoup(r.text, 'lxml')
-    rfcs = soup.find_all('rfc-entry')
-
-    for rfc in rfcs:
-        id = rfc.find('doc-id').string
-        kws = rfc.find_all('kw')
-        for kw in kws:
-            if kw.string is None:
-                continue
-            
-            kw = keyword_normalize(kw.string)
-            result.append([id, kw])
-    
-    save_to_csv(result, file_location)
     
     
 
 if __name__ == '__main__':
     start_time = time.time()
     #get_RFC_keyword()
-    print(get_working_groups_list(use_cache=False))
+    #print(get_working_groups_list(use_cache=False))
     print("--- %s seconds ---" % (time.time() - start_time))

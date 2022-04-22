@@ -1,4949 +1,4670 @@
-<!DOCTYPE html> 
+
+<!DOCTYPE html>
+
 
 
 
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Audio/Video Transport Core Maintenance (avtcore) - Documents</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>
+            Audio/Video Transport Core Maintenance (avtcore)
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="https://www.ietf.org/lib/dt/8.0.0/ietf/css/ietf.css">
+        <link rel="stylesheet" href="https://www.ietf.org/lib/dt/8.0.0/ietf/css/select2.css">
+        <style>
+            
+            .leftmenu { width: 13em; }
+        </style>
+        
+    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/8.0.0/ietf/css/list.css">
 
-    <link href="https://www.ietf.org/lib/dt/7.46.0/ptmono/stylesheet.css" rel='stylesheet' type='text/css'>
-    <link href="https://www.ietf.org/lib/dt/7.46.0/ptsans/stylesheet.css" rel='stylesheet' type='text/css'>
-    <link href="https://www.ietf.org/lib/dt/7.46.0/ptserif/stylesheet.css" rel='stylesheet' type='text/css'>
+        
+            <link rel="shortcut icon"
+                  href="https://www.ietf.org/lib/dt/8.0.0/ietf/images/ietf-icon-blue3.png">
+        
+        <link rel="apple-touch-icon"
+              href="https://www.ietf.org/lib/dt/8.0.0/ietf/images/apple-touch-icon.png">
+        <script src="https://www.ietf.org/lib/dt/8.0.0/ietf/js/ietf.js"></script>
+    <script async src='/cdn-cgi/bm/cv/669835187/api.js'></script></head>
+    <body  class="position-relative"
+          data-group-menu-data-url="/group/groupmenu.json">
+        <a class="visually-hidden visually-hidden-focusable" href="#content">Skip to main content</a>
+        <nav class="navbar navbar-expand-lg  navbar-dark bg-secondary    fixed-top ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">
+                    <img alt="IETF Logo"
+                         src="https://www.ietf.org/lib/dt/8.0.0/ietf/images/ietflogo-small-transparent.png">
+                    Datatracker
+                    
+                </a>
+                <div class="collapse navbar-collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        
+
+
+
+
+<li class="nav-item dropdown">
+    
+        <a href="#"
+           class="nav-link dropdown-toggle"
+           role="button"
+           data-bs-auto-close="false"
+           data-bs-toggle="dropdown"
+           aria-expanded="false">
+            Groups
+        </a>
+        <ul class="dropdown-menu mt-n1">
+        
+    <li class="dropdown-header">By area/parent</li>
     
 
-    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/ietf/font-datatracker/css/font-datatracker.css">
-    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/ietf/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/ietf/bootstrap/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/ietf/css/ietf.css">
-    
-    <style>
-     
-    </style>
-
-    
-<link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/jquery.tablesorter/css/theme.bootstrap.min.css">
 
 
-    
-    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.46.0/ietf/images/ietf-icon-blue3.png">
-    
-    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.46.0/ietf/images/apple-touch-icon.png">
-  <script async src='/cdn-cgi/bm/cv/669835187/api.js'></script></head>
+    <li class="dropend group-menu group-parent-2010">
+        <a class="dropdown-item dropdown-toggle "
+           href="/wg/#art">
+            Apps &amp; Realtime
+        </a>
+    </li>
 
-  <body  data-group-menu-data-url="/group/groupmenu.json">
-      <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container-fluid">
-	  <div class="navbar-header">
-	    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-	      <span class="sr-only">Toggle navigation</span>
-	      <span class="icon-bar"></span>
-	      <span class="icon-bar"></span>
-	      <span class="icon-bar"></span>
-	    </button>
-	    <a class="navbar-brand" href="/">
-	       <img alt="IETF Logo" src="https://www.ietf.org/lib/dt/7.46.0/ietf/images/ietflogo-small-transparent.png">
-	       
-		  
-		  Datatracker
-		  
-	       
-	    </a>
-	  </div>
+    <li class="dropend group-menu group-parent-1008">
+        <a class="dropdown-item dropdown-toggle "
+           href="/wg/#gen">
+            General
+        </a>
+    </li>
 
-	  <noscript>
-	    <p class="navbar-text"><small>Enable Javascript for full functionality.</small></p>
-	  </noscript>
+    <li class="dropend group-menu group-parent-1052">
+        <a class="dropdown-item dropdown-toggle "
+           href="/wg/#int">
+            Internet
+        </a>
+    </li>
 
-	  <div class="collapse navbar-collapse" id="navbar-collapse">
-	    <ul class="hidden-nojs nav navbar-nav">
-              
+    <li class="dropend group-menu group-parent-1193">
+        <a class="dropdown-item dropdown-toggle "
+           href="/wg/#ops">
+            Ops &amp; Management
+        </a>
+    </li>
+
+    <li class="dropend group-menu group-parent-1249">
+        <a class="dropdown-item dropdown-toggle "
+           href="/wg/#rtg">
+            Routing
+        </a>
+    </li>
+
+    <li class="dropend group-menu group-parent-1260">
+        <a class="dropdown-item dropdown-toggle "
+           href="/wg/#sec">
+            Security
+        </a>
+    </li>
+
+    <li class="dropend group-menu group-parent-1324">
+        <a class="dropdown-item dropdown-toggle "
+           href="/wg/#tsv">
+            Transport
+        </a>
+    </li>
+
+    <li class="dropend group-menu group-parent-7">
+        <a class="dropdown-item dropdown-toggle "
+           href="/program/">
+            IAB
+        </a>
+    </li>
+
+    <li class="dropend group-menu group-parent-3">
+        <a class="dropdown-item dropdown-toggle "
+           href="/rg/">
+            IRTF
+        </a>
+    </li>
+
+    <li class="dropend group-menu group-parent-2309">
+        <a class="dropdown-item dropdown-toggle "
+           href="/adm/">
+            IETF LLC
+        </a>
+    </li>
 
 
-
-
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-  
-  Groups
-  
-    </a>
-    <ul class="dropdown-menu" role="menu">
-
-    <li class="dropdown-header visible-lg-block">By area/parent</li>
-  
+    <li class="dropend">
+        <a class="dropdown-item dropdown-toggle "
+           href="/group/">
+            Other
+        </a>
         
 
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-2010">
-    <a href="/wg/#art">Apps &amp; Realtime</a>
-  </li>
 
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1008">
-    <a href="/wg/#gen">General</a>
-  </li>
-
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1052">
-    <a href="/wg/#int">Internet</a>
-  </li>
-
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1193">
-    <a href="/wg/#ops">Ops &amp; Mgmt</a>
-  </li>
-
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1249">
-    <a href="/wg/#rtg">Routing</a>
-  </li>
-
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1260">
-    <a href="/wg/#sec">Security</a>
-  </li>
-
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1324">
-    <a href="/wg/#tsv">Transport</a>
-  </li>
-
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-7">
-    <a href="/program/">IAB</a>
-  </li>
-
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-3">
-    <a href="/rg/">IRTF</a>
-  </li>
-
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-2309">
-    <a href="/adm/">IETF LLC</a>
-  </li>
-
-
-        <li class="dropdown-submenu group-menu"><a href="/group/">Other</a>
-<ul class="dropdown-menu" role="menu">
-
-  <li>
-    <a href="/ag/">Active AGs</a>
-  </li>
-
-  <li>
-    <a href="/area/">Active Areas</a>
-  </li>
-
-  <li>
-    <a href="/dir/">Active Directorates</a>
-  </li>
-
-  <li>
-    <a href="/program/">Active Programs</a>
-  </li>
-
-  <li>
-    <a href="/rag/">Active RAGs</a>
-  </li>
-
-  <li>
-    <a href="/team/">Active Teams</a>
-  </li>
-
-
-  <li>
-    <a href="/group/rsoc/">RSOC</a>
-  </li>
-
+<ul class="dropdown-menu ms-n1">
+    
+        <li>
+            <a class="dropdown-item "
+               href="/ag/">Active AGs</a>
+        </li>
+    
+        <li>
+            <a class="dropdown-item "
+               href="/area/">Active Areas</a>
+        </li>
+    
+        <li>
+            <a class="dropdown-item "
+               href="/dir/">Active Directorates</a>
+        </li>
+    
+        <li>
+            <a class="dropdown-item "
+               href="/program/">Active Programs</a>
+        </li>
+    
+        <li>
+            <a class="dropdown-item "
+               href="/rag/">Active RAGs</a>
+        </li>
+    
+        <li>
+            <a class="dropdown-item "
+               href="/team/">Active Teams</a>
+        </li>
+    
+    
+        <li>
+            <a class="dropdown-item "
+               href="/group/rsoc/">RSOC</a>
+        </li>
+    
 </ul>
- </li>
 
-  <li class="divider hidden-xs"></li>
-  <li class="dropdown-header hidden-xs">New work</li>
-  <li><a href="/group/chartering/">Chartering groups</a></li>
-  <li><a href="/wg/bofs/">BOFs</a></li>
-  <li><a href="/doc/bof-requests">BOF Requests</a></li>
-
-  <li class="divider hidden-xs"></li>
-  <li class="dropdown-header hidden-xs">Other groups</li>
-  <li><a href="/group/concluded/">Concluded groups</a></li>
-  <li><a href="/list/nonwg">Non-WG lists</a></li>
-
-</ul>
-</li>
-
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-  
-  Documents
-  
-    </a>
-    <ul class="dropdown-menu" role="menu">
-  
-  <li><a href="/doc/search">Search</a></li>
-  <li><a href="/doc/recent">Recent drafts</a></li>
-  <li><a href="/submit/">Draft submission</a></li>
-
-  
-
-
-  <li class="divider hidden-xs"></li>
-  <li class="dropdown-header hidden-xs">RFC streams</li>
-        <li><a href="/stream/iab/">IAB</a></li>
-        <li><a href="/stream/irtf/">IRTF</a></li>
-        <li><a href="/stream/ise/">ISE</a></li>
-
-</ul>
-</li>
-
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-  
-  Meetings
-  
-    </a>
-    <ul class="dropdown-menu" role="menu">
-  
-
-
-  
-  <li class="dropdown-header visible-lg-block">Next meeting</li>
-  
-  <li><a href="/meeting/agenda/">Agenda</a></li>
-  <li><a href="/meeting/materials/">Materials</a></li>
-  <li><a href="/meeting/floor-plan/">Floor plan</a></li>
-  <li><a href="https://www.ietf.org/how/meetings/register/">Registration</a></li>
-  <li><a href="/meeting/important-dates/">Important dates</a></li>
-  <li><a href="/secr/sreq/">Request a session</a></li>
-  <li><a href="/meeting/requests">Session requests</a></li>
-  
-  <li class="divider hidden-xs"></li>
-  <li class="dropdown-header visible-lg-block">Upcoming meetings</li>
-  
-  <li><a href="/meeting/upcoming">Upcoming meetings</a></li>
-  
-  <li class="divider hidden-xs"></li>
-  <li class="dropdown-header visible-lg-block">Past meetings</li>
-  
-  <li><a href="/meeting/past">Past meetings</a></li>
-  <li><a href="https://www.ietf.org/how/meetings/past/">Meeting proceedings</a></li>
-</ul>
-</li>
-
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-  
-  Other
-  
-    </a>
-    <ul class="dropdown-menu" role="menu">
-  
-
-  <li><a href="/ipr/">IPR disclosures</a></li>
-  <li><a href="/liaison/">Liaison statements</a></li>
-  <li><a href="/iesg/agenda/">IESG agenda</a></li>
-  <li><a href="/nomcom/">NomComs</a></li>
-  <li><a href="/doc/downref/">Downref registry</a></li>
-  <li class="dropdown-submenu">
-    <a href="/stats/">Statistics</a>
-    <ul class="dropdown-menu">
-      <li><a href="/stats/document/">Drafts/RFCs</a></li>
-      <li><a href="/stats/meeting/">Meetings</a></li>
-      
+    </li>
+    <li><hr class="dropdown-divider"></li>
+    <li class="dropdown-header">New work</li>
+    <li>
+        <a class="dropdown-item "
+           href="/group/chartering/">
+            Chartering groups
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/wg/bofs/">
+            BOFs
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/doc/bof-requests">
+            BOF Requests
+        </a>
+    </li>
+    <li><hr class="dropdown-divider"></li>
+    <li class="dropdown-header">Other groups</li>
+    <li>
+        <a class="dropdown-item "
+           href="/group/concluded/">
+            Concluded groups
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/list/nonwg">
+            Non-WG lists
+        </a>
+    </li>
+    
     </ul>
-  </li>
-  <li><a href="/group/edu/materials/">Tutorials</a></li>
-  <li><a href="/api/">API Help</a></li>  
-  <li><a href="/release/">Release notes</a></li>
-  <li class="divider hidden-xs"></li>
-  <li><a href="https://trac.ietf.org/trac/ietfdb/newticket"><span class="fa fa-bug"></span> Report a bug</a></li>
-</ul>
+</li>
+
+<li class="nav-item dropdown">
+    
+        <a href="#"
+           class="nav-link dropdown-toggle"
+           role="button"
+           data-bs-toggle="dropdown"
+           aria-expanded="false">
+            Documents
+        </a>
+        <ul class="dropdown-menu mt-n1">
+        
+    <li>
+        <a class="dropdown-item "
+           href="/doc/search">
+            Search
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/doc/recent">
+            Recent drafts
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/submit/">
+            Draft submission
+        </a>
+    </li>
+    
+    
+        <li><hr class="dropdown-divider">
+        </li>
+    
+    <li class="dropdown-header">
+        RFC streams
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/stream/iab/">
+            IAB
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/stream/irtf/">
+            IRTF
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/stream/ise/">
+            ISE
+        </a>
+    </li>
+    
+    </ul>
+</li>
+
+<li class="nav-item dropdown">
+    
+        <a href="#"
+           class="nav-link dropdown-toggle"
+           role="button"
+           data-bs-toggle="dropdown"
+           aria-expanded="false">
+            Meetings
+        </a>
+        <ul class="dropdown-menu mt-n1">
+        
+    <li>
+        <a class="dropdown-item "
+           href="/meeting/agenda/">
+            Agenda
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/meeting/materials/">
+            Materials
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/meeting/floor-plan/">
+            Floor plan
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="https://www.ietf.org/how/meetings/register/">
+            Registration
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/meeting/important-dates/">
+            Important dates
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/secr/sreq/">
+            Request a session
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/meeting/requests">
+            Session requests
+        </a>
+    </li>
+    
+        
+            <li><hr class="dropdown-divider">
+            </li>
+        
+        <li class="dropdown-header">
+            Upcoming meetings
+        </li>
+    
+    <li>
+        <a class="dropdown-item "
+           href="/meeting/upcoming">
+            Upcoming meetings
+        </a>
+    </li>
+    
+        
+            <li><hr class="dropdown-divider">
+            </li>
+        
+        <li class="dropdown-header">
+            Past meetings
+        </li>
+    
+    <li>
+        <a class="dropdown-item "
+           href="/meeting/past">
+            Past meetings
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="https://www.ietf.org/how/meetings/past/">
+            Meeting proceedings
+        </a>
+    </li>
+    
+    </ul>
+</li>
+
+<li class="nav-item dropdown">
+    
+        <a href="#"
+           class="nav-link dropdown-toggle"
+           role="button"
+           data-bs-toggle="dropdown"
+           aria-expanded="false">
+            Other
+        </a>
+        <ul class="dropdown-menu mt-n1">
+        
+    <li>
+        <a class="dropdown-item "
+           href="/ipr/">
+            IPR disclosures
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/liaison/">
+            Liaison statements
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/iesg/agenda/">
+            IESG agenda
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/nomcom/">
+            NomComs
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/doc/downref/">
+            Downref registry
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/stats/">
+            Statistics
+        </a>
+        <ul class="dropdown-menu mt-n1">
+            <li>
+                <a class="dropdown-item "
+                   href="/stats/document/">
+                    Drafts/RFCs
+                </a>
+            </li>
+            <li>
+                <a class="dropdown-item "
+                   href="/stats/meeting/">
+                    Meetings
+                </a>
+            </li>
+            
+        </ul>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/group/edu/materials/">
+            Tutorials
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/api/">
+            API Help
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/release/">
+            Release notes
+        </a>
+    </li>
+    
+        <li><hr class="dropdown-divider">
+        </li>
+    
+    <li>
+        <a class="dropdown-item "
+           href="https://github.com/ietf-tools/datatracker/issues/new/choose">
+            <i class="bi bi-bug">
+            </i>
+            Report a bug
+        </a>
+    </li>
+    
+    </ul>
 </li>
 
 
-  
-
-
-<li class="dropdown">
-  
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-     User 
-  </a>
-  <ul class="dropdown-menu" role="menu">
-  
-
-  
     
-      <li><a rel="nofollow" href="/accounts/login/?next=/wg/avtcore/documents/">Sign in</a></li>
-      <li><a rel="nofollow" href="/accounts/reset/">Password reset</a></li>
-      <li><a href="/accounts/settings/" rel="nofollow">Preferences</a></li>
+
+
+
+<li class="nav-item dropdown">
     
-    <li><a href="/help/personal-information">Handling of personal information</a></li>  
-  
-
-  
-    <li><a href="/accounts/create/">New account</a></li>
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-</ul>
-
-            </ul>
+        <a href="#"
+           class="nav-link dropdown-toggle"
+           role="button"
+           data-bs-toggle="dropdown"
+           aria-expanded="false">
+            
+                User
+            
+        </a>
+        <ul class="dropdown-menu  mt-n1 ">
         
-            <p class="navbar-text"></p>
-            <a class="btn btn-warning btn-sm navbar-btn" rel="nofollow" href="/accounts/login/?next=/wg/avtcore/documents/">Sign in</a>
+    
+        
+            <li>
+                <a class="dropdown-item "
+                   rel="nofollow"
+                   href="/accounts/login/?next=/wg/avtcore/documents/">
+                    Sign in
+                </a>
+            </li>
+            <li>
+                <a class="dropdown-item "
+                   rel="nofollow"
+                   href="/accounts/reset/">
+                    Password reset
+                </a>
+            </li>
+            <li>
+                <a class="dropdown-item "
+                   href="/accounts/settings/"
+                   rel="nofollow">
+                    Preferences
+                </a>
+            </li>
+        
+        <li>
+            <a class="dropdown-item "
+               href="/help/personal-information">
+                Handling of personal information
+            </a>
+        </li>
+    
+    
+        <li>
+            <a class="dropdown-item "
+               href="/accounts/create/">
+                New account
+            </a>
+        </li>
+    
+    
+    
+    
+    
+    
+    </ul></li>
+
+
+
+                    </ul>
+                </div>
+                
+                    <a class="d-none d-sm-block mx-5 btn  btn-warning "
+                       rel="nofollow"
+                       href="/accounts/login/?next=/wg/avtcore/documents/">
+                        Sign
+                        in
+                    </a>
+                
+                <div class="d-flex d-none d-lg-block">
+                    <label aria-label="Document search">
+                    <input class="form-control select2-field"
+                           id="navbar-doc-search"
+                           data-ajax--url="/doc/select2search/docalias/draft/"
+                           type="text"
+                           data-placeholder="Document search">
+                   </label>
+                </div>
+                <button class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbar-collapse"
+                        aria-controls="navbar-collapse"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <i class="navbar-toggler-icon"></i>
+                </button>
+            </div>
+        </nav>
+        <div class="pt-3 container-fluid">
+            <div class="row">
+                
+                <div class="col mx-lg-3 ietf-auto-nav" id="content">
+                    <noscript>
+                        <div class="alert alert-danger alert-ignore my-3">
+                            <b>Javascript disabled?</b> Like other modern websites, the IETF Datatracker relies on Javascript.
+                            Please enable Javascript for full functionality.
+                        </div>
+                    </noscript>
+                    
+                    
+    
+    <h1>
+        Audio/Video Transport Core Maintenance (avtcore)
+        
+        
+        
+    </h1>
+    <ul class="nav nav-tabs my-3">
+        
+            <li class="nav-item">
+                <a class="nav-link "
+                   href="/wg/avtcore/about/">About</a>
+            </li>
+        
+            <li class="nav-item">
+                <a class="nav-link active"
+                   href="/wg/avtcore/documents/">Documents</a>
+            </li>
+        
+            <li class="nav-item">
+                <a class="nav-link "
+                   href="/wg/avtcore/meetings/">Meetings</a>
+            </li>
+        
+            <li class="nav-item">
+                <a class="nav-link "
+                   href="/wg/avtcore/history/">History</a>
+            </li>
+        
+            <li class="nav-item">
+                <a class="nav-link "
+                   href="/wg/avtcore/photos/">Photos</a>
+            </li>
+        
+            <li class="nav-item">
+                <a class="nav-link "
+                   href="/wg/avtcore/email/">Email expansions</a>
+            </li>
+        
+            <li class="nav-item">
+                <a class="nav-link "
+                   href="https://mailarchive.ietf.org/arch/browse/avt/">List archive &raquo;</a>
+            </li>
+        
+    </ul>
+    <div class="buttonlist">
+        
+            
+        
+    </div>
+    
+    
+    
         
 
-	    <form class="navbar-form navbar-right hidden-xs" action="/doc/search/">
-	      <div class="form-group">
-	        <input class="form-control input-sm" type="text" name="name" placeholder="Document search" required>
-	        <input type="hidden" name="activedrafts" value="on">
-	        <input type="hidden" name="rfcs" value="on">
-	      </div>
-	    </form>
-	  </div>
+
+
+
+
+
+    <table class="table table-sm table-striped tablesorter">
+        <thead>
+            <tr>
+                <th scope="col"></th>
+                
+                    
+                        <th scope="col" data-sort="document"
+                            >
+                            
+                                Document
+                            
+                        </th>
+                    
+                
+                    
+                
+                    
+                        <th scope="col" data-sort="date"
+                            >
+                            
+                                Date
+                            
+                        </th>
+                    
+                
+                    
+                        <th scope="col" data-sort="status"
+                            >
+                            
+                                Status
+                            
+                        </th>
+                    
+                
+                    
+                        <th scope="col" data-sort="ipr"
+                            
+                              class="d-none d-sm-table-cell"
+                            >
+                            
+                                IPR
+                            
+                        </th>
+                    
+                
+                    
+                        <th scope="col" data-sort="ad"
+                            
+                              class="d-none d-sm-table-cell"
+                            >
+                            
+                                AD/Shepherd
+                            
+                        </th>
+                    
+                
+            </tr>
+        </thead>
+
+
+
+    <tbody>
+        <tr class="table-info">
+            <td></td>
+            
+                <th scope="col" colspan="5">
+            
+            Active Internet-Drafts (6 hits)
+            </th>
+        </tr>
+    </tbody>
+    <tbody>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">21 pages</small>
+        <div>
+            <a href="/doc/draft-ietf-avtcore-cryptex/">
+                
+                    draft-ietf-avtcore-cryptex-05
+                
+            </a>
+            
+            <br>
+            
+            <b>Completely Encrypting RTP Header Extensions and Contributing Sources</b>
+            
         </div>
-      </nav>
-      <div class="container-fluid-narrow">
         
-        
-        
-	  <div class="col-md-12 col-sm-12" id="content">
-        
-        
-  
-
-  <h1>Audio/Video Transport Core Maintenance (avtcore)
-    
-    
-    
-  </h1>
-
-  <ul class="nav nav-tabs" role="tablist">
-    
-      <li >
-        <a href="/wg/avtcore/about/">About</a>
-      </li>
-    
-      <li class="active">
-        <a href="/wg/avtcore/documents/">Documents</a>
-      </li>
-    
-      <li >
-        <a href="/wg/avtcore/meetings/">Meetings</a>
-      </li>
-    
-      <li >
-        <a href="/wg/avtcore/history/">History</a>
-      </li>
-    
-      <li >
-        <a href="/wg/avtcore/photos/">Photos</a>
-      </li>
-    
-      <li >
-        <a href="/wg/avtcore/email/">Email expansions</a>
-      </li>
-    
-      <li >
-        <a href="https://mailarchive.ietf.org/arch/browse/avt/">List archive &raquo;</a>
-      </li>
-    
-  </ul>
-
-  <div class="buttonlist">
-    
-      
-    
-  </div>
-
-  
-  
-  
-    
+    </td>
+    <td>
+            
+                    
+                        2022-03-07
+                    
+                    
+                
+                
+            </td>
+            
 
 
 
-
-  
-
-  
-  <table class="table table-condensed table-striped tablesorter">
-    <thead>
-      <tr>
-        <th class="sorter-false"></th>
-
-        
-          
-            <th data-header="document">
-	      
-	        Document
-	      
-            </th>
-          
-        
-          
-        
-          
-            <th data-header="date">
-	      
-	        Date
-	      
-            </th>
-          
-        
-          
-            <th data-header="status">
-	      
-	        Status
-	      
-            </th>
-          
-        
-          
-            <th data-header="ipr">
-	      
-	        IPR
-	      
-            </th>
-          
-        
-          
-            <th data-header="ad">
-	      
-	        AD / Shepherd
-	      
-            </th>
-          
-        
-
-        
-      </tr>
-    </thead>
-
+<td class="status">
     
+    
+        
+            Waiting for AD Go-Ahead::AD Followup
+        
+        
+        
+        <span class="badge bg-warning" title="Goal is &lt;14 days">for 15 days</span>
+        
+        
+            
+        
+        
+            <br>
+            
+                Submitted to IESG for Publication
+                
+                    :
+                
+            
+        
+        Proposed Standard
+        
+        
+            <br>
+            Reviews:
+            <a href="/group/artart/">artart</a>,
+                
+                    <a href="/group/genart/">genart</a>,
+                
+                    <a href="/group/opsdir/">opsdir</a>,
+                
+                    <a href="/group/secdir/">secdir</a>
+        
+        
+        
+            <br>
+            Action Holders:
+            
+                <span ><a 
+           title="Shepherd, Group Chair"
+            href="/person/bernard.aboba@gmail.com" >Dr. Bernard D. Aboba</a> <a 
+               href="mailto:bernard.aboba%40gmail.com"
+               aria-label="Compose email to bernard.aboba@gmail.com."
+               title="Compose email to bernard.aboba@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>,
+            
+                <span ><a 
+           title="Group Chair"
+            href="/person/jonathan.lennox42@gmail.com" >Jonathan Lennox</a> <a 
+               href="mailto:jonathan.lennox42%40gmail.com"
+               aria-label="Compose email to jonathan.lennox42@gmail.com."
+               title="Compose email to jonathan.lennox42@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>,
+            
+                <span ><a 
+           title="Author"
+            href="/person/fluffy@iii.ca" >Cullen Jennings</a> <a 
+               href="mailto:fluffy%40iii.ca"
+               aria-label="Compose email to fluffy@iii.ca."
+               title="Compose email to fluffy@iii.ca.">
+                <i class="bi bi-envelope"></i></a></span>,
+            
+                <span ><a 
+           title="Author"
+            href="/person/justin@uberti.name" >Justin Uberti</a> <a 
+               href="mailto:justin%40uberti.name"
+               aria-label="Compose email to justin@uberti.name."
+               title="Compose email to justin@uberti.name.">
+                <i class="bi bi-envelope"></i></a></span>,
+            
+                <span ><a 
+           title="Author"
+            href="/person/sergio.garcia.murillo@cosmosoftware.io" >Sergio Garcia Murillo</a> <a 
+               href="mailto:sergio.garcia.murillo%40cosmosoftware.io"
+               aria-label="Compose email to sergio.garcia.murillo@cosmosoftware.io."
+               title="Compose email to sergio.garcia.murillo@cosmosoftware.io.">
+                <i class="bi bi-envelope"></i></a></span>
+            
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+                    <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-avtcore-cryptex">
+                        <span class="badge bg-info">2</span>
+                    </a>
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/superuser@gmail.com" >Murray Kucherawy</a> <a 
+               href="mailto:superuser%40gmail.com"
+               aria-label="Compose email to superuser@gmail.com."
+               title="Compose email to superuser@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/bernard.aboba@gmail.com" >Dr. Bernard D. Aboba</a> <a class="text-reset"
+               href="mailto:bernard.aboba%40gmail.com"
+               aria-label="Compose email to bernard.aboba@gmail.com."
+               title="Compose email to bernard.aboba@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
 
-      
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">8 pages</small>
+        <div>
+            <a href="/doc/draft-ietf-avtcore-rfc7983bis/">
+                
+                    draft-ietf-avtcore-rfc7983bis-02
+                
+            </a>
+            
+            <br>
+            
+            <b>Multiplexing Scheme Updates for QUIC</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2022-01-28
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+            <br>
+            
+                WG Document
+                
+                    :
+                
+            
+        
+        Proposed Standard
+        
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">12 pages</small>
+        <div>
+            <a href="/doc/draft-ietf-avtcore-rtp-scip/">
+                
+                    draft-ietf-avtcore-rtp-scip-00
+                
+            </a>
+            
+            <br>
+            
+            <b>RTP Payload Format for the SCIP Codec</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2022-02-18
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+            <br>
+            
+                WG Document
+                
+            
+        
+        
+        
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">65 pages</small>
+        <div>
+            <a href="/doc/draft-ietf-avtcore-rtp-vvc/">
+                
+                    draft-ietf-avtcore-rtp-vvc-14
+                
+            </a>
+            
+            <br>
+            
+            <b>RTP Payload Format for Versatile Video Coding (VVC)</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2022-02-25
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            AD Evaluation::Revised I-D Needed
+        
+        
+        
+        <span class="badge bg-success">for 10 days</span>
+        
+        
+            
+        
+        
+            <br>
+            
+                Submitted to IESG for Publication
+                
+                    :
+                
+            
+        
+        Proposed Standard
+        
+        
+        
+            <br>
+            <span title="Part of avtcore milestone: Submit RTP Payload format for Versatile Video Coding (VVC)"
+                  class="milestone">Feb 2021</span>
+        
+        
+            <br>
+            Action Holders:
+            
+                <span ><a 
+           title="Author"
+            href="/person/miska.hannuksela@nokia.com" >Miska M. Hannuksela</a> <a 
+               href="mailto:miska.hannuksela%40nokia.com"
+               aria-label="Compose email to miska.hannuksela@nokia.com."
+               title="Compose email to miska.hannuksela@nokia.com.">
+                <i class="bi bi-envelope"></i></a></span>,
+            
+                <span ><a 
+           title="Author"
+            href="/person/stewe@stewe.org" >Stephan Wenger</a> <a 
+               href="mailto:stewe%40stewe.org"
+               aria-label="Compose email to stewe@stewe.org."
+               title="Compose email to stewe@stewe.org.">
+                <i class="bi bi-envelope"></i></a></span>,
+            
+                <span ><a 
+           title="Author"
+            href="/person/yekui.wang@bytedance.com" >Ye-Kui Wang</a> <a 
+               href="mailto:yekui.wang%40bytedance.com"
+               aria-label="Compose email to yekui.wang@bytedance.com."
+               title="Compose email to yekui.wang@bytedance.com.">
+                <i class="bi bi-envelope"></i></a></span>,
+            
+                <span ><a 
+           title="Author"
+            href="/person/yago.sanchez@hhi.fraunhofer.de" >Yago Sanchez</a> <a 
+               href="mailto:yago.sanchez%40hhi.fraunhofer.de"
+               aria-label="Compose email to yago.sanchez@hhi.fraunhofer.de."
+               title="Compose email to yago.sanchez@hhi.fraunhofer.de.">
+                <i class="bi bi-envelope"></i></a></span>,
+            
+                <span ><a 
+           title="Author"
+            href="/person/shuai.zhao@ieee.org" >Shuai Zhao</a> <a 
+               href="mailto:shuai.zhao%40ieee.org"
+               aria-label="Compose email to shuai.zhao@ieee.org."
+               title="Compose email to shuai.zhao@ieee.org.">
+                <i class="bi bi-envelope"></i></a></span>
+            
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+                    <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-avtcore-rtp-vvc">
+                        <span class="badge bg-info">2</span>
+                    </a>
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/superuser@gmail.com" >Murray Kucherawy</a> <a 
+               href="mailto:superuser%40gmail.com"
+               aria-label="Compose email to superuser@gmail.com."
+               title="Compose email to superuser@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/bernard.aboba@gmail.com" >Dr. Bernard D. Aboba</a> <a class="text-reset"
+               href="mailto:bernard.aboba%40gmail.com"
+               aria-label="Compose email to bernard.aboba@gmail.com."
+               title="Compose email to bernard.aboba@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">15 pages</small>
+        <div>
+            <a href="/doc/draft-ietf-avtext-framemarking/">
+                
+                    draft-ietf-avtext-framemarking-13
+                
+            </a>
+            
+            <br>
+            
+            <b>Frame Marking RTP Header Extension</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2021-11-11
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            Waiting for AD Go-Ahead::Revised I-D Needed
+        
+        
+        
+        <span class="badge bg-success">for 12 days</span>
+        
+        
+            
+        
+        
+            <br>
+            
+                Submitted to IESG for Publication
+                
+                    :
+                
+            
+        
+        Experimental
+        
+        
+            <br>
+            Reviews:
+            <a href="/group/artart/">artart</a>,
+                
+                    <a href="/group/genart/">genart</a>,
+                
+                    <a href="/group/opsdir/">opsdir</a>,
+                
+                    <a href="/group/secdir/">secdir</a>
+        
+        
+            <br>
+            <span title="Part of avtcore milestone: Submit RTP Header Extension for Video Frame Information for Proposed Standard"
+                  class="milestone">Apr 2019</span>
+        
+        
+            <br>
+            Action Holders:
+            
+                <span ><a 
+           title="Author"
+            href="/person/espeberg@cisco.com" >Espen Berger</a> <a 
+               href="mailto:espeberg%40cisco.com"
+               aria-label="Compose email to espeberg@cisco.com."
+               title="Compose email to espeberg@cisco.com.">
+                <i class="bi bi-envelope"></i></a></span>,
+            
+                <span ><a 
+           title="Author"
+            href="/person/mzanaty@cisco.com" >Mo Zanaty</a> <a 
+               href="mailto:mzanaty%40cisco.com"
+               aria-label="Compose email to mzanaty@cisco.com."
+               title="Compose email to mzanaty@cisco.com.">
+                <i class="bi bi-envelope"></i></a></span>,
+            
+                <span ><a 
+           title="Author"
+            href="/person/snandaku@cisco.com" >Suhas Nandakumar</a> <a 
+               href="mailto:snandaku%40cisco.com"
+               aria-label="Compose email to snandaku@cisco.com."
+               title="Compose email to snandaku@cisco.com.">
+                <i class="bi bi-envelope"></i></a></span>
+            
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+                    <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-avtext-framemarking">
+                        <span class="badge bg-info">7</span>
+                    </a>
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/superuser@gmail.com" >Murray Kucherawy</a> <a 
+               href="mailto:superuser%40gmail.com"
+               aria-label="Compose email to superuser@gmail.com."
+               title="Compose email to superuser@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/jonathan.lennox@8x8.com" >Jonathan Lennox</a> <a class="text-reset"
+               href="mailto:jonathan.lennox%408x8.com"
+               aria-label="Compose email to jonathan.lennox@8x8.com."
+               title="Compose email to jonathan.lennox@8x8.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">25 pages</small>
+        <div>
+            <a href="/doc/draft-ietf-payload-vp9/">
+                
+                    draft-ietf-payload-vp9-16
+                
+            </a>
+            
+            <br>
+            
+            <b>RTP Payload Format for VP9 Video</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2021-06-10
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            RFC Ed Queue
+        
+        
+            : <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-payload-vp9">MISSREF</a>
+        
+        
+        <span class="badge bg-danger" title="Goal is &lt;60 days">for 314 days</span>
+        
+        
+            
+        
+        
+            <br>
+            
+                Submitted to IESG for Publication
+                
+                    :
+                
+            
+        
+        Proposed Standard
+        
+        
+            <br>
+            Reviews:
+            <a href="/group/opsdir/">opsdir</a>,
+                
+                    <a href="/group/secdir/">secdir</a>
+        
+        
+            <br>
+            <span title="Part of avtcore milestone: Submit RTP Payload Format for VP9 Video for Proposed Standard"
+                  class="milestone">Nov 2019</span>
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+                    <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-payload-vp9">
+                        <span class="badge bg-info">4</span>
+                    </a>
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/superuser@gmail.com" >Murray Kucherawy</a> <a 
+               href="mailto:superuser%40gmail.com"
+               aria-label="Compose email to superuser@gmail.com."
+               title="Compose email to superuser@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/bernard.aboba@gmail.com" >Dr. Bernard D. Aboba</a> <a class="text-reset"
+               href="mailto:bernard.aboba%40gmail.com"
+               aria-label="Compose email to bernard.aboba@gmail.com."
+               title="Compose email to bernard.aboba@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+    </tbody>
+
     <tbody>
-        <tr class="info">
-          <th></th>
-          
-              <th colspan="5">
-          
-	    Active Internet-Drafts (6 hits)
-          </th>
+        <tr class="table-info">
+            <td></td>
+            
+                <th scope="col" colspan="5">
+            
+            RFCs (31 hits)
+            </th>
         </tr>
     </tbody>
-
     <tbody>
         
-          
+            
 
 
 
 
 
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-ietf-avtcore-cryptex/">draft-ietf-avtcore-cryptex-05</a>
-
-      
-      <br>
-      <b>Completely Encrypting RTP Header Extensions and Contributing Sources</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2022-03-07
-    
-    </span>
 
 
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">12 pages</small>
+        <div>
+            <a href="/doc/rfc6263/">
+                
+                    RFC 6263
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-avt-app-rtp-keepalive)</i>
+            <br>
+            
+            <b>Application Mechanism for Keeping Alive the NAT Mappings Associated with RTP / RTP Control Protocol (RTCP) Flows</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2011-06
+                    
+                    
+                
+                
+            </td>
+            
 
-    
-      <br><small class="text-muted">21 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
 
 
 <td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-avtcore-cryptex">
-    
-  </div>
-
-  
-    
-      Waiting for AD Go-Ahead::<wbr>AD Followup
-    
-
-    
-
-    <wbr>
-
-    <wbr><span class="ietf-small">for 7 days</span>
     
     
-
-    
-      
-    
-
-    
-      <br>
-      
-	Submitted to IESG for Publication:<wbr>
-      
-    
-
-    
-      Proposed Standard
-    
-
-    
-
-    
-      <br>Reviews:
-      
-        artart, 
-      
-        genart, 
-      
-        opsdir, 
-      
-        secdir
-      
-    
-
-    
-
-    
-        <br>Action Holders:
         
-            <wbr><a title="Author" href="/person/fluffy@iii.ca"><span class="">Cullen Jennings</span></a>&nbsp;<a href="mailto:fluffy%40iii.ca"><span class="fa fa-envelope-o tiny"></span></a>
-, 
+        Proposed Standard RFC
         
-            <wbr><a title="Author" href="/person/sergio.garcia.murillo@cosmosoftware.io"><span class="">Sergio Garcia Murillo</span></a>&nbsp;<a href="mailto:sergio.garcia.murillo%40cosmosoftware.io"><span class="fa fa-envelope-o tiny"></span></a>
-, 
-        
-            <wbr><a title="Shepherd, Group Chair" href="/person/bernard.aboba@gmail.com"><span class="">Bernard Aboba</span></a>&nbsp;<a href="mailto:bernard.aboba%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-, 
-        
-            <wbr><a title="Author" href="/person/justin@uberti.name"><span class="">Justin Uberti</span></a>&nbsp;<a href="mailto:justin%40uberti.name"><span class="fa fa-envelope-o tiny"></span></a>
-, 
-        
-            <wbr><a title="Group Chair" href="/person/jonathan.lennox42@gmail.com"><span class="">Jonathan Lennox</span></a>&nbsp;<a href="mailto:jonathan.lennox42%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-
         
     
-  
-
-
-
 </td>
-
-
-  <td class="ipr text-center">
-    
-      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-avtcore-cryptex">
-        <span class="label label-default">2</span>
-      </a>
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/superuser@gmail.com"><span class="">Murray Kucherawy</span></a>&nbsp;<a href="mailto:superuser%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/bernard.aboba@gmail.com"><span class="small text-muted">Bernard Aboba</span></a>&nbsp;<a href="mailto:bernard.aboba%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
+            <td class="text-center d-none d-sm-table-cell">
+                
+                    <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-avt-app-rtp-keepalive">
+                        <span class="badge bg-info">1</span>
+                    </a>
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/rjsparks@nostrum.com" >Robert Sparks</a> <a 
+               href="mailto:rjsparks%40nostrum.com"
+               aria-label="Compose email to rjsparks@nostrum.com."
+               title="Compose email to rjsparks@nostrum.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
         
-          
+            
 
 
 
 
 
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-ietf-avtcore-rfc7983bis/">draft-ietf-avtcore-rfc7983bis-02</a>
-
-      
-      <br>
-      <b>Multiplexing Scheme Updates for QUIC</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2022-01-28
-    
-    </span>
 
 
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">30 pages</small>
+        <div>
+            <a href="/doc/rfc6284/">
+                
+                    RFC 6284
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-avtcore-ports-for-ucast-mcast-rtp)</i>
+            <br>
+            
+            <b>Port Mapping between Unicast and Multicast RTP Sessions</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2011-06
+                    
+                    
+                
+                
+            </td>
+            
 
-    
-      <br><small class="text-muted">8 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
 
 
 <td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-avtcore-rfc7983bis">
-    
-  </div>
-
-  
-    
-      I-D Exists
-    
-
-    
-
-    <wbr>
-
-    <wbr>
     
     
-
-    
-      
-    
-
-    
-      <br>
-      
-	WG Document:<wbr>
-      
-    
-
-    
-      Proposed Standard
-    
-
-    
-
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
         
-          
-
-
-
-
-
-<tr >
-
-  <td>
+        Proposed Standard RFC
+        
+        
     
-    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/rjsparks@nostrum.com" >Robert Sparks</a> <a 
+               href="mailto:rjsparks%40nostrum.com"
+               aria-label="Compose email to rjsparks@nostrum.com."
+               title="Compose email to rjsparks@nostrum.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/magnus.westerlund@ericsson.com" >Magnus Westerlund</a> <a class="text-reset"
+               href="mailto:magnus.westerlund%40ericsson.com"
+               aria-label="Compose email to magnus.westerlund@ericsson.com."
+               title="Compose email to magnus.westerlund@ericsson.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
 
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-ietf-avtcore-rtp-scip/">draft-ietf-avtcore-rtp-scip-00</a>
-
-      
-      <br>
-      <b>RTP Payload Format for the SCIP Codec</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2022-02-18
-    
-    </span>
 
 
 
-    
-      <br><small class="text-muted">12 pages</small>
-    
 
-    
 
-    
 
-  </td>
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">13 pages</small>
+        <div>
+            <a href="/doc/rfc6354/">
+                
+                    RFC 6354
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-avt-forward-shifted-red)</i>
+            <br>
+            
+            <b>Forward-Shifted RTP Redundancy Payload Support</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2011-08
+                    
+                    
+                
+                
+            </td>
+            
 
-  
 
 
 <td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-avtcore-rtp-scip">
-    
-  </div>
-
-  
-    
-      I-D Exists
-    
-
-    
-
-    <wbr>
-
-    <wbr>
     
     
-
-    
-      
-    
-
-    
-      <br>
-      
-	WG Document
-      
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
         
-          
-
-
-
-
-
-<tr >
-
-  <td>
+        Proposed Standard RFC
+        
+        
     
-    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/rjsparks@nostrum.com" >Robert Sparks</a> <a 
+               href="mailto:rjsparks%40nostrum.com"
+               aria-label="Compose email to rjsparks@nostrum.com."
+               title="Compose email to rjsparks@nostrum.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/magnus.westerlund@ericsson.com" >Magnus Westerlund</a> <a class="text-reset"
+               href="mailto:magnus.westerlund%40ericsson.com"
+               aria-label="Compose email to magnus.westerlund@ericsson.com."
+               title="Compose email to magnus.westerlund@ericsson.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
 
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-ietf-avtcore-rtp-vvc/">draft-ietf-avtcore-rtp-vvc-14</a>
-
-      
-      <br>
-      <b>RTP Payload Format for Versatile Video Coding (VVC)</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2022-02-25
-    
-    </span>
 
 
 
-    
-      <br><small class="text-muted">65 pages</small>
-    
 
-    
 
-    
 
-  </td>
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">6 pages</small>
+        <div>
+            <a href="/doc/rfc6562/">
+                
+                    RFC 6562
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-avtcore-srtp-vbr-audio)</i>
+            <br>
+            
+            <b>Guidelines for the Use of Variable Bit Rate Audio with Secure RTP</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2012-03
+                    
+                    
+                
+                
+            </td>
+            
 
-  
 
 
 <td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-avtcore-rtp-vvc">
-    
-  </div>
-
-  
-    
-      AD Evaluation::<wbr>Revised I-D Needed
-    
-
-    
-
-    <wbr>
-
-    <wbr><span class="ietf-small">for 2 days</span>
     
     
-
-    
-      
-    
-
-    
-      <br>
-      
-	Submitted to IESG for Publication:<wbr>
-      
-    
-
-    
-      Proposed Standard
-    
-
-    
-
-    
-
-    
-      <br>
-      <span title="Part of avtcore milestone: Submit RTP Payload format for Versatile Video Coding (VVC)" class="milestone">Feb 2021</span>
-    
-
-    
-        <br>Action Holders:
         
-            <wbr><a title="Author" href="/person/miska.hannuksela@nokia.com"><span class="">Miska Hannuksela</span></a>&nbsp;<a href="mailto:miska.hannuksela%40nokia.com"><span class="fa fa-envelope-o tiny"></span></a>
-, 
+        Proposed Standard RFC
         
-            <wbr><a title="Author" href="/person/stewe@stewe.org"><span class="">Stephan Wenger</span></a>&nbsp;<a href="mailto:stewe%40stewe.org"><span class="fa fa-envelope-o tiny"></span></a>
-, 
-        
-            <wbr><a title="Author" href="/person/yekui.wang@bytedance.com"><span class="">Ye-Kui Wang</span></a>&nbsp;<a href="mailto:yekui.wang%40bytedance.com"><span class="fa fa-envelope-o tiny"></span></a>
-, 
-        
-            <wbr><a title="Author" href="/person/yago.sanchez@hhi.fraunhofer.de"><span class="">Yago Sanchez</span></a>&nbsp;<a href="mailto:yago.sanchez%40hhi.fraunhofer.de"><span class="fa fa-envelope-o tiny"></span></a>
-, 
-        
-            <wbr><a title="Author" href="/person/shuai.zhao@ieee.org"><span class="">Shuai Zhao</span></a>&nbsp;<a href="mailto:shuai.zhao%40ieee.org"><span class="fa fa-envelope-o tiny"></span></a>
-
         
     
-  
-
-
-
 </td>
-
-
-  <td class="ipr text-center">
-    
-      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-avtcore-rtp-vvc">
-        <span class="label label-default">2</span>
-      </a>
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/superuser@gmail.com"><span class="">Murray Kucherawy</span></a>&nbsp;<a href="mailto:superuser%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/bernard.aboba@gmail.com"><span class="small text-muted">Bernard Aboba</span></a>&nbsp;<a href="mailto:bernard.aboba%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/rjsparks@nostrum.com" >Robert Sparks</a> <a 
+               href="mailto:rjsparks%40nostrum.com"
+               aria-label="Compose email to rjsparks@nostrum.com."
+               title="Compose email to rjsparks@nostrum.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/magnus.westerlund@ericsson.com" >Magnus Westerlund</a> <a class="text-reset"
+               href="mailto:magnus.westerlund%40ericsson.com"
+               aria-label="Compose email to magnus.westerlund@ericsson.com."
+               title="Compose email to magnus.westerlund@ericsson.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
         
-          
+            
 
 
 
 
 
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-ietf-avtext-framemarking/">draft-ietf-avtext-framemarking-13</a>
-
-      
-      <br>
-      <b>Frame Marking RTP Header Extension</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2021-11-11
-    
-    </span>
 
 
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">13 pages</small>
+        <div>
+            <a href="/doc/rfc6642/">
+                
+                    RFC 6642
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-avtcore-feedback-supression-rtp)</i>
+            <br>
+            
+            <b>RTP Control Protocol (RTCP) Extension for a Third-Party Loss Report</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2012-06
+                    
+                    
+                
+                
+            </td>
+            
 
-    
-      <br><small class="text-muted">15 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
 
 
 <td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-avtext-framemarking">
-    
-  </div>
-
-  
-    
-      Waiting for AD Go-Ahead::<wbr>Revised I-D Needed
-    
-
-    
-
-    <wbr>
-
-    <wbr><span class="ietf-small">for 4 days</span>
     
     
-
-    
-      
-    
-
-    
-      <br>
-      
-	Submitted to IESG for Publication:<wbr>
-      
-    
-
-    
-      Experimental
-    
-
-    
-
-    
-      <br>Reviews:
-      
-        artart, 
-      
-        genart, 
-      
-        opsdir, 
-      
-        secdir
-      
-    
-
-    
-      <br>
-      <span title="Part of avtcore milestone: Submit RTP Header Extension for Video Frame Information for Proposed Standard" class="milestone">Apr 2019</span>
-    
-
-    
-        <br>Action Holders:
         
-            <wbr><a title="Author" href="/person/espeberg@cisco.com"><span class="">Espen Berger</span></a>&nbsp;<a href="mailto:espeberg%40cisco.com"><span class="fa fa-envelope-o tiny"></span></a>
-, 
+        Proposed Standard RFC
         
-            <wbr><a title="Author" href="/person/mzanaty@cisco.com"><span class="">Mo Zanaty</span></a>&nbsp;<a href="mailto:mzanaty%40cisco.com"><span class="fa fa-envelope-o tiny"></span></a>
-, 
-        
-            <wbr><a title="Author" href="/person/snandaku@cisco.com"><span class="">Suhas Nandakumar</span></a>&nbsp;<a href="mailto:snandaku%40cisco.com"><span class="fa fa-envelope-o tiny"></span></a>
-
         
     
-  
-
-
-
 </td>
-
-
-  <td class="ipr text-center">
-    
-      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-avtext-framemarking">
-        <span class="label label-default">7</span>
-      </a>
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/superuser@gmail.com"><span class="">Murray Kucherawy</span></a>&nbsp;<a href="mailto:superuser%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/jonathan.lennox@8x8.com"><span class="small text-muted">Jonathan Lennox</span></a>&nbsp;<a href="mailto:jonathan.lennox%408x8.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/rjsparks@nostrum.com" >Robert Sparks</a> <a 
+               href="mailto:rjsparks%40nostrum.com"
+               aria-label="Compose email to rjsparks@nostrum.com."
+               title="Compose email to rjsparks@nostrum.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/magnus.westerlund@ericsson.com" >Magnus Westerlund</a> <a class="text-reset"
+               href="mailto:magnus.westerlund%40ericsson.com"
+               aria-label="Compose email to magnus.westerlund@ericsson.com."
+               title="Compose email to magnus.westerlund@ericsson.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
         
-          
+            
 
 
 
 
 
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-ietf-payload-vp9/">draft-ietf-payload-vp9-16</a>
-
-      
-      <br>
-      <b>RTP Payload Format for VP9 Video</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2021-06-10
-    
-    </span>
 
 
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">58 pages</small>
+        <div>
+            <a href="/doc/rfc6679/">
+                
+                    RFC 6679
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-avtcore-ecn-for-rtp)</i>
+            <br>
+            
+            <b>Explicit Congestion Notification (ECN) for RTP over UDP</b>
+            
+                <a class="badge bg-danger text-decoration-none float-end"
+                   href="https://www.rfc-editor.org/errata_search.php?rfc=6679">
+                    Errata
+                </a>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2012-08
+                    
+                    
+                
+                
+            </td>
+            
 
-    
-      <br><small class="text-muted">25 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
 
 
 <td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-payload-vp9">
-    
-  </div>
-
-  
-    
-      RFC Ed Queue
-    
-
-    
-      <wbr>: <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-payload-vp9">MISSREF</a>
-    
-
-    <wbr>
-
-    <wbr><span class="label label-danger" title="Goal is &lt;60 days">for 306 days</span>
     
     
-
-    
-      
-    
-
-    
-      <br>
-      
-	Submitted to IESG for Publication:<wbr>
-      
-    
-
-    
-      Proposed Standard
-    
-
-    
-
-    
-      <br>Reviews:
-      
-        opsdir, 
-      
-        secdir
-      
-    
-
-    
-      <br>
-      <span title="Part of avtcore milestone: Submit RTP Payload Format for VP9 Video for Proposed Standard" class="milestone">Nov 2019</span>
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-payload-vp9">
-        <span class="label label-default">4</span>
-      </a>
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/superuser@gmail.com"><span class="">Murray Kucherawy</span></a>&nbsp;<a href="mailto:superuser%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/bernard.aboba@gmail.com"><span class="small text-muted">Bernard Aboba</span></a>&nbsp;<a href="mailto:bernard.aboba%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
         
-      
+        Proposed Standard RFC
+        
+        
+            <br>
+            <span class="text-muted">Updated by <a href="/doc/rfc8311/">RFC 8311</a></span>
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/rjsparks@nostrum.com" >Robert Sparks</a> <a 
+               href="mailto:rjsparks%40nostrum.com"
+               aria-label="Compose email to rjsparks@nostrum.com."
+               title="Compose email to rjsparks@nostrum.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/roni.even@mail01.huawei.com" >Roni Even</a> <a class="text-reset"
+               href="mailto:roni.even%40mail01.huawei.com"
+               aria-label="Compose email to roni.even@mail01.huawei.com."
+               title="Compose email to roni.even@mail01.huawei.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">17 pages</small>
+        <div>
+            <a href="/doc/rfc6792/">
+                
+                    RFC 6792
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-avtcore-monarch)</i>
+            <br>
+            
+            <b>Guidelines for Use of the RTP Monitoring Framework</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2012-11
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Informational RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/rjsparks@nostrum.com" >Robert Sparks</a> <a 
+               href="mailto:rjsparks%40nostrum.com"
+               aria-label="Compose email to rjsparks@nostrum.com."
+               title="Compose email to rjsparks@nostrum.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/magnus.westerlund@ericsson.com" >Magnus Westerlund</a> <a class="text-reset"
+               href="mailto:magnus.westerlund%40ericsson.com"
+               aria-label="Compose email to magnus.westerlund@ericsson.com."
+               title="Compose email to magnus.westerlund@ericsson.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">15 pages</small>
+        <div>
+            <a href="/doc/rfc6904/">
+                
+                    RFC 6904
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-avtcore-srtp-encrypted-header-ext)</i>
+            <br>
+            
+            <b>Encryption of Header Extensions in the Secure Real-time Transport Protocol (SRTP)</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2013-04
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/rjsparks@nostrum.com" >Robert Sparks</a> <a 
+               href="mailto:rjsparks%40nostrum.com"
+               aria-label="Compose email to rjsparks@nostrum.com."
+               title="Compose email to rjsparks@nostrum.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/roni.even@mail01.huawei.com" >Roni Even</a> <a class="text-reset"
+               href="mailto:roni.even%40mail01.huawei.com"
+               aria-label="Compose email to roni.even@mail01.huawei.com."
+               title="Compose email to roni.even@mail01.huawei.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">4 pages</small>
+        <div>
+            <a href="/doc/rfc7007/">
+                
+                    RFC 7007
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-avtcore-avp-codecs)</i>
+            <br>
+            
+            <b>Update to Remove DVI4 from the Recommended Codecs for the RTP Profile for Audio and Video Conferences with Minimal Control (RTP/AVP)</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2013-08
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/rlb@ipv.sx" >Richard Barnes</a> <a 
+               href="mailto:rlb%40ipv.sx"
+               aria-label="Compose email to rlb@ipv.sx."
+               title="Compose email to rlb@ipv.sx.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/magnus.westerlund@ericsson.com" >Magnus Westerlund</a> <a class="text-reset"
+               href="mailto:magnus.westerlund%40ericsson.com"
+               aria-label="Compose email to magnus.westerlund@ericsson.com."
+               title="Compose email to magnus.westerlund@ericsson.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">10 pages</small>
+        <div>
+            <a href="/doc/rfc7022/">
+                
+                    RFC 7022
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-avtcore-6222bis)</i>
+            <br>
+            
+            <b>Guidelines for Choosing RTP Control Protocol (RTCP) Canonical Names (CNAMEs)</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2013-09
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/rlb@ipv.sx" >Richard Barnes</a> <a 
+               href="mailto:rlb%40ipv.sx"
+               aria-label="Compose email to rlb@ipv.sx."
+               title="Compose email to rlb@ipv.sx.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/magnus.westerlund@ericsson.com" >Magnus Westerlund</a> <a class="text-reset"
+               href="mailto:magnus.westerlund%40ericsson.com"
+               aria-label="Compose email to magnus.westerlund@ericsson.com."
+               title="Compose email to magnus.westerlund@ericsson.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">9 pages</small>
+        <div>
+            <a href="/doc/rfc7164/">
+                
+                    RFC 7164
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-avtcore-leap-second)</i>
+            <br>
+            
+            <b>RTP and Leap Seconds</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2014-03
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/rlb@ipv.sx" >Richard Barnes</a> <a 
+               href="mailto:rlb%40ipv.sx"
+               aria-label="Compose email to rlb@ipv.sx."
+               title="Compose email to rlb@ipv.sx.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/magnus.westerlund@ericsson.com" >Magnus Westerlund</a> <a class="text-reset"
+               href="mailto:magnus.westerlund%40ericsson.com"
+               aria-label="Compose email to magnus.westerlund@ericsson.com."
+               title="Compose email to magnus.westerlund@ericsson.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">37 pages</small>
+        <div>
+            <a href="/doc/rfc7201/">
+                
+                    RFC 7201
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-avtcore-rtp-security-options)</i>
+            <br>
+            
+            <b>Options for Securing RTP Sessions</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2014-04
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Informational RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/rlb@ipv.sx" >Richard Barnes</a> <a 
+               href="mailto:rlb%40ipv.sx"
+               aria-label="Compose email to rlb@ipv.sx."
+               title="Compose email to rlb@ipv.sx.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/roni.even@mail01.huawei.com" >Roni Even</a> <a class="text-reset"
+               href="mailto:roni.even%40mail01.huawei.com"
+               aria-label="Compose email to roni.even@mail01.huawei.com."
+               title="Compose email to roni.even@mail01.huawei.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">10 pages</small>
+        <div>
+            <a href="/doc/rfc7202/">
+                
+                    RFC 7202
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-avt-srtp-not-mandatory)</i>
+            <br>
+            
+            <b>Securing the RTP Framework: Why RTP Does Not Mandate a Single Media Security Solution</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2014-04
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Informational RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/rlb@ipv.sx" >Richard Barnes</a> <a 
+               href="mailto:rlb%40ipv.sx"
+               aria-label="Compose email to rlb@ipv.sx."
+               title="Compose email to rlb@ipv.sx.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/roni.even@mail01.huawei.com" >Roni Even</a> <a class="text-reset"
+               href="mailto:roni.even%40mail01.huawei.com"
+               aria-label="Compose email to roni.even@mail01.huawei.com."
+               title="Compose email to roni.even@mail01.huawei.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">23 pages</small>
+        <div>
+            <a href="/doc/rfc7272/">
+                
+                    RFC 7272
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-avtcore-idms)</i>
+            <br>
+            
+            <b>Inter-Destination Media Synchronization (IDMS) Using the RTP Control Protocol (RTCP)</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2014-06
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/rlb@ipv.sx" >Richard Barnes</a> <a 
+               href="mailto:rlb%40ipv.sx"
+               aria-label="Compose email to rlb@ipv.sx."
+               title="Compose email to rlb@ipv.sx.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/roni.even@mail01.huawei.com" >Roni Even</a> <a class="text-reset"
+               href="mailto:roni.even%40mail01.huawei.com"
+               aria-label="Compose email to roni.even@mail01.huawei.com."
+               title="Compose email to roni.even@mail01.huawei.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">30 pages</small>
+        <div>
+            <a href="/doc/rfc7273/">
+                
+                    RFC 7273
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-avtcore-clksrc)</i>
+            <br>
+            
+            <b>RTP Clock Source Signalling</b>
+            
+                <a class="badge bg-danger text-decoration-none float-end"
+                   href="https://www.rfc-editor.org/errata_search.php?rfc=7273">
+                    Errata
+                </a>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2014-06
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/alissa@cooperw.in" >Alissa Cooper</a> <a 
+               href="mailto:alissa%40cooperw.in"
+               aria-label="Compose email to alissa@cooperw.in."
+               title="Compose email to alissa@cooperw.in.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/roni.even@mail01.huawei.com" >Roni Even</a> <a class="text-reset"
+               href="mailto:roni.even%40mail01.huawei.com"
+               aria-label="Compose email to roni.even@mail01.huawei.com."
+               title="Compose email to roni.even@mail01.huawei.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">48 pages</small>
+        <div>
+            <a href="/doc/rfc7667/">
+                
+                    RFC 7667
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-avtcore-rtp-topologies-update)</i>
+            <br>
+            
+            <b>RTP Topologies</b>
+            
+                <a class="badge bg-warning text-decoration-none float-end"
+                   href="https://www.rfc-editor.org/errata_search.php?rfc=7667">
+                    Errata
+                </a>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2015-11
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Informational RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/ben@nostrum.com" >Ben Campbell</a> <a 
+               href="mailto:ben%40nostrum.com"
+               aria-label="Compose email to ben@nostrum.com."
+               title="Compose email to ben@nostrum.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/roni.even@mail01.huawei.com" >Roni Even</a> <a class="text-reset"
+               href="mailto:roni.even%40mail01.huawei.com"
+               aria-label="Compose email to roni.even@mail01.huawei.com."
+               title="Compose email to roni.even@mail01.huawei.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">48 pages</small>
+        <div>
+            <a href="/doc/rfc7714/">
+                
+                    RFC 7714
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-avtcore-srtp-aes-gcm)</i>
+            <br>
+            
+            <b>AES-GCM Authenticated Encryption in the Secure Real-time Transport Protocol (SRTP)</b>
+            
+                <a class="badge bg-warning text-decoration-none float-end"
+                   href="https://www.rfc-editor.org/errata_search.php?rfc=7714">
+                    Errata
+                </a>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2015-12
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/ben@nostrum.com" >Ben Campbell</a> <a 
+               href="mailto:ben%40nostrum.com"
+               aria-label="Compose email to ben@nostrum.com."
+               title="Compose email to ben@nostrum.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/magnus.westerlund@ericsson.com" >Magnus Westerlund</a> <a class="text-reset"
+               href="mailto:magnus.westerlund%40ericsson.com"
+               aria-label="Compose email to magnus.westerlund@ericsson.com."
+               title="Compose email to magnus.westerlund@ericsson.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">13 pages</small>
+        <div>
+            <a href="/doc/rfc7983/">
+                
+                    RFC 7983
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-avtcore-rfc5764-mux-fixes)</i>
+            <br>
+            
+            <b>Multiplexing Scheme Updates for Secure Real-time Transport Protocol (SRTP) Extension for Datagram Transport Layer Security (DTLS)</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2016-09
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+                    <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-avtcore-rfc5764-mux-fixes">
+                        <span class="badge bg-info">1</span>
+                    </a>
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/ben@nostrum.com" >Ben Campbell</a> <a 
+               href="mailto:ben%40nostrum.com"
+               aria-label="Compose email to ben@nostrum.com."
+               title="Compose email to ben@nostrum.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/magnus.westerlund@ericsson.com" >Magnus Westerlund</a> <a class="text-reset"
+               href="mailto:magnus.westerlund%40ericsson.com"
+               aria-label="Compose email to magnus.westerlund@ericsson.com."
+               title="Compose email to magnus.westerlund@ericsson.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">7 pages</small>
+        <div>
+            <a href="/doc/rfc8035/">
+                
+                    RFC 8035
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-avtcore-5761-update)</i>
+            <br>
+            
+            <b>Session Description Protocol (SDP) Offer/Answer Clarifications for RTP/RTCP Multiplexing</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2016-11
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/ben@nostrum.com" >Ben Campbell</a> <a 
+               href="mailto:ben%40nostrum.com"
+               aria-label="Compose email to ben@nostrum.com."
+               title="Compose email to ben@nostrum.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/ron.even.tlv@gmail.com" >Roni Even</a> <a class="text-reset"
+               href="mailto:ron.even.tlv%40gmail.com"
+               aria-label="Compose email to ron.even.tlv@gmail.com."
+               title="Compose email to ron.even.tlv@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">25 pages</small>
+        <div>
+            <a href="/doc/rfc8083/">
+                
+                    RFC 8083
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-avtcore-rtp-circuit-breakers)</i>
+            <br>
+            
+            <b>Multimedia Congestion Control: Circuit Breakers for Unicast RTP Sessions</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2017-03
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/ben@nostrum.com" >Ben Campbell</a> <a 
+               href="mailto:ben%40nostrum.com"
+               aria-label="Compose email to ben@nostrum.com."
+               title="Compose email to ben@nostrum.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/magnus.westerlund@ericsson.com" >Magnus Westerlund</a> <a class="text-reset"
+               href="mailto:magnus.westerlund%40ericsson.com"
+               aria-label="Compose email to magnus.westerlund@ericsson.com."
+               title="Compose email to magnus.westerlund@ericsson.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">29 pages</small>
+        <div>
+            <a href="/doc/rfc8108/">
+                
+                    RFC 8108
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-avtcore-rtp-multi-stream)</i>
+            <br>
+            
+            <b>Sending Multiple RTP Streams in a Single RTP Session</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2017-03
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/ben@nostrum.com" >Ben Campbell</a> <a 
+               href="mailto:ben%40nostrum.com"
+               aria-label="Compose email to ben@nostrum.com."
+               title="Compose email to ben@nostrum.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/roni.even@mail01.huawei.com" >Roni Even</a> <a class="text-reset"
+               href="mailto:roni.even%40mail01.huawei.com"
+               aria-label="Compose email to roni.even@mail01.huawei.com."
+               title="Compose email to roni.even@mail01.huawei.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">19 pages</small>
+        <div>
+            <a href="/doc/rfc8269/">
+                
+                    RFC 8269
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-avtcore-aria-srtp)</i>
+            <br>
+            
+            <b>The ARIA Algorithm and Its Use with the Secure Real-Time Transport Protocol (SRTP)</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2017-10
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Informational RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/ben@nostrum.com" >Ben Campbell</a> <a 
+               href="mailto:ben%40nostrum.com"
+               aria-label="Compose email to ben@nostrum.com."
+               title="Compose email to ben@nostrum.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/roni.even@huawei.com" >Roni Even</a> <a class="text-reset"
+               href="mailto:roni.even%40huawei.com"
+               aria-label="Compose email to roni.even@huawei.com."
+               title="Compose email to roni.even@huawei.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">25 pages</small>
+        <div>
+            <a href="/doc/rfc8285/">
+                
+                    RFC 8285
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-avtcore-rfc5285-bis)</i>
+            <br>
+            
+            <b>A General Mechanism for RTP Header Extensions</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2017-10
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/ben@nostrum.com" >Ben Campbell</a> <a 
+               href="mailto:ben%40nostrum.com"
+               aria-label="Compose email to ben@nostrum.com."
+               title="Compose email to ben@nostrum.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/magnus.westerlund@ericsson.com" >Magnus Westerlund</a> <a class="text-reset"
+               href="mailto:magnus.westerlund%40ericsson.com"
+               aria-label="Compose email to magnus.westerlund@ericsson.com."
+               title="Compose email to magnus.westerlund@ericsson.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">15 pages</small>
+        <div>
+            <a href="/doc/rfc8759/">
+                
+                    RFC 8759
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-payload-rtp-ttml)</i>
+            <br>
+            
+            <b>RTP Payload for Timed Text Markup Language (TTML)</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2020-03
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/barryleiba@gmail.com" >Barry Leiba</a> <a 
+               href="mailto:barryleiba%40gmail.com"
+               aria-label="Compose email to barryleiba@gmail.com."
+               title="Compose email to barryleiba@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/roni.even@huawei.com" >Roni Even</a> <a class="text-reset"
+               href="mailto:roni.even%40huawei.com"
+               aria-label="Compose email to roni.even@huawei.com."
+               title="Compose email to roni.even@huawei.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">20 pages</small>
+        <div>
+            <a href="/doc/rfc8817/">
+                
+                    RFC 8817
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-payload-tsvcis)</i>
+            <br>
+            
+            <b>RTP Payload Format for Tactical Secure Voice Cryptographic Interoperability Specification (TSVCIS) Codec</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2020-08
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/barryleiba@gmail.com" >Barry Leiba</a> <a 
+               href="mailto:barryleiba%40gmail.com"
+               aria-label="Compose email to barryleiba@gmail.com."
+               title="Compose email to barryleiba@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/ali.begen@networked.media" >Ali C. Begen</a> <a class="text-reset"
+               href="mailto:ali.begen%40networked.media"
+               aria-label="Compose email to ali.begen@networked.media."
+               title="Compose email to ali.begen@networked.media.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">15 pages</small>
+        <div>
+            <a href="/doc/rfc8860/">
+                
+                    RFC 8860
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-avtcore-multi-media-rtp-session)</i>
+            <br>
+            
+            <b>Sending Multiple Types of Media in a Single RTP Session</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2021-01
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+                    <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-avtcore-multi-media-rtp-session">
+                        <span class="badge bg-info">3</span>
+                    </a>
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/ben@nostrum.com" >Ben Campbell</a> <a 
+               href="mailto:ben%40nostrum.com"
+               aria-label="Compose email to ben@nostrum.com."
+               title="Compose email to ben@nostrum.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/roni.even@mail01.huawei.com" >Roni Even</a> <a class="text-reset"
+               href="mailto:roni.even%40mail01.huawei.com"
+               aria-label="Compose email to roni.even@mail01.huawei.com."
+               title="Compose email to roni.even@mail01.huawei.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">16 pages</small>
+        <div>
+            <a href="/doc/rfc8861/">
+                
+                    RFC 8861
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-avtcore-rtp-multi-stream-optimisation)</i>
+            <br>
+            
+            <b>Sending Multiple RTP Streams in a Single RTP Session: Grouping RTP Control Protocol (RTCP) Reception Statistics and Other Feedback</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2021-01
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/ben@nostrum.com" >Ben Campbell</a> <a 
+               href="mailto:ben%40nostrum.com"
+               aria-label="Compose email to ben@nostrum.com."
+               title="Compose email to ben@nostrum.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/roni.even@mail01.huawei.com" >Roni Even</a> <a class="text-reset"
+               href="mailto:roni.even%40mail01.huawei.com"
+               aria-label="Compose email to roni.even@mail01.huawei.com."
+               title="Compose email to roni.even@mail01.huawei.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">36 pages</small>
+        <div>
+            <a href="/doc/rfc8872/">
+                
+                    RFC 8872
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-avtcore-multiplex-guidelines)</i>
+            <br>
+            
+            <b>Guidelines for Using the Multiplexing Features of RTP to Support Multiple Media Streams</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2021-01
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Informational RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/barryleiba@gmail.com" >Barry Leiba</a> <a 
+               href="mailto:barryleiba%40gmail.com"
+               aria-label="Compose email to barryleiba@gmail.com."
+               title="Compose email to barryleiba@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/jonathan.lennox42@gmail.com" >Jonathan Lennox</a> <a class="text-reset"
+               href="mailto:jonathan.lennox42%40gmail.com"
+               aria-label="Compose email to jonathan.lennox42@gmail.com."
+               title="Compose email to jonathan.lennox42@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">13 pages</small>
+        <div>
+            <a href="/doc/rfc8888/">
+                
+                    RFC 8888
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-avtcore-cc-feedback-message)</i>
+            <br>
+            
+            <b>RTP Control Protocol (RTCP) Feedback for Congestion Control</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2021-01
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/barryleiba@gmail.com" >Barry Leiba</a> <a 
+               href="mailto:barryleiba%40gmail.com"
+               aria-label="Compose email to barryleiba@gmail.com."
+               title="Compose email to barryleiba@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/bernard.aboba@gmail.com" >Dr. Bernard D. Aboba</a> <a class="text-reset"
+               href="mailto:bernard.aboba%40gmail.com"
+               aria-label="Compose email to bernard.aboba@gmail.com."
+               title="Compose email to bernard.aboba@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">35 pages</small>
+        <div>
+            <a href="/doc/rfc9071/">
+                
+                    RFC 9071
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-avtcore-multi-party-rtt-mix)</i>
+            <br>
+            
+            <b>RTP-Mixer Formatting of Multiparty Real-Time Text</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2021-07
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/superuser@gmail.com" >Murray Kucherawy</a> <a 
+               href="mailto:superuser%40gmail.com"
+               aria-label="Compose email to superuser@gmail.com."
+               title="Compose email to superuser@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/bernard.aboba@gmail.com" >Dr. Bernard D. Aboba</a> <a class="text-reset"
+               href="mailto:bernard.aboba%40gmail.com"
+               aria-label="Compose email to bernard.aboba@gmail.com."
+               title="Compose email to bernard.aboba@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">27 pages</small>
+        <div>
+            <a href="/doc/rfc9134/">
+                
+                    RFC 9134
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-payload-rtp-jpegxs)</i>
+            <br>
+            
+            <b>RTP Payload Format for ISO/IEC 21122 (JPEG XS)</b>
+            
+                <a class="badge bg-warning text-decoration-none float-end"
+                   href="https://www.rfc-editor.org/errata_search.php?rfc=9134">
+                    Errata
+                </a>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2021-10
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/superuser@gmail.com" >Murray Kucherawy</a> <a 
+               href="mailto:superuser%40gmail.com"
+               aria-label="Compose email to superuser@gmail.com."
+               title="Compose email to superuser@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/bernard.aboba@gmail.com" >Dr. Bernard D. Aboba</a> <a class="text-reset"
+               href="mailto:bernard.aboba%40gmail.com"
+               aria-label="Compose email to bernard.aboba@gmail.com."
+               title="Compose email to bernard.aboba@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+    </tbody>
+
+
+
+    
+    
+
+
+
+
+
+
+
+
     <tbody>
-        <tr class="info">
-          <th></th>
-          
-              <th colspan="5">
-          
-	    RFCs (31 hits)
-          </th>
+        <tr class="table-info">
+            <td></td>
+            
+                <th scope="col" colspan="5">
+            
+            Related Internet-Drafts (6 hits)
+            </th>
         </tr>
     </tbody>
-
     <tbody>
         
-          
+            
 
 
 
 
 
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc6263/">RFC 6263</a>
-
-      
-        <i>(was draft-ietf-avt-app-rtp-keepalive)</i>
-      
-      <br>
-      <b>Application Mechanism for Keeping Alive the NAT Mappings Associated with RTP / RTP Control Protocol (RTCP) Flows</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2011-06
-    
-    </span>
 
 
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">13 pages</small>
+        <div>
+            <a href="/doc/draft-dawkins-avtcore-sdp-rtp-quic/">
+                
+                    draft-dawkins-avtcore-sdp-rtp-quic-00
+                
+            </a>
+            
+            <br>
+            
+            <b>SDP Offer/Answer for RTP using QUIC as Transport</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2022-01-28
+                    
+                    
+                
+                
+            </td>
+            
 
-    
-      <br><small class="text-muted">12 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
 
 
 <td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-avt-app-rtp-keepalive">
     
-  </div>
-
-  
-    Proposed Standard RFC
-
     
-
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+        
+        
+        
+        
+        
     
-  
-
-
-
 </td>
-
-
-  <td class="ipr text-center">
-    
-      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-avt-app-rtp-keepalive">
-        <span class="label label-default">1</span>
-      </a>
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/rjsparks@nostrum.com"><span class="">Robert Sparks</span></a>&nbsp;<a href="mailto:rjsparks%40nostrum.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc6284/">RFC 6284</a>
-
-      
-        <i>(was draft-ietf-avtcore-ports-for-ucast-mcast-rtp)</i>
-      
-      <br>
-      <b>Port Mapping between Unicast and Multicast RTP Sessions</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2011-06
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">30 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-avtcore-ports-for-ucast-mcast-rtp">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/rjsparks@nostrum.com"><span class="">Robert Sparks</span></a>&nbsp;<a href="mailto:rjsparks%40nostrum.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/magnus.westerlund@ericsson.com"><span class="small text-muted">Magnus Westerlund</span></a>&nbsp;<a href="mailto:magnus.westerlund%40ericsson.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc6354/">RFC 6354</a>
-
-      
-        <i>(was draft-ietf-avt-forward-shifted-red)</i>
-      
-      <br>
-      <b>Forward-Shifted RTP Redundancy Payload Support</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2011-08
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">13 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-avt-forward-shifted-red">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/rjsparks@nostrum.com"><span class="">Robert Sparks</span></a>&nbsp;<a href="mailto:rjsparks%40nostrum.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/magnus.westerlund@ericsson.com"><span class="small text-muted">Magnus Westerlund</span></a>&nbsp;<a href="mailto:magnus.westerlund%40ericsson.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc6562/">RFC 6562</a>
-
-      
-        <i>(was draft-ietf-avtcore-srtp-vbr-audio)</i>
-      
-      <br>
-      <b>Guidelines for the Use of Variable Bit Rate Audio with Secure RTP</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2012-03
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">6 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-avtcore-srtp-vbr-audio">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/rjsparks@nostrum.com"><span class="">Robert Sparks</span></a>&nbsp;<a href="mailto:rjsparks%40nostrum.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/magnus.westerlund@ericsson.com"><span class="small text-muted">Magnus Westerlund</span></a>&nbsp;<a href="mailto:magnus.westerlund%40ericsson.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc6642/">RFC 6642</a>
-
-      
-        <i>(was draft-ietf-avtcore-feedback-supression-rtp)</i>
-      
-      <br>
-      <b>RTP Control Protocol (RTCP) Extension for a Third-Party Loss Report</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2012-06
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">13 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-avtcore-feedback-supression-rtp">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/rjsparks@nostrum.com"><span class="">Robert Sparks</span></a>&nbsp;<a href="mailto:rjsparks%40nostrum.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/magnus.westerlund@ericsson.com"><span class="small text-muted">Magnus Westerlund</span></a>&nbsp;<a href="mailto:magnus.westerlund%40ericsson.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc6679/">RFC 6679</a>
-
-      
-        <i>(was draft-ietf-avtcore-ecn-for-rtp)</i>
-      
-      <br>
-      <b>Explicit Congestion Notification (ECN) for RTP over UDP</b>
-      
-        <a class="label label-danger pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=6679">Errata</a>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2012-08
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">58 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-avtcore-ecn-for-rtp">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-      <br>Updated by <a href="/doc/rfc8311/">RFC 8311</a>
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/rjsparks@nostrum.com"><span class="">Robert Sparks</span></a>&nbsp;<a href="mailto:rjsparks%40nostrum.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/roni.even@mail01.huawei.com"><span class="small text-muted">Roni Even</span></a>&nbsp;<a href="mailto:roni.even%40mail01.huawei.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc6792/">RFC 6792</a>
-
-      
-        <i>(was draft-ietf-avtcore-monarch)</i>
-      
-      <br>
-      <b>Guidelines for Use of the RTP Monitoring Framework</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2012-11
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">17 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-avtcore-monarch">
-    
-  </div>
-
-  
-    Informational RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/rjsparks@nostrum.com"><span class="">Robert Sparks</span></a>&nbsp;<a href="mailto:rjsparks%40nostrum.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/magnus.westerlund@ericsson.com"><span class="small text-muted">Magnus Westerlund</span></a>&nbsp;<a href="mailto:magnus.westerlund%40ericsson.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc6904/">RFC 6904</a>
-
-      
-        <i>(was draft-ietf-avtcore-srtp-encrypted-header-ext)</i>
-      
-      <br>
-      <b>Encryption of Header Extensions in the Secure Real-time Transport Protocol (SRTP)</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2013-04
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">15 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-avtcore-srtp-encrypted-header-ext">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/rjsparks@nostrum.com"><span class="">Robert Sparks</span></a>&nbsp;<a href="mailto:rjsparks%40nostrum.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/roni.even@mail01.huawei.com"><span class="small text-muted">Roni Even</span></a>&nbsp;<a href="mailto:roni.even%40mail01.huawei.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc7007/">RFC 7007</a>
-
-      
-        <i>(was draft-ietf-avtcore-avp-codecs)</i>
-      
-      <br>
-      <b>Update to Remove DVI4 from the Recommended Codecs for the RTP Profile for Audio and Video Conferences with Minimal Control (RTP/AVP)</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2013-08
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">4 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-avtcore-avp-codecs">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/rlb@ipv.sx"><span class="">Richard Barnes</span></a>&nbsp;<a href="mailto:rlb%40ipv.sx"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/magnus.westerlund@ericsson.com"><span class="small text-muted">Magnus Westerlund</span></a>&nbsp;<a href="mailto:magnus.westerlund%40ericsson.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc7022/">RFC 7022</a>
-
-      
-        <i>(was draft-ietf-avtcore-6222bis)</i>
-      
-      <br>
-      <b>Guidelines for Choosing RTP Control Protocol (RTCP) Canonical Names (CNAMEs)</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2013-09
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">10 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-avtcore-6222bis">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/rlb@ipv.sx"><span class="">Richard Barnes</span></a>&nbsp;<a href="mailto:rlb%40ipv.sx"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/magnus.westerlund@ericsson.com"><span class="small text-muted">Magnus Westerlund</span></a>&nbsp;<a href="mailto:magnus.westerlund%40ericsson.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc7164/">RFC 7164</a>
-
-      
-        <i>(was draft-ietf-avtcore-leap-second)</i>
-      
-      <br>
-      <b>RTP and Leap Seconds</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2014-03
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">9 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-avtcore-leap-second">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/rlb@ipv.sx"><span class="">Richard Barnes</span></a>&nbsp;<a href="mailto:rlb%40ipv.sx"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/magnus.westerlund@ericsson.com"><span class="small text-muted">Magnus Westerlund</span></a>&nbsp;<a href="mailto:magnus.westerlund%40ericsson.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc7201/">RFC 7201</a>
-
-      
-        <i>(was draft-ietf-avtcore-rtp-security-options)</i>
-      
-      <br>
-      <b>Options for Securing RTP Sessions</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2014-04
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">37 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-avtcore-rtp-security-options">
-    
-  </div>
-
-  
-    Informational RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/rlb@ipv.sx"><span class="">Richard Barnes</span></a>&nbsp;<a href="mailto:rlb%40ipv.sx"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/roni.even@mail01.huawei.com"><span class="small text-muted">Roni Even</span></a>&nbsp;<a href="mailto:roni.even%40mail01.huawei.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc7202/">RFC 7202</a>
-
-      
-        <i>(was draft-ietf-avt-srtp-not-mandatory)</i>
-      
-      <br>
-      <b>Securing the RTP Framework: Why RTP Does Not Mandate a Single Media Security Solution</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2014-04
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">10 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-avt-srtp-not-mandatory">
-    
-  </div>
-
-  
-    Informational RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/rlb@ipv.sx"><span class="">Richard Barnes</span></a>&nbsp;<a href="mailto:rlb%40ipv.sx"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/roni.even@mail01.huawei.com"><span class="small text-muted">Roni Even</span></a>&nbsp;<a href="mailto:roni.even%40mail01.huawei.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc7272/">RFC 7272</a>
-
-      
-        <i>(was draft-ietf-avtcore-idms)</i>
-      
-      <br>
-      <b>Inter-Destination Media Synchronization (IDMS) Using the RTP Control Protocol (RTCP)</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2014-06
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">23 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-avtcore-idms">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/rlb@ipv.sx"><span class="">Richard Barnes</span></a>&nbsp;<a href="mailto:rlb%40ipv.sx"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/roni.even@mail01.huawei.com"><span class="small text-muted">Roni Even</span></a>&nbsp;<a href="mailto:roni.even%40mail01.huawei.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc7273/">RFC 7273</a>
-
-      
-        <i>(was draft-ietf-avtcore-clksrc)</i>
-      
-      <br>
-      <b>RTP Clock Source Signalling</b>
-      
-        <a class="label label-danger pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=7273">Errata</a>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2014-06
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">30 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-avtcore-clksrc">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/alissa@cooperw.in"><span class="">Alissa Cooper</span></a>&nbsp;<a href="mailto:alissa%40cooperw.in"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/roni.even@mail01.huawei.com"><span class="small text-muted">Roni Even</span></a>&nbsp;<a href="mailto:roni.even%40mail01.huawei.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc7667/">RFC 7667</a>
-
-      
-        <i>(was draft-ietf-avtcore-rtp-topologies-update)</i>
-      
-      <br>
-      <b>RTP Topologies</b>
-      
-        <a class="label label-warning pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=7667">Errata</a>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2015-11
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">48 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-avtcore-rtp-topologies-update">
-    
-  </div>
-
-  
-    Informational RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/ben@nostrum.com"><span class="">Ben Campbell</span></a>&nbsp;<a href="mailto:ben%40nostrum.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/roni.even@mail01.huawei.com"><span class="small text-muted">Roni Even</span></a>&nbsp;<a href="mailto:roni.even%40mail01.huawei.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc7714/">RFC 7714</a>
-
-      
-        <i>(was draft-ietf-avtcore-srtp-aes-gcm)</i>
-      
-      <br>
-      <b>AES-GCM Authenticated Encryption in the Secure Real-time Transport Protocol (SRTP)</b>
-      
-        <a class="label label-warning pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=7714">Errata</a>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2015-12
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">48 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-avtcore-srtp-aes-gcm">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/ben@nostrum.com"><span class="">Ben Campbell</span></a>&nbsp;<a href="mailto:ben%40nostrum.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/magnus.westerlund@ericsson.com"><span class="small text-muted">Magnus Westerlund</span></a>&nbsp;<a href="mailto:magnus.westerlund%40ericsson.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc7983/">RFC 7983</a>
-
-      
-        <i>(was draft-ietf-avtcore-rfc5764-mux-fixes)</i>
-      
-      <br>
-      <b>Multiplexing Scheme Updates for Secure Real-time Transport Protocol (SRTP) Extension for Datagram Transport Layer Security (DTLS)</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2016-09
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">13 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-avtcore-rfc5764-mux-fixes">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-avtcore-rfc5764-mux-fixes">
-        <span class="label label-default">1</span>
-      </a>
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/ben@nostrum.com"><span class="">Ben Campbell</span></a>&nbsp;<a href="mailto:ben%40nostrum.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/magnus.westerlund@ericsson.com"><span class="small text-muted">Magnus Westerlund</span></a>&nbsp;<a href="mailto:magnus.westerlund%40ericsson.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc8035/">RFC 8035</a>
-
-      
-        <i>(was draft-ietf-avtcore-5761-update)</i>
-      
-      <br>
-      <b>Session Description Protocol (SDP) Offer/Answer Clarifications for RTP/RTCP Multiplexing</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2016-11
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">7 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-avtcore-5761-update">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/ben@nostrum.com"><span class="">Ben Campbell</span></a>&nbsp;<a href="mailto:ben%40nostrum.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/ron.even.tlv@gmail.com"><span class="small text-muted">Roni Even</span></a>&nbsp;<a href="mailto:ron.even.tlv%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc8083/">RFC 8083</a>
-
-      
-        <i>(was draft-ietf-avtcore-rtp-circuit-breakers)</i>
-      
-      <br>
-      <b>Multimedia Congestion Control: Circuit Breakers for Unicast RTP Sessions</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2017-03
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">25 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-avtcore-rtp-circuit-breakers">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/ben@nostrum.com"><span class="">Ben Campbell</span></a>&nbsp;<a href="mailto:ben%40nostrum.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/magnus.westerlund@ericsson.com"><span class="small text-muted">Magnus Westerlund</span></a>&nbsp;<a href="mailto:magnus.westerlund%40ericsson.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc8108/">RFC 8108</a>
-
-      
-        <i>(was draft-ietf-avtcore-rtp-multi-stream)</i>
-      
-      <br>
-      <b>Sending Multiple RTP Streams in a Single RTP Session</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2017-03
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">29 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-avtcore-rtp-multi-stream">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/ben@nostrum.com"><span class="">Ben Campbell</span></a>&nbsp;<a href="mailto:ben%40nostrum.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/roni.even@mail01.huawei.com"><span class="small text-muted">Roni Even</span></a>&nbsp;<a href="mailto:roni.even%40mail01.huawei.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc8269/">RFC 8269</a>
-
-      
-        <i>(was draft-ietf-avtcore-aria-srtp)</i>
-      
-      <br>
-      <b>The ARIA Algorithm and Its Use with the Secure Real-Time Transport Protocol (SRTP)</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2017-10
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">19 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-avtcore-aria-srtp">
-    
-  </div>
-
-  
-    Informational RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/ben@nostrum.com"><span class="">Ben Campbell</span></a>&nbsp;<a href="mailto:ben%40nostrum.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/roni.even@huawei.com"><span class="small text-muted">Roni Even</span></a>&nbsp;<a href="mailto:roni.even%40huawei.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc8285/">RFC 8285</a>
-
-      
-        <i>(was draft-ietf-avtcore-rfc5285-bis)</i>
-      
-      <br>
-      <b>A General Mechanism for RTP Header Extensions</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2017-10
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">25 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-avtcore-rfc5285-bis">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/ben@nostrum.com"><span class="">Ben Campbell</span></a>&nbsp;<a href="mailto:ben%40nostrum.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/magnus.westerlund@ericsson.com"><span class="small text-muted">Magnus Westerlund</span></a>&nbsp;<a href="mailto:magnus.westerlund%40ericsson.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc8759/">RFC 8759</a>
-
-      
-        <i>(was draft-ietf-payload-rtp-ttml)</i>
-      
-      <br>
-      <b>RTP Payload for Timed Text Markup Language (TTML)</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2020-03
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">15 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-payload-rtp-ttml">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/barryleiba@gmail.com"><span class="">Barry Leiba</span></a>&nbsp;<a href="mailto:barryleiba%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/roni.even@huawei.com"><span class="small text-muted">Roni Even</span></a>&nbsp;<a href="mailto:roni.even%40huawei.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc8817/">RFC 8817</a>
-
-      
-        <i>(was draft-ietf-payload-tsvcis)</i>
-      
-      <br>
-      <b>RTP Payload Format for Tactical Secure Voice Cryptographic Interoperability Specification (TSVCIS) Codec</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2020-08
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">20 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-payload-tsvcis">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/barryleiba@gmail.com"><span class="">Barry Leiba</span></a>&nbsp;<a href="mailto:barryleiba%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/ali.begen@networked.media"><span class="small text-muted">Ali Begen</span></a>&nbsp;<a href="mailto:ali.begen%40networked.media"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc8860/">RFC 8860</a>
-
-      
-        <i>(was draft-ietf-avtcore-multi-media-rtp-session)</i>
-      
-      <br>
-      <b>Sending Multiple Types of Media in a Single RTP Session</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2021-01
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">15 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-avtcore-multi-media-rtp-session">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-avtcore-multi-media-rtp-session">
-        <span class="label label-default">3</span>
-      </a>
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/ben@nostrum.com"><span class="">Ben Campbell</span></a>&nbsp;<a href="mailto:ben%40nostrum.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/roni.even@mail01.huawei.com"><span class="small text-muted">Roni Even</span></a>&nbsp;<a href="mailto:roni.even%40mail01.huawei.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc8861/">RFC 8861</a>
-
-      
-        <i>(was draft-ietf-avtcore-rtp-multi-stream-optimisation)</i>
-      
-      <br>
-      <b>Sending Multiple RTP Streams in a Single RTP Session: Grouping RTP Control Protocol (RTCP) Reception Statistics and Other Feedback</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2021-01
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">16 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-avtcore-rtp-multi-stream-optimisation">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/ben@nostrum.com"><span class="">Ben Campbell</span></a>&nbsp;<a href="mailto:ben%40nostrum.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/roni.even@mail01.huawei.com"><span class="small text-muted">Roni Even</span></a>&nbsp;<a href="mailto:roni.even%40mail01.huawei.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc8872/">RFC 8872</a>
-
-      
-        <i>(was draft-ietf-avtcore-multiplex-guidelines)</i>
-      
-      <br>
-      <b>Guidelines for Using the Multiplexing Features of RTP to Support Multiple Media Streams</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2021-01
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">36 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-avtcore-multiplex-guidelines">
-    
-  </div>
-
-  
-    Informational RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/barryleiba@gmail.com"><span class="">Barry Leiba</span></a>&nbsp;<a href="mailto:barryleiba%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/jonathan.lennox42@gmail.com"><span class="small text-muted">Jonathan Lennox</span></a>&nbsp;<a href="mailto:jonathan.lennox42%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc8888/">RFC 8888</a>
-
-      
-        <i>(was draft-ietf-avtcore-cc-feedback-message)</i>
-      
-      <br>
-      <b>RTP Control Protocol (RTCP) Feedback for Congestion Control</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2021-01
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">13 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-avtcore-cc-feedback-message">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/barryleiba@gmail.com"><span class="">Barry Leiba</span></a>&nbsp;<a href="mailto:barryleiba%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/bernard.aboba@gmail.com"><span class="small text-muted">Bernard Aboba</span></a>&nbsp;<a href="mailto:bernard.aboba%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc9071/">RFC 9071</a>
-
-      
-        <i>(was draft-ietf-avtcore-multi-party-rtt-mix)</i>
-      
-      <br>
-      <b>RTP-Mixer Formatting of Multiparty Real-Time Text</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2021-07
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">35 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-avtcore-multi-party-rtt-mix">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/superuser@gmail.com"><span class="">Murray Kucherawy</span></a>&nbsp;<a href="mailto:superuser%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/bernard.aboba@gmail.com"><span class="small text-muted">Bernard Aboba</span></a>&nbsp;<a href="mailto:bernard.aboba%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc9134/">RFC 9134</a>
-
-      
-        <i>(was draft-ietf-payload-rtp-jpegxs)</i>
-      
-      <br>
-      <b>RTP Payload Format for ISO/IEC 21122 (JPEG XS)</b>
-      
-        <a class="label label-warning pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=9134">Errata</a>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2021-10
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">27 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-payload-rtp-jpegxs">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/superuser@gmail.com"><span class="">Murray Kucherawy</span></a>&nbsp;<a href="mailto:superuser%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/bernard.aboba@gmail.com"><span class="small text-muted">Bernard Aboba</span></a>&nbsp;<a href="mailto:bernard.aboba%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-      
-    </tbody>
-  </table>
-
-
-  
-  
-
-
-
-
-  
-
-  
-  <table class="table table-condensed table-striped tablesorter">
-    <thead>
-      <tr>
-        <th class="sorter-false"></th>
-
-        
-          
-            <th data-header="document">
-	      
-	        Document
-	      
-            </th>
-          
-        
-          
-        
-          
-            <th data-header="date">
-	      
-	        Date
-	      
-            </th>
-          
-        
-          
-            <th data-header="status">
-	      
-	        Status
-	      
-            </th>
-          
-        
-          
-            <th data-header="ipr">
-	      
-	        IPR
-	      
-            </th>
-          
-        
-          
-            <th data-header="ad">
-	      
-	        AD / Shepherd
-	      
-            </th>
-          
-        
-
-        
-      </tr>
-    </thead>
-
-    
-
-      
-    <tbody>
-        <tr class="info">
-          <th></th>
-          
-              <th colspan="5">
-          
-	    Related Internet-Drafts (6 hits)
-          </th>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
         </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">15 pages</small>
+        <div>
+            <a href="/doc/draft-engelbart-rtp-over-quic/">
+                
+                    draft-engelbart-rtp-over-quic-02
+                
+            </a>
+            
+            <br>
+            
+            <b>RTP over QUIC</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2022-03-07
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+        
+        
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">47 pages</small>
+        <div>
+            <a href="/doc/draft-hellstrom-avtcore-multi-party-rtt-solutions/">
+                
+                    draft-hellstrom-avtcore-multi-party-rtt-solutions-08
+                
+            </a>
+            
+            <br>
+            
+            <b>Real-time text solutions for multi-party sessions</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2021-12-30
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+        
+        
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">15 pages</small>
+        <div>
+            <a href="/doc/draft-ietf-avtext-lrr/">
+                
+                    draft-ietf-avtext-lrr-07
+                
+            </a>
+            
+            <br>
+            
+            <b>The Layer Refresh Request (LRR) RTCP Feedback Message</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2017-07-02
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            RFC Ed Queue
+        
+        
+            : <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-avtext-lrr">MISSREF</a>
+        
+        
+        <span class="badge bg-danger" title="Goal is &lt;60 days">for 1746 days</span>
+        
+        
+            
+        
+        
+            <br>
+            
+                Submitted to IESG for Publication
+                
+                    :
+                
+            
+        
+        Proposed Standard
+        
+        
+            <br>
+            Reviews:
+            <a href="/group/genart/">genart</a>,
+                
+                    <a href="/group/opsdir/">opsdir</a>,
+                
+                    <a href="/group/secdir/">secdir</a>
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/ben@nostrum.com" >Ben Campbell</a> <a 
+               href="mailto:ben%40nostrum.com"
+               aria-label="Compose email to ben@nostrum.com."
+               title="Compose email to ben@nostrum.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/rachel.huang@huawei.com" >Rachel Huang</a> <a class="text-reset"
+               href="mailto:rachel.huang%40huawei.com"
+               aria-label="Compose email to rachel.huang@huawei.com."
+               title="Compose email to rachel.huang@huawei.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">44 pages</small>
+        <div>
+            <a href="/doc/draft-ilola-avtcore-rtp-v3c/">
+                
+                    draft-ilola-avtcore-rtp-v3c-00
+                
+            </a>
+            
+            <br>
+            
+            <b>RTP Payload Format for Visual Volumetric Video-based Coding (V3C)</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2022-01-20
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+        
+        
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+                    <a href="/ipr/search/?submit=draft&amp;id=draft-ilola-avtcore-rtp-v3c">
+                        <span class="badge bg-info">4</span>
+                    </a>
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">28 pages</small>
+        <div>
+            <a href="/doc/draft-ploumhans-avtcore-rtp-colibri/">
+                
+                    draft-ploumhans-avtcore-rtp-colibri-00
+                
+            </a>
+            
+            <br>
+            
+            <b>RTP Payload Format for Colibri Video</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2021-11-09
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+        
+        
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
     </tbody>
 
-    <tbody>
-        
-          
+</table>
 
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-dawkins-avtcore-sdp-rtp-quic/">draft-dawkins-avtcore-sdp-rtp-quic-00</a>
-
-      
-      <br>
-      <b>SDP Offer/Answer for RTP using QUIC as Transport</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2022-01-28
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">13 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-dawkins-avtcore-sdp-rtp-quic">
-    
-  </div>
-
-  
-    
-      I-D Exists
-    
-
-    
-
-    <wbr>
-
-    <wbr>
-    
-    
-
-    
-      
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-engelbart-rtp-over-quic/">draft-engelbart-rtp-over-quic-02</a>
-
-      
-      <br>
-      <b>RTP over QUIC</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2022-03-07
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">15 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-engelbart-rtp-over-quic">
-    
-  </div>
-
-  
-    
-      I-D Exists
-    
-
-    
-
-    <wbr>
-
-    <wbr>
-    
-    
-
-    
-      
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-hellstrom-avtcore-multi-party-rtt-solutions/">draft-hellstrom-avtcore-multi-party-rtt-solutions-08</a>
-
-      
-      <br>
-      <b>Real-time text solutions for multi-party sessions</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2021-12-30
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">47 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-hellstrom-avtcore-multi-party-rtt-solutions">
-    
-  </div>
-
-  
-    
-      I-D Exists
-    
-
-    
-
-    <wbr>
-
-    <wbr>
-    
-    
-
-    
-      
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-ietf-avtext-lrr/">draft-ietf-avtext-lrr-07</a>
-
-      
-      <br>
-      <b>The Layer Refresh Request (LRR) RTCP Feedback Message</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2017-07-02
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">15 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-avtext-lrr">
-    
-  </div>
-
-  
-    
-      RFC Ed Queue
-    
-
-    
-      <wbr>: <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-avtext-lrr">MISSREF</a>
-    
-
-    <wbr>
-
-    <wbr><span class="label label-danger" title="Goal is &lt;60 days">for 1738 days</span>
-    
-    
-
-    
-      
-    
-
-    
-      <br>
-      
-	Submitted to IESG for Publication:<wbr>
-      
-    
-
-    
-      Proposed Standard
-    
-
-    
-
-    
-      <br>Reviews:
-      
-        genart, 
-      
-        opsdir, 
-      
-        secdir
-      
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/ben@nostrum.com"><span class="">Ben Campbell</span></a>&nbsp;<a href="mailto:ben%40nostrum.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/rachel.huang@huawei.com"><span class="small text-muted">Rachel Huang</span></a>&nbsp;<a href="mailto:rachel.huang%40huawei.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-ilola-avtcore-rtp-v3c/">draft-ilola-avtcore-rtp-v3c-00</a>
-
-      
-      <br>
-      <b>RTP Payload Format for Visual Volumetric Video-based Coding (V3C)</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2022-01-20
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">44 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ilola-avtcore-rtp-v3c">
-    
-  </div>
-
-  
-    
-      I-D Exists
-    
-
-    
-
-    <wbr>
-
-    <wbr>
-    
-    
-
-    
-      
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-      <a href="/ipr/search/?submit=draft&amp;id=draft-ilola-avtcore-rtp-v3c">
-        <span class="label label-default">4</span>
-      </a>
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-ploumhans-avtcore-rtp-colibri/">draft-ploumhans-avtcore-rtp-colibri-00</a>
-
-      
-      <br>
-      <b>RTP Payload Format for Colibri Video</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2021-11-09
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">28 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ploumhans-avtcore-rtp-colibri">
-    
-  </div>
-
-  
-    
-      I-D Exists
-    
-
-    
-
-    <wbr>
-
-    <wbr>
-    
-    
-
-    
-      
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-      
-    </tbody>
-  </table>
-
-
-  <ul class="list-inline pull-right" style="margin-top:1em;">
-  <li>
+    <div class="text-end">
     <label id="list-feeds">Atom feed:</label>
     <div class="btn-group" role="group" aria-labelledby="list-feeds">
-      <a class="btn btn-default" title="Feed of all changes" href="/group/avtcore/documents/feed/">All changes</a>
-      <a class="btn btn-default" title="Feed of only significant state changes" href="/group/avtcore/documents/feed/?significant=1">Significant</a>
+        <a class="btn btn-primary"
+           title="Feed of all changes"
+           href="/group/avtcore/documents/feed/">
+            <i class="bi bi-rss"></i> All changes
+        </a>
+        <a class="btn btn-primary"
+           title="Feed of only significant state changes"
+           href="/group/avtcore/documents/feed/?significant=1">
+            <i class="bi bi-rss"></i> Significant
+        </a>
     </div>
-  </li>
-
-  
-    <li><a class="btn btn-default" href="/group/avtcore/documents/subscription/">
-      <i class="glyphicon glyphicon-envelope"></i>
-      
-        Subscribe to changes
-      
-    </a></li>
-  
-
-  <li><a class="btn btn-default" href="/group/avtcore/documents/csv/"><i class="glyphicon glyphicon-list"></i> Export as CSV</a></li>
-</ul>
-
-
-
+    
+        <a class="btn btn-primary"
+           href="/group/avtcore/documents/subscription/">
+            <i class="bi bi-envelope"></i>
+            
+                Subscribe to changes
+            
+        </a>
+    
+    <a class="btn btn-primary"
+       href="/group/avtcore/documents/csv/">
+        <i class="bi bi-file-ruled"></i> Export as CSV
+    </a>
+</div>
 
 
+                    
+                </div>
+            </div>
+            <hr>
+            
+                <footer class="col-md-12 col-sm-12 text-center">
+                    <a href="https://www.ietf.org/" class="p-3">IETF</a>
+                    <a href="https://www.ietf.org/iesg/" class="p-3">IESG</a>
+                    <a href="https://www.iab.org/" class="p-3">IAB</a>
+                    <a href="https://www.irtf.org/" class="p-3">IRTF</a>
+                    <a href="https://www.ietf.org/llc/" class="p-3">IETF&nbsp;LLC</a>
+                    <a href="https://trustee.ietf.org/" class="p-3">IETF&nbsp;Trust</a>
+                    <a href="https://www.rfc-editor.org/" class="p-3">RFC&nbsp;Editor</a>
+                    <a href="https://www.iana.org/" class="p-3">IANA</a>
+                    <a href="https://www.ietf.org/privacy-statement/" class="p-3">Privacy&nbsp;Statement</a>
+                    <div class="small text-muted p-3">
+                        
+                            <a href="/release/about">About</a>
+                            <a href="https://github.com/ietf-tools/datatracker/">IETF Datatracker</a>
+                            
+                                <a href="https://github.com/ietf-tools/datatracker/releases/tag/8.0.0">Version 8.0.0</a>
+                            
+                            (main - 87fac4e)
+                        
+                        Report a bug:
+                        <a href="https://github.com/ietf-tools/datatracker/issues/new/choose">
+                            GitHub
+                            <i class="bi bi-bug"></i>
+                        </a>
+                        
+                            <a href="mailto:datatracker-project@ietf.org">
+                                Email
+                                <i class="bi bi-envelope"></i>
+                            </a>
+                        
+                        <br>
+                        Python 3.6.12
+                        Django 2.2.28
+                        <br>
+                        
+
+
+
+
+
+                    </div>
+                </footer>
+            
+        </div>
         
-        
-	  </div>
-        
+    <script src="https://www.ietf.org/lib/dt/8.0.0/ietf/js/list.js"></script>
 
-	
-	<hr>
-	  <div class="col-md-12 col-sm-12">
-	    <div class="text-center padded">
-	        <a href="https://www.rfc-editor.org/" class="padded">RFC&nbsp;Editor</a>
-	        <a href="https://www.ietf.org/llc/" class="padded">IASA&nbsp;&amp;&nbsp;IETF&nbsp;LLC</a>
-	        <a href="https://trustee.ietf.org/" class="padded">IETF&nbsp;Trust</a>
-	        <a href="https://www.irtf.org/" class="padded">IRTF</a>
-	        <a href="https://www.ietf.org/" class="padded">IETF</a>
-	        <a href="https://www.ietf.org/iesg/" class="padded">IESG</a>
-	        <a href="https://www.iab.org/" class="padded">IAB</a>
-	        <a href="https://www.iana.org/" class="padded">IANA</a>
-	        <a href="https://www.ietf.org/privacy-statement/" class="padded">Privacy&nbsp;Statement</a>
-	    </div>
-	  </div>
-
-
-        <footer class="col-md-12 col-sm-12">
-	  <div class="col-md-12">
-	    <div class="text-center">
-	      <p class="small text-muted">
-	        
-		  <a href="/release/about">About</a> |
-	          IETF Datatracker |
-	          <a href="/release/7.46.0.p4/">Version 7.46.0.p4</a> |
-	          2022-03-10 |
-	        
-		Report a bug:
-	        <a href="https://trac.ietf.org/trac/ietfdb/newticket">Tracker:<span class="fa fa-bug"></span></a>
-                
-	        <a href="mailto:datatracker-project@ietf.org">Email:<span class="fa fa-envelope"></span></a>
-                
-		<br>
-                Python 3.6.12 |
-		Django 2.2.27
-	      </p>
-	    </div>
-	  </div>
-        </footer>
-	
-
-      </div>
-
-      
-
-
-
-
-      <script src="https://www.ietf.org/lib/dt/7.46.0/jquery/jquery.min.js"></script>
-      
-      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
-      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
-      <script src="https://www.ietf.org/lib/dt/7.46.0/js-cookie/src/js.cookie.js"></script>
-      <script src="https://www.ietf.org/lib/dt/7.46.0/ietf/bootstrap/js/bootstrap.min.js"></script>
-      <script src="https://www.ietf.org/lib/dt/7.46.0/ietf/js/ietf.js"></script>
-      
-<script src="https://www.ietf.org/lib/dt/7.46.0/jquery.tablesorter/js/jquery.tablesorter.combined.min.js"></script>
-
-      
-  <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6fb2a6bfae516a9e',m:'5mp4Z3Q9Hn2lLtF8lm9TUy4lw7fZlGLL4VOnQulUYVo-1649836656-0-AcN8EvniCxUgfYe8ujWcbUBGF/LhXybadOwxjUC1+Wjea5MY/Q7xK7M+vQgnB6bE6Swr2/MYWipAYKk8oldSOfC7NA8tG6Hg/CIj1lTeyv+7pZ2aQwC1H//oaGJKsOd9ekjJRXuBvmzb/XV873kn8Wc=',s:[0x0886887aa4,0x5b662cc7af],}})();</script></body>
+        <script src="https://www.ietf.org/lib/dt/8.0.0/ietf/js/select2.js"></script>
+        <script>
+            $('#navbar-doc-search').on('select2:select', function (e) {
+                window.location.href = e.params.data.url;
+            });
+        </script>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6ff488a7d8dfa9c2',m:'bCCyC6fLiyp_kcwyb3LzDG0B5Mej.cKLHCpGVKiyVLQ-1650527482-0-AZz6oHtkzUaMOfBDoL6VHCue3f3SKAoZmDfEeEtXvC6vZrcEp6SpkyAf7v54556X9QFIedixUDhxs06Feh/iDFN8op1WVLfpCS1ZWH0iVfJTI51ps30JAZG7oRx0BMXlNJjbW/JqTTfBnCzXf6iSWSI=',s:[0xadc6a05451,0x0231686dd6],}})();</script></body>
 </html>

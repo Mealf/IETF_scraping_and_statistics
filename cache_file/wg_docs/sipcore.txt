@@ -1,4054 +1,3759 @@
-<!DOCTYPE html> 
+
+<!DOCTYPE html>
+
 
 
 
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Session Initiation Protocol Core (sipcore) - Documents</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>
+            Session Initiation Protocol Core (sipcore)
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="https://www.ietf.org/lib/dt/8.0.0/ietf/css/ietf.css">
+        <link rel="stylesheet" href="https://www.ietf.org/lib/dt/8.0.0/ietf/css/select2.css">
+        <style>
+            
+            .leftmenu { width: 13em; }
+        </style>
+        
+    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/8.0.0/ietf/css/list.css">
 
-    <link href="https://www.ietf.org/lib/dt/7.46.0/ptmono/stylesheet.css" rel='stylesheet' type='text/css'>
-    <link href="https://www.ietf.org/lib/dt/7.46.0/ptsans/stylesheet.css" rel='stylesheet' type='text/css'>
-    <link href="https://www.ietf.org/lib/dt/7.46.0/ptserif/stylesheet.css" rel='stylesheet' type='text/css'>
+        
+            <link rel="shortcut icon"
+                  href="https://www.ietf.org/lib/dt/8.0.0/ietf/images/ietf-icon-blue3.png">
+        
+        <link rel="apple-touch-icon"
+              href="https://www.ietf.org/lib/dt/8.0.0/ietf/images/apple-touch-icon.png">
+        <script src="https://www.ietf.org/lib/dt/8.0.0/ietf/js/ietf.js"></script>
+    <script async src='/cdn-cgi/bm/cv/669835187/api.js'></script></head>
+    <body  class="position-relative"
+          data-group-menu-data-url="/group/groupmenu.json">
+        <a class="visually-hidden visually-hidden-focusable" href="#content">Skip to main content</a>
+        <nav class="navbar navbar-expand-lg  navbar-dark bg-secondary    fixed-top ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">
+                    <img alt="IETF Logo"
+                         src="https://www.ietf.org/lib/dt/8.0.0/ietf/images/ietflogo-small-transparent.png">
+                    Datatracker
+                    
+                </a>
+                <div class="collapse navbar-collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        
+
+
+
+
+<li class="nav-item dropdown">
+    
+        <a href="#"
+           class="nav-link dropdown-toggle"
+           role="button"
+           data-bs-auto-close="false"
+           data-bs-toggle="dropdown"
+           aria-expanded="false">
+            Groups
+        </a>
+        <ul class="dropdown-menu mt-n1">
+        
+    <li class="dropdown-header">By area/parent</li>
     
 
-    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/ietf/font-datatracker/css/font-datatracker.css">
-    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/ietf/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/ietf/bootstrap/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/ietf/css/ietf.css">
-    
-    <style>
-     
-    </style>
-
-    
-<link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/jquery.tablesorter/css/theme.bootstrap.min.css">
 
 
-    
-    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.46.0/ietf/images/ietf-icon-blue3.png">
-    
-    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.46.0/ietf/images/apple-touch-icon.png">
-  <script async src='/cdn-cgi/bm/cv/669835187/api.js'></script></head>
+    <li class="dropend group-menu group-parent-2010">
+        <a class="dropdown-item dropdown-toggle "
+           href="/wg/#art">
+            Apps &amp; Realtime
+        </a>
+    </li>
 
-  <body  data-group-menu-data-url="/group/groupmenu.json">
-      <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container-fluid">
-	  <div class="navbar-header">
-	    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-	      <span class="sr-only">Toggle navigation</span>
-	      <span class="icon-bar"></span>
-	      <span class="icon-bar"></span>
-	      <span class="icon-bar"></span>
-	    </button>
-	    <a class="navbar-brand" href="/">
-	       <img alt="IETF Logo" src="https://www.ietf.org/lib/dt/7.46.0/ietf/images/ietflogo-small-transparent.png">
-	       
-		  
-		  Datatracker
-		  
-	       
-	    </a>
-	  </div>
+    <li class="dropend group-menu group-parent-1008">
+        <a class="dropdown-item dropdown-toggle "
+           href="/wg/#gen">
+            General
+        </a>
+    </li>
 
-	  <noscript>
-	    <p class="navbar-text"><small>Enable Javascript for full functionality.</small></p>
-	  </noscript>
+    <li class="dropend group-menu group-parent-1052">
+        <a class="dropdown-item dropdown-toggle "
+           href="/wg/#int">
+            Internet
+        </a>
+    </li>
 
-	  <div class="collapse navbar-collapse" id="navbar-collapse">
-	    <ul class="hidden-nojs nav navbar-nav">
-              
+    <li class="dropend group-menu group-parent-1193">
+        <a class="dropdown-item dropdown-toggle "
+           href="/wg/#ops">
+            Ops &amp; Management
+        </a>
+    </li>
+
+    <li class="dropend group-menu group-parent-1249">
+        <a class="dropdown-item dropdown-toggle "
+           href="/wg/#rtg">
+            Routing
+        </a>
+    </li>
+
+    <li class="dropend group-menu group-parent-1260">
+        <a class="dropdown-item dropdown-toggle "
+           href="/wg/#sec">
+            Security
+        </a>
+    </li>
+
+    <li class="dropend group-menu group-parent-1324">
+        <a class="dropdown-item dropdown-toggle "
+           href="/wg/#tsv">
+            Transport
+        </a>
+    </li>
+
+    <li class="dropend group-menu group-parent-7">
+        <a class="dropdown-item dropdown-toggle "
+           href="/program/">
+            IAB
+        </a>
+    </li>
+
+    <li class="dropend group-menu group-parent-3">
+        <a class="dropdown-item dropdown-toggle "
+           href="/rg/">
+            IRTF
+        </a>
+    </li>
+
+    <li class="dropend group-menu group-parent-2309">
+        <a class="dropdown-item dropdown-toggle "
+           href="/adm/">
+            IETF LLC
+        </a>
+    </li>
 
 
-
-
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-  
-  Groups
-  
-    </a>
-    <ul class="dropdown-menu" role="menu">
-
-    <li class="dropdown-header visible-lg-block">By area/parent</li>
-  
+    <li class="dropend">
+        <a class="dropdown-item dropdown-toggle "
+           href="/group/">
+            Other
+        </a>
         
 
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-2010">
-    <a href="/wg/#art">Apps &amp; Realtime</a>
-  </li>
 
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1008">
-    <a href="/wg/#gen">General</a>
-  </li>
-
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1052">
-    <a href="/wg/#int">Internet</a>
-  </li>
-
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1193">
-    <a href="/wg/#ops">Ops &amp; Mgmt</a>
-  </li>
-
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1249">
-    <a href="/wg/#rtg">Routing</a>
-  </li>
-
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1260">
-    <a href="/wg/#sec">Security</a>
-  </li>
-
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1324">
-    <a href="/wg/#tsv">Transport</a>
-  </li>
-
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-7">
-    <a href="/program/">IAB</a>
-  </li>
-
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-3">
-    <a href="/rg/">IRTF</a>
-  </li>
-
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-2309">
-    <a href="/adm/">IETF LLC</a>
-  </li>
-
-
-        <li class="dropdown-submenu group-menu"><a href="/group/">Other</a>
-<ul class="dropdown-menu" role="menu">
-
-  <li>
-    <a href="/ag/">Active AGs</a>
-  </li>
-
-  <li>
-    <a href="/area/">Active Areas</a>
-  </li>
-
-  <li>
-    <a href="/dir/">Active Directorates</a>
-  </li>
-
-  <li>
-    <a href="/program/">Active Programs</a>
-  </li>
-
-  <li>
-    <a href="/rag/">Active RAGs</a>
-  </li>
-
-  <li>
-    <a href="/team/">Active Teams</a>
-  </li>
-
-
-  <li>
-    <a href="/group/rsoc/">RSOC</a>
-  </li>
-
+<ul class="dropdown-menu ms-n1">
+    
+        <li>
+            <a class="dropdown-item "
+               href="/ag/">Active AGs</a>
+        </li>
+    
+        <li>
+            <a class="dropdown-item "
+               href="/area/">Active Areas</a>
+        </li>
+    
+        <li>
+            <a class="dropdown-item "
+               href="/dir/">Active Directorates</a>
+        </li>
+    
+        <li>
+            <a class="dropdown-item "
+               href="/program/">Active Programs</a>
+        </li>
+    
+        <li>
+            <a class="dropdown-item "
+               href="/rag/">Active RAGs</a>
+        </li>
+    
+        <li>
+            <a class="dropdown-item "
+               href="/team/">Active Teams</a>
+        </li>
+    
+    
+        <li>
+            <a class="dropdown-item "
+               href="/group/rsoc/">RSOC</a>
+        </li>
+    
 </ul>
- </li>
 
-  <li class="divider hidden-xs"></li>
-  <li class="dropdown-header hidden-xs">New work</li>
-  <li><a href="/group/chartering/">Chartering groups</a></li>
-  <li><a href="/wg/bofs/">BOFs</a></li>
-  <li><a href="/doc/bof-requests">BOF Requests</a></li>
-
-  <li class="divider hidden-xs"></li>
-  <li class="dropdown-header hidden-xs">Other groups</li>
-  <li><a href="/group/concluded/">Concluded groups</a></li>
-  <li><a href="/list/nonwg">Non-WG lists</a></li>
-
-</ul>
-</li>
-
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-  
-  Documents
-  
-    </a>
-    <ul class="dropdown-menu" role="menu">
-  
-  <li><a href="/doc/search">Search</a></li>
-  <li><a href="/doc/recent">Recent drafts</a></li>
-  <li><a href="/submit/">Draft submission</a></li>
-
-  
-
-
-  <li class="divider hidden-xs"></li>
-  <li class="dropdown-header hidden-xs">RFC streams</li>
-        <li><a href="/stream/iab/">IAB</a></li>
-        <li><a href="/stream/irtf/">IRTF</a></li>
-        <li><a href="/stream/ise/">ISE</a></li>
-
-</ul>
-</li>
-
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-  
-  Meetings
-  
-    </a>
-    <ul class="dropdown-menu" role="menu">
-  
-
-
-  
-  <li class="dropdown-header visible-lg-block">Next meeting</li>
-  
-  <li><a href="/meeting/agenda/">Agenda</a></li>
-  <li><a href="/meeting/materials/">Materials</a></li>
-  <li><a href="/meeting/floor-plan/">Floor plan</a></li>
-  <li><a href="https://www.ietf.org/how/meetings/register/">Registration</a></li>
-  <li><a href="/meeting/important-dates/">Important dates</a></li>
-  <li><a href="/secr/sreq/">Request a session</a></li>
-  <li><a href="/meeting/requests">Session requests</a></li>
-  
-  <li class="divider hidden-xs"></li>
-  <li class="dropdown-header visible-lg-block">Upcoming meetings</li>
-  
-  <li><a href="/meeting/upcoming">Upcoming meetings</a></li>
-  
-  <li class="divider hidden-xs"></li>
-  <li class="dropdown-header visible-lg-block">Past meetings</li>
-  
-  <li><a href="/meeting/past">Past meetings</a></li>
-  <li><a href="https://www.ietf.org/how/meetings/past/">Meeting proceedings</a></li>
-</ul>
-</li>
-
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-  
-  Other
-  
-    </a>
-    <ul class="dropdown-menu" role="menu">
-  
-
-  <li><a href="/ipr/">IPR disclosures</a></li>
-  <li><a href="/liaison/">Liaison statements</a></li>
-  <li><a href="/iesg/agenda/">IESG agenda</a></li>
-  <li><a href="/nomcom/">NomComs</a></li>
-  <li><a href="/doc/downref/">Downref registry</a></li>
-  <li class="dropdown-submenu">
-    <a href="/stats/">Statistics</a>
-    <ul class="dropdown-menu">
-      <li><a href="/stats/document/">Drafts/RFCs</a></li>
-      <li><a href="/stats/meeting/">Meetings</a></li>
-      
+    </li>
+    <li><hr class="dropdown-divider"></li>
+    <li class="dropdown-header">New work</li>
+    <li>
+        <a class="dropdown-item "
+           href="/group/chartering/">
+            Chartering groups
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/wg/bofs/">
+            BOFs
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/doc/bof-requests">
+            BOF Requests
+        </a>
+    </li>
+    <li><hr class="dropdown-divider"></li>
+    <li class="dropdown-header">Other groups</li>
+    <li>
+        <a class="dropdown-item "
+           href="/group/concluded/">
+            Concluded groups
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/list/nonwg">
+            Non-WG lists
+        </a>
+    </li>
+    
     </ul>
-  </li>
-  <li><a href="/group/edu/materials/">Tutorials</a></li>
-  <li><a href="/api/">API Help</a></li>  
-  <li><a href="/release/">Release notes</a></li>
-  <li class="divider hidden-xs"></li>
-  <li><a href="https://trac.ietf.org/trac/ietfdb/newticket"><span class="fa fa-bug"></span> Report a bug</a></li>
-</ul>
+</li>
+
+<li class="nav-item dropdown">
+    
+        <a href="#"
+           class="nav-link dropdown-toggle"
+           role="button"
+           data-bs-toggle="dropdown"
+           aria-expanded="false">
+            Documents
+        </a>
+        <ul class="dropdown-menu mt-n1">
+        
+    <li>
+        <a class="dropdown-item "
+           href="/doc/search">
+            Search
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/doc/recent">
+            Recent drafts
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/submit/">
+            Draft submission
+        </a>
+    </li>
+    
+    
+        <li><hr class="dropdown-divider">
+        </li>
+    
+    <li class="dropdown-header">
+        RFC streams
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/stream/iab/">
+            IAB
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/stream/irtf/">
+            IRTF
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/stream/ise/">
+            ISE
+        </a>
+    </li>
+    
+    </ul>
+</li>
+
+<li class="nav-item dropdown">
+    
+        <a href="#"
+           class="nav-link dropdown-toggle"
+           role="button"
+           data-bs-toggle="dropdown"
+           aria-expanded="false">
+            Meetings
+        </a>
+        <ul class="dropdown-menu mt-n1">
+        
+    <li>
+        <a class="dropdown-item "
+           href="/meeting/agenda/">
+            Agenda
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/meeting/materials/">
+            Materials
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/meeting/floor-plan/">
+            Floor plan
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="https://www.ietf.org/how/meetings/register/">
+            Registration
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/meeting/important-dates/">
+            Important dates
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/secr/sreq/">
+            Request a session
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/meeting/requests">
+            Session requests
+        </a>
+    </li>
+    
+        
+            <li><hr class="dropdown-divider">
+            </li>
+        
+        <li class="dropdown-header">
+            Upcoming meetings
+        </li>
+    
+    <li>
+        <a class="dropdown-item "
+           href="/meeting/upcoming">
+            Upcoming meetings
+        </a>
+    </li>
+    
+        
+            <li><hr class="dropdown-divider">
+            </li>
+        
+        <li class="dropdown-header">
+            Past meetings
+        </li>
+    
+    <li>
+        <a class="dropdown-item "
+           href="/meeting/past">
+            Past meetings
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="https://www.ietf.org/how/meetings/past/">
+            Meeting proceedings
+        </a>
+    </li>
+    
+    </ul>
+</li>
+
+<li class="nav-item dropdown">
+    
+        <a href="#"
+           class="nav-link dropdown-toggle"
+           role="button"
+           data-bs-toggle="dropdown"
+           aria-expanded="false">
+            Other
+        </a>
+        <ul class="dropdown-menu mt-n1">
+        
+    <li>
+        <a class="dropdown-item "
+           href="/ipr/">
+            IPR disclosures
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/liaison/">
+            Liaison statements
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/iesg/agenda/">
+            IESG agenda
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/nomcom/">
+            NomComs
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/doc/downref/">
+            Downref registry
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/stats/">
+            Statistics
+        </a>
+        <ul class="dropdown-menu mt-n1">
+            <li>
+                <a class="dropdown-item "
+                   href="/stats/document/">
+                    Drafts/RFCs
+                </a>
+            </li>
+            <li>
+                <a class="dropdown-item "
+                   href="/stats/meeting/">
+                    Meetings
+                </a>
+            </li>
+            
+        </ul>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/group/edu/materials/">
+            Tutorials
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/api/">
+            API Help
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/release/">
+            Release notes
+        </a>
+    </li>
+    
+        <li><hr class="dropdown-divider">
+        </li>
+    
+    <li>
+        <a class="dropdown-item "
+           href="https://github.com/ietf-tools/datatracker/issues/new/choose">
+            <i class="bi bi-bug">
+            </i>
+            Report a bug
+        </a>
+    </li>
+    
+    </ul>
 </li>
 
 
-  
-
-
-<li class="dropdown">
-  
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-     User 
-  </a>
-  <ul class="dropdown-menu" role="menu">
-  
-
-  
     
-      <li><a rel="nofollow" href="/accounts/login/?next=/wg/sipcore/documents/">Sign in</a></li>
-      <li><a rel="nofollow" href="/accounts/reset/">Password reset</a></li>
-      <li><a href="/accounts/settings/" rel="nofollow">Preferences</a></li>
+
+
+
+<li class="nav-item dropdown">
     
-    <li><a href="/help/personal-information">Handling of personal information</a></li>  
-  
-
-  
-    <li><a href="/accounts/create/">New account</a></li>
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-</ul>
-
-            </ul>
+        <a href="#"
+           class="nav-link dropdown-toggle"
+           role="button"
+           data-bs-toggle="dropdown"
+           aria-expanded="false">
+            
+                User
+            
+        </a>
+        <ul class="dropdown-menu  mt-n1 ">
         
-            <p class="navbar-text"></p>
-            <a class="btn btn-warning btn-sm navbar-btn" rel="nofollow" href="/accounts/login/?next=/wg/sipcore/documents/">Sign in</a>
+    
+        
+            <li>
+                <a class="dropdown-item "
+                   rel="nofollow"
+                   href="/accounts/login/?next=/wg/sipcore/documents/">
+                    Sign in
+                </a>
+            </li>
+            <li>
+                <a class="dropdown-item "
+                   rel="nofollow"
+                   href="/accounts/reset/">
+                    Password reset
+                </a>
+            </li>
+            <li>
+                <a class="dropdown-item "
+                   href="/accounts/settings/"
+                   rel="nofollow">
+                    Preferences
+                </a>
+            </li>
+        
+        <li>
+            <a class="dropdown-item "
+               href="/help/personal-information">
+                Handling of personal information
+            </a>
+        </li>
+    
+    
+        <li>
+            <a class="dropdown-item "
+               href="/accounts/create/">
+                New account
+            </a>
+        </li>
+    
+    
+    
+    
+    
+    
+    </ul></li>
+
+
+
+                    </ul>
+                </div>
+                
+                    <a class="d-none d-sm-block mx-5 btn  btn-warning "
+                       rel="nofollow"
+                       href="/accounts/login/?next=/wg/sipcore/documents/">
+                        Sign
+                        in
+                    </a>
+                
+                <div class="d-flex d-none d-lg-block">
+                    <label aria-label="Document search">
+                    <input class="form-control select2-field"
+                           id="navbar-doc-search"
+                           data-ajax--url="/doc/select2search/docalias/draft/"
+                           type="text"
+                           data-placeholder="Document search">
+                   </label>
+                </div>
+                <button class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbar-collapse"
+                        aria-controls="navbar-collapse"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <i class="navbar-toggler-icon"></i>
+                </button>
+            </div>
+        </nav>
+        <div class="pt-3 container-fluid">
+            <div class="row">
+                
+                <div class="col mx-lg-3 ietf-auto-nav" id="content">
+                    <noscript>
+                        <div class="alert alert-danger alert-ignore my-3">
+                            <b>Javascript disabled?</b> Like other modern websites, the IETF Datatracker relies on Javascript.
+                            Please enable Javascript for full functionality.
+                        </div>
+                    </noscript>
+                    
+                    
+    
+    <h1>
+        Session Initiation Protocol Core (sipcore)
+        
+        
+        
+    </h1>
+    <ul class="nav nav-tabs my-3">
+        
+            <li class="nav-item">
+                <a class="nav-link "
+                   href="/wg/sipcore/about/">About</a>
+            </li>
+        
+            <li class="nav-item">
+                <a class="nav-link active"
+                   href="/wg/sipcore/documents/">Documents</a>
+            </li>
+        
+            <li class="nav-item">
+                <a class="nav-link "
+                   href="/wg/sipcore/meetings/">Meetings</a>
+            </li>
+        
+            <li class="nav-item">
+                <a class="nav-link "
+                   href="/wg/sipcore/history/">History</a>
+            </li>
+        
+            <li class="nav-item">
+                <a class="nav-link "
+                   href="/wg/sipcore/photos/">Photos</a>
+            </li>
+        
+            <li class="nav-item">
+                <a class="nav-link "
+                   href="/wg/sipcore/email/">Email expansions</a>
+            </li>
+        
+            <li class="nav-item">
+                <a class="nav-link "
+                   href="https://mailarchive.ietf.org/arch/browse/sipcore/">List archive &raquo;</a>
+            </li>
+        
+    </ul>
+    <div class="buttonlist">
+        
+            
+        
+    </div>
+    
+    
+    
         
 
-	    <form class="navbar-form navbar-right hidden-xs" action="/doc/search/">
-	      <div class="form-group">
-	        <input class="form-control input-sm" type="text" name="name" placeholder="Document search" required>
-	        <input type="hidden" name="activedrafts" value="on">
-	        <input type="hidden" name="rfcs" value="on">
-	      </div>
-	    </form>
-	  </div>
+
+
+
+
+
+    <table class="table table-sm table-striped tablesorter">
+        <thead>
+            <tr>
+                <th scope="col"></th>
+                
+                    
+                        <th scope="col" data-sort="document"
+                            >
+                            
+                                Document
+                            
+                        </th>
+                    
+                
+                    
+                
+                    
+                        <th scope="col" data-sort="date"
+                            >
+                            
+                                Date
+                            
+                        </th>
+                    
+                
+                    
+                        <th scope="col" data-sort="status"
+                            >
+                            
+                                Status
+                            
+                        </th>
+                    
+                
+                    
+                        <th scope="col" data-sort="ipr"
+                            
+                              class="d-none d-sm-table-cell"
+                            >
+                            
+                                IPR
+                            
+                        </th>
+                    
+                
+                    
+                        <th scope="col" data-sort="ad"
+                            
+                              class="d-none d-sm-table-cell"
+                            >
+                            
+                                AD/Shepherd
+                            
+                        </th>
+                    
+                
+            </tr>
+        </thead>
+
+
+
+    <tbody>
+        <tr class="table-info">
+            <td></td>
+            
+                <th scope="col" colspan="5">
+            
+            Active Internet-Drafts (3 hits)
+            </th>
+        </tr>
+    </tbody>
+    <tbody>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">22 pages</small>
+        <div>
+            <a href="/doc/draft-ietf-sipcore-callinfo-rcd/">
+                
+                    draft-ietf-sipcore-callinfo-rcd-04
+                
+            </a>
+            
+            <br>
+            
+            <b>SIP Call-Info Parameters for Rich Call Data</b>
+            
         </div>
-      </nav>
-      <div class="container-fluid-narrow">
         
-        
-        
-	  <div class="col-md-12 col-sm-12" id="content">
-        
-        
-  
+    </td>
+    <td>
+            
+                    
+                        2022-03-07
+                    
+                    
+                
+                
+            </td>
+            
 
-  <h1>Session Initiation Protocol Core (sipcore)
-    
-    
-    
-  </h1>
 
-  <ul class="nav nav-tabs" role="tablist">
-    
-      <li >
-        <a href="/wg/sipcore/about/">About</a>
-      </li>
-    
-      <li class="active">
-        <a href="/wg/sipcore/documents/">Documents</a>
-      </li>
-    
-      <li >
-        <a href="/wg/sipcore/meetings/">Meetings</a>
-      </li>
-    
-      <li >
-        <a href="/wg/sipcore/history/">History</a>
-      </li>
-    
-      <li >
-        <a href="/wg/sipcore/photos/">Photos</a>
-      </li>
-    
-      <li >
-        <a href="/wg/sipcore/email/">Email expansions</a>
-      </li>
-    
-      <li >
-        <a href="https://mailarchive.ietf.org/arch/browse/sipcore/">List archive &raquo;</a>
-      </li>
-    
-  </ul>
 
-  <div class="buttonlist">
+<td class="status">
     
-      
     
-  </div>
-
-  
-  
-  
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+            <br>
+            
+                WG Document
+                
+            
+        
+        
+        
+        
+        
+        
     
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
 
 
 
 
-  
 
-  
-  <table class="table table-condensed table-striped tablesorter">
-    <thead>
-      <tr>
-        <th class="sorter-false"></th>
 
-        
-          
-            <th data-header="document">
-	      
-	        Document
-	      
-            </th>
-          
-        
-          
-        
-          
-            <th data-header="date">
-	      
-	        Date
-	      
-            </th>
-          
-        
-          
-            <th data-header="status">
-	      
-	        Status
-	      
-            </th>
-          
-        
-          
-            <th data-header="ipr">
-	      
-	        IPR
-	      
-            </th>
-          
-        
-          
-            <th data-header="ad">
-	      
-	        AD / Shepherd
-	      
-            </th>
-          
-        
 
+<tr>
+    <td>
         
-      </tr>
-    </thead>
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">11 pages</small>
+        <div>
+            <a href="/doc/draft-ietf-sipcore-callinfo-spam/">
+                
+                    draft-ietf-sipcore-callinfo-spam-04
+                
+            </a>
+            
+            <br>
+            
+            <b>SIP Call-Info Parameters for Labeling Calls</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2019-08-30
+                    
+                    
+                
+                
+            </td>
+            
 
+
+
+<td class="status">
     
+        <div class="float-end ms-1 mb-1" id="ballot-icon-draft-ietf-sipcore-callinfo-spam"><a  href="/doc/draft-ietf-sipcore-callinfo-spam/ballotpopup/707275/" data-bs-toggle="modal" data-bs-target="#modal-707275" aria-label="IESG positions" title="IESG positions (click to show more)" class="ballot-icon"><table><tbody><tr><td class="position-discuss"></td><td class="position-discuss"></td><td class="position-noobj"></td><td class="position-noobj"></td><td class="position-noobj"></td></tr><tr><td class="position-noobj"></td><td class="position-norecord"></td><td class="position-norecord"></td><td class="position-norecord"></td><td class="position-norecord"></td></tr><tr><td class="position-norecord"></td><td class="position-norecord"></td><td class="position-norecord"></td><td class="position-norecord"></td><td class="position-empty"></td></tr></tbody></table></a><div id="modal-707275" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable modal-xl"><div class="modal-content"></div></div></div></div>
+    
+    
+        
+            IESG Evaluation::Revised I-D Needed
+        
+        
+        
+        <span class="badge bg-danger" title="Goal is &lt;14 days">for 931 days</span>
+        
+        
+            
+        
+        
+            <br>
+            
+                Submitted to IESG for Publication
+                
+                    :
+                
+            
+        
+        Proposed Standard
+        
+        
+            <br>
+            Reviews:
+            <a href="/group/genart/">genart</a>,
+                
+                    <a href="/group/opsdir/">opsdir</a>,
+                
+                    <a href="/group/secdir/">secdir</a>
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/superuser@gmail.com" >Murray Kucherawy</a> <a 
+               href="mailto:superuser%40gmail.com"
+               aria-label="Compose email to superuser@gmail.com."
+               title="Compose email to superuser@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/br@brianrosen.net" >Brian Rosen</a> <a class="text-reset"
+               href="mailto:br%40brianrosen.net"
+               aria-label="Compose email to br@brianrosen.net."
+               title="Compose email to br@brianrosen.net.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
 
-      
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">26 pages</small>
+        <div>
+            <a href="/doc/draft-ietf-sipcore-rfc4028bis/">
+                
+                    draft-ietf-sipcore-rfc4028bis-06
+                
+            </a>
+            
+            <br>
+            
+            <b>Session Timers in the Session Initiation Protocol (SIP)</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2022-01-27
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+            <br>
+            
+                WG Document
+                
+            
+        
+        
+        
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+    </tbody>
+
     <tbody>
-        <tr class="info">
-          <th></th>
-          
-              <th colspan="5">
-          
-	    Active Internet-Drafts (3 hits)
-          </th>
+        <tr class="table-info">
+            <td></td>
+            
+                <th scope="col" colspan="5">
+            
+            RFCs (30 hits)
+            </th>
         </tr>
     </tbody>
-
     <tbody>
         
-          
+            
 
 
 
 
 
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-ietf-sipcore-callinfo-rcd/">draft-ietf-sipcore-callinfo-rcd-04</a>
-
-      
-      <br>
-      <b>SIP Call-Info Parameters for Rich Call Data</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2022-03-07
-    
-    </span>
 
 
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">25 pages</small>
+        <div>
+            <a href="/doc/rfc5839/">
+                
+                    RFC 5839
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-sipcore-subnot-etags)</i>
+            <br>
+            
+            <b>An Extension to Session Initiation Protocol (SIP) Events for Conditional Event Notification</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2010-05
+                    
+                    
+                
+                
+            </td>
+            
 
-    
-      <br><small class="text-muted">22 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
 
 
 <td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-sipcore-callinfo-rcd">
-    
-  </div>
-
-  
-    
-      I-D Exists
-    
-
-    
-
-    <wbr>
-
-    <wbr>
     
     
-
-    
-      
-    
-
-    
-      <br>
-      
-	WG Document
-      
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
         
-          
-
-
-
-
-
-<tr >
-
-  <td>
+        Proposed Standard RFC
+        
+        
     
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-ietf-sipcore-callinfo-spam/">draft-ietf-sipcore-callinfo-spam-04</a>
-
-      
-      <br>
-      <b>SIP Call-Info Parameters for Labeling Calls</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2019-08-30
-    
-    </span>
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/rjsparks@nostrum.com" >Robert Sparks</a> <a 
+               href="mailto:rjsparks%40nostrum.com"
+               aria-label="Compose email to rjsparks@nostrum.com."
+               title="Compose email to rjsparks@nostrum.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
 
 
 
-    
-      <br><small class="text-muted">11 pages</small>
-    
 
-    
 
-    
 
-  </td>
 
-  
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">20 pages</small>
+        <div>
+            <a href="/doc/rfc6026/">
+                
+                    RFC 6026
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-sipcore-invfix)</i>
+            <br>
+            
+            <b>Correct Transaction Handling for 2xx Responses to Session Initiation Protocol (SIP) INVITE Requests</b>
+            
+                <a class="badge bg-danger text-decoration-none float-end"
+                   href="https://www.rfc-editor.org/errata_search.php?rfc=6026">
+                    Errata
+                </a>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2010-09
+                    
+                    
+                
+                
+            </td>
+            
+
 
 
 <td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-sipcore-callinfo-spam">
-    <a  href="/doc/draft-ietf-sipcore-callinfo-spam/ballotpopup/707275/" data-toggle="modal" data-target="#modal-707275" title="IESG positions (click to show more)" class="ballot-icon"><table><tr><td class="position-discuss"></td><td class="position-discuss"></td><td class="position-noobj"></td><td class="position-noobj"></td><td class="position-noobj"></td></tr><tr><td class="position-noobj"></td><td class="position-norecord"></td><td class="position-norecord"></td><td class="position-norecord"></td><td class="position-norecord"></td></tr><tr><td class="position-norecord"></td><td class="position-norecord"></td><td class="position-norecord"></td><td class="position-norecord"></td><td class="empty"></td></tr></table></a><div id="modal-707275" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true"><div class="modal-dialog modal-lg"><div class="modal-content"></div></div></div>
-  </div>
-
-  
-    
-      IESG Evaluation::<wbr>Revised I-D Needed
-    
-
-    
-
-    <wbr>
-
-    <wbr><span class="label label-danger" title="Goal is &lt;14 days">for 923 days</span>
     
     
-
-    
-      
-    
-
-    
-      <br>
-      
-	Submitted to IESG for Publication:<wbr>
-      
-    
-
-    
-      Proposed Standard
-    
-
-    
-
-    
-      <br>Reviews:
-      
-        genart, 
-      
-        opsdir, 
-      
-        secdir
-      
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/superuser@gmail.com"><span class="">Murray Kucherawy</span></a>&nbsp;<a href="mailto:superuser%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/br@brianrosen.net"><span class="small text-muted">Brian Rosen</span></a>&nbsp;<a href="mailto:br%40brianrosen.net"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
         
-          
-
-
-
-
-
-<tr >
-
-  <td>
+        Proposed Standard RFC
+        
+        
     
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-ietf-sipcore-rfc4028bis/">draft-ietf-sipcore-rfc4028bis-06</a>
-
-      
-      <br>
-      <b>Session Timers in the Session Initiation Protocol (SIP)</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2022-01-27
-    
-    </span>
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/gonzalo.camarillo@ericsson.com" >Gonzalo Camarillo</a> <a 
+               href="mailto:gonzalo.camarillo%40ericsson.com"
+               aria-label="Compose email to gonzalo.camarillo@ericsson.com."
+               title="Compose email to gonzalo.camarillo@ericsson.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
 
 
 
-    
-      <br><small class="text-muted">26 pages</small>
-    
 
-    
 
-    
 
-  </td>
 
-  
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">36 pages</small>
+        <div>
+            <a href="/doc/rfc6086/">
+                
+                    RFC 6086
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-sipcore-info-events)</i>
+            <br>
+            
+            <b>Session Initiation Protocol (SIP) INFO Method and Package Framework</b>
+            
+                <a class="badge bg-warning text-decoration-none float-end"
+                   href="https://www.rfc-editor.org/errata_search.php?rfc=6086">
+                    Errata
+                </a>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2011-01
+                    
+                    
+                
+                
+            </td>
+            
+
 
 
 <td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-sipcore-rfc4028bis">
-    
-  </div>
-
-  
-    
-      I-D Exists
-    
-
-    
-
-    <wbr>
-
-    <wbr>
     
     
-
-    
-      
-    
-
-    
-      <br>
-      
-	WG Document
-      
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
         
-      
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/rjsparks@nostrum.com" >Robert Sparks</a> <a 
+               href="mailto:rjsparks%40nostrum.com"
+               aria-label="Compose email to rjsparks@nostrum.com."
+               title="Compose email to rjsparks@nostrum.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">26 pages</small>
+        <div>
+            <a href="/doc/rfc6141/">
+                
+                    RFC 6141
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-sipcore-reinvite)</i>
+            <br>
+            
+            <b>Re-INVITE and Target-Refresh Request Handling in the Session Initiation Protocol (SIP)</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2011-03
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/rjsparks@nostrum.com" >Robert Sparks</a> <a 
+               href="mailto:rjsparks%40nostrum.com"
+               aria-label="Compose email to rjsparks@nostrum.com."
+               title="Compose email to rjsparks@nostrum.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">67 pages</small>
+        <div>
+            <a href="/doc/rfc6216/">
+                
+                    RFC 6216
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-sipcore-sec-flows)</i>
+            <br>
+            
+            <b>Example Call Flows Using Session Initiation Protocol (SIP) Security Mechanisms</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2011-04
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Informational RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/gonzalo.camarillo@ericsson.com" >Gonzalo Camarillo</a> <a 
+               href="mailto:gonzalo.camarillo%40ericsson.com"
+               aria-label="Compose email to gonzalo.camarillo@ericsson.com."
+               title="Compose email to gonzalo.camarillo@ericsson.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">18 pages</small>
+        <div>
+            <a href="/doc/rfc6223/">
+                
+                    RFC 6223
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-sipcore-keep)</i>
+            <br>
+            
+            <b>Indication of Support for Keep-Alive</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2011-04
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+                    <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-sipcore-keep">
+                        <span class="badge bg-info">1</span>
+                    </a>
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/rjsparks@nostrum.com" >Robert Sparks</a> <a 
+               href="mailto:rjsparks%40nostrum.com"
+               aria-label="Compose email to rjsparks@nostrum.com."
+               title="Compose email to rjsparks@nostrum.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">14 pages</small>
+        <div>
+            <a href="/doc/rfc6228/">
+                
+                    RFC 6228
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-sipcore-199)</i>
+            <br>
+            
+            <b>Session Initiation Protocol (SIP) Response Code for Indication of Terminated Dialog</b>
+            
+                <a class="badge bg-warning text-decoration-none float-end"
+                   href="https://www.rfc-editor.org/errata_search.php?rfc=6228">
+                    Errata
+                </a>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2011-05
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/rjsparks@nostrum.com" >Robert Sparks</a> <a 
+               href="mailto:rjsparks%40nostrum.com"
+               aria-label="Compose email to rjsparks@nostrum.com."
+               title="Compose email to rjsparks@nostrum.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">35 pages</small>
+        <div>
+            <a href="/doc/rfc6442/">
+                
+                    RFC 6442
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-sipcore-location-conveyance)</i>
+            <br>
+            
+            <b>Location Conveyance for the Session Initiation Protocol</b>
+            
+                <a class="badge bg-danger text-decoration-none float-end"
+                   href="https://www.rfc-editor.org/errata_search.php?rfc=6442">
+                    Errata
+                </a>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2011-12
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+            <br>
+            <span class="text-muted">Updated by <a href="/doc/rfc8262/">RFC 8262</a>, <a href="/doc/rfc8787/">RFC 8787</a></span>
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/rjsparks@nostrum.com" >Robert Sparks</a> <a 
+               href="mailto:rjsparks%40nostrum.com"
+               aria-label="Compose email to rjsparks@nostrum.com."
+               title="Compose email to rjsparks@nostrum.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">25 pages</small>
+        <div>
+            <a href="/doc/rfc6446/">
+                
+                    RFC 6446
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-sipcore-event-rate-control)</i>
+            <br>
+            
+            <b>Session Initiation Protocol (SIP) Event Notification Extension for Notification Rate Control</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2012-01
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/rjsparks@nostrum.com" >Robert Sparks</a> <a 
+               href="mailto:rjsparks%40nostrum.com"
+               aria-label="Compose email to rjsparks@nostrum.com."
+               title="Compose email to rjsparks@nostrum.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">53 pages</small>
+        <div>
+            <a href="/doc/rfc6665/">
+                
+                    RFC 6665
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-sipcore-rfc3265bis)</i>
+            <br>
+            
+            <b>SIP-Specific Event Notification</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2012-07
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+            <br>
+            <span class="text-muted">Updated by <a href="/doc/rfc7621/">RFC 7621</a></span>
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+                    <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-sipcore-rfc3265bis">
+                        <span class="badge bg-info">3</span>
+                    </a>
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/rjsparks@nostrum.com" >Robert Sparks</a> <a 
+               href="mailto:rjsparks%40nostrum.com"
+               aria-label="Compose email to rjsparks@nostrum.com."
+               title="Compose email to rjsparks@nostrum.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">19 pages</small>
+        <div>
+            <a href="/doc/rfc6809/">
+                
+                    RFC 6809
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-sipcore-proxy-feature)</i>
+            <br>
+            
+            <b>Mechanism to Indicate Support of Features and Capabilities in the Session Initiation Protocol (SIP)</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2012-11
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/rjsparks@nostrum.com" >Robert Sparks</a> <a 
+               href="mailto:rjsparks%40nostrum.com"
+               aria-label="Compose email to rjsparks@nostrum.com."
+               title="Compose email to rjsparks@nostrum.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">3 pages</small>
+        <div>
+            <a href="/doc/rfc6878/">
+                
+                    RFC 6878
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-sipcore-priority)</i>
+            <br>
+            
+            <b>IANA Registry for the Session Initiation Protocol (SIP) &quot;Priority&quot; Header Field</b>
+            
+                <a class="badge bg-warning text-decoration-none float-end"
+                   href="https://www.rfc-editor.org/errata_search.php?rfc=6878">
+                    Errata
+                </a>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2013-03
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/rjsparks@nostrum.com" >Robert Sparks</a> <a 
+               href="mailto:rjsparks%40nostrum.com"
+               aria-label="Compose email to rjsparks@nostrum.com."
+               title="Compose email to rjsparks@nostrum.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">36 pages</small>
+        <div>
+            <a href="/doc/rfc7044/">
+                
+                    RFC 7044
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-sipcore-rfc4244bis)</i>
+            <br>
+            
+            <b>An Extension to the Session Initiation Protocol (SIP) for Request History Information</b>
+            
+                <a class="badge bg-warning text-decoration-none float-end"
+                   href="https://www.rfc-editor.org/errata_search.php?rfc=7044">
+                    Errata
+                </a>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2014-02
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/rlb@ipv.sx" >Richard Barnes</a> <a 
+               href="mailto:rlb%40ipv.sx"
+               aria-label="Compose email to rlb@ipv.sx."
+               title="Compose email to rlb@ipv.sx.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">25 pages</small>
+        <div>
+            <a href="/doc/rfc7118/">
+                
+                    RFC 7118
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-sipcore-sip-websocket)</i>
+            <br>
+            
+            <b>The WebSocket Protocol as a Transport for the Session Initiation Protocol (SIP)</b>
+            
+                <a class="badge bg-warning text-decoration-none float-end"
+                   href="https://www.rfc-editor.org/errata_search.php?rfc=7118">
+                    Errata
+                </a>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2014-01
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/rlb@ipv.sx" >Richard Barnes</a> <a 
+               href="mailto:rlb%40ipv.sx"
+               aria-label="Compose email to rlb@ipv.sx."
+               title="Compose email to rlb@ipv.sx.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/pkyzivat@cisco.com" >Paul Kyzivat</a> <a class="text-reset"
+               href="mailto:pkyzivat%40cisco.com"
+               aria-label="Compose email to pkyzivat@cisco.com."
+               title="Compose email to pkyzivat@cisco.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">52 pages</small>
+        <div>
+            <a href="/doc/rfc7131/">
+                
+                    RFC 7131
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-sipcore-rfc4244bis-callflows)</i>
+            <br>
+            
+            <b>Session Initiation Protocol (SIP) History-Info Header Call Flow Examples</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2014-03
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Informational RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/rlb@ipv.sx" >Richard Barnes</a> <a 
+               href="mailto:rlb%40ipv.sx"
+               aria-label="Compose email to rlb@ipv.sx."
+               title="Compose email to rlb@ipv.sx.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/pkyzivat@cisco.com" >Paul Kyzivat</a> <a class="text-reset"
+               href="mailto:pkyzivat%40cisco.com"
+               aria-label="Compose email to pkyzivat@cisco.com."
+               title="Compose email to pkyzivat@cisco.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">2 pages</small>
+        <div>
+            <a href="/doc/rfc7134/">
+                
+                    RFC 7134
+                
+            </a>
+            <i class="text-muted">(was draft-rosen-rph-reg-policy)</i>
+            <br>
+            
+            <b>The Management Policy of the Resource Priority Header (RPH) Registry Changed to &quot;IETF Review&quot;</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2014-03
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/rlb@ipv.sx" >Richard Barnes</a> <a 
+               href="mailto:rlb%40ipv.sx"
+               aria-label="Compose email to rlb@ipv.sx."
+               title="Compose email to rlb@ipv.sx.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/aroach@mozilla.com" >Adam Roach</a> <a class="text-reset"
+               href="mailto:aroach%40mozilla.com"
+               aria-label="Compose email to aroach@mozilla.com."
+               title="Compose email to aroach@mozilla.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">14 pages</small>
+        <div>
+            <a href="/doc/rfc7614/">
+                
+                    RFC 7614
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-sipcore-refer-explicit-subscription)</i>
+            <br>
+            
+            <b>Explicit Subscriptions for the REFER Method</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2015-08
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/ben@nostrum.com" >Ben Campbell</a> <a 
+               href="mailto:ben%40nostrum.com"
+               aria-label="Compose email to ben@nostrum.com."
+               title="Compose email to ben@nostrum.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/pkyzivat@alum.mit.edu" >Paul Kyzivat</a> <a class="text-reset"
+               href="mailto:pkyzivat%40alum.mit.edu"
+               aria-label="Compose email to pkyzivat@alum.mit.edu."
+               title="Compose email to pkyzivat@alum.mit.edu.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">4 pages</small>
+        <div>
+            <a href="/doc/rfc7621/">
+                
+                    RFC 7621
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-sipcore-6665-clarification)</i>
+            <br>
+            
+            <b>A Clarification on the Use of Globally Routable User Agent URIs (GRUUs) in the SIP Event Notification Framework</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2015-08
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/ben@nostrum.com" >Ben Campbell</a> <a 
+               href="mailto:ben%40nostrum.com"
+               aria-label="Compose email to ben@nostrum.com."
+               title="Compose email to ben@nostrum.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/pkyzivat@alum.mit.edu" >Paul Kyzivat</a> <a class="text-reset"
+               href="mailto:pkyzivat%40alum.mit.edu"
+               aria-label="Compose email to pkyzivat@alum.mit.edu."
+               title="Compose email to pkyzivat@alum.mit.edu.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">6 pages</small>
+        <div>
+            <a href="/doc/rfc7647/">
+                
+                    RFC 7647
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-sipcore-refer-clarifications)</i>
+            <br>
+            
+            <b>Clarifications for the Use of REFER with RFC 6665</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2015-09
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/ben@nostrum.com" >Ben Campbell</a> <a 
+               href="mailto:ben%40nostrum.com"
+               aria-label="Compose email to ben@nostrum.com."
+               title="Compose email to ben@nostrum.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/pkyzivat@alum.mit.edu" >Paul Kyzivat</a> <a class="text-reset"
+               href="mailto:pkyzivat%40alum.mit.edu"
+               aria-label="Compose email to pkyzivat@alum.mit.edu."
+               title="Compose email to pkyzivat@alum.mit.edu.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">10 pages</small>
+        <div>
+            <a href="/doc/rfc7984/">
+                
+                    RFC 7984
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-sipcore-dns-dual-stack)</i>
+            <br>
+            
+            <b>Locating Session Initiation Protocol (SIP) Servers in a Dual-Stack IP Network</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2016-09
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/ben@nostrum.com" >Ben Campbell</a> <a 
+               href="mailto:ben%40nostrum.com"
+               aria-label="Compose email to ben@nostrum.com."
+               title="Compose email to ben@nostrum.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/adam@nostrum.com" >Adam Roach</a> <a class="text-reset"
+               href="mailto:adam%40nostrum.com"
+               aria-label="Compose email to adam@nostrum.com."
+               title="Compose email to adam@nostrum.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">8 pages</small>
+        <div>
+            <a href="/doc/rfc8197/">
+                
+                    RFC 8197
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-sipcore-status-unwanted)</i>
+            <br>
+            
+            <b>A SIP Response Code for Unwanted Calls</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2017-07
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/ben@nostrum.com" >Ben Campbell</a> <a 
+               href="mailto:ben%40nostrum.com"
+               aria-label="Compose email to ben@nostrum.com."
+               title="Compose email to ben@nostrum.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/adam@nostrum.com" >Adam Roach</a> <a class="text-reset"
+               href="mailto:adam%40nostrum.com"
+               aria-label="Compose email to adam@nostrum.com."
+               title="Compose email to adam@nostrum.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">6 pages</small>
+        <div>
+            <a href="/doc/rfc8217/">
+                
+                    RFC 8217
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-sipcore-name-addr-guidance)</i>
+            <br>
+            
+            <b>Clarifications for When to Use the name-addr Production in SIP Messages</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2017-08
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/ben@nostrum.com" >Ben Campbell</a> <a 
+               href="mailto:ben%40nostrum.com"
+               aria-label="Compose email to ben@nostrum.com."
+               title="Compose email to ben@nostrum.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/br@brianrosen.net" >Brian Rosen</a> <a class="text-reset"
+               href="mailto:br%40brianrosen.net"
+               aria-label="Compose email to br@brianrosen.net."
+               title="Compose email to br@brianrosen.net.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">14 pages</small>
+        <div>
+            <a href="/doc/rfc8262/">
+                
+                    RFC 8262
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-sipcore-content-id)</i>
+            <br>
+            
+            <b>Content-ID Header Field in the Session Initiation Protocol (SIP)</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2017-10
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/ben@nostrum.com" >Ben Campbell</a> <a 
+               href="mailto:ben%40nostrum.com"
+               aria-label="Compose email to ben@nostrum.com."
+               title="Compose email to ben@nostrum.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/mahoney@nostrum.com" >Jean Mahoney</a> <a class="text-reset"
+               href="mailto:mahoney%40nostrum.com"
+               aria-label="Compose email to mahoney@nostrum.com."
+               title="Compose email to mahoney@nostrum.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">15 pages</small>
+        <div>
+            <a href="/doc/rfc8498/">
+                
+                    RFC 8498
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-sipcore-originating-cdiv-parameter)</i>
+            <br>
+            
+            <b>A P-Served-User Header Field Parameter for an Originating Call Diversion (CDIV) Session Case in the Session Initiation Protocol (SIP)</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2019-02
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Informational RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/ben@nostrum.com" >Ben Campbell</a> <a 
+               href="mailto:ben%40nostrum.com"
+               aria-label="Compose email to ben@nostrum.com."
+               title="Compose email to ben@nostrum.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/mahoney@nostrum.com" >Jean Mahoney</a> <a class="text-reset"
+               href="mailto:mahoney%40nostrum.com"
+               aria-label="Compose email to mahoney@nostrum.com."
+               title="Compose email to mahoney@nostrum.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">40 pages</small>
+        <div>
+            <a href="/doc/rfc8599/">
+                
+                    RFC 8599
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-sipcore-sip-push)</i>
+            <br>
+            
+            <b>Push Notification with the Session Initiation Protocol (SIP)</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2019-05
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/ben@nostrum.com" >Ben Campbell</a> <a 
+               href="mailto:ben%40nostrum.com"
+               aria-label="Compose email to ben@nostrum.com."
+               title="Compose email to ben@nostrum.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/br@brianrosen.net" >Brian Rosen</a> <a class="text-reset"
+               href="mailto:br%40brianrosen.net"
+               aria-label="Compose email to br@brianrosen.net."
+               title="Compose email to br@brianrosen.net.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">7 pages</small>
+        <div>
+            <a href="/doc/rfc8606/">
+                
+                    RFC 8606
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-sipcore-reason-q850-loc)</i>
+            <br>
+            
+            <b>ISDN User Part (ISUP) Cause Location Parameter for the SIP Reason Header Field</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2019-06
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/ben@nostrum.com" >Ben Campbell</a> <a 
+               href="mailto:ben%40nostrum.com"
+               aria-label="Compose email to ben@nostrum.com."
+               title="Compose email to ben@nostrum.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/br@brianrosen.net" >Brian Rosen</a> <a class="text-reset"
+               href="mailto:br%40brianrosen.net"
+               aria-label="Compose email to br@brianrosen.net."
+               title="Compose email to br@brianrosen.net.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">22 pages</small>
+        <div>
+            <a href="/doc/rfc8688/">
+                
+                    RFC 8688
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-sipcore-rejected)</i>
+            <br>
+            
+            <b>A Session Initiation Protocol (SIP) Response Code for Rejected Calls</b>
+            
+                <a class="badge bg-warning text-decoration-none float-end"
+                   href="https://www.rfc-editor.org/errata_search.php?rfc=8688">
+                    Errata
+                </a>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2019-12
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/adam@nostrum.com" >Adam Roach</a> <a 
+               href="mailto:adam%40nostrum.com"
+               aria-label="Compose email to adam@nostrum.com."
+               title="Compose email to adam@nostrum.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/mahoney@nostrum.com" >Jean Mahoney</a> <a class="text-reset"
+               href="mailto:mahoney%40nostrum.com"
+               aria-label="Compose email to mahoney@nostrum.com."
+               title="Compose email to mahoney@nostrum.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">9 pages</small>
+        <div>
+            <a href="/doc/rfc8760/">
+                
+                    RFC 8760
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-sipcore-digest-scheme)</i>
+            <br>
+            
+            <b>The Session Initiation Protocol (SIP) Digest Access Authentication Scheme</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2020-03
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/adam@nostrum.com" >Adam Roach</a> <a 
+               href="mailto:adam%40nostrum.com"
+               aria-label="Compose email to adam@nostrum.com."
+               title="Compose email to adam@nostrum.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/mahoney@nostrum.com" >Jean Mahoney</a> <a class="text-reset"
+               href="mailto:mahoney%40nostrum.com"
+               aria-label="Compose email to mahoney@nostrum.com."
+               title="Compose email to mahoney@nostrum.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">8 pages</small>
+        <div>
+            <a href="/doc/rfc8787/">
+                
+                    RFC 8787
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-sipcore-locparam)</i>
+            <br>
+            
+            <b>Location Source Parameter for the SIP Geolocation Header Field</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2020-05
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/adam@nostrum.com" >Adam Roach</a> <a 
+               href="mailto:adam%40nostrum.com"
+               aria-label="Compose email to adam@nostrum.com."
+               title="Compose email to adam@nostrum.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/mahoney@nostrum.com" >Jean Mahoney</a> <a class="text-reset"
+               href="mailto:mahoney%40nostrum.com"
+               aria-label="Compose email to mahoney@nostrum.com."
+               title="Compose email to mahoney@nostrum.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">15 pages</small>
+        <div>
+            <a href="/doc/rfc8898/">
+                
+                    RFC 8898
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-sipcore-sip-token-authnz)</i>
+            <br>
+            
+            <b>Third-Party Token-Based Authentication and Authorization for Session Initiation Protocol (SIP)</b>
+            
+                <a class="badge bg-warning text-decoration-none float-end"
+                   href="https://www.rfc-editor.org/errata_search.php?rfc=8898">
+                    Errata
+                </a>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2020-09
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/superuser@gmail.com" >Murray Kucherawy</a> <a 
+               href="mailto:superuser%40gmail.com"
+               aria-label="Compose email to superuser@gmail.com."
+               title="Compose email to superuser@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/mahoney@nostrum.com" >Jean Mahoney</a> <a class="text-reset"
+               href="mailto:mahoney%40nostrum.com"
+               aria-label="Compose email to mahoney@nostrum.com."
+               title="Compose email to mahoney@nostrum.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+    </tbody>
+
+
+
+    
+    
+
+
+
+
+
+
+
+
     <tbody>
-        <tr class="info">
-          <th></th>
-          
-              <th colspan="5">
-          
-	    RFCs (30 hits)
-          </th>
+        <tr class="table-info">
+            <td></td>
+            
+                <th scope="col" colspan="5">
+            
+            Related Internet-Drafts (3 hits)
+            </th>
         </tr>
     </tbody>
-
     <tbody>
         
-          
+            
 
 
 
 
 
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc5839/">RFC 5839</a>
-
-      
-        <i>(was draft-ietf-sipcore-subnot-etags)</i>
-      
-      <br>
-      <b>An Extension to Session Initiation Protocol (SIP) Events for Conditional Event Notification</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2010-05
-    
-    </span>
 
 
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">11 pages</small>
+        <div>
+            <a href="/doc/draft-khatri-sipcore-call-transfer-fail-response/">
+                
+                    draft-khatri-sipcore-call-transfer-fail-response-02
+                
+            </a>
+            
+            <br>
+            
+            <b>A SIP Response Code (497) for Call Transfer Failure</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2022-01-24
+                    
+                    
+                
+                
+            </td>
+            
 
-    
-      <br><small class="text-muted">25 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
 
 
 <td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-sipcore-subnot-etags">
     
-  </div>
-
-  
-    Proposed Standard RFC
-
     
-
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+        
+        
+        
+        
+        
     
-  
-
-
-
 </td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/rjsparks@nostrum.com"><span class="">Robert Sparks</span></a>&nbsp;<a href="mailto:rjsparks%40nostrum.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc6026/">RFC 6026</a>
-
-      
-        <i>(was draft-ietf-sipcore-invfix)</i>
-      
-      <br>
-      <b>Correct Transaction Handling for 2xx Responses to Session Initiation Protocol (SIP) INVITE Requests</b>
-      
-        <a class="label label-danger pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=6026">Errata</a>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2010-09
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">20 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-sipcore-invfix">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/gonzalo.camarillo@ericsson.com"><span class="">Gonzalo Camarillo</span></a>&nbsp;<a href="mailto:gonzalo.camarillo%40ericsson.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc6086/">RFC 6086</a>
-
-      
-        <i>(was draft-ietf-sipcore-info-events)</i>
-      
-      <br>
-      <b>Session Initiation Protocol (SIP) INFO Method and Package Framework</b>
-      
-        <a class="label label-warning pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=6086">Errata</a>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2011-01
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">36 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-sipcore-info-events">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/rjsparks@nostrum.com"><span class="">Robert Sparks</span></a>&nbsp;<a href="mailto:rjsparks%40nostrum.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc6141/">RFC 6141</a>
-
-      
-        <i>(was draft-ietf-sipcore-reinvite)</i>
-      
-      <br>
-      <b>Re-INVITE and Target-Refresh Request Handling in the Session Initiation Protocol (SIP)</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2011-03
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">26 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-sipcore-reinvite">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/rjsparks@nostrum.com"><span class="">Robert Sparks</span></a>&nbsp;<a href="mailto:rjsparks%40nostrum.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc6216/">RFC 6216</a>
-
-      
-        <i>(was draft-ietf-sipcore-sec-flows)</i>
-      
-      <br>
-      <b>Example Call Flows Using Session Initiation Protocol (SIP) Security Mechanisms</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2011-04
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">67 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-sipcore-sec-flows">
-    
-  </div>
-
-  
-    Informational RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/gonzalo.camarillo@ericsson.com"><span class="">Gonzalo Camarillo</span></a>&nbsp;<a href="mailto:gonzalo.camarillo%40ericsson.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc6223/">RFC 6223</a>
-
-      
-        <i>(was draft-ietf-sipcore-keep)</i>
-      
-      <br>
-      <b>Indication of Support for Keep-Alive</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2011-04
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">18 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-sipcore-keep">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-sipcore-keep">
-        <span class="label label-default">1</span>
-      </a>
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/rjsparks@nostrum.com"><span class="">Robert Sparks</span></a>&nbsp;<a href="mailto:rjsparks%40nostrum.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc6228/">RFC 6228</a>
-
-      
-        <i>(was draft-ietf-sipcore-199)</i>
-      
-      <br>
-      <b>Session Initiation Protocol (SIP) Response Code for Indication of Terminated Dialog</b>
-      
-        <a class="label label-warning pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=6228">Errata</a>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2011-05
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">14 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-sipcore-199">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/rjsparks@nostrum.com"><span class="">Robert Sparks</span></a>&nbsp;<a href="mailto:rjsparks%40nostrum.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc6442/">RFC 6442</a>
-
-      
-        <i>(was draft-ietf-sipcore-location-conveyance)</i>
-      
-      <br>
-      <b>Location Conveyance for the Session Initiation Protocol</b>
-      
-        <a class="label label-danger pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=6442">Errata</a>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2011-12
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">35 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-sipcore-location-conveyance">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-      <br>Updated by <a href="/doc/rfc8262/">RFC 8262</a>, <a href="/doc/rfc8787/">RFC 8787</a>
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/rjsparks@nostrum.com"><span class="">Robert Sparks</span></a>&nbsp;<a href="mailto:rjsparks%40nostrum.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc6446/">RFC 6446</a>
-
-      
-        <i>(was draft-ietf-sipcore-event-rate-control)</i>
-      
-      <br>
-      <b>Session Initiation Protocol (SIP) Event Notification Extension for Notification Rate Control</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2012-01
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">25 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-sipcore-event-rate-control">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/rjsparks@nostrum.com"><span class="">Robert Sparks</span></a>&nbsp;<a href="mailto:rjsparks%40nostrum.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc6665/">RFC 6665</a>
-
-      
-        <i>(was draft-ietf-sipcore-rfc3265bis)</i>
-      
-      <br>
-      <b>SIP-Specific Event Notification</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2012-07
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">53 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-sipcore-rfc3265bis">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-      <br>Updated by <a href="/doc/rfc7621/">RFC 7621</a>
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-sipcore-rfc3265bis">
-        <span class="label label-default">3</span>
-      </a>
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/rjsparks@nostrum.com"><span class="">Robert Sparks</span></a>&nbsp;<a href="mailto:rjsparks%40nostrum.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc6809/">RFC 6809</a>
-
-      
-        <i>(was draft-ietf-sipcore-proxy-feature)</i>
-      
-      <br>
-      <b>Mechanism to Indicate Support of Features and Capabilities in the Session Initiation Protocol (SIP)</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2012-11
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">19 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-sipcore-proxy-feature">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/rjsparks@nostrum.com"><span class="">Robert Sparks</span></a>&nbsp;<a href="mailto:rjsparks%40nostrum.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc6878/">RFC 6878</a>
-
-      
-        <i>(was draft-ietf-sipcore-priority)</i>
-      
-      <br>
-      <b>IANA Registry for the Session Initiation Protocol (SIP) &quot;Priority&quot; Header Field</b>
-      
-        <a class="label label-warning pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=6878">Errata</a>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2013-03
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">3 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-sipcore-priority">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/rjsparks@nostrum.com"><span class="">Robert Sparks</span></a>&nbsp;<a href="mailto:rjsparks%40nostrum.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc7044/">RFC 7044</a>
-
-      
-        <i>(was draft-ietf-sipcore-rfc4244bis)</i>
-      
-      <br>
-      <b>An Extension to the Session Initiation Protocol (SIP) for Request History Information</b>
-      
-        <a class="label label-warning pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=7044">Errata</a>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2014-02
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">36 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-sipcore-rfc4244bis">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/rlb@ipv.sx"><span class="">Richard Barnes</span></a>&nbsp;<a href="mailto:rlb%40ipv.sx"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc7118/">RFC 7118</a>
-
-      
-        <i>(was draft-ietf-sipcore-sip-websocket)</i>
-      
-      <br>
-      <b>The WebSocket Protocol as a Transport for the Session Initiation Protocol (SIP)</b>
-      
-        <a class="label label-warning pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=7118">Errata</a>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2014-01
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">25 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-sipcore-sip-websocket">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/rlb@ipv.sx"><span class="">Richard Barnes</span></a>&nbsp;<a href="mailto:rlb%40ipv.sx"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/pkyzivat@cisco.com"><span class="small text-muted">Paul Kyzivat</span></a>&nbsp;<a href="mailto:pkyzivat%40cisco.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc7131/">RFC 7131</a>
-
-      
-        <i>(was draft-ietf-sipcore-rfc4244bis-callflows)</i>
-      
-      <br>
-      <b>Session Initiation Protocol (SIP) History-Info Header Call Flow Examples</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2014-03
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">52 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-sipcore-rfc4244bis-callflows">
-    
-  </div>
-
-  
-    Informational RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/rlb@ipv.sx"><span class="">Richard Barnes</span></a>&nbsp;<a href="mailto:rlb%40ipv.sx"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/pkyzivat@cisco.com"><span class="small text-muted">Paul Kyzivat</span></a>&nbsp;<a href="mailto:pkyzivat%40cisco.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc7134/">RFC 7134</a>
-
-      
-        <i>(was draft-rosen-rph-reg-policy)</i>
-      
-      <br>
-      <b>The Management Policy of the Resource Priority Header (RPH) Registry Changed to &quot;IETF Review&quot;</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2014-03
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">2 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-rosen-rph-reg-policy">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/rlb@ipv.sx"><span class="">Richard Barnes</span></a>&nbsp;<a href="mailto:rlb%40ipv.sx"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/aroach@mozilla.com"><span class="small text-muted">Adam Roach</span></a>&nbsp;<a href="mailto:aroach%40mozilla.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc7614/">RFC 7614</a>
-
-      
-        <i>(was draft-ietf-sipcore-refer-explicit-subscription)</i>
-      
-      <br>
-      <b>Explicit Subscriptions for the REFER Method</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2015-08
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">14 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-sipcore-refer-explicit-subscription">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/ben@nostrum.com"><span class="">Ben Campbell</span></a>&nbsp;<a href="mailto:ben%40nostrum.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/pkyzivat@alum.mit.edu"><span class="small text-muted">Paul Kyzivat</span></a>&nbsp;<a href="mailto:pkyzivat%40alum.mit.edu"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc7621/">RFC 7621</a>
-
-      
-        <i>(was draft-ietf-sipcore-6665-clarification)</i>
-      
-      <br>
-      <b>A Clarification on the Use of Globally Routable User Agent URIs (GRUUs) in the SIP Event Notification Framework</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2015-08
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">4 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-sipcore-6665-clarification">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/ben@nostrum.com"><span class="">Ben Campbell</span></a>&nbsp;<a href="mailto:ben%40nostrum.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/pkyzivat@alum.mit.edu"><span class="small text-muted">Paul Kyzivat</span></a>&nbsp;<a href="mailto:pkyzivat%40alum.mit.edu"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc7647/">RFC 7647</a>
-
-      
-        <i>(was draft-ietf-sipcore-refer-clarifications)</i>
-      
-      <br>
-      <b>Clarifications for the Use of REFER with RFC 6665</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2015-09
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">6 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-sipcore-refer-clarifications">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/ben@nostrum.com"><span class="">Ben Campbell</span></a>&nbsp;<a href="mailto:ben%40nostrum.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/pkyzivat@alum.mit.edu"><span class="small text-muted">Paul Kyzivat</span></a>&nbsp;<a href="mailto:pkyzivat%40alum.mit.edu"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc7984/">RFC 7984</a>
-
-      
-        <i>(was draft-ietf-sipcore-dns-dual-stack)</i>
-      
-      <br>
-      <b>Locating Session Initiation Protocol (SIP) Servers in a Dual-Stack IP Network</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2016-09
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">10 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-sipcore-dns-dual-stack">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/ben@nostrum.com"><span class="">Ben Campbell</span></a>&nbsp;<a href="mailto:ben%40nostrum.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/adam@nostrum.com"><span class="small text-muted">Adam Roach</span></a>&nbsp;<a href="mailto:adam%40nostrum.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc8197/">RFC 8197</a>
-
-      
-        <i>(was draft-ietf-sipcore-status-unwanted)</i>
-      
-      <br>
-      <b>A SIP Response Code for Unwanted Calls</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2017-07
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">8 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-sipcore-status-unwanted">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/ben@nostrum.com"><span class="">Ben Campbell</span></a>&nbsp;<a href="mailto:ben%40nostrum.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/adam@nostrum.com"><span class="small text-muted">Adam Roach</span></a>&nbsp;<a href="mailto:adam%40nostrum.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc8217/">RFC 8217</a>
-
-      
-        <i>(was draft-ietf-sipcore-name-addr-guidance)</i>
-      
-      <br>
-      <b>Clarifications for When to Use the name-addr Production in SIP Messages</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2017-08
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">6 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-sipcore-name-addr-guidance">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/ben@nostrum.com"><span class="">Ben Campbell</span></a>&nbsp;<a href="mailto:ben%40nostrum.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/br@brianrosen.net"><span class="small text-muted">Brian Rosen</span></a>&nbsp;<a href="mailto:br%40brianrosen.net"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc8262/">RFC 8262</a>
-
-      
-        <i>(was draft-ietf-sipcore-content-id)</i>
-      
-      <br>
-      <b>Content-ID Header Field in the Session Initiation Protocol (SIP)</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2017-10
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">14 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-sipcore-content-id">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/ben@nostrum.com"><span class="">Ben Campbell</span></a>&nbsp;<a href="mailto:ben%40nostrum.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/mahoney@nostrum.com"><span class="small text-muted">Jean Mahoney</span></a>&nbsp;<a href="mailto:mahoney%40nostrum.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc8498/">RFC 8498</a>
-
-      
-        <i>(was draft-ietf-sipcore-originating-cdiv-parameter)</i>
-      
-      <br>
-      <b>A P-Served-User Header Field Parameter for an Originating Call Diversion (CDIV) Session Case in the Session Initiation Protocol (SIP)</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2019-02
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">15 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-sipcore-originating-cdiv-parameter">
-    
-  </div>
-
-  
-    Informational RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/ben@nostrum.com"><span class="">Ben Campbell</span></a>&nbsp;<a href="mailto:ben%40nostrum.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/mahoney@nostrum.com"><span class="small text-muted">Jean Mahoney</span></a>&nbsp;<a href="mailto:mahoney%40nostrum.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc8599/">RFC 8599</a>
-
-      
-        <i>(was draft-ietf-sipcore-sip-push)</i>
-      
-      <br>
-      <b>Push Notification with the Session Initiation Protocol (SIP)</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2019-05
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">40 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-sipcore-sip-push">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/ben@nostrum.com"><span class="">Ben Campbell</span></a>&nbsp;<a href="mailto:ben%40nostrum.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/br@brianrosen.net"><span class="small text-muted">Brian Rosen</span></a>&nbsp;<a href="mailto:br%40brianrosen.net"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc8606/">RFC 8606</a>
-
-      
-        <i>(was draft-ietf-sipcore-reason-q850-loc)</i>
-      
-      <br>
-      <b>ISDN User Part (ISUP) Cause Location Parameter for the SIP Reason Header Field</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2019-06
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">7 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-sipcore-reason-q850-loc">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/ben@nostrum.com"><span class="">Ben Campbell</span></a>&nbsp;<a href="mailto:ben%40nostrum.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/br@brianrosen.net"><span class="small text-muted">Brian Rosen</span></a>&nbsp;<a href="mailto:br%40brianrosen.net"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc8688/">RFC 8688</a>
-
-      
-        <i>(was draft-ietf-sipcore-rejected)</i>
-      
-      <br>
-      <b>A Session Initiation Protocol (SIP) Response Code for Rejected Calls</b>
-      
-        <a class="label label-warning pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=8688">Errata</a>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2019-12
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">22 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-sipcore-rejected">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/adam@nostrum.com"><span class="">Adam Roach</span></a>&nbsp;<a href="mailto:adam%40nostrum.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/mahoney@nostrum.com"><span class="small text-muted">Jean Mahoney</span></a>&nbsp;<a href="mailto:mahoney%40nostrum.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc8760/">RFC 8760</a>
-
-      
-        <i>(was draft-ietf-sipcore-digest-scheme)</i>
-      
-      <br>
-      <b>The Session Initiation Protocol (SIP) Digest Access Authentication Scheme</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2020-03
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">9 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-sipcore-digest-scheme">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/adam@nostrum.com"><span class="">Adam Roach</span></a>&nbsp;<a href="mailto:adam%40nostrum.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/mahoney@nostrum.com"><span class="small text-muted">Jean Mahoney</span></a>&nbsp;<a href="mailto:mahoney%40nostrum.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc8787/">RFC 8787</a>
-
-      
-        <i>(was draft-ietf-sipcore-locparam)</i>
-      
-      <br>
-      <b>Location Source Parameter for the SIP Geolocation Header Field</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2020-05
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">8 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-sipcore-locparam">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/adam@nostrum.com"><span class="">Adam Roach</span></a>&nbsp;<a href="mailto:adam%40nostrum.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/mahoney@nostrum.com"><span class="small text-muted">Jean Mahoney</span></a>&nbsp;<a href="mailto:mahoney%40nostrum.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc8898/">RFC 8898</a>
-
-      
-        <i>(was draft-ietf-sipcore-sip-token-authnz)</i>
-      
-      <br>
-      <b>Third-Party Token-Based Authentication and Authorization for Session Initiation Protocol (SIP)</b>
-      
-        <a class="label label-warning pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=8898">Errata</a>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2020-09
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">15 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-sipcore-sip-token-authnz">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/superuser@gmail.com"><span class="">Murray Kucherawy</span></a>&nbsp;<a href="mailto:superuser%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/mahoney@nostrum.com"><span class="small text-muted">Jean Mahoney</span></a>&nbsp;<a href="mailto:mahoney%40nostrum.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-      
-    </tbody>
-  </table>
-
-
-  
-  
-
-
-
-
-  
-
-  
-  <table class="table table-condensed table-striped tablesorter">
-    <thead>
-      <tr>
-        <th class="sorter-false"></th>
-
-        
-          
-            <th data-header="document">
-	      
-	        Document
-	      
-            </th>
-          
-        
-          
-        
-          
-            <th data-header="date">
-	      
-	        Date
-	      
-            </th>
-          
-        
-          
-            <th data-header="status">
-	      
-	        Status
-	      
-            </th>
-          
-        
-          
-            <th data-header="ipr">
-	      
-	        IPR
-	      
-            </th>
-          
-        
-          
-            <th data-header="ad">
-	      
-	        AD / Shepherd
-	      
-            </th>
-          
-        
-
-        
-      </tr>
-    </thead>
-
-    
-
-      
-    <tbody>
-        <tr class="info">
-          <th></th>
-          
-              <th colspan="5">
-          
-	    Related Internet-Drafts (3 hits)
-          </th>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
         </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">4 pages</small>
+        <div>
+            <a href="/doc/draft-sparks-sipcore-multiple-reasons/">
+                
+                    draft-sparks-sipcore-multiple-reasons-00
+                
+            </a>
+            
+            <br>
+            
+            <b>Multiple SIP Reason Header Field Values</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2021-11-12
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+        
+        
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">16 pages</small>
+        <div>
+            <a href="/doc/draft-wendt-sipcore-callinfo-rcd/">
+                
+                    draft-wendt-sipcore-callinfo-rcd-03
+                
+            </a>
+            
+            <br>
+            
+            <b>SIP Call-Info Parameters for Rich Call Data</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2020-07-13
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            Expired
+        
+        
+        
+        
+        
+        
+            
+        
+        
+        
+        
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
     </tbody>
 
-    <tbody>
-        
-          
+</table>
 
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-khatri-sipcore-call-transfer-fail-response/">draft-khatri-sipcore-call-transfer-fail-response-02</a>
-
-      
-      <br>
-      <b>A SIP Response Code (497) for Call Transfer Failure</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2022-01-24
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">11 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-khatri-sipcore-call-transfer-fail-response">
-    
-  </div>
-
-  
-    
-      I-D Exists
-    
-
-    
-
-    <wbr>
-
-    <wbr>
-    
-    
-
-    
-      
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-sparks-sipcore-multiple-reasons/">draft-sparks-sipcore-multiple-reasons-00</a>
-
-      
-      <br>
-      <b>Multiple SIP Reason Header Field Values</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2021-11-12
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">4 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-sparks-sipcore-multiple-reasons">
-    
-  </div>
-
-  
-    
-      I-D Exists
-    
-
-    
-
-    <wbr>
-
-    <wbr>
-    
-    
-
-    
-      
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-wendt-sipcore-callinfo-rcd/">draft-wendt-sipcore-callinfo-rcd-03</a>
-
-      
-      <br>
-      <b>SIP Call-Info Parameters for Rich Call Data</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2020-07-13
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">16 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-wendt-sipcore-callinfo-rcd">
-    
-  </div>
-
-  
-    
-      Expired
-    
-
-    
-
-    <wbr>
-
-    <wbr>
-    
-    
-
-    
-      
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-      
-    </tbody>
-  </table>
-
-
-  <ul class="list-inline pull-right" style="margin-top:1em;">
-  <li>
+    <div class="text-end">
     <label id="list-feeds">Atom feed:</label>
     <div class="btn-group" role="group" aria-labelledby="list-feeds">
-      <a class="btn btn-default" title="Feed of all changes" href="/group/sipcore/documents/feed/">All changes</a>
-      <a class="btn btn-default" title="Feed of only significant state changes" href="/group/sipcore/documents/feed/?significant=1">Significant</a>
+        <a class="btn btn-primary"
+           title="Feed of all changes"
+           href="/group/sipcore/documents/feed/">
+            <i class="bi bi-rss"></i> All changes
+        </a>
+        <a class="btn btn-primary"
+           title="Feed of only significant state changes"
+           href="/group/sipcore/documents/feed/?significant=1">
+            <i class="bi bi-rss"></i> Significant
+        </a>
     </div>
-  </li>
-
-  
-    <li><a class="btn btn-default" href="/group/sipcore/documents/subscription/">
-      <i class="glyphicon glyphicon-envelope"></i>
-      
-        Subscribe to changes
-      
-    </a></li>
-  
-
-  <li><a class="btn btn-default" href="/group/sipcore/documents/csv/"><i class="glyphicon glyphicon-list"></i> Export as CSV</a></li>
-</ul>
-
-
-
+    
+        <a class="btn btn-primary"
+           href="/group/sipcore/documents/subscription/">
+            <i class="bi bi-envelope"></i>
+            
+                Subscribe to changes
+            
+        </a>
+    
+    <a class="btn btn-primary"
+       href="/group/sipcore/documents/csv/">
+        <i class="bi bi-file-ruled"></i> Export as CSV
+    </a>
+</div>
 
 
+                    
+                </div>
+            </div>
+            <hr>
+            
+                <footer class="col-md-12 col-sm-12 text-center">
+                    <a href="https://www.ietf.org/" class="p-3">IETF</a>
+                    <a href="https://www.ietf.org/iesg/" class="p-3">IESG</a>
+                    <a href="https://www.iab.org/" class="p-3">IAB</a>
+                    <a href="https://www.irtf.org/" class="p-3">IRTF</a>
+                    <a href="https://www.ietf.org/llc/" class="p-3">IETF&nbsp;LLC</a>
+                    <a href="https://trustee.ietf.org/" class="p-3">IETF&nbsp;Trust</a>
+                    <a href="https://www.rfc-editor.org/" class="p-3">RFC&nbsp;Editor</a>
+                    <a href="https://www.iana.org/" class="p-3">IANA</a>
+                    <a href="https://www.ietf.org/privacy-statement/" class="p-3">Privacy&nbsp;Statement</a>
+                    <div class="small text-muted p-3">
+                        
+                            <a href="/release/about">About</a>
+                            <a href="https://github.com/ietf-tools/datatracker/">IETF Datatracker</a>
+                            
+                                <a href="https://github.com/ietf-tools/datatracker/releases/tag/8.0.0">Version 8.0.0</a>
+                            
+                            (main - 87fac4e)
+                        
+                        Report a bug:
+                        <a href="https://github.com/ietf-tools/datatracker/issues/new/choose">
+                            GitHub
+                            <i class="bi bi-bug"></i>
+                        </a>
+                        
+                            <a href="mailto:datatracker-project@ietf.org">
+                                Email
+                                <i class="bi bi-envelope"></i>
+                            </a>
+                        
+                        <br>
+                        Python 3.6.12
+                        Django 2.2.28
+                        <br>
+                        
+
+
+
+
+
+                    </div>
+                </footer>
+            
+        </div>
         
-        
-	  </div>
-        
+    <script src="https://www.ietf.org/lib/dt/8.0.0/ietf/js/list.js"></script>
 
-	
-	<hr>
-	  <div class="col-md-12 col-sm-12">
-	    <div class="text-center padded">
-	        <a href="https://www.rfc-editor.org/" class="padded">RFC&nbsp;Editor</a>
-	        <a href="https://www.ietf.org/llc/" class="padded">IASA&nbsp;&amp;&nbsp;IETF&nbsp;LLC</a>
-	        <a href="https://trustee.ietf.org/" class="padded">IETF&nbsp;Trust</a>
-	        <a href="https://www.irtf.org/" class="padded">IRTF</a>
-	        <a href="https://www.ietf.org/" class="padded">IETF</a>
-	        <a href="https://www.ietf.org/iesg/" class="padded">IESG</a>
-	        <a href="https://www.iab.org/" class="padded">IAB</a>
-	        <a href="https://www.iana.org/" class="padded">IANA</a>
-	        <a href="https://www.ietf.org/privacy-statement/" class="padded">Privacy&nbsp;Statement</a>
-	    </div>
-	  </div>
-
-
-        <footer class="col-md-12 col-sm-12">
-	  <div class="col-md-12">
-	    <div class="text-center">
-	      <p class="small text-muted">
-	        
-		  <a href="/release/about">About</a> |
-	          IETF Datatracker |
-	          <a href="/release/7.46.0.p4/">Version 7.46.0.p4</a> |
-	          2022-03-10 |
-	        
-		Report a bug:
-	        <a href="https://trac.ietf.org/trac/ietfdb/newticket">Tracker:<span class="fa fa-bug"></span></a>
-                
-	        <a href="mailto:datatracker-project@ietf.org">Email:<span class="fa fa-envelope"></span></a>
-                
-		<br>
-                Python 3.6.12 |
-		Django 2.2.27
-	      </p>
-	    </div>
-	  </div>
-        </footer>
-	
-
-      </div>
-
-      
-
-
-
-
-      <script src="https://www.ietf.org/lib/dt/7.46.0/jquery/jquery.min.js"></script>
-      
-      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
-      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
-      <script src="https://www.ietf.org/lib/dt/7.46.0/js-cookie/src/js.cookie.js"></script>
-      <script src="https://www.ietf.org/lib/dt/7.46.0/ietf/bootstrap/js/bootstrap.min.js"></script>
-      <script src="https://www.ietf.org/lib/dt/7.46.0/ietf/js/ietf.js"></script>
-      
-<script src="https://www.ietf.org/lib/dt/7.46.0/jquery.tablesorter/js/jquery.tablesorter.combined.min.js"></script>
-
-      
-  <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6fb2a8678e7da367',m:'AvtjnNq9KEA_WcPt97fodq0Tc70lxY4NibFiY9UxeY8-1649836722-0-AYMbRZkk+GDEZdb/VQT4Jl+lsWH225Co8fvxw/2wKprZmQ9AcLwI0BxPJXiuEAaGWkNyYiugory6c74k1JHzvEzYDpK2B0J5wJeFjnAX57jHsbVOYQrH4QdBYoh38N3YFiECkZwFZpFkrBHpAt71AR8=',s:[0x162096806f,0x92f923c576],}})();</script></body>
+        <script src="https://www.ietf.org/lib/dt/8.0.0/ietf/js/select2.js"></script>
+        <script>
+            $('#navbar-doc-search').on('select2:select', function (e) {
+                window.location.href = e.params.data.url;
+            });
+        </script>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6ff48a4929d60740',m:'RU65TdyFjGVomXRh6mmP0ZgGw59yFi.6A6biyvGyM3A-1650527548-0-AVhkuDbzf5Ne53o21zXrCan6349Kje6jEg79afoinDyiFsYCHBCQ0HFFwvonbaJBuBRflhc+KPTm/pqnvK9rn+N+t3qjElHvFS3JjIGkv+/XfFguii+uvv4q+tGhOeMXNhsbxUXdP3FfQYQtSwn6TYo=',s:[0x9d06ec2ee0,0xc3408e5677],}})();</script></body>
 </html>

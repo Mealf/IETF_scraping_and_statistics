@@ -1,4803 +1,4304 @@
-<!DOCTYPE html> 
+
+<!DOCTYPE html>
+
 
 
 
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Bidirectional Forwarding Detection (bfd) - Documents</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>
+            Bidirectional Forwarding Detection (bfd)
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="https://www.ietf.org/lib/dt/8.0.0/ietf/css/ietf.css">
+        <link rel="stylesheet" href="https://www.ietf.org/lib/dt/8.0.0/ietf/css/select2.css">
+        <style>
+            
+            .leftmenu { width: 13em; }
+        </style>
+        
+    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/8.0.0/ietf/css/list.css">
 
-    <link href="https://www.ietf.org/lib/dt/7.46.0/ptmono/stylesheet.css" rel='stylesheet' type='text/css'>
-    <link href="https://www.ietf.org/lib/dt/7.46.0/ptsans/stylesheet.css" rel='stylesheet' type='text/css'>
-    <link href="https://www.ietf.org/lib/dt/7.46.0/ptserif/stylesheet.css" rel='stylesheet' type='text/css'>
+        
+            <link rel="shortcut icon"
+                  href="https://www.ietf.org/lib/dt/8.0.0/ietf/images/ietf-icon-blue3.png">
+        
+        <link rel="apple-touch-icon"
+              href="https://www.ietf.org/lib/dt/8.0.0/ietf/images/apple-touch-icon.png">
+        <script src="https://www.ietf.org/lib/dt/8.0.0/ietf/js/ietf.js"></script>
+    <script async src='/cdn-cgi/bm/cv/669835187/api.js'></script></head>
+    <body  class="position-relative"
+          data-group-menu-data-url="/group/groupmenu.json">
+        <a class="visually-hidden visually-hidden-focusable" href="#content">Skip to main content</a>
+        <nav class="navbar navbar-expand-lg  navbar-dark bg-secondary    fixed-top ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">
+                    <img alt="IETF Logo"
+                         src="https://www.ietf.org/lib/dt/8.0.0/ietf/images/ietflogo-small-transparent.png">
+                    Datatracker
+                    
+                </a>
+                <div class="collapse navbar-collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        
+
+
+
+
+<li class="nav-item dropdown">
+    
+        <a href="#"
+           class="nav-link dropdown-toggle"
+           role="button"
+           data-bs-auto-close="false"
+           data-bs-toggle="dropdown"
+           aria-expanded="false">
+            Groups
+        </a>
+        <ul class="dropdown-menu mt-n1">
+        
+    <li class="dropdown-header">By area/parent</li>
     
 
-    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/ietf/font-datatracker/css/font-datatracker.css">
-    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/ietf/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/ietf/bootstrap/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/ietf/css/ietf.css">
-    
-    <style>
-     
-    </style>
-
-    
-<link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/jquery.tablesorter/css/theme.bootstrap.min.css">
 
 
-    
-    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.46.0/ietf/images/ietf-icon-blue3.png">
-    
-    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.46.0/ietf/images/apple-touch-icon.png">
-  <script async src='/cdn-cgi/bm/cv/669835187/api.js'></script></head>
+    <li class="dropend group-menu group-parent-2010">
+        <a class="dropdown-item dropdown-toggle "
+           href="/wg/#art">
+            Apps &amp; Realtime
+        </a>
+    </li>
 
-  <body  data-group-menu-data-url="/group/groupmenu.json">
-      <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container-fluid">
-	  <div class="navbar-header">
-	    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-	      <span class="sr-only">Toggle navigation</span>
-	      <span class="icon-bar"></span>
-	      <span class="icon-bar"></span>
-	      <span class="icon-bar"></span>
-	    </button>
-	    <a class="navbar-brand" href="/">
-	       <img alt="IETF Logo" src="https://www.ietf.org/lib/dt/7.46.0/ietf/images/ietflogo-small-transparent.png">
-	       
-		  
-		  Datatracker
-		  
-	       
-	    </a>
-	  </div>
+    <li class="dropend group-menu group-parent-1008">
+        <a class="dropdown-item dropdown-toggle "
+           href="/wg/#gen">
+            General
+        </a>
+    </li>
 
-	  <noscript>
-	    <p class="navbar-text"><small>Enable Javascript for full functionality.</small></p>
-	  </noscript>
+    <li class="dropend group-menu group-parent-1052">
+        <a class="dropdown-item dropdown-toggle "
+           href="/wg/#int">
+            Internet
+        </a>
+    </li>
 
-	  <div class="collapse navbar-collapse" id="navbar-collapse">
-	    <ul class="hidden-nojs nav navbar-nav">
-              
+    <li class="dropend group-menu group-parent-1193">
+        <a class="dropdown-item dropdown-toggle "
+           href="/wg/#ops">
+            Ops &amp; Management
+        </a>
+    </li>
+
+    <li class="dropend group-menu group-parent-1249">
+        <a class="dropdown-item dropdown-toggle "
+           href="/wg/#rtg">
+            Routing
+        </a>
+    </li>
+
+    <li class="dropend group-menu group-parent-1260">
+        <a class="dropdown-item dropdown-toggle "
+           href="/wg/#sec">
+            Security
+        </a>
+    </li>
+
+    <li class="dropend group-menu group-parent-1324">
+        <a class="dropdown-item dropdown-toggle "
+           href="/wg/#tsv">
+            Transport
+        </a>
+    </li>
+
+    <li class="dropend group-menu group-parent-7">
+        <a class="dropdown-item dropdown-toggle "
+           href="/program/">
+            IAB
+        </a>
+    </li>
+
+    <li class="dropend group-menu group-parent-3">
+        <a class="dropdown-item dropdown-toggle "
+           href="/rg/">
+            IRTF
+        </a>
+    </li>
+
+    <li class="dropend group-menu group-parent-2309">
+        <a class="dropdown-item dropdown-toggle "
+           href="/adm/">
+            IETF LLC
+        </a>
+    </li>
 
 
-
-
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-  
-  Groups
-  
-    </a>
-    <ul class="dropdown-menu" role="menu">
-
-    <li class="dropdown-header visible-lg-block">By area/parent</li>
-  
+    <li class="dropend">
+        <a class="dropdown-item dropdown-toggle "
+           href="/group/">
+            Other
+        </a>
         
 
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-2010">
-    <a href="/wg/#art">Apps &amp; Realtime</a>
-  </li>
 
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1008">
-    <a href="/wg/#gen">General</a>
-  </li>
-
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1052">
-    <a href="/wg/#int">Internet</a>
-  </li>
-
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1193">
-    <a href="/wg/#ops">Ops &amp; Mgmt</a>
-  </li>
-
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1249">
-    <a href="/wg/#rtg">Routing</a>
-  </li>
-
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1260">
-    <a href="/wg/#sec">Security</a>
-  </li>
-
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1324">
-    <a href="/wg/#tsv">Transport</a>
-  </li>
-
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-7">
-    <a href="/program/">IAB</a>
-  </li>
-
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-3">
-    <a href="/rg/">IRTF</a>
-  </li>
-
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-2309">
-    <a href="/adm/">IETF LLC</a>
-  </li>
-
-
-        <li class="dropdown-submenu group-menu"><a href="/group/">Other</a>
-<ul class="dropdown-menu" role="menu">
-
-  <li>
-    <a href="/ag/">Active AGs</a>
-  </li>
-
-  <li>
-    <a href="/area/">Active Areas</a>
-  </li>
-
-  <li>
-    <a href="/dir/">Active Directorates</a>
-  </li>
-
-  <li>
-    <a href="/program/">Active Programs</a>
-  </li>
-
-  <li>
-    <a href="/rag/">Active RAGs</a>
-  </li>
-
-  <li>
-    <a href="/team/">Active Teams</a>
-  </li>
-
-
-  <li>
-    <a href="/group/rsoc/">RSOC</a>
-  </li>
-
+<ul class="dropdown-menu ms-n1">
+    
+        <li>
+            <a class="dropdown-item "
+               href="/ag/">Active AGs</a>
+        </li>
+    
+        <li>
+            <a class="dropdown-item "
+               href="/area/">Active Areas</a>
+        </li>
+    
+        <li>
+            <a class="dropdown-item "
+               href="/dir/">Active Directorates</a>
+        </li>
+    
+        <li>
+            <a class="dropdown-item "
+               href="/program/">Active Programs</a>
+        </li>
+    
+        <li>
+            <a class="dropdown-item "
+               href="/rag/">Active RAGs</a>
+        </li>
+    
+        <li>
+            <a class="dropdown-item "
+               href="/team/">Active Teams</a>
+        </li>
+    
+    
+        <li>
+            <a class="dropdown-item "
+               href="/group/rsoc/">RSOC</a>
+        </li>
+    
 </ul>
- </li>
 
-  <li class="divider hidden-xs"></li>
-  <li class="dropdown-header hidden-xs">New work</li>
-  <li><a href="/group/chartering/">Chartering groups</a></li>
-  <li><a href="/wg/bofs/">BOFs</a></li>
-  <li><a href="/doc/bof-requests">BOF Requests</a></li>
-
-  <li class="divider hidden-xs"></li>
-  <li class="dropdown-header hidden-xs">Other groups</li>
-  <li><a href="/group/concluded/">Concluded groups</a></li>
-  <li><a href="/list/nonwg">Non-WG lists</a></li>
-
-</ul>
-</li>
-
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-  
-  Documents
-  
-    </a>
-    <ul class="dropdown-menu" role="menu">
-  
-  <li><a href="/doc/search">Search</a></li>
-  <li><a href="/doc/recent">Recent drafts</a></li>
-  <li><a href="/submit/">Draft submission</a></li>
-
-  
-
-
-  <li class="divider hidden-xs"></li>
-  <li class="dropdown-header hidden-xs">RFC streams</li>
-        <li><a href="/stream/iab/">IAB</a></li>
-        <li><a href="/stream/irtf/">IRTF</a></li>
-        <li><a href="/stream/ise/">ISE</a></li>
-
-</ul>
-</li>
-
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-  
-  Meetings
-  
-    </a>
-    <ul class="dropdown-menu" role="menu">
-  
-
-
-  
-  <li class="dropdown-header visible-lg-block">Next meeting</li>
-  
-  <li><a href="/meeting/agenda/">Agenda</a></li>
-  <li><a href="/meeting/materials/">Materials</a></li>
-  <li><a href="/meeting/floor-plan/">Floor plan</a></li>
-  <li><a href="https://www.ietf.org/how/meetings/register/">Registration</a></li>
-  <li><a href="/meeting/important-dates/">Important dates</a></li>
-  <li><a href="/secr/sreq/">Request a session</a></li>
-  <li><a href="/meeting/requests">Session requests</a></li>
-  
-  <li class="divider hidden-xs"></li>
-  <li class="dropdown-header visible-lg-block">Upcoming meetings</li>
-  
-  <li><a href="/meeting/upcoming">Upcoming meetings</a></li>
-  
-  <li class="divider hidden-xs"></li>
-  <li class="dropdown-header visible-lg-block">Past meetings</li>
-  
-  <li><a href="/meeting/past">Past meetings</a></li>
-  <li><a href="https://www.ietf.org/how/meetings/past/">Meeting proceedings</a></li>
-</ul>
-</li>
-
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-  
-  Other
-  
-    </a>
-    <ul class="dropdown-menu" role="menu">
-  
-
-  <li><a href="/ipr/">IPR disclosures</a></li>
-  <li><a href="/liaison/">Liaison statements</a></li>
-  <li><a href="/iesg/agenda/">IESG agenda</a></li>
-  <li><a href="/nomcom/">NomComs</a></li>
-  <li><a href="/doc/downref/">Downref registry</a></li>
-  <li class="dropdown-submenu">
-    <a href="/stats/">Statistics</a>
-    <ul class="dropdown-menu">
-      <li><a href="/stats/document/">Drafts/RFCs</a></li>
-      <li><a href="/stats/meeting/">Meetings</a></li>
-      
+    </li>
+    <li><hr class="dropdown-divider"></li>
+    <li class="dropdown-header">New work</li>
+    <li>
+        <a class="dropdown-item "
+           href="/group/chartering/">
+            Chartering groups
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/wg/bofs/">
+            BOFs
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/doc/bof-requests">
+            BOF Requests
+        </a>
+    </li>
+    <li><hr class="dropdown-divider"></li>
+    <li class="dropdown-header">Other groups</li>
+    <li>
+        <a class="dropdown-item "
+           href="/group/concluded/">
+            Concluded groups
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/list/nonwg">
+            Non-WG lists
+        </a>
+    </li>
+    
     </ul>
-  </li>
-  <li><a href="/group/edu/materials/">Tutorials</a></li>
-  <li><a href="/api/">API Help</a></li>  
-  <li><a href="/release/">Release notes</a></li>
-  <li class="divider hidden-xs"></li>
-  <li><a href="https://trac.ietf.org/trac/ietfdb/newticket"><span class="fa fa-bug"></span> Report a bug</a></li>
-</ul>
+</li>
+
+<li class="nav-item dropdown">
+    
+        <a href="#"
+           class="nav-link dropdown-toggle"
+           role="button"
+           data-bs-toggle="dropdown"
+           aria-expanded="false">
+            Documents
+        </a>
+        <ul class="dropdown-menu mt-n1">
+        
+    <li>
+        <a class="dropdown-item "
+           href="/doc/search">
+            Search
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/doc/recent">
+            Recent drafts
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/submit/">
+            Draft submission
+        </a>
+    </li>
+    
+    
+        <li><hr class="dropdown-divider">
+        </li>
+    
+    <li class="dropdown-header">
+        RFC streams
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/stream/iab/">
+            IAB
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/stream/irtf/">
+            IRTF
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/stream/ise/">
+            ISE
+        </a>
+    </li>
+    
+    </ul>
+</li>
+
+<li class="nav-item dropdown">
+    
+        <a href="#"
+           class="nav-link dropdown-toggle"
+           role="button"
+           data-bs-toggle="dropdown"
+           aria-expanded="false">
+            Meetings
+        </a>
+        <ul class="dropdown-menu mt-n1">
+        
+    <li>
+        <a class="dropdown-item "
+           href="/meeting/agenda/">
+            Agenda
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/meeting/materials/">
+            Materials
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/meeting/floor-plan/">
+            Floor plan
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="https://www.ietf.org/how/meetings/register/">
+            Registration
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/meeting/important-dates/">
+            Important dates
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/secr/sreq/">
+            Request a session
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/meeting/requests">
+            Session requests
+        </a>
+    </li>
+    
+        
+            <li><hr class="dropdown-divider">
+            </li>
+        
+        <li class="dropdown-header">
+            Upcoming meetings
+        </li>
+    
+    <li>
+        <a class="dropdown-item "
+           href="/meeting/upcoming">
+            Upcoming meetings
+        </a>
+    </li>
+    
+        
+            <li><hr class="dropdown-divider">
+            </li>
+        
+        <li class="dropdown-header">
+            Past meetings
+        </li>
+    
+    <li>
+        <a class="dropdown-item "
+           href="/meeting/past">
+            Past meetings
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="https://www.ietf.org/how/meetings/past/">
+            Meeting proceedings
+        </a>
+    </li>
+    
+    </ul>
+</li>
+
+<li class="nav-item dropdown">
+    
+        <a href="#"
+           class="nav-link dropdown-toggle"
+           role="button"
+           data-bs-toggle="dropdown"
+           aria-expanded="false">
+            Other
+        </a>
+        <ul class="dropdown-menu mt-n1">
+        
+    <li>
+        <a class="dropdown-item "
+           href="/ipr/">
+            IPR disclosures
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/liaison/">
+            Liaison statements
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/iesg/agenda/">
+            IESG agenda
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/nomcom/">
+            NomComs
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/doc/downref/">
+            Downref registry
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/stats/">
+            Statistics
+        </a>
+        <ul class="dropdown-menu mt-n1">
+            <li>
+                <a class="dropdown-item "
+                   href="/stats/document/">
+                    Drafts/RFCs
+                </a>
+            </li>
+            <li>
+                <a class="dropdown-item "
+                   href="/stats/meeting/">
+                    Meetings
+                </a>
+            </li>
+            
+        </ul>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/group/edu/materials/">
+            Tutorials
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/api/">
+            API Help
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/release/">
+            Release notes
+        </a>
+    </li>
+    
+        <li><hr class="dropdown-divider">
+        </li>
+    
+    <li>
+        <a class="dropdown-item "
+           href="https://github.com/ietf-tools/datatracker/issues/new/choose">
+            <i class="bi bi-bug">
+            </i>
+            Report a bug
+        </a>
+    </li>
+    
+    </ul>
 </li>
 
 
-  
-
-
-<li class="dropdown">
-  
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-     User 
-  </a>
-  <ul class="dropdown-menu" role="menu">
-  
-
-  
     
-      <li><a rel="nofollow" href="/accounts/login/?next=/wg/bfd/documents/">Sign in</a></li>
-      <li><a rel="nofollow" href="/accounts/reset/">Password reset</a></li>
-      <li><a href="/accounts/settings/" rel="nofollow">Preferences</a></li>
+
+
+
+<li class="nav-item dropdown">
     
-    <li><a href="/help/personal-information">Handling of personal information</a></li>  
-  
-
-  
-    <li><a href="/accounts/create/">New account</a></li>
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-</ul>
-
-            </ul>
+        <a href="#"
+           class="nav-link dropdown-toggle"
+           role="button"
+           data-bs-toggle="dropdown"
+           aria-expanded="false">
+            
+                User
+            
+        </a>
+        <ul class="dropdown-menu  mt-n1 ">
         
-            <p class="navbar-text"></p>
-            <a class="btn btn-warning btn-sm navbar-btn" rel="nofollow" href="/accounts/login/?next=/wg/bfd/documents/">Sign in</a>
+    
+        
+            <li>
+                <a class="dropdown-item "
+                   rel="nofollow"
+                   href="/accounts/login/?next=/wg/bfd/documents/">
+                    Sign in
+                </a>
+            </li>
+            <li>
+                <a class="dropdown-item "
+                   rel="nofollow"
+                   href="/accounts/reset/">
+                    Password reset
+                </a>
+            </li>
+            <li>
+                <a class="dropdown-item "
+                   href="/accounts/settings/"
+                   rel="nofollow">
+                    Preferences
+                </a>
+            </li>
+        
+        <li>
+            <a class="dropdown-item "
+               href="/help/personal-information">
+                Handling of personal information
+            </a>
+        </li>
+    
+    
+        <li>
+            <a class="dropdown-item "
+               href="/accounts/create/">
+                New account
+            </a>
+        </li>
+    
+    
+    
+    
+    
+    
+    </ul></li>
+
+
+
+                    </ul>
+                </div>
+                
+                    <a class="d-none d-sm-block mx-5 btn  btn-warning "
+                       rel="nofollow"
+                       href="/accounts/login/?next=/wg/bfd/documents/">
+                        Sign
+                        in
+                    </a>
+                
+                <div class="d-flex d-none d-lg-block">
+                    <label aria-label="Document search">
+                    <input class="form-control select2-field"
+                           id="navbar-doc-search"
+                           data-ajax--url="/doc/select2search/docalias/draft/"
+                           type="text"
+                           data-placeholder="Document search">
+                   </label>
+                </div>
+                <button class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbar-collapse"
+                        aria-controls="navbar-collapse"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <i class="navbar-toggler-icon"></i>
+                </button>
+            </div>
+        </nav>
+        <div class="pt-3 container-fluid">
+            <div class="row">
+                
+                <div class="col mx-lg-3 ietf-auto-nav" id="content">
+                    <noscript>
+                        <div class="alert alert-danger alert-ignore my-3">
+                            <b>Javascript disabled?</b> Like other modern websites, the IETF Datatracker relies on Javascript.
+                            Please enable Javascript for full functionality.
+                        </div>
+                    </noscript>
+                    
+                    
+    
+    <h1>
+        Bidirectional Forwarding Detection (bfd)
+        
+        
+        
+    </h1>
+    <ul class="nav nav-tabs my-3">
+        
+            <li class="nav-item">
+                <a class="nav-link "
+                   href="/wg/bfd/about/">About</a>
+            </li>
+        
+            <li class="nav-item">
+                <a class="nav-link active"
+                   href="/wg/bfd/documents/">Documents</a>
+            </li>
+        
+            <li class="nav-item">
+                <a class="nav-link "
+                   href="/wg/bfd/meetings/">Meetings</a>
+            </li>
+        
+            <li class="nav-item">
+                <a class="nav-link "
+                   href="/wg/bfd/history/">History</a>
+            </li>
+        
+            <li class="nav-item">
+                <a class="nav-link "
+                   href="/wg/bfd/photos/">Photos</a>
+            </li>
+        
+            <li class="nav-item">
+                <a class="nav-link "
+                   href="/wg/bfd/email/">Email expansions</a>
+            </li>
+        
+            <li class="nav-item">
+                <a class="nav-link "
+                   href="https://mailarchive.ietf.org/arch/browse/rtg-bfd/">List archive &raquo;</a>
+            </li>
+        
+    </ul>
+    <div class="buttonlist">
+        
+            
+        
+    </div>
+    
+    
+    
         
 
-	    <form class="navbar-form navbar-right hidden-xs" action="/doc/search/">
-	      <div class="form-group">
-	        <input class="form-control input-sm" type="text" name="name" placeholder="Document search" required>
-	        <input type="hidden" name="activedrafts" value="on">
-	        <input type="hidden" name="rfcs" value="on">
-	      </div>
-	    </form>
-	  </div>
+
+
+
+
+
+    <table class="table table-sm table-striped tablesorter">
+        <thead>
+            <tr>
+                <th scope="col"></th>
+                
+                    
+                        <th scope="col" data-sort="document"
+                            >
+                            
+                                Document
+                            
+                        </th>
+                    
+                
+                    
+                
+                    
+                        <th scope="col" data-sort="date"
+                            >
+                            
+                                Date
+                            
+                        </th>
+                    
+                
+                    
+                        <th scope="col" data-sort="status"
+                            >
+                            
+                                Status
+                            
+                        </th>
+                    
+                
+                    
+                        <th scope="col" data-sort="ipr"
+                            
+                              class="d-none d-sm-table-cell"
+                            >
+                            
+                                IPR
+                            
+                        </th>
+                    
+                
+                    
+                        <th scope="col" data-sort="ad"
+                            
+                              class="d-none d-sm-table-cell"
+                            >
+                            
+                                AD/Shepherd
+                            
+                        </th>
+                    
+                
+            </tr>
+        </thead>
+
+
+
+    <tbody>
+        <tr class="table-info">
+            <td></td>
+            
+                <th scope="col" colspan="5">
+            
+            Active Internet-Drafts (4 hits)
+            </th>
+        </tr>
+    </tbody>
+    <tbody>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">69 pages</small>
+        <div>
+            <a href="/doc/draft-ietf-bfd-rfc9127-bis/">
+                
+                    draft-ietf-bfd-rfc9127-bis-04
+                
+            </a>
+            
+            <br>
+            
+            <b>YANG Data Model for Bidirectional Forwarding Detection (BFD)</b>
+            
         </div>
-      </nav>
-      <div class="container-fluid-narrow">
         
-        
-        
-	  <div class="col-md-12 col-sm-12" id="content">
-        
-        
-  
-
-  <h1>Bidirectional Forwarding Detection (bfd)
-    
-    
-    
-  </h1>
-
-  <ul class="nav nav-tabs" role="tablist">
-    
-      <li >
-        <a href="/wg/bfd/about/">About</a>
-      </li>
-    
-      <li class="active">
-        <a href="/wg/bfd/documents/">Documents</a>
-      </li>
-    
-      <li >
-        <a href="/wg/bfd/meetings/">Meetings</a>
-      </li>
-    
-      <li >
-        <a href="/wg/bfd/history/">History</a>
-      </li>
-    
-      <li >
-        <a href="/wg/bfd/photos/">Photos</a>
-      </li>
-    
-      <li >
-        <a href="/wg/bfd/email/">Email expansions</a>
-      </li>
-    
-      <li >
-        <a href="https://mailarchive.ietf.org/arch/browse/rtg-bfd/">List archive &raquo;</a>
-      </li>
-    
-  </ul>
-
-  <div class="buttonlist">
-    
-      
-    
-  </div>
-
-  
-  
-  
-    
+    </td>
+    <td>
+            
+                    
+                        2022-04-06
+                    
+                    
+                
+                
+            </td>
+            
 
 
 
-
-  
-
-  
-  <table class="table table-condensed table-striped tablesorter">
-    <thead>
-      <tr>
-        <th class="sorter-false"></th>
-
-        
-          
-            <th data-header="document">
-	      
-	        Document
-	      
-            </th>
-          
-        
-          
-        
-          
-            <th data-header="date">
-	      
-	        Date
-	      
-            </th>
-          
-        
-          
-            <th data-header="status">
-	      
-	        Status
-	      
-            </th>
-          
-        
-          
-            <th data-header="ipr">
-	      
-	        IPR
-	      
-            </th>
-          
-        
-          
-            <th data-header="ad">
-	      
-	        AD / Shepherd
-	      
-            </th>
-          
-        
-
-        
-      </tr>
-    </thead>
-
+<td class="status">
     
+        <div class="float-end ms-1 mb-1" id="ballot-icon-draft-ietf-bfd-rfc9127-bis"></div>
+    
+    
+        
+            Approved-announcement to be sent::Revised I-D Needed
+        
+        
+        
+        <span class="badge bg-success">for 14 days</span>
+        
+        
+            
+        
+        
+            <br>
+            
+                Submitted to IESG for Publication
+                
+                    :
+                
+            
+        
+        Proposed Standard
+        
+        
+            <br>
+            Reviews:
+            <a href="/group/genart/">genart</a>,
+                
+                    <a href="/group/rtgdir/">rtgdir</a>,
+                
+                    <a href="/group/secdir/">secdir</a>,
+                
+                    <a href="/group/yangdoctors/">yangdoctors</a>
+        
+        
+        
+            <br>
+            Action Holders:
+            
+                <span ><a 
+           title="Author, Group Chair"
+            href="/person/reshad@yahoo.com" >Reshad Rahman</a> <a 
+               href="mailto:reshad%40yahoo.com"
+               aria-label="Compose email to reshad@yahoo.com."
+               title="Compose email to reshad@yahoo.com.">
+                <i class="bi bi-envelope"></i></a></span>,
+            
+                <span ><a 
+           title="Author"
+            href="/person/mjethanandani@gmail.com" >Mahesh Jethanandani</a> <a 
+               href="mailto:mjethanandani%40gmail.com"
+               aria-label="Compose email to mjethanandani@gmail.com."
+               title="Compose email to mjethanandani@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>,
+            
+                <span ><a 
+           title="Author"
+            href="/person/vero.zheng@huawei.com" >Lianshu Zheng</a> <a 
+               href="mailto:vero.zheng%40huawei.com"
+               aria-label="Compose email to vero.zheng@huawei.com."
+               title="Compose email to vero.zheng@huawei.com.">
+                <i class="bi bi-envelope"></i></a></span>,
+            
+                <span ><a 
+           title="Author"
+            href="/person/gregimirsky@gmail.com" >Greg Mirsky</a> <a 
+               href="mailto:gregimirsky%40gmail.com"
+               aria-label="Compose email to gregimirsky@gmail.com."
+               title="Compose email to gregimirsky@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>,
+            
+                <span ><a 
+           title="Author"
+            href="/person/santosh.pallagatti@gmail.com" >Santosh Pallagatti</a> <a 
+               href="mailto:santosh.pallagatti%40gmail.com"
+               aria-label="Compose email to santosh.pallagatti@gmail.com."
+               title="Compose email to santosh.pallagatti@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+            
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/jgs@juniper.net" >John Scudder</a> <a 
+               href="mailto:jgs%40juniper.net"
+               aria-label="Compose email to jgs@juniper.net."
+               title="Compose email to jgs@juniper.net.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/jhaas@pfrc.org" >Jeffrey Haas</a> <a class="text-reset"
+               href="mailto:jhaas%40pfrc.org"
+               aria-label="Compose email to jhaas@pfrc.org."
+               title="Compose email to jhaas@pfrc.org.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
 
-      
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">16 pages</small>
+        <div>
+            <a href="/doc/draft-ietf-bfd-secure-sequence-numbers/">
+                
+                    draft-ietf-bfd-secure-sequence-numbers-09
+                
+            </a>
+            
+            <br>
+            
+            <b>Secure BFD Sequence Numbers</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2022-03-29
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+            <br>
+            
+                Held by WG
+                
+                    :
+                
+            
+        
+        Proposed Standard
+        
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/rrahman@cisco.com" >Reshad Rahman</a> <a class="text-reset"
+               href="mailto:rrahman%40cisco.com"
+               aria-label="Compose email to rrahman@cisco.com."
+               title="Compose email to rrahman@cisco.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">11 pages</small>
+        <div>
+            <a href="/doc/draft-ietf-bfd-unaffiliated-echo/">
+                
+                    draft-ietf-bfd-unaffiliated-echo-04
+                
+            </a>
+            
+            <br>
+            
+            <b>Unaffiliated BFD Echo</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2022-02-08
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+            <br>
+            
+                WG Document
+                
+            
+        
+        
+        
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">15 pages</small>
+        <div>
+            <a href="/doc/draft-ietf-bfd-unsolicited/">
+                
+                    draft-ietf-bfd-unsolicited-09
+                
+            </a>
+            
+            <br>
+            
+            <b>Unsolicited BFD for Sessionless Applications</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2021-12-03
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            Publication Requested
+        
+        
+        
+        <span class="badge bg-danger" title="Goal is &lt;7 days">for 136 days</span>
+        
+        
+            
+        
+        
+            <br>
+            
+                Submitted to IESG for Publication
+                
+                    :
+                
+            
+        
+        Proposed Standard
+        
+        
+            <br>
+            Reviews:
+            <a href="/group/rtgdir/">rtgdir</a>,
+                
+                    <a href="/group/yangdoctors/">yangdoctors</a>
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/jgs@juniper.net" >John Scudder</a> <a 
+               href="mailto:jgs%40juniper.net"
+               aria-label="Compose email to jgs@juniper.net."
+               title="Compose email to jgs@juniper.net.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/jhaas@pfrc.org" >Jeffrey Haas</a> <a class="text-reset"
+               href="mailto:jhaas%40pfrc.org"
+               aria-label="Compose email to jhaas@pfrc.org."
+               title="Compose email to jhaas@pfrc.org.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+    </tbody>
+
     <tbody>
-        <tr class="info">
-          <th></th>
-          
-              <th colspan="5">
-          
-	    Active Internet-Drafts (4 hits)
-          </th>
+        <tr class="table-info">
+            <td></td>
+            
+                <th scope="col" colspan="5">
+            
+            RFCs (17 hits)
+            </th>
         </tr>
     </tbody>
-
     <tbody>
         
-          
+            
 
 
 
 
 
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-ietf-bfd-rfc9127-bis/">draft-ietf-bfd-rfc9127-bis-04</a>
-
-      
-      <br>
-      <b>YANG Data Model for Bidirectional Forwarding Detection (BFD)</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-
-       <a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-bfd-rfc9127-bis-04">
-       
-
-    
-          2022-04-06
-    
-       </a>
-    
-    </span>
 
 
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">49 pages</small>
+        <div>
+            <a href="/doc/rfc5880/">
+                
+                    RFC 5880
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-bfd-base)</i>
+            <br>
+            
+            <b>Bidirectional Forwarding Detection (BFD)</b>
+            
+                <a class="badge bg-danger text-decoration-none float-end"
+                   href="https://www.rfc-editor.org/errata_search.php?rfc=5880">
+                    Errata
+                </a>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2010-06
+                    
+                    
+                
+                
+            </td>
+            
 
-    
-      <br><small class="text-muted">69 pages</small>
-    
-
-    
-    <wbr><div class="pull-right"><span class="label label-success">New</span></div>
-    
-
-    
-
-  </td>
-
-  
 
 
 <td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-bfd-rfc9127-bis">
-    
-  </div>
-
-  
-    
-      Approved-announcement to be sent::<wbr>Revised I-D Needed
-    
-
-    
-
-    <wbr>
-
-    <wbr><span class="ietf-small">for 6 days</span>
     
     
-
-    
-      
-    
-
-    
-      <br>
-      
-	Submitted to IESG for Publication:<wbr>
-      
-    
-
-    
-      Proposed Standard
-    
-
-    
-
-    
-      <br>Reviews:
-      
-        genart, 
-      
-        rtgdir, 
-      
-        secdir, 
-      
-        yangdoctors
-      
-    
-
-    
-
-    
-        <br>Action Holders:
         
-            <wbr><a title="Author, Group Chair" href="/person/reshad@yahoo.com"><span class="">Reshad Rahman</span></a>&nbsp;<a href="mailto:reshad%40yahoo.com"><span class="fa fa-envelope-o tiny"></span></a>
-, 
+        Proposed Standard RFC
         
-            <wbr><a title="Author" href="/person/mjethanandani@gmail.com"><span class="">Mahesh Jethanandani</span></a>&nbsp;<a href="mailto:mjethanandani%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-, 
         
-            <wbr><a title="Author" href="/person/vero.zheng@huawei.com"><span class="">Lianshu Zheng</span></a>&nbsp;<a href="mailto:vero.zheng%40huawei.com"><span class="fa fa-envelope-o tiny"></span></a>
-, 
-        
-            <wbr><a title="Author" href="/person/gregimirsky@gmail.com"><span class="">Greg Mirsky</span></a>&nbsp;<a href="mailto:gregimirsky%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-, 
-        
-            <wbr><a title="Author" href="/person/santosh.pallagatti@gmail.com"><span class="">Santosh Pallagatti</span></a>&nbsp;<a href="mailto:santosh.pallagatti%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-
+            <br>
+            <span class="text-muted">Updated by <a href="/doc/rfc7419/">RFC 7419</a>, <a href="/doc/rfc7880/">RFC 7880</a>, <a href="/doc/rfc8562/">RFC 8562</a></span>
         
     
-  
-
-
-
 </td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/jgs@juniper.net"><span class="">John Scudder</span></a>&nbsp;<a href="mailto:jgs%40juniper.net"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/jhaas@pfrc.org"><span class="small text-muted">Jeffrey Haas</span></a>&nbsp;<a href="mailto:jhaas%40pfrc.org"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
+            <td class="text-center d-none d-sm-table-cell">
+                
+                    <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-bfd-base">
+                        <span class="badge bg-info">6</span>
+                    </a>
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/adrian@olddog.co.uk" >Adrian Farrel</a> <a 
+               href="mailto:adrian%40olddog.co.uk"
+               aria-label="Compose email to adrian@olddog.co.uk."
+               title="Compose email to adrian@olddog.co.uk.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
         
-          
+            
 
 
 
 
 
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-ietf-bfd-secure-sequence-numbers/">draft-ietf-bfd-secure-sequence-numbers-09</a>
-
-      
-      <br>
-      <b>Secure BFD Sequence Numbers</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2022-03-29
-    
-    </span>
 
 
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">7 pages</small>
+        <div>
+            <a href="/doc/rfc5881/">
+                
+                    RFC 5881
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-bfd-v4v6-1hop)</i>
+            <br>
+            
+            <b>Bidirectional Forwarding Detection (BFD) for IPv4 and IPv6 (Single Hop)</b>
+            
+                <a class="badge bg-danger text-decoration-none float-end"
+                   href="https://www.rfc-editor.org/errata_search.php?rfc=5881">
+                    Errata
+                </a>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2010-06
+                    
+                    
+                
+                
+            </td>
+            
 
-    
-      <br><small class="text-muted">16 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
 
 
 <td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-bfd-secure-sequence-numbers">
-    
-  </div>
-
-  
-    
-      I-D Exists
-    
-
-    
-
-    <wbr>
-
-    <wbr>
     
     
-
-    
-      
-    
-
-    
-      <br>
-      
-	Held by WG:<wbr>
-      
-    
-
-    
-      Proposed Standard
-    
-
-    
-
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      <a title="Shepherd" href="/person/rrahman@cisco.com"><span class="small text-muted">Reshad Rahman</span></a>&nbsp;<a href="mailto:rrahman%40cisco.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
         
-          
-
-
-
-
-
-<tr >
-
-  <td>
+        Proposed Standard RFC
+        
+        
     
-    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+                    <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-bfd-v4v6-1hop">
+                        <span class="badge bg-info">2</span>
+                    </a>
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/rcallon@juniper.net" >Ross Callon</a> <a 
+               href="mailto:rcallon%40juniper.net"
+               aria-label="Compose email to rcallon@juniper.net."
+               title="Compose email to rcallon@juniper.net.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
 
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-ietf-bfd-unaffiliated-echo/">draft-ietf-bfd-unaffiliated-echo-04</a>
-
-      
-      <br>
-      <b>Unaffiliated BFD Echo</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2022-02-08
-    
-    </span>
 
 
 
-    
-      <br><small class="text-muted">11 pages</small>
-    
 
-    
 
-    
 
-  </td>
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">17 pages</small>
+        <div>
+            <a href="/doc/rfc5882/">
+                
+                    RFC 5882
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-bfd-generic)</i>
+            <br>
+            
+            <b>Generic Application of Bidirectional Forwarding Detection (BFD)</b>
+            
+                <a class="badge bg-warning text-decoration-none float-end"
+                   href="https://www.rfc-editor.org/errata_search.php?rfc=5882">
+                    Errata
+                </a>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2010-06
+                    
+                    
+                
+                
+            </td>
+            
 
-  
 
 
 <td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-bfd-unaffiliated-echo">
-    
-  </div>
-
-  
-    
-      I-D Exists
-    
-
-    
-
-    <wbr>
-
-    <wbr>
     
     
-
-    
-      
-    
-
-    
-      <br>
-      
-	WG Document
-      
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
         
-          
-
-
-
-
-
-<tr >
-
-  <td>
+        Proposed Standard RFC
+        
+        
     
-    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+                    <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-bfd-generic">
+                        <span class="badge bg-info">2</span>
+                    </a>
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/rcallon@juniper.net" >Ross Callon</a> <a 
+               href="mailto:rcallon%40juniper.net"
+               aria-label="Compose email to rcallon@juniper.net."
+               title="Compose email to rcallon@juniper.net.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
 
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-ietf-bfd-unsolicited/">draft-ietf-bfd-unsolicited-09</a>
-
-      
-      <br>
-      <b>Unsolicited BFD for Sessionless Applications</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2021-12-03
-    
-    </span>
 
 
 
-    
-      <br><small class="text-muted">15 pages</small>
-    
 
-    
 
-    
 
-  </td>
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">6 pages</small>
+        <div>
+            <a href="/doc/rfc5883/">
+                
+                    RFC 5883
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-bfd-multihop)</i>
+            <br>
+            
+            <b>Bidirectional Forwarding Detection (BFD) for Multihop Paths</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2010-06
+                    
+                    
+                
+                
+            </td>
+            
 
-  
 
 
 <td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-bfd-unsolicited">
-    
-  </div>
-
-  
-    
-      Publication Requested
-    
-
-    
-
-    <wbr>
-
-    <wbr><span class="label label-danger" title="Goal is &lt;7 days">for 128 days</span>
     
     
-
-    
-      
-    
-
-    
-      <br>
-      
-	Submitted to IESG for Publication:<wbr>
-      
-    
-
-    
-      Proposed Standard
-    
-
-    
-
-    
-      <br>Reviews:
-      
-        rtgdir, 
-      
-        yangdoctors
-      
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/jgs@juniper.net"><span class="">John Scudder</span></a>&nbsp;<a href="mailto:jgs%40juniper.net"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/jhaas@pfrc.org"><span class="small text-muted">Jeffrey Haas</span></a>&nbsp;<a href="mailto:jhaas%40pfrc.org"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
         
-      
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+                    <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-bfd-multihop">
+                        <span class="badge bg-info">2</span>
+                    </a>
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/rcallon@juniper.net" >Ross Callon</a> <a 
+               href="mailto:rcallon%40juniper.net"
+               aria-label="Compose email to rcallon@juniper.net."
+               title="Compose email to rcallon@juniper.net.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">12 pages</small>
+        <div>
+            <a href="/doc/rfc5884/">
+                
+                    RFC 5884
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-bfd-mpls)</i>
+            <br>
+            
+            <b>Bidirectional Forwarding Detection (BFD) for MPLS Label Switched Paths (LSPs)</b>
+            
+                <a class="badge bg-danger text-decoration-none float-end"
+                   href="https://www.rfc-editor.org/errata_search.php?rfc=5884">
+                    Errata
+                </a>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2010-06
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+            <br>
+            <span class="text-muted">Updated by <a href="/doc/rfc7726/">RFC 7726</a></span>
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+                    <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-bfd-mpls">
+                        <span class="badge bg-info">5</span>
+                    </a>
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/rcallon@juniper.net" >Ross Callon</a> <a 
+               href="mailto:rcallon%40juniper.net"
+               aria-label="Compose email to rcallon@juniper.net."
+               title="Compose email to rcallon@juniper.net.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">11 pages</small>
+        <div>
+            <a href="/doc/rfc7130/">
+                
+                    RFC 7130
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-bfd-on-lags)</i>
+            <br>
+            
+            <b>Bidirectional Forwarding Detection (BFD) on Link Aggregation Group (LAG) Interfaces</b>
+            
+                <a class="badge bg-warning text-decoration-none float-end"
+                   href="https://www.rfc-editor.org/errata_search.php?rfc=7130">
+                    Errata
+                </a>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2014-02
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+                    <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-bfd-on-lags">
+                        <span class="badge bg-info">1</span>
+                    </a>
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/adrian@olddog.co.uk" >Adrian Farrel</a> <a 
+               href="mailto:adrian%40olddog.co.uk"
+               aria-label="Compose email to adrian@olddog.co.uk."
+               title="Compose email to adrian@olddog.co.uk.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/nobo@cisco.com" >Nobo Akiya</a> <a class="text-reset"
+               href="mailto:nobo%40cisco.com"
+               aria-label="Compose email to nobo@cisco.com."
+               title="Compose email to nobo@cisco.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">11 pages</small>
+        <div>
+            <a href="/doc/rfc7330/">
+                
+                    RFC 7330
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-bfd-tc-mib)</i>
+            <br>
+            
+            <b>Definitions of Textual Conventions (TCs) for Bidirectional Forwarding Detection (BFD) Management</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2014-08
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/adrian@olddog.co.uk" >Adrian Farrel</a> <a 
+               href="mailto:adrian%40olddog.co.uk"
+               aria-label="Compose email to adrian@olddog.co.uk."
+               title="Compose email to adrian@olddog.co.uk.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/jhaas@pfrc.org" >Jeffrey Haas</a> <a class="text-reset"
+               href="mailto:jhaas%40pfrc.org"
+               aria-label="Compose email to jhaas@pfrc.org."
+               title="Compose email to jhaas@pfrc.org.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">39 pages</small>
+        <div>
+            <a href="/doc/rfc7331/">
+                
+                    RFC 7331
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-bfd-mib)</i>
+            <br>
+            
+            <b>Bidirectional Forwarding Detection (BFD) Management Information Base</b>
+            
+                <a class="badge bg-danger text-decoration-none float-end"
+                   href="https://www.rfc-editor.org/errata_search.php?rfc=7331">
+                    Errata
+                </a>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2014-08
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/adrian@olddog.co.uk" >Adrian Farrel</a> <a 
+               href="mailto:adrian%40olddog.co.uk"
+               aria-label="Compose email to adrian@olddog.co.uk."
+               title="Compose email to adrian@olddog.co.uk.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/jhaas@pfrc.org" >Jeffrey Haas</a> <a class="text-reset"
+               href="mailto:jhaas%40pfrc.org"
+               aria-label="Compose email to jhaas@pfrc.org."
+               title="Compose email to jhaas@pfrc.org.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">8 pages</small>
+        <div>
+            <a href="/doc/rfc7419/">
+                
+                    RFC 7419
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-bfd-intervals)</i>
+            <br>
+            
+            <b>Common Interval Support in Bidirectional Forwarding Detection</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2014-12
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Informational RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/adrian@olddog.co.uk" >Adrian Farrel</a> <a 
+               href="mailto:adrian%40olddog.co.uk"
+               aria-label="Compose email to adrian@olddog.co.uk."
+               title="Compose email to adrian@olddog.co.uk.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/jhaas@pfrc.org" >Jeffrey Haas</a> <a class="text-reset"
+               href="mailto:jhaas%40pfrc.org"
+               aria-label="Compose email to jhaas@pfrc.org."
+               title="Compose email to jhaas@pfrc.org.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">7 pages</small>
+        <div>
+            <a href="/doc/rfc7726/">
+                
+                    RFC 7726
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-bfd-rfc5884-clarifications)</i>
+            <br>
+            
+            <b>Clarifying Procedures for Establishing BFD Sessions for MPLS Label Switched Paths (LSPs)</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2016-01
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/aretana.ietf@gmail.com" >Alvaro Retana</a> <a 
+               href="mailto:aretana.ietf%40gmail.com"
+               aria-label="Compose email to aretana.ietf@gmail.com."
+               title="Compose email to aretana.ietf@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/jhaas@pfrc.org" >Jeffrey Haas</a> <a class="text-reset"
+               href="mailto:jhaas%40pfrc.org"
+               aria-label="Compose email to jhaas@pfrc.org."
+               title="Compose email to jhaas@pfrc.org.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">24 pages</small>
+        <div>
+            <a href="/doc/rfc7880/">
+                
+                    RFC 7880
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-bfd-seamless-base)</i>
+            <br>
+            
+            <b>Seamless Bidirectional Forwarding Detection (S-BFD)</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2016-07
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+                    <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-bfd-seamless-base">
+                        <span class="badge bg-info">2</span>
+                    </a>
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/aretana.ietf@gmail.com" >Alvaro Retana</a> <a 
+               href="mailto:aretana.ietf%40gmail.com"
+               aria-label="Compose email to aretana.ietf@gmail.com."
+               title="Compose email to aretana.ietf@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/jhaas@pfrc.org" >Jeffrey Haas</a> <a class="text-reset"
+               href="mailto:jhaas%40pfrc.org"
+               aria-label="Compose email to jhaas@pfrc.org."
+               title="Compose email to jhaas@pfrc.org.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">8 pages</small>
+        <div>
+            <a href="/doc/rfc7881/">
+                
+                    RFC 7881
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-bfd-seamless-ip)</i>
+            <br>
+            
+            <b>Seamless Bidirectional Forwarding Detection (S-BFD) for IPv4, IPv6, and MPLS</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2016-07
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+                    <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-bfd-seamless-ip">
+                        <span class="badge bg-info">2</span>
+                    </a>
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/aretana.ietf@gmail.com" >Alvaro Retana</a> <a 
+               href="mailto:aretana.ietf%40gmail.com"
+               aria-label="Compose email to aretana.ietf@gmail.com."
+               title="Compose email to aretana.ietf@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/jhaas@pfrc.org" >Jeffrey Haas</a> <a class="text-reset"
+               href="mailto:jhaas%40pfrc.org"
+               aria-label="Compose email to jhaas@pfrc.org."
+               title="Compose email to jhaas@pfrc.org.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">15 pages</small>
+        <div>
+            <a href="/doc/rfc7882/">
+                
+                    RFC 7882
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-bfd-seamless-use-case)</i>
+            <br>
+            
+            <b>Seamless Bidirectional Forwarding Detection (S-BFD) Use Cases</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2016-07
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Informational RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/aretana.ietf@gmail.com" >Alvaro Retana</a> <a 
+               href="mailto:aretana.ietf%40gmail.com"
+               aria-label="Compose email to aretana.ietf@gmail.com."
+               title="Compose email to aretana.ietf@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/jhaas@pfrc.org" >Jeffrey Haas</a> <a class="text-reset"
+               href="mailto:jhaas%40pfrc.org"
+               aria-label="Compose email to jhaas@pfrc.org."
+               title="Compose email to jhaas@pfrc.org.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">23 pages</small>
+        <div>
+            <a href="/doc/rfc8562/">
+                
+                    RFC 8562
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-bfd-multipoint)</i>
+            <br>
+            
+            <b>Bidirectional Forwarding Detection (BFD) for Multipoint Networks</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2019-04
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/martin.vigoureux@nokia.com" >Martin Vigoureux</a> <a 
+               href="mailto:martin.vigoureux%40nokia.com"
+               aria-label="Compose email to martin.vigoureux@nokia.com."
+               title="Compose email to martin.vigoureux@nokia.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/rrahman@cisco.com" >Reshad Rahman</a> <a class="text-reset"
+               href="mailto:rrahman%40cisco.com"
+               aria-label="Compose email to rrahman@cisco.com."
+               title="Compose email to rrahman@cisco.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">20 pages</small>
+        <div>
+            <a href="/doc/rfc8563/">
+                
+                    RFC 8563
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-bfd-multipoint-active-tail)</i>
+            <br>
+            
+            <b>Bidirectional Forwarding Detection (BFD) Multipoint Active Tails</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2019-04
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/martin.vigoureux@nokia.com" >Martin Vigoureux</a> <a 
+               href="mailto:martin.vigoureux%40nokia.com"
+               aria-label="Compose email to martin.vigoureux@nokia.com."
+               title="Compose email to martin.vigoureux@nokia.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/rrahman@cisco.com" >Reshad Rahman</a> <a class="text-reset"
+               href="mailto:rrahman%40cisco.com"
+               aria-label="Compose email to rrahman@cisco.com."
+               title="Compose email to rrahman@cisco.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">9 pages</small>
+        <div>
+            <a href="/doc/rfc8971/">
+                
+                    RFC 8971
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-bfd-vxlan)</i>
+            <br>
+            
+            <b>Bidirectional Forwarding Detection (BFD) for Virtual eXtensible Local Area Network (VXLAN)</b>
+            
+                <a class="badge bg-danger text-decoration-none float-end"
+                   href="https://www.rfc-editor.org/errata_search.php?rfc=8971">
+                    Errata
+                </a>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2020-12
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Informational RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+                    <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-bfd-vxlan">
+                        <span class="badge bg-info">1</span>
+                    </a>
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/martin.vigoureux@nokia.com" >Martin Vigoureux</a> <a 
+               href="mailto:martin.vigoureux%40nokia.com"
+               aria-label="Compose email to martin.vigoureux@nokia.com."
+               title="Compose email to martin.vigoureux@nokia.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/jhaas@pfrc.org" >Jeffrey Haas</a> <a class="text-reset"
+               href="mailto:jhaas%40pfrc.org"
+               aria-label="Compose email to jhaas@pfrc.org."
+               title="Compose email to jhaas@pfrc.org.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">64 pages</small>
+        <div>
+            <a href="/doc/rfc9127/">
+                
+                    RFC 9127
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-bfd-yang)</i>
+            <br>
+            
+            <b>YANG Data Model for Bidirectional Forwarding Detection (BFD)</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2021-10
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/martin.vigoureux@nokia.com" >Martin Vigoureux</a> <a 
+               href="mailto:martin.vigoureux%40nokia.com"
+               aria-label="Compose email to martin.vigoureux@nokia.com."
+               title="Compose email to martin.vigoureux@nokia.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/jhaas@pfrc.org" >Jeffrey Haas</a> <a class="text-reset"
+               href="mailto:jhaas%40pfrc.org"
+               aria-label="Compose email to jhaas@pfrc.org."
+               title="Compose email to jhaas@pfrc.org.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+    </tbody>
+
+
+
+    
+    
+
+
+
+
+
+
+
+
     <tbody>
-        <tr class="info">
-          <th></th>
-          
-              <th colspan="5">
-          
-	    RFCs (17 hits)
-          </th>
+        <tr class="table-info">
+            <td></td>
+            
+                <th scope="col" colspan="5">
+            
+            Related Internet-Drafts (18 hits)
+            </th>
         </tr>
     </tbody>
-
     <tbody>
         
-          
+            
 
 
 
 
 
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc5880/">RFC 5880</a>
-
-      
-        <i>(was draft-ietf-bfd-base)</i>
-      
-      <br>
-      <b>Bidirectional Forwarding Detection (BFD)</b>
-      
-        <a class="label label-danger pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=5880">Errata</a>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2010-06
-    
-    </span>
 
 
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">11 pages</small>
+        <div>
+            <a href="/doc/draft-ali-spring-bfd-sr-policy/">
+                
+                    draft-ali-spring-bfd-sr-policy-08
+                
+            </a>
+            
+            <br>
+            
+            <b>Bidirectional Forwarding Detection (BFD) for Segment Routing Policies for Traffic Engineering</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2021-11-13
+                    
+                    
+                
+                
+            </td>
+            
 
-    
-      <br><small class="text-muted">49 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
 
 
 <td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-bfd-base">
     
-  </div>
-
-  
-    Proposed Standard RFC
-
     
-
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+        
+        
+        
+        
+        
     
-      <br>Updated by <a href="/doc/rfc7419/">RFC 7419</a>, <a href="/doc/rfc7880/">RFC 7880</a>, <a href="/doc/rfc8562/">RFC 8562</a>
-    
-  
-
-
-
 </td>
-
-
-  <td class="ipr text-center">
-    
-      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-bfd-base">
-        <span class="label label-default">6</span>
-      </a>
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/adrian@olddog.co.uk"><span class="">Adrian Farrel</span></a>&nbsp;<a href="mailto:adrian%40olddog.co.uk"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc5881/">RFC 5881</a>
-
-      
-        <i>(was draft-ietf-bfd-v4v6-1hop)</i>
-      
-      <br>
-      <b>Bidirectional Forwarding Detection (BFD) for IPv4 and IPv6 (Single Hop)</b>
-      
-        <a class="label label-danger pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=5881">Errata</a>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2010-06
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">7 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-bfd-v4v6-1hop">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-bfd-v4v6-1hop">
-        <span class="label label-default">2</span>
-      </a>
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/rcallon@juniper.net"><span class="">Ross Callon</span></a>&nbsp;<a href="mailto:rcallon%40juniper.net"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc5882/">RFC 5882</a>
-
-      
-        <i>(was draft-ietf-bfd-generic)</i>
-      
-      <br>
-      <b>Generic Application of Bidirectional Forwarding Detection (BFD)</b>
-      
-        <a class="label label-warning pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=5882">Errata</a>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2010-06
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">17 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-bfd-generic">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-bfd-generic">
-        <span class="label label-default">2</span>
-      </a>
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/rcallon@juniper.net"><span class="">Ross Callon</span></a>&nbsp;<a href="mailto:rcallon%40juniper.net"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc5883/">RFC 5883</a>
-
-      
-        <i>(was draft-ietf-bfd-multihop)</i>
-      
-      <br>
-      <b>Bidirectional Forwarding Detection (BFD) for Multihop Paths</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2010-06
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">6 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-bfd-multihop">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-bfd-multihop">
-        <span class="label label-default">2</span>
-      </a>
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/rcallon@juniper.net"><span class="">Ross Callon</span></a>&nbsp;<a href="mailto:rcallon%40juniper.net"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc5884/">RFC 5884</a>
-
-      
-        <i>(was draft-ietf-bfd-mpls)</i>
-      
-      <br>
-      <b>Bidirectional Forwarding Detection (BFD) for MPLS Label Switched Paths (LSPs)</b>
-      
-        <a class="label label-danger pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=5884">Errata</a>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2010-06
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">12 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-bfd-mpls">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-      <br>Updated by <a href="/doc/rfc7726/">RFC 7726</a>
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-bfd-mpls">
-        <span class="label label-default">5</span>
-      </a>
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/rcallon@juniper.net"><span class="">Ross Callon</span></a>&nbsp;<a href="mailto:rcallon%40juniper.net"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc7130/">RFC 7130</a>
-
-      
-        <i>(was draft-ietf-bfd-on-lags)</i>
-      
-      <br>
-      <b>Bidirectional Forwarding Detection (BFD) on Link Aggregation Group (LAG) Interfaces</b>
-      
-        <a class="label label-warning pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=7130">Errata</a>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2014-02
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">11 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-bfd-on-lags">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-bfd-on-lags">
-        <span class="label label-default">1</span>
-      </a>
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/adrian@olddog.co.uk"><span class="">Adrian Farrel</span></a>&nbsp;<a href="mailto:adrian%40olddog.co.uk"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/nobo@cisco.com"><span class="small text-muted">Nobo Akiya</span></a>&nbsp;<a href="mailto:nobo%40cisco.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc7330/">RFC 7330</a>
-
-      
-        <i>(was draft-ietf-bfd-tc-mib)</i>
-      
-      <br>
-      <b>Definitions of Textual Conventions (TCs) for Bidirectional Forwarding Detection (BFD) Management</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2014-08
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">11 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-bfd-tc-mib">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/adrian@olddog.co.uk"><span class="">Adrian Farrel</span></a>&nbsp;<a href="mailto:adrian%40olddog.co.uk"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/jhaas@pfrc.org"><span class="small text-muted">Jeffrey Haas</span></a>&nbsp;<a href="mailto:jhaas%40pfrc.org"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc7331/">RFC 7331</a>
-
-      
-        <i>(was draft-ietf-bfd-mib)</i>
-      
-      <br>
-      <b>Bidirectional Forwarding Detection (BFD) Management Information Base</b>
-      
-        <a class="label label-danger pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=7331">Errata</a>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2014-08
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">39 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-bfd-mib">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/adrian@olddog.co.uk"><span class="">Adrian Farrel</span></a>&nbsp;<a href="mailto:adrian%40olddog.co.uk"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/jhaas@pfrc.org"><span class="small text-muted">Jeffrey Haas</span></a>&nbsp;<a href="mailto:jhaas%40pfrc.org"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc7419/">RFC 7419</a>
-
-      
-        <i>(was draft-ietf-bfd-intervals)</i>
-      
-      <br>
-      <b>Common Interval Support in Bidirectional Forwarding Detection</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2014-12
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">8 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-bfd-intervals">
-    
-  </div>
-
-  
-    Informational RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/adrian@olddog.co.uk"><span class="">Adrian Farrel</span></a>&nbsp;<a href="mailto:adrian%40olddog.co.uk"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/jhaas@pfrc.org"><span class="small text-muted">Jeffrey Haas</span></a>&nbsp;<a href="mailto:jhaas%40pfrc.org"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc7726/">RFC 7726</a>
-
-      
-        <i>(was draft-ietf-bfd-rfc5884-clarifications)</i>
-      
-      <br>
-      <b>Clarifying Procedures for Establishing BFD Sessions for MPLS Label Switched Paths (LSPs)</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2016-01
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">7 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-bfd-rfc5884-clarifications">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/aretana.ietf@gmail.com"><span class="">Alvaro Retana</span></a>&nbsp;<a href="mailto:aretana.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/jhaas@pfrc.org"><span class="small text-muted">Jeffrey Haas</span></a>&nbsp;<a href="mailto:jhaas%40pfrc.org"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc7880/">RFC 7880</a>
-
-      
-        <i>(was draft-ietf-bfd-seamless-base)</i>
-      
-      <br>
-      <b>Seamless Bidirectional Forwarding Detection (S-BFD)</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2016-07
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">24 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-bfd-seamless-base">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-bfd-seamless-base">
-        <span class="label label-default">2</span>
-      </a>
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/aretana.ietf@gmail.com"><span class="">Alvaro Retana</span></a>&nbsp;<a href="mailto:aretana.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/jhaas@pfrc.org"><span class="small text-muted">Jeffrey Haas</span></a>&nbsp;<a href="mailto:jhaas%40pfrc.org"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc7881/">RFC 7881</a>
-
-      
-        <i>(was draft-ietf-bfd-seamless-ip)</i>
-      
-      <br>
-      <b>Seamless Bidirectional Forwarding Detection (S-BFD) for IPv4, IPv6, and MPLS</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2016-07
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">8 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-bfd-seamless-ip">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-bfd-seamless-ip">
-        <span class="label label-default">2</span>
-      </a>
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/aretana.ietf@gmail.com"><span class="">Alvaro Retana</span></a>&nbsp;<a href="mailto:aretana.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/jhaas@pfrc.org"><span class="small text-muted">Jeffrey Haas</span></a>&nbsp;<a href="mailto:jhaas%40pfrc.org"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc7882/">RFC 7882</a>
-
-      
-        <i>(was draft-ietf-bfd-seamless-use-case)</i>
-      
-      <br>
-      <b>Seamless Bidirectional Forwarding Detection (S-BFD) Use Cases</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2016-07
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">15 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-bfd-seamless-use-case">
-    
-  </div>
-
-  
-    Informational RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/aretana.ietf@gmail.com"><span class="">Alvaro Retana</span></a>&nbsp;<a href="mailto:aretana.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/jhaas@pfrc.org"><span class="small text-muted">Jeffrey Haas</span></a>&nbsp;<a href="mailto:jhaas%40pfrc.org"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc8562/">RFC 8562</a>
-
-      
-        <i>(was draft-ietf-bfd-multipoint)</i>
-      
-      <br>
-      <b>Bidirectional Forwarding Detection (BFD) for Multipoint Networks</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2019-04
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">23 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-bfd-multipoint">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/martin.vigoureux@nokia.com"><span class="">Martin Vigoureux</span></a>&nbsp;<a href="mailto:martin.vigoureux%40nokia.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/rrahman@cisco.com"><span class="small text-muted">Reshad Rahman</span></a>&nbsp;<a href="mailto:rrahman%40cisco.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc8563/">RFC 8563</a>
-
-      
-        <i>(was draft-ietf-bfd-multipoint-active-tail)</i>
-      
-      <br>
-      <b>Bidirectional Forwarding Detection (BFD) Multipoint Active Tails</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2019-04
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">20 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-bfd-multipoint-active-tail">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/martin.vigoureux@nokia.com"><span class="">Martin Vigoureux</span></a>&nbsp;<a href="mailto:martin.vigoureux%40nokia.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/rrahman@cisco.com"><span class="small text-muted">Reshad Rahman</span></a>&nbsp;<a href="mailto:rrahman%40cisco.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc8971/">RFC 8971</a>
-
-      
-        <i>(was draft-ietf-bfd-vxlan)</i>
-      
-      <br>
-      <b>Bidirectional Forwarding Detection (BFD) for Virtual eXtensible Local Area Network (VXLAN)</b>
-      
-        <a class="label label-danger pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=8971">Errata</a>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2020-12
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">9 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-bfd-vxlan">
-    
-  </div>
-
-  
-    Informational RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-bfd-vxlan">
-        <span class="label label-default">1</span>
-      </a>
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/martin.vigoureux@nokia.com"><span class="">Martin Vigoureux</span></a>&nbsp;<a href="mailto:martin.vigoureux%40nokia.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/jhaas@pfrc.org"><span class="small text-muted">Jeffrey Haas</span></a>&nbsp;<a href="mailto:jhaas%40pfrc.org"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc9127/">RFC 9127</a>
-
-      
-        <i>(was draft-ietf-bfd-yang)</i>
-      
-      <br>
-      <b>YANG Data Model for Bidirectional Forwarding Detection (BFD)</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2021-10
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">64 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-bfd-yang">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/martin.vigoureux@nokia.com"><span class="">Martin Vigoureux</span></a>&nbsp;<a href="mailto:martin.vigoureux%40nokia.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/jhaas@pfrc.org"><span class="small text-muted">Jeffrey Haas</span></a>&nbsp;<a href="mailto:jhaas%40pfrc.org"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-      
-    </tbody>
-  </table>
-
-
-  
-  
-
-
-
-
-  
-
-  
-  <table class="table table-condensed table-striped tablesorter">
-    <thead>
-      <tr>
-        <th class="sorter-false"></th>
-
-        
-          
-            <th data-header="document">
-	      
-	        Document
-	      
-            </th>
-          
-        
-          
-        
-          
-            <th data-header="date">
-	      
-	        Date
-	      
-            </th>
-          
-        
-          
-            <th data-header="status">
-	      
-	        Status
-	      
-            </th>
-          
-        
-          
-            <th data-header="ipr">
-	      
-	        IPR
-	      
-            </th>
-          
-        
-          
-            <th data-header="ad">
-	      
-	        AD / Shepherd
-	      
-            </th>
-          
-        
-
-        
-      </tr>
-    </thead>
-
-    
-
-      
-    <tbody>
-        <tr class="info">
-          <th></th>
-          
-              <th colspan="5">
-          
-	    Related Internet-Drafts (18 hits)
-          </th>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
         </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">9 pages</small>
+        <div>
+            <a href="/doc/draft-chen-spring-sr-policy-for-ubfd/">
+                
+                    draft-chen-spring-sr-policy-for-ubfd-04
+                
+            </a>
+            
+            <br>
+            
+            <b>Segment Routing for Unaffiliated BFD Echo Function</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2022-03-21
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+        
+        
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">7 pages</small>
+        <div>
+            <a href="/doc/draft-hwy-bfd-sdi/">
+                
+                    draft-hwy-bfd-sdi-00
+                
+            </a>
+            
+            <br>
+            
+            <b>Signal Degrade Indication in BFD</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2021-10-25
+                    
+                    
+                
+                
+                    <br>
+                    <span class="badge bg-warning">Expires soon</span>
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+        
+        
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">5 pages</small>
+        <div>
+            <a href="/doc/draft-ietf-idr-bfd-subcode/">
+                
+                    draft-ietf-idr-bfd-subcode-02
+                
+            </a>
+            
+            <br>
+            
+            <b>BGP Cease Notification Subcode For BFD</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2022-02-24
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+            <br>
+            
+                WG Document
+                
+            
+        
+        
+        
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">6 pages</small>
+        <div>
+            <a href="/doc/draft-ietf-idr-bgp-bfd-strict-mode/">
+                
+                    draft-ietf-idr-bgp-bfd-strict-mode-06
+                
+            </a>
+            
+            <br>
+            
+            <b>BGP BFD Strict-Mode</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2021-11-08
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+            <br>
+            
+                WG Document
+                
+            
+        
+        
+        
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">7 pages</small>
+        <div>
+            <a href="/doc/draft-ietf-idr-bgp-ls-sbfd-extensions/">
+                
+                    draft-ietf-idr-bgp-ls-sbfd-extensions-07
+                
+            </a>
+            
+            <br>
+            
+            <b>BGP Link-State Extensions for Seamless BFD</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                
+                    <a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-idr-bgp-ls-sbfd-extensions-07">
+                    
+                    
+                    
+                        2022-04-11
+                    
+                    
+                        </a>
+                    
+                
+                    <br>
+                    <div class="float-end">
+                        <span class="badge bg-success">New</span>
+                    </div>
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            In Last Call (ends 2022-04-27)
+        
+        
+        
+        <span class="badge bg-success">for 9 days</span>
+        
+        
+            
+        
+        
+            <br>
+            
+                Submitted to IESG for Publication
+                
+                    :
+                
+            
+        
+        Proposed Standard
+        
+        
+            <br>
+            Reviews:
+            <a href="/group/genart/">genart</a>,
+                
+                    <a href="/group/opsdir/">opsdir</a>,
+                
+                    <a href="/group/rtgdir/">rtgdir</a>,
+                
+                    <a href="/group/secdir/">secdir</a>
+        
+        
+        
+            <br>
+            Action Holder:
+            
+                <span ><a 
+           title="Responsible AD"
+            href="/person/aretana.ietf@gmail.com" >Alvaro Retana</a> <a 
+               href="mailto:aretana.ietf%40gmail.com"
+               aria-label="Compose email to aretana.ietf@gmail.com."
+               title="Compose email to aretana.ietf@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+            
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/aretana.ietf@gmail.com" >Alvaro Retana</a> <a 
+               href="mailto:aretana.ietf%40gmail.com"
+               aria-label="Compose email to aretana.ietf@gmail.com."
+               title="Compose email to aretana.ietf@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/jhaas@pfrc.org" >Jeffrey Haas</a> <a class="text-reset"
+               href="mailto:jhaas%40pfrc.org"
+               aria-label="Compose email to jhaas@pfrc.org."
+               title="Compose email to jhaas@pfrc.org.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">10 pages</small>
+        <div>
+            <a href="/doc/draft-ietf-lsr-ospf-bfd-strict-mode/">
+                
+                    draft-ietf-lsr-ospf-bfd-strict-mode-05
+                
+            </a>
+            
+            <br>
+            
+            <b>OSPF BFD Strict-Mode</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2022-02-10
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            Publication Requested
+        
+        
+        
+        <span class="badge bg-danger" title="Goal is &lt;7 days">for 70 days</span>
+        
+        
+            
+        
+        
+            <br>
+            
+                Submitted to IESG for Publication
+                
+                    :
+                
+            
+        
+        Proposed Standard
+        
+        
+            <br>
+            Review:
+            <a href="/group/rtgdir/">rtgdir</a>
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/jgs@juniper.net" >John Scudder</a> <a 
+               href="mailto:jgs%40juniper.net"
+               aria-label="Compose email to jgs@juniper.net."
+               title="Compose email to jgs@juniper.net.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/acee@cisco.com" >Acee Lindem</a> <a class="text-reset"
+               href="mailto:acee%40cisco.com"
+               aria-label="Compose email to acee@cisco.com."
+               title="Compose email to acee@cisco.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">9 pages</small>
+        <div>
+            <a href="/doc/draft-ietf-mpls-bfd-directed/">
+                
+                    draft-ietf-mpls-bfd-directed-19
+                
+            </a>
+            
+            <br>
+            
+            <b>Bidirectional Forwarding Detection (BFD) Directed Return Path for MPLS Label Switched Paths (LSPs)</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2022-02-14
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+            <br>
+            
+                WG Document
+                
+                    :
+                
+            
+        
+        Proposed Standard
+        
+        
+            <br>
+            Review:
+            <a href="/group/rtgdir/">rtgdir</a>
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+                    <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-mpls-bfd-directed">
+                        <span class="badge bg-info">3</span>
+                    </a>
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/n.leymann@telekom.de" >Nicolai Leymann</a> <a class="text-reset"
+               href="mailto:n.leymann%40telekom.de"
+               aria-label="Compose email to n.leymann@telekom.de."
+               title="Compose email to n.leymann@telekom.de.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">11 pages</small>
+        <div>
+            <a href="/doc/draft-ietf-mpls-p2mp-bfd/">
+                
+                    draft-ietf-mpls-p2mp-bfd-01
+                
+            </a>
+            
+            <br>
+            
+            <b>BFD for Multipoint Networks over Point-to-Multi-Point MPLS LSP</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2022-02-10
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+            <br>
+            
+                WG Document
+                
+            
+        
+        
+        
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">12 pages</small>
+        <div>
+            <a href="/doc/draft-ietf-nvo3-bfd-geneve/">
+                
+                    draft-ietf-nvo3-bfd-geneve-05
+                
+            </a>
+            
+            <br>
+            
+            <b>BFD for Geneve</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2021-11-11
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+            <br>
+            
+                WG Document
+                
+            
+        
+        
+        
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">6 pages</small>
+        <div>
+            <a href="/doc/draft-ietf-rtgwg-vrrp-p2mp-bfd/">
+                
+                    draft-ietf-rtgwg-vrrp-p2mp-bfd-02
+                
+            </a>
+            
+            <br>
+            
+            <b>Applicability of Bidirectional Forwarding Detection (BFD) for Multi-point Networks in Virtual Router Redundancy Protocol (VRRP)</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2022-03-31
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+            <br>
+            
+                WG Document
+                
+            
+        
+        
+        
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+                    <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-rtgwg-vrrp-p2mp-bfd">
+                        <span class="badge bg-info">3</span>
+                    </a>
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">15 pages</small>
+        <div>
+            <a href="/doc/draft-ietf-spring-bfd/">
+                
+                    draft-ietf-spring-bfd-03
+                
+            </a>
+            
+            <br>
+            
+            <b>Bidirectional Forwarding Detection (BFD) in Segment Routing Networks Using MPLS Dataplane</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2022-03-27
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+            <br>
+            
+                WG Document
+                
+            
+        
+        
+        
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">12 pages</small>
+        <div>
+            <a href="/doc/draft-lin-sbfd-path-consistency-over-srv6/">
+                
+                    draft-lin-sbfd-path-consistency-over-srv6-01
+                
+            </a>
+            
+            <br>
+            
+            <b>S-BFD Path Consistency over SRv6</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                
+                    <a href="https://www.ietf.org/rfcdiff?url2=draft-lin-sbfd-path-consistency-over-srv6-01">
+                    
+                    
+                    
+                        2022-04-12
+                    
+                    
+                        </a>
+                    
+                
+                    <br>
+                    <div class="float-end">
+                        <span class="badge bg-success">New</span>
+                    </div>
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+        
+        
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">6 pages</small>
+        <div>
+            <a href="/doc/draft-mirsky-bfd-mpls-demand/">
+                
+                    draft-mirsky-bfd-mpls-demand-11
+                
+            </a>
+            
+            <br>
+            
+            <b>BFD in Demand Mode over Point-to-Point MPLS LSP</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2022-03-07
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+            <br>
+            
+                Call For Adoption By WG Issued
+                
+            
+        
+        
+        
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+                    <a href="/ipr/search/?submit=draft&amp;id=draft-mirsky-bfd-mpls-demand">
+                        <span class="badge bg-info">3</span>
+                    </a>
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">5 pages</small>
+        <div>
+            <a href="/doc/draft-mtm-rtgwg-bfd-mc-lag/">
+                
+                    draft-mtm-rtgwg-bfd-mc-lag-04
+                
+            </a>
+            
+            <br>
+            
+            <b>Bidirectional Forwarding Detection (BFD) on Multi-chassis Link Aggregation Group (MC-LAG) Interfaces</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2022-03-30
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+        
+        
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+                    <a href="/ipr/search/?submit=draft&amp;id=draft-mtm-rtgwg-bfd-mc-lag">
+                        <span class="badge bg-info">2</span>
+                    </a>
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">14 pages</small>
+        <div>
+            <a href="/doc/draft-palanivelan-bfd-v2-gr/">
+                
+                    draft-palanivelan-bfd-v2-gr-13
+                
+            </a>
+            
+            <br>
+            
+            <b>A Record of Discussions of Graceful Restart Extensions for Bidirectional Forwarding Detection (BFD)</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2011-11-17
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+        <div class="float-end ms-1 mb-1" id="ballot-icon-draft-palanivelan-bfd-v2-gr"><a  href="/doc/draft-palanivelan-bfd-v2-gr/ballotpopup/288021/" data-bs-toggle="modal" data-bs-target="#modal-288021" aria-label="IESG positions" title="IESG positions (click to show more)" class="ballot-icon"><table><tbody><tr><td class="position-norecord"></td><td class="position-norecord"></td><td class="position-norecord"></td><td class="position-norecord"></td><td class="position-norecord"></td></tr><tr><td class="position-norecord"></td><td class="position-norecord"></td><td class="position-norecord"></td><td class="position-norecord"></td><td class="position-norecord"></td></tr><tr><td class="position-norecord"></td><td class="position-norecord"></td><td class="position-norecord"></td><td class="position-norecord"></td><td class="position-empty"></td></tr></tbody></table></a><div id="modal-288021" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable modal-xl"><div class="modal-content"></div></div></div></div>
+    
+    
+        
+            I-D Exists (IESG: Dead)
+        
+        
+        
+        
+        
+        
+            
+        
+        
+        Historic
+        
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/adrian@olddog.co.uk" >Adrian Farrel</a> <a 
+               href="mailto:adrian%40olddog.co.uk"
+               aria-label="Compose email to adrian@olddog.co.uk."
+               title="Compose email to adrian@olddog.co.uk.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">10 pages</small>
+        <div>
+            <a href="/doc/draft-rvelucha-bfd-offload-yang/">
+                
+                    draft-rvelucha-bfd-offload-yang-02
+                
+            </a>
+            
+            <br>
+            
+            <b>YANG Data Model for Bidirectional Forwarding Detection (BFD) Hardware Offloaded Session</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2022-02-22
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+        
+        
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">12 pages</small>
+        <div>
+            <a href="/doc/draft-wang-bess-sbfd-discriminator/">
+                
+                    draft-wang-bess-sbfd-discriminator-02
+                
+            </a>
+            
+            <br>
+            
+            <b>Advertising S-BFD Discriminators in BGP</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                
+                    <a href="https://www.ietf.org/rfcdiff?url2=draft-wang-bess-sbfd-discriminator-02">
+                    
+                    
+                    
+                        2022-04-16
+                    
+                    
+                        </a>
+                    
+                
+                    <br>
+                    <div class="float-end">
+                        <span class="badge bg-success">New</span>
+                    </div>
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+        
+        
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
     </tbody>
 
-    <tbody>
-        
-          
+</table>
 
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-ali-spring-bfd-sr-policy/">draft-ali-spring-bfd-sr-policy-08</a>
-
-      
-      <br>
-      <b>Bidirectional Forwarding Detection (BFD) for Segment Routing Policies for Traffic Engineering</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2021-11-13
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">11 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ali-spring-bfd-sr-policy">
-    
-  </div>
-
-  
-    
-      I-D Exists
-    
-
-    
-
-    <wbr>
-
-    <wbr>
-    
-    
-
-    
-      
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-chen-spring-sr-policy-for-ubfd/">draft-chen-spring-sr-policy-for-ubfd-04</a>
-
-      
-      <br>
-      <b>Segment Routing for Unaffiliated BFD Echo Function</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2022-03-21
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">9 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-chen-spring-sr-policy-for-ubfd">
-    
-  </div>
-
-  
-    
-      I-D Exists
-    
-
-    
-
-    <wbr>
-
-    <wbr>
-    
-    
-
-    
-      
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-hwy-bfd-sdi/">draft-hwy-bfd-sdi-00</a>
-
-      
-      <br>
-      <b>Signal Degrade Indication in BFD</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2021-10-25
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">7 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-hwy-bfd-sdi">
-    
-  </div>
-
-  
-    
-      I-D Exists
-    
-
-    
-
-    <wbr>
-
-    <wbr>
-    
-    
-
-    
-      
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-ietf-idr-bfd-subcode/">draft-ietf-idr-bfd-subcode-02</a>
-
-      
-      <br>
-      <b>BGP Cease Notification Subcode For BFD</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2022-02-24
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">5 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-idr-bfd-subcode">
-    
-  </div>
-
-  
-    
-      I-D Exists
-    
-
-    
-
-    <wbr>
-
-    <wbr>
-    
-    
-
-    
-      
-    
-
-    
-      <br>
-      
-	WG Document
-      
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-ietf-idr-bgp-bfd-strict-mode/">draft-ietf-idr-bgp-bfd-strict-mode-06</a>
-
-      
-      <br>
-      <b>BGP BFD Strict-Mode</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2021-11-08
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">6 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-idr-bgp-bfd-strict-mode">
-    
-  </div>
-
-  
-    
-      I-D Exists
-    
-
-    
-
-    <wbr>
-
-    <wbr>
-    
-    
-
-    
-      
-    
-
-    
-      <br>
-      
-	WG Document
-      
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-ietf-idr-bgp-ls-sbfd-extensions/">draft-ietf-idr-bgp-ls-sbfd-extensions-07</a>
-
-      
-      <br>
-      <b>BGP Link-State Extensions for Seamless BFD</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-
-       <a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-idr-bgp-ls-sbfd-extensions-07">
-       
-
-    
-          2022-04-11
-    
-       </a>
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">7 pages</small>
-    
-
-    
-    <wbr><div class="pull-right"><span class="label label-success">New</span></div>
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-idr-bgp-ls-sbfd-extensions">
-    
-  </div>
-
-  
-    
-      In Last Call (ends 2022-04-27)
-    
-
-    
-
-    <wbr>
-
-    <wbr><span class="ietf-small">for 1 day</span>
-    
-    
-
-    
-      
-    
-
-    
-      <br>
-      
-	Submitted to IESG for Publication:<wbr>
-      
-    
-
-    
-      Proposed Standard
-    
-
-    
-
-    
-
-    
-
-    
-        <br>Action Holders:
-        
-            <wbr><a title="Responsible AD" href="/person/aretana.ietf@gmail.com"><span class="">Alvaro Retana</span></a>&nbsp;<a href="mailto:aretana.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-        
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/aretana.ietf@gmail.com"><span class="">Alvaro Retana</span></a>&nbsp;<a href="mailto:aretana.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/jhaas@pfrc.org"><span class="small text-muted">Jeffrey Haas</span></a>&nbsp;<a href="mailto:jhaas%40pfrc.org"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-ietf-lsr-ospf-bfd-strict-mode/">draft-ietf-lsr-ospf-bfd-strict-mode-05</a>
-
-      
-      <br>
-      <b>OSPF BFD Strict-Mode</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2022-02-10
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">10 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-lsr-ospf-bfd-strict-mode">
-    
-  </div>
-
-  
-    
-      Publication Requested
-    
-
-    
-
-    <wbr>
-
-    <wbr><span class="label label-danger" title="Goal is &lt;7 days">for 62 days</span>
-    
-    
-
-    
-      
-    
-
-    
-      <br>
-      
-	Submitted to IESG for Publication:<wbr>
-      
-    
-
-    
-      Proposed Standard
-    
-
-    
-
-    
-      <br>Reviews:
-      
-        rtgdir
-      
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/jgs@juniper.net"><span class="">John Scudder</span></a>&nbsp;<a href="mailto:jgs%40juniper.net"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/acee@cisco.com"><span class="small text-muted">Acee Lindem</span></a>&nbsp;<a href="mailto:acee%40cisco.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-ietf-mpls-bfd-directed/">draft-ietf-mpls-bfd-directed-19</a>
-
-      
-      <br>
-      <b>Bidirectional Forwarding Detection (BFD) Directed Return Path for MPLS Label Switched Paths (LSPs)</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2022-02-14
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">9 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-mpls-bfd-directed">
-    
-  </div>
-
-  
-    
-      I-D Exists
-    
-
-    
-
-    <wbr>
-
-    <wbr>
-    
-    
-
-    
-      
-    
-
-    
-      <br>
-      
-	WG Document:<wbr>
-      
-    
-
-    
-      Proposed Standard
-    
-
-    
-
-    
-      <br>Reviews:
-      
-        rtgdir
-      
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-mpls-bfd-directed">
-        <span class="label label-default">3</span>
-      </a>
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      <a title="Shepherd" href="/person/n.leymann@telekom.de"><span class="small text-muted">Nicolai Leymann</span></a>&nbsp;<a href="mailto:n.leymann%40telekom.de"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-ietf-mpls-p2mp-bfd/">draft-ietf-mpls-p2mp-bfd-01</a>
-
-      
-      <br>
-      <b>BFD for Multipoint Networks over Point-to-Multi-Point MPLS LSP</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2022-02-10
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">11 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-mpls-p2mp-bfd">
-    
-  </div>
-
-  
-    
-      I-D Exists
-    
-
-    
-
-    <wbr>
-
-    <wbr>
-    
-    
-
-    
-      
-    
-
-    
-      <br>
-      
-	WG Document
-      
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-ietf-nvo3-bfd-geneve/">draft-ietf-nvo3-bfd-geneve-05</a>
-
-      
-      <br>
-      <b>BFD for Geneve</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2021-11-11
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">12 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-nvo3-bfd-geneve">
-    
-  </div>
-
-  
-    
-      I-D Exists
-    
-
-    
-
-    <wbr>
-
-    <wbr>
-    
-    
-
-    
-      
-    
-
-    
-      <br>
-      
-	WG Document
-      
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-ietf-rtgwg-vrrp-p2mp-bfd/">draft-ietf-rtgwg-vrrp-p2mp-bfd-02</a>
-
-      
-      <br>
-      <b>Applicability of Bidirectional Forwarding Detection (BFD) for Multi-point Networks in Virtual Router Redundancy Protocol (VRRP)</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-
-       <a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-rtgwg-vrrp-p2mp-bfd-02">
-       
-
-    
-          2022-03-31
-    
-       </a>
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">6 pages</small>
-    
-
-    
-    <wbr><div class="pull-right"><span class="label label-success">New</span></div>
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-rtgwg-vrrp-p2mp-bfd">
-    
-  </div>
-
-  
-    
-      I-D Exists
-    
-
-    
-
-    <wbr>
-
-    <wbr>
-    
-    
-
-    
-      
-    
-
-    
-      <br>
-      
-	WG Document
-      
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-rtgwg-vrrp-p2mp-bfd">
-        <span class="label label-default">3</span>
-      </a>
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-ietf-spring-bfd/">draft-ietf-spring-bfd-03</a>
-
-      
-      <br>
-      <b>Bidirectional Forwarding Detection (BFD) in Segment Routing Networks Using MPLS Dataplane</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2022-03-27
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">15 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-spring-bfd">
-    
-  </div>
-
-  
-    
-      I-D Exists
-    
-
-    
-
-    <wbr>
-
-    <wbr>
-    
-    
-
-    
-      
-    
-
-    
-      <br>
-      
-	WG Document
-      
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-lin-sbfd-path-consistency-over-srv6/">draft-lin-sbfd-path-consistency-over-srv6-01</a>
-
-      
-      <br>
-      <b>S-BFD Path Consistency over SRv6</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-
-       <a href="https://www.ietf.org/rfcdiff?url2=draft-lin-sbfd-path-consistency-over-srv6-01">
-       
-
-    
-          2022-04-12
-    
-       </a>
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">12 pages</small>
-    
-
-    
-    <wbr><div class="pull-right"><span class="label label-success">New</span></div>
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-lin-sbfd-path-consistency-over-srv6">
-    
-  </div>
-
-  
-    
-      I-D Exists
-    
-
-    
-
-    <wbr>
-
-    <wbr>
-    
-    
-
-    
-      
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-mirsky-bfd-mpls-demand/">draft-mirsky-bfd-mpls-demand-11</a>
-
-      
-      <br>
-      <b>BFD in Demand Mode over Point-to-Point MPLS LSP</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2022-03-07
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">6 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-mirsky-bfd-mpls-demand">
-    
-  </div>
-
-  
-    
-      I-D Exists
-    
-
-    
-
-    <wbr>
-
-    <wbr>
-    
-    
-
-    
-      
-    
-
-    
-      <br>
-      
-	Call For Adoption By WG Issued
-      
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-      <a href="/ipr/search/?submit=draft&amp;id=draft-mirsky-bfd-mpls-demand">
-        <span class="label label-default">3</span>
-      </a>
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-mtm-rtgwg-bfd-mc-lag/">draft-mtm-rtgwg-bfd-mc-lag-04</a>
-
-      
-      <br>
-      <b>Bidirectional Forwarding Detection (BFD) on Multi-chassis Link Aggregation Group (MC-LAG) Interfaces</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-
-       <a href="https://www.ietf.org/rfcdiff?url2=draft-mtm-rtgwg-bfd-mc-lag-04">
-       
-
-    
-          2022-03-30
-    
-       </a>
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">5 pages</small>
-    
-
-    
-    <wbr><div class="pull-right"><span class="label label-success">New</span></div>
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-mtm-rtgwg-bfd-mc-lag">
-    
-  </div>
-
-  
-    
-      I-D Exists
-    
-
-    
-
-    <wbr>
-
-    <wbr>
-    
-    
-
-    
-      
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-      <a href="/ipr/search/?submit=draft&amp;id=draft-mtm-rtgwg-bfd-mc-lag">
-        <span class="label label-default">2</span>
-      </a>
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-palanivelan-bfd-v2-gr/">draft-palanivelan-bfd-v2-gr-13</a>
-
-      
-      <br>
-      <b>A Record of Discussions of Graceful Restart Extensions for Bidirectional Forwarding Detection (BFD)</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2011-11-17
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">14 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-palanivelan-bfd-v2-gr">
-    <a  href="/doc/draft-palanivelan-bfd-v2-gr/ballotpopup/288021/" data-toggle="modal" data-target="#modal-288021" title="IESG positions (click to show more)" class="ballot-icon"><table><tr><td class="position-norecord"></td><td class="position-norecord"></td><td class="position-norecord"></td><td class="position-norecord"></td><td class="position-norecord"></td></tr><tr><td class="position-norecord"></td><td class="position-norecord"></td><td class="position-norecord"></td><td class="position-norecord"></td><td class="position-norecord"></td></tr><tr><td class="position-norecord"></td><td class="position-norecord"></td><td class="position-norecord"></td><td class="position-norecord"></td><td class="empty"></td></tr></table></a><div id="modal-288021" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true"><div class="modal-dialog modal-lg"><div class="modal-content"></div></div></div>
-  </div>
-
-  
-    
-      I-D Exists (IESG: Dead)
-    
-
-    
-
-    <wbr>
-
-    <wbr>
-    
-    
-
-    
-      
-    
-
-    
-
-    
-      Historic
-    
-
-    
-
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/adrian@olddog.co.uk"><span class="">Adrian Farrel</span></a>&nbsp;<a href="mailto:adrian%40olddog.co.uk"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-rvelucha-bfd-offload-yang/">draft-rvelucha-bfd-offload-yang-02</a>
-
-      
-      <br>
-      <b>YANG Data Model for Bidirectional Forwarding Detection (BFD) Hardware Offloaded Session</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2022-02-22
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">10 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-rvelucha-bfd-offload-yang">
-    
-  </div>
-
-  
-    
-      I-D Exists
-    
-
-    
-
-    <wbr>
-
-    <wbr>
-    
-    
-
-    
-      
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-wang-bess-sbfd-discriminator/">draft-wang-bess-sbfd-discriminator-01</a>
-
-      
-      <br>
-      <b>Advertising S-BFD Discriminators in BGP</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2022-01-03
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">11 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-wang-bess-sbfd-discriminator">
-    
-  </div>
-
-  
-    
-      I-D Exists
-    
-
-    
-
-    <wbr>
-
-    <wbr>
-    
-    
-
-    
-      
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-      
-    </tbody>
-  </table>
-
-
-  <ul class="list-inline pull-right" style="margin-top:1em;">
-  <li>
+    <div class="text-end">
     <label id="list-feeds">Atom feed:</label>
     <div class="btn-group" role="group" aria-labelledby="list-feeds">
-      <a class="btn btn-default" title="Feed of all changes" href="/group/bfd/documents/feed/">All changes</a>
-      <a class="btn btn-default" title="Feed of only significant state changes" href="/group/bfd/documents/feed/?significant=1">Significant</a>
+        <a class="btn btn-primary"
+           title="Feed of all changes"
+           href="/group/bfd/documents/feed/">
+            <i class="bi bi-rss"></i> All changes
+        </a>
+        <a class="btn btn-primary"
+           title="Feed of only significant state changes"
+           href="/group/bfd/documents/feed/?significant=1">
+            <i class="bi bi-rss"></i> Significant
+        </a>
     </div>
-  </li>
-
-  
-    <li><a class="btn btn-default" href="/group/bfd/documents/subscription/">
-      <i class="glyphicon glyphicon-envelope"></i>
-      
-        Subscribe to changes
-      
-    </a></li>
-  
-
-  <li><a class="btn btn-default" href="/group/bfd/documents/csv/"><i class="glyphicon glyphicon-list"></i> Export as CSV</a></li>
-</ul>
-
-
-
+    
+        <a class="btn btn-primary"
+           href="/group/bfd/documents/subscription/">
+            <i class="bi bi-envelope"></i>
+            
+                Subscribe to changes
+            
+        </a>
+    
+    <a class="btn btn-primary"
+       href="/group/bfd/documents/csv/">
+        <i class="bi bi-file-ruled"></i> Export as CSV
+    </a>
+</div>
 
 
+                    
+                </div>
+            </div>
+            <hr>
+            
+                <footer class="col-md-12 col-sm-12 text-center">
+                    <a href="https://www.ietf.org/" class="p-3">IETF</a>
+                    <a href="https://www.ietf.org/iesg/" class="p-3">IESG</a>
+                    <a href="https://www.iab.org/" class="p-3">IAB</a>
+                    <a href="https://www.irtf.org/" class="p-3">IRTF</a>
+                    <a href="https://www.ietf.org/llc/" class="p-3">IETF&nbsp;LLC</a>
+                    <a href="https://trustee.ietf.org/" class="p-3">IETF&nbsp;Trust</a>
+                    <a href="https://www.rfc-editor.org/" class="p-3">RFC&nbsp;Editor</a>
+                    <a href="https://www.iana.org/" class="p-3">IANA</a>
+                    <a href="https://www.ietf.org/privacy-statement/" class="p-3">Privacy&nbsp;Statement</a>
+                    <div class="small text-muted p-3">
+                        
+                            <a href="/release/about">About</a>
+                            <a href="https://github.com/ietf-tools/datatracker/">IETF Datatracker</a>
+                            
+                                <a href="https://github.com/ietf-tools/datatracker/releases/tag/8.0.0">Version 8.0.0</a>
+                            
+                            (main - 87fac4e)
+                        
+                        Report a bug:
+                        <a href="https://github.com/ietf-tools/datatracker/issues/new/choose">
+                            GitHub
+                            <i class="bi bi-bug"></i>
+                        </a>
+                        
+                            <a href="mailto:datatracker-project@ietf.org">
+                                Email
+                                <i class="bi bi-envelope"></i>
+                            </a>
+                        
+                        <br>
+                        Python 3.6.12
+                        Django 2.2.28
+                        <br>
+                        
+
+
+
+
+
+                    </div>
+                </footer>
+            
+        </div>
         
-        
-	  </div>
-        
+    <script src="https://www.ietf.org/lib/dt/8.0.0/ietf/js/list.js"></script>
 
-	
-	<hr>
-	  <div class="col-md-12 col-sm-12">
-	    <div class="text-center padded">
-	        <a href="https://www.rfc-editor.org/" class="padded">RFC&nbsp;Editor</a>
-	        <a href="https://www.ietf.org/llc/" class="padded">IASA&nbsp;&amp;&nbsp;IETF&nbsp;LLC</a>
-	        <a href="https://trustee.ietf.org/" class="padded">IETF&nbsp;Trust</a>
-	        <a href="https://www.irtf.org/" class="padded">IRTF</a>
-	        <a href="https://www.ietf.org/" class="padded">IETF</a>
-	        <a href="https://www.ietf.org/iesg/" class="padded">IESG</a>
-	        <a href="https://www.iab.org/" class="padded">IAB</a>
-	        <a href="https://www.iana.org/" class="padded">IANA</a>
-	        <a href="https://www.ietf.org/privacy-statement/" class="padded">Privacy&nbsp;Statement</a>
-	    </div>
-	  </div>
-
-
-        <footer class="col-md-12 col-sm-12">
-	  <div class="col-md-12">
-	    <div class="text-center">
-	      <p class="small text-muted">
-	        
-		  <a href="/release/about">About</a> |
-	          IETF Datatracker |
-	          <a href="/release/7.46.0.p4/">Version 7.46.0.p4</a> |
-	          2022-03-10 |
-	        
-		Report a bug:
-	        <a href="https://trac.ietf.org/trac/ietfdb/newticket">Tracker:<span class="fa fa-bug"></span></a>
-                
-	        <a href="mailto:datatracker-project@ietf.org">Email:<span class="fa fa-envelope"></span></a>
-                
-		<br>
-                Python 3.6.12 |
-		Django 2.2.27
-	      </p>
-	    </div>
-	  </div>
-        </footer>
-	
-
-      </div>
-
-      
-
-
-
-
-      <script src="https://www.ietf.org/lib/dt/7.46.0/jquery/jquery.min.js"></script>
-      
-      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
-      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
-      <script src="https://www.ietf.org/lib/dt/7.46.0/js-cookie/src/js.cookie.js"></script>
-      <script src="https://www.ietf.org/lib/dt/7.46.0/ietf/bootstrap/js/bootstrap.min.js"></script>
-      <script src="https://www.ietf.org/lib/dt/7.46.0/ietf/js/ietf.js"></script>
-      
-<script src="https://www.ietf.org/lib/dt/7.46.0/jquery.tablesorter/js/jquery.tablesorter.combined.min.js"></script>
-
-      
-  <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6fb2aba9eeea6a9c',m:'0V4WMLlu5HpWGreJHrurXn0cxcMRGuBy_yxMrAwIzeY-1649836855-0-AVcZQgOSV0Xt890tfERxwaUqmx+gPf+rcqQWeDJ2gKktCLxMVRwrRwrV2X43stoRlCK89CjPa+hn25HDI6ENW1jkLVQmqBpZEapoJF8wd0279R9Hp44wRFe7wvhB+EZ6gWtxQUo9Fjrlq5QUNMpPBf0=',s:[0x5034713d4b,0x78be1c4b45],}})();</script></body>
+        <script src="https://www.ietf.org/lib/dt/8.0.0/ietf/js/select2.js"></script>
+        <script>
+            $('#navbar-doc-search').on('select2:select', function (e) {
+                window.location.href = e.params.data.url;
+            });
+        </script>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6ff48dae6f616a8a',m:'1dnuNhSQyZf.3iiZns3raM8sL.IVJPKfd3Z1I3ltzFE-1650527688-0-AYwkJSeE9k83a9Q/VQQ9emQFch2aJUw3AC3umEmsQdijEku2fctQS0D3WrvmUrg98OTtMmiem0xLWkvgLcPAWeQlOtd84Ss6oZulq9lZbqt1Pr48KrL6Qgb+f0iYqQy1pnrQ818y10XOIKozYG/Kuwk=',s:[0xd81d7b9c0c,0xfa8d3a773b],}})();</script></body>
 </html>

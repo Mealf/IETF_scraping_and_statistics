@@ -1,3063 +1,2827 @@
-<!DOCTYPE html> 
+
+<!DOCTYPE html>
+
 
 
 
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Emergency Context Resolution with Internet Technologies (ecrit) - Documents</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>
+            Emergency Context Resolution with Internet Technologies (ecrit)
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="https://www.ietf.org/lib/dt/8.0.0/ietf/css/ietf.css">
+        <link rel="stylesheet" href="https://www.ietf.org/lib/dt/8.0.0/ietf/css/select2.css">
+        <style>
+            
+            .leftmenu { width: 13em; }
+        </style>
+        
+    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/8.0.0/ietf/css/list.css">
 
-    <link href="https://www.ietf.org/lib/dt/7.46.0/ptmono/stylesheet.css" rel='stylesheet' type='text/css'>
-    <link href="https://www.ietf.org/lib/dt/7.46.0/ptsans/stylesheet.css" rel='stylesheet' type='text/css'>
-    <link href="https://www.ietf.org/lib/dt/7.46.0/ptserif/stylesheet.css" rel='stylesheet' type='text/css'>
+        
+            <link rel="shortcut icon"
+                  href="https://www.ietf.org/lib/dt/8.0.0/ietf/images/ietf-icon-blue3.png">
+        
+        <link rel="apple-touch-icon"
+              href="https://www.ietf.org/lib/dt/8.0.0/ietf/images/apple-touch-icon.png">
+        <script src="https://www.ietf.org/lib/dt/8.0.0/ietf/js/ietf.js"></script>
+    <script async src='/cdn-cgi/bm/cv/669835187/api.js'></script></head>
+    <body  class="position-relative"
+          data-group-menu-data-url="/group/groupmenu.json">
+        <a class="visually-hidden visually-hidden-focusable" href="#content">Skip to main content</a>
+        <nav class="navbar navbar-expand-lg  navbar-dark bg-secondary    fixed-top ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">
+                    <img alt="IETF Logo"
+                         src="https://www.ietf.org/lib/dt/8.0.0/ietf/images/ietflogo-small-transparent.png">
+                    Datatracker
+                    
+                </a>
+                <div class="collapse navbar-collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        
+
+
+
+
+<li class="nav-item dropdown">
+    
+        <a href="#"
+           class="nav-link dropdown-toggle"
+           role="button"
+           data-bs-auto-close="false"
+           data-bs-toggle="dropdown"
+           aria-expanded="false">
+            Groups
+        </a>
+        <ul class="dropdown-menu mt-n1">
+        
+    <li class="dropdown-header">By area/parent</li>
     
 
-    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/ietf/font-datatracker/css/font-datatracker.css">
-    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/ietf/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/ietf/bootstrap/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/ietf/css/ietf.css">
-    
-    <style>
-     
-    </style>
-
-    
-<link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/jquery.tablesorter/css/theme.bootstrap.min.css">
 
 
-    
-    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.46.0/ietf/images/ietf-icon-blue3.png">
-    
-    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.46.0/ietf/images/apple-touch-icon.png">
-  <script async src='/cdn-cgi/bm/cv/669835187/api.js'></script></head>
+    <li class="dropend group-menu group-parent-2010">
+        <a class="dropdown-item dropdown-toggle "
+           href="/wg/#art">
+            Apps &amp; Realtime
+        </a>
+    </li>
 
-  <body  data-group-menu-data-url="/group/groupmenu.json">
-      <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container-fluid">
-	  <div class="navbar-header">
-	    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-	      <span class="sr-only">Toggle navigation</span>
-	      <span class="icon-bar"></span>
-	      <span class="icon-bar"></span>
-	      <span class="icon-bar"></span>
-	    </button>
-	    <a class="navbar-brand" href="/">
-	       <img alt="IETF Logo" src="https://www.ietf.org/lib/dt/7.46.0/ietf/images/ietflogo-small-transparent.png">
-	       
-		  
-		  Datatracker
-		  
-	       
-	    </a>
-	  </div>
+    <li class="dropend group-menu group-parent-1008">
+        <a class="dropdown-item dropdown-toggle "
+           href="/wg/#gen">
+            General
+        </a>
+    </li>
 
-	  <noscript>
-	    <p class="navbar-text"><small>Enable Javascript for full functionality.</small></p>
-	  </noscript>
+    <li class="dropend group-menu group-parent-1052">
+        <a class="dropdown-item dropdown-toggle "
+           href="/wg/#int">
+            Internet
+        </a>
+    </li>
 
-	  <div class="collapse navbar-collapse" id="navbar-collapse">
-	    <ul class="hidden-nojs nav navbar-nav">
-              
+    <li class="dropend group-menu group-parent-1193">
+        <a class="dropdown-item dropdown-toggle "
+           href="/wg/#ops">
+            Ops &amp; Management
+        </a>
+    </li>
+
+    <li class="dropend group-menu group-parent-1249">
+        <a class="dropdown-item dropdown-toggle "
+           href="/wg/#rtg">
+            Routing
+        </a>
+    </li>
+
+    <li class="dropend group-menu group-parent-1260">
+        <a class="dropdown-item dropdown-toggle "
+           href="/wg/#sec">
+            Security
+        </a>
+    </li>
+
+    <li class="dropend group-menu group-parent-1324">
+        <a class="dropdown-item dropdown-toggle "
+           href="/wg/#tsv">
+            Transport
+        </a>
+    </li>
+
+    <li class="dropend group-menu group-parent-7">
+        <a class="dropdown-item dropdown-toggle "
+           href="/program/">
+            IAB
+        </a>
+    </li>
+
+    <li class="dropend group-menu group-parent-3">
+        <a class="dropdown-item dropdown-toggle "
+           href="/rg/">
+            IRTF
+        </a>
+    </li>
+
+    <li class="dropend group-menu group-parent-2309">
+        <a class="dropdown-item dropdown-toggle "
+           href="/adm/">
+            IETF LLC
+        </a>
+    </li>
 
 
-
-
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-  
-  Groups
-  
-    </a>
-    <ul class="dropdown-menu" role="menu">
-
-    <li class="dropdown-header visible-lg-block">By area/parent</li>
-  
+    <li class="dropend">
+        <a class="dropdown-item dropdown-toggle "
+           href="/group/">
+            Other
+        </a>
         
 
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-2010">
-    <a href="/wg/#art">Apps &amp; Realtime</a>
-  </li>
 
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1008">
-    <a href="/wg/#gen">General</a>
-  </li>
-
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1052">
-    <a href="/wg/#int">Internet</a>
-  </li>
-
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1193">
-    <a href="/wg/#ops">Ops &amp; Mgmt</a>
-  </li>
-
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1249">
-    <a href="/wg/#rtg">Routing</a>
-  </li>
-
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1260">
-    <a href="/wg/#sec">Security</a>
-  </li>
-
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1324">
-    <a href="/wg/#tsv">Transport</a>
-  </li>
-
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-7">
-    <a href="/program/">IAB</a>
-  </li>
-
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-3">
-    <a href="/rg/">IRTF</a>
-  </li>
-
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-2309">
-    <a href="/adm/">IETF LLC</a>
-  </li>
-
-
-        <li class="dropdown-submenu group-menu"><a href="/group/">Other</a>
-<ul class="dropdown-menu" role="menu">
-
-  <li>
-    <a href="/ag/">Active AGs</a>
-  </li>
-
-  <li>
-    <a href="/area/">Active Areas</a>
-  </li>
-
-  <li>
-    <a href="/dir/">Active Directorates</a>
-  </li>
-
-  <li>
-    <a href="/program/">Active Programs</a>
-  </li>
-
-  <li>
-    <a href="/rag/">Active RAGs</a>
-  </li>
-
-  <li>
-    <a href="/team/">Active Teams</a>
-  </li>
-
-
-  <li>
-    <a href="/group/rsoc/">RSOC</a>
-  </li>
-
+<ul class="dropdown-menu ms-n1">
+    
+        <li>
+            <a class="dropdown-item "
+               href="/ag/">Active AGs</a>
+        </li>
+    
+        <li>
+            <a class="dropdown-item "
+               href="/area/">Active Areas</a>
+        </li>
+    
+        <li>
+            <a class="dropdown-item "
+               href="/dir/">Active Directorates</a>
+        </li>
+    
+        <li>
+            <a class="dropdown-item "
+               href="/program/">Active Programs</a>
+        </li>
+    
+        <li>
+            <a class="dropdown-item "
+               href="/rag/">Active RAGs</a>
+        </li>
+    
+        <li>
+            <a class="dropdown-item "
+               href="/team/">Active Teams</a>
+        </li>
+    
+    
+        <li>
+            <a class="dropdown-item "
+               href="/group/rsoc/">RSOC</a>
+        </li>
+    
 </ul>
- </li>
 
-  <li class="divider hidden-xs"></li>
-  <li class="dropdown-header hidden-xs">New work</li>
-  <li><a href="/group/chartering/">Chartering groups</a></li>
-  <li><a href="/wg/bofs/">BOFs</a></li>
-  <li><a href="/doc/bof-requests">BOF Requests</a></li>
-
-  <li class="divider hidden-xs"></li>
-  <li class="dropdown-header hidden-xs">Other groups</li>
-  <li><a href="/group/concluded/">Concluded groups</a></li>
-  <li><a href="/list/nonwg">Non-WG lists</a></li>
-
-</ul>
-</li>
-
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-  
-  Documents
-  
-    </a>
-    <ul class="dropdown-menu" role="menu">
-  
-  <li><a href="/doc/search">Search</a></li>
-  <li><a href="/doc/recent">Recent drafts</a></li>
-  <li><a href="/submit/">Draft submission</a></li>
-
-  
-
-
-  <li class="divider hidden-xs"></li>
-  <li class="dropdown-header hidden-xs">RFC streams</li>
-        <li><a href="/stream/iab/">IAB</a></li>
-        <li><a href="/stream/irtf/">IRTF</a></li>
-        <li><a href="/stream/ise/">ISE</a></li>
-
-</ul>
-</li>
-
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-  
-  Meetings
-  
-    </a>
-    <ul class="dropdown-menu" role="menu">
-  
-
-
-  
-  <li class="dropdown-header visible-lg-block">Next meeting</li>
-  
-  <li><a href="/meeting/agenda/">Agenda</a></li>
-  <li><a href="/meeting/materials/">Materials</a></li>
-  <li><a href="/meeting/floor-plan/">Floor plan</a></li>
-  <li><a href="https://www.ietf.org/how/meetings/register/">Registration</a></li>
-  <li><a href="/meeting/important-dates/">Important dates</a></li>
-  <li><a href="/secr/sreq/">Request a session</a></li>
-  <li><a href="/meeting/requests">Session requests</a></li>
-  
-  <li class="divider hidden-xs"></li>
-  <li class="dropdown-header visible-lg-block">Upcoming meetings</li>
-  
-  <li><a href="/meeting/upcoming">Upcoming meetings</a></li>
-  
-  <li class="divider hidden-xs"></li>
-  <li class="dropdown-header visible-lg-block">Past meetings</li>
-  
-  <li><a href="/meeting/past">Past meetings</a></li>
-  <li><a href="https://www.ietf.org/how/meetings/past/">Meeting proceedings</a></li>
-</ul>
-</li>
-
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-  
-  Other
-  
-    </a>
-    <ul class="dropdown-menu" role="menu">
-  
-
-  <li><a href="/ipr/">IPR disclosures</a></li>
-  <li><a href="/liaison/">Liaison statements</a></li>
-  <li><a href="/iesg/agenda/">IESG agenda</a></li>
-  <li><a href="/nomcom/">NomComs</a></li>
-  <li><a href="/doc/downref/">Downref registry</a></li>
-  <li class="dropdown-submenu">
-    <a href="/stats/">Statistics</a>
-    <ul class="dropdown-menu">
-      <li><a href="/stats/document/">Drafts/RFCs</a></li>
-      <li><a href="/stats/meeting/">Meetings</a></li>
-      
+    </li>
+    <li><hr class="dropdown-divider"></li>
+    <li class="dropdown-header">New work</li>
+    <li>
+        <a class="dropdown-item "
+           href="/group/chartering/">
+            Chartering groups
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/wg/bofs/">
+            BOFs
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/doc/bof-requests">
+            BOF Requests
+        </a>
+    </li>
+    <li><hr class="dropdown-divider"></li>
+    <li class="dropdown-header">Other groups</li>
+    <li>
+        <a class="dropdown-item "
+           href="/group/concluded/">
+            Concluded groups
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/list/nonwg">
+            Non-WG lists
+        </a>
+    </li>
+    
     </ul>
-  </li>
-  <li><a href="/group/edu/materials/">Tutorials</a></li>
-  <li><a href="/api/">API Help</a></li>  
-  <li><a href="/release/">Release notes</a></li>
-  <li class="divider hidden-xs"></li>
-  <li><a href="https://trac.ietf.org/trac/ietfdb/newticket"><span class="fa fa-bug"></span> Report a bug</a></li>
-</ul>
+</li>
+
+<li class="nav-item dropdown">
+    
+        <a href="#"
+           class="nav-link dropdown-toggle"
+           role="button"
+           data-bs-toggle="dropdown"
+           aria-expanded="false">
+            Documents
+        </a>
+        <ul class="dropdown-menu mt-n1">
+        
+    <li>
+        <a class="dropdown-item "
+           href="/doc/search">
+            Search
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/doc/recent">
+            Recent drafts
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/submit/">
+            Draft submission
+        </a>
+    </li>
+    
+    
+        <li><hr class="dropdown-divider">
+        </li>
+    
+    <li class="dropdown-header">
+        RFC streams
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/stream/iab/">
+            IAB
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/stream/irtf/">
+            IRTF
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/stream/ise/">
+            ISE
+        </a>
+    </li>
+    
+    </ul>
+</li>
+
+<li class="nav-item dropdown">
+    
+        <a href="#"
+           class="nav-link dropdown-toggle"
+           role="button"
+           data-bs-toggle="dropdown"
+           aria-expanded="false">
+            Meetings
+        </a>
+        <ul class="dropdown-menu mt-n1">
+        
+    <li>
+        <a class="dropdown-item "
+           href="/meeting/agenda/">
+            Agenda
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/meeting/materials/">
+            Materials
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/meeting/floor-plan/">
+            Floor plan
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="https://www.ietf.org/how/meetings/register/">
+            Registration
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/meeting/important-dates/">
+            Important dates
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/secr/sreq/">
+            Request a session
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/meeting/requests">
+            Session requests
+        </a>
+    </li>
+    
+        
+            <li><hr class="dropdown-divider">
+            </li>
+        
+        <li class="dropdown-header">
+            Upcoming meetings
+        </li>
+    
+    <li>
+        <a class="dropdown-item "
+           href="/meeting/upcoming">
+            Upcoming meetings
+        </a>
+    </li>
+    
+        
+            <li><hr class="dropdown-divider">
+            </li>
+        
+        <li class="dropdown-header">
+            Past meetings
+        </li>
+    
+    <li>
+        <a class="dropdown-item "
+           href="/meeting/past">
+            Past meetings
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="https://www.ietf.org/how/meetings/past/">
+            Meeting proceedings
+        </a>
+    </li>
+    
+    </ul>
+</li>
+
+<li class="nav-item dropdown">
+    
+        <a href="#"
+           class="nav-link dropdown-toggle"
+           role="button"
+           data-bs-toggle="dropdown"
+           aria-expanded="false">
+            Other
+        </a>
+        <ul class="dropdown-menu mt-n1">
+        
+    <li>
+        <a class="dropdown-item "
+           href="/ipr/">
+            IPR disclosures
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/liaison/">
+            Liaison statements
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/iesg/agenda/">
+            IESG agenda
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/nomcom/">
+            NomComs
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/doc/downref/">
+            Downref registry
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/stats/">
+            Statistics
+        </a>
+        <ul class="dropdown-menu mt-n1">
+            <li>
+                <a class="dropdown-item "
+                   href="/stats/document/">
+                    Drafts/RFCs
+                </a>
+            </li>
+            <li>
+                <a class="dropdown-item "
+                   href="/stats/meeting/">
+                    Meetings
+                </a>
+            </li>
+            
+        </ul>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/group/edu/materials/">
+            Tutorials
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/api/">
+            API Help
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/release/">
+            Release notes
+        </a>
+    </li>
+    
+        <li><hr class="dropdown-divider">
+        </li>
+    
+    <li>
+        <a class="dropdown-item "
+           href="https://github.com/ietf-tools/datatracker/issues/new/choose">
+            <i class="bi bi-bug">
+            </i>
+            Report a bug
+        </a>
+    </li>
+    
+    </ul>
 </li>
 
 
-  
-
-
-<li class="dropdown">
-  
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-     User 
-  </a>
-  <ul class="dropdown-menu" role="menu">
-  
-
-  
     
-      <li><a rel="nofollow" href="/accounts/login/?next=/wg/ecrit/documents/">Sign in</a></li>
-      <li><a rel="nofollow" href="/accounts/reset/">Password reset</a></li>
-      <li><a href="/accounts/settings/" rel="nofollow">Preferences</a></li>
+
+
+
+<li class="nav-item dropdown">
     
-    <li><a href="/help/personal-information">Handling of personal information</a></li>  
-  
-
-  
-    <li><a href="/accounts/create/">New account</a></li>
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-</ul>
-
-            </ul>
+        <a href="#"
+           class="nav-link dropdown-toggle"
+           role="button"
+           data-bs-toggle="dropdown"
+           aria-expanded="false">
+            
+                User
+            
+        </a>
+        <ul class="dropdown-menu  mt-n1 ">
         
-            <p class="navbar-text"></p>
-            <a class="btn btn-warning btn-sm navbar-btn" rel="nofollow" href="/accounts/login/?next=/wg/ecrit/documents/">Sign in</a>
+    
+        
+            <li>
+                <a class="dropdown-item "
+                   rel="nofollow"
+                   href="/accounts/login/?next=/wg/ecrit/documents/">
+                    Sign in
+                </a>
+            </li>
+            <li>
+                <a class="dropdown-item "
+                   rel="nofollow"
+                   href="/accounts/reset/">
+                    Password reset
+                </a>
+            </li>
+            <li>
+                <a class="dropdown-item "
+                   href="/accounts/settings/"
+                   rel="nofollow">
+                    Preferences
+                </a>
+            </li>
+        
+        <li>
+            <a class="dropdown-item "
+               href="/help/personal-information">
+                Handling of personal information
+            </a>
+        </li>
+    
+    
+        <li>
+            <a class="dropdown-item "
+               href="/accounts/create/">
+                New account
+            </a>
+        </li>
+    
+    
+    
+    
+    
+    
+    </ul></li>
+
+
+
+                    </ul>
+                </div>
+                
+                    <a class="d-none d-sm-block mx-5 btn  btn-warning "
+                       rel="nofollow"
+                       href="/accounts/login/?next=/wg/ecrit/documents/">
+                        Sign
+                        in
+                    </a>
+                
+                <div class="d-flex d-none d-lg-block">
+                    <label aria-label="Document search">
+                    <input class="form-control select2-field"
+                           id="navbar-doc-search"
+                           data-ajax--url="/doc/select2search/docalias/draft/"
+                           type="text"
+                           data-placeholder="Document search">
+                   </label>
+                </div>
+                <button class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbar-collapse"
+                        aria-controls="navbar-collapse"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <i class="navbar-toggler-icon"></i>
+                </button>
+            </div>
+        </nav>
+        <div class="pt-3 container-fluid">
+            <div class="row">
+                
+                <div class="col mx-lg-3 ietf-auto-nav" id="content">
+                    <noscript>
+                        <div class="alert alert-danger alert-ignore my-3">
+                            <b>Javascript disabled?</b> Like other modern websites, the IETF Datatracker relies on Javascript.
+                            Please enable Javascript for full functionality.
+                        </div>
+                    </noscript>
+                    
+                    
+    
+    <h1>
+        Emergency Context Resolution with Internet Technologies (ecrit)
+        
+        
+        
+    </h1>
+    <ul class="nav nav-tabs my-3">
+        
+            <li class="nav-item">
+                <a class="nav-link "
+                   href="/wg/ecrit/about/">About</a>
+            </li>
+        
+            <li class="nav-item">
+                <a class="nav-link active"
+                   href="/wg/ecrit/documents/">Documents</a>
+            </li>
+        
+            <li class="nav-item">
+                <a class="nav-link "
+                   href="/wg/ecrit/meetings/">Meetings</a>
+            </li>
+        
+            <li class="nav-item">
+                <a class="nav-link "
+                   href="/wg/ecrit/history/">History</a>
+            </li>
+        
+            <li class="nav-item">
+                <a class="nav-link "
+                   href="/wg/ecrit/photos/">Photos</a>
+            </li>
+        
+            <li class="nav-item">
+                <a class="nav-link "
+                   href="/wg/ecrit/email/">Email expansions</a>
+            </li>
+        
+            <li class="nav-item">
+                <a class="nav-link "
+                   href="https://mailarchive.ietf.org/arch/browse/ecrit/">List archive &raquo;</a>
+            </li>
+        
+    </ul>
+    <div class="buttonlist">
+        
+            
+        
+    </div>
+    
+    
+    
         
 
-	    <form class="navbar-form navbar-right hidden-xs" action="/doc/search/">
-	      <div class="form-group">
-	        <input class="form-control input-sm" type="text" name="name" placeholder="Document search" required>
-	        <input type="hidden" name="activedrafts" value="on">
-	        <input type="hidden" name="rfcs" value="on">
-	      </div>
-	    </form>
-	  </div>
+
+
+
+
+
+    <table class="table table-sm table-striped tablesorter">
+        <thead>
+            <tr>
+                <th scope="col"></th>
+                
+                    
+                        <th scope="col" data-sort="document"
+                            >
+                            
+                                Document
+                            
+                        </th>
+                    
+                
+                    
+                
+                    
+                        <th scope="col" data-sort="date"
+                            >
+                            
+                                Date
+                            
+                        </th>
+                    
+                
+                    
+                        <th scope="col" data-sort="status"
+                            >
+                            
+                                Status
+                            
+                        </th>
+                    
+                
+                    
+                        <th scope="col" data-sort="ipr"
+                            
+                              class="d-none d-sm-table-cell"
+                            >
+                            
+                                IPR
+                            
+                        </th>
+                    
+                
+                    
+                        <th scope="col" data-sort="ad"
+                            
+                              class="d-none d-sm-table-cell"
+                            >
+                            
+                                AD/Shepherd
+                            
+                        </th>
+                    
+                
+            </tr>
+        </thead>
+
+
+
+    <tbody>
+        <tr class="table-info">
+            <td></td>
+            
+                <th scope="col" colspan="5">
+            
+            Active Internet-Draft (1 hit)
+            </th>
+        </tr>
+    </tbody>
+    <tbody>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">19 pages</small>
+        <div>
+            <a href="/doc/draft-ietf-ecrit-similar-location/">
+                
+                    draft-ietf-ecrit-similar-location-19
+                
+            </a>
+            
+            <br>
+            
+            <b>A LoST extension to return complete and similar location info</b>
+            
         </div>
-      </nav>
-      <div class="container-fluid-narrow">
         
-        
-        
-	  <div class="col-md-12 col-sm-12" id="content">
-        
-        
-  
-
-  <h1>Emergency Context Resolution with Internet Technologies (ecrit)
-    
-    
-    
-  </h1>
-
-  <ul class="nav nav-tabs" role="tablist">
-    
-      <li >
-        <a href="/wg/ecrit/about/">About</a>
-      </li>
-    
-      <li class="active">
-        <a href="/wg/ecrit/documents/">Documents</a>
-      </li>
-    
-      <li >
-        <a href="/wg/ecrit/meetings/">Meetings</a>
-      </li>
-    
-      <li >
-        <a href="/wg/ecrit/history/">History</a>
-      </li>
-    
-      <li >
-        <a href="/wg/ecrit/photos/">Photos</a>
-      </li>
-    
-      <li >
-        <a href="/wg/ecrit/email/">Email expansions</a>
-      </li>
-    
-      <li >
-        <a href="https://mailarchive.ietf.org/arch/browse/ecrit/">List archive &raquo;</a>
-      </li>
-    
-  </ul>
-
-  <div class="buttonlist">
-    
-      
-    
-  </div>
-
-  
-  
-  
-    
+    </td>
+    <td>
+            
+                    
+                        2022-03-04
+                    
+                    
+                
+                
+            </td>
+            
 
 
 
-
-  
-
-  
-  <table class="table table-condensed table-striped tablesorter">
-    <thead>
-      <tr>
-        <th class="sorter-false"></th>
-
-        
-          
-            <th data-header="document">
-	      
-	        Document
-	      
-            </th>
-          
-        
-          
-        
-          
-            <th data-header="date">
-	      
-	        Date
-	      
-            </th>
-          
-        
-          
-            <th data-header="status">
-	      
-	        Status
-	      
-            </th>
-          
-        
-          
-            <th data-header="ipr">
-	      
-	        IPR
-	      
-            </th>
-          
-        
-          
-            <th data-header="ad">
-	      
-	        AD / Shepherd
-	      
-            </th>
-          
-        
-
-        
-      </tr>
-    </thead>
-
+<td class="status">
     
+    
+        
+            RFC Ed Queue
+        
+        
+            : <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-ecrit-similar-location">MISSREF</a>
+        
+        
+        <span class="badge bg-success">for 45 days</span>
+        
+        
+            
+        
+        
+            <br>
+            
+                Submitted to IESG for Publication
+                
+                    :
+                
+            
+        
+        Proposed Standard
+        
+        
+            <br>
+            Reviews:
+            <a href="/group/artart/">artart</a>,
+                
+                    <a href="/group/genart/">genart</a>,
+                
+                    <a href="/group/intdir/">intdir</a>,
+                
+                    <a href="/group/opsdir/">opsdir</a>,
+                
+                    <a href="/group/secdir/">secdir</a>
+        
+        
+            <br>
+            <span title="Part of ecrit milestone: Submit ‘A LoST extension to return complete and similar location info‘ to the IESG for consideration as an Informational RFC"
+                  class="milestone">Aug 2017</span>
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/superuser@gmail.com" >Murray Kucherawy</a> <a 
+               href="mailto:superuser%40gmail.com"
+               aria-label="Compose email to superuser@gmail.com."
+               title="Compose email to superuser@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/dwightpurtle@gmail.com" >Dwight Purtle</a> <a class="text-reset"
+               href="mailto:dwightpurtle%40gmail.com"
+               aria-label="Compose email to dwightpurtle@gmail.com."
+               title="Compose email to dwightpurtle@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+    </tbody>
 
-      
     <tbody>
-        <tr class="info">
-          <th></th>
-          
-              <th colspan="5">
-          
-	    Active Internet-Drafts (2 hits)
-          </th>
+        <tr class="table-info">
+            <td></td>
+            
+                <th scope="col" colspan="5">
+            
+            RFCs (22 hits)
+            </th>
         </tr>
     </tbody>
-
     <tbody>
         
-          
+            
 
 
 
 
 
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-ietf-ecrit-lost-planned-changes/">draft-ietf-ecrit-lost-planned-changes-05</a>
-
-      
-      <br>
-      <b>Validation of Locations Around a Planned Change</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2021-10-11
-    
-    </span>
 
 
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">23 pages</small>
+        <div>
+            <a href="/doc/rfc5012/">
+                
+                    RFC 5012
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-ecrit-requirements)</i>
+            <br>
+            
+            <b>Requirements for Emergency Context Resolution with Internet Technologies</b>
+            
+                <a class="badge bg-warning text-decoration-none float-end"
+                   href="https://www.rfc-editor.org/errata_search.php?rfc=5012">
+                    Errata
+                </a>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2008-01
+                    
+                    
+                
+                
+            </td>
+            
 
-    
-      <br><small class="text-muted">21 pages</small>
-    
-
-    
-
-    
-      <wbr><span class="label label-warning">Expires soon</span>
-    
-
-  </td>
-
-  
 
 
 <td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-ecrit-lost-planned-changes">
-    
-  </div>
-
-  
-    
-      AD is watching
-    
-
-    
-
-    <wbr>
-
-    <wbr>
     
     
-
-    
-      
-    
-
-    
-      <br>
-      
-	WG Consensus: Waiting for Write-Up:<wbr>
-      
-    
-
-    
-      Proposed Standard
-    
-
-    
-
-    
-
-    
-      <br>
-      <span title="Part of ecrit milestone: Submit &#39;Validation of Locations Around a Planned Change&#39; to the IESG for consideration as a Standards Track RFC" class="milestone">Aug 2017</span>
-    
-
-    
-        <br>Action Holders:
         
-            <wbr><a title="Group Chair" href="/person/rg+ietf@coretechnologyconsulting.com"><span class="">Randall Gellens</span></a>&nbsp;<a href="mailto:rg%2Bietf%40coretechnologyconsulting.com"><span class="fa fa-envelope-o tiny"></span></a>
-<span class="label label-danger" title="Goal is &lt;20 days">for 234 days</span>, 
+        Informational RFC
         
-            <wbr><a title="Shepherd, Group Chair" href="/person/roger.marshall@comtechtel.com"><span class="">Roger Marshall</span></a>&nbsp;<a href="mailto:roger.marshall%40comtechtel.com"><span class="fa fa-envelope-o tiny"></span></a>
-<span class="label label-danger" title="Goal is &lt;20 days">for 234 days</span>, 
-        
-            <wbr><a title="Group Chair" href="/person/allison.mankin@gmail.com"><span class="">Allison Mankin</span></a>&nbsp;<a href="mailto:allison.mankin%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-<span class="label label-danger" title="Goal is &lt;20 days">for 234 days</span>
         
     
-  
-
-
-
 </td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/superuser@gmail.com"><span class="">Murray Kucherawy</span></a>&nbsp;<a href="mailto:superuser%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/rmarshall@telecomsys.com"><span class="small text-muted">Roger Marshall</span></a>&nbsp;<a href="mailto:rmarshall%40telecomsys.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/jon.peterson@team.neustar" >Jon Peterson</a> <a 
+               href="mailto:jon.peterson%40team.neustar"
+               aria-label="Compose email to jon.peterson@team.neustar."
+               title="Compose email to jon.peterson@team.neustar.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
         
-          
+            
 
 
 
 
 
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-ietf-ecrit-similar-location/">draft-ietf-ecrit-similar-location-19</a>
-
-      
-      <br>
-      <b>A LoST extension to return complete and similar location info</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2022-03-04
-    
-    </span>
 
 
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">14 pages</small>
+        <div>
+            <a href="/doc/rfc5031/">
+                
+                    RFC 5031
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-ecrit-service-urn)</i>
+            <br>
+            
+            <b>A Uniform Resource Name (URN) for Emergency and Other Well-Known Services</b>
+            
+                <a class="badge bg-warning text-decoration-none float-end"
+                   href="https://www.rfc-editor.org/errata_search.php?rfc=5031">
+                    Errata
+                </a>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2008-01
+                    
+                    
+                
+                
+            </td>
+            
 
-    
-      <br><small class="text-muted">19 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
 
 
 <td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-ecrit-similar-location">
-    
-  </div>
-
-  
-    
-      RFC Ed Queue
-    
-
-    
-      <wbr>: <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-ecrit-similar-location">MISSREF</a>
-    
-
-    <wbr>
-
-    <wbr><span class="ietf-small">for 37 days</span>
     
     
-
-    
-      
-    
-
-    
-      <br>
-      
-	Submitted to IESG for Publication:<wbr>
-      
-    
-
-    
-      Proposed Standard
-    
-
-    
-
-    
-      <br>Reviews:
-      
-        artart, 
-      
-        genart, 
-      
-        intdir, 
-      
-        opsdir, 
-      
-        secdir
-      
-    
-
-    
-      <br>
-      <span title="Part of ecrit milestone: Submit ‘A LoST extension to return complete and similar location info‘ to the IESG for consideration as an Informational RFC" class="milestone">Aug 2017</span>
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/superuser@gmail.com"><span class="">Murray Kucherawy</span></a>&nbsp;<a href="mailto:superuser%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/dwightpurtle@gmail.com"><span class="small text-muted">Dwight Purtle</span></a>&nbsp;<a href="mailto:dwightpurtle%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
         
-      
+        Proposed Standard RFC
+        
+        
+            <br>
+            <span class="text-muted">Updated by <a href="/doc/rfc7163/">RFC 7163</a></span>
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/jon.peterson@team.neustar" >Jon Peterson</a> <a 
+               href="mailto:jon.peterson%40team.neustar"
+               aria-label="Compose email to jon.peterson@team.neustar."
+               title="Compose email to jon.peterson@team.neustar.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">12 pages</small>
+        <div>
+            <a href="/doc/rfc5069/">
+                
+                    RFC 5069
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-ecrit-security-threats)</i>
+            <br>
+            
+            <b>Security Threats and Requirements for Emergency Call Marking and Mapping</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2008-01
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Informational RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/jon.peterson@team.neustar" >Jon Peterson</a> <a 
+               href="mailto:jon.peterson%40team.neustar"
+               aria-label="Compose email to jon.peterson@team.neustar."
+               title="Compose email to jon.peterson@team.neustar.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">69 pages</small>
+        <div>
+            <a href="/doc/rfc5222/">
+                
+                    RFC 5222
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-ecrit-lost)</i>
+            <br>
+            
+            <b>LoST: A Location-to-Service Translation Protocol</b>
+            
+                <a class="badge bg-danger text-decoration-none float-end"
+                   href="https://www.rfc-editor.org/errata_search.php?rfc=5222">
+                    Errata
+                </a>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2008-08
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+            <br>
+            <span class="text-muted">Updated by <a href="/doc/rfc6848/">RFC 6848</a>, <a href="/doc/rfc8917/">RFC 8917</a>, <a href="/doc/rfc9036/">RFC 9036</a></span>
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+                    <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-ecrit-lost">
+                        <span class="badge bg-info">4</span>
+                    </a>
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/jon.peterson@team.neustar" >Jon Peterson</a> <a 
+               href="mailto:jon.peterson%40team.neustar"
+               aria-label="Compose email to jon.peterson@team.neustar."
+               title="Compose email to jon.peterson@team.neustar.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">8 pages</small>
+        <div>
+            <a href="/doc/rfc5223/">
+                
+                    RFC 5223
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-ecrit-dhc-lost-discovery)</i>
+            <br>
+            
+            <b>Discovering Location-to-Service Translation (LoST) Servers Using the Dynamic Host Configuration Protocol (DHCP)</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2008-08
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/jon.peterson@team.neustar" >Jon Peterson</a> <a 
+               href="mailto:jon.peterson%40team.neustar"
+               aria-label="Compose email to jon.peterson@team.neustar."
+               title="Compose email to jon.peterson@team.neustar.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">17 pages</small>
+        <div>
+            <a href="/doc/rfc5582/">
+                
+                    RFC 5582
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-ecrit-mapping-arch)</i>
+            <br>
+            
+            <b>Location-to-URL Mapping Architecture and Framework</b>
+            
+                <a class="badge bg-warning text-decoration-none float-end"
+                   href="https://www.rfc-editor.org/errata_search.php?rfc=5582">
+                    Errata
+                </a>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2009-09
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Informational RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/fluffy@iii.ca" >Cullen Jennings</a> <a 
+               href="mailto:fluffy%40iii.ca"
+               aria-label="Compose email to fluffy@iii.ca."
+               title="Compose email to fluffy@iii.ca.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">11 pages</small>
+        <div>
+            <a href="/doc/rfc5964/">
+                
+                    RFC 5964
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-ecrit-specifying-holes)</i>
+            <br>
+            
+            <b>Specifying Holes in Location-to-Service Translation (LoST) Service Boundaries</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2010-08
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/rjsparks@nostrum.com" >Robert Sparks</a> <a 
+               href="mailto:rjsparks%40nostrum.com"
+               aria-label="Compose email to rjsparks@nostrum.com."
+               title="Compose email to rjsparks@nostrum.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">15 pages</small>
+        <div>
+            <a href="/doc/rfc6197/">
+                
+                    RFC 6197
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-ecrit-lost-servicelistboundary)</i>
+            <br>
+            
+            <b>Location-to-Service Translation (LoST) Service List Boundary Extension</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2011-04
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Experimental RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/rjsparks@nostrum.com" >Robert Sparks</a> <a 
+               href="mailto:rjsparks%40nostrum.com"
+               aria-label="Compose email to rjsparks@nostrum.com."
+               title="Compose email to rjsparks@nostrum.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">38 pages</small>
+        <div>
+            <a href="/doc/rfc6443/">
+                
+                    RFC 6443
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-ecrit-framework)</i>
+            <br>
+            
+            <b>Framework for Emergency Calling Using Internet Multimedia</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2011-12
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Informational RFC
+        
+        
+            <br>
+            <span class="text-muted">Updated by <a href="/doc/rfc7852/">RFC 7852</a></span>
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+                    <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-ecrit-framework">
+                        <span class="badge bg-info">3</span>
+                    </a>
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/rjsparks@nostrum.com" >Robert Sparks</a> <a 
+               href="mailto:rjsparks%40nostrum.com"
+               aria-label="Compose email to rjsparks@nostrum.com."
+               title="Compose email to rjsparks@nostrum.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">9 pages</small>
+        <div>
+            <a href="/doc/rfc6444/">
+                
+                    RFC 6444
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-ecrit-location-hiding-req)</i>
+            <br>
+            
+            <b>Location Hiding: Problem Statement and Requirements</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2012-01
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Informational RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/rjsparks@nostrum.com" >Robert Sparks</a> <a 
+               href="mailto:rjsparks%40nostrum.com"
+               aria-label="Compose email to rjsparks@nostrum.com."
+               title="Compose email to rjsparks@nostrum.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">25 pages</small>
+        <div>
+            <a href="/doc/rfc6739/">
+                
+                    RFC 6739
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-ecrit-lost-sync)</i>
+            <br>
+            
+            <b>Synchronizing Service Boundaries and &lt;mapping&gt; Elements Based on the Location-to-Service Translation (LoST) Protocol</b>
+            
+                <a class="badge bg-danger text-decoration-none float-end"
+                   href="https://www.rfc-editor.org/errata_search.php?rfc=6739">
+                    Errata
+                </a>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2012-10
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Experimental RFC
+        
+        
+            <br>
+            <span class="text-muted">Updated by <a href="/doc/rfc8996/">RFC 8996</a></span>
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+                    <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-ecrit-lost-sync">
+                        <span class="badge bg-info">1</span>
+                    </a>
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/rjsparks@nostrum.com" >Robert Sparks</a> <a 
+               href="mailto:rjsparks%40nostrum.com"
+               aria-label="Compose email to rjsparks@nostrum.com."
+               title="Compose email to rjsparks@nostrum.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">28 pages</small>
+        <div>
+            <a href="/doc/rfc6881/">
+                
+                    RFC 6881
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-ecrit-phonebcp)</i>
+            <br>
+            
+            <b>Best Current Practice for Communications Services in Support of Emergency Calling</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2013-03
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Best Current Practice RFC
+        
+        
+            <br>
+            <span class="text-muted">Updated by <a href="/doc/rfc7840/">RFC 7840</a>, <a href="/doc/rfc7852/">RFC 7852</a></span>
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+                    <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-ecrit-phonebcp">
+                        <span class="badge bg-info">1</span>
+                    </a>
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/rjsparks@nostrum.com" >Robert Sparks</a> <a 
+               href="mailto:rjsparks%40nostrum.com"
+               aria-label="Compose email to rjsparks@nostrum.com."
+               title="Compose email to rjsparks@nostrum.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">18 pages</small>
+        <div>
+            <a href="/doc/rfc7090/">
+                
+                    RFC 7090
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-ecrit-psap-callback)</i>
+            <br>
+            
+            <b>Public Safety Answering Point (PSAP) Callback</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2014-04
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+                    <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-ecrit-psap-callback">
+                        <span class="badge bg-info">3</span>
+                    </a>
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/rlb@ipv.sx" >Richard Barnes</a> <a 
+               href="mailto:rlb%40ipv.sx"
+               aria-label="Compose email to rlb@ipv.sx."
+               title="Compose email to rlb@ipv.sx.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/rmarshall@telecomsys.com" >Roger Marshall</a> <a class="text-reset"
+               href="mailto:rmarshall%40telecomsys.com"
+               aria-label="Compose email to rmarshall@telecomsys.com."
+               title="Compose email to rmarshall@telecomsys.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">4 pages</small>
+        <div>
+            <a href="/doc/rfc7163/">
+                
+                    RFC 7163
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-ecrit-country-emg-urn)</i>
+            <br>
+            
+            <b>URN for Country-Specific Emergency Services</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2014-03
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/rlb@ipv.sx" >Richard Barnes</a> <a 
+               href="mailto:rlb%40ipv.sx"
+               aria-label="Compose email to rlb@ipv.sx."
+               title="Compose email to rlb@ipv.sx.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/marc.linsner@cisco.com" >Marc Linsner</a> <a class="text-reset"
+               href="mailto:marc.linsner%40cisco.com"
+               aria-label="Compose email to marc.linsner@cisco.com."
+               title="Compose email to marc.linsner@cisco.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">31 pages</small>
+        <div>
+            <a href="/doc/rfc7378/">
+                
+                    RFC 7378
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-ecrit-trustworthy-location)</i>
+            <br>
+            
+            <b>Trustworthy Location</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2014-12
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Informational RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+                    <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-ecrit-trustworthy-location">
+                        <span class="badge bg-info">1</span>
+                    </a>
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/alissa@cooperw.in" >Alissa Cooper</a> <a 
+               href="mailto:alissa%40cooperw.in"
+               aria-label="Compose email to alissa@cooperw.in."
+               title="Compose email to alissa@cooperw.in.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/rmarshall@telecomsys.com" >Roger Marshall</a> <a class="text-reset"
+               href="mailto:rmarshall%40telecomsys.com"
+               aria-label="Compose email to rmarshall@telecomsys.com."
+               title="Compose email to rmarshall@telecomsys.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">25 pages</small>
+        <div>
+            <a href="/doc/rfc7406/">
+                
+                    RFC 7406
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-ecrit-unauthenticated-access)</i>
+            <br>
+            
+            <b>Extensions to the Emergency Services Architecture for Dealing With Unauthenticated and Unauthorized Devices</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2014-12
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Informational RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/rlb@ipv.sx" >Richard Barnes</a> <a 
+               href="mailto:rlb%40ipv.sx"
+               aria-label="Compose email to rlb@ipv.sx."
+               title="Compose email to rlb@ipv.sx.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/rmarshall@telecomsys.com" >Roger Marshall</a> <a class="text-reset"
+               href="mailto:rmarshall%40telecomsys.com"
+               aria-label="Compose email to rmarshall@telecomsys.com."
+               title="Compose email to rmarshall@telecomsys.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">16 pages</small>
+        <div>
+            <a href="/doc/rfc7840/">
+                
+                    RFC 7840
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-ecrit-held-routing)</i>
+            <br>
+            
+            <b>A Routing Request Extension for the HTTP-Enabled Location Delivery (HELD) Protocol</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2016-05
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/alissa@cooperw.in" >Alissa Cooper</a> <a 
+               href="mailto:alissa%40cooperw.in"
+               aria-label="Compose email to alissa@cooperw.in."
+               title="Compose email to alissa@cooperw.in.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/rmarshall@telecomsys.com" >Roger Marshall</a> <a class="text-reset"
+               href="mailto:rmarshall%40telecomsys.com"
+               aria-label="Compose email to rmarshall@telecomsys.com."
+               title="Compose email to rmarshall@telecomsys.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">113 pages</small>
+        <div>
+            <a href="/doc/rfc7852/">
+                
+                    RFC 7852
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-ecrit-additional-data)</i>
+            <br>
+            
+            <b>Additional Data Related to an Emergency Call</b>
+            
+                <a class="badge bg-warning text-decoration-none float-end"
+                   href="https://www.rfc-editor.org/errata_search.php?rfc=7852">
+                    Errata
+                </a>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2016-07
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+                    <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-ecrit-additional-data">
+                        <span class="badge bg-info">1</span>
+                    </a>
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/alissa@cooperw.in" >Alissa Cooper</a> <a 
+               href="mailto:alissa%40cooperw.in"
+               aria-label="Compose email to alissa@cooperw.in."
+               title="Compose email to alissa@cooperw.in.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/mlinsner@cisco.com" >Marc Linsner</a> <a class="text-reset"
+               href="mailto:mlinsner%40cisco.com"
+               aria-label="Compose email to mlinsner@cisco.com."
+               title="Compose email to mlinsner@cisco.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">43 pages</small>
+        <div>
+            <a href="/doc/rfc8147/">
+                
+                    RFC 8147
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-ecrit-ecall)</i>
+            <br>
+            
+            <b>Next-Generation Pan-European eCall</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2017-05
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+                    <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-ecrit-ecall">
+                        <span class="badge bg-info">2</span>
+                    </a>
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/alissa@cooperw.in" >Alissa Cooper</a> <a 
+               href="mailto:alissa%40cooperw.in"
+               aria-label="Compose email to alissa@cooperw.in."
+               title="Compose email to alissa@cooperw.in.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/allison.mankin@gmail.com" >Allison Mankin</a> <a class="text-reset"
+               href="mailto:allison.mankin%40gmail.com"
+               aria-label="Compose email to allison.mankin@gmail.com."
+               title="Compose email to allison.mankin@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">40 pages</small>
+        <div>
+            <a href="/doc/rfc8148/">
+                
+                    RFC 8148
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-ecrit-car-crash)</i>
+            <br>
+            
+            <b>Next-Generation Vehicle-Initiated Emergency Calls</b>
+            
+                <a class="badge bg-warning text-decoration-none float-end"
+                   href="https://www.rfc-editor.org/errata_search.php?rfc=8148">
+                    Errata
+                </a>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2017-05
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+                    <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-ecrit-car-crash">
+                        <span class="badge bg-info">2</span>
+                    </a>
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/alissa@cooperw.in" >Alissa Cooper</a> <a 
+               href="mailto:alissa%40cooperw.in"
+               aria-label="Compose email to alissa@cooperw.in."
+               title="Compose email to alissa@cooperw.in.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/allison.mankin@gmail.com" >Allison Mankin</a> <a class="text-reset"
+               href="mailto:allison.mankin%40gmail.com"
+               aria-label="Compose email to allison.mankin@gmail.com."
+               title="Compose email to allison.mankin@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">25 pages</small>
+        <div>
+            <a href="/doc/rfc8876/">
+                
+                    RFC 8876
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-ecrit-data-only-ea)</i>
+            <br>
+            
+            <b>Non-interactive Emergency Calls</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2020-09
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/adam@nostrum.com" >Adam Roach</a> <a 
+               href="mailto:adam%40nostrum.com"
+               aria-label="Compose email to adam@nostrum.com."
+               title="Compose email to adam@nostrum.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/allison.mankin@gmail.com" >Allison Mankin</a> <a class="text-reset"
+               href="mailto:allison.mankin%40gmail.com"
+               aria-label="Compose email to allison.mankin@gmail.com."
+               title="Compose email to allison.mankin@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">4 pages</small>
+        <div>
+            <a href="/doc/rfc9036/">
+                
+                    RFC 9036
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-ecrit-location-profile-registry-policy)</i>
+            <br>
+            
+            <b>Changing the Location-to-Service Translation (LoST) Location Profiles Registry Policy</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2021-06
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/superuser@gmail.com" >Murray Kucherawy</a> <a 
+               href="mailto:superuser%40gmail.com"
+               aria-label="Compose email to superuser@gmail.com."
+               title="Compose email to superuser@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/roger.marshall@comtechtel.com" >Roger Marshall</a> <a class="text-reset"
+               href="mailto:roger.marshall%40comtechtel.com"
+               aria-label="Compose email to roger.marshall@comtechtel.com."
+               title="Compose email to roger.marshall@comtechtel.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+    </tbody>
+
+
+
+    
+    
+
+
+
+
+
+
+
+
     <tbody>
-        <tr class="info">
-          <th></th>
-          
-              <th colspan="5">
-          
-	    RFCs (22 hits)
-          </th>
+        <tr class="table-info">
+            <td></td>
+            
+                <th scope="col" colspan="5">
+            
+            Related Internet-Draft (1 hit)
+            </th>
         </tr>
     </tbody>
-
     <tbody>
         
-          
+            
 
 
 
 
 
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc5012/">RFC 5012</a>
-
-      
-        <i>(was draft-ietf-ecrit-requirements)</i>
-      
-      <br>
-      <b>Requirements for Emergency Context Resolution with Internet Technologies</b>
-      
-        <a class="label label-warning pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=5012">Errata</a>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2008-01
-    
-    </span>
 
 
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">54 pages</small>
+        <div>
+            <a href="/doc/draft-rosen-ecrit-emergency-registries/">
+                
+                    draft-rosen-ecrit-emergency-registries-00
+                
+            </a>
+            
+            <br>
+            
+            <b>Emergency Registries</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2021-12-22
+                    
+                    
+                
+                
+            </td>
+            
 
-    
-      <br><small class="text-muted">23 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
 
 
 <td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-ecrit-requirements">
     
-  </div>
-
-  
-    Informational RFC
-
     
-
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+        
+        
+        
+        
+        
     
-  
-
-
-
 </td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/jon.peterson@team.neustar"><span class="">Jon Peterson</span></a>&nbsp;<a href="mailto:jon.peterson%40team.neustar"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc5031/">RFC 5031</a>
-
-      
-        <i>(was draft-ietf-ecrit-service-urn)</i>
-      
-      <br>
-      <b>A Uniform Resource Name (URN) for Emergency and Other Well-Known Services</b>
-      
-        <a class="label label-warning pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=5031">Errata</a>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2008-01
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">14 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-ecrit-service-urn">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-      <br>Updated by <a href="/doc/rfc7163/">RFC 7163</a>
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/jon.peterson@team.neustar"><span class="">Jon Peterson</span></a>&nbsp;<a href="mailto:jon.peterson%40team.neustar"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc5069/">RFC 5069</a>
-
-      
-        <i>(was draft-ietf-ecrit-security-threats)</i>
-      
-      <br>
-      <b>Security Threats and Requirements for Emergency Call Marking and Mapping</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2008-01
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">12 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-ecrit-security-threats">
-    
-  </div>
-
-  
-    Informational RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/jon.peterson@team.neustar"><span class="">Jon Peterson</span></a>&nbsp;<a href="mailto:jon.peterson%40team.neustar"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc5222/">RFC 5222</a>
-
-      
-        <i>(was draft-ietf-ecrit-lost)</i>
-      
-      <br>
-      <b>LoST: A Location-to-Service Translation Protocol</b>
-      
-        <a class="label label-danger pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=5222">Errata</a>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2008-08
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">69 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-ecrit-lost">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-      <br>Updated by <a href="/doc/rfc6848/">RFC 6848</a>, <a href="/doc/rfc8917/">RFC 8917</a>, <a href="/doc/rfc9036/">RFC 9036</a>
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-ecrit-lost">
-        <span class="label label-default">4</span>
-      </a>
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/jon.peterson@team.neustar"><span class="">Jon Peterson</span></a>&nbsp;<a href="mailto:jon.peterson%40team.neustar"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc5223/">RFC 5223</a>
-
-      
-        <i>(was draft-ietf-ecrit-dhc-lost-discovery)</i>
-      
-      <br>
-      <b>Discovering Location-to-Service Translation (LoST) Servers Using the Dynamic Host Configuration Protocol (DHCP)</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2008-08
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">8 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-ecrit-dhc-lost-discovery">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/jon.peterson@team.neustar"><span class="">Jon Peterson</span></a>&nbsp;<a href="mailto:jon.peterson%40team.neustar"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc5582/">RFC 5582</a>
-
-      
-        <i>(was draft-ietf-ecrit-mapping-arch)</i>
-      
-      <br>
-      <b>Location-to-URL Mapping Architecture and Framework</b>
-      
-        <a class="label label-warning pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=5582">Errata</a>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2009-09
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">17 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-ecrit-mapping-arch">
-    
-  </div>
-
-  
-    Informational RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/fluffy@iii.ca"><span class="">Cullen Jennings</span></a>&nbsp;<a href="mailto:fluffy%40iii.ca"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc5964/">RFC 5964</a>
-
-      
-        <i>(was draft-ietf-ecrit-specifying-holes)</i>
-      
-      <br>
-      <b>Specifying Holes in Location-to-Service Translation (LoST) Service Boundaries</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2010-08
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">11 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-ecrit-specifying-holes">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/rjsparks@nostrum.com"><span class="">Robert Sparks</span></a>&nbsp;<a href="mailto:rjsparks%40nostrum.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc6197/">RFC 6197</a>
-
-      
-        <i>(was draft-ietf-ecrit-lost-servicelistboundary)</i>
-      
-      <br>
-      <b>Location-to-Service Translation (LoST) Service List Boundary Extension</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2011-04
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">15 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-ecrit-lost-servicelistboundary">
-    
-  </div>
-
-  
-    Experimental RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/rjsparks@nostrum.com"><span class="">Robert Sparks</span></a>&nbsp;<a href="mailto:rjsparks%40nostrum.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc6443/">RFC 6443</a>
-
-      
-        <i>(was draft-ietf-ecrit-framework)</i>
-      
-      <br>
-      <b>Framework for Emergency Calling Using Internet Multimedia</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2011-12
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">38 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-ecrit-framework">
-    
-  </div>
-
-  
-    Informational RFC
-
-    
-
-    
-      <br>Updated by <a href="/doc/rfc7852/">RFC 7852</a>
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-ecrit-framework">
-        <span class="label label-default">3</span>
-      </a>
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/rjsparks@nostrum.com"><span class="">Robert Sparks</span></a>&nbsp;<a href="mailto:rjsparks%40nostrum.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc6444/">RFC 6444</a>
-
-      
-        <i>(was draft-ietf-ecrit-location-hiding-req)</i>
-      
-      <br>
-      <b>Location Hiding: Problem Statement and Requirements</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2012-01
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">9 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-ecrit-location-hiding-req">
-    
-  </div>
-
-  
-    Informational RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/rjsparks@nostrum.com"><span class="">Robert Sparks</span></a>&nbsp;<a href="mailto:rjsparks%40nostrum.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc6739/">RFC 6739</a>
-
-      
-        <i>(was draft-ietf-ecrit-lost-sync)</i>
-      
-      <br>
-      <b>Synchronizing Service Boundaries and &lt;mapping&gt; Elements Based on the Location-to-Service Translation (LoST) Protocol</b>
-      
-        <a class="label label-danger pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=6739">Errata</a>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2012-10
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">25 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-ecrit-lost-sync">
-    
-  </div>
-
-  
-    Experimental RFC
-
-    
-
-    
-      <br>Updated by <a href="/doc/rfc8996/">RFC 8996</a>
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-ecrit-lost-sync">
-        <span class="label label-default">1</span>
-      </a>
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/rjsparks@nostrum.com"><span class="">Robert Sparks</span></a>&nbsp;<a href="mailto:rjsparks%40nostrum.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc6881/">RFC 6881</a>
-
-      
-        <i>(was draft-ietf-ecrit-phonebcp)</i>
-      
-      <br>
-      <b>Best Current Practice for Communications Services in Support of Emergency Calling</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2013-03
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">28 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-ecrit-phonebcp">
-    
-  </div>
-
-  
-    Best Current Practice RFC
-
-    
-
-    
-      <br>Updated by <a href="/doc/rfc7840/">RFC 7840</a>, <a href="/doc/rfc7852/">RFC 7852</a>
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-ecrit-phonebcp">
-        <span class="label label-default">1</span>
-      </a>
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/rjsparks@nostrum.com"><span class="">Robert Sparks</span></a>&nbsp;<a href="mailto:rjsparks%40nostrum.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc7090/">RFC 7090</a>
-
-      
-        <i>(was draft-ietf-ecrit-psap-callback)</i>
-      
-      <br>
-      <b>Public Safety Answering Point (PSAP) Callback</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2014-04
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">18 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-ecrit-psap-callback">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-ecrit-psap-callback">
-        <span class="label label-default">3</span>
-      </a>
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/rlb@ipv.sx"><span class="">Richard Barnes</span></a>&nbsp;<a href="mailto:rlb%40ipv.sx"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/rmarshall@telecomsys.com"><span class="small text-muted">Roger Marshall</span></a>&nbsp;<a href="mailto:rmarshall%40telecomsys.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc7163/">RFC 7163</a>
-
-      
-        <i>(was draft-ietf-ecrit-country-emg-urn)</i>
-      
-      <br>
-      <b>URN for Country-Specific Emergency Services</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2014-03
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">4 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-ecrit-country-emg-urn">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/rlb@ipv.sx"><span class="">Richard Barnes</span></a>&nbsp;<a href="mailto:rlb%40ipv.sx"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/marc.linsner@cisco.com"><span class="small text-muted">Marc Linsner</span></a>&nbsp;<a href="mailto:marc.linsner%40cisco.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc7378/">RFC 7378</a>
-
-      
-        <i>(was draft-ietf-ecrit-trustworthy-location)</i>
-      
-      <br>
-      <b>Trustworthy Location</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2014-12
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">31 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-ecrit-trustworthy-location">
-    
-  </div>
-
-  
-    Informational RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-ecrit-trustworthy-location">
-        <span class="label label-default">1</span>
-      </a>
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/alissa@cooperw.in"><span class="">Alissa Cooper</span></a>&nbsp;<a href="mailto:alissa%40cooperw.in"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/rmarshall@telecomsys.com"><span class="small text-muted">Roger Marshall</span></a>&nbsp;<a href="mailto:rmarshall%40telecomsys.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc7406/">RFC 7406</a>
-
-      
-        <i>(was draft-ietf-ecrit-unauthenticated-access)</i>
-      
-      <br>
-      <b>Extensions to the Emergency Services Architecture for Dealing With Unauthenticated and Unauthorized Devices</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2014-12
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">25 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-ecrit-unauthenticated-access">
-    
-  </div>
-
-  
-    Informational RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/rlb@ipv.sx"><span class="">Richard Barnes</span></a>&nbsp;<a href="mailto:rlb%40ipv.sx"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/rmarshall@telecomsys.com"><span class="small text-muted">Roger Marshall</span></a>&nbsp;<a href="mailto:rmarshall%40telecomsys.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc7840/">RFC 7840</a>
-
-      
-        <i>(was draft-ietf-ecrit-held-routing)</i>
-      
-      <br>
-      <b>A Routing Request Extension for the HTTP-Enabled Location Delivery (HELD) Protocol</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2016-05
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">16 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-ecrit-held-routing">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/alissa@cooperw.in"><span class="">Alissa Cooper</span></a>&nbsp;<a href="mailto:alissa%40cooperw.in"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/rmarshall@telecomsys.com"><span class="small text-muted">Roger Marshall</span></a>&nbsp;<a href="mailto:rmarshall%40telecomsys.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc7852/">RFC 7852</a>
-
-      
-        <i>(was draft-ietf-ecrit-additional-data)</i>
-      
-      <br>
-      <b>Additional Data Related to an Emergency Call</b>
-      
-        <a class="label label-warning pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=7852">Errata</a>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2016-07
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">113 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-ecrit-additional-data">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-ecrit-additional-data">
-        <span class="label label-default">1</span>
-      </a>
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/alissa@cooperw.in"><span class="">Alissa Cooper</span></a>&nbsp;<a href="mailto:alissa%40cooperw.in"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/mlinsner@cisco.com"><span class="small text-muted">Marc Linsner</span></a>&nbsp;<a href="mailto:mlinsner%40cisco.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc8147/">RFC 8147</a>
-
-      
-        <i>(was draft-ietf-ecrit-ecall)</i>
-      
-      <br>
-      <b>Next-Generation Pan-European eCall</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2017-05
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">43 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-ecrit-ecall">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-ecrit-ecall">
-        <span class="label label-default">2</span>
-      </a>
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/alissa@cooperw.in"><span class="">Alissa Cooper</span></a>&nbsp;<a href="mailto:alissa%40cooperw.in"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/allison.mankin@gmail.com"><span class="small text-muted">Allison Mankin</span></a>&nbsp;<a href="mailto:allison.mankin%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc8148/">RFC 8148</a>
-
-      
-        <i>(was draft-ietf-ecrit-car-crash)</i>
-      
-      <br>
-      <b>Next-Generation Vehicle-Initiated Emergency Calls</b>
-      
-        <a class="label label-warning pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=8148">Errata</a>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2017-05
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">40 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-ecrit-car-crash">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-ecrit-car-crash">
-        <span class="label label-default">2</span>
-      </a>
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/alissa@cooperw.in"><span class="">Alissa Cooper</span></a>&nbsp;<a href="mailto:alissa%40cooperw.in"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/allison.mankin@gmail.com"><span class="small text-muted">Allison Mankin</span></a>&nbsp;<a href="mailto:allison.mankin%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc8876/">RFC 8876</a>
-
-      
-        <i>(was draft-ietf-ecrit-data-only-ea)</i>
-      
-      <br>
-      <b>Non-interactive Emergency Calls</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2020-09
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">25 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-ecrit-data-only-ea">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/adam@nostrum.com"><span class="">Adam Roach</span></a>&nbsp;<a href="mailto:adam%40nostrum.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/allison.mankin@gmail.com"><span class="small text-muted">Allison Mankin</span></a>&nbsp;<a href="mailto:allison.mankin%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc9036/">RFC 9036</a>
-
-      
-        <i>(was draft-ietf-ecrit-location-profile-registry-policy)</i>
-      
-      <br>
-      <b>Changing the Location-to-Service Translation (LoST) Location Profiles Registry Policy</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2021-06
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">4 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-ecrit-location-profile-registry-policy">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/superuser@gmail.com"><span class="">Murray Kucherawy</span></a>&nbsp;<a href="mailto:superuser%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/roger.marshall@comtechtel.com"><span class="small text-muted">Roger Marshall</span></a>&nbsp;<a href="mailto:roger.marshall%40comtechtel.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-      
-    </tbody>
-  </table>
-
-
-  
-  
-
-
-
-
-  
-
-  
-  <table class="table table-condensed table-striped tablesorter">
-    <thead>
-      <tr>
-        <th class="sorter-false"></th>
-
-        
-          
-            <th data-header="document">
-	      
-	        Document
-	      
-            </th>
-          
-        
-          
-        
-          
-            <th data-header="date">
-	      
-	        Date
-	      
-            </th>
-          
-        
-          
-            <th data-header="status">
-	      
-	        Status
-	      
-            </th>
-          
-        
-          
-            <th data-header="ipr">
-	      
-	        IPR
-	      
-            </th>
-          
-        
-          
-            <th data-header="ad">
-	      
-	        AD / Shepherd
-	      
-            </th>
-          
-        
-
-        
-      </tr>
-    </thead>
-
-    
-
-      
-    <tbody>
-        <tr class="info">
-          <th></th>
-          
-              <th colspan="5">
-          
-	    Related Internet-Draft (1 hit)
-          </th>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
         </tr>
+        
     </tbody>
 
-    <tbody>
-        
-          
+</table>
 
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-rosen-ecrit-emergency-registries/">draft-rosen-ecrit-emergency-registries-00</a>
-
-      
-      <br>
-      <b>Emergency Registries</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2021-12-22
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">54 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-rosen-ecrit-emergency-registries">
-    
-  </div>
-
-  
-    
-      I-D Exists
-    
-
-    
-
-    <wbr>
-
-    <wbr>
-    
-    
-
-    
-      
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-      
-    </tbody>
-  </table>
-
-
-  <ul class="list-inline pull-right" style="margin-top:1em;">
-  <li>
+    <div class="text-end">
     <label id="list-feeds">Atom feed:</label>
     <div class="btn-group" role="group" aria-labelledby="list-feeds">
-      <a class="btn btn-default" title="Feed of all changes" href="/group/ecrit/documents/feed/">All changes</a>
-      <a class="btn btn-default" title="Feed of only significant state changes" href="/group/ecrit/documents/feed/?significant=1">Significant</a>
+        <a class="btn btn-primary"
+           title="Feed of all changes"
+           href="/group/ecrit/documents/feed/">
+            <i class="bi bi-rss"></i> All changes
+        </a>
+        <a class="btn btn-primary"
+           title="Feed of only significant state changes"
+           href="/group/ecrit/documents/feed/?significant=1">
+            <i class="bi bi-rss"></i> Significant
+        </a>
     </div>
-  </li>
-
-  
-    <li><a class="btn btn-default" href="/group/ecrit/documents/subscription/">
-      <i class="glyphicon glyphicon-envelope"></i>
-      
-        Subscribe to changes
-      
-    </a></li>
-  
-
-  <li><a class="btn btn-default" href="/group/ecrit/documents/csv/"><i class="glyphicon glyphicon-list"></i> Export as CSV</a></li>
-</ul>
-
-
-
+    
+        <a class="btn btn-primary"
+           href="/group/ecrit/documents/subscription/">
+            <i class="bi bi-envelope"></i>
+            
+                Subscribe to changes
+            
+        </a>
+    
+    <a class="btn btn-primary"
+       href="/group/ecrit/documents/csv/">
+        <i class="bi bi-file-ruled"></i> Export as CSV
+    </a>
+</div>
 
 
+                    
+                </div>
+            </div>
+            <hr>
+            
+                <footer class="col-md-12 col-sm-12 text-center">
+                    <a href="https://www.ietf.org/" class="p-3">IETF</a>
+                    <a href="https://www.ietf.org/iesg/" class="p-3">IESG</a>
+                    <a href="https://www.iab.org/" class="p-3">IAB</a>
+                    <a href="https://www.irtf.org/" class="p-3">IRTF</a>
+                    <a href="https://www.ietf.org/llc/" class="p-3">IETF&nbsp;LLC</a>
+                    <a href="https://trustee.ietf.org/" class="p-3">IETF&nbsp;Trust</a>
+                    <a href="https://www.rfc-editor.org/" class="p-3">RFC&nbsp;Editor</a>
+                    <a href="https://www.iana.org/" class="p-3">IANA</a>
+                    <a href="https://www.ietf.org/privacy-statement/" class="p-3">Privacy&nbsp;Statement</a>
+                    <div class="small text-muted p-3">
+                        
+                            <a href="/release/about">About</a>
+                            <a href="https://github.com/ietf-tools/datatracker/">IETF Datatracker</a>
+                            
+                                <a href="https://github.com/ietf-tools/datatracker/releases/tag/8.0.0">Version 8.0.0</a>
+                            
+                            (main - 87fac4e)
+                        
+                        Report a bug:
+                        <a href="https://github.com/ietf-tools/datatracker/issues/new/choose">
+                            GitHub
+                            <i class="bi bi-bug"></i>
+                        </a>
+                        
+                            <a href="mailto:datatracker-project@ietf.org">
+                                Email
+                                <i class="bi bi-envelope"></i>
+                            </a>
+                        
+                        <br>
+                        Python 3.6.12
+                        Django 2.2.28
+                        <br>
+                        
+
+
+
+
+
+                    </div>
+                </footer>
+            
+        </div>
         
-        
-	  </div>
-        
+    <script src="https://www.ietf.org/lib/dt/8.0.0/ietf/js/list.js"></script>
 
-	
-	<hr>
-	  <div class="col-md-12 col-sm-12">
-	    <div class="text-center padded">
-	        <a href="https://www.rfc-editor.org/" class="padded">RFC&nbsp;Editor</a>
-	        <a href="https://www.ietf.org/llc/" class="padded">IASA&nbsp;&amp;&nbsp;IETF&nbsp;LLC</a>
-	        <a href="https://trustee.ietf.org/" class="padded">IETF&nbsp;Trust</a>
-	        <a href="https://www.irtf.org/" class="padded">IRTF</a>
-	        <a href="https://www.ietf.org/" class="padded">IETF</a>
-	        <a href="https://www.ietf.org/iesg/" class="padded">IESG</a>
-	        <a href="https://www.iab.org/" class="padded">IAB</a>
-	        <a href="https://www.iana.org/" class="padded">IANA</a>
-	        <a href="https://www.ietf.org/privacy-statement/" class="padded">Privacy&nbsp;Statement</a>
-	    </div>
-	  </div>
-
-
-        <footer class="col-md-12 col-sm-12">
-	  <div class="col-md-12">
-	    <div class="text-center">
-	      <p class="small text-muted">
-	        
-		  <a href="/release/about">About</a> |
-	          IETF Datatracker |
-	          <a href="/release/7.46.0.p4/">Version 7.46.0.p4</a> |
-	          2022-03-10 |
-	        
-		Report a bug:
-	        <a href="https://trac.ietf.org/trac/ietfdb/newticket">Tracker:<span class="fa fa-bug"></span></a>
-                
-	        <a href="mailto:datatracker-project@ietf.org">Email:<span class="fa fa-envelope"></span></a>
-                
-		<br>
-                Python 3.6.12 |
-		Django 2.2.27
-	      </p>
-	    </div>
-	  </div>
-        </footer>
-	
-
-      </div>
-
-      
-
-
-
-
-      <script src="https://www.ietf.org/lib/dt/7.46.0/jquery/jquery.min.js"></script>
-      
-      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
-      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
-      <script src="https://www.ietf.org/lib/dt/7.46.0/js-cookie/src/js.cookie.js"></script>
-      <script src="https://www.ietf.org/lib/dt/7.46.0/ietf/bootstrap/js/bootstrap.min.js"></script>
-      <script src="https://www.ietf.org/lib/dt/7.46.0/ietf/js/ietf.js"></script>
-      
-<script src="https://www.ietf.org/lib/dt/7.46.0/jquery.tablesorter/js/jquery.tablesorter.combined.min.js"></script>
-
-      
-  <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6fb2a759de9f6a9e',m:'nYjZGoHoNotx4nultHqrsEskkR9BI7QxfP8PsW_0DkU-1649836678-0-AV7jM1PEkZ0GxV1lEBDJ9ZkPFTtxahVu95YJvx8jWrh8+VEafBcfw5MLq2GIRu3BwysC5AdQ80Oxm+ILDLtILrP1PvxnM4MhP5YGNX5rD8ghG2ksobJTLV/eaUQuZjliS39/hF9QtAOZeb7iFpY3qWQ=',s:[0x22eebc370a,0xf99d435b8d],}})();</script></body>
+        <script src="https://www.ietf.org/lib/dt/8.0.0/ietf/js/select2.js"></script>
+        <script>
+            $('#navbar-doc-search').on('select2:select', function (e) {
+                window.location.href = e.params.data.url;
+            });
+        </script>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6ff48946cb0aa9c1',m:'5JuvBA7f6IYVP62lR15G0MjO.n306dlP24NeUITZYp8-1650527506-0-AdPiyH3JN/SnSM+tAqnkTpbkXK+YamYggC5yZeEbxu2MuajTqSDhzepePjopO8Ky2ebw0RohEVkinNYy3yiotbXgmHgXuziaCkgdbkFXKCEsCb59QBcSOjXM/erfAFaac1JpBmk3R+MLG43nAVFkR10=',s:[0x115640dbd3,0x90aa9a6a89],}})();</script></body>
 </html>

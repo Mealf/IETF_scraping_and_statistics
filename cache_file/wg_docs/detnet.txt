@@ -1,4182 +1,3616 @@
-<!DOCTYPE html> 
+
+<!DOCTYPE html>
+
 
 
 
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Deterministic Networking (detnet) - Documents</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>
+            Deterministic Networking (detnet)
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="https://www.ietf.org/lib/dt/8.0.0/ietf/css/ietf.css">
+        <link rel="stylesheet" href="https://www.ietf.org/lib/dt/8.0.0/ietf/css/select2.css">
+        <style>
+            
+            .leftmenu { width: 13em; }
+        </style>
+        
+    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/8.0.0/ietf/css/list.css">
 
-    <link href="https://www.ietf.org/lib/dt/7.46.0/ptmono/stylesheet.css" rel='stylesheet' type='text/css'>
-    <link href="https://www.ietf.org/lib/dt/7.46.0/ptsans/stylesheet.css" rel='stylesheet' type='text/css'>
-    <link href="https://www.ietf.org/lib/dt/7.46.0/ptserif/stylesheet.css" rel='stylesheet' type='text/css'>
+        
+            <link rel="shortcut icon"
+                  href="https://www.ietf.org/lib/dt/8.0.0/ietf/images/ietf-icon-blue3.png">
+        
+        <link rel="apple-touch-icon"
+              href="https://www.ietf.org/lib/dt/8.0.0/ietf/images/apple-touch-icon.png">
+        <script src="https://www.ietf.org/lib/dt/8.0.0/ietf/js/ietf.js"></script>
+    <script async src='/cdn-cgi/bm/cv/669835187/api.js'></script></head>
+    <body  class="position-relative"
+          data-group-menu-data-url="/group/groupmenu.json">
+        <a class="visually-hidden visually-hidden-focusable" href="#content">Skip to main content</a>
+        <nav class="navbar navbar-expand-lg  navbar-dark bg-secondary    fixed-top ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">
+                    <img alt="IETF Logo"
+                         src="https://www.ietf.org/lib/dt/8.0.0/ietf/images/ietflogo-small-transparent.png">
+                    Datatracker
+                    
+                </a>
+                <div class="collapse navbar-collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        
+
+
+
+
+<li class="nav-item dropdown">
+    
+        <a href="#"
+           class="nav-link dropdown-toggle"
+           role="button"
+           data-bs-auto-close="false"
+           data-bs-toggle="dropdown"
+           aria-expanded="false">
+            Groups
+        </a>
+        <ul class="dropdown-menu mt-n1">
+        
+    <li class="dropdown-header">By area/parent</li>
     
 
-    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/ietf/font-datatracker/css/font-datatracker.css">
-    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/ietf/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/ietf/bootstrap/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/ietf/css/ietf.css">
-    
-    <style>
-     
-    </style>
-
-    
-<link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/jquery.tablesorter/css/theme.bootstrap.min.css">
 
 
-    
-    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.46.0/ietf/images/ietf-icon-blue3.png">
-    
-    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.46.0/ietf/images/apple-touch-icon.png">
-  <script async src='/cdn-cgi/bm/cv/669835187/api.js'></script></head>
+    <li class="dropend group-menu group-parent-2010">
+        <a class="dropdown-item dropdown-toggle "
+           href="/wg/#art">
+            Apps &amp; Realtime
+        </a>
+    </li>
 
-  <body  data-group-menu-data-url="/group/groupmenu.json">
-      <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container-fluid">
-	  <div class="navbar-header">
-	    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-	      <span class="sr-only">Toggle navigation</span>
-	      <span class="icon-bar"></span>
-	      <span class="icon-bar"></span>
-	      <span class="icon-bar"></span>
-	    </button>
-	    <a class="navbar-brand" href="/">
-	       <img alt="IETF Logo" src="https://www.ietf.org/lib/dt/7.46.0/ietf/images/ietflogo-small-transparent.png">
-	       
-		  
-		  Datatracker
-		  
-	       
-	    </a>
-	  </div>
+    <li class="dropend group-menu group-parent-1008">
+        <a class="dropdown-item dropdown-toggle "
+           href="/wg/#gen">
+            General
+        </a>
+    </li>
 
-	  <noscript>
-	    <p class="navbar-text"><small>Enable Javascript for full functionality.</small></p>
-	  </noscript>
+    <li class="dropend group-menu group-parent-1052">
+        <a class="dropdown-item dropdown-toggle "
+           href="/wg/#int">
+            Internet
+        </a>
+    </li>
 
-	  <div class="collapse navbar-collapse" id="navbar-collapse">
-	    <ul class="hidden-nojs nav navbar-nav">
-              
+    <li class="dropend group-menu group-parent-1193">
+        <a class="dropdown-item dropdown-toggle "
+           href="/wg/#ops">
+            Ops &amp; Management
+        </a>
+    </li>
+
+    <li class="dropend group-menu group-parent-1249">
+        <a class="dropdown-item dropdown-toggle "
+           href="/wg/#rtg">
+            Routing
+        </a>
+    </li>
+
+    <li class="dropend group-menu group-parent-1260">
+        <a class="dropdown-item dropdown-toggle "
+           href="/wg/#sec">
+            Security
+        </a>
+    </li>
+
+    <li class="dropend group-menu group-parent-1324">
+        <a class="dropdown-item dropdown-toggle "
+           href="/wg/#tsv">
+            Transport
+        </a>
+    </li>
+
+    <li class="dropend group-menu group-parent-7">
+        <a class="dropdown-item dropdown-toggle "
+           href="/program/">
+            IAB
+        </a>
+    </li>
+
+    <li class="dropend group-menu group-parent-3">
+        <a class="dropdown-item dropdown-toggle "
+           href="/rg/">
+            IRTF
+        </a>
+    </li>
+
+    <li class="dropend group-menu group-parent-2309">
+        <a class="dropdown-item dropdown-toggle "
+           href="/adm/">
+            IETF LLC
+        </a>
+    </li>
 
 
-
-
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-  
-  Groups
-  
-    </a>
-    <ul class="dropdown-menu" role="menu">
-
-    <li class="dropdown-header visible-lg-block">By area/parent</li>
-  
+    <li class="dropend">
+        <a class="dropdown-item dropdown-toggle "
+           href="/group/">
+            Other
+        </a>
         
 
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-2010">
-    <a href="/wg/#art">Apps &amp; Realtime</a>
-  </li>
 
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1008">
-    <a href="/wg/#gen">General</a>
-  </li>
-
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1052">
-    <a href="/wg/#int">Internet</a>
-  </li>
-
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1193">
-    <a href="/wg/#ops">Ops &amp; Mgmt</a>
-  </li>
-
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1249">
-    <a href="/wg/#rtg">Routing</a>
-  </li>
-
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1260">
-    <a href="/wg/#sec">Security</a>
-  </li>
-
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1324">
-    <a href="/wg/#tsv">Transport</a>
-  </li>
-
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-7">
-    <a href="/program/">IAB</a>
-  </li>
-
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-3">
-    <a href="/rg/">IRTF</a>
-  </li>
-
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-2309">
-    <a href="/adm/">IETF LLC</a>
-  </li>
-
-
-        <li class="dropdown-submenu group-menu"><a href="/group/">Other</a>
-<ul class="dropdown-menu" role="menu">
-
-  <li>
-    <a href="/ag/">Active AGs</a>
-  </li>
-
-  <li>
-    <a href="/area/">Active Areas</a>
-  </li>
-
-  <li>
-    <a href="/dir/">Active Directorates</a>
-  </li>
-
-  <li>
-    <a href="/program/">Active Programs</a>
-  </li>
-
-  <li>
-    <a href="/rag/">Active RAGs</a>
-  </li>
-
-  <li>
-    <a href="/team/">Active Teams</a>
-  </li>
-
-
-  <li>
-    <a href="/group/rsoc/">RSOC</a>
-  </li>
-
+<ul class="dropdown-menu ms-n1">
+    
+        <li>
+            <a class="dropdown-item "
+               href="/ag/">Active AGs</a>
+        </li>
+    
+        <li>
+            <a class="dropdown-item "
+               href="/area/">Active Areas</a>
+        </li>
+    
+        <li>
+            <a class="dropdown-item "
+               href="/dir/">Active Directorates</a>
+        </li>
+    
+        <li>
+            <a class="dropdown-item "
+               href="/program/">Active Programs</a>
+        </li>
+    
+        <li>
+            <a class="dropdown-item "
+               href="/rag/">Active RAGs</a>
+        </li>
+    
+        <li>
+            <a class="dropdown-item "
+               href="/team/">Active Teams</a>
+        </li>
+    
+    
+        <li>
+            <a class="dropdown-item "
+               href="/group/rsoc/">RSOC</a>
+        </li>
+    
 </ul>
- </li>
 
-  <li class="divider hidden-xs"></li>
-  <li class="dropdown-header hidden-xs">New work</li>
-  <li><a href="/group/chartering/">Chartering groups</a></li>
-  <li><a href="/wg/bofs/">BOFs</a></li>
-  <li><a href="/doc/bof-requests">BOF Requests</a></li>
-
-  <li class="divider hidden-xs"></li>
-  <li class="dropdown-header hidden-xs">Other groups</li>
-  <li><a href="/group/concluded/">Concluded groups</a></li>
-  <li><a href="/list/nonwg">Non-WG lists</a></li>
-
-</ul>
-</li>
-
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-  
-  Documents
-  
-    </a>
-    <ul class="dropdown-menu" role="menu">
-  
-  <li><a href="/doc/search">Search</a></li>
-  <li><a href="/doc/recent">Recent drafts</a></li>
-  <li><a href="/submit/">Draft submission</a></li>
-
-  
-
-
-  <li class="divider hidden-xs"></li>
-  <li class="dropdown-header hidden-xs">RFC streams</li>
-        <li><a href="/stream/iab/">IAB</a></li>
-        <li><a href="/stream/irtf/">IRTF</a></li>
-        <li><a href="/stream/ise/">ISE</a></li>
-
-</ul>
-</li>
-
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-  
-  Meetings
-  
-    </a>
-    <ul class="dropdown-menu" role="menu">
-  
-
-
-  
-  <li class="dropdown-header visible-lg-block">Next meeting</li>
-  
-  <li><a href="/meeting/agenda/">Agenda</a></li>
-  <li><a href="/meeting/materials/">Materials</a></li>
-  <li><a href="/meeting/floor-plan/">Floor plan</a></li>
-  <li><a href="https://www.ietf.org/how/meetings/register/">Registration</a></li>
-  <li><a href="/meeting/important-dates/">Important dates</a></li>
-  <li><a href="/secr/sreq/">Request a session</a></li>
-  <li><a href="/meeting/requests">Session requests</a></li>
-  
-  <li class="divider hidden-xs"></li>
-  <li class="dropdown-header visible-lg-block">Upcoming meetings</li>
-  
-  <li><a href="/meeting/upcoming">Upcoming meetings</a></li>
-  
-  <li class="divider hidden-xs"></li>
-  <li class="dropdown-header visible-lg-block">Past meetings</li>
-  
-  <li><a href="/meeting/past">Past meetings</a></li>
-  <li><a href="https://www.ietf.org/how/meetings/past/">Meeting proceedings</a></li>
-</ul>
-</li>
-
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-  
-  Other
-  
-    </a>
-    <ul class="dropdown-menu" role="menu">
-  
-
-  <li><a href="/ipr/">IPR disclosures</a></li>
-  <li><a href="/liaison/">Liaison statements</a></li>
-  <li><a href="/iesg/agenda/">IESG agenda</a></li>
-  <li><a href="/nomcom/">NomComs</a></li>
-  <li><a href="/doc/downref/">Downref registry</a></li>
-  <li class="dropdown-submenu">
-    <a href="/stats/">Statistics</a>
-    <ul class="dropdown-menu">
-      <li><a href="/stats/document/">Drafts/RFCs</a></li>
-      <li><a href="/stats/meeting/">Meetings</a></li>
-      
+    </li>
+    <li><hr class="dropdown-divider"></li>
+    <li class="dropdown-header">New work</li>
+    <li>
+        <a class="dropdown-item "
+           href="/group/chartering/">
+            Chartering groups
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/wg/bofs/">
+            BOFs
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/doc/bof-requests">
+            BOF Requests
+        </a>
+    </li>
+    <li><hr class="dropdown-divider"></li>
+    <li class="dropdown-header">Other groups</li>
+    <li>
+        <a class="dropdown-item "
+           href="/group/concluded/">
+            Concluded groups
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/list/nonwg">
+            Non-WG lists
+        </a>
+    </li>
+    
     </ul>
-  </li>
-  <li><a href="/group/edu/materials/">Tutorials</a></li>
-  <li><a href="/api/">API Help</a></li>  
-  <li><a href="/release/">Release notes</a></li>
-  <li class="divider hidden-xs"></li>
-  <li><a href="https://trac.ietf.org/trac/ietfdb/newticket"><span class="fa fa-bug"></span> Report a bug</a></li>
-</ul>
+</li>
+
+<li class="nav-item dropdown">
+    
+        <a href="#"
+           class="nav-link dropdown-toggle"
+           role="button"
+           data-bs-toggle="dropdown"
+           aria-expanded="false">
+            Documents
+        </a>
+        <ul class="dropdown-menu mt-n1">
+        
+    <li>
+        <a class="dropdown-item "
+           href="/doc/search">
+            Search
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/doc/recent">
+            Recent drafts
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/submit/">
+            Draft submission
+        </a>
+    </li>
+    
+    
+        <li><hr class="dropdown-divider">
+        </li>
+    
+    <li class="dropdown-header">
+        RFC streams
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/stream/iab/">
+            IAB
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/stream/irtf/">
+            IRTF
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/stream/ise/">
+            ISE
+        </a>
+    </li>
+    
+    </ul>
+</li>
+
+<li class="nav-item dropdown">
+    
+        <a href="#"
+           class="nav-link dropdown-toggle"
+           role="button"
+           data-bs-toggle="dropdown"
+           aria-expanded="false">
+            Meetings
+        </a>
+        <ul class="dropdown-menu mt-n1">
+        
+    <li>
+        <a class="dropdown-item "
+           href="/meeting/agenda/">
+            Agenda
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/meeting/materials/">
+            Materials
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/meeting/floor-plan/">
+            Floor plan
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="https://www.ietf.org/how/meetings/register/">
+            Registration
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/meeting/important-dates/">
+            Important dates
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/secr/sreq/">
+            Request a session
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/meeting/requests">
+            Session requests
+        </a>
+    </li>
+    
+        
+            <li><hr class="dropdown-divider">
+            </li>
+        
+        <li class="dropdown-header">
+            Upcoming meetings
+        </li>
+    
+    <li>
+        <a class="dropdown-item "
+           href="/meeting/upcoming">
+            Upcoming meetings
+        </a>
+    </li>
+    
+        
+            <li><hr class="dropdown-divider">
+            </li>
+        
+        <li class="dropdown-header">
+            Past meetings
+        </li>
+    
+    <li>
+        <a class="dropdown-item "
+           href="/meeting/past">
+            Past meetings
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="https://www.ietf.org/how/meetings/past/">
+            Meeting proceedings
+        </a>
+    </li>
+    
+    </ul>
+</li>
+
+<li class="nav-item dropdown">
+    
+        <a href="#"
+           class="nav-link dropdown-toggle"
+           role="button"
+           data-bs-toggle="dropdown"
+           aria-expanded="false">
+            Other
+        </a>
+        <ul class="dropdown-menu mt-n1">
+        
+    <li>
+        <a class="dropdown-item "
+           href="/ipr/">
+            IPR disclosures
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/liaison/">
+            Liaison statements
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/iesg/agenda/">
+            IESG agenda
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/nomcom/">
+            NomComs
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/doc/downref/">
+            Downref registry
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/stats/">
+            Statistics
+        </a>
+        <ul class="dropdown-menu mt-n1">
+            <li>
+                <a class="dropdown-item "
+                   href="/stats/document/">
+                    Drafts/RFCs
+                </a>
+            </li>
+            <li>
+                <a class="dropdown-item "
+                   href="/stats/meeting/">
+                    Meetings
+                </a>
+            </li>
+            
+        </ul>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/group/edu/materials/">
+            Tutorials
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/api/">
+            API Help
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/release/">
+            Release notes
+        </a>
+    </li>
+    
+        <li><hr class="dropdown-divider">
+        </li>
+    
+    <li>
+        <a class="dropdown-item "
+           href="https://github.com/ietf-tools/datatracker/issues/new/choose">
+            <i class="bi bi-bug">
+            </i>
+            Report a bug
+        </a>
+    </li>
+    
+    </ul>
 </li>
 
 
-  
-
-
-<li class="dropdown">
-  
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-     User 
-  </a>
-  <ul class="dropdown-menu" role="menu">
-  
-
-  
     
-      <li><a rel="nofollow" href="/accounts/login/?next=/wg/detnet/documents/">Sign in</a></li>
-      <li><a rel="nofollow" href="/accounts/reset/">Password reset</a></li>
-      <li><a href="/accounts/settings/" rel="nofollow">Preferences</a></li>
+
+
+
+<li class="nav-item dropdown">
     
-    <li><a href="/help/personal-information">Handling of personal information</a></li>  
-  
-
-  
-    <li><a href="/accounts/create/">New account</a></li>
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-</ul>
-
-            </ul>
+        <a href="#"
+           class="nav-link dropdown-toggle"
+           role="button"
+           data-bs-toggle="dropdown"
+           aria-expanded="false">
+            
+                User
+            
+        </a>
+        <ul class="dropdown-menu  mt-n1 ">
         
-            <p class="navbar-text"></p>
-            <a class="btn btn-warning btn-sm navbar-btn" rel="nofollow" href="/accounts/login/?next=/wg/detnet/documents/">Sign in</a>
+    
+        
+            <li>
+                <a class="dropdown-item "
+                   rel="nofollow"
+                   href="/accounts/login/?next=/wg/detnet/documents/">
+                    Sign in
+                </a>
+            </li>
+            <li>
+                <a class="dropdown-item "
+                   rel="nofollow"
+                   href="/accounts/reset/">
+                    Password reset
+                </a>
+            </li>
+            <li>
+                <a class="dropdown-item "
+                   href="/accounts/settings/"
+                   rel="nofollow">
+                    Preferences
+                </a>
+            </li>
+        
+        <li>
+            <a class="dropdown-item "
+               href="/help/personal-information">
+                Handling of personal information
+            </a>
+        </li>
+    
+    
+        <li>
+            <a class="dropdown-item "
+               href="/accounts/create/">
+                New account
+            </a>
+        </li>
+    
+    
+    
+    
+    
+    
+    </ul></li>
+
+
+
+                    </ul>
+                </div>
+                
+                    <a class="d-none d-sm-block mx-5 btn  btn-warning "
+                       rel="nofollow"
+                       href="/accounts/login/?next=/wg/detnet/documents/">
+                        Sign
+                        in
+                    </a>
+                
+                <div class="d-flex d-none d-lg-block">
+                    <label aria-label="Document search">
+                    <input class="form-control select2-field"
+                           id="navbar-doc-search"
+                           data-ajax--url="/doc/select2search/docalias/draft/"
+                           type="text"
+                           data-placeholder="Document search">
+                   </label>
+                </div>
+                <button class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbar-collapse"
+                        aria-controls="navbar-collapse"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <i class="navbar-toggler-icon"></i>
+                </button>
+            </div>
+        </nav>
+        <div class="pt-3 container-fluid">
+            <div class="row">
+                
+                <div class="col mx-lg-3 ietf-auto-nav" id="content">
+                    <noscript>
+                        <div class="alert alert-danger alert-ignore my-3">
+                            <b>Javascript disabled?</b> Like other modern websites, the IETF Datatracker relies on Javascript.
+                            Please enable Javascript for full functionality.
+                        </div>
+                    </noscript>
+                    
+                    
+    
+    <h1>
+        Deterministic Networking (detnet)
+        
+        
+        
+    </h1>
+    <ul class="nav nav-tabs my-3">
+        
+            <li class="nav-item">
+                <a class="nav-link "
+                   href="/wg/detnet/about/">About</a>
+            </li>
+        
+            <li class="nav-item">
+                <a class="nav-link active"
+                   href="/wg/detnet/documents/">Documents</a>
+            </li>
+        
+            <li class="nav-item">
+                <a class="nav-link "
+                   href="/wg/detnet/meetings/">Meetings</a>
+            </li>
+        
+            <li class="nav-item">
+                <a class="nav-link "
+                   href="/wg/detnet/history/">History</a>
+            </li>
+        
+            <li class="nav-item">
+                <a class="nav-link "
+                   href="/wg/detnet/photos/">Photos</a>
+            </li>
+        
+            <li class="nav-item">
+                <a class="nav-link "
+                   href="/wg/detnet/email/">Email expansions</a>
+            </li>
+        
+            <li class="nav-item">
+                <a class="nav-link "
+                   href="https://mailarchive.ietf.org/arch/browse/detnet/">List archive &raquo;</a>
+            </li>
+        
+    </ul>
+    <div class="buttonlist">
+        
+            
+        
+    </div>
+    
+    
+    
         
 
-	    <form class="navbar-form navbar-right hidden-xs" action="/doc/search/">
-	      <div class="form-group">
-	        <input class="form-control input-sm" type="text" name="name" placeholder="Document search" required>
-	        <input type="hidden" name="activedrafts" value="on">
-	        <input type="hidden" name="rfcs" value="on">
-	      </div>
-	    </form>
-	  </div>
+
+
+
+
+
+    <table class="table table-sm table-striped tablesorter">
+        <thead>
+            <tr>
+                <th scope="col"></th>
+                
+                    
+                        <th scope="col" data-sort="document"
+                            >
+                            
+                                Document
+                            
+                        </th>
+                    
+                
+                    
+                
+                    
+                        <th scope="col" data-sort="date"
+                            >
+                            
+                                Date
+                            
+                        </th>
+                    
+                
+                    
+                        <th scope="col" data-sort="status"
+                            >
+                            
+                                Status
+                            
+                        </th>
+                    
+                
+                    
+                        <th scope="col" data-sort="ipr"
+                            
+                              class="d-none d-sm-table-cell"
+                            >
+                            
+                                IPR
+                            
+                        </th>
+                    
+                
+                    
+                        <th scope="col" data-sort="ad"
+                            
+                              class="d-none d-sm-table-cell"
+                            >
+                            
+                                AD/Shepherd
+                            
+                        </th>
+                    
+                
+            </tr>
+        </thead>
+
+
+
+    <tbody>
+        <tr class="table-info">
+            <td></td>
+            
+                <th scope="col" colspan="5">
+            
+            Active Internet-Drafts (6 hits)
+            </th>
+        </tr>
+    </tbody>
+    <tbody>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">31 pages</small>
+        <div>
+            <a href="/doc/draft-ietf-detnet-bounded-latency/">
+                
+                    draft-ietf-detnet-bounded-latency-10
+                
+            </a>
+            
+            <br>
+            
+            <b>DetNet Bounded Latency</b>
+            
         </div>
-      </nav>
-      <div class="container-fluid-narrow">
         
-        
-        
-	  <div class="col-md-12 col-sm-12" id="content">
-        
-        
-  
-
-  <h1>Deterministic Networking (detnet)
-    
-    
-    
-  </h1>
-
-  <ul class="nav nav-tabs" role="tablist">
-    
-      <li >
-        <a href="/wg/detnet/about/">About</a>
-      </li>
-    
-      <li class="active">
-        <a href="/wg/detnet/documents/">Documents</a>
-      </li>
-    
-      <li >
-        <a href="/wg/detnet/meetings/">Meetings</a>
-      </li>
-    
-      <li >
-        <a href="/wg/detnet/history/">History</a>
-      </li>
-    
-      <li >
-        <a href="/wg/detnet/photos/">Photos</a>
-      </li>
-    
-      <li >
-        <a href="/wg/detnet/email/">Email expansions</a>
-      </li>
-    
-      <li >
-        <a href="https://mailarchive.ietf.org/arch/browse/detnet/">List archive &raquo;</a>
-      </li>
-    
-  </ul>
-
-  <div class="buttonlist">
-    
-      
-    
-  </div>
-
-  
-  
-  
-    
+    </td>
+    <td>
+            
+                
+                    <a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-detnet-bounded-latency-10">
+                    
+                    
+                    
+                        2022-04-08
+                    
+                    
+                        </a>
+                    
+                
+                    <br>
+                    <div class="float-end">
+                        <span class="badge bg-success">New</span>
+                    </div>
+                
+                
+            </td>
+            
 
 
 
-
-  
-
-  
-  <table class="table table-condensed table-striped tablesorter">
-    <thead>
-      <tr>
-        <th class="sorter-false"></th>
-
-        
-          
-            <th data-header="document">
-	      
-	        Document
-	      
-            </th>
-          
-        
-          
-        
-          
-            <th data-header="date">
-	      
-	        Date
-	      
-            </th>
-          
-        
-          
-            <th data-header="status">
-	      
-	        Status
-	      
-            </th>
-          
-        
-          
-            <th data-header="ipr">
-	      
-	        IPR
-	      
-            </th>
-          
-        
-          
-            <th data-header="ad">
-	      
-	        AD / Shepherd
-	      
-            </th>
-          
-        
-
-        
-      </tr>
-    </thead>
-
+<td class="status">
     
+        <div class="float-end ms-1 mb-1" id="ballot-icon-draft-ietf-detnet-bounded-latency"></div>
+    
+    
+        
+            Approved-announcement to be sent::AD Followup
+        
+        
+        
+        <span class="badge bg-success">for 14 days</span>
+        
+        
+            
+        
+        
+            <br>
+            
+                Submitted to IESG for Publication
+                
+                    :
+                
+            
+        
+        Informational
+        
+        
+            <br>
+            Reviews:
+            <a href="/group/artart/">artart</a>,
+                
+                    <a href="/group/genart/">genart</a>,
+                
+                    <a href="/group/intdir/">intdir</a>,
+                
+                    <a href="/group/opsdir/">opsdir</a>,
+                
+                    <a href="/group/rtgdir/">rtgdir</a>,
+                
+                    <a href="/group/secdir/">secdir</a>,
+                
+                    <a href="/group/tsvart/">tsvart</a>
+        
+        
+        
+            <br>
+            Action Holder:
+            
+                <span ><a 
+           title="Group Chair"
+            href="/person/janos.farkas@ericsson.com" >János Farkas</a> <a 
+               href="mailto:janos.farkas%40ericsson.com"
+               aria-label="Compose email to janos.farkas@ericsson.com."
+               title="Compose email to janos.farkas@ericsson.com.">
+                <i class="bi bi-envelope"></i></a></span>
+            
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+                    <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-detnet-bounded-latency">
+                        <span class="badge bg-info">1</span>
+                    </a>
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/jgs@juniper.net" >John Scudder</a> <a 
+               href="mailto:jgs%40juniper.net"
+               aria-label="Compose email to jgs@juniper.net."
+               title="Compose email to jgs@juniper.net.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/lberger@labn.net" >Lou Berger</a> <a class="text-reset"
+               href="mailto:lberger%40labn.net"
+               aria-label="Compose email to lberger@labn.net."
+               title="Compose email to lberger@labn.net.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
 
-      
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">18 pages</small>
+        <div>
+            <a href="/doc/draft-ietf-detnet-controller-plane-framework/">
+                
+                    draft-ietf-detnet-controller-plane-framework-01
+                
+            </a>
+            
+            <br>
+            
+            <b>Deterministic Networking (DetNet) Controller Plane Framework</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2021-10-25
+                    
+                    
+                
+                
+                    <br>
+                    <span class="badge bg-warning">Expires soon</span>
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+            <br>
+            
+                WG Document
+                
+            
+        
+        
+        
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">9 pages</small>
+        <div>
+            <a href="/doc/draft-ietf-detnet-ip-oam/">
+                
+                    draft-ietf-detnet-ip-oam-04
+                
+            </a>
+            
+            <br>
+            
+            <b>Operations, Administration and Maintenance (OAM) for Deterministic Networks (DetNet) with IP Data Plane</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2022-02-07
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+            <br>
+            
+                WG Document
+                
+            
+        
+        
+        
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">13 pages</small>
+        <div>
+            <a href="/doc/draft-ietf-detnet-mpls-oam/">
+                
+                    draft-ietf-detnet-mpls-oam-07
+                
+            </a>
+            
+            <br>
+            
+            <b>Operations, Administration and Maintenance (OAM) for Deterministic Networks (DetNet) with MPLS Data Plane</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2022-03-07
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+            <br>
+            
+                WG Document
+                
+            
+        
+        
+        
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">12 pages</small>
+        <div>
+            <a href="/doc/draft-ietf-detnet-mpls-over-ip-preof/">
+                
+                    draft-ietf-detnet-mpls-over-ip-preof-00
+                
+            </a>
+            
+            <br>
+            
+            <b>Deterministic Networking (DetNet): DetNet PREOF via MPLS over UDP/IP</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2022-03-21
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+            <br>
+            
+                WG Document
+                
+            
+        
+        
+        
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">135 pages</small>
+        <div>
+            <a href="/doc/draft-ietf-detnet-yang/">
+                
+                    draft-ietf-detnet-yang-16
+                
+            </a>
+            
+            <br>
+            
+            <b>Deterministic Networking (DetNet) YANG Model</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2022-02-05
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            Publication Requested
+        
+        
+        
+        <span class="badge bg-danger" title="Goal is &lt;7 days">for 177 days</span>
+        
+        
+            
+        
+        
+            <br>
+            
+                Submitted to IESG for Publication
+                
+                    :
+                
+            
+        
+        Proposed Standard
+        
+        
+            <br>
+            Review:
+            <a href="/group/yangdoctors/">yangdoctors</a>
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/jgs@juniper.net" >John Scudder</a> <a 
+               href="mailto:jgs%40juniper.net"
+               aria-label="Compose email to jgs@juniper.net."
+               title="Compose email to jgs@juniper.net.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/janos.farkas@ericsson.com" >János Farkas</a> <a class="text-reset"
+               href="mailto:janos.farkas%40ericsson.com"
+               aria-label="Compose email to janos.farkas@ericsson.com."
+               title="Compose email to janos.farkas@ericsson.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+    </tbody>
+
     <tbody>
-        <tr class="info">
-          <th></th>
-          
-              <th colspan="5">
-          
-	    Active Internet-Drafts (7 hits)
-          </th>
+        <tr class="table-info">
+            <td></td>
+            
+                <th scope="col" colspan="5">
+            
+            RFCs (13 hits)
+            </th>
         </tr>
     </tbody>
-
     <tbody>
         
-          
+            
 
 
 
 
 
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-ietf-detnet-bounded-latency/">draft-ietf-detnet-bounded-latency-10</a>
-
-      
-      <br>
-      <b>DetNet Bounded Latency</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-
-       <a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-detnet-bounded-latency-10">
-       
-
-    
-          2022-04-08
-    
-       </a>
-    
-    </span>
 
 
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">11 pages</small>
+        <div>
+            <a href="/doc/rfc8557/">
+                
+                    RFC 8557
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-detnet-problem-statement)</i>
+            <br>
+            
+            <b>Deterministic Networking Problem Statement</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2019-05
+                    
+                    
+                
+                
+            </td>
+            
 
-    
-      <br><small class="text-muted">31 pages</small>
-    
-
-    
-    <wbr><div class="pull-right"><span class="label label-success">New</span></div>
-    
-
-    
-
-  </td>
-
-  
 
 
 <td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-detnet-bounded-latency">
-    
-  </div>
-
-  
-    
-      Approved-announcement to be sent::<wbr>AD Followup
-    
-
-    
-
-    <wbr>
-
-    <wbr><span class="ietf-small">for 6 days</span>
     
     
-
-    
-      
-    
-
-    
-      <br>
-      
-	Submitted to IESG for Publication:<wbr>
-      
-    
-
-    
-      Informational
-    
-
-    
-
-    
-      <br>Reviews:
-      
-        artart, 
-      
-        genart, 
-      
-        intdir, 
-      
-        opsdir, 
-      
-        rtgdir, 
-      
-        secdir, 
-      
-        tsvart
-      
-    
-
-    
-
-    
-        <br>Action Holders:
         
-            <wbr><a title="Group Chair" href="/person/janos.farkas@ericsson.com"><span class="">János Farkas</span></a>&nbsp;<a href="mailto:janos.farkas%40ericsson.com"><span class="fa fa-envelope-o tiny"></span></a>
-
+        Informational RFC
+        
         
     
-  
-
-
-
 </td>
-
-
-  <td class="ipr text-center">
-    
-      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-detnet-bounded-latency">
-        <span class="label label-default">1</span>
-      </a>
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/jgs@juniper.net"><span class="">John Scudder</span></a>&nbsp;<a href="mailto:jgs%40juniper.net"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/lberger@labn.net"><span class="small text-muted">Lou Berger</span></a>&nbsp;<a href="mailto:lberger%40labn.net"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/db3546@att.com" >Deborah Brungard</a> <a 
+               href="mailto:db3546%40att.com"
+               aria-label="Compose email to db3546@att.com."
+               title="Compose email to db3546@att.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/janos.farkas@ericsson.com" >János Farkas</a> <a class="text-reset"
+               href="mailto:janos.farkas%40ericsson.com"
+               aria-label="Compose email to janos.farkas@ericsson.com."
+               title="Compose email to janos.farkas@ericsson.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
         
-          
+            
 
 
 
 
 
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-ietf-detnet-controller-plane-framework/">draft-ietf-detnet-controller-plane-framework-01</a>
-
-      
-      <br>
-      <b>Deterministic Networking (DetNet) Controller Plane Framework</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2021-10-25
-    
-    </span>
 
 
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">97 pages</small>
+        <div>
+            <a href="/doc/rfc8578/">
+                
+                    RFC 8578
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-detnet-use-cases)</i>
+            <br>
+            
+            <b>Deterministic Networking Use Cases</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2019-05
+                    
+                    
+                
+                
+            </td>
+            
 
-    
-      <br><small class="text-muted">18 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
 
 
 <td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-detnet-controller-plane-framework">
-    
-  </div>
-
-  
-    
-      I-D Exists
-    
-
-    
-
-    <wbr>
-
-    <wbr>
     
     
-
-    
-      
-    
-
-    
-      <br>
-      
-	WG Document
-      
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
         
-          
-
-
-
-
-
-<tr >
-
-  <td>
+        Informational RFC
+        
+        
     
-    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+                    <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-detnet-use-cases">
+                        <span class="badge bg-info">1</span>
+                    </a>
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/db3546@att.com" >Deborah Brungard</a> <a 
+               href="mailto:db3546%40att.com"
+               aria-label="Compose email to db3546@att.com."
+               title="Compose email to db3546@att.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/lberger@labn.net" >Lou Berger</a> <a class="text-reset"
+               href="mailto:lberger%40labn.net"
+               aria-label="Compose email to lberger@labn.net."
+               title="Compose email to lberger@labn.net.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
 
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-ietf-detnet-ip-oam/">draft-ietf-detnet-ip-oam-04</a>
-
-      
-      <br>
-      <b>Operations, Administration and Maintenance (OAM) for Deterministic Networks (DetNet) with IP Data Plane</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2022-02-07
-    
-    </span>
 
 
 
-    
-      <br><small class="text-muted">9 pages</small>
-    
 
-    
 
-    
 
-  </td>
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">38 pages</small>
+        <div>
+            <a href="/doc/rfc8655/">
+                
+                    RFC 8655
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-detnet-architecture)</i>
+            <br>
+            
+            <b>Deterministic Networking Architecture</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2019-10
+                    
+                    
+                
+                
+            </td>
+            
 
-  
 
 
 <td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-detnet-ip-oam">
-    
-  </div>
-
-  
-    
-      I-D Exists
-    
-
-    
-
-    <wbr>
-
-    <wbr>
     
     
-
-    
-      
-    
-
-    
-      <br>
-      
-	WG Document
-      
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
         
-          
-
-
-
-
-
-<tr >
-
-  <td>
+        Proposed Standard RFC
+        
+        
     
-    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+                    <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-detnet-architecture">
+                        <span class="badge bg-info">1</span>
+                    </a>
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/db3546@att.com" >Deborah Brungard</a> <a 
+               href="mailto:db3546%40att.com"
+               aria-label="Compose email to db3546@att.com."
+               title="Compose email to db3546@att.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/lberger@labn.net" >Lou Berger</a> <a class="text-reset"
+               href="mailto:lberger%40labn.net"
+               aria-label="Compose email to lberger@labn.net."
+               title="Compose email to lberger@labn.net.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
 
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-ietf-detnet-mpls-oam/">draft-ietf-detnet-mpls-oam-07</a>
-
-      
-      <br>
-      <b>Operations, Administration and Maintenance (OAM) for Deterministic Networks (DetNet) with MPLS Data Plane</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2022-03-07
-    
-    </span>
 
 
 
-    
-      <br><small class="text-muted">13 pages</small>
-    
 
-    
 
-    
 
-  </td>
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">22 pages</small>
+        <div>
+            <a href="/doc/rfc8938/">
+                
+                    RFC 8938
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-detnet-data-plane-framework)</i>
+            <br>
+            
+            <b>Deterministic Networking (DetNet) Data Plane Framework</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2020-11
+                    
+                    
+                
+                
+            </td>
+            
 
-  
 
 
 <td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-detnet-mpls-oam">
-    
-  </div>
-
-  
-    
-      I-D Exists
-    
-
-    
-
-    <wbr>
-
-    <wbr>
     
     
-
-    
-      
-    
-
-    
-      <br>
-      
-	WG Document
-      
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
         
-          
-
-
-
-
-
-<tr >
-
-  <td>
+        Informational RFC
+        
+        
     
-    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/db3546@att.com" >Deborah Brungard</a> <a 
+               href="mailto:db3546%40att.com"
+               aria-label="Compose email to db3546@att.com."
+               title="Compose email to db3546@att.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/eagros@dolby.com" >Ethan Grossman</a> <a class="text-reset"
+               href="mailto:eagros%40dolby.com"
+               aria-label="Compose email to eagros@dolby.com."
+               title="Compose email to eagros@dolby.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
 
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-ietf-detnet-mpls-over-ip-preof/">draft-ietf-detnet-mpls-over-ip-preof-00</a>
-
-      
-      <br>
-      <b>Deterministic Networking (DetNet): DetNet PREOF via MPLS over UDP/IP</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2022-03-21
-    
-    </span>
 
 
 
-    
-      <br><small class="text-muted">12 pages</small>
-    
 
-    
 
-    
 
-  </td>
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">21 pages</small>
+        <div>
+            <a href="/doc/rfc8939/">
+                
+                    RFC 8939
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-detnet-ip)</i>
+            <br>
+            
+            <b>Deterministic Networking (DetNet) Data Plane: IP</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2020-11
+                    
+                    
+                
+                
+            </td>
+            
 
-  
 
 
 <td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-detnet-mpls-over-ip-preof">
-    
-  </div>
-
-  
-    
-      I-D Exists
-    
-
-    
-
-    <wbr>
-
-    <wbr>
     
     
-
-    
-      
-    
-
-    
-      <br>
-      
-	WG Document
-      
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
         
-          
-
-
-
-
-
-<tr >
-
-  <td>
+        Proposed Standard RFC
+        
+        
     
-    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/db3546@att.com" >Deborah Brungard</a> <a 
+               href="mailto:db3546%40att.com"
+               aria-label="Compose email to db3546@att.com."
+               title="Compose email to db3546@att.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/eagros@dolby.com" >Ethan Grossman</a> <a class="text-reset"
+               href="mailto:eagros%40dolby.com"
+               aria-label="Compose email to eagros@dolby.com."
+               title="Compose email to eagros@dolby.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
 
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-ietf-detnet-oam-framework/">draft-ietf-detnet-oam-framework-05</a>
-
-      
-      <br>
-      <b>Framework of Operations, Administration and Maintenance (OAM) for Deterministic Networking (DetNet)</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2021-10-14
-    
-    </span>
 
 
 
-    
-      <br><small class="text-muted">16 pages</small>
-    
 
-    
 
-    
-      <wbr><span class="label label-warning">Expires soon</span>
-    
 
-  </td>
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">27 pages</small>
+        <div>
+            <a href="/doc/rfc8964/">
+                
+                    RFC 8964
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-detnet-mpls)</i>
+            <br>
+            
+            <b>Deterministic Networking (DetNet) Data Plane: MPLS</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2021-01
+                    
+                    
+                
+                
+            </td>
+            
 
-  
 
 
 <td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-detnet-oam-framework">
-    
-  </div>
-
-  
-    
-      I-D Exists
-    
-
-    
-
-    <wbr>
-
-    <wbr>
     
     
-
-    
-      
-    
-
-    
-      <br>
-      
-	WG Document
-      
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
         
-          
-
-
-
-
-
-<tr >
-
-  <td>
+        Proposed Standard RFC
+        
+        
     
-    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/db3546@att.com" >Deborah Brungard</a> <a 
+               href="mailto:db3546%40att.com"
+               aria-label="Compose email to db3546@att.com."
+               title="Compose email to db3546@att.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/eagros@dolby.com" >Ethan Grossman</a> <a class="text-reset"
+               href="mailto:eagros%40dolby.com"
+               aria-label="Compose email to eagros@dolby.com."
+               title="Compose email to eagros@dolby.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
 
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-ietf-detnet-yang/">draft-ietf-detnet-yang-16</a>
-
-      
-      <br>
-      <b>Deterministic Networking (DetNet) YANG Model</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2022-02-05
-    
-    </span>
 
 
 
-    
-      <br><small class="text-muted">135 pages</small>
-    
 
-    
 
-    
 
-  </td>
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">20 pages</small>
+        <div>
+            <a href="/doc/rfc9016/">
+                
+                    RFC 9016
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-detnet-flow-information-model)</i>
+            <br>
+            
+            <b>Flow and Service Information Model for Deterministic Networking (DetNet)</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2021-03
+                    
+                    
+                
+                
+            </td>
+            
 
-  
 
 
 <td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-detnet-yang">
-    
-  </div>
-
-  
-    
-      Publication Requested
-    
-
-    
-
-    <wbr>
-
-    <wbr><span class="label label-danger" title="Goal is &lt;7 days">for 169 days</span>
     
     
-
-    
-      
-    
-
-    
-      <br>
-      
-	Submitted to IESG for Publication:<wbr>
-      
-    
-
-    
-      Proposed Standard
-    
-
-    
-
-    
-      <br>Reviews:
-      
-        yangdoctors
-      
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/jgs@juniper.net"><span class="">John Scudder</span></a>&nbsp;<a href="mailto:jgs%40juniper.net"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/janos.farkas@ericsson.com"><span class="small text-muted">János Farkas</span></a>&nbsp;<a href="mailto:janos.farkas%40ericsson.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
         
-      
+        Informational RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/db3546@att.com" >Deborah Brungard</a> <a 
+               href="mailto:db3546%40att.com"
+               aria-label="Compose email to db3546@att.com."
+               title="Compose email to db3546@att.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/lberger@labn.net" >Lou Berger</a> <a class="text-reset"
+               href="mailto:lberger%40labn.net"
+               aria-label="Compose email to lberger@labn.net."
+               title="Compose email to lberger@labn.net.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">10 pages</small>
+        <div>
+            <a href="/doc/rfc9023/">
+                
+                    RFC 9023
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-detnet-ip-over-tsn)</i>
+            <br>
+            
+            <b>Deterministic Networking (DetNet) Data Plane: IP over IEEE 802.1 Time-Sensitive Networking (TSN)</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2021-06
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Informational RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/db3546@att.com" >Deborah Brungard</a> <a 
+               href="mailto:db3546%40att.com"
+               aria-label="Compose email to db3546@att.com."
+               title="Compose email to db3546@att.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/lberger@labn.net" >Lou Berger</a> <a class="text-reset"
+               href="mailto:lberger%40labn.net"
+               aria-label="Compose email to lberger@labn.net."
+               title="Compose email to lberger@labn.net.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">12 pages</small>
+        <div>
+            <a href="/doc/rfc9024/">
+                
+                    RFC 9024
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-detnet-tsn-vpn-over-mpls)</i>
+            <br>
+            
+            <b>Deterministic Networking (DetNet) Data Plane: IEEE 802.1 Time-Sensitive Networking over MPLS</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2021-06
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/db3546@att.com" >Deborah Brungard</a> <a 
+               href="mailto:db3546%40att.com"
+               aria-label="Compose email to db3546@att.com."
+               title="Compose email to db3546@att.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/lberger@labn.net" >Lou Berger</a> <a class="text-reset"
+               href="mailto:lberger%40labn.net"
+               aria-label="Compose email to lberger@labn.net."
+               title="Compose email to lberger@labn.net.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">8 pages</small>
+        <div>
+            <a href="/doc/rfc9025/">
+                
+                    RFC 9025
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-detnet-mpls-over-udp-ip)</i>
+            <br>
+            
+            <b>Deterministic Networking (DetNet) Data Plane: MPLS over UDP/IP</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2021-04
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/db3546@att.com" >Deborah Brungard</a> <a 
+               href="mailto:db3546%40att.com"
+               aria-label="Compose email to db3546@att.com."
+               title="Compose email to db3546@att.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/eagros@dolby.com" >Ethan Grossman</a> <a class="text-reset"
+               href="mailto:eagros%40dolby.com"
+               aria-label="Compose email to eagros@dolby.com."
+               title="Compose email to eagros@dolby.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">11 pages</small>
+        <div>
+            <a href="/doc/rfc9037/">
+                
+                    RFC 9037
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-detnet-mpls-over-tsn)</i>
+            <br>
+            
+            <b>Deterministic Networking (DetNet) Data Plane: MPLS over IEEE 802.1 Time-Sensitive Networking (TSN)</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2021-06
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Informational RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/db3546@att.com" >Deborah Brungard</a> <a 
+               href="mailto:db3546%40att.com"
+               aria-label="Compose email to db3546@att.com."
+               title="Compose email to db3546@att.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/lberger@labn.net" >Lou Berger</a> <a class="text-reset"
+               href="mailto:lberger%40labn.net"
+               aria-label="Compose email to lberger@labn.net."
+               title="Compose email to lberger@labn.net.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">50 pages</small>
+        <div>
+            <a href="/doc/rfc9055/">
+                
+                    RFC 9055
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-detnet-security)</i>
+            <br>
+            
+            <b>Deterministic Networking (DetNet) Security Considerations</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2021-06
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Informational RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/db3546@att.com" >Deborah Brungard</a> <a 
+               href="mailto:db3546%40att.com"
+               aria-label="Compose email to db3546@att.com."
+               title="Compose email to db3546@att.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/lberger@labn.net" >Lou Berger</a> <a class="text-reset"
+               href="mailto:lberger%40labn.net"
+               aria-label="Compose email to lberger@labn.net."
+               title="Compose email to lberger@labn.net.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">11 pages</small>
+        <div>
+            <a href="/doc/rfc9056/">
+                
+                    RFC 9056
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-detnet-ip-over-mpls)</i>
+            <br>
+            
+            <b>Deterministic Networking (DetNet) Data Plane: IP over MPLS</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2021-10
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/db3546@att.com" >Deborah Brungard</a> <a 
+               href="mailto:db3546%40att.com"
+               aria-label="Compose email to db3546@att.com."
+               title="Compose email to db3546@att.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/eagros@dolby.com" >Ethan Grossman</a> <a class="text-reset"
+               href="mailto:eagros%40dolby.com"
+               aria-label="Compose email to eagros@dolby.com."
+               title="Compose email to eagros@dolby.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+    </tbody>
+
+
+
+    
+    
+
+
+
+
+
+
+
+
     <tbody>
-        <tr class="info">
-          <th></th>
-          
-              <th colspan="5">
-          
-	    RFCs (13 hits)
-          </th>
+        <tr class="table-info">
+            <td></td>
+            
+                <th scope="col" colspan="5">
+            
+            Related Internet-Drafts (14 hits)
+            </th>
         </tr>
     </tbody>
-
     <tbody>
         
-          
+            
 
 
 
 
 
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc8557/">RFC 8557</a>
-
-      
-        <i>(was draft-ietf-detnet-problem-statement)</i>
-      
-      <br>
-      <b>Deterministic Networking Problem Statement</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2019-05
-    
-    </span>
 
 
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">10 pages</small>
+        <div>
+            <a href="/doc/draft-du-detnet-layer3-low-latency/">
+                
+                    draft-du-detnet-layer3-low-latency-04
+                
+            </a>
+            
+            <br>
+            
+            <b>Micro-burst Decreasing in Layer3 Network for Low-Latency Traffic</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2021-10-25
+                    
+                    
+                
+                
+                    <br>
+                    <span class="badge bg-warning">Expires soon</span>
+                
+            </td>
+            
 
-    
-      <br><small class="text-muted">11 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
 
 
 <td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-detnet-problem-statement">
     
-  </div>
-
-  
-    Informational RFC
-
     
-
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+        
+        
+        
+        
+        
     
-  
-
-
-
 </td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/db3546@att.com"><span class="">Deborah Brungard</span></a>&nbsp;<a href="mailto:db3546%40att.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/janos.farkas@ericsson.com"><span class="small text-muted">János Farkas</span></a>&nbsp;<a href="mailto:janos.farkas%40ericsson.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc8578/">RFC 8578</a>
-
-      
-        <i>(was draft-ietf-detnet-use-cases)</i>
-      
-      <br>
-      <b>Deterministic Networking Use Cases</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2019-05
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">97 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-detnet-use-cases">
-    
-  </div>
-
-  
-    Informational RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-detnet-use-cases">
-        <span class="label label-default">1</span>
-      </a>
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/db3546@att.com"><span class="">Deborah Brungard</span></a>&nbsp;<a href="mailto:db3546%40att.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/lberger@labn.net"><span class="small text-muted">Lou Berger</span></a>&nbsp;<a href="mailto:lberger%40labn.net"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc8655/">RFC 8655</a>
-
-      
-        <i>(was draft-ietf-detnet-architecture)</i>
-      
-      <br>
-      <b>Deterministic Networking Architecture</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2019-10
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">38 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-detnet-architecture">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-detnet-architecture">
-        <span class="label label-default">1</span>
-      </a>
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/db3546@att.com"><span class="">Deborah Brungard</span></a>&nbsp;<a href="mailto:db3546%40att.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/lberger@labn.net"><span class="small text-muted">Lou Berger</span></a>&nbsp;<a href="mailto:lberger%40labn.net"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc8938/">RFC 8938</a>
-
-      
-        <i>(was draft-ietf-detnet-data-plane-framework)</i>
-      
-      <br>
-      <b>Deterministic Networking (DetNet) Data Plane Framework</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2020-11
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">22 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-detnet-data-plane-framework">
-    
-  </div>
-
-  
-    Informational RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/db3546@att.com"><span class="">Deborah Brungard</span></a>&nbsp;<a href="mailto:db3546%40att.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/eagros@dolby.com"><span class="small text-muted">Ethan Grossman</span></a>&nbsp;<a href="mailto:eagros%40dolby.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc8939/">RFC 8939</a>
-
-      
-        <i>(was draft-ietf-detnet-ip)</i>
-      
-      <br>
-      <b>Deterministic Networking (DetNet) Data Plane: IP</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2020-11
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">21 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-detnet-ip">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/db3546@att.com"><span class="">Deborah Brungard</span></a>&nbsp;<a href="mailto:db3546%40att.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/eagros@dolby.com"><span class="small text-muted">Ethan Grossman</span></a>&nbsp;<a href="mailto:eagros%40dolby.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc8964/">RFC 8964</a>
-
-      
-        <i>(was draft-ietf-detnet-mpls)</i>
-      
-      <br>
-      <b>Deterministic Networking (DetNet) Data Plane: MPLS</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2021-01
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">27 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-detnet-mpls">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/db3546@att.com"><span class="">Deborah Brungard</span></a>&nbsp;<a href="mailto:db3546%40att.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/eagros@dolby.com"><span class="small text-muted">Ethan Grossman</span></a>&nbsp;<a href="mailto:eagros%40dolby.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc9016/">RFC 9016</a>
-
-      
-        <i>(was draft-ietf-detnet-flow-information-model)</i>
-      
-      <br>
-      <b>Flow and Service Information Model for Deterministic Networking (DetNet)</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2021-03
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">20 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-detnet-flow-information-model">
-    
-  </div>
-
-  
-    Informational RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/db3546@att.com"><span class="">Deborah Brungard</span></a>&nbsp;<a href="mailto:db3546%40att.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/lberger@labn.net"><span class="small text-muted">Lou Berger</span></a>&nbsp;<a href="mailto:lberger%40labn.net"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc9023/">RFC 9023</a>
-
-      
-        <i>(was draft-ietf-detnet-ip-over-tsn)</i>
-      
-      <br>
-      <b>Deterministic Networking (DetNet) Data Plane: IP over IEEE 802.1 Time-Sensitive Networking (TSN)</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2021-06
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">10 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-detnet-ip-over-tsn">
-    
-  </div>
-
-  
-    Informational RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/db3546@att.com"><span class="">Deborah Brungard</span></a>&nbsp;<a href="mailto:db3546%40att.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/lberger@labn.net"><span class="small text-muted">Lou Berger</span></a>&nbsp;<a href="mailto:lberger%40labn.net"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc9024/">RFC 9024</a>
-
-      
-        <i>(was draft-ietf-detnet-tsn-vpn-over-mpls)</i>
-      
-      <br>
-      <b>Deterministic Networking (DetNet) Data Plane: IEEE 802.1 Time-Sensitive Networking over MPLS</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2021-06
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">12 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-detnet-tsn-vpn-over-mpls">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/db3546@att.com"><span class="">Deborah Brungard</span></a>&nbsp;<a href="mailto:db3546%40att.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/lberger@labn.net"><span class="small text-muted">Lou Berger</span></a>&nbsp;<a href="mailto:lberger%40labn.net"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc9025/">RFC 9025</a>
-
-      
-        <i>(was draft-ietf-detnet-mpls-over-udp-ip)</i>
-      
-      <br>
-      <b>Deterministic Networking (DetNet) Data Plane: MPLS over UDP/IP</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2021-04
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">8 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-detnet-mpls-over-udp-ip">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/db3546@att.com"><span class="">Deborah Brungard</span></a>&nbsp;<a href="mailto:db3546%40att.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/eagros@dolby.com"><span class="small text-muted">Ethan Grossman</span></a>&nbsp;<a href="mailto:eagros%40dolby.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc9037/">RFC 9037</a>
-
-      
-        <i>(was draft-ietf-detnet-mpls-over-tsn)</i>
-      
-      <br>
-      <b>Deterministic Networking (DetNet) Data Plane: MPLS over IEEE 802.1 Time-Sensitive Networking (TSN)</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2021-06
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">11 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-detnet-mpls-over-tsn">
-    
-  </div>
-
-  
-    Informational RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/db3546@att.com"><span class="">Deborah Brungard</span></a>&nbsp;<a href="mailto:db3546%40att.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/lberger@labn.net"><span class="small text-muted">Lou Berger</span></a>&nbsp;<a href="mailto:lberger%40labn.net"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc9055/">RFC 9055</a>
-
-      
-        <i>(was draft-ietf-detnet-security)</i>
-      
-      <br>
-      <b>Deterministic Networking (DetNet) Security Considerations</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2021-06
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">50 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-detnet-security">
-    
-  </div>
-
-  
-    Informational RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/db3546@att.com"><span class="">Deborah Brungard</span></a>&nbsp;<a href="mailto:db3546%40att.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/lberger@labn.net"><span class="small text-muted">Lou Berger</span></a>&nbsp;<a href="mailto:lberger%40labn.net"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc9056/">RFC 9056</a>
-
-      
-        <i>(was draft-ietf-detnet-ip-over-mpls)</i>
-      
-      <br>
-      <b>Deterministic Networking (DetNet) Data Plane: IP over MPLS</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2021-10
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">11 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-detnet-ip-over-mpls">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/db3546@att.com"><span class="">Deborah Brungard</span></a>&nbsp;<a href="mailto:db3546%40att.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/eagros@dolby.com"><span class="small text-muted">Ethan Grossman</span></a>&nbsp;<a href="mailto:eagros%40dolby.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-      
-    </tbody>
-  </table>
-
-
-  
-  
-
-
-
-
-  
-
-  
-  <table class="table table-condensed table-striped tablesorter">
-    <thead>
-      <tr>
-        <th class="sorter-false"></th>
-
-        
-          
-            <th data-header="document">
-	      
-	        Document
-	      
-            </th>
-          
-        
-          
-        
-          
-            <th data-header="date">
-	      
-	        Date
-	      
-            </th>
-          
-        
-          
-            <th data-header="status">
-	      
-	        Status
-	      
-            </th>
-          
-        
-          
-            <th data-header="ipr">
-	      
-	        IPR
-	      
-            </th>
-          
-        
-          
-            <th data-header="ad">
-	      
-	        AD / Shepherd
-	      
-            </th>
-          
-        
-
-        
-      </tr>
-    </thead>
-
-    
-
-      
-    <tbody>
-        <tr class="info">
-          <th></th>
-          
-              <th colspan="5">
-          
-	    Related Internet-Drafts (14 hits)
-          </th>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
         </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">14 pages</small>
+        <div>
+            <a href="/doc/draft-eckert-detnet-mpls-tc-tcqf/">
+                
+                    draft-eckert-detnet-mpls-tc-tcqf-01
+                
+            </a>
+            
+            <br>
+            
+            <b>Deterministic Networking (DetNet) Data Plane - MPLS TC Tagging for Cyclic Queuing and Forwarding (MPLS-TC TCQF)</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2021-10-25
+                    
+                    
+                
+                
+                    <br>
+                    <span class="badge bg-warning">Expires soon</span>
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+        
+        
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">17 pages</small>
+        <div>
+            <a href="/doc/draft-liu-detnet-large-scale-requirements/">
+                
+                    draft-liu-detnet-large-scale-requirements-02
+                
+            </a>
+            
+            <br>
+            
+            <b>Requirements for Large-Scale Deterministic Networks</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                
+                    <a href="https://www.ietf.org/rfcdiff?url2=draft-liu-detnet-large-scale-requirements-02">
+                    
+                    
+                    
+                        2022-04-10
+                    
+                    
+                        </a>
+                    
+                
+                    <br>
+                    <div class="float-end">
+                        <span class="badge bg-success">New</span>
+                    </div>
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+        
+        
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">9 pages</small>
+        <div>
+            <a href="/doc/draft-lyy-detnet-ref-delay-measurement/">
+                
+                    draft-lyy-detnet-ref-delay-measurement-00
+                
+            </a>
+            
+            <br>
+            
+            <b>One-way Delay Measurement Based on Reference Delay</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2022-02-28
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+        
+        
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">14 pages</small>
+        <div>
+            <a href="/doc/draft-peng-detnet-deadline-based-forwarding/">
+                
+                    draft-peng-detnet-deadline-based-forwarding-01
+                
+            </a>
+            
+            <br>
+            
+            <b>Deadline Based Deterministic Forwarding</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2022-03-01
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+        
+        
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">23 pages</small>
+        <div>
+            <a href="/doc/draft-pthubert-detnet-ipv6-hbh/">
+                
+                    draft-pthubert-detnet-ipv6-hbh-07
+                
+            </a>
+            
+            <br>
+            
+            <b>IPv6 Options for DetNet</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2022-02-22
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+        
+        
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">16 pages</small>
+        <div>
+            <a href="/doc/draft-trossen-detnet-rsvp-tsn/">
+                
+                    draft-trossen-detnet-rsvp-tsn-01
+                
+            </a>
+            
+            <br>
+            
+            <b>RSVP for TSN Networks</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2022-01-11
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+        
+        
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">12 pages</small>
+        <div>
+            <a href="/doc/draft-varga-detnet-pof/">
+                
+                    draft-varga-detnet-pof-02
+                
+            </a>
+            
+            <br>
+            
+            <b>Deterministic Networking (DetNet): Packet Ordering Function</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2021-10-22
+                    
+                    
+                
+                
+                    <br>
+                    <span class="badge bg-warning">Expires soon</span>
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+        
+        
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+                    <a href="/ipr/search/?submit=draft&amp;id=draft-varga-detnet-pof">
+                        <span class="badge bg-info">2</span>
+                    </a>
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">12 pages</small>
+        <div>
+            <a href="/doc/draft-varga-detnet-service-sub-layer-oam/">
+                
+                    draft-varga-detnet-service-sub-layer-oam-02
+                
+            </a>
+            
+            <br>
+            
+            <b>Deterministic Networking (DetNet): OAM Functions for The Service Sub-Layer</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2022-01-19
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+        
+        
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+                    <a href="/ipr/search/?submit=draft&amp;id=draft-varga-detnet-service-sub-layer-oam">
+                        <span class="badge bg-info">2</span>
+                    </a>
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">14 pages</small>
+        <div>
+            <a href="/doc/draft-wang-detnet-tsn-over-srv6/">
+                
+                    draft-wang-detnet-tsn-over-srv6-04
+                
+            </a>
+            
+            <br>
+            
+            <b>DetNet Data Plane: IEEE 802.1 Time Sensitive Networking over SRv6</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2021-11-08
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+        
+        
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">13 pages</small>
+        <div>
+            <a href="/doc/draft-xiong-detnet-large-scale-enhancements/">
+                
+                    draft-xiong-detnet-large-scale-enhancements-00
+                
+            </a>
+            
+            <br>
+            
+            <b>DetNet Enhancements for Large-Scale Deterministic Networks</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2022-02-24
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+        
+        
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">12 pages</small>
+        <div>
+            <a href="/doc/draft-xiong-idr-detnet-flow-mapping/">
+                
+                    draft-xiong-idr-detnet-flow-mapping-02
+                
+            </a>
+            
+            <br>
+            
+            <b>BGP Flow Specification for DetNet and TSN Flow Mapping</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2022-03-06
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+        
+        
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">9 pages</small>
+        <div>
+            <a href="/doc/draft-xiong-pce-detnet-bounded-latency/">
+                
+                    draft-xiong-pce-detnet-bounded-latency-00
+                
+            </a>
+            
+            <br>
+            
+            <b>PCEP Extension for DetNet Bounded Latency</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2022-02-21
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+        
+        
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">9 pages</small>
+        <div>
+            <a href="/doc/draft-yang-detnet-deterministic-owd-measurement/">
+                
+                    draft-yang-detnet-deterministic-owd-measurement-00
+                
+            </a>
+            
+            <br>
+            
+            <b>One-way Delay Measurement Based on Deterministic Networking</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2022-02-28
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+        
+        
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
     </tbody>
 
-    <tbody>
-        
-          
+</table>
 
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-du-detnet-layer3-low-latency/">draft-du-detnet-layer3-low-latency-04</a>
-
-      
-      <br>
-      <b>Micro-burst Decreasing in Layer3 Network for Low-Latency Traffic</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2021-10-25
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">10 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-du-detnet-layer3-low-latency">
-    
-  </div>
-
-  
-    
-      I-D Exists
-    
-
-    
-
-    <wbr>
-
-    <wbr>
-    
-    
-
-    
-      
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-eckert-detnet-mpls-tc-tcqf/">draft-eckert-detnet-mpls-tc-tcqf-01</a>
-
-      
-      <br>
-      <b>Deterministic Networking (DetNet) Data Plane - MPLS TC Tagging for Cyclic Queuing and Forwarding (MPLS-TC TCQF)</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2021-10-25
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">14 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-eckert-detnet-mpls-tc-tcqf">
-    
-  </div>
-
-  
-    
-      I-D Exists
-    
-
-    
-
-    <wbr>
-
-    <wbr>
-    
-    
-
-    
-      
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-liu-detnet-large-scale-requirements/">draft-liu-detnet-large-scale-requirements-02</a>
-
-      
-      <br>
-      <b>Requirements for Large-Scale Deterministic Networks</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-
-       <a href="https://www.ietf.org/rfcdiff?url2=draft-liu-detnet-large-scale-requirements-02">
-       
-
-    
-          2022-04-10
-    
-       </a>
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">17 pages</small>
-    
-
-    
-    <wbr><div class="pull-right"><span class="label label-success">New</span></div>
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-liu-detnet-large-scale-requirements">
-    
-  </div>
-
-  
-    
-      I-D Exists
-    
-
-    
-
-    <wbr>
-
-    <wbr>
-    
-    
-
-    
-      
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-lyy-detnet-ref-delay-measurement/">draft-lyy-detnet-ref-delay-measurement-00</a>
-
-      
-      <br>
-      <b>One-way Delay Measurement Based on Reference Delay</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2022-02-28
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">9 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-lyy-detnet-ref-delay-measurement">
-    
-  </div>
-
-  
-    
-      I-D Exists
-    
-
-    
-
-    <wbr>
-
-    <wbr>
-    
-    
-
-    
-      
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-peng-detnet-deadline-based-forwarding/">draft-peng-detnet-deadline-based-forwarding-01</a>
-
-      
-      <br>
-      <b>Deadline Based Deterministic Forwarding</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2022-03-01
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">14 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-peng-detnet-deadline-based-forwarding">
-    
-  </div>
-
-  
-    
-      I-D Exists
-    
-
-    
-
-    <wbr>
-
-    <wbr>
-    
-    
-
-    
-      
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-pthubert-detnet-ipv6-hbh/">draft-pthubert-detnet-ipv6-hbh-07</a>
-
-      
-      <br>
-      <b>IPv6 Options for DetNet</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2022-02-22
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">23 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-pthubert-detnet-ipv6-hbh">
-    
-  </div>
-
-  
-    
-      I-D Exists
-    
-
-    
-
-    <wbr>
-
-    <wbr>
-    
-    
-
-    
-      
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-trossen-detnet-rsvp-tsn/">draft-trossen-detnet-rsvp-tsn-01</a>
-
-      
-      <br>
-      <b>RSVP for TSN Networks</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2022-01-11
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">16 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-trossen-detnet-rsvp-tsn">
-    
-  </div>
-
-  
-    
-      I-D Exists
-    
-
-    
-
-    <wbr>
-
-    <wbr>
-    
-    
-
-    
-      
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-varga-detnet-pof/">draft-varga-detnet-pof-02</a>
-
-      
-      <br>
-      <b>Deterministic Networking (DetNet): Packet Ordering Function</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2021-10-22
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">12 pages</small>
-    
-
-    
-
-    
-      <wbr><span class="label label-warning">Expires soon</span>
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-varga-detnet-pof">
-    
-  </div>
-
-  
-    
-      I-D Exists
-    
-
-    
-
-    <wbr>
-
-    <wbr>
-    
-    
-
-    
-      
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-      <a href="/ipr/search/?submit=draft&amp;id=draft-varga-detnet-pof">
-        <span class="label label-default">2</span>
-      </a>
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-varga-detnet-service-sub-layer-oam/">draft-varga-detnet-service-sub-layer-oam-02</a>
-
-      
-      <br>
-      <b>Deterministic Networking (DetNet): OAM Functions for The Service Sub-Layer</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2022-01-19
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">12 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-varga-detnet-service-sub-layer-oam">
-    
-  </div>
-
-  
-    
-      I-D Exists
-    
-
-    
-
-    <wbr>
-
-    <wbr>
-    
-    
-
-    
-      
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-      <a href="/ipr/search/?submit=draft&amp;id=draft-varga-detnet-service-sub-layer-oam">
-        <span class="label label-default">2</span>
-      </a>
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-wang-detnet-tsn-over-srv6/">draft-wang-detnet-tsn-over-srv6-04</a>
-
-      
-      <br>
-      <b>DetNet Data Plane: IEEE 802.1 Time Sensitive Networking over SRv6</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2021-11-08
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">14 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-wang-detnet-tsn-over-srv6">
-    
-  </div>
-
-  
-    
-      I-D Exists
-    
-
-    
-
-    <wbr>
-
-    <wbr>
-    
-    
-
-    
-      
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-xiong-detnet-large-scale-enhancements/">draft-xiong-detnet-large-scale-enhancements-00</a>
-
-      
-      <br>
-      <b>DetNet Enhancements for Large-Scale Deterministic Networks</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2022-02-24
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">13 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-xiong-detnet-large-scale-enhancements">
-    
-  </div>
-
-  
-    
-      I-D Exists
-    
-
-    
-
-    <wbr>
-
-    <wbr>
-    
-    
-
-    
-      
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-xiong-idr-detnet-flow-mapping/">draft-xiong-idr-detnet-flow-mapping-02</a>
-
-      
-      <br>
-      <b>BGP Flow Specification for DetNet and TSN Flow Mapping</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2022-03-06
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">12 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-xiong-idr-detnet-flow-mapping">
-    
-  </div>
-
-  
-    
-      I-D Exists
-    
-
-    
-
-    <wbr>
-
-    <wbr>
-    
-    
-
-    
-      
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-xiong-pce-detnet-bounded-latency/">draft-xiong-pce-detnet-bounded-latency-00</a>
-
-      
-      <br>
-      <b>PCEP Extension for DetNet Bounded Latency</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2022-02-21
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">9 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-xiong-pce-detnet-bounded-latency">
-    
-  </div>
-
-  
-    
-      I-D Exists
-    
-
-    
-
-    <wbr>
-
-    <wbr>
-    
-    
-
-    
-      
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-yang-detnet-deterministic-owd-measurement/">draft-yang-detnet-deterministic-owd-measurement-00</a>
-
-      
-      <br>
-      <b>One-way Delay Measurement Based on Deterministic Networking</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2022-02-28
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">9 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-yang-detnet-deterministic-owd-measurement">
-    
-  </div>
-
-  
-    
-      I-D Exists
-    
-
-    
-
-    <wbr>
-
-    <wbr>
-    
-    
-
-    
-      
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-      
-    </tbody>
-  </table>
-
-
-  <ul class="list-inline pull-right" style="margin-top:1em;">
-  <li>
+    <div class="text-end">
     <label id="list-feeds">Atom feed:</label>
     <div class="btn-group" role="group" aria-labelledby="list-feeds">
-      <a class="btn btn-default" title="Feed of all changes" href="/group/detnet/documents/feed/">All changes</a>
-      <a class="btn btn-default" title="Feed of only significant state changes" href="/group/detnet/documents/feed/?significant=1">Significant</a>
+        <a class="btn btn-primary"
+           title="Feed of all changes"
+           href="/group/detnet/documents/feed/">
+            <i class="bi bi-rss"></i> All changes
+        </a>
+        <a class="btn btn-primary"
+           title="Feed of only significant state changes"
+           href="/group/detnet/documents/feed/?significant=1">
+            <i class="bi bi-rss"></i> Significant
+        </a>
     </div>
-  </li>
-
-  
-    <li><a class="btn btn-default" href="/group/detnet/documents/subscription/">
-      <i class="glyphicon glyphicon-envelope"></i>
-      
-        Subscribe to changes
-      
-    </a></li>
-  
-
-  <li><a class="btn btn-default" href="/group/detnet/documents/csv/"><i class="glyphicon glyphicon-list"></i> Export as CSV</a></li>
-</ul>
-
-
-
+    
+        <a class="btn btn-primary"
+           href="/group/detnet/documents/subscription/">
+            <i class="bi bi-envelope"></i>
+            
+                Subscribe to changes
+            
+        </a>
+    
+    <a class="btn btn-primary"
+       href="/group/detnet/documents/csv/">
+        <i class="bi bi-file-ruled"></i> Export as CSV
+    </a>
+</div>
 
 
+                    
+                </div>
+            </div>
+            <hr>
+            
+                <footer class="col-md-12 col-sm-12 text-center">
+                    <a href="https://www.ietf.org/" class="p-3">IETF</a>
+                    <a href="https://www.ietf.org/iesg/" class="p-3">IESG</a>
+                    <a href="https://www.iab.org/" class="p-3">IAB</a>
+                    <a href="https://www.irtf.org/" class="p-3">IRTF</a>
+                    <a href="https://www.ietf.org/llc/" class="p-3">IETF&nbsp;LLC</a>
+                    <a href="https://trustee.ietf.org/" class="p-3">IETF&nbsp;Trust</a>
+                    <a href="https://www.rfc-editor.org/" class="p-3">RFC&nbsp;Editor</a>
+                    <a href="https://www.iana.org/" class="p-3">IANA</a>
+                    <a href="https://www.ietf.org/privacy-statement/" class="p-3">Privacy&nbsp;Statement</a>
+                    <div class="small text-muted p-3">
+                        
+                            <a href="/release/about">About</a>
+                            <a href="https://github.com/ietf-tools/datatracker/">IETF Datatracker</a>
+                            
+                                <a href="https://github.com/ietf-tools/datatracker/releases/tag/8.0.0">Version 8.0.0</a>
+                            
+                            (main - 87fac4e)
+                        
+                        Report a bug:
+                        <a href="https://github.com/ietf-tools/datatracker/issues/new/choose">
+                            GitHub
+                            <i class="bi bi-bug"></i>
+                        </a>
+                        
+                            <a href="mailto:datatracker-project@ietf.org">
+                                Email
+                                <i class="bi bi-envelope"></i>
+                            </a>
+                        
+                        <br>
+                        Python 3.6.12
+                        Django 2.2.28
+                        <br>
+                        
+
+
+
+
+
+                    </div>
+                </footer>
+            
+        </div>
         
-        
-	  </div>
-        
+    <script src="https://www.ietf.org/lib/dt/8.0.0/ietf/js/list.js"></script>
 
-	
-	<hr>
-	  <div class="col-md-12 col-sm-12">
-	    <div class="text-center padded">
-	        <a href="https://www.rfc-editor.org/" class="padded">RFC&nbsp;Editor</a>
-	        <a href="https://www.ietf.org/llc/" class="padded">IASA&nbsp;&amp;&nbsp;IETF&nbsp;LLC</a>
-	        <a href="https://trustee.ietf.org/" class="padded">IETF&nbsp;Trust</a>
-	        <a href="https://www.irtf.org/" class="padded">IRTF</a>
-	        <a href="https://www.ietf.org/" class="padded">IETF</a>
-	        <a href="https://www.ietf.org/iesg/" class="padded">IESG</a>
-	        <a href="https://www.iab.org/" class="padded">IAB</a>
-	        <a href="https://www.iana.org/" class="padded">IANA</a>
-	        <a href="https://www.ietf.org/privacy-statement/" class="padded">Privacy&nbsp;Statement</a>
-	    </div>
-	  </div>
-
-
-        <footer class="col-md-12 col-sm-12">
-	  <div class="col-md-12">
-	    <div class="text-center">
-	      <p class="small text-muted">
-	        
-		  <a href="/release/about">About</a> |
-	          IETF Datatracker |
-	          <a href="/release/7.46.0.p4/">Version 7.46.0.p4</a> |
-	          2022-03-10 |
-	        
-		Report a bug:
-	        <a href="https://trac.ietf.org/trac/ietfdb/newticket">Tracker:<span class="fa fa-bug"></span></a>
-                
-	        <a href="mailto:datatracker-project@ietf.org">Email:<span class="fa fa-envelope"></span></a>
-                
-		<br>
-                Python 3.6.12 |
-		Django 2.2.27
-	      </p>
-	    </div>
-	  </div>
-        </footer>
-	
-
-      </div>
-
-      
-
-
-
-
-      <script src="https://www.ietf.org/lib/dt/7.46.0/jquery/jquery.min.js"></script>
-      
-      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
-      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
-      <script src="https://www.ietf.org/lib/dt/7.46.0/js-cookie/src/js.cookie.js"></script>
-      <script src="https://www.ietf.org/lib/dt/7.46.0/ietf/bootstrap/js/bootstrap.min.js"></script>
-      <script src="https://www.ietf.org/lib/dt/7.46.0/ietf/js/ietf.js"></script>
-      
-<script src="https://www.ietf.org/lib/dt/7.46.0/jquery.tablesorter/js/jquery.tablesorter.combined.min.js"></script>
-
-      
-  <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6fb2ac10acb4a39f',m:'R84uzDkKlOQQsAsgPaOQBDLhdRC.qY04phzDF5KbNzI-1649836871-0-AQCE0NMTGsdmILsnKHraPyOKvcalGoT1Tr5jIN/0Z1FfbJrF3+tn5zDC+GwTJF9o0FcOvoJnTAOQOLioOrzidEyCdhaSXjbsKCB5uUOBHsw4n//AFYYQL0pbCGsKMo00vx2CZGS+/eCYlVxV7VUzKSA=',s:[0xd32a3ec20e,0xf2102a2bd1],}})();</script></body>
+        <script src="https://www.ietf.org/lib/dt/8.0.0/ietf/js/select2.js"></script>
+        <script>
+            $('#navbar-doc-search').on('select2:select', function (e) {
+                window.location.href = e.params.data.url;
+            });
+        </script>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6ff48e25dfb8a33d',m:'Pxv.MW2_hecL8._.8d.QVxvWV0uPh9Y0MG4FmGBAhTs-1650527706-0-AXez8D9gTPB6TCsZtUqtIC+LJT6n7+mxBBKorIjzwUIcOX/uaGvAFp//wgRoxsg9kQLqpTxCK+UCLfuBX2Nvi9AiRINB+s1g1kZU1nKPgrM4ppunQRQZW1tG4iwja1U4wYFcdwhil+X1sqQ+zmNdAn0=',s:[0xf26d527c37,0x0bdcded2d3],}})();</script></body>
 </html>

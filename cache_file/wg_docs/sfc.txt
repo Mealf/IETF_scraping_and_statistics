@@ -1,2884 +1,2663 @@
-<!DOCTYPE html> 
+
+<!DOCTYPE html>
+
 
 
 
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Service Function Chaining (sfc) - Documents</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>
+            Service Function Chaining (sfc)
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="https://www.ietf.org/lib/dt/8.0.0/ietf/css/ietf.css">
+        <link rel="stylesheet" href="https://www.ietf.org/lib/dt/8.0.0/ietf/css/select2.css">
+        <style>
+            
+            .leftmenu { width: 13em; }
+        </style>
+        
+    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/8.0.0/ietf/css/list.css">
 
-    <link href="https://www.ietf.org/lib/dt/7.46.0/ptmono/stylesheet.css" rel='stylesheet' type='text/css'>
-    <link href="https://www.ietf.org/lib/dt/7.46.0/ptsans/stylesheet.css" rel='stylesheet' type='text/css'>
-    <link href="https://www.ietf.org/lib/dt/7.46.0/ptserif/stylesheet.css" rel='stylesheet' type='text/css'>
+        
+            <link rel="shortcut icon"
+                  href="https://www.ietf.org/lib/dt/8.0.0/ietf/images/ietf-icon-blue3.png">
+        
+        <link rel="apple-touch-icon"
+              href="https://www.ietf.org/lib/dt/8.0.0/ietf/images/apple-touch-icon.png">
+        <script src="https://www.ietf.org/lib/dt/8.0.0/ietf/js/ietf.js"></script>
+    <script async src='/cdn-cgi/bm/cv/669835187/api.js'></script></head>
+    <body  class="position-relative"
+          data-group-menu-data-url="/group/groupmenu.json">
+        <a class="visually-hidden visually-hidden-focusable" href="#content">Skip to main content</a>
+        <nav class="navbar navbar-expand-lg  navbar-dark bg-secondary    fixed-top ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">
+                    <img alt="IETF Logo"
+                         src="https://www.ietf.org/lib/dt/8.0.0/ietf/images/ietflogo-small-transparent.png">
+                    Datatracker
+                    
+                </a>
+                <div class="collapse navbar-collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        
+
+
+
+
+<li class="nav-item dropdown">
+    
+        <a href="#"
+           class="nav-link dropdown-toggle"
+           role="button"
+           data-bs-auto-close="false"
+           data-bs-toggle="dropdown"
+           aria-expanded="false">
+            Groups
+        </a>
+        <ul class="dropdown-menu mt-n1">
+        
+    <li class="dropdown-header">By area/parent</li>
     
 
-    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/ietf/font-datatracker/css/font-datatracker.css">
-    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/ietf/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/ietf/bootstrap/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/ietf/css/ietf.css">
-    
-    <style>
-     
-    </style>
-
-    
-<link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/jquery.tablesorter/css/theme.bootstrap.min.css">
 
 
-    
-    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.46.0/ietf/images/ietf-icon-blue3.png">
-    
-    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.46.0/ietf/images/apple-touch-icon.png">
-  <script async src='/cdn-cgi/bm/cv/669835187/api.js'></script></head>
+    <li class="dropend group-menu group-parent-2010">
+        <a class="dropdown-item dropdown-toggle "
+           href="/wg/#art">
+            Apps &amp; Realtime
+        </a>
+    </li>
 
-  <body  data-group-menu-data-url="/group/groupmenu.json">
-      <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container-fluid">
-	  <div class="navbar-header">
-	    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-	      <span class="sr-only">Toggle navigation</span>
-	      <span class="icon-bar"></span>
-	      <span class="icon-bar"></span>
-	      <span class="icon-bar"></span>
-	    </button>
-	    <a class="navbar-brand" href="/">
-	       <img alt="IETF Logo" src="https://www.ietf.org/lib/dt/7.46.0/ietf/images/ietflogo-small-transparent.png">
-	       
-		  
-		  Datatracker
-		  
-	       
-	    </a>
-	  </div>
+    <li class="dropend group-menu group-parent-1008">
+        <a class="dropdown-item dropdown-toggle "
+           href="/wg/#gen">
+            General
+        </a>
+    </li>
 
-	  <noscript>
-	    <p class="navbar-text"><small>Enable Javascript for full functionality.</small></p>
-	  </noscript>
+    <li class="dropend group-menu group-parent-1052">
+        <a class="dropdown-item dropdown-toggle "
+           href="/wg/#int">
+            Internet
+        </a>
+    </li>
 
-	  <div class="collapse navbar-collapse" id="navbar-collapse">
-	    <ul class="hidden-nojs nav navbar-nav">
-              
+    <li class="dropend group-menu group-parent-1193">
+        <a class="dropdown-item dropdown-toggle "
+           href="/wg/#ops">
+            Ops &amp; Management
+        </a>
+    </li>
+
+    <li class="dropend group-menu group-parent-1249">
+        <a class="dropdown-item dropdown-toggle "
+           href="/wg/#rtg">
+            Routing
+        </a>
+    </li>
+
+    <li class="dropend group-menu group-parent-1260">
+        <a class="dropdown-item dropdown-toggle "
+           href="/wg/#sec">
+            Security
+        </a>
+    </li>
+
+    <li class="dropend group-menu group-parent-1324">
+        <a class="dropdown-item dropdown-toggle "
+           href="/wg/#tsv">
+            Transport
+        </a>
+    </li>
+
+    <li class="dropend group-menu group-parent-7">
+        <a class="dropdown-item dropdown-toggle "
+           href="/program/">
+            IAB
+        </a>
+    </li>
+
+    <li class="dropend group-menu group-parent-3">
+        <a class="dropdown-item dropdown-toggle "
+           href="/rg/">
+            IRTF
+        </a>
+    </li>
+
+    <li class="dropend group-menu group-parent-2309">
+        <a class="dropdown-item dropdown-toggle "
+           href="/adm/">
+            IETF LLC
+        </a>
+    </li>
 
 
-
-
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-  
-  Groups
-  
-    </a>
-    <ul class="dropdown-menu" role="menu">
-
-    <li class="dropdown-header visible-lg-block">By area/parent</li>
-  
+    <li class="dropend">
+        <a class="dropdown-item dropdown-toggle "
+           href="/group/">
+            Other
+        </a>
         
 
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-2010">
-    <a href="/wg/#art">Apps &amp; Realtime</a>
-  </li>
 
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1008">
-    <a href="/wg/#gen">General</a>
-  </li>
-
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1052">
-    <a href="/wg/#int">Internet</a>
-  </li>
-
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1193">
-    <a href="/wg/#ops">Ops &amp; Mgmt</a>
-  </li>
-
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1249">
-    <a href="/wg/#rtg">Routing</a>
-  </li>
-
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1260">
-    <a href="/wg/#sec">Security</a>
-  </li>
-
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1324">
-    <a href="/wg/#tsv">Transport</a>
-  </li>
-
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-7">
-    <a href="/program/">IAB</a>
-  </li>
-
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-3">
-    <a href="/rg/">IRTF</a>
-  </li>
-
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-2309">
-    <a href="/adm/">IETF LLC</a>
-  </li>
-
-
-        <li class="dropdown-submenu group-menu"><a href="/group/">Other</a>
-<ul class="dropdown-menu" role="menu">
-
-  <li>
-    <a href="/ag/">Active AGs</a>
-  </li>
-
-  <li>
-    <a href="/area/">Active Areas</a>
-  </li>
-
-  <li>
-    <a href="/dir/">Active Directorates</a>
-  </li>
-
-  <li>
-    <a href="/program/">Active Programs</a>
-  </li>
-
-  <li>
-    <a href="/rag/">Active RAGs</a>
-  </li>
-
-  <li>
-    <a href="/team/">Active Teams</a>
-  </li>
-
-
-  <li>
-    <a href="/group/rsoc/">RSOC</a>
-  </li>
-
+<ul class="dropdown-menu ms-n1">
+    
+        <li>
+            <a class="dropdown-item "
+               href="/ag/">Active AGs</a>
+        </li>
+    
+        <li>
+            <a class="dropdown-item "
+               href="/area/">Active Areas</a>
+        </li>
+    
+        <li>
+            <a class="dropdown-item "
+               href="/dir/">Active Directorates</a>
+        </li>
+    
+        <li>
+            <a class="dropdown-item "
+               href="/program/">Active Programs</a>
+        </li>
+    
+        <li>
+            <a class="dropdown-item "
+               href="/rag/">Active RAGs</a>
+        </li>
+    
+        <li>
+            <a class="dropdown-item "
+               href="/team/">Active Teams</a>
+        </li>
+    
+    
+        <li>
+            <a class="dropdown-item "
+               href="/group/rsoc/">RSOC</a>
+        </li>
+    
 </ul>
- </li>
 
-  <li class="divider hidden-xs"></li>
-  <li class="dropdown-header hidden-xs">New work</li>
-  <li><a href="/group/chartering/">Chartering groups</a></li>
-  <li><a href="/wg/bofs/">BOFs</a></li>
-  <li><a href="/doc/bof-requests">BOF Requests</a></li>
-
-  <li class="divider hidden-xs"></li>
-  <li class="dropdown-header hidden-xs">Other groups</li>
-  <li><a href="/group/concluded/">Concluded groups</a></li>
-  <li><a href="/list/nonwg">Non-WG lists</a></li>
-
-</ul>
-</li>
-
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-  
-  Documents
-  
-    </a>
-    <ul class="dropdown-menu" role="menu">
-  
-  <li><a href="/doc/search">Search</a></li>
-  <li><a href="/doc/recent">Recent drafts</a></li>
-  <li><a href="/submit/">Draft submission</a></li>
-
-  
-
-
-  <li class="divider hidden-xs"></li>
-  <li class="dropdown-header hidden-xs">RFC streams</li>
-        <li><a href="/stream/iab/">IAB</a></li>
-        <li><a href="/stream/irtf/">IRTF</a></li>
-        <li><a href="/stream/ise/">ISE</a></li>
-
-</ul>
-</li>
-
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-  
-  Meetings
-  
-    </a>
-    <ul class="dropdown-menu" role="menu">
-  
-
-
-  
-  <li class="dropdown-header visible-lg-block">Next meeting</li>
-  
-  <li><a href="/meeting/agenda/">Agenda</a></li>
-  <li><a href="/meeting/materials/">Materials</a></li>
-  <li><a href="/meeting/floor-plan/">Floor plan</a></li>
-  <li><a href="https://www.ietf.org/how/meetings/register/">Registration</a></li>
-  <li><a href="/meeting/important-dates/">Important dates</a></li>
-  <li><a href="/secr/sreq/">Request a session</a></li>
-  <li><a href="/meeting/requests">Session requests</a></li>
-  
-  <li class="divider hidden-xs"></li>
-  <li class="dropdown-header visible-lg-block">Upcoming meetings</li>
-  
-  <li><a href="/meeting/upcoming">Upcoming meetings</a></li>
-  
-  <li class="divider hidden-xs"></li>
-  <li class="dropdown-header visible-lg-block">Past meetings</li>
-  
-  <li><a href="/meeting/past">Past meetings</a></li>
-  <li><a href="https://www.ietf.org/how/meetings/past/">Meeting proceedings</a></li>
-</ul>
-</li>
-
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-  
-  Other
-  
-    </a>
-    <ul class="dropdown-menu" role="menu">
-  
-
-  <li><a href="/ipr/">IPR disclosures</a></li>
-  <li><a href="/liaison/">Liaison statements</a></li>
-  <li><a href="/iesg/agenda/">IESG agenda</a></li>
-  <li><a href="/nomcom/">NomComs</a></li>
-  <li><a href="/doc/downref/">Downref registry</a></li>
-  <li class="dropdown-submenu">
-    <a href="/stats/">Statistics</a>
-    <ul class="dropdown-menu">
-      <li><a href="/stats/document/">Drafts/RFCs</a></li>
-      <li><a href="/stats/meeting/">Meetings</a></li>
-      
+    </li>
+    <li><hr class="dropdown-divider"></li>
+    <li class="dropdown-header">New work</li>
+    <li>
+        <a class="dropdown-item "
+           href="/group/chartering/">
+            Chartering groups
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/wg/bofs/">
+            BOFs
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/doc/bof-requests">
+            BOF Requests
+        </a>
+    </li>
+    <li><hr class="dropdown-divider"></li>
+    <li class="dropdown-header">Other groups</li>
+    <li>
+        <a class="dropdown-item "
+           href="/group/concluded/">
+            Concluded groups
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/list/nonwg">
+            Non-WG lists
+        </a>
+    </li>
+    
     </ul>
-  </li>
-  <li><a href="/group/edu/materials/">Tutorials</a></li>
-  <li><a href="/api/">API Help</a></li>  
-  <li><a href="/release/">Release notes</a></li>
-  <li class="divider hidden-xs"></li>
-  <li><a href="https://trac.ietf.org/trac/ietfdb/newticket"><span class="fa fa-bug"></span> Report a bug</a></li>
-</ul>
+</li>
+
+<li class="nav-item dropdown">
+    
+        <a href="#"
+           class="nav-link dropdown-toggle"
+           role="button"
+           data-bs-toggle="dropdown"
+           aria-expanded="false">
+            Documents
+        </a>
+        <ul class="dropdown-menu mt-n1">
+        
+    <li>
+        <a class="dropdown-item "
+           href="/doc/search">
+            Search
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/doc/recent">
+            Recent drafts
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/submit/">
+            Draft submission
+        </a>
+    </li>
+    
+    
+        <li><hr class="dropdown-divider">
+        </li>
+    
+    <li class="dropdown-header">
+        RFC streams
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/stream/iab/">
+            IAB
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/stream/irtf/">
+            IRTF
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/stream/ise/">
+            ISE
+        </a>
+    </li>
+    
+    </ul>
+</li>
+
+<li class="nav-item dropdown">
+    
+        <a href="#"
+           class="nav-link dropdown-toggle"
+           role="button"
+           data-bs-toggle="dropdown"
+           aria-expanded="false">
+            Meetings
+        </a>
+        <ul class="dropdown-menu mt-n1">
+        
+    <li>
+        <a class="dropdown-item "
+           href="/meeting/agenda/">
+            Agenda
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/meeting/materials/">
+            Materials
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/meeting/floor-plan/">
+            Floor plan
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="https://www.ietf.org/how/meetings/register/">
+            Registration
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/meeting/important-dates/">
+            Important dates
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/secr/sreq/">
+            Request a session
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/meeting/requests">
+            Session requests
+        </a>
+    </li>
+    
+        
+            <li><hr class="dropdown-divider">
+            </li>
+        
+        <li class="dropdown-header">
+            Upcoming meetings
+        </li>
+    
+    <li>
+        <a class="dropdown-item "
+           href="/meeting/upcoming">
+            Upcoming meetings
+        </a>
+    </li>
+    
+        
+            <li><hr class="dropdown-divider">
+            </li>
+        
+        <li class="dropdown-header">
+            Past meetings
+        </li>
+    
+    <li>
+        <a class="dropdown-item "
+           href="/meeting/past">
+            Past meetings
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="https://www.ietf.org/how/meetings/past/">
+            Meeting proceedings
+        </a>
+    </li>
+    
+    </ul>
+</li>
+
+<li class="nav-item dropdown">
+    
+        <a href="#"
+           class="nav-link dropdown-toggle"
+           role="button"
+           data-bs-toggle="dropdown"
+           aria-expanded="false">
+            Other
+        </a>
+        <ul class="dropdown-menu mt-n1">
+        
+    <li>
+        <a class="dropdown-item "
+           href="/ipr/">
+            IPR disclosures
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/liaison/">
+            Liaison statements
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/iesg/agenda/">
+            IESG agenda
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/nomcom/">
+            NomComs
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/doc/downref/">
+            Downref registry
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/stats/">
+            Statistics
+        </a>
+        <ul class="dropdown-menu mt-n1">
+            <li>
+                <a class="dropdown-item "
+                   href="/stats/document/">
+                    Drafts/RFCs
+                </a>
+            </li>
+            <li>
+                <a class="dropdown-item "
+                   href="/stats/meeting/">
+                    Meetings
+                </a>
+            </li>
+            
+        </ul>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/group/edu/materials/">
+            Tutorials
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/api/">
+            API Help
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/release/">
+            Release notes
+        </a>
+    </li>
+    
+        <li><hr class="dropdown-divider">
+        </li>
+    
+    <li>
+        <a class="dropdown-item "
+           href="https://github.com/ietf-tools/datatracker/issues/new/choose">
+            <i class="bi bi-bug">
+            </i>
+            Report a bug
+        </a>
+    </li>
+    
+    </ul>
 </li>
 
 
-  
-
-
-<li class="dropdown">
-  
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-     User 
-  </a>
-  <ul class="dropdown-menu" role="menu">
-  
-
-  
     
-      <li><a rel="nofollow" href="/accounts/login/?next=/wg/sfc/documents/">Sign in</a></li>
-      <li><a rel="nofollow" href="/accounts/reset/">Password reset</a></li>
-      <li><a href="/accounts/settings/" rel="nofollow">Preferences</a></li>
+
+
+
+<li class="nav-item dropdown">
     
-    <li><a href="/help/personal-information">Handling of personal information</a></li>  
-  
-
-  
-    <li><a href="/accounts/create/">New account</a></li>
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-</ul>
-
-            </ul>
+        <a href="#"
+           class="nav-link dropdown-toggle"
+           role="button"
+           data-bs-toggle="dropdown"
+           aria-expanded="false">
+            
+                User
+            
+        </a>
+        <ul class="dropdown-menu  mt-n1 ">
         
-            <p class="navbar-text"></p>
-            <a class="btn btn-warning btn-sm navbar-btn" rel="nofollow" href="/accounts/login/?next=/wg/sfc/documents/">Sign in</a>
+    
+        
+            <li>
+                <a class="dropdown-item "
+                   rel="nofollow"
+                   href="/accounts/login/?next=/wg/sfc/documents/">
+                    Sign in
+                </a>
+            </li>
+            <li>
+                <a class="dropdown-item "
+                   rel="nofollow"
+                   href="/accounts/reset/">
+                    Password reset
+                </a>
+            </li>
+            <li>
+                <a class="dropdown-item "
+                   href="/accounts/settings/"
+                   rel="nofollow">
+                    Preferences
+                </a>
+            </li>
+        
+        <li>
+            <a class="dropdown-item "
+               href="/help/personal-information">
+                Handling of personal information
+            </a>
+        </li>
+    
+    
+        <li>
+            <a class="dropdown-item "
+               href="/accounts/create/">
+                New account
+            </a>
+        </li>
+    
+    
+    
+    
+    
+    
+    </ul></li>
+
+
+
+                    </ul>
+                </div>
+                
+                    <a class="d-none d-sm-block mx-5 btn  btn-warning "
+                       rel="nofollow"
+                       href="/accounts/login/?next=/wg/sfc/documents/">
+                        Sign
+                        in
+                    </a>
+                
+                <div class="d-flex d-none d-lg-block">
+                    <label aria-label="Document search">
+                    <input class="form-control select2-field"
+                           id="navbar-doc-search"
+                           data-ajax--url="/doc/select2search/docalias/draft/"
+                           type="text"
+                           data-placeholder="Document search">
+                   </label>
+                </div>
+                <button class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbar-collapse"
+                        aria-controls="navbar-collapse"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <i class="navbar-toggler-icon"></i>
+                </button>
+            </div>
+        </nav>
+        <div class="pt-3 container-fluid">
+            <div class="row">
+                
+                <div class="col mx-lg-3 ietf-auto-nav" id="content">
+                    <noscript>
+                        <div class="alert alert-danger alert-ignore my-3">
+                            <b>Javascript disabled?</b> Like other modern websites, the IETF Datatracker relies on Javascript.
+                            Please enable Javascript for full functionality.
+                        </div>
+                    </noscript>
+                    
+                    
+    
+    <h1>
+        Service Function Chaining (sfc)
+        
+        
+        
+    </h1>
+    <ul class="nav nav-tabs my-3">
+        
+            <li class="nav-item">
+                <a class="nav-link "
+                   href="/wg/sfc/about/">About</a>
+            </li>
+        
+            <li class="nav-item">
+                <a class="nav-link active"
+                   href="/wg/sfc/documents/">Documents</a>
+            </li>
+        
+            <li class="nav-item">
+                <a class="nav-link "
+                   href="/wg/sfc/meetings/">Meetings</a>
+            </li>
+        
+            <li class="nav-item">
+                <a class="nav-link "
+                   href="/wg/sfc/history/">History</a>
+            </li>
+        
+            <li class="nav-item">
+                <a class="nav-link "
+                   href="/wg/sfc/photos/">Photos</a>
+            </li>
+        
+            <li class="nav-item">
+                <a class="nav-link "
+                   href="/wg/sfc/email/">Email expansions</a>
+            </li>
+        
+            <li class="nav-item">
+                <a class="nav-link "
+                   href="https://mailarchive.ietf.org/arch/browse/sfc/">List archive &raquo;</a>
+            </li>
+        
+    </ul>
+    <div class="buttonlist">
+        
+            
+        
+    </div>
+    
+    
+    
         
 
-	    <form class="navbar-form navbar-right hidden-xs" action="/doc/search/">
-	      <div class="form-group">
-	        <input class="form-control input-sm" type="text" name="name" placeholder="Document search" required>
-	        <input type="hidden" name="activedrafts" value="on">
-	        <input type="hidden" name="rfcs" value="on">
-	      </div>
-	    </form>
-	  </div>
+
+
+
+
+
+    <table class="table table-sm table-striped tablesorter">
+        <thead>
+            <tr>
+                <th scope="col"></th>
+                
+                    
+                        <th scope="col" data-sort="document"
+                            >
+                            
+                                Document
+                            
+                        </th>
+                    
+                
+                    
+                
+                    
+                        <th scope="col" data-sort="date"
+                            >
+                            
+                                Date
+                            
+                        </th>
+                    
+                
+                    
+                        <th scope="col" data-sort="status"
+                            >
+                            
+                                Status
+                            
+                        </th>
+                    
+                
+                    
+                        <th scope="col" data-sort="ipr"
+                            
+                              class="d-none d-sm-table-cell"
+                            >
+                            
+                                IPR
+                            
+                        </th>
+                    
+                
+                    
+                        <th scope="col" data-sort="ad"
+                            
+                              class="d-none d-sm-table-cell"
+                            >
+                            
+                                AD/Shepherd
+                            
+                        </th>
+                    
+                
+            </tr>
+        </thead>
+
+
+
+    <tbody>
+        <tr class="table-info">
+            <td></td>
+            
+                <th scope="col" colspan="5">
+            
+            Active Internet-Drafts (5 hits)
+            </th>
+        </tr>
+    </tbody>
+    <tbody>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">9 pages</small>
+        <div>
+            <a href="/doc/draft-ietf-sfc-ioam-nsh/">
+                
+                    draft-ietf-sfc-ioam-nsh-08
+                
+            </a>
+            
+            <br>
+            
+            <b>Network Service Header (NSH) Encapsulation for In-situ OAM (IOAM) Data</b>
+            
         </div>
-      </nav>
-      <div class="container-fluid-narrow">
         
-        
-        
-	  <div class="col-md-12 col-sm-12" id="content">
-        
-        
-  
-
-  <h1>Service Function Chaining (sfc)
-    
-    
-    
-  </h1>
-
-  <ul class="nav nav-tabs" role="tablist">
-    
-      <li >
-        <a href="/wg/sfc/about/">About</a>
-      </li>
-    
-      <li class="active">
-        <a href="/wg/sfc/documents/">Documents</a>
-      </li>
-    
-      <li >
-        <a href="/wg/sfc/meetings/">Meetings</a>
-      </li>
-    
-      <li >
-        <a href="/wg/sfc/history/">History</a>
-      </li>
-    
-      <li >
-        <a href="/wg/sfc/photos/">Photos</a>
-      </li>
-    
-      <li >
-        <a href="/wg/sfc/email/">Email expansions</a>
-      </li>
-    
-      <li >
-        <a href="https://mailarchive.ietf.org/arch/browse/sfc/">List archive &raquo;</a>
-      </li>
-    
-  </ul>
-
-  <div class="buttonlist">
-    
-      
-    
-  </div>
-
-  
-  
-  
-    
+    </td>
+    <td>
+            
+                    
+                        2022-04-03
+                    
+                    
+                
+                
+            </td>
+            
 
 
 
-
-  
-
-  
-  <table class="table table-condensed table-striped tablesorter">
-    <thead>
-      <tr>
-        <th class="sorter-false"></th>
-
-        
-          
-            <th data-header="document">
-	      
-	        Document
-	      
-            </th>
-          
-        
-          
-        
-          
-            <th data-header="date">
-	      
-	        Date
-	      
-            </th>
-          
-        
-          
-            <th data-header="status">
-	      
-	        Status
-	      
-            </th>
-          
-        
-          
-            <th data-header="ipr">
-	      
-	        IPR
-	      
-            </th>
-          
-        
-          
-            <th data-header="ad">
-	      
-	        AD / Shepherd
-	      
-            </th>
-          
-        
-
-        
-      </tr>
-    </thead>
-
+<td class="status">
     
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+            <br>
+            
+                In WG Last Call
+                
+            
+        
+        
+        
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+                    <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-sfc-ioam-nsh">
+                        <span class="badge bg-info">1</span>
+                    </a>
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
 
-      
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">36 pages</small>
+        <div>
+            <a href="/doc/draft-ietf-sfc-multi-layer-oam/">
+                
+                    draft-ietf-sfc-multi-layer-oam-19
+                
+            </a>
+            
+            <br>
+            
+            <b>Active OAM for Service Function Chaining</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2022-03-31
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+            <br>
+            
+                In WG Last Call
+                
+            
+        
+        
+        
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+                    <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-sfc-multi-layer-oam">
+                        <span class="badge bg-info">1</span>
+                    </a>
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">34 pages</small>
+        <div>
+            <a href="/doc/draft-ietf-sfc-nsh-ecn-support/">
+                
+                    draft-ietf-sfc-nsh-ecn-support-09
+                
+            </a>
+            
+            <br>
+            
+            <b>Explicit Congestion Notification (ECN) and Congestion Feedback Using the Network Service Header (NSH) and IPFIX</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                
+                    <a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-sfc-nsh-ecn-support-09">
+                    
+                    
+                    
+                        2022-04-18
+                    
+                    
+                        </a>
+                    
+                
+                    <br>
+                    <div class="float-end">
+                        <span class="badge bg-success">New</span>
+                    </div>
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+            <br>
+            
+                WG Document
+                
+            
+        
+        
+        
+        
+            <br>
+            Review:
+            <a href="/group/tsvart/">tsvart</a>
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+                    <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-sfc-nsh-ecn-support">
+                        <span class="badge bg-info">2</span>
+                    </a>
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">18 pages</small>
+        <div>
+            <a href="/doc/draft-ietf-sfc-nsh-tlv/">
+                
+                    draft-ietf-sfc-nsh-tlv-15
+                
+            </a>
+            
+            <br>
+            
+            <b>Network Service Header (NSH) Metadata Type 2 Variable-Length Context Headers</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                
+                    <a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-sfc-nsh-tlv-15">
+                    
+                    
+                    
+                        2022-04-20
+                    
+                    
+                        </a>
+                    
+                
+                    <br>
+                    <div class="float-end">
+                        <span class="badge bg-success">New</span>
+                    </div>
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+        <div class="float-end ms-1 mb-1" id="ballot-icon-draft-ietf-sfc-nsh-tlv"><a  href="/doc/draft-ietf-sfc-nsh-tlv/ballotpopup/831718/" data-bs-toggle="modal" data-bs-target="#modal-831718" aria-label="IESG positions" title="IESG positions (click to show more)" class="ballot-icon"><table><tbody><tr><td class="position-discuss"></td><td class="position-yes"></td><td class="position-yes"></td><td class="position-yes"></td><td class="position-noobj"></td></tr><tr><td class="position-noobj"></td><td class="position-noobj"></td><td class="position-noobj"></td><td class="position-noobj"></td><td class="position-noobj"></td></tr><tr><td class="position-noobj"></td><td class="position-norecord"></td><td class="position-norecord"></td><td class="position-norecord"></td><td class="position-empty"></td></tr></tbody></table></a><div id="modal-831718" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable modal-xl"><div class="modal-content"></div></div></div></div>
+    
+    
+        
+            IESG Evaluation::AD Followup
+        
+        
+        
+        <span class="badge bg-danger" title="Goal is &lt;14 days">for 140 days</span>
+        
+        
+            
+        
+        
+            <br>
+            
+                Submitted to IESG for Publication
+                
+                    :
+                
+            
+        
+        Proposed Standard
+        
+        
+            <br>
+            Reviews:
+            <a href="/group/genart/">genart</a>,
+                
+                    <a href="/group/intdir/">intdir</a>,
+                
+                    <a href="/group/opsdir/">opsdir</a>,
+                
+                    <a href="/group/rtgdir/">rtgdir</a>,
+                
+                    <a href="/group/secdir/">secdir</a>
+        
+        
+        
+            <br>
+            Action Holder:
+            
+                <span ><a 
+           title="Responsible AD"
+            href="/person/andrew-ietf@liquid.tech" >Andrew Alston</a> <a 
+               href="mailto:andrew-ietf%40liquid.tech"
+               aria-label="Compose email to andrew-ietf@liquid.tech."
+               title="Compose email to andrew-ietf@liquid.tech.">
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 28 days</span>
+            
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/andrew-ietf@liquid.tech" >Andrew Alston</a> <a 
+               href="mailto:andrew-ietf%40liquid.tech"
+               aria-label="Compose email to andrew-ietf@liquid.tech."
+               title="Compose email to andrew-ietf@liquid.tech.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/gregimirsky@gmail.com" >Greg Mirsky</a> <a class="text-reset"
+               href="mailto:gregimirsky%40gmail.com"
+               aria-label="Compose email to gregimirsky@gmail.com."
+               title="Compose email to gregimirsky@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">6 pages</small>
+        <div>
+            <a href="/doc/draft-ietf-sfc-oam-packet/">
+                
+                    draft-ietf-sfc-oam-packet-00
+                
+            </a>
+            
+            <br>
+            
+            <b>OAM Packet and Behavior in the Network Service Header (NSH)</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2022-03-25
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+            <br>
+            
+                In WG Last Call
+                
+            
+        
+        
+        
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+    </tbody>
+
     <tbody>
-        <tr class="info">
-          <th></th>
-          
-              <th colspan="5">
-          
-	    Active Internet-Drafts (5 hits)
-          </th>
+        <tr class="table-info">
+            <td></td>
+            
+                <th scope="col" colspan="5">
+            
+            RFCs (8 hits)
+            </th>
         </tr>
     </tbody>
-
     <tbody>
         
-          
+            
 
 
 
 
 
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-ietf-sfc-ioam-nsh/">draft-ietf-sfc-ioam-nsh-08</a>
-
-      
-      <br>
-      <b>Network Service Header (NSH) Encapsulation for In-situ OAM (IOAM) Data</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-
-       <a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-sfc-ioam-nsh-08">
-       
-
-    
-          2022-04-03
-    
-       </a>
-    
-    </span>
 
 
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">13 pages</small>
+        <div>
+            <a href="/doc/rfc7498/">
+                
+                    RFC 7498
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-sfc-problem-statement)</i>
+            <br>
+            
+            <b>Problem Statement for Service Function Chaining</b>
+            
+                <a class="badge bg-warning text-decoration-none float-end"
+                   href="https://www.rfc-editor.org/errata_search.php?rfc=7498">
+                    Errata
+                </a>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2015-04
+                    
+                    
+                
+                
+            </td>
+            
 
-    
-      <br><small class="text-muted">9 pages</small>
-    
-
-    
-    <wbr><div class="pull-right"><span class="label label-success">New</span></div>
-    
-
-    
-
-  </td>
-
-  
 
 
 <td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-sfc-ioam-nsh">
-    
-  </div>
-
-  
-    
-      I-D Exists
-    
-
-    
-
-    <wbr>
-
-    <wbr>
     
     
-
-    
-      
-    
-
-    
-      <br>
-      
-	In WG Last Call
-      
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-sfc-ioam-nsh">
-        <span class="label label-default">1</span>
-      </a>
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
         
-          
-
-
-
-
-
-<tr >
-
-  <td>
+        Informational RFC
+        
+        
     
-    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+                    <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-sfc-problem-statement">
+                        <span class="badge bg-info">2</span>
+                    </a>
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/akatlas@gmail.com" >Alia Atlas</a> <a 
+               href="mailto:akatlas%40gmail.com"
+               aria-label="Compose email to akatlas@gmail.com."
+               title="Compose email to akatlas@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/jmh@joelhalpern.com" >Joel M. Halpern</a> <a class="text-reset"
+               href="mailto:jmh%40joelhalpern.com"
+               aria-label="Compose email to jmh@joelhalpern.com."
+               title="Compose email to jmh@joelhalpern.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
 
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-ietf-sfc-multi-layer-oam/">draft-ietf-sfc-multi-layer-oam-19</a>
-
-      
-      <br>
-      <b>Active OAM for Service Function Chaining</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-
-       <a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-sfc-multi-layer-oam-19">
-       
-
-    
-          2022-03-31
-    
-       </a>
-    
-    </span>
 
 
 
-    
-      <br><small class="text-muted">36 pages</small>
-    
 
-    
-    <wbr><div class="pull-right"><span class="label label-success">New</span></div>
-    
 
-    
 
-  </td>
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">32 pages</small>
+        <div>
+            <a href="/doc/rfc7665/">
+                
+                    RFC 7665
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-sfc-architecture)</i>
+            <br>
+            
+            <b>Service Function Chaining (SFC) Architecture</b>
+            
+                <a class="badge bg-danger text-decoration-none float-end"
+                   href="https://www.rfc-editor.org/errata_search.php?rfc=7665">
+                    Errata
+                </a>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2015-10
+                    
+                    
+                
+                
+            </td>
+            
 
-  
 
 
 <td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-sfc-multi-layer-oam">
-    
-  </div>
-
-  
-    
-      I-D Exists
-    
-
-    
-
-    <wbr>
-
-    <wbr>
     
     
-
-    
-      
-    
-
-    
-      <br>
-      
-	In WG Last Call
-      
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-sfc-multi-layer-oam">
-        <span class="label label-default">1</span>
-      </a>
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
         
-          
-
-
-
-
-
-<tr >
-
-  <td>
+        Informational RFC
+        
+        
     
-    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+                    <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-sfc-architecture">
+                        <span class="badge bg-info">12</span>
+                    </a>
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/akatlas@gmail.com" >Alia Atlas</a> <a 
+               href="mailto:akatlas%40gmail.com"
+               aria-label="Compose email to akatlas@gmail.com."
+               title="Compose email to akatlas@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/jguichar@cisco.com" >Jim Guichard</a> <a class="text-reset"
+               href="mailto:jguichar%40cisco.com"
+               aria-label="Compose email to jguichar@cisco.com."
+               title="Compose email to jguichar@cisco.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
 
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-ietf-sfc-nsh-ecn-support/">draft-ietf-sfc-nsh-ecn-support-08</a>
-
-      
-      <br>
-      <b>Explicit Congestion Notification (ECN) and Congestion Feedback Using the Network Service Header (NSH) and IPFIX</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2021-10-21
-    
-    </span>
 
 
 
-    
-      <br><small class="text-muted">33 pages</small>
-    
 
-    
 
-    
-      <wbr><span class="label label-warning">Expires soon</span>
-    
 
-  </td>
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">40 pages</small>
+        <div>
+            <a href="/doc/rfc8300/">
+                
+                    RFC 8300
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-sfc-nsh)</i>
+            <br>
+            
+            <b>Network Service Header (NSH)</b>
+            
+                <a class="badge bg-danger text-decoration-none float-end"
+                   href="https://www.rfc-editor.org/errata_search.php?rfc=8300">
+                    Errata
+                </a>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2018-01
+                    
+                    
+                
+                
+            </td>
+            
 
-  
 
 
 <td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-sfc-nsh-ecn-support">
-    
-  </div>
-
-  
-    
-      I-D Exists
-    
-
-    
-
-    <wbr>
-
-    <wbr>
     
     
-
-    
-      
-    
-
-    
-      <br>
-      
-	WG Document
-      
-    
-
-    
-
-    
-
-    
-      <br>Reviews:
-      
-        tsvart
-      
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-sfc-nsh-ecn-support">
-        <span class="label label-default">2</span>
-      </a>
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
         
-          
-
-
-
-
-
-<tr >
-
-  <td>
+        Proposed Standard RFC
+        
+        
     
-    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+                    <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-sfc-nsh">
+                        <span class="badge bg-info">9</span>
+                    </a>
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/akatlas@gmail.com" >Alia Atlas</a> <a 
+               href="mailto:akatlas%40gmail.com"
+               aria-label="Compose email to akatlas@gmail.com."
+               title="Compose email to akatlas@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/jmh@joelhalpern.com" >Joel M. Halpern</a> <a class="text-reset"
+               href="mailto:jmh%40joelhalpern.com"
+               aria-label="Compose email to jmh@joelhalpern.com."
+               title="Compose email to jmh@joelhalpern.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
 
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-ietf-sfc-nsh-tlv/">draft-ietf-sfc-nsh-tlv-14</a>
-
-      
-      <br>
-      <b>Network Service Header Metadata Type 2 Variable-Length Context Headers</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-
-       <a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-sfc-nsh-tlv-14">
-       
-
-    
-          2022-03-30
-    
-       </a>
-    
-    </span>
 
 
 
-    
-      <br><small class="text-muted">15 pages</small>
-    
 
-    
-    <wbr><div class="pull-right"><span class="label label-success">New</span></div>
-    
 
-    
 
-  </td>
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">12 pages</small>
+        <div>
+            <a href="/doc/rfc8393/">
+                
+                    RFC 8393
+                
+            </a>
+            <i class="text-muted">(was draft-farrel-sfc-convent)</i>
+            <br>
+            
+            <b>Operating the Network Service Header (NSH) with Next Protocol &quot;None&quot;</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2018-05
+                    
+                    
+                
+                
+            </td>
+            
 
-  
 
 
 <td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-sfc-nsh-tlv">
-    <a  href="/doc/draft-ietf-sfc-nsh-tlv/ballotpopup/831718/" data-toggle="modal" data-target="#modal-831718" title="IESG positions (click to show more)" class="ballot-icon"><table><tr><td class="position-yes"></td><td class="position-yes"></td><td class="position-yes"></td><td class="position-noobj"></td><td class="position-noobj"></td></tr><tr><td class="position-noobj"></td><td class="position-noobj"></td><td class="position-noobj"></td><td class="position-noobj"></td><td class="position-noobj"></td></tr><tr><td class="position-norecord"></td><td class="position-norecord"></td><td class="position-norecord"></td><td class="position-norecord"></td><td class="empty"></td></tr></table></a><div id="modal-831718" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true"><div class="modal-dialog modal-lg"><div class="modal-content"></div></div></div>
-  </div>
-
-  
-    
-      IESG Evaluation::<wbr>AD Followup
-    
-
-    
-
-    <wbr>
-
-    <wbr><span class="label label-danger" title="Goal is &lt;14 days">for 132 days</span>
     
     
-
-    
-      
-    
-
-    
-      <br>
-      
-	Submitted to IESG for Publication:<wbr>
-      
-    
-
-    
-      Proposed Standard
-    
-
-    
-
-    
-      <br>Reviews:
-      
-        genart, 
-      
-        intdir, 
-      
-        opsdir, 
-      
-        rtgdir, 
-      
-        secdir
-      
-    
-
-    
-
-    
-        <br>Action Holders:
         
-            <wbr><a title="Responsible AD" href="/person/andrew-ietf@liquid.tech"><span class="">Andrew Alston</span></a>&nbsp;<a href="mailto:andrew-ietf%40liquid.tech"><span class="fa fa-envelope-o tiny"></span></a>
-
+        Proposed Standard RFC
+        
         
     
-  
-
-
-
 </td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/andrew-ietf@liquid.tech"><span class="">Andrew Alston</span></a>&nbsp;<a href="mailto:andrew-ietf%40liquid.tech"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/gregimirsky@gmail.com"><span class="small text-muted">Greg Mirsky</span></a>&nbsp;<a href="mailto:gregimirsky%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/akatlas@gmail.com" >Alia Atlas</a> <a 
+               href="mailto:akatlas%40gmail.com"
+               aria-label="Compose email to akatlas@gmail.com."
+               title="Compose email to akatlas@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/tal.mizrahi.phd@gmail.com" >Tal Mizrahi</a> <a class="text-reset"
+               href="mailto:tal.mizrahi.phd%40gmail.com"
+               aria-label="Compose email to tal.mizrahi.phd@gmail.com."
+               title="Compose email to tal.mizrahi.phd@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
         
-          
+            
 
 
 
 
 
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-ietf-sfc-oam-packet/">draft-ietf-sfc-oam-packet-00</a>
-
-      
-      <br>
-      <b>OAM Packet and Behavior in the Network Service Header (NSH)</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2022-03-25
-    
-    </span>
 
 
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">29 pages</small>
+        <div>
+            <a href="/doc/rfc8459/">
+                
+                    RFC 8459
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-sfc-hierarchical)</i>
+            <br>
+            
+            <b>Hierarchical Service Function Chaining (hSFC)</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2018-09
+                    
+                    
+                
+                
+            </td>
+            
 
-    
-      <br><small class="text-muted">6 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
 
 
 <td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-sfc-oam-packet">
-    
-  </div>
-
-  
-    
-      I-D Exists
-    
-
-    
-
-    <wbr>
-
-    <wbr>
     
     
-
-    
-      
-    
-
-    
-      <br>
-      
-	WG Document
-      
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
         
-      
+        Experimental RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/martin.vigoureux@nokia.com" >Martin Vigoureux</a> <a 
+               href="mailto:martin.vigoureux%40nokia.com"
+               aria-label="Compose email to martin.vigoureux@nokia.com."
+               title="Compose email to martin.vigoureux@nokia.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/sarikaya@ieee.org" >Behcet Sarikaya</a> <a class="text-reset"
+               href="mailto:sarikaya%40ieee.org"
+               aria-label="Compose email to sarikaya@ieee.org."
+               title="Compose email to sarikaya@ieee.org.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">20 pages</small>
+        <div>
+            <a href="/doc/rfc8924/">
+                
+                    RFC 8924
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-sfc-oam-framework)</i>
+            <br>
+            
+            <b>Service Function Chaining (SFC) Operations, Administration, and Maintenance (OAM) Framework</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2020-10
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Informational RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+                    <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-sfc-oam-framework">
+                        <span class="badge bg-info">2</span>
+                    </a>
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/martin.vigoureux@nokia.com" >Martin Vigoureux</a> <a 
+               href="mailto:martin.vigoureux%40nokia.com"
+               aria-label="Compose email to martin.vigoureux@nokia.com."
+               title="Compose email to martin.vigoureux@nokia.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/tal.mizrahi.phd@gmail.com" >Tal Mizrahi</a> <a class="text-reset"
+               href="mailto:tal.mizrahi.phd%40gmail.com"
+               aria-label="Compose email to tal.mizrahi.phd@gmail.com."
+               title="Compose email to tal.mizrahi.phd@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">11 pages</small>
+        <div>
+            <a href="/doc/rfc8979/">
+                
+                    RFC 8979
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-sfc-serviceid-header)</i>
+            <br>
+            
+            <b>Subscriber and Performance Policy Identifier Context Headers in the Network Service Header (NSH)</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2021-02
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/martin.vigoureux@nokia.com" >Martin Vigoureux</a> <a 
+               href="mailto:martin.vigoureux%40nokia.com"
+               aria-label="Compose email to martin.vigoureux@nokia.com."
+               title="Compose email to martin.vigoureux@nokia.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/gregimirsky@gmail.com" >Greg Mirsky</a> <a class="text-reset"
+               href="mailto:gregimirsky%40gmail.com"
+               aria-label="Compose email to gregimirsky@gmail.com."
+               title="Compose email to gregimirsky@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">25 pages</small>
+        <div>
+            <a href="/doc/rfc9145/">
+                
+                    RFC 9145
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-sfc-nsh-integrity)</i>
+            <br>
+            
+            <b>Integrity Protection for the Network Service Header (NSH) and Encryption of Sensitive Context Headers</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2021-12
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/martin.vigoureux@nokia.com" >Martin Vigoureux</a> <a 
+               href="mailto:martin.vigoureux%40nokia.com"
+               aria-label="Compose email to martin.vigoureux@nokia.com."
+               title="Compose email to martin.vigoureux@nokia.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/gregimirsky@gmail.com" >Greg Mirsky</a> <a class="text-reset"
+               href="mailto:gregimirsky%40gmail.com"
+               aria-label="Compose email to gregimirsky@gmail.com."
+               title="Compose email to gregimirsky@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+    </tbody>
+
+
+
+    
+    
+
+
+
+
+
+
+
+
     <tbody>
-        <tr class="info">
-          <th></th>
-          
-              <th colspan="5">
-          
-	    RFCs (8 hits)
-          </th>
+        <tr class="table-info">
+            <td></td>
+            
+                <th scope="col" colspan="5">
+            
+            Related Internet-Drafts (8 hits)
+            </th>
         </tr>
     </tbody>
-
     <tbody>
         
-          
+            
 
 
 
 
 
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc7498/">RFC 7498</a>
-
-      
-        <i>(was draft-ietf-sfc-problem-statement)</i>
-      
-      <br>
-      <b>Problem Statement for Service Function Chaining</b>
-      
-        <a class="label label-warning pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=7498">Errata</a>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2015-04
-    
-    </span>
 
 
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">9 pages</small>
+        <div>
+            <a href="/doc/draft-bernardos-sfc-discovery/">
+                
+                    draft-bernardos-sfc-discovery-07
+                
+            </a>
+            
+            <br>
+            
+            <b>Service Function discovery in fog environments</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2021-10-20
+                    
+                    
+                
+                
+                    <br>
+                    <span class="badge bg-warning">Expires soon</span>
+                
+            </td>
+            
 
-    
-      <br><small class="text-muted">13 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
 
 
 <td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-sfc-problem-statement">
     
-  </div>
-
-  
-    Informational RFC
-
     
-
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+        
+        
+        
+        
+        
     
-  
-
-
-
 </td>
-
-
-  <td class="ipr text-center">
-    
-      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-sfc-problem-statement">
-        <span class="label label-default">2</span>
-      </a>
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/akatlas@gmail.com"><span class="">Alia Atlas</span></a>&nbsp;<a href="mailto:akatlas%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/jmh@joelhalpern.com"><span class="small text-muted">Joel Halpern</span></a>&nbsp;<a href="mailto:jmh%40joelhalpern.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc7665/">RFC 7665</a>
-
-      
-        <i>(was draft-ietf-sfc-architecture)</i>
-      
-      <br>
-      <b>Service Function Chaining (SFC) Architecture</b>
-      
-        <a class="label label-danger pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=7665">Errata</a>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2015-10
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">32 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-sfc-architecture">
-    
-  </div>
-
-  
-    Informational RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-sfc-architecture">
-        <span class="label label-default">12</span>
-      </a>
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/akatlas@gmail.com"><span class="">Alia Atlas</span></a>&nbsp;<a href="mailto:akatlas%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/jguichar@cisco.com"><span class="small text-muted">Jim Guichard</span></a>&nbsp;<a href="mailto:jguichar%40cisco.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc8300/">RFC 8300</a>
-
-      
-        <i>(was draft-ietf-sfc-nsh)</i>
-      
-      <br>
-      <b>Network Service Header (NSH)</b>
-      
-        <a class="label label-danger pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=8300">Errata</a>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2018-01
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">40 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-sfc-nsh">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-sfc-nsh">
-        <span class="label label-default">9</span>
-      </a>
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/akatlas@gmail.com"><span class="">Alia Atlas</span></a>&nbsp;<a href="mailto:akatlas%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/jmh@joelhalpern.com"><span class="small text-muted">Joel Halpern</span></a>&nbsp;<a href="mailto:jmh%40joelhalpern.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc8393/">RFC 8393</a>
-
-      
-        <i>(was draft-farrel-sfc-convent)</i>
-      
-      <br>
-      <b>Operating the Network Service Header (NSH) with Next Protocol &quot;None&quot;</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2018-05
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">12 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-farrel-sfc-convent">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/akatlas@gmail.com"><span class="">Alia Atlas</span></a>&nbsp;<a href="mailto:akatlas%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/tal.mizrahi.phd@gmail.com"><span class="small text-muted">Tal Mizrahi</span></a>&nbsp;<a href="mailto:tal.mizrahi.phd%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc8459/">RFC 8459</a>
-
-      
-        <i>(was draft-ietf-sfc-hierarchical)</i>
-      
-      <br>
-      <b>Hierarchical Service Function Chaining (hSFC)</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2018-09
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">29 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-sfc-hierarchical">
-    
-  </div>
-
-  
-    Experimental RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/martin.vigoureux@nokia.com"><span class="">Martin Vigoureux</span></a>&nbsp;<a href="mailto:martin.vigoureux%40nokia.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/sarikaya@ieee.org"><span class="small text-muted">Behcet Sarikaya</span></a>&nbsp;<a href="mailto:sarikaya%40ieee.org"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc8924/">RFC 8924</a>
-
-      
-        <i>(was draft-ietf-sfc-oam-framework)</i>
-      
-      <br>
-      <b>Service Function Chaining (SFC) Operations, Administration, and Maintenance (OAM) Framework</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2020-10
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">20 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-sfc-oam-framework">
-    
-  </div>
-
-  
-    Informational RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-sfc-oam-framework">
-        <span class="label label-default">2</span>
-      </a>
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/martin.vigoureux@nokia.com"><span class="">Martin Vigoureux</span></a>&nbsp;<a href="mailto:martin.vigoureux%40nokia.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/tal.mizrahi.phd@gmail.com"><span class="small text-muted">Tal Mizrahi</span></a>&nbsp;<a href="mailto:tal.mizrahi.phd%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc8979/">RFC 8979</a>
-
-      
-        <i>(was draft-ietf-sfc-serviceid-header)</i>
-      
-      <br>
-      <b>Subscriber and Performance Policy Identifier Context Headers in the Network Service Header (NSH)</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2021-02
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">11 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-sfc-serviceid-header">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/martin.vigoureux@nokia.com"><span class="">Martin Vigoureux</span></a>&nbsp;<a href="mailto:martin.vigoureux%40nokia.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/gregimirsky@gmail.com"><span class="small text-muted">Greg Mirsky</span></a>&nbsp;<a href="mailto:gregimirsky%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc9145/">RFC 9145</a>
-
-      
-        <i>(was draft-ietf-sfc-nsh-integrity)</i>
-      
-      <br>
-      <b>Integrity Protection for the Network Service Header (NSH) and Encryption of Sensitive Context Headers</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2021-12
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">25 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-sfc-nsh-integrity">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/martin.vigoureux@nokia.com"><span class="">Martin Vigoureux</span></a>&nbsp;<a href="mailto:martin.vigoureux%40nokia.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/gregimirsky@gmail.com"><span class="small text-muted">Greg Mirsky</span></a>&nbsp;<a href="mailto:gregimirsky%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-      
-    </tbody>
-  </table>
-
-
-  
-  
-
-
-
-
-  
-
-  
-  <table class="table table-condensed table-striped tablesorter">
-    <thead>
-      <tr>
-        <th class="sorter-false"></th>
-
-        
-          
-            <th data-header="document">
-	      
-	        Document
-	      
-            </th>
-          
-        
-          
-        
-          
-            <th data-header="date">
-	      
-	        Date
-	      
-            </th>
-          
-        
-          
-            <th data-header="status">
-	      
-	        Status
-	      
-            </th>
-          
-        
-          
-            <th data-header="ipr">
-	      
-	        IPR
-	      
-            </th>
-          
-        
-          
-            <th data-header="ad">
-	      
-	        AD / Shepherd
-	      
-            </th>
-          
-        
-
-        
-      </tr>
-    </thead>
-
-    
-
-      
-    <tbody>
-        <tr class="info">
-          <th></th>
-          
-              <th colspan="5">
-          
-	    Related Internet-Drafts (8 hits)
-          </th>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
         </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">12 pages</small>
+        <div>
+            <a href="/doc/draft-bernardos-sfc-distributed-control/">
+                
+                    draft-bernardos-sfc-distributed-control-05
+                
+            </a>
+            
+            <br>
+            
+            <b>Distributed SFC control for fog environments</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2022-01-27
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+        
+        
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">15 pages</small>
+        <div>
+            <a href="/doc/draft-bernardos-sfc-distributed-control-operation/">
+                
+                    draft-bernardos-sfc-distributed-control-operation-04
+                
+            </a>
+            
+            <br>
+            
+            <b>Distributed SFC control operation</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2022-03-21
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+        
+        
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+                    <a href="/ipr/search/?submit=draft&amp;id=draft-bernardos-sfc-distributed-control-operation">
+                        <span class="badge bg-info">1</span>
+                    </a>
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">16 pages</small>
+        <div>
+            <a href="/doc/draft-bernardos-sfc-fog-ran/">
+                
+                    draft-bernardos-sfc-fog-ran-10
+                
+            </a>
+            
+            <br>
+            
+            <b>Service Function Chaining Use Cases in Fog RAN</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2021-10-22
+                    
+                    
+                
+                
+                    <br>
+                    <span class="badge bg-warning">Expires soon</span>
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+        
+        
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">9 pages</small>
+        <div>
+            <a href="/doc/draft-bernardos-sfc-nsh-distributed-control/">
+                
+                    draft-bernardos-sfc-nsh-distributed-control-04
+                
+            </a>
+            
+            <br>
+            
+            <b>NSH extensions for local distributed SFC control</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2022-03-21
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+        
+        
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+                    <a href="/ipr/search/?submit=draft&amp;id=draft-bernardos-sfc-nsh-distributed-control">
+                        <span class="badge bg-info">1</span>
+                    </a>
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">16 pages</small>
+        <div>
+            <a href="/doc/draft-dai-sfc-fused-architecture-and-scenario/">
+                
+                    draft-dai-sfc-fused-architecture-and-scenario-02
+                
+            </a>
+            
+            <br>
+            
+            <b>Architecture and application scenario for fused service function chain</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2022-01-26
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+        
+        
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">15 pages</small>
+        <div>
+            <a href="/doc/draft-dai-sfc-fused-protocol-and-procedure/">
+                
+                    draft-dai-sfc-fused-protocol-and-procedure-00
+                
+            </a>
+            
+            <br>
+            
+            <b>Protocol extension and mechanism for fused service function chain</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2022-03-21
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+        
+        
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">24 pages</small>
+        <div>
+            <a href="/doc/draft-eastlake-sfc-parallel/">
+                
+                    draft-eastlake-sfc-parallel-02
+                
+            </a>
+            
+            <br>
+            
+            <b>Service Function Chaining (SFC) Parallelism and Diversions</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2022-01-23
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+        
+        
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
     </tbody>
 
-    <tbody>
-        
-          
+</table>
 
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-bernardos-sfc-discovery/">draft-bernardos-sfc-discovery-07</a>
-
-      
-      <br>
-      <b>Service Function discovery in fog environments</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2021-10-20
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">9 pages</small>
-    
-
-    
-
-    
-      <wbr><span class="label label-warning">Expires soon</span>
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-bernardos-sfc-discovery">
-    
-  </div>
-
-  
-    
-      I-D Exists
-    
-
-    
-
-    <wbr>
-
-    <wbr>
-    
-    
-
-    
-      
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-bernardos-sfc-distributed-control/">draft-bernardos-sfc-distributed-control-05</a>
-
-      
-      <br>
-      <b>Distributed SFC control for fog environments</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2022-01-27
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">12 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-bernardos-sfc-distributed-control">
-    
-  </div>
-
-  
-    
-      I-D Exists
-    
-
-    
-
-    <wbr>
-
-    <wbr>
-    
-    
-
-    
-      
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-bernardos-sfc-distributed-control-operation/">draft-bernardos-sfc-distributed-control-operation-04</a>
-
-      
-      <br>
-      <b>Distributed SFC control operation</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2022-03-21
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">15 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-bernardos-sfc-distributed-control-operation">
-    
-  </div>
-
-  
-    
-      I-D Exists
-    
-
-    
-
-    <wbr>
-
-    <wbr>
-    
-    
-
-    
-      
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-      <a href="/ipr/search/?submit=draft&amp;id=draft-bernardos-sfc-distributed-control-operation">
-        <span class="label label-default">1</span>
-      </a>
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-bernardos-sfc-fog-ran/">draft-bernardos-sfc-fog-ran-10</a>
-
-      
-      <br>
-      <b>Service Function Chaining Use Cases in Fog RAN</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2021-10-22
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">16 pages</small>
-    
-
-    
-
-    
-      <wbr><span class="label label-warning">Expires soon</span>
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-bernardos-sfc-fog-ran">
-    
-  </div>
-
-  
-    
-      I-D Exists
-    
-
-    
-
-    <wbr>
-
-    <wbr>
-    
-    
-
-    
-      
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-bernardos-sfc-nsh-distributed-control/">draft-bernardos-sfc-nsh-distributed-control-04</a>
-
-      
-      <br>
-      <b>NSH extensions for local distributed SFC control</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2022-03-21
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">9 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-bernardos-sfc-nsh-distributed-control">
-    
-  </div>
-
-  
-    
-      I-D Exists
-    
-
-    
-
-    <wbr>
-
-    <wbr>
-    
-    
-
-    
-      
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-      <a href="/ipr/search/?submit=draft&amp;id=draft-bernardos-sfc-nsh-distributed-control">
-        <span class="label label-default">1</span>
-      </a>
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-dai-sfc-fused-architecture-and-scenario/">draft-dai-sfc-fused-architecture-and-scenario-02</a>
-
-      
-      <br>
-      <b>Architecture and application scenario for fused service function chain</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2022-01-26
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">16 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-dai-sfc-fused-architecture-and-scenario">
-    
-  </div>
-
-  
-    
-      I-D Exists
-    
-
-    
-
-    <wbr>
-
-    <wbr>
-    
-    
-
-    
-      
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-dai-sfc-fused-protocol-and-procedure/">draft-dai-sfc-fused-protocol-and-procedure-00</a>
-
-      
-      <br>
-      <b>Protocol extension and mechanism for fused service function chain</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2022-03-21
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">15 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-dai-sfc-fused-protocol-and-procedure">
-    
-  </div>
-
-  
-    
-      I-D Exists
-    
-
-    
-
-    <wbr>
-
-    <wbr>
-    
-    
-
-    
-      
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-eastlake-sfc-parallel/">draft-eastlake-sfc-parallel-02</a>
-
-      
-      <br>
-      <b>Service Function Chaining (SFC) Parallelism and Diversions</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2022-01-23
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">24 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-eastlake-sfc-parallel">
-    
-  </div>
-
-  
-    
-      I-D Exists
-    
-
-    
-
-    <wbr>
-
-    <wbr>
-    
-    
-
-    
-      
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-      
-    </tbody>
-  </table>
-
-
-  <ul class="list-inline pull-right" style="margin-top:1em;">
-  <li>
+    <div class="text-end">
     <label id="list-feeds">Atom feed:</label>
     <div class="btn-group" role="group" aria-labelledby="list-feeds">
-      <a class="btn btn-default" title="Feed of all changes" href="/group/sfc/documents/feed/">All changes</a>
-      <a class="btn btn-default" title="Feed of only significant state changes" href="/group/sfc/documents/feed/?significant=1">Significant</a>
+        <a class="btn btn-primary"
+           title="Feed of all changes"
+           href="/group/sfc/documents/feed/">
+            <i class="bi bi-rss"></i> All changes
+        </a>
+        <a class="btn btn-primary"
+           title="Feed of only significant state changes"
+           href="/group/sfc/documents/feed/?significant=1">
+            <i class="bi bi-rss"></i> Significant
+        </a>
     </div>
-  </li>
-
-  
-    <li><a class="btn btn-default" href="/group/sfc/documents/subscription/">
-      <i class="glyphicon glyphicon-envelope"></i>
-      
-        Subscribe to changes
-      
-    </a></li>
-  
-
-  <li><a class="btn btn-default" href="/group/sfc/documents/csv/"><i class="glyphicon glyphicon-list"></i> Export as CSV</a></li>
-</ul>
-
-
-
+    
+        <a class="btn btn-primary"
+           href="/group/sfc/documents/subscription/">
+            <i class="bi bi-envelope"></i>
+            
+                Subscribe to changes
+            
+        </a>
+    
+    <a class="btn btn-primary"
+       href="/group/sfc/documents/csv/">
+        <i class="bi bi-file-ruled"></i> Export as CSV
+    </a>
+</div>
 
 
+                    
+                </div>
+            </div>
+            <hr>
+            
+                <footer class="col-md-12 col-sm-12 text-center">
+                    <a href="https://www.ietf.org/" class="p-3">IETF</a>
+                    <a href="https://www.ietf.org/iesg/" class="p-3">IESG</a>
+                    <a href="https://www.iab.org/" class="p-3">IAB</a>
+                    <a href="https://www.irtf.org/" class="p-3">IRTF</a>
+                    <a href="https://www.ietf.org/llc/" class="p-3">IETF&nbsp;LLC</a>
+                    <a href="https://trustee.ietf.org/" class="p-3">IETF&nbsp;Trust</a>
+                    <a href="https://www.rfc-editor.org/" class="p-3">RFC&nbsp;Editor</a>
+                    <a href="https://www.iana.org/" class="p-3">IANA</a>
+                    <a href="https://www.ietf.org/privacy-statement/" class="p-3">Privacy&nbsp;Statement</a>
+                    <div class="small text-muted p-3">
+                        
+                            <a href="/release/about">About</a>
+                            <a href="https://github.com/ietf-tools/datatracker/">IETF Datatracker</a>
+                            
+                                <a href="https://github.com/ietf-tools/datatracker/releases/tag/8.0.0">Version 8.0.0</a>
+                            
+                            (main - 87fac4e)
+                        
+                        Report a bug:
+                        <a href="https://github.com/ietf-tools/datatracker/issues/new/choose">
+                            GitHub
+                            <i class="bi bi-bug"></i>
+                        </a>
+                        
+                            <a href="mailto:datatracker-project@ietf.org">
+                                Email
+                                <i class="bi bi-envelope"></i>
+                            </a>
+                        
+                        <br>
+                        Python 3.6.12
+                        Django 2.2.28
+                        <br>
+                        
+
+
+
+
+
+                    </div>
+                </footer>
+            
+        </div>
         
-        
-	  </div>
-        
+    <script src="https://www.ietf.org/lib/dt/8.0.0/ietf/js/list.js"></script>
 
-	
-	<hr>
-	  <div class="col-md-12 col-sm-12">
-	    <div class="text-center padded">
-	        <a href="https://www.rfc-editor.org/" class="padded">RFC&nbsp;Editor</a>
-	        <a href="https://www.ietf.org/llc/" class="padded">IASA&nbsp;&amp;&nbsp;IETF&nbsp;LLC</a>
-	        <a href="https://trustee.ietf.org/" class="padded">IETF&nbsp;Trust</a>
-	        <a href="https://www.irtf.org/" class="padded">IRTF</a>
-	        <a href="https://www.ietf.org/" class="padded">IETF</a>
-	        <a href="https://www.ietf.org/iesg/" class="padded">IESG</a>
-	        <a href="https://www.iab.org/" class="padded">IAB</a>
-	        <a href="https://www.iana.org/" class="padded">IANA</a>
-	        <a href="https://www.ietf.org/privacy-statement/" class="padded">Privacy&nbsp;Statement</a>
-	    </div>
-	  </div>
-
-
-        <footer class="col-md-12 col-sm-12">
-	  <div class="col-md-12">
-	    <div class="text-center">
-	      <p class="small text-muted">
-	        
-		  <a href="/release/about">About</a> |
-	          IETF Datatracker |
-	          <a href="/release/7.46.0.p4/">Version 7.46.0.p4</a> |
-	          2022-03-10 |
-	        
-		Report a bug:
-	        <a href="https://trac.ietf.org/trac/ietfdb/newticket">Tracker:<span class="fa fa-bug"></span></a>
-                
-	        <a href="mailto:datatracker-project@ietf.org">Email:<span class="fa fa-envelope"></span></a>
-                
-		<br>
-                Python 3.6.12 |
-		Django 2.2.27
-	      </p>
-	    </div>
-	  </div>
-        </footer>
-	
-
-      </div>
-
-      
-
-
-
-
-      <script src="https://www.ietf.org/lib/dt/7.46.0/jquery/jquery.min.js"></script>
-      
-      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
-      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
-      <script src="https://www.ietf.org/lib/dt/7.46.0/js-cookie/src/js.cookie.js"></script>
-      <script src="https://www.ietf.org/lib/dt/7.46.0/ietf/bootstrap/js/bootstrap.min.js"></script>
-      <script src="https://www.ietf.org/lib/dt/7.46.0/ietf/js/ietf.js"></script>
-      
-<script src="https://www.ietf.org/lib/dt/7.46.0/jquery.tablesorter/js/jquery.tablesorter.combined.min.js"></script>
-
-      
-  <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6fb2adf73c2e6b7a',m:'DHZLJEjQY3HByLHfXs5c_1GB6jsiYpHfuCk5BZOP.rQ-1649836949-0-AWaR4zk03iMG2O2GoVUcqenw2J9wqQYxSF17lKvFeeL5gUaTYMOrTy+lbtXUIkguMnuwOcLAfsrz/Lc9SLZ/V6gezX3K2rJHV4hXdA3vAT1/pRIWuWpajBU1T3JEc7zfU5UziEc5RpyRZ853PX2RVCI=',s:[0xd7d0340922,0xd09ae9a7ff],}})();</script></body>
+        <script src="https://www.ietf.org/lib/dt/8.0.0/ietf/js/select2.js"></script>
+        <script>
+            $('#navbar-doc-search').on('select2:select', function (e) {
+                window.location.href = e.params.data.url;
+            });
+        </script>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6ff4905a8b68a343',m:'L1A905G44N4ff4cJgQMgvK0_AFzjJUae_zOiTyG112o-1650527796-0-Ae62w7/MfBJS2jRTMXGXfxhEKM3vnHlyC8/+7X+IS0BlS7seomkzlRm3qpFsD72qPzhdGqeP0Cka2JL2slDAEcv/03OXQdiwRntcyxC5vXgBjKiwvPsL2twVu3Enyd8OoVjUUD1tsNemGQdFg2Y8juA=',s:[0x9680b3f1b1,0x9632371333],}})();</script></body>
 </html>

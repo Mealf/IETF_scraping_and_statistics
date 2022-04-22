@@ -50,8 +50,6 @@ def get_keyword_list_max_token() -> int:
         
 
 
-
-
 if __name__ == '__main__':
     start_time = time.time()
     

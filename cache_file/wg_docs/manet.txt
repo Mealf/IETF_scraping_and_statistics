@@ -1,4934 +1,4509 @@
-<!DOCTYPE html> 
+
+<!DOCTYPE html>
+
 
 
 
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Mobile Ad-hoc Networks (manet) - Documents</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>
+            Mobile Ad-hoc Networks (manet)
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="https://www.ietf.org/lib/dt/8.0.0/ietf/css/ietf.css">
+        <link rel="stylesheet" href="https://www.ietf.org/lib/dt/8.0.0/ietf/css/select2.css">
+        <style>
+            
+            .leftmenu { width: 13em; }
+        </style>
+        
+    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/8.0.0/ietf/css/list.css">
 
-    <link href="https://www.ietf.org/lib/dt/7.46.0/ptmono/stylesheet.css" rel='stylesheet' type='text/css'>
-    <link href="https://www.ietf.org/lib/dt/7.46.0/ptsans/stylesheet.css" rel='stylesheet' type='text/css'>
-    <link href="https://www.ietf.org/lib/dt/7.46.0/ptserif/stylesheet.css" rel='stylesheet' type='text/css'>
+        
+            <link rel="shortcut icon"
+                  href="https://www.ietf.org/lib/dt/8.0.0/ietf/images/ietf-icon-blue3.png">
+        
+        <link rel="apple-touch-icon"
+              href="https://www.ietf.org/lib/dt/8.0.0/ietf/images/apple-touch-icon.png">
+        <script src="https://www.ietf.org/lib/dt/8.0.0/ietf/js/ietf.js"></script>
+    <script async src='/cdn-cgi/bm/cv/669835187/api.js'></script></head>
+    <body  class="position-relative"
+          data-group-menu-data-url="/group/groupmenu.json">
+        <a class="visually-hidden visually-hidden-focusable" href="#content">Skip to main content</a>
+        <nav class="navbar navbar-expand-lg  navbar-dark bg-secondary    fixed-top ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">
+                    <img alt="IETF Logo"
+                         src="https://www.ietf.org/lib/dt/8.0.0/ietf/images/ietflogo-small-transparent.png">
+                    Datatracker
+                    
+                </a>
+                <div class="collapse navbar-collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        
+
+
+
+
+<li class="nav-item dropdown">
+    
+        <a href="#"
+           class="nav-link dropdown-toggle"
+           role="button"
+           data-bs-auto-close="false"
+           data-bs-toggle="dropdown"
+           aria-expanded="false">
+            Groups
+        </a>
+        <ul class="dropdown-menu mt-n1">
+        
+    <li class="dropdown-header">By area/parent</li>
     
 
-    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/ietf/font-datatracker/css/font-datatracker.css">
-    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/ietf/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/ietf/bootstrap/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/ietf/css/ietf.css">
-    
-    <style>
-     
-    </style>
-
-    
-<link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/jquery.tablesorter/css/theme.bootstrap.min.css">
 
 
-    
-    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.46.0/ietf/images/ietf-icon-blue3.png">
-    
-    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.46.0/ietf/images/apple-touch-icon.png">
-  <script async src='/cdn-cgi/bm/cv/669835187/api.js'></script></head>
+    <li class="dropend group-menu group-parent-2010">
+        <a class="dropdown-item dropdown-toggle "
+           href="/wg/#art">
+            Apps &amp; Realtime
+        </a>
+    </li>
 
-  <body  data-group-menu-data-url="/group/groupmenu.json">
-      <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container-fluid">
-	  <div class="navbar-header">
-	    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-	      <span class="sr-only">Toggle navigation</span>
-	      <span class="icon-bar"></span>
-	      <span class="icon-bar"></span>
-	      <span class="icon-bar"></span>
-	    </button>
-	    <a class="navbar-brand" href="/">
-	       <img alt="IETF Logo" src="https://www.ietf.org/lib/dt/7.46.0/ietf/images/ietflogo-small-transparent.png">
-	       
-		  
-		  Datatracker
-		  
-	       
-	    </a>
-	  </div>
+    <li class="dropend group-menu group-parent-1008">
+        <a class="dropdown-item dropdown-toggle "
+           href="/wg/#gen">
+            General
+        </a>
+    </li>
 
-	  <noscript>
-	    <p class="navbar-text"><small>Enable Javascript for full functionality.</small></p>
-	  </noscript>
+    <li class="dropend group-menu group-parent-1052">
+        <a class="dropdown-item dropdown-toggle "
+           href="/wg/#int">
+            Internet
+        </a>
+    </li>
 
-	  <div class="collapse navbar-collapse" id="navbar-collapse">
-	    <ul class="hidden-nojs nav navbar-nav">
-              
+    <li class="dropend group-menu group-parent-1193">
+        <a class="dropdown-item dropdown-toggle "
+           href="/wg/#ops">
+            Ops &amp; Management
+        </a>
+    </li>
+
+    <li class="dropend group-menu group-parent-1249">
+        <a class="dropdown-item dropdown-toggle "
+           href="/wg/#rtg">
+            Routing
+        </a>
+    </li>
+
+    <li class="dropend group-menu group-parent-1260">
+        <a class="dropdown-item dropdown-toggle "
+           href="/wg/#sec">
+            Security
+        </a>
+    </li>
+
+    <li class="dropend group-menu group-parent-1324">
+        <a class="dropdown-item dropdown-toggle "
+           href="/wg/#tsv">
+            Transport
+        </a>
+    </li>
+
+    <li class="dropend group-menu group-parent-7">
+        <a class="dropdown-item dropdown-toggle "
+           href="/program/">
+            IAB
+        </a>
+    </li>
+
+    <li class="dropend group-menu group-parent-3">
+        <a class="dropdown-item dropdown-toggle "
+           href="/rg/">
+            IRTF
+        </a>
+    </li>
+
+    <li class="dropend group-menu group-parent-2309">
+        <a class="dropdown-item dropdown-toggle "
+           href="/adm/">
+            IETF LLC
+        </a>
+    </li>
 
 
-
-
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-  
-  Groups
-  
-    </a>
-    <ul class="dropdown-menu" role="menu">
-
-    <li class="dropdown-header visible-lg-block">By area/parent</li>
-  
+    <li class="dropend">
+        <a class="dropdown-item dropdown-toggle "
+           href="/group/">
+            Other
+        </a>
         
 
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-2010">
-    <a href="/wg/#art">Apps &amp; Realtime</a>
-  </li>
 
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1008">
-    <a href="/wg/#gen">General</a>
-  </li>
-
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1052">
-    <a href="/wg/#int">Internet</a>
-  </li>
-
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1193">
-    <a href="/wg/#ops">Ops &amp; Mgmt</a>
-  </li>
-
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1249">
-    <a href="/wg/#rtg">Routing</a>
-  </li>
-
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1260">
-    <a href="/wg/#sec">Security</a>
-  </li>
-
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1324">
-    <a href="/wg/#tsv">Transport</a>
-  </li>
-
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-7">
-    <a href="/program/">IAB</a>
-  </li>
-
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-3">
-    <a href="/rg/">IRTF</a>
-  </li>
-
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-2309">
-    <a href="/adm/">IETF LLC</a>
-  </li>
-
-
-        <li class="dropdown-submenu group-menu"><a href="/group/">Other</a>
-<ul class="dropdown-menu" role="menu">
-
-  <li>
-    <a href="/ag/">Active AGs</a>
-  </li>
-
-  <li>
-    <a href="/area/">Active Areas</a>
-  </li>
-
-  <li>
-    <a href="/dir/">Active Directorates</a>
-  </li>
-
-  <li>
-    <a href="/program/">Active Programs</a>
-  </li>
-
-  <li>
-    <a href="/rag/">Active RAGs</a>
-  </li>
-
-  <li>
-    <a href="/team/">Active Teams</a>
-  </li>
-
-
-  <li>
-    <a href="/group/rsoc/">RSOC</a>
-  </li>
-
+<ul class="dropdown-menu ms-n1">
+    
+        <li>
+            <a class="dropdown-item "
+               href="/ag/">Active AGs</a>
+        </li>
+    
+        <li>
+            <a class="dropdown-item "
+               href="/area/">Active Areas</a>
+        </li>
+    
+        <li>
+            <a class="dropdown-item "
+               href="/dir/">Active Directorates</a>
+        </li>
+    
+        <li>
+            <a class="dropdown-item "
+               href="/program/">Active Programs</a>
+        </li>
+    
+        <li>
+            <a class="dropdown-item "
+               href="/rag/">Active RAGs</a>
+        </li>
+    
+        <li>
+            <a class="dropdown-item "
+               href="/team/">Active Teams</a>
+        </li>
+    
+    
+        <li>
+            <a class="dropdown-item "
+               href="/group/rsoc/">RSOC</a>
+        </li>
+    
 </ul>
- </li>
 
-  <li class="divider hidden-xs"></li>
-  <li class="dropdown-header hidden-xs">New work</li>
-  <li><a href="/group/chartering/">Chartering groups</a></li>
-  <li><a href="/wg/bofs/">BOFs</a></li>
-  <li><a href="/doc/bof-requests">BOF Requests</a></li>
-
-  <li class="divider hidden-xs"></li>
-  <li class="dropdown-header hidden-xs">Other groups</li>
-  <li><a href="/group/concluded/">Concluded groups</a></li>
-  <li><a href="/list/nonwg">Non-WG lists</a></li>
-
-</ul>
-</li>
-
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-  
-  Documents
-  
-    </a>
-    <ul class="dropdown-menu" role="menu">
-  
-  <li><a href="/doc/search">Search</a></li>
-  <li><a href="/doc/recent">Recent drafts</a></li>
-  <li><a href="/submit/">Draft submission</a></li>
-
-  
-
-
-  <li class="divider hidden-xs"></li>
-  <li class="dropdown-header hidden-xs">RFC streams</li>
-        <li><a href="/stream/iab/">IAB</a></li>
-        <li><a href="/stream/irtf/">IRTF</a></li>
-        <li><a href="/stream/ise/">ISE</a></li>
-
-</ul>
-</li>
-
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-  
-  Meetings
-  
-    </a>
-    <ul class="dropdown-menu" role="menu">
-  
-
-
-  
-  <li class="dropdown-header visible-lg-block">Next meeting</li>
-  
-  <li><a href="/meeting/agenda/">Agenda</a></li>
-  <li><a href="/meeting/materials/">Materials</a></li>
-  <li><a href="/meeting/floor-plan/">Floor plan</a></li>
-  <li><a href="https://www.ietf.org/how/meetings/register/">Registration</a></li>
-  <li><a href="/meeting/important-dates/">Important dates</a></li>
-  <li><a href="/secr/sreq/">Request a session</a></li>
-  <li><a href="/meeting/requests">Session requests</a></li>
-  
-  <li class="divider hidden-xs"></li>
-  <li class="dropdown-header visible-lg-block">Upcoming meetings</li>
-  
-  <li><a href="/meeting/upcoming">Upcoming meetings</a></li>
-  
-  <li class="divider hidden-xs"></li>
-  <li class="dropdown-header visible-lg-block">Past meetings</li>
-  
-  <li><a href="/meeting/past">Past meetings</a></li>
-  <li><a href="https://www.ietf.org/how/meetings/past/">Meeting proceedings</a></li>
-</ul>
-</li>
-
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-  
-  Other
-  
-    </a>
-    <ul class="dropdown-menu" role="menu">
-  
-
-  <li><a href="/ipr/">IPR disclosures</a></li>
-  <li><a href="/liaison/">Liaison statements</a></li>
-  <li><a href="/iesg/agenda/">IESG agenda</a></li>
-  <li><a href="/nomcom/">NomComs</a></li>
-  <li><a href="/doc/downref/">Downref registry</a></li>
-  <li class="dropdown-submenu">
-    <a href="/stats/">Statistics</a>
-    <ul class="dropdown-menu">
-      <li><a href="/stats/document/">Drafts/RFCs</a></li>
-      <li><a href="/stats/meeting/">Meetings</a></li>
-      
+    </li>
+    <li><hr class="dropdown-divider"></li>
+    <li class="dropdown-header">New work</li>
+    <li>
+        <a class="dropdown-item "
+           href="/group/chartering/">
+            Chartering groups
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/wg/bofs/">
+            BOFs
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/doc/bof-requests">
+            BOF Requests
+        </a>
+    </li>
+    <li><hr class="dropdown-divider"></li>
+    <li class="dropdown-header">Other groups</li>
+    <li>
+        <a class="dropdown-item "
+           href="/group/concluded/">
+            Concluded groups
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/list/nonwg">
+            Non-WG lists
+        </a>
+    </li>
+    
     </ul>
-  </li>
-  <li><a href="/group/edu/materials/">Tutorials</a></li>
-  <li><a href="/api/">API Help</a></li>  
-  <li><a href="/release/">Release notes</a></li>
-  <li class="divider hidden-xs"></li>
-  <li><a href="https://trac.ietf.org/trac/ietfdb/newticket"><span class="fa fa-bug"></span> Report a bug</a></li>
-</ul>
+</li>
+
+<li class="nav-item dropdown">
+    
+        <a href="#"
+           class="nav-link dropdown-toggle"
+           role="button"
+           data-bs-toggle="dropdown"
+           aria-expanded="false">
+            Documents
+        </a>
+        <ul class="dropdown-menu mt-n1">
+        
+    <li>
+        <a class="dropdown-item "
+           href="/doc/search">
+            Search
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/doc/recent">
+            Recent drafts
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/submit/">
+            Draft submission
+        </a>
+    </li>
+    
+    
+        <li><hr class="dropdown-divider">
+        </li>
+    
+    <li class="dropdown-header">
+        RFC streams
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/stream/iab/">
+            IAB
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/stream/irtf/">
+            IRTF
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/stream/ise/">
+            ISE
+        </a>
+    </li>
+    
+    </ul>
+</li>
+
+<li class="nav-item dropdown">
+    
+        <a href="#"
+           class="nav-link dropdown-toggle"
+           role="button"
+           data-bs-toggle="dropdown"
+           aria-expanded="false">
+            Meetings
+        </a>
+        <ul class="dropdown-menu mt-n1">
+        
+    <li>
+        <a class="dropdown-item "
+           href="/meeting/agenda/">
+            Agenda
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/meeting/materials/">
+            Materials
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/meeting/floor-plan/">
+            Floor plan
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="https://www.ietf.org/how/meetings/register/">
+            Registration
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/meeting/important-dates/">
+            Important dates
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/secr/sreq/">
+            Request a session
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/meeting/requests">
+            Session requests
+        </a>
+    </li>
+    
+        
+            <li><hr class="dropdown-divider">
+            </li>
+        
+        <li class="dropdown-header">
+            Upcoming meetings
+        </li>
+    
+    <li>
+        <a class="dropdown-item "
+           href="/meeting/upcoming">
+            Upcoming meetings
+        </a>
+    </li>
+    
+        
+            <li><hr class="dropdown-divider">
+            </li>
+        
+        <li class="dropdown-header">
+            Past meetings
+        </li>
+    
+    <li>
+        <a class="dropdown-item "
+           href="/meeting/past">
+            Past meetings
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="https://www.ietf.org/how/meetings/past/">
+            Meeting proceedings
+        </a>
+    </li>
+    
+    </ul>
+</li>
+
+<li class="nav-item dropdown">
+    
+        <a href="#"
+           class="nav-link dropdown-toggle"
+           role="button"
+           data-bs-toggle="dropdown"
+           aria-expanded="false">
+            Other
+        </a>
+        <ul class="dropdown-menu mt-n1">
+        
+    <li>
+        <a class="dropdown-item "
+           href="/ipr/">
+            IPR disclosures
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/liaison/">
+            Liaison statements
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/iesg/agenda/">
+            IESG agenda
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/nomcom/">
+            NomComs
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/doc/downref/">
+            Downref registry
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/stats/">
+            Statistics
+        </a>
+        <ul class="dropdown-menu mt-n1">
+            <li>
+                <a class="dropdown-item "
+                   href="/stats/document/">
+                    Drafts/RFCs
+                </a>
+            </li>
+            <li>
+                <a class="dropdown-item "
+                   href="/stats/meeting/">
+                    Meetings
+                </a>
+            </li>
+            
+        </ul>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/group/edu/materials/">
+            Tutorials
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/api/">
+            API Help
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/release/">
+            Release notes
+        </a>
+    </li>
+    
+        <li><hr class="dropdown-divider">
+        </li>
+    
+    <li>
+        <a class="dropdown-item "
+           href="https://github.com/ietf-tools/datatracker/issues/new/choose">
+            <i class="bi bi-bug">
+            </i>
+            Report a bug
+        </a>
+    </li>
+    
+    </ul>
 </li>
 
 
-  
-
-
-<li class="dropdown">
-  
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-     User 
-  </a>
-  <ul class="dropdown-menu" role="menu">
-  
-
-  
     
-      <li><a rel="nofollow" href="/accounts/login/?next=/wg/manet/documents/">Sign in</a></li>
-      <li><a rel="nofollow" href="/accounts/reset/">Password reset</a></li>
-      <li><a href="/accounts/settings/" rel="nofollow">Preferences</a></li>
+
+
+
+<li class="nav-item dropdown">
     
-    <li><a href="/help/personal-information">Handling of personal information</a></li>  
-  
-
-  
-    <li><a href="/accounts/create/">New account</a></li>
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-</ul>
-
-            </ul>
+        <a href="#"
+           class="nav-link dropdown-toggle"
+           role="button"
+           data-bs-toggle="dropdown"
+           aria-expanded="false">
+            
+                User
+            
+        </a>
+        <ul class="dropdown-menu  mt-n1 ">
         
-            <p class="navbar-text"></p>
-            <a class="btn btn-warning btn-sm navbar-btn" rel="nofollow" href="/accounts/login/?next=/wg/manet/documents/">Sign in</a>
+    
+        
+            <li>
+                <a class="dropdown-item "
+                   rel="nofollow"
+                   href="/accounts/login/?next=/wg/manet/documents/">
+                    Sign in
+                </a>
+            </li>
+            <li>
+                <a class="dropdown-item "
+                   rel="nofollow"
+                   href="/accounts/reset/">
+                    Password reset
+                </a>
+            </li>
+            <li>
+                <a class="dropdown-item "
+                   href="/accounts/settings/"
+                   rel="nofollow">
+                    Preferences
+                </a>
+            </li>
+        
+        <li>
+            <a class="dropdown-item "
+               href="/help/personal-information">
+                Handling of personal information
+            </a>
+        </li>
+    
+    
+        <li>
+            <a class="dropdown-item "
+               href="/accounts/create/">
+                New account
+            </a>
+        </li>
+    
+    
+    
+    
+    
+    
+    </ul></li>
+
+
+
+                    </ul>
+                </div>
+                
+                    <a class="d-none d-sm-block mx-5 btn  btn-warning "
+                       rel="nofollow"
+                       href="/accounts/login/?next=/wg/manet/documents/">
+                        Sign
+                        in
+                    </a>
+                
+                <div class="d-flex d-none d-lg-block">
+                    <label aria-label="Document search">
+                    <input class="form-control select2-field"
+                           id="navbar-doc-search"
+                           data-ajax--url="/doc/select2search/docalias/draft/"
+                           type="text"
+                           data-placeholder="Document search">
+                   </label>
+                </div>
+                <button class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbar-collapse"
+                        aria-controls="navbar-collapse"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <i class="navbar-toggler-icon"></i>
+                </button>
+            </div>
+        </nav>
+        <div class="pt-3 container-fluid">
+            <div class="row">
+                
+                <div class="col mx-lg-3 ietf-auto-nav" id="content">
+                    <noscript>
+                        <div class="alert alert-danger alert-ignore my-3">
+                            <b>Javascript disabled?</b> Like other modern websites, the IETF Datatracker relies on Javascript.
+                            Please enable Javascript for full functionality.
+                        </div>
+                    </noscript>
+                    
+                    
+    
+    <h1>
+        Mobile Ad-hoc Networks (manet)
+        
+        
+        
+    </h1>
+    <ul class="nav nav-tabs my-3">
+        
+            <li class="nav-item">
+                <a class="nav-link "
+                   href="/wg/manet/about/">About</a>
+            </li>
+        
+            <li class="nav-item">
+                <a class="nav-link active"
+                   href="/wg/manet/documents/">Documents</a>
+            </li>
+        
+            <li class="nav-item">
+                <a class="nav-link "
+                   href="/wg/manet/meetings/">Meetings</a>
+            </li>
+        
+            <li class="nav-item">
+                <a class="nav-link "
+                   href="/wg/manet/history/">History</a>
+            </li>
+        
+            <li class="nav-item">
+                <a class="nav-link "
+                   href="/wg/manet/photos/">Photos</a>
+            </li>
+        
+            <li class="nav-item">
+                <a class="nav-link "
+                   href="/wg/manet/email/">Email expansions</a>
+            </li>
+        
+            <li class="nav-item">
+                <a class="nav-link "
+                   href="https://mailarchive.ietf.org/arch/browse/manet/">List archive &raquo;</a>
+            </li>
+        
+    </ul>
+    <div class="buttonlist">
+        
+            
+        
+    </div>
+    
+    
+    
         
 
-	    <form class="navbar-form navbar-right hidden-xs" action="/doc/search/">
-	      <div class="form-group">
-	        <input class="form-control input-sm" type="text" name="name" placeholder="Document search" required>
-	        <input type="hidden" name="activedrafts" value="on">
-	        <input type="hidden" name="rfcs" value="on">
-	      </div>
-	    </form>
-	  </div>
+
+
+
+
+
+    <table class="table table-sm table-striped tablesorter">
+        <thead>
+            <tr>
+                <th scope="col"></th>
+                
+                    
+                        <th scope="col" data-sort="document"
+                            >
+                            
+                                Document
+                            
+                        </th>
+                    
+                
+                    
+                
+                    
+                        <th scope="col" data-sort="date"
+                            >
+                            
+                                Date
+                            
+                        </th>
+                    
+                
+                    
+                        <th scope="col" data-sort="status"
+                            >
+                            
+                                Status
+                            
+                        </th>
+                    
+                
+                    
+                        <th scope="col" data-sort="ipr"
+                            
+                              class="d-none d-sm-table-cell"
+                            >
+                            
+                                IPR
+                            
+                        </th>
+                    
+                
+                    
+                        <th scope="col" data-sort="ad"
+                            
+                              class="d-none d-sm-table-cell"
+                            >
+                            
+                                AD/Shepherd
+                            
+                        </th>
+                    
+                
+            </tr>
+        </thead>
+
+
+
+    <tbody>
+        <tr class="table-info">
+            <td></td>
+            
+                <th scope="col" colspan="5">
+            
+            Active Internet-Drafts (4 hits)
+            </th>
+        </tr>
+    </tbody>
+    <tbody>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">18 pages</small>
+        <div>
+            <a href="/doc/draft-ietf-manet-dlep-credit-flow-control/">
+                
+                    draft-ietf-manet-dlep-credit-flow-control-10
+                
+            </a>
+            
+            <br>
+            
+            <b>DLEP Credit-Based Flow Control Messages and Data Items</b>
+            
         </div>
-      </nav>
-      <div class="container-fluid-narrow">
         
-        
-        
-	  <div class="col-md-12 col-sm-12" id="content">
-        
-        
-  
-
-  <h1>Mobile Ad-hoc Networks (manet)
-    
-    
-    
-  </h1>
-
-  <ul class="nav nav-tabs" role="tablist">
-    
-      <li >
-        <a href="/wg/manet/about/">About</a>
-      </li>
-    
-      <li class="active">
-        <a href="/wg/manet/documents/">Documents</a>
-      </li>
-    
-      <li >
-        <a href="/wg/manet/meetings/">Meetings</a>
-      </li>
-    
-      <li >
-        <a href="/wg/manet/history/">History</a>
-      </li>
-    
-      <li >
-        <a href="/wg/manet/photos/">Photos</a>
-      </li>
-    
-      <li >
-        <a href="/wg/manet/email/">Email expansions</a>
-      </li>
-    
-      <li >
-        <a href="https://mailarchive.ietf.org/arch/browse/manet/">List archive &raquo;</a>
-      </li>
-    
-  </ul>
-
-  <div class="buttonlist">
-    
-      
-    
-  </div>
-
-  
-  
-  
-    
+    </td>
+    <td>
+            
+                    
+                        2022-02-24
+                    
+                    
+                
+                
+            </td>
+            
 
 
 
-
-  
-
-  
-  <table class="table table-condensed table-striped tablesorter">
-    <thead>
-      <tr>
-        <th class="sorter-false"></th>
-
-        
-          
-            <th data-header="document">
-	      
-	        Document
-	      
-            </th>
-          
-        
-          
-        
-          
-            <th data-header="date">
-	      
-	        Date
-	      
-            </th>
-          
-        
-          
-            <th data-header="status">
-	      
-	        Status
-	      
-            </th>
-          
-        
-          
-            <th data-header="ipr">
-	      
-	        IPR
-	      
-            </th>
-          
-        
-          
-            <th data-header="ad">
-	      
-	        AD / Shepherd
-	      
-            </th>
-          
-        
-
-        
-      </tr>
-    </thead>
-
+<td class="status">
     
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+            <br>
+            
+                WG Consensus: Waiting for Write-Up
+                
+                    :
+                
+            
+        
+        Proposed Standard
+        
+        
+            <br>
+            Review:
+            <a href="/group/tsvart/">tsvart</a>
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
 
-      
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">6 pages</small>
+        <div>
+            <a href="/doc/draft-ietf-manet-dlep-da-credit-extension/">
+                
+                    draft-ietf-manet-dlep-da-credit-extension-13
+                
+            </a>
+            
+            <br>
+            
+            <b>DLEP DiffServ Aware Credit Window Extension</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2022-02-24
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+            <br>
+            
+                WG Consensus: Waiting for Write-Up
+                
+                    :
+                
+            
+        
+        Proposed Standard
+        
+        
+            <br>
+            Review:
+            <a href="/group/tsvart/">tsvart</a>
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">6 pages</small>
+        <div>
+            <a href="/doc/draft-ietf-manet-dlep-ether-credit-extension/">
+                
+                    draft-ietf-manet-dlep-ether-credit-extension-01
+                
+            </a>
+            
+            <br>
+            
+            <b>DLEP IEEE 802.1Q Aware Credit Window Extension</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2022-02-24
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+            <br>
+            
+                In WG Last Call
+                
+            
+        
+        
+        
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">13 pages</small>
+        <div>
+            <a href="/doc/draft-ietf-manet-dlep-traffic-classification/">
+                
+                    draft-ietf-manet-dlep-traffic-classification-07
+                
+            </a>
+            
+            <br>
+            
+            <b>DLEP Traffic Classification Data Item</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2022-02-24
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+            <br>
+            
+                WG Consensus: Waiting for Write-Up
+                
+                    :
+                
+            
+        
+        Proposed Standard
+        
+        
+            <br>
+            Review:
+            <a href="/group/tsvart/">tsvart</a>
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+    </tbody>
+
     <tbody>
-        <tr class="info">
-          <th></th>
-          
-              <th colspan="5">
-          
-	    Active Internet-Drafts (4 hits)
-          </th>
+        <tr class="table-info">
+            <td></td>
+            
+                <th scope="col" colspan="5">
+            
+            RFCs (37 hits)
+            </th>
         </tr>
     </tbody>
-
     <tbody>
         
-          
+            
 
 
 
 
 
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-ietf-manet-dlep-credit-flow-control/">draft-ietf-manet-dlep-credit-flow-control-10</a>
-
-      
-      <br>
-      <b>DLEP Credit-Based Flow Control Messages and Data Items</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2022-02-24
-    
-    </span>
 
 
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">12 pages</small>
+        <div>
+            <a href="/doc/rfc2501/">
+                
+                    RFC 2501
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-manet-issues)</i>
+            <br>
+            
+            <b>Mobile Ad hoc Networking (MANET): Routing Protocol Performance Issues and Evaluation Considerations</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        1999-01
+                    
+                    
+                
+                
+            </td>
+            
 
-    
-      <br><small class="text-muted">18 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
 
 
 <td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-manet-dlep-credit-flow-control">
-    
-  </div>
-
-  
-    
-      I-D Exists
-    
-
-    
-
-    <wbr>
-
-    <wbr>
     
     
-
-    
-      
-    
-
-    
-      <br>
-      
-	WG Consensus: Waiting for Write-Up:<wbr>
-      
-    
-
-    
-      Proposed Standard
-    
-
-    
-
-    
-      <br>Reviews:
-      
-        tsvart
-      
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
         
-          
-
-
-
-
-
-<tr >
-
-  <td>
+        Informational RFC
+        
+        
     
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-ietf-manet-dlep-da-credit-extension/">draft-ietf-manet-dlep-da-credit-extension-13</a>
-
-      
-      <br>
-      <b>DLEP DiffServ Aware Credit Window Extension</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2022-02-24
-    
-    </span>
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
 
 
 
-    
-      <br><small class="text-muted">6 pages</small>
-    
 
-    
 
-    
 
-  </td>
 
-  
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">37 pages</small>
+        <div>
+            <a href="/doc/rfc3561/">
+                
+                    RFC 3561
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-manet-aodv)</i>
+            <br>
+            
+            <b>Ad hoc On-Demand Distance Vector (AODV) Routing</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2003-07
+                    
+                    
+                
+                
+            </td>
+            
+
 
 
 <td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-manet-dlep-da-credit-extension">
-    
-  </div>
-
-  
-    
-      I-D Exists
-    
-
-    
-
-    <wbr>
-
-    <wbr>
     
     
-
-    
-      
-    
-
-    
-      <br>
-      
-	WG Consensus: Waiting for Write-Up:<wbr>
-      
-    
-
-    
-      Proposed Standard
-    
-
-    
-
-    
-      <br>Reviews:
-      
-        tsvart
-      
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
         
-          
-
-
-
-
-
-<tr >
-
-  <td>
+        Experimental RFC
+        
+        
     
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-ietf-manet-dlep-ether-credit-extension/">draft-ietf-manet-dlep-ether-credit-extension-01</a>
-
-      
-      <br>
-      <b>DLEP IEEE 802.1Q Aware Credit Window Extension</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2022-02-24
-    
-    </span>
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/alex.zinin@alcatel.com" >Alex D. Zinin</a> <a 
+               href="mailto:alex.zinin%40alcatel.com"
+               aria-label="Compose email to alex.zinin@alcatel.com."
+               title="Compose email to alex.zinin@alcatel.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
 
 
 
-    
-      <br><small class="text-muted">6 pages</small>
-    
 
-    
 
-    
 
-  </td>
 
-  
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">75 pages</small>
+        <div>
+            <a href="/doc/rfc3626/">
+                
+                    RFC 3626
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-manet-olsr)</i>
+            <br>
+            
+            <b>Optimized Link State Routing Protocol (OLSR)</b>
+            
+                <a class="badge bg-warning text-decoration-none float-end"
+                   href="https://www.rfc-editor.org/errata_search.php?rfc=3626">
+                    Errata
+                </a>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2003-10
+                    
+                    
+                
+                
+            </td>
+            
+
 
 
 <td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-manet-dlep-ether-credit-extension">
-    
-  </div>
-
-  
-    
-      I-D Exists
-    
-
-    
-
-    <wbr>
-
-    <wbr>
     
     
-
-    
-      
-    
-
-    
-      <br>
-      
-	In WG Last Call
-      
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
         
-          
-
-
-
-
-
-<tr >
-
-  <td>
+        Experimental RFC
+        
+        
     
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-ietf-manet-dlep-traffic-classification/">draft-ietf-manet-dlep-traffic-classification-07</a>
-
-      
-      <br>
-      <b>DLEP Traffic Classification Data Item</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2022-02-24
-    
-    </span>
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/alex.zinin@alcatel.com" >Alex D. Zinin</a> <a 
+               href="mailto:alex.zinin%40alcatel.com"
+               aria-label="Compose email to alex.zinin@alcatel.com."
+               title="Compose email to alex.zinin@alcatel.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
 
 
 
-    
-      <br><small class="text-muted">13 pages</small>
-    
 
-    
 
-    
 
-  </td>
 
-  
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">46 pages</small>
+        <div>
+            <a href="/doc/rfc3684/">
+                
+                    RFC 3684
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-manet-tbrpf)</i>
+            <br>
+            
+            <b>Topology Dissemination Based on Reverse-Path Forwarding (TBRPF)</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2004-02
+                    
+                    
+                
+                
+            </td>
+            
+
 
 
 <td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-manet-dlep-traffic-classification">
-    
-  </div>
-
-  
-    
-      I-D Exists
-    
-
-    
-
-    <wbr>
-
-    <wbr>
     
     
-
-    
-      
-    
-
-    
-      <br>
-      
-	WG Consensus: Waiting for Write-Up:<wbr>
-      
-    
-
-    
-      Proposed Standard
-    
-
-    
-
-    
-      <br>Reviews:
-      
-        tsvart
-      
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
         
-      
+        Experimental RFC
+        
+        
+            <br>
+            <span class="text-muted">Updated by <a href="/doc/rfc9141/">RFC 9141</a></span>
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/alex.zinin@alcatel.com" >Alex D. Zinin</a> <a 
+               href="mailto:alex.zinin%40alcatel.com"
+               aria-label="Compose email to alex.zinin@alcatel.com."
+               title="Compose email to alex.zinin@alcatel.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">107 pages</small>
+        <div>
+            <a href="/doc/rfc4728/">
+                
+                    RFC 4728
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-manet-dsr)</i>
+            <br>
+            
+            <b>The Dynamic Source Routing Protocol (DSR) for Mobile Ad Hoc Networks for IPv4</b>
+            
+                <a class="badge bg-danger text-decoration-none float-end"
+                   href="https://www.rfc-editor.org/errata_search.php?rfc=4728">
+                    Errata
+                </a>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2007-02
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Experimental RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/fenner@fenron.com" >Bill Fenner (ˢˣˠ)</a> <a 
+               href="mailto:fenner%40fenron.com"
+               aria-label="Compose email to fenner@fenron.com."
+               title="Compose email to fenner@fenron.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">12 pages</small>
+        <div>
+            <a href="/doc/rfc5148/">
+                
+                    RFC 5148
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-manet-jitter)</i>
+            <br>
+            
+            <b>Jitter Considerations in Mobile Ad Hoc Networks (MANETs)</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2008-02
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Informational RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/rcallon@juniper.net" >Ross Callon</a> <a 
+               href="mailto:rcallon%40juniper.net"
+               aria-label="Compose email to rcallon@juniper.net."
+               title="Compose email to rcallon@juniper.net.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">60 pages</small>
+        <div>
+            <a href="/doc/rfc5444/">
+                
+                    RFC 5444
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-manet-packetbb)</i>
+            <br>
+            
+            <b>Generalized Mobile Ad Hoc Network (MANET) Packet/Message Format</b>
+            
+                <a class="badge bg-danger text-decoration-none float-end"
+                   href="https://www.rfc-editor.org/errata_search.php?rfc=5444">
+                    Errata
+                </a>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2009-02
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+            <br>
+            <span class="text-muted">Updated by <a href="/doc/rfc7631/">RFC 7631</a>, <a href="/doc/rfc8245/">RFC 8245</a></span>
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/rcallon@juniper.net" >Ross Callon</a> <a 
+               href="mailto:rcallon%40juniper.net"
+               aria-label="Compose email to rcallon@juniper.net."
+               title="Compose email to rcallon@juniper.net.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">14 pages</small>
+        <div>
+            <a href="/doc/rfc5497/">
+                
+                    RFC 5497
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-manet-timetlv)</i>
+            <br>
+            
+            <b>Representing Multi-Value Time in Mobile Ad Hoc Networks (MANETs)</b>
+            
+                <a class="badge bg-danger text-decoration-none float-end"
+                   href="https://www.rfc-editor.org/errata_search.php?rfc=5497">
+                    Errata
+                </a>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2009-03
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/rcallon@juniper.net" >Ross Callon</a> <a 
+               href="mailto:rcallon%40juniper.net"
+               aria-label="Compose email to rcallon@juniper.net."
+               title="Compose email to rcallon@juniper.net.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">5 pages</small>
+        <div>
+            <a href="/doc/rfc5498/">
+                
+                    RFC 5498
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-manet-iana)</i>
+            <br>
+            
+            <b>IANA Allocations for Mobile Ad Hoc Network (MANET) Protocols</b>
+            
+                <a class="badge bg-warning text-decoration-none float-end"
+                   href="https://www.rfc-editor.org/errata_search.php?rfc=5498">
+                    Errata
+                </a>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2009-03
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/rcallon@juniper.net" >Ross Callon</a> <a 
+               href="mailto:rcallon%40juniper.net"
+               aria-label="Compose email to rcallon@juniper.net."
+               title="Compose email to rcallon@juniper.net.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">88 pages</small>
+        <div>
+            <a href="/doc/rfc6130/">
+                
+                    RFC 6130
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-manet-nhdp)</i>
+            <br>
+            
+            <b>Mobile Ad Hoc Network (MANET) Neighborhood Discovery Protocol (NHDP)</b>
+            
+                <a class="badge bg-danger text-decoration-none float-end"
+                   href="https://www.rfc-editor.org/errata_search.php?rfc=6130">
+                    Errata
+                </a>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2011-04
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+            <br>
+            <span class="text-muted">Updated by <a href="/doc/rfc7183/">RFC 7183</a>, <a href="/doc/rfc7188/">RFC 7188</a>, <a href="/doc/rfc7466/">RFC 7466</a></span>
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/stewart.bryant@gmail.com" >Stewart Bryant</a> <a 
+               href="mailto:stewart.bryant%40gmail.com"
+               aria-label="Compose email to stewart.bryant@gmail.com."
+               title="Compose email to stewart.bryant@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">55 pages</small>
+        <div>
+            <a href="/doc/rfc6621/">
+                
+                    RFC 6621
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-manet-smf)</i>
+            <br>
+            
+            <b>Simplified Multicast Forwarding</b>
+            
+                <a class="badge bg-danger text-decoration-none float-end"
+                   href="https://www.rfc-editor.org/errata_search.php?rfc=6621">
+                    Errata
+                </a>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2012-05
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Experimental RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/adrian@olddog.co.uk" >Adrian Farrel</a> <a 
+               href="mailto:adrian%40olddog.co.uk"
+               aria-label="Compose email to adrian@olddog.co.uk."
+               title="Compose email to adrian@olddog.co.uk.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">21 pages</small>
+        <div>
+            <a href="/doc/rfc6622/">
+                
+                    RFC 6622
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-manet-packetbb-sec)</i>
+            <br>
+            
+            <b>Integrity Check Value and Timestamp TLV Definitions for Mobile Ad Hoc Networks (MANETs)</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2012-05
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+            <br>
+            <span class="text-muted">Obsoleted by <a href="/doc/rfc7182/">RFC 7182</a></span>
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/adrian@olddog.co.uk" >Adrian Farrel</a> <a 
+               href="mailto:adrian%40olddog.co.uk"
+               aria-label="Compose email to adrian@olddog.co.uk."
+               title="Compose email to adrian@olddog.co.uk.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">67 pages</small>
+        <div>
+            <a href="/doc/rfc6779/">
+                
+                    RFC 6779
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-manet-nhdp-mib)</i>
+            <br>
+            
+            <b>Definition of Managed Objects for the Neighborhood Discovery Protocol</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2012-10
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+            <br>
+            <span class="text-muted">Obsoleted by <a href="/doc/rfc7939/">RFC 7939</a></span>
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/adrian@olddog.co.uk" >Adrian Farrel</a> <a 
+               href="mailto:adrian%40olddog.co.uk"
+               aria-label="Compose email to adrian@olddog.co.uk."
+               title="Compose email to adrian@olddog.co.uk.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">115 pages</small>
+        <div>
+            <a href="/doc/rfc7181/">
+                
+                    RFC 7181
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-manet-olsrv2)</i>
+            <br>
+            
+            <b>The Optimized Link State Routing Protocol Version 2</b>
+            
+                <a class="badge bg-danger text-decoration-none float-end"
+                   href="https://www.rfc-editor.org/errata_search.php?rfc=7181">
+                    Errata
+                </a>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2014-04
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+            <br>
+            <span class="text-muted">Updated by <a href="/doc/rfc7183/">RFC 7183</a>, <a href="/doc/rfc7187/">RFC 7187</a>, <a href="/doc/rfc7188/">RFC 7188</a>, <a href="/doc/rfc7466/">RFC 7466</a></span>
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/adrian@olddog.co.uk" >Adrian Farrel</a> <a 
+               href="mailto:adrian%40olddog.co.uk"
+               aria-label="Compose email to adrian@olddog.co.uk."
+               title="Compose email to adrian@olddog.co.uk.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">31 pages</small>
+        <div>
+            <a href="/doc/rfc7182/">
+                
+                    RFC 7182
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-manet-rfc6622-bis)</i>
+            <br>
+            
+            <b>Integrity Check Value and Timestamp TLV Definitions for Mobile Ad Hoc Networks (MANETs)</b>
+            
+                <a class="badge bg-warning text-decoration-none float-end"
+                   href="https://www.rfc-editor.org/errata_search.php?rfc=7182">
+                    Errata
+                </a>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2014-04
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/adrian@olddog.co.uk" >Adrian Farrel</a> <a 
+               href="mailto:adrian%40olddog.co.uk"
+               aria-label="Compose email to adrian@olddog.co.uk."
+               title="Compose email to adrian@olddog.co.uk.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/macker@itd.nrl.navy.mil" >Joseph P. Macker</a> <a class="text-reset"
+               href="mailto:macker%40itd.nrl.navy.mil"
+               aria-label="Compose email to macker@itd.nrl.navy.mil."
+               title="Compose email to macker@itd.nrl.navy.mil.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">15 pages</small>
+        <div>
+            <a href="/doc/rfc7183/">
+                
+                    RFC 7183
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-manet-nhdp-olsrv2-sec)</i>
+            <br>
+            
+            <b>Integrity Protection for the Neighborhood Discovery Protocol (NHDP) and Optimized Link State Routing Protocol Version 2 (OLSRv2)</b>
+            
+                <a class="badge bg-warning text-decoration-none float-end"
+                   href="https://www.rfc-editor.org/errata_search.php?rfc=7183">
+                    Errata
+                </a>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2014-04
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/adrian@olddog.co.uk" >Adrian Farrel</a> <a 
+               href="mailto:adrian%40olddog.co.uk"
+               aria-label="Compose email to adrian@olddog.co.uk."
+               title="Compose email to adrian@olddog.co.uk.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/macker@itd.nrl.navy.mil" >Joseph P. Macker</a> <a class="text-reset"
+               href="mailto:macker%40itd.nrl.navy.mil"
+               aria-label="Compose email to macker@itd.nrl.navy.mil."
+               title="Compose email to macker@itd.nrl.navy.mil.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">86 pages</small>
+        <div>
+            <a href="/doc/rfc7184/">
+                
+                    RFC 7184
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-manet-olsrv2-mib)</i>
+            <br>
+            
+            <b>Definition of Managed Objects for the Optimized Link State Routing Protocol Version 2</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2014-04
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/adrian@olddog.co.uk" >Adrian Farrel</a> <a 
+               href="mailto:adrian%40olddog.co.uk"
+               aria-label="Compose email to adrian@olddog.co.uk."
+               title="Compose email to adrian@olddog.co.uk.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">25 pages</small>
+        <div>
+            <a href="/doc/rfc7185/">
+                
+                    RFC 7185
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-manet-olsrv2-metrics-rationale)</i>
+            <br>
+            
+            <b>Link Metrics for the Mobile Ad Hoc Network (MANET) Routing Protocol OLSRv2 - Rationale</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2014-04
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Informational RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/adrian@olddog.co.uk" >Adrian Farrel</a> <a 
+               href="mailto:adrian%40olddog.co.uk"
+               aria-label="Compose email to adrian@olddog.co.uk."
+               title="Compose email to adrian@olddog.co.uk.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/ratliffstan@gmail.com" >Stan Ratliff</a> <a class="text-reset"
+               href="mailto:ratliffstan%40gmail.com"
+               aria-label="Compose email to ratliffstan@gmail.com."
+               title="Compose email to ratliffstan@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">20 pages</small>
+        <div>
+            <a href="/doc/rfc7186/">
+                
+                    RFC 7186
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-manet-nhdp-sec-threats)</i>
+            <br>
+            
+            <b>Security Threats for the Neighborhood Discovery Protocol (NHDP)</b>
+            
+                <a class="badge bg-danger text-decoration-none float-end"
+                   href="https://www.rfc-editor.org/errata_search.php?rfc=7186">
+                    Errata
+                </a>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2014-04
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Informational RFC
+        
+        
+            <br>
+            <span class="text-muted">Updated by <a href="/doc/rfc7985/">RFC 7985</a></span>
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/adrian@olddog.co.uk" >Adrian Farrel</a> <a 
+               href="mailto:adrian%40olddog.co.uk"
+               aria-label="Compose email to adrian@olddog.co.uk."
+               title="Compose email to adrian@olddog.co.uk.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/macker@itd.nrl.navy.mil" >Joseph P. Macker</a> <a class="text-reset"
+               href="mailto:macker%40itd.nrl.navy.mil"
+               aria-label="Compose email to macker@itd.nrl.navy.mil."
+               title="Compose email to macker@itd.nrl.navy.mil.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">5 pages</small>
+        <div>
+            <a href="/doc/rfc7187/">
+                
+                    RFC 7187
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-manet-olsrv2-rmpr-optimization)</i>
+            <br>
+            
+            <b>Routing Multipoint Relay Optimization for the Optimized Link State Routing Protocol Version 2 (OLSRv2)</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2014-04
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/adrian@olddog.co.uk" >Adrian Farrel</a> <a 
+               href="mailto:adrian%40olddog.co.uk"
+               aria-label="Compose email to adrian@olddog.co.uk."
+               title="Compose email to adrian@olddog.co.uk.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/ulrich@herberg.name" >Ulrich Herberg</a> <a class="text-reset"
+               href="mailto:ulrich%40herberg.name"
+               aria-label="Compose email to ulrich@herberg.name."
+               title="Compose email to ulrich@herberg.name.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">16 pages</small>
+        <div>
+            <a href="/doc/rfc7188/">
+                
+                    RFC 7188
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-manet-nhdp-olsrv2-tlv-extension)</i>
+            <br>
+            
+            <b>Optimized Link State Routing Protocol Version 2 (OLSRv2) and MANET Neighborhood Discovery Protocol (NHDP) Extension TLVs</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2014-04
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+            <br>
+            <span class="text-muted">Updated by <a href="/doc/rfc7722/">RFC 7722</a></span>
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/adrian@olddog.co.uk" >Adrian Farrel</a> <a 
+               href="mailto:adrian%40olddog.co.uk"
+               aria-label="Compose email to adrian@olddog.co.uk."
+               title="Compose email to adrian@olddog.co.uk.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/ulrich@herberg.name" >Ulrich Herberg</a> <a class="text-reset"
+               href="mailto:ulrich%40herberg.name"
+               aria-label="Compose email to ulrich@herberg.name."
+               title="Compose email to ulrich@herberg.name.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">65 pages</small>
+        <div>
+            <a href="/doc/rfc7367/">
+                
+                    RFC 7367
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-manet-smf-mib)</i>
+            <br>
+            
+            <b>Definition of Managed Objects for the Mobile Ad Hoc Network (MANET) Simplified Multicast Framework Relay Set Process</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2014-10
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Experimental RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/adrian@olddog.co.uk" >Adrian Farrel</a> <a 
+               href="mailto:adrian%40olddog.co.uk"
+               aria-label="Compose email to adrian@olddog.co.uk."
+               title="Compose email to adrian@olddog.co.uk.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/ratliffstan@gmail.com" >Stan Ratliff</a> <a class="text-reset"
+               href="mailto:ratliffstan%40gmail.com"
+               aria-label="Compose email to ratliffstan@gmail.com."
+               title="Compose email to ratliffstan@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">9 pages</small>
+        <div>
+            <a href="/doc/rfc7466/">
+                
+                    RFC 7466
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-manet-nhdp-optimization)</i>
+            <br>
+            
+            <b>An Optimization for the Mobile Ad Hoc Network (MANET) Neighborhood Discovery Protocol (NHDP)</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2015-03
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/adrian@olddog.co.uk" >Adrian Farrel</a> <a 
+               href="mailto:adrian%40olddog.co.uk"
+               aria-label="Compose email to adrian@olddog.co.uk."
+               title="Compose email to adrian@olddog.co.uk.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/ulrich@herberg.name" >Ulrich Herberg</a> <a class="text-reset"
+               href="mailto:ulrich%40herberg.name"
+               aria-label="Compose email to ulrich@herberg.name."
+               title="Compose email to ulrich@herberg.name.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">15 pages</small>
+        <div>
+            <a href="/doc/rfc7631/">
+                
+                    RFC 7631
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-manet-tlv-naming)</i>
+            <br>
+            
+            <b>TLV Naming in the Mobile Ad Hoc Network (MANET) Generalized Packet/Message Format</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2015-09
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+            <br>
+            <span class="text-muted">Updated by <a href="/doc/rfc7722/">RFC 7722</a></span>
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/aretana.ietf@gmail.com" >Alvaro Retana</a> <a 
+               href="mailto:aretana.ietf%40gmail.com"
+               aria-label="Compose email to aretana.ietf@gmail.com."
+               title="Compose email to aretana.ietf@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/bebemaster@gmail.com" >Justin Dean</a> <a class="text-reset"
+               href="mailto:bebemaster%40gmail.com"
+               aria-label="Compose email to bebemaster@gmail.com."
+               title="Compose email to bebemaster@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">23 pages</small>
+        <div>
+            <a href="/doc/rfc7722/">
+                
+                    RFC 7722
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-manet-olsrv2-multitopology)</i>
+            <br>
+            
+            <b>Multi-Topology Extension for the Optimized Link State Routing Protocol Version 2 (OLSRv2)</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2015-12
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Experimental RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/aretana.ietf@gmail.com" >Alvaro Retana</a> <a 
+               href="mailto:aretana.ietf%40gmail.com"
+               aria-label="Compose email to aretana.ietf@gmail.com."
+               title="Compose email to aretana.ietf@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/ulrich@herberg.name" >Ulrich Herberg</a> <a class="text-reset"
+               href="mailto:ulrich%40herberg.name"
+               aria-label="Compose email to ulrich@herberg.name."
+               title="Compose email to ulrich@herberg.name.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">21 pages</small>
+        <div>
+            <a href="/doc/rfc7779/">
+                
+                    RFC 7779
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-manet-olsrv2-dat-metric)</i>
+            <br>
+            
+            <b>Directional Airtime Metric Based on Packet Sequence Numbers for Optimized Link State Routing Version 2 (OLSRv2)</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2016-04
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Experimental RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/aretana.ietf@gmail.com" >Alvaro Retana</a> <a 
+               href="mailto:aretana.ietf%40gmail.com"
+               aria-label="Compose email to aretana.ietf@gmail.com."
+               title="Compose email to aretana.ietf@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/bebemaster@gmail.com" >Justin Dean</a> <a class="text-reset"
+               href="mailto:bebemaster%40gmail.com"
+               aria-label="Compose email to bebemaster@gmail.com."
+               title="Compose email to bebemaster@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">17 pages</small>
+        <div>
+            <a href="/doc/rfc7859/">
+                
+                    RFC 7859
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-manet-ibs)</i>
+            <br>
+            
+            <b>Identity-Based Signatures for Mobile Ad Hoc Network (MANET) Routing Protocols</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2016-05
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Experimental RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/aretana.ietf@gmail.com" >Alvaro Retana</a> <a 
+               href="mailto:aretana.ietf%40gmail.com"
+               aria-label="Compose email to aretana.ietf@gmail.com."
+               title="Compose email to aretana.ietf@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/T.Clausen@computer.org" >Thomas H. Clausen</a> <a class="text-reset"
+               href="mailto:T.Clausen%40computer.org"
+               aria-label="Compose email to T.Clausen@computer.org."
+               title="Compose email to T.Clausen@computer.org.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">72 pages</small>
+        <div>
+            <a href="/doc/rfc7939/">
+                
+                    RFC 7939
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-manet-rfc6779bis)</i>
+            <br>
+            
+            <b>Definition of Managed Objects for the Neighborhood Discovery Protocol</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2016-08
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/aretana.ietf@gmail.com" >Alvaro Retana</a> <a 
+               href="mailto:aretana.ietf%40gmail.com"
+               aria-label="Compose email to aretana.ietf@gmail.com."
+               title="Compose email to aretana.ietf@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/chris.dearlove@baesystems.com" >Christopher Dearlove</a> <a class="text-reset"
+               href="mailto:chris.dearlove%40baesystems.com"
+               aria-label="Compose email to chris.dearlove@baesystems.com."
+               title="Compose email to chris.dearlove@baesystems.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">15 pages</small>
+        <div>
+            <a href="/doc/rfc7985/">
+                
+                    RFC 7985
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-manet-smf-sec-threats)</i>
+            <br>
+            
+            <b>Security Threats to Simplified Multicast Forwarding (SMF)</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2016-11
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Informational RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/aretana.ietf@gmail.com" >Alvaro Retana</a> <a 
+               href="mailto:aretana.ietf%40gmail.com"
+               aria-label="Compose email to aretana.ietf@gmail.com."
+               title="Compose email to aretana.ietf@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/chris.dearlove@baesystems.com" >Christopher Dearlove</a> <a class="text-reset"
+               href="mailto:chris.dearlove%40baesystems.com"
+               aria-label="Compose email to chris.dearlove@baesystems.com."
+               title="Compose email to chris.dearlove@baesystems.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">26 pages</small>
+        <div>
+            <a href="/doc/rfc8116/">
+                
+                    RFC 8116
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-manet-olsrv2-sec-threats)</i>
+            <br>
+            
+            <b>Security Threats to the Optimized Link State Routing Protocol Version 2 (OLSRv2)</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2017-05
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Informational RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/aretana.ietf@gmail.com" >Alvaro Retana</a> <a 
+               href="mailto:aretana.ietf%40gmail.com"
+               aria-label="Compose email to aretana.ietf@gmail.com."
+               title="Compose email to aretana.ietf@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/bebemaster@gmail.com" >Justin Dean</a> <a class="text-reset"
+               href="mailto:bebemaster%40gmail.com"
+               aria-label="Compose email to bebemaster@gmail.com."
+               title="Compose email to bebemaster@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">82 pages</small>
+        <div>
+            <a href="/doc/rfc8175/">
+                
+                    RFC 8175
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-manet-dlep)</i>
+            <br>
+            
+            <b>Dynamic Link Exchange Protocol (DLEP)</b>
+            
+                <a class="badge bg-danger text-decoration-none float-end"
+                   href="https://www.rfc-editor.org/errata_search.php?rfc=8175">
+                    Errata
+                </a>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2017-06
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/aretana.ietf@gmail.com" >Alvaro Retana</a> <a 
+               href="mailto:aretana.ietf%40gmail.com"
+               aria-label="Compose email to aretana.ietf@gmail.com."
+               title="Compose email to aretana.ietf@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/bebemaster@gmail.com" >Justin Dean</a> <a class="text-reset"
+               href="mailto:bebemaster%40gmail.com"
+               aria-label="Compose email to bebemaster@gmail.com."
+               title="Compose email to bebemaster@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">26 pages</small>
+        <div>
+            <a href="/doc/rfc8218/">
+                
+                    RFC 8218
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-manet-olsrv2-multipath)</i>
+            <br>
+            
+            <b>Multipath Extension for the Optimized Link State Routing Protocol Version 2 (OLSRv2)</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2017-08
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Experimental RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/aretana.ietf@gmail.com" >Alvaro Retana</a> <a 
+               href="mailto:aretana.ietf%40gmail.com"
+               aria-label="Compose email to aretana.ietf@gmail.com."
+               title="Compose email to aretana.ietf@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/sratliff@idirect.net" >Stan Ratliff</a> <a class="text-reset"
+               href="mailto:sratliff%40idirect.net"
+               aria-label="Compose email to sratliff@idirect.net."
+               title="Compose email to sratliff@idirect.net.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">29 pages</small>
+        <div>
+            <a href="/doc/rfc8245/">
+                
+                    RFC 8245
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-manet-rfc5444-usage)</i>
+            <br>
+            
+            <b>Rules for Designing Protocols Using the Generalized Packet/Message Format from RFC 5444</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2017-10
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/aretana.ietf@gmail.com" >Alvaro Retana</a> <a 
+               href="mailto:aretana.ietf%40gmail.com"
+               aria-label="Compose email to aretana.ietf@gmail.com."
+               title="Compose email to aretana.ietf@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/bebemaster@gmail.com" >Justin Dean</a> <a class="text-reset"
+               href="mailto:bebemaster%40gmail.com"
+               aria-label="Compose email to bebemaster@gmail.com."
+               title="Compose email to bebemaster@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">10 pages</small>
+        <div>
+            <a href="/doc/rfc8629/">
+                
+                    RFC 8629
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-manet-dlep-multi-hop-extension)</i>
+            <br>
+            
+            <b>Dynamic Link Exchange Protocol (DLEP) Multi-Hop Forwarding Extension</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2019-07
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/aretana.ietf@gmail.com" >Alvaro Retana</a> <a 
+               href="mailto:aretana.ietf%40gmail.com"
+               aria-label="Compose email to aretana.ietf@gmail.com."
+               title="Compose email to aretana.ietf@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/sratliff@idirect.net" >Stan Ratliff</a> <a class="text-reset"
+               href="mailto:sratliff%40idirect.net"
+               aria-label="Compose email to sratliff@idirect.net."
+               title="Compose email to sratliff@idirect.net.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">12 pages</small>
+        <div>
+            <a href="/doc/rfc8651/">
+                
+                    RFC 8651
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-manet-dlep-pause-extension)</i>
+            <br>
+            
+            <b>Dynamic Link Exchange Protocol (DLEP) Control-Plane-Based Pause Extension</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2019-10
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/aretana.ietf@gmail.com" >Alvaro Retana</a> <a 
+               href="mailto:aretana.ietf%40gmail.com"
+               aria-label="Compose email to aretana.ietf@gmail.com."
+               title="Compose email to aretana.ietf@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/sratliff@idirect.net" >Stan Ratliff</a> <a class="text-reset"
+               href="mailto:sratliff%40idirect.net"
+               aria-label="Compose email to sratliff@idirect.net."
+               title="Compose email to sratliff@idirect.net.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">9 pages</small>
+        <div>
+            <a href="/doc/rfc8703/">
+                
+                    RFC 8703
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-manet-dlep-lid-extension)</i>
+            <br>
+            
+            <b>Dynamic Link Exchange Protocol (DLEP) Link Identifier Extension</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2020-02
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/aretana.ietf@gmail.com" >Alvaro Retana</a> <a 
+               href="mailto:aretana.ietf%40gmail.com"
+               aria-label="Compose email to aretana.ietf@gmail.com."
+               title="Compose email to aretana.ietf@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/bebemaster@gmail.com" >Justin Dean</a> <a class="text-reset"
+               href="mailto:bebemaster%40gmail.com"
+               aria-label="Compose email to bebemaster@gmail.com."
+               title="Compose email to bebemaster@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">5 pages</small>
+        <div>
+            <a href="/doc/rfc8757/">
+                
+                    RFC 8757
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-manet-dlep-latency-extension)</i>
+            <br>
+            
+            <b>Dynamic Link Exchange Protocol (DLEP) Latency Range Extension</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2020-03
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/aretana.ietf@gmail.com" >Alvaro Retana</a> <a 
+               href="mailto:aretana.ietf%40gmail.com"
+               aria-label="Compose email to aretana.ietf@gmail.com."
+               title="Compose email to aretana.ietf@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/bebemaster@gmail.com" >Justin Dean</a> <a class="text-reset"
+               href="mailto:bebemaster%40gmail.com"
+               aria-label="Compose email to bebemaster@gmail.com."
+               title="Compose email to bebemaster@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+    </tbody>
+
+
+
+    
+    
+
+
+
+
+
+
+
+
     <tbody>
-        <tr class="info">
-          <th></th>
-          
-              <th colspan="5">
-          
-	    RFCs (37 hits)
-          </th>
+        <tr class="table-info">
+            <td></td>
+            
+                <th scope="col" colspan="5">
+            
+            Related Internet-Drafts (4 hits)
+            </th>
         </tr>
     </tbody>
-
     <tbody>
         
-          
+            
 
 
 
 
 
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc2501/">RFC 2501</a>
-
-      
-        <i>(was draft-ietf-manet-issues)</i>
-      
-      <br>
-      <b>Mobile Ad hoc Networking (MANET): Routing Protocol Performance Issues and Evaluation Considerations</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          1999-01
-    
-    </span>
 
 
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">90 pages</small>
+        <div>
+            <a href="/doc/draft-perkins-manet-aodvv2/">
+                
+                    draft-perkins-manet-aodvv2-03
+                
+            </a>
+            
+            <br>
+            
+            <b>Ad Hoc On-demand Distance Vector Version 2 (AODVv2) Routing</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2019-02-28
+                    
+                    
+                
+                
+            </td>
+            
 
-    
-      <br><small class="text-muted">12 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
 
 
 <td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-manet-issues">
     
-  </div>
-
-  
-    Informational RFC
-
     
-
+        
+            AD Evaluation::Revised I-D Needed
+        
+        
+        
+        <span class="badge bg-danger" title="Goal is &lt;14 days">for 465 days</span>
+        
+        
+            
+        
+        
+            <br>
+            
+                Submitted to IESG for Publication
+                
+                    :
+                
+            
+        
+        Proposed Standard
+        
+        
+        
+        
     
-  
-
-
-
 </td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc3561/">RFC 3561</a>
-
-      
-        <i>(was draft-ietf-manet-aodv)</i>
-      
-      <br>
-      <b>Ad hoc On-Demand Distance Vector (AODV) Routing</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2003-07
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">37 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-manet-aodv">
-    
-  </div>
-
-  
-    Experimental RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/alex.zinin@alcatel.com"><span class="">Alex Zinin</span></a>&nbsp;<a href="mailto:alex.zinin%40alcatel.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc3626/">RFC 3626</a>
-
-      
-        <i>(was draft-ietf-manet-olsr)</i>
-      
-      <br>
-      <b>Optimized Link State Routing Protocol (OLSR)</b>
-      
-        <a class="label label-warning pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=3626">Errata</a>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2003-10
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">75 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-manet-olsr">
-    
-  </div>
-
-  
-    Experimental RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/alex.zinin@alcatel.com"><span class="">Alex Zinin</span></a>&nbsp;<a href="mailto:alex.zinin%40alcatel.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc3684/">RFC 3684</a>
-
-      
-        <i>(was draft-ietf-manet-tbrpf)</i>
-      
-      <br>
-      <b>Topology Dissemination Based on Reverse-Path Forwarding (TBRPF)</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2004-02
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">46 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-manet-tbrpf">
-    
-  </div>
-
-  
-    Experimental RFC
-
-    
-
-    
-      <br>Updated by <a href="/doc/rfc9141/">RFC 9141</a>
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/alex.zinin@alcatel.com"><span class="">Alex Zinin</span></a>&nbsp;<a href="mailto:alex.zinin%40alcatel.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc4728/">RFC 4728</a>
-
-      
-        <i>(was draft-ietf-manet-dsr)</i>
-      
-      <br>
-      <b>The Dynamic Source Routing Protocol (DSR) for Mobile Ad Hoc Networks for IPv4</b>
-      
-        <a class="label label-danger pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=4728">Errata</a>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2007-02
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">107 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-manet-dsr">
-    
-  </div>
-
-  
-    Experimental RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/fenner@fenron.com"><span class="">Bill Fenner</span></a>&nbsp;<a href="mailto:fenner%40fenron.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc5148/">RFC 5148</a>
-
-      
-        <i>(was draft-ietf-manet-jitter)</i>
-      
-      <br>
-      <b>Jitter Considerations in Mobile Ad Hoc Networks (MANETs)</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2008-02
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">12 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-manet-jitter">
-    
-  </div>
-
-  
-    Informational RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/rcallon@juniper.net"><span class="">Ross Callon</span></a>&nbsp;<a href="mailto:rcallon%40juniper.net"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc5444/">RFC 5444</a>
-
-      
-        <i>(was draft-ietf-manet-packetbb)</i>
-      
-      <br>
-      <b>Generalized Mobile Ad Hoc Network (MANET) Packet/Message Format</b>
-      
-        <a class="label label-danger pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=5444">Errata</a>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2009-02
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">60 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-manet-packetbb">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-      <br>Updated by <a href="/doc/rfc7631/">RFC 7631</a>, <a href="/doc/rfc8245/">RFC 8245</a>
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/rcallon@juniper.net"><span class="">Ross Callon</span></a>&nbsp;<a href="mailto:rcallon%40juniper.net"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc5497/">RFC 5497</a>
-
-      
-        <i>(was draft-ietf-manet-timetlv)</i>
-      
-      <br>
-      <b>Representing Multi-Value Time in Mobile Ad Hoc Networks (MANETs)</b>
-      
-        <a class="label label-danger pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=5497">Errata</a>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2009-03
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">14 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-manet-timetlv">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/rcallon@juniper.net"><span class="">Ross Callon</span></a>&nbsp;<a href="mailto:rcallon%40juniper.net"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc5498/">RFC 5498</a>
-
-      
-        <i>(was draft-ietf-manet-iana)</i>
-      
-      <br>
-      <b>IANA Allocations for Mobile Ad Hoc Network (MANET) Protocols</b>
-      
-        <a class="label label-warning pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=5498">Errata</a>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2009-03
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">5 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-manet-iana">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/rcallon@juniper.net"><span class="">Ross Callon</span></a>&nbsp;<a href="mailto:rcallon%40juniper.net"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc6130/">RFC 6130</a>
-
-      
-        <i>(was draft-ietf-manet-nhdp)</i>
-      
-      <br>
-      <b>Mobile Ad Hoc Network (MANET) Neighborhood Discovery Protocol (NHDP)</b>
-      
-        <a class="label label-danger pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=6130">Errata</a>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2011-04
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">88 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-manet-nhdp">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-      <br>Updated by <a href="/doc/rfc7183/">RFC 7183</a>, <a href="/doc/rfc7188/">RFC 7188</a>, <a href="/doc/rfc7466/">RFC 7466</a>
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/stewart.bryant@gmail.com"><span class="">Stewart Bryant</span></a>&nbsp;<a href="mailto:stewart.bryant%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc6621/">RFC 6621</a>
-
-      
-        <i>(was draft-ietf-manet-smf)</i>
-      
-      <br>
-      <b>Simplified Multicast Forwarding</b>
-      
-        <a class="label label-danger pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=6621">Errata</a>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2012-05
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">55 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-manet-smf">
-    
-  </div>
-
-  
-    Experimental RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/adrian@olddog.co.uk"><span class="">Adrian Farrel</span></a>&nbsp;<a href="mailto:adrian%40olddog.co.uk"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc6622/">RFC 6622</a>
-
-      
-        <i>(was draft-ietf-manet-packetbb-sec)</i>
-      
-      <br>
-      <b>Integrity Check Value and Timestamp TLV Definitions for Mobile Ad Hoc Networks (MANETs)</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2012-05
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">21 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-manet-packetbb-sec">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-      <br>Obsoleted by <a href="/doc/rfc7182/">RFC 7182</a>
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/adrian@olddog.co.uk"><span class="">Adrian Farrel</span></a>&nbsp;<a href="mailto:adrian%40olddog.co.uk"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc6779/">RFC 6779</a>
-
-      
-        <i>(was draft-ietf-manet-nhdp-mib)</i>
-      
-      <br>
-      <b>Definition of Managed Objects for the Neighborhood Discovery Protocol</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2012-10
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">67 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-manet-nhdp-mib">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-      <br>Obsoleted by <a href="/doc/rfc7939/">RFC 7939</a>
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/adrian@olddog.co.uk"><span class="">Adrian Farrel</span></a>&nbsp;<a href="mailto:adrian%40olddog.co.uk"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc7181/">RFC 7181</a>
-
-      
-        <i>(was draft-ietf-manet-olsrv2)</i>
-      
-      <br>
-      <b>The Optimized Link State Routing Protocol Version 2</b>
-      
-        <a class="label label-danger pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=7181">Errata</a>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2014-04
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">115 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-manet-olsrv2">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-      <br>Updated by <a href="/doc/rfc7183/">RFC 7183</a>, <a href="/doc/rfc7187/">RFC 7187</a>, <a href="/doc/rfc7188/">RFC 7188</a>, <a href="/doc/rfc7466/">RFC 7466</a>
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/adrian@olddog.co.uk"><span class="">Adrian Farrel</span></a>&nbsp;<a href="mailto:adrian%40olddog.co.uk"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc7182/">RFC 7182</a>
-
-      
-        <i>(was draft-ietf-manet-rfc6622-bis)</i>
-      
-      <br>
-      <b>Integrity Check Value and Timestamp TLV Definitions for Mobile Ad Hoc Networks (MANETs)</b>
-      
-        <a class="label label-warning pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=7182">Errata</a>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2014-04
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">31 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-manet-rfc6622-bis">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/adrian@olddog.co.uk"><span class="">Adrian Farrel</span></a>&nbsp;<a href="mailto:adrian%40olddog.co.uk"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/macker@itd.nrl.navy.mil"><span class="small text-muted">Joseph Macker</span></a>&nbsp;<a href="mailto:macker%40itd.nrl.navy.mil"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc7183/">RFC 7183</a>
-
-      
-        <i>(was draft-ietf-manet-nhdp-olsrv2-sec)</i>
-      
-      <br>
-      <b>Integrity Protection for the Neighborhood Discovery Protocol (NHDP) and Optimized Link State Routing Protocol Version 2 (OLSRv2)</b>
-      
-        <a class="label label-warning pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=7183">Errata</a>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2014-04
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">15 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-manet-nhdp-olsrv2-sec">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/adrian@olddog.co.uk"><span class="">Adrian Farrel</span></a>&nbsp;<a href="mailto:adrian%40olddog.co.uk"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/macker@itd.nrl.navy.mil"><span class="small text-muted">Joseph Macker</span></a>&nbsp;<a href="mailto:macker%40itd.nrl.navy.mil"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc7184/">RFC 7184</a>
-
-      
-        <i>(was draft-ietf-manet-olsrv2-mib)</i>
-      
-      <br>
-      <b>Definition of Managed Objects for the Optimized Link State Routing Protocol Version 2</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2014-04
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">86 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-manet-olsrv2-mib">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/adrian@olddog.co.uk"><span class="">Adrian Farrel</span></a>&nbsp;<a href="mailto:adrian%40olddog.co.uk"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc7185/">RFC 7185</a>
-
-      
-        <i>(was draft-ietf-manet-olsrv2-metrics-rationale)</i>
-      
-      <br>
-      <b>Link Metrics for the Mobile Ad Hoc Network (MANET) Routing Protocol OLSRv2 - Rationale</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2014-04
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">25 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-manet-olsrv2-metrics-rationale">
-    
-  </div>
-
-  
-    Informational RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/adrian@olddog.co.uk"><span class="">Adrian Farrel</span></a>&nbsp;<a href="mailto:adrian%40olddog.co.uk"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/ratliffstan@gmail.com"><span class="small text-muted">Stan Ratliff</span></a>&nbsp;<a href="mailto:ratliffstan%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc7186/">RFC 7186</a>
-
-      
-        <i>(was draft-ietf-manet-nhdp-sec-threats)</i>
-      
-      <br>
-      <b>Security Threats for the Neighborhood Discovery Protocol (NHDP)</b>
-      
-        <a class="label label-danger pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=7186">Errata</a>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2014-04
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">20 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-manet-nhdp-sec-threats">
-    
-  </div>
-
-  
-    Informational RFC
-
-    
-
-    
-      <br>Updated by <a href="/doc/rfc7985/">RFC 7985</a>
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/adrian@olddog.co.uk"><span class="">Adrian Farrel</span></a>&nbsp;<a href="mailto:adrian%40olddog.co.uk"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/macker@itd.nrl.navy.mil"><span class="small text-muted">Joseph Macker</span></a>&nbsp;<a href="mailto:macker%40itd.nrl.navy.mil"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc7187/">RFC 7187</a>
-
-      
-        <i>(was draft-ietf-manet-olsrv2-rmpr-optimization)</i>
-      
-      <br>
-      <b>Routing Multipoint Relay Optimization for the Optimized Link State Routing Protocol Version 2 (OLSRv2)</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2014-04
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">5 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-manet-olsrv2-rmpr-optimization">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/adrian@olddog.co.uk"><span class="">Adrian Farrel</span></a>&nbsp;<a href="mailto:adrian%40olddog.co.uk"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/ulrich@herberg.name"><span class="small text-muted">Ulrich Herberg</span></a>&nbsp;<a href="mailto:ulrich%40herberg.name"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc7188/">RFC 7188</a>
-
-      
-        <i>(was draft-ietf-manet-nhdp-olsrv2-tlv-extension)</i>
-      
-      <br>
-      <b>Optimized Link State Routing Protocol Version 2 (OLSRv2) and MANET Neighborhood Discovery Protocol (NHDP) Extension TLVs</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2014-04
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">16 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-manet-nhdp-olsrv2-tlv-extension">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-      <br>Updated by <a href="/doc/rfc7722/">RFC 7722</a>
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/adrian@olddog.co.uk"><span class="">Adrian Farrel</span></a>&nbsp;<a href="mailto:adrian%40olddog.co.uk"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/ulrich@herberg.name"><span class="small text-muted">Ulrich Herberg</span></a>&nbsp;<a href="mailto:ulrich%40herberg.name"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc7367/">RFC 7367</a>
-
-      
-        <i>(was draft-ietf-manet-smf-mib)</i>
-      
-      <br>
-      <b>Definition of Managed Objects for the Mobile Ad Hoc Network (MANET) Simplified Multicast Framework Relay Set Process</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2014-10
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">65 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-manet-smf-mib">
-    
-  </div>
-
-  
-    Experimental RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/adrian@olddog.co.uk"><span class="">Adrian Farrel</span></a>&nbsp;<a href="mailto:adrian%40olddog.co.uk"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/ratliffstan@gmail.com"><span class="small text-muted">Stan Ratliff</span></a>&nbsp;<a href="mailto:ratliffstan%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc7466/">RFC 7466</a>
-
-      
-        <i>(was draft-ietf-manet-nhdp-optimization)</i>
-      
-      <br>
-      <b>An Optimization for the Mobile Ad Hoc Network (MANET) Neighborhood Discovery Protocol (NHDP)</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2015-03
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">9 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-manet-nhdp-optimization">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/adrian@olddog.co.uk"><span class="">Adrian Farrel</span></a>&nbsp;<a href="mailto:adrian%40olddog.co.uk"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/ulrich@herberg.name"><span class="small text-muted">Ulrich Herberg</span></a>&nbsp;<a href="mailto:ulrich%40herberg.name"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc7631/">RFC 7631</a>
-
-      
-        <i>(was draft-ietf-manet-tlv-naming)</i>
-      
-      <br>
-      <b>TLV Naming in the Mobile Ad Hoc Network (MANET) Generalized Packet/Message Format</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2015-09
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">15 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-manet-tlv-naming">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-      <br>Updated by <a href="/doc/rfc7722/">RFC 7722</a>
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/aretana.ietf@gmail.com"><span class="">Alvaro Retana</span></a>&nbsp;<a href="mailto:aretana.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/bebemaster@gmail.com"><span class="small text-muted">Justin Dean</span></a>&nbsp;<a href="mailto:bebemaster%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc7722/">RFC 7722</a>
-
-      
-        <i>(was draft-ietf-manet-olsrv2-multitopology)</i>
-      
-      <br>
-      <b>Multi-Topology Extension for the Optimized Link State Routing Protocol Version 2 (OLSRv2)</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2015-12
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">23 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-manet-olsrv2-multitopology">
-    
-  </div>
-
-  
-    Experimental RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/aretana.ietf@gmail.com"><span class="">Alvaro Retana</span></a>&nbsp;<a href="mailto:aretana.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/ulrich@herberg.name"><span class="small text-muted">Ulrich Herberg</span></a>&nbsp;<a href="mailto:ulrich%40herberg.name"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc7779/">RFC 7779</a>
-
-      
-        <i>(was draft-ietf-manet-olsrv2-dat-metric)</i>
-      
-      <br>
-      <b>Directional Airtime Metric Based on Packet Sequence Numbers for Optimized Link State Routing Version 2 (OLSRv2)</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2016-04
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">21 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-manet-olsrv2-dat-metric">
-    
-  </div>
-
-  
-    Experimental RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/aretana.ietf@gmail.com"><span class="">Alvaro Retana</span></a>&nbsp;<a href="mailto:aretana.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/bebemaster@gmail.com"><span class="small text-muted">Justin Dean</span></a>&nbsp;<a href="mailto:bebemaster%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc7859/">RFC 7859</a>
-
-      
-        <i>(was draft-ietf-manet-ibs)</i>
-      
-      <br>
-      <b>Identity-Based Signatures for Mobile Ad Hoc Network (MANET) Routing Protocols</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2016-05
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">17 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-manet-ibs">
-    
-  </div>
-
-  
-    Experimental RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/aretana.ietf@gmail.com"><span class="">Alvaro Retana</span></a>&nbsp;<a href="mailto:aretana.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/T.Clausen@computer.org"><span class="small text-muted">Thomas Clausen</span></a>&nbsp;<a href="mailto:T.Clausen%40computer.org"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc7939/">RFC 7939</a>
-
-      
-        <i>(was draft-ietf-manet-rfc6779bis)</i>
-      
-      <br>
-      <b>Definition of Managed Objects for the Neighborhood Discovery Protocol</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2016-08
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">72 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-manet-rfc6779bis">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/aretana.ietf@gmail.com"><span class="">Alvaro Retana</span></a>&nbsp;<a href="mailto:aretana.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/chris.dearlove@baesystems.com"><span class="small text-muted">Christopher Dearlove</span></a>&nbsp;<a href="mailto:chris.dearlove%40baesystems.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc7985/">RFC 7985</a>
-
-      
-        <i>(was draft-ietf-manet-smf-sec-threats)</i>
-      
-      <br>
-      <b>Security Threats to Simplified Multicast Forwarding (SMF)</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2016-11
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">15 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-manet-smf-sec-threats">
-    
-  </div>
-
-  
-    Informational RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/aretana.ietf@gmail.com"><span class="">Alvaro Retana</span></a>&nbsp;<a href="mailto:aretana.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/chris.dearlove@baesystems.com"><span class="small text-muted">Christopher Dearlove</span></a>&nbsp;<a href="mailto:chris.dearlove%40baesystems.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc8116/">RFC 8116</a>
-
-      
-        <i>(was draft-ietf-manet-olsrv2-sec-threats)</i>
-      
-      <br>
-      <b>Security Threats to the Optimized Link State Routing Protocol Version 2 (OLSRv2)</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2017-05
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">26 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-manet-olsrv2-sec-threats">
-    
-  </div>
-
-  
-    Informational RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/aretana.ietf@gmail.com"><span class="">Alvaro Retana</span></a>&nbsp;<a href="mailto:aretana.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/bebemaster@gmail.com"><span class="small text-muted">Justin Dean</span></a>&nbsp;<a href="mailto:bebemaster%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc8175/">RFC 8175</a>
-
-      
-        <i>(was draft-ietf-manet-dlep)</i>
-      
-      <br>
-      <b>Dynamic Link Exchange Protocol (DLEP)</b>
-      
-        <a class="label label-danger pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=8175">Errata</a>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2017-06
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">82 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-manet-dlep">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/aretana.ietf@gmail.com"><span class="">Alvaro Retana</span></a>&nbsp;<a href="mailto:aretana.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/bebemaster@gmail.com"><span class="small text-muted">Justin Dean</span></a>&nbsp;<a href="mailto:bebemaster%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc8218/">RFC 8218</a>
-
-      
-        <i>(was draft-ietf-manet-olsrv2-multipath)</i>
-      
-      <br>
-      <b>Multipath Extension for the Optimized Link State Routing Protocol Version 2 (OLSRv2)</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2017-08
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">26 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-manet-olsrv2-multipath">
-    
-  </div>
-
-  
-    Experimental RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/aretana.ietf@gmail.com"><span class="">Alvaro Retana</span></a>&nbsp;<a href="mailto:aretana.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/sratliff@idirect.net"><span class="small text-muted">Stan Ratliff</span></a>&nbsp;<a href="mailto:sratliff%40idirect.net"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc8245/">RFC 8245</a>
-
-      
-        <i>(was draft-ietf-manet-rfc5444-usage)</i>
-      
-      <br>
-      <b>Rules for Designing Protocols Using the Generalized Packet/Message Format from RFC 5444</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2017-10
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">29 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-manet-rfc5444-usage">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/aretana.ietf@gmail.com"><span class="">Alvaro Retana</span></a>&nbsp;<a href="mailto:aretana.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/bebemaster@gmail.com"><span class="small text-muted">Justin Dean</span></a>&nbsp;<a href="mailto:bebemaster%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc8629/">RFC 8629</a>
-
-      
-        <i>(was draft-ietf-manet-dlep-multi-hop-extension)</i>
-      
-      <br>
-      <b>Dynamic Link Exchange Protocol (DLEP) Multi-Hop Forwarding Extension</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2019-07
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">10 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-manet-dlep-multi-hop-extension">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/aretana.ietf@gmail.com"><span class="">Alvaro Retana</span></a>&nbsp;<a href="mailto:aretana.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/sratliff@idirect.net"><span class="small text-muted">Stan Ratliff</span></a>&nbsp;<a href="mailto:sratliff%40idirect.net"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc8651/">RFC 8651</a>
-
-      
-        <i>(was draft-ietf-manet-dlep-pause-extension)</i>
-      
-      <br>
-      <b>Dynamic Link Exchange Protocol (DLEP) Control-Plane-Based Pause Extension</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2019-10
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">12 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-manet-dlep-pause-extension">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/aretana.ietf@gmail.com"><span class="">Alvaro Retana</span></a>&nbsp;<a href="mailto:aretana.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/sratliff@idirect.net"><span class="small text-muted">Stan Ratliff</span></a>&nbsp;<a href="mailto:sratliff%40idirect.net"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc8703/">RFC 8703</a>
-
-      
-        <i>(was draft-ietf-manet-dlep-lid-extension)</i>
-      
-      <br>
-      <b>Dynamic Link Exchange Protocol (DLEP) Link Identifier Extension</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2020-02
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">9 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-manet-dlep-lid-extension">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/aretana.ietf@gmail.com"><span class="">Alvaro Retana</span></a>&nbsp;<a href="mailto:aretana.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/bebemaster@gmail.com"><span class="small text-muted">Justin Dean</span></a>&nbsp;<a href="mailto:bebemaster%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc8757/">RFC 8757</a>
-
-      
-        <i>(was draft-ietf-manet-dlep-latency-extension)</i>
-      
-      <br>
-      <b>Dynamic Link Exchange Protocol (DLEP) Latency Range Extension</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2020-03
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">5 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-manet-dlep-latency-extension">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/aretana.ietf@gmail.com"><span class="">Alvaro Retana</span></a>&nbsp;<a href="mailto:aretana.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/bebemaster@gmail.com"><span class="small text-muted">Justin Dean</span></a>&nbsp;<a href="mailto:bebemaster%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-      
-    </tbody>
-  </table>
-
-
-  
-  
-
-
-
-
-  
-
-  
-  <table class="table table-condensed table-striped tablesorter">
-    <thead>
-      <tr>
-        <th class="sorter-false"></th>
-
-        
-          
-            <th data-header="document">
-	      
-	        Document
-	      
-            </th>
-          
-        
-          
-        
-          
-            <th data-header="date">
-	      
-	        Date
-	      
-            </th>
-          
-        
-          
-            <th data-header="status">
-	      
-	        Status
-	      
-            </th>
-          
-        
-          
-            <th data-header="ipr">
-	      
-	        IPR
-	      
-            </th>
-          
-        
-          
-            <th data-header="ad">
-	      
-	        AD / Shepherd
-	      
-            </th>
-          
-        
-
-        
-      </tr>
-    </thead>
-
-    
-
-      
-    <tbody>
-        <tr class="info">
-          <th></th>
-          
-              <th colspan="5">
-          
-	    Related Internet-Drafts (4 hits)
-          </th>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/aretana.ietf@gmail.com" >Alvaro Retana</a> <a 
+               href="mailto:aretana.ietf%40gmail.com"
+               aria-label="Compose email to aretana.ietf@gmail.com."
+               title="Compose email to aretana.ietf@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/sgundave@cisco.com" >Sri Gundavelli</a> <a class="text-reset"
+               href="mailto:sgundave%40cisco.com"
+               aria-label="Compose email to sgundave@cisco.com."
+               title="Compose email to sgundave@cisco.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
         </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">8 pages</small>
+        <div>
+            <a href="/doc/draft-rogge-manet-dlep-channel-utilization/">
+                
+                    draft-rogge-manet-dlep-channel-utilization-02
+                
+            </a>
+            
+            <br>
+            
+            <b>DLEP Radio Channel Utilization Extension</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2022-03-07
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+        
+        
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">5 pages</small>
+        <div>
+            <a href="/doc/draft-rogge-manet-dlep-radio-band/">
+                
+                    draft-rogge-manet-dlep-radio-band-03
+                
+            </a>
+            
+            <br>
+            
+            <b>DLEP Radio Band Extension</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2022-03-07
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+        
+        
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">7 pages</small>
+        <div>
+            <a href="/doc/draft-rogge-manet-dlep-radio-quality/">
+                
+                    draft-rogge-manet-dlep-radio-quality-02
+                
+            </a>
+            
+            <br>
+            
+            <b>DLEP Radio Quality Extension</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2022-03-07
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+        
+        
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
     </tbody>
 
-    <tbody>
-        
-          
+</table>
 
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-perkins-manet-aodvv2/">draft-perkins-manet-aodvv2-03</a>
-
-      
-      <br>
-      <b>Ad Hoc On-demand Distance Vector Version 2 (AODVv2) Routing</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2019-02-28
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">90 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-perkins-manet-aodvv2">
-    
-  </div>
-
-  
-    
-      AD Evaluation::<wbr>Revised I-D Needed
-    
-
-    
-
-    <wbr>
-
-    <wbr><span class="label label-danger" title="Goal is &lt;14 days">for 457 days</span>
-    
-    
-
-    
-      
-    
-
-    
-      <br>
-      
-	Submitted to IESG for Publication:<wbr>
-      
-    
-
-    
-      Proposed Standard
-    
-
-    
-
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/aretana.ietf@gmail.com"><span class="">Alvaro Retana</span></a>&nbsp;<a href="mailto:aretana.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/sgundave@cisco.com"><span class="small text-muted">Sri Gundavelli</span></a>&nbsp;<a href="mailto:sgundave%40cisco.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-rogge-manet-dlep-channel-utilization/">draft-rogge-manet-dlep-channel-utilization-02</a>
-
-      
-      <br>
-      <b>DLEP Radio Channel Utilization Extension</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2022-03-07
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">8 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-rogge-manet-dlep-channel-utilization">
-    
-  </div>
-
-  
-    
-      I-D Exists
-    
-
-    
-
-    <wbr>
-
-    <wbr>
-    
-    
-
-    
-      
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-rogge-manet-dlep-radio-band/">draft-rogge-manet-dlep-radio-band-03</a>
-
-      
-      <br>
-      <b>DLEP Radio Band Extension</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2022-03-07
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">5 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-rogge-manet-dlep-radio-band">
-    
-  </div>
-
-  
-    
-      I-D Exists
-    
-
-    
-
-    <wbr>
-
-    <wbr>
-    
-    
-
-    
-      
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-rogge-manet-dlep-radio-quality/">draft-rogge-manet-dlep-radio-quality-02</a>
-
-      
-      <br>
-      <b>DLEP Radio Quality Extension</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2022-03-07
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">7 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-rogge-manet-dlep-radio-quality">
-    
-  </div>
-
-  
-    
-      I-D Exists
-    
-
-    
-
-    <wbr>
-
-    <wbr>
-    
-    
-
-    
-      
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-      
-    </tbody>
-  </table>
-
-
-  <ul class="list-inline pull-right" style="margin-top:1em;">
-  <li>
+    <div class="text-end">
     <label id="list-feeds">Atom feed:</label>
     <div class="btn-group" role="group" aria-labelledby="list-feeds">
-      <a class="btn btn-default" title="Feed of all changes" href="/group/manet/documents/feed/">All changes</a>
-      <a class="btn btn-default" title="Feed of only significant state changes" href="/group/manet/documents/feed/?significant=1">Significant</a>
+        <a class="btn btn-primary"
+           title="Feed of all changes"
+           href="/group/manet/documents/feed/">
+            <i class="bi bi-rss"></i> All changes
+        </a>
+        <a class="btn btn-primary"
+           title="Feed of only significant state changes"
+           href="/group/manet/documents/feed/?significant=1">
+            <i class="bi bi-rss"></i> Significant
+        </a>
     </div>
-  </li>
-
-  
-    <li><a class="btn btn-default" href="/group/manet/documents/subscription/">
-      <i class="glyphicon glyphicon-envelope"></i>
-      
-        Subscribe to changes
-      
-    </a></li>
-  
-
-  <li><a class="btn btn-default" href="/group/manet/documents/csv/"><i class="glyphicon glyphicon-list"></i> Export as CSV</a></li>
-</ul>
-
-
-
+    
+        <a class="btn btn-primary"
+           href="/group/manet/documents/subscription/">
+            <i class="bi bi-envelope"></i>
+            
+                Subscribe to changes
+            
+        </a>
+    
+    <a class="btn btn-primary"
+       href="/group/manet/documents/csv/">
+        <i class="bi bi-file-ruled"></i> Export as CSV
+    </a>
+</div>
 
 
+                    
+                </div>
+            </div>
+            <hr>
+            
+                <footer class="col-md-12 col-sm-12 text-center">
+                    <a href="https://www.ietf.org/" class="p-3">IETF</a>
+                    <a href="https://www.ietf.org/iesg/" class="p-3">IESG</a>
+                    <a href="https://www.iab.org/" class="p-3">IAB</a>
+                    <a href="https://www.irtf.org/" class="p-3">IRTF</a>
+                    <a href="https://www.ietf.org/llc/" class="p-3">IETF&nbsp;LLC</a>
+                    <a href="https://trustee.ietf.org/" class="p-3">IETF&nbsp;Trust</a>
+                    <a href="https://www.rfc-editor.org/" class="p-3">RFC&nbsp;Editor</a>
+                    <a href="https://www.iana.org/" class="p-3">IANA</a>
+                    <a href="https://www.ietf.org/privacy-statement/" class="p-3">Privacy&nbsp;Statement</a>
+                    <div class="small text-muted p-3">
+                        
+                            <a href="/release/about">About</a>
+                            <a href="https://github.com/ietf-tools/datatracker/">IETF Datatracker</a>
+                            
+                                <a href="https://github.com/ietf-tools/datatracker/releases/tag/8.0.0">Version 8.0.0</a>
+                            
+                            (main - 87fac4e)
+                        
+                        Report a bug:
+                        <a href="https://github.com/ietf-tools/datatracker/issues/new/choose">
+                            GitHub
+                            <i class="bi bi-bug"></i>
+                        </a>
+                        
+                            <a href="mailto:datatracker-project@ietf.org">
+                                Email
+                                <i class="bi bi-envelope"></i>
+                            </a>
+                        
+                        <br>
+                        Python 3.6.12
+                        Django 2.2.28
+                        <br>
+                        
+
+
+
+
+
+                    </div>
+                </footer>
+            
+        </div>
         
-        
-	  </div>
-        
+    <script src="https://www.ietf.org/lib/dt/8.0.0/ietf/js/list.js"></script>
 
-	
-	<hr>
-	  <div class="col-md-12 col-sm-12">
-	    <div class="text-center padded">
-	        <a href="https://www.rfc-editor.org/" class="padded">RFC&nbsp;Editor</a>
-	        <a href="https://www.ietf.org/llc/" class="padded">IASA&nbsp;&amp;&nbsp;IETF&nbsp;LLC</a>
-	        <a href="https://trustee.ietf.org/" class="padded">IETF&nbsp;Trust</a>
-	        <a href="https://www.irtf.org/" class="padded">IRTF</a>
-	        <a href="https://www.ietf.org/" class="padded">IETF</a>
-	        <a href="https://www.ietf.org/iesg/" class="padded">IESG</a>
-	        <a href="https://www.iab.org/" class="padded">IAB</a>
-	        <a href="https://www.iana.org/" class="padded">IANA</a>
-	        <a href="https://www.ietf.org/privacy-statement/" class="padded">Privacy&nbsp;Statement</a>
-	    </div>
-	  </div>
-
-
-        <footer class="col-md-12 col-sm-12">
-	  <div class="col-md-12">
-	    <div class="text-center">
-	      <p class="small text-muted">
-	        
-		  <a href="/release/about">About</a> |
-	          IETF Datatracker |
-	          <a href="/release/7.46.0.p4/">Version 7.46.0.p4</a> |
-	          2022-03-10 |
-	        
-		Report a bug:
-	        <a href="https://trac.ietf.org/trac/ietfdb/newticket">Tracker:<span class="fa fa-bug"></span></a>
-                
-	        <a href="mailto:datatracker-project@ietf.org">Email:<span class="fa fa-envelope"></span></a>
-                
-		<br>
-                Python 3.6.12 |
-		Django 2.2.27
-	      </p>
-	    </div>
-	  </div>
-        </footer>
-	
-
-      </div>
-
-      
-
-
-
-
-      <script src="https://www.ietf.org/lib/dt/7.46.0/jquery/jquery.min.js"></script>
-      
-      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
-      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
-      <script src="https://www.ietf.org/lib/dt/7.46.0/js-cookie/src/js.cookie.js"></script>
-      <script src="https://www.ietf.org/lib/dt/7.46.0/ietf/bootstrap/js/bootstrap.min.js"></script>
-      <script src="https://www.ietf.org/lib/dt/7.46.0/ietf/js/ietf.js"></script>
-      
-<script src="https://www.ietf.org/lib/dt/7.46.0/jquery.tablesorter/js/jquery.tablesorter.combined.min.js"></script>
-
-      
-  <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6fb2acb8281ba361',m:'.wudTZ4_n.4tpN.kMY5U51ETFJWcPr_xkDQVpeSftH4-1649836899-0-AYXDgmIlRGw6QchoyXAnv8j41TlSbfUp7RYw3rrswwccpuDgKFuARN4s7owd1L0Z9vO1GT6/TNyO1fSahE4V4z6mS6sy6ijWUmZoXadm1toKD975yHcxfvb209FlsEmE6vkxRJYz1yPuPVulipuABI0=',s:[0x6270c2f882,0x20ea8d1a9b],}})();</script></body>
+        <script src="https://www.ietf.org/lib/dt/8.0.0/ietf/js/select2.js"></script>
+        <script>
+            $('#navbar-doc-search').on('select2:select', function (e) {
+                window.location.href = e.params.data.url;
+            });
+        </script>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6ff48ee18bd5a9bf',m:'9UqIPfn5w3PvKhpL7K9fRejOm24iUf746uEPKjYc1ws-1650527736-0-AW6/3a730JWzeeQscatRTuyNPXv14/YrSXG6Usjz24MMciBMlfTxO1bOT9CxX1zOBFtk1GH6BmFZ1coO+BkCVWSMpgBS4y+rro2CDs3rjkL48tP5vM2cW81SLw0tQ6LAMm5Y+ALsePOkFXRpCXKcof8=',s:[0xc91ef6c450,0x64875f672d],}})();</script></body>
 </html>

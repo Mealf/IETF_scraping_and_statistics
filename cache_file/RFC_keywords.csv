@@ -1,3 +1,4 @@
+doc,keyword
 RFC0114,ftp
 RFC0133,ftp
 RFC0141,ftp
@@ -26514,6 +26515,7 @@ RFC9210,dns
 RFC9210,tcp
 RFC9212,nss
 RFC9212,remote administration
+RFC9214,mpls
 RFC9215,gost
 RFC9215,pki
 RFC9219,jmap
@@ -26534,6 +26536,16 @@ RFC9224,json
 RFC9225,bugs
 RFC9227,aead
 RFC9227,mgm
+RFC9228,handling
+RFC9228,email
+RFC9228,mhs
+RFC9228,recipient
+RFC9228,transport
+RFC9228,delivery
+RFC9228,mda
+RFC9228,mta
+RFC9228,relay
+RFC9228,header
 RFC9233,idn
 RFC9233,idna
 RFC9233,idna2008

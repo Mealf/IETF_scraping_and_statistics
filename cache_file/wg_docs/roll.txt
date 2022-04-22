@@ -1,3928 +1,3717 @@
-<!DOCTYPE html> 
+
+<!DOCTYPE html>
+
 
 
 
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Routing Over Low power and Lossy networks (roll) - Documents</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>
+            Routing Over Low power and Lossy networks (roll)
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="https://www.ietf.org/lib/dt/8.0.0/ietf/css/ietf.css">
+        <link rel="stylesheet" href="https://www.ietf.org/lib/dt/8.0.0/ietf/css/select2.css">
+        <style>
+            
+            .leftmenu { width: 13em; }
+        </style>
+        
+    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/8.0.0/ietf/css/list.css">
 
-    <link href="https://www.ietf.org/lib/dt/7.46.0/ptmono/stylesheet.css" rel='stylesheet' type='text/css'>
-    <link href="https://www.ietf.org/lib/dt/7.46.0/ptsans/stylesheet.css" rel='stylesheet' type='text/css'>
-    <link href="https://www.ietf.org/lib/dt/7.46.0/ptserif/stylesheet.css" rel='stylesheet' type='text/css'>
+        
+            <link rel="shortcut icon"
+                  href="https://www.ietf.org/lib/dt/8.0.0/ietf/images/ietf-icon-blue3.png">
+        
+        <link rel="apple-touch-icon"
+              href="https://www.ietf.org/lib/dt/8.0.0/ietf/images/apple-touch-icon.png">
+        <script src="https://www.ietf.org/lib/dt/8.0.0/ietf/js/ietf.js"></script>
+    <script async src='/cdn-cgi/bm/cv/669835187/api.js'></script></head>
+    <body  class="position-relative"
+          data-group-menu-data-url="/group/groupmenu.json">
+        <a class="visually-hidden visually-hidden-focusable" href="#content">Skip to main content</a>
+        <nav class="navbar navbar-expand-lg  navbar-dark bg-secondary    fixed-top ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">
+                    <img alt="IETF Logo"
+                         src="https://www.ietf.org/lib/dt/8.0.0/ietf/images/ietflogo-small-transparent.png">
+                    Datatracker
+                    
+                </a>
+                <div class="collapse navbar-collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        
+
+
+
+
+<li class="nav-item dropdown">
+    
+        <a href="#"
+           class="nav-link dropdown-toggle"
+           role="button"
+           data-bs-auto-close="false"
+           data-bs-toggle="dropdown"
+           aria-expanded="false">
+            Groups
+        </a>
+        <ul class="dropdown-menu mt-n1">
+        
+    <li class="dropdown-header">By area/parent</li>
     
 
-    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/ietf/font-datatracker/css/font-datatracker.css">
-    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/ietf/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/ietf/bootstrap/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/ietf/css/ietf.css">
-    
-    <style>
-     
-    </style>
-
-    
-<link rel="stylesheet" href="https://www.ietf.org/lib/dt/7.46.0/jquery.tablesorter/css/theme.bootstrap.min.css">
 
 
-    
-    <link rel="shortcut icon" href="https://www.ietf.org/lib/dt/7.46.0/ietf/images/ietf-icon-blue3.png">
-    
-    <link rel="apple-touch-icon" href="https://www.ietf.org/lib/dt/7.46.0/ietf/images/apple-touch-icon.png">
-  <script async src='/cdn-cgi/bm/cv/669835187/api.js'></script></head>
+    <li class="dropend group-menu group-parent-2010">
+        <a class="dropdown-item dropdown-toggle "
+           href="/wg/#art">
+            Apps &amp; Realtime
+        </a>
+    </li>
 
-  <body  data-group-menu-data-url="/group/groupmenu.json">
-      <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container-fluid">
-	  <div class="navbar-header">
-	    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-	      <span class="sr-only">Toggle navigation</span>
-	      <span class="icon-bar"></span>
-	      <span class="icon-bar"></span>
-	      <span class="icon-bar"></span>
-	    </button>
-	    <a class="navbar-brand" href="/">
-	       <img alt="IETF Logo" src="https://www.ietf.org/lib/dt/7.46.0/ietf/images/ietflogo-small-transparent.png">
-	       
-		  
-		  Datatracker
-		  
-	       
-	    </a>
-	  </div>
+    <li class="dropend group-menu group-parent-1008">
+        <a class="dropdown-item dropdown-toggle "
+           href="/wg/#gen">
+            General
+        </a>
+    </li>
 
-	  <noscript>
-	    <p class="navbar-text"><small>Enable Javascript for full functionality.</small></p>
-	  </noscript>
+    <li class="dropend group-menu group-parent-1052">
+        <a class="dropdown-item dropdown-toggle "
+           href="/wg/#int">
+            Internet
+        </a>
+    </li>
 
-	  <div class="collapse navbar-collapse" id="navbar-collapse">
-	    <ul class="hidden-nojs nav navbar-nav">
-              
+    <li class="dropend group-menu group-parent-1193">
+        <a class="dropdown-item dropdown-toggle "
+           href="/wg/#ops">
+            Ops &amp; Management
+        </a>
+    </li>
+
+    <li class="dropend group-menu group-parent-1249">
+        <a class="dropdown-item dropdown-toggle "
+           href="/wg/#rtg">
+            Routing
+        </a>
+    </li>
+
+    <li class="dropend group-menu group-parent-1260">
+        <a class="dropdown-item dropdown-toggle "
+           href="/wg/#sec">
+            Security
+        </a>
+    </li>
+
+    <li class="dropend group-menu group-parent-1324">
+        <a class="dropdown-item dropdown-toggle "
+           href="/wg/#tsv">
+            Transport
+        </a>
+    </li>
+
+    <li class="dropend group-menu group-parent-7">
+        <a class="dropdown-item dropdown-toggle "
+           href="/program/">
+            IAB
+        </a>
+    </li>
+
+    <li class="dropend group-menu group-parent-3">
+        <a class="dropdown-item dropdown-toggle "
+           href="/rg/">
+            IRTF
+        </a>
+    </li>
+
+    <li class="dropend group-menu group-parent-2309">
+        <a class="dropdown-item dropdown-toggle "
+           href="/adm/">
+            IETF LLC
+        </a>
+    </li>
 
 
-
-
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-  
-  Groups
-  
-    </a>
-    <ul class="dropdown-menu" role="menu">
-
-    <li class="dropdown-header visible-lg-block">By area/parent</li>
-  
+    <li class="dropend">
+        <a class="dropdown-item dropdown-toggle "
+           href="/group/">
+            Other
+        </a>
         
 
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-2010">
-    <a href="/wg/#art">Apps &amp; Realtime</a>
-  </li>
 
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1008">
-    <a href="/wg/#gen">General</a>
-  </li>
-
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1052">
-    <a href="/wg/#int">Internet</a>
-  </li>
-
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1193">
-    <a href="/wg/#ops">Ops &amp; Mgmt</a>
-  </li>
-
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1249">
-    <a href="/wg/#rtg">Routing</a>
-  </li>
-
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1260">
-    <a href="/wg/#sec">Security</a>
-  </li>
-
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-1324">
-    <a href="/wg/#tsv">Transport</a>
-  </li>
-
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-7">
-    <a href="/program/">IAB</a>
-  </li>
-
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-3">
-    <a href="/rg/">IRTF</a>
-  </li>
-
-  <li class="hidden-nojs dropdown-submenu group-menu group-parent-2309">
-    <a href="/adm/">IETF LLC</a>
-  </li>
-
-
-        <li class="dropdown-submenu group-menu"><a href="/group/">Other</a>
-<ul class="dropdown-menu" role="menu">
-
-  <li>
-    <a href="/ag/">Active AGs</a>
-  </li>
-
-  <li>
-    <a href="/area/">Active Areas</a>
-  </li>
-
-  <li>
-    <a href="/dir/">Active Directorates</a>
-  </li>
-
-  <li>
-    <a href="/program/">Active Programs</a>
-  </li>
-
-  <li>
-    <a href="/rag/">Active RAGs</a>
-  </li>
-
-  <li>
-    <a href="/team/">Active Teams</a>
-  </li>
-
-
-  <li>
-    <a href="/group/rsoc/">RSOC</a>
-  </li>
-
+<ul class="dropdown-menu ms-n1">
+    
+        <li>
+            <a class="dropdown-item "
+               href="/ag/">Active AGs</a>
+        </li>
+    
+        <li>
+            <a class="dropdown-item "
+               href="/area/">Active Areas</a>
+        </li>
+    
+        <li>
+            <a class="dropdown-item "
+               href="/dir/">Active Directorates</a>
+        </li>
+    
+        <li>
+            <a class="dropdown-item "
+               href="/program/">Active Programs</a>
+        </li>
+    
+        <li>
+            <a class="dropdown-item "
+               href="/rag/">Active RAGs</a>
+        </li>
+    
+        <li>
+            <a class="dropdown-item "
+               href="/team/">Active Teams</a>
+        </li>
+    
+    
+        <li>
+            <a class="dropdown-item "
+               href="/group/rsoc/">RSOC</a>
+        </li>
+    
 </ul>
- </li>
 
-  <li class="divider hidden-xs"></li>
-  <li class="dropdown-header hidden-xs">New work</li>
-  <li><a href="/group/chartering/">Chartering groups</a></li>
-  <li><a href="/wg/bofs/">BOFs</a></li>
-  <li><a href="/doc/bof-requests">BOF Requests</a></li>
-
-  <li class="divider hidden-xs"></li>
-  <li class="dropdown-header hidden-xs">Other groups</li>
-  <li><a href="/group/concluded/">Concluded groups</a></li>
-  <li><a href="/list/nonwg">Non-WG lists</a></li>
-
-</ul>
-</li>
-
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-  
-  Documents
-  
-    </a>
-    <ul class="dropdown-menu" role="menu">
-  
-  <li><a href="/doc/search">Search</a></li>
-  <li><a href="/doc/recent">Recent drafts</a></li>
-  <li><a href="/submit/">Draft submission</a></li>
-
-  
-
-
-  <li class="divider hidden-xs"></li>
-  <li class="dropdown-header hidden-xs">RFC streams</li>
-        <li><a href="/stream/iab/">IAB</a></li>
-        <li><a href="/stream/irtf/">IRTF</a></li>
-        <li><a href="/stream/ise/">ISE</a></li>
-
-</ul>
-</li>
-
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-  
-  Meetings
-  
-    </a>
-    <ul class="dropdown-menu" role="menu">
-  
-
-
-  
-  <li class="dropdown-header visible-lg-block">Next meeting</li>
-  
-  <li><a href="/meeting/agenda/">Agenda</a></li>
-  <li><a href="/meeting/materials/">Materials</a></li>
-  <li><a href="/meeting/floor-plan/">Floor plan</a></li>
-  <li><a href="https://www.ietf.org/how/meetings/register/">Registration</a></li>
-  <li><a href="/meeting/important-dates/">Important dates</a></li>
-  <li><a href="/secr/sreq/">Request a session</a></li>
-  <li><a href="/meeting/requests">Session requests</a></li>
-  
-  <li class="divider hidden-xs"></li>
-  <li class="dropdown-header visible-lg-block">Upcoming meetings</li>
-  
-  <li><a href="/meeting/upcoming">Upcoming meetings</a></li>
-  
-  <li class="divider hidden-xs"></li>
-  <li class="dropdown-header visible-lg-block">Past meetings</li>
-  
-  <li><a href="/meeting/past">Past meetings</a></li>
-  <li><a href="https://www.ietf.org/how/meetings/past/">Meeting proceedings</a></li>
-</ul>
-</li>
-
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-  
-  Other
-  
-    </a>
-    <ul class="dropdown-menu" role="menu">
-  
-
-  <li><a href="/ipr/">IPR disclosures</a></li>
-  <li><a href="/liaison/">Liaison statements</a></li>
-  <li><a href="/iesg/agenda/">IESG agenda</a></li>
-  <li><a href="/nomcom/">NomComs</a></li>
-  <li><a href="/doc/downref/">Downref registry</a></li>
-  <li class="dropdown-submenu">
-    <a href="/stats/">Statistics</a>
-    <ul class="dropdown-menu">
-      <li><a href="/stats/document/">Drafts/RFCs</a></li>
-      <li><a href="/stats/meeting/">Meetings</a></li>
-      
+    </li>
+    <li><hr class="dropdown-divider"></li>
+    <li class="dropdown-header">New work</li>
+    <li>
+        <a class="dropdown-item "
+           href="/group/chartering/">
+            Chartering groups
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/wg/bofs/">
+            BOFs
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/doc/bof-requests">
+            BOF Requests
+        </a>
+    </li>
+    <li><hr class="dropdown-divider"></li>
+    <li class="dropdown-header">Other groups</li>
+    <li>
+        <a class="dropdown-item "
+           href="/group/concluded/">
+            Concluded groups
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/list/nonwg">
+            Non-WG lists
+        </a>
+    </li>
+    
     </ul>
-  </li>
-  <li><a href="/group/edu/materials/">Tutorials</a></li>
-  <li><a href="/api/">API Help</a></li>  
-  <li><a href="/release/">Release notes</a></li>
-  <li class="divider hidden-xs"></li>
-  <li><a href="https://trac.ietf.org/trac/ietfdb/newticket"><span class="fa fa-bug"></span> Report a bug</a></li>
-</ul>
+</li>
+
+<li class="nav-item dropdown">
+    
+        <a href="#"
+           class="nav-link dropdown-toggle"
+           role="button"
+           data-bs-toggle="dropdown"
+           aria-expanded="false">
+            Documents
+        </a>
+        <ul class="dropdown-menu mt-n1">
+        
+    <li>
+        <a class="dropdown-item "
+           href="/doc/search">
+            Search
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/doc/recent">
+            Recent drafts
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/submit/">
+            Draft submission
+        </a>
+    </li>
+    
+    
+        <li><hr class="dropdown-divider">
+        </li>
+    
+    <li class="dropdown-header">
+        RFC streams
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/stream/iab/">
+            IAB
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/stream/irtf/">
+            IRTF
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/stream/ise/">
+            ISE
+        </a>
+    </li>
+    
+    </ul>
+</li>
+
+<li class="nav-item dropdown">
+    
+        <a href="#"
+           class="nav-link dropdown-toggle"
+           role="button"
+           data-bs-toggle="dropdown"
+           aria-expanded="false">
+            Meetings
+        </a>
+        <ul class="dropdown-menu mt-n1">
+        
+    <li>
+        <a class="dropdown-item "
+           href="/meeting/agenda/">
+            Agenda
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/meeting/materials/">
+            Materials
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/meeting/floor-plan/">
+            Floor plan
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="https://www.ietf.org/how/meetings/register/">
+            Registration
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/meeting/important-dates/">
+            Important dates
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/secr/sreq/">
+            Request a session
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/meeting/requests">
+            Session requests
+        </a>
+    </li>
+    
+        
+            <li><hr class="dropdown-divider">
+            </li>
+        
+        <li class="dropdown-header">
+            Upcoming meetings
+        </li>
+    
+    <li>
+        <a class="dropdown-item "
+           href="/meeting/upcoming">
+            Upcoming meetings
+        </a>
+    </li>
+    
+        
+            <li><hr class="dropdown-divider">
+            </li>
+        
+        <li class="dropdown-header">
+            Past meetings
+        </li>
+    
+    <li>
+        <a class="dropdown-item "
+           href="/meeting/past">
+            Past meetings
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="https://www.ietf.org/how/meetings/past/">
+            Meeting proceedings
+        </a>
+    </li>
+    
+    </ul>
+</li>
+
+<li class="nav-item dropdown">
+    
+        <a href="#"
+           class="nav-link dropdown-toggle"
+           role="button"
+           data-bs-toggle="dropdown"
+           aria-expanded="false">
+            Other
+        </a>
+        <ul class="dropdown-menu mt-n1">
+        
+    <li>
+        <a class="dropdown-item "
+           href="/ipr/">
+            IPR disclosures
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/liaison/">
+            Liaison statements
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/iesg/agenda/">
+            IESG agenda
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/nomcom/">
+            NomComs
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/doc/downref/">
+            Downref registry
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/stats/">
+            Statistics
+        </a>
+        <ul class="dropdown-menu mt-n1">
+            <li>
+                <a class="dropdown-item "
+                   href="/stats/document/">
+                    Drafts/RFCs
+                </a>
+            </li>
+            <li>
+                <a class="dropdown-item "
+                   href="/stats/meeting/">
+                    Meetings
+                </a>
+            </li>
+            
+        </ul>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/group/edu/materials/">
+            Tutorials
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/api/">
+            API Help
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item "
+           href="/release/">
+            Release notes
+        </a>
+    </li>
+    
+        <li><hr class="dropdown-divider">
+        </li>
+    
+    <li>
+        <a class="dropdown-item "
+           href="https://github.com/ietf-tools/datatracker/issues/new/choose">
+            <i class="bi bi-bug">
+            </i>
+            Report a bug
+        </a>
+    </li>
+    
+    </ul>
 </li>
 
 
-  
-
-
-<li class="dropdown">
-  
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-     User 
-  </a>
-  <ul class="dropdown-menu" role="menu">
-  
-
-  
     
-      <li><a rel="nofollow" href="/accounts/login/?next=/wg/roll/documents/">Sign in</a></li>
-      <li><a rel="nofollow" href="/accounts/reset/">Password reset</a></li>
-      <li><a href="/accounts/settings/" rel="nofollow">Preferences</a></li>
+
+
+
+<li class="nav-item dropdown">
     
-    <li><a href="/help/personal-information">Handling of personal information</a></li>  
-  
-
-  
-    <li><a href="/accounts/create/">New account</a></li>
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-</ul>
-
-            </ul>
+        <a href="#"
+           class="nav-link dropdown-toggle"
+           role="button"
+           data-bs-toggle="dropdown"
+           aria-expanded="false">
+            
+                User
+            
+        </a>
+        <ul class="dropdown-menu  mt-n1 ">
         
-            <p class="navbar-text"></p>
-            <a class="btn btn-warning btn-sm navbar-btn" rel="nofollow" href="/accounts/login/?next=/wg/roll/documents/">Sign in</a>
+    
+        
+            <li>
+                <a class="dropdown-item "
+                   rel="nofollow"
+                   href="/accounts/login/?next=/wg/roll/documents/">
+                    Sign in
+                </a>
+            </li>
+            <li>
+                <a class="dropdown-item "
+                   rel="nofollow"
+                   href="/accounts/reset/">
+                    Password reset
+                </a>
+            </li>
+            <li>
+                <a class="dropdown-item "
+                   href="/accounts/settings/"
+                   rel="nofollow">
+                    Preferences
+                </a>
+            </li>
+        
+        <li>
+            <a class="dropdown-item "
+               href="/help/personal-information">
+                Handling of personal information
+            </a>
+        </li>
+    
+    
+        <li>
+            <a class="dropdown-item "
+               href="/accounts/create/">
+                New account
+            </a>
+        </li>
+    
+    
+    
+    
+    
+    
+    </ul></li>
+
+
+
+                    </ul>
+                </div>
+                
+                    <a class="d-none d-sm-block mx-5 btn  btn-warning "
+                       rel="nofollow"
+                       href="/accounts/login/?next=/wg/roll/documents/">
+                        Sign
+                        in
+                    </a>
+                
+                <div class="d-flex d-none d-lg-block">
+                    <label aria-label="Document search">
+                    <input class="form-control select2-field"
+                           id="navbar-doc-search"
+                           data-ajax--url="/doc/select2search/docalias/draft/"
+                           type="text"
+                           data-placeholder="Document search">
+                   </label>
+                </div>
+                <button class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbar-collapse"
+                        aria-controls="navbar-collapse"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <i class="navbar-toggler-icon"></i>
+                </button>
+            </div>
+        </nav>
+        <div class="pt-3 container-fluid">
+            <div class="row">
+                
+                <div class="col mx-lg-3 ietf-auto-nav" id="content">
+                    <noscript>
+                        <div class="alert alert-danger alert-ignore my-3">
+                            <b>Javascript disabled?</b> Like other modern websites, the IETF Datatracker relies on Javascript.
+                            Please enable Javascript for full functionality.
+                        </div>
+                    </noscript>
+                    
+                    
+    
+    <h1>
+        Routing Over Low power and Lossy networks (roll)
+        
+        
+        
+    </h1>
+    <ul class="nav nav-tabs my-3">
+        
+            <li class="nav-item">
+                <a class="nav-link "
+                   href="/wg/roll/about/">About</a>
+            </li>
+        
+            <li class="nav-item">
+                <a class="nav-link active"
+                   href="/wg/roll/documents/">Documents</a>
+            </li>
+        
+            <li class="nav-item">
+                <a class="nav-link "
+                   href="/wg/roll/meetings/">Meetings</a>
+            </li>
+        
+            <li class="nav-item">
+                <a class="nav-link "
+                   href="/wg/roll/history/">History</a>
+            </li>
+        
+            <li class="nav-item">
+                <a class="nav-link "
+                   href="/wg/roll/photos/">Photos</a>
+            </li>
+        
+            <li class="nav-item">
+                <a class="nav-link "
+                   href="/wg/roll/email/">Email expansions</a>
+            </li>
+        
+            <li class="nav-item">
+                <a class="nav-link "
+                   href="https://mailarchive.ietf.org/arch/browse/roll/">List archive &raquo;</a>
+            </li>
+        
+    </ul>
+    <div class="buttonlist">
+        
+            
+        
+    </div>
+    
+    
+    
         
 
-	    <form class="navbar-form navbar-right hidden-xs" action="/doc/search/">
-	      <div class="form-group">
-	        <input class="form-control input-sm" type="text" name="name" placeholder="Document search" required>
-	        <input type="hidden" name="activedrafts" value="on">
-	        <input type="hidden" name="rfcs" value="on">
-	      </div>
-	    </form>
-	  </div>
+
+
+
+
+
+    <table class="table table-sm table-striped tablesorter">
+        <thead>
+            <tr>
+                <th scope="col"></th>
+                
+                    
+                        <th scope="col" data-sort="document"
+                            >
+                            
+                                Document
+                            
+                        </th>
+                    
+                
+                    
+                
+                    
+                        <th scope="col" data-sort="date"
+                            >
+                            
+                                Date
+                            
+                        </th>
+                    
+                
+                    
+                        <th scope="col" data-sort="status"
+                            >
+                            
+                                Status
+                            
+                        </th>
+                    
+                
+                    
+                        <th scope="col" data-sort="ipr"
+                            
+                              class="d-none d-sm-table-cell"
+                            >
+                            
+                                IPR
+                            
+                        </th>
+                    
+                
+                    
+                        <th scope="col" data-sort="ad"
+                            
+                              class="d-none d-sm-table-cell"
+                            >
+                            
+                                AD/Shepherd
+                            
+                        </th>
+                    
+                
+            </tr>
+        </thead>
+
+
+
+    <tbody>
+        <tr class="table-info">
+            <td></td>
+            
+                <th scope="col" colspan="5">
+            
+            Active Internet-Drafts (8 hits)
+            </th>
+        </tr>
+    </tbody>
+    <tbody>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">33 pages</small>
+        <div>
+            <a href="/doc/draft-ietf-roll-aodv-rpl/">
+                
+                    draft-ietf-roll-aodv-rpl-13
+                
+            </a>
+            
+            <br>
+            
+            <b>Supporting Asymmetric Links in Low Power Networks: AODV-RPL</b>
+            
         </div>
-      </nav>
-      <div class="container-fluid-narrow">
         
-        
-        
-	  <div class="col-md-12 col-sm-12" id="content">
-        
-        
-  
-
-  <h1>Routing Over Low power and Lossy networks (roll)
-    
-    
-    
-  </h1>
-
-  <ul class="nav nav-tabs" role="tablist">
-    
-      <li >
-        <a href="/wg/roll/about/">About</a>
-      </li>
-    
-      <li class="active">
-        <a href="/wg/roll/documents/">Documents</a>
-      </li>
-    
-      <li >
-        <a href="/wg/roll/meetings/">Meetings</a>
-      </li>
-    
-      <li >
-        <a href="/wg/roll/history/">History</a>
-      </li>
-    
-      <li >
-        <a href="/wg/roll/photos/">Photos</a>
-      </li>
-    
-      <li >
-        <a href="/wg/roll/email/">Email expansions</a>
-      </li>
-    
-      <li >
-        <a href="https://mailarchive.ietf.org/arch/browse/roll/">List archive &raquo;</a>
-      </li>
-    
-  </ul>
-
-  <div class="buttonlist">
-    
-      
-    
-  </div>
-
-  
-  
-  
-    
+    </td>
+    <td>
+            
+                    
+                        2022-03-07
+                    
+                    
+                
+                
+            </td>
+            
 
 
 
-
-  
-
-  
-  <table class="table table-condensed table-striped tablesorter">
-    <thead>
-      <tr>
-        <th class="sorter-false"></th>
-
-        
-          
-            <th data-header="document">
-	      
-	        Document
-	      
-            </th>
-          
-        
-          
-        
-          
-            <th data-header="date">
-	      
-	        Date
-	      
-            </th>
-          
-        
-          
-            <th data-header="status">
-	      
-	        Status
-	      
-            </th>
-          
-        
-          
-            <th data-header="ipr">
-	      
-	        IPR
-	      
-            </th>
-          
-        
-          
-            <th data-header="ad">
-	      
-	        AD / Shepherd
-	      
-            </th>
-          
-        
-
-        
-      </tr>
-    </thead>
-
+<td class="status">
     
+        <div class="float-end ms-1 mb-1" id="ballot-icon-draft-ietf-roll-aodv-rpl"></div>
+    
+    
+        
+            AD is watching
+        
+        
+        
+        
+        
+        
+            
+        
+        
+            <br>
+            
+                WG Document
+                
+                    :
+                
+            
+        
+        Proposed Standard
+        
+        
+            <br>
+            Reviews:
+            <a href="/group/genart/">genart</a>,
+                
+                    <a href="/group/iotdir/">iotdir</a>,
+                
+                    <a href="/group/opsdir/">opsdir</a>,
+                
+                    <a href="/group/secdir/">secdir</a>
+        
+        
+            <br>
+            <span title="Part of roll milestone: Initial submission of a reactive P2P route discovery mechanism based on AODV-RPL protocol to the  IESG"
+                  class="milestone">Mar 2020</span>
+        
+        
+            <br>
+            Action Holder:
+            
+                <span ><a 
+           title="Responsible AD"
+            href="/person/aretana.ietf@gmail.com" >Alvaro Retana</a> <a 
+               href="mailto:aretana.ietf%40gmail.com"
+               aria-label="Compose email to aretana.ietf@gmail.com."
+               title="Compose email to aretana.ietf@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+            
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/aretana.ietf@gmail.com" >Alvaro Retana</a> <a 
+               href="mailto:aretana.ietf%40gmail.com"
+               aria-label="Compose email to aretana.ietf@gmail.com."
+               title="Compose email to aretana.ietf@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/mariainesrobles@googlemail.com" >Ines Robles</a> <a class="text-reset"
+               href="mailto:mariainesrobles%40googlemail.com"
+               aria-label="Compose email to mariainesrobles@googlemail.com."
+               title="Compose email to mariainesrobles@googlemail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
 
-      
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">17 pages</small>
+        <div>
+            <a href="/doc/draft-ietf-roll-capabilities/">
+                
+                    draft-ietf-roll-capabilities-09
+                
+            </a>
+            
+            <br>
+            
+            <b>RPL Capabilities</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2021-11-09
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+            <br>
+            
+                WG Document
+                
+            
+        
+        
+        
+        
+        
+            <br>
+            <span title="Part of roll milestone: Initial submission of Capabilities for RPL to the IESG"
+                  class="milestone">Jun 2023</span>
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">84 pages</small>
+        <div>
+            <a href="/doc/draft-ietf-roll-dao-projection/">
+                
+                    draft-ietf-roll-dao-projection-25
+                
+            </a>
+            
+            <br>
+            
+            <b>Root initiated routing state in RPL</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2022-03-23
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+            <br>
+            
+                WG Document
+                
+            
+        
+        
+        
+        
+        
+            <br>
+            <span title="Part of roll milestone: Initial submission of a root initiated routing state in RPL to the IESG"
+                  class="milestone">May 2022</span>
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+                    <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-roll-dao-projection">
+                        <span class="badge bg-info">1</span>
+                    </a>
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/mariainesrobles@googlemail.com" >Ines Robles</a> <a class="text-reset"
+               href="mailto:mariainesrobles%40googlemail.com"
+               aria-label="Compose email to mariainesrobles@googlemail.com."
+               title="Compose email to mariainesrobles@googlemail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">9 pages</small>
+        <div>
+            <a href="/doc/draft-ietf-roll-enrollment-priority/">
+                
+                    draft-ietf-roll-enrollment-priority-06
+                
+            </a>
+            
+            <br>
+            
+            <b>Controlling Secure Network Enrollment in RPL networks</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2022-02-28
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+            <br>
+            
+                WG Document
+                
+            
+        
+        
+        
+        
+        
+            <br>
+            <span title="Part of roll milestone: Initial submission of Controlling Secure Network Enrollment in RPL networks draft to the IESG"
+                  class="milestone">Sep 2022</span>
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/mariainesrobles@googlemail.com" >Ines Robles</a> <a class="text-reset"
+               href="mailto:mariainesrobles%40googlemail.com"
+               aria-label="Compose email to mariainesrobles@googlemail.com."
+               title="Compose email to mariainesrobles@googlemail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">9 pages</small>
+        <div>
+            <a href="/doc/draft-ietf-roll-mopex/">
+                
+                    draft-ietf-roll-mopex-04
+                
+            </a>
+            
+            <br>
+            
+            <b>Mode of Operation extension</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2021-11-09
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+            <br>
+            
+                WG Document
+                
+            
+        
+        
+        
+        
+        
+            <br>
+            <span title="Part of roll milestone: Initial submission of Mode of Operation extension for RPL to the IESG"
+                  class="milestone">Nov 2022</span>
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/mariainesrobles@googlemail.com" >Ines Robles</a> <a class="text-reset"
+               href="mailto:mariainesrobles%40googlemail.com"
+               aria-label="Compose email to mariainesrobles@googlemail.com."
+               title="Compose email to mariainesrobles@googlemail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">17 pages</small>
+        <div>
+            <a href="/doc/draft-ietf-roll-nsa-extension/">
+                
+                    draft-ietf-roll-nsa-extension-10
+                
+            </a>
+            
+            <br>
+            
+            <b>Common Ancestor Objective Function and Parent Set DAG Metric Container Extension</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2020-10-29
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            AD Evaluation::Revised I-D Needed
+        
+        
+        
+        <span class="badge bg-danger" title="Goal is &lt;14 days">for 35 days</span>
+        
+        
+            
+        
+        
+            <br>
+            
+                Submitted to IESG for Publication
+                
+                    :
+                
+            
+        
+        Proposed Standard
+        
+        
+        
+            <br>
+            <span title="Part of roll milestone: Initial submission of Common Ancestor Objective Functions and Parent Set DAG Metric Container Extension to the IESG"
+                  class="milestone">Mar 2020</span>
+        
+        
+            <br>
+            Action Holders:
+            
+                <span ><a 
+           title="Author"
+            href="/person/nicolas.montavont@enst-bretagne.fr" >Nicolas Montavont</a> <a 
+               href="mailto:nicolas.montavont%40enst-bretagne.fr"
+               aria-label="Compose email to nicolas.montavont@enst-bretagne.fr."
+               title="Compose email to nicolas.montavont@enst-bretagne.fr.">
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 34 days</span>,
+            
+                <span ><a 
+           title="Responsible AD"
+            href="/person/aretana.ietf@gmail.com" >Alvaro Retana</a> <a 
+               href="mailto:aretana.ietf%40gmail.com"
+               aria-label="Compose email to aretana.ietf@gmail.com."
+               title="Compose email to aretana.ietf@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 190 days</span>,
+            
+                <span ><a 
+           title="Author"
+            href="/person/pthubert@cisco.com" >Pascal Thubert</a> <a 
+               href="mailto:pthubert%40cisco.com"
+               aria-label="Compose email to pthubert@cisco.com."
+               title="Compose email to pthubert@cisco.com.">
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 34 days</span>,
+            
+                <span ><a 
+           title="Author"
+            href="/person/georgios.papadopoulos@imt-atlantique.fr" >Georgios Z. Papadopoulos</a> <a 
+               href="mailto:georgios.papadopoulos%40imt-atlantique.fr"
+               aria-label="Compose email to georgios.papadopoulos@imt-atlantique.fr."
+               title="Compose email to georgios.papadopoulos@imt-atlantique.fr.">
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 34 days</span>,
+            
+                <span ><a 
+           title="Author"
+            href="/person/aris@ariskou.com" >Remous-Aris Koutsiamanis</a> <a 
+               href="mailto:aris%40ariskou.com"
+               aria-label="Compose email to aris@ariskou.com."
+               title="Compose email to aris@ariskou.com.">
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 34 days</span>
+            
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+                    <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-roll-nsa-extension">
+                        <span class="badge bg-info">2</span>
+                    </a>
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/aretana.ietf@gmail.com" >Alvaro Retana</a> <a 
+               href="mailto:aretana.ietf%40gmail.com"
+               aria-label="Compose email to aretana.ietf@gmail.com."
+               title="Compose email to aretana.ietf@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/dominique.barthel@orange.com" >Dominique Barthel</a> <a class="text-reset"
+               href="mailto:dominique.barthel%40orange.com"
+               aria-label="Compose email to dominique.barthel@orange.com."
+               title="Compose email to dominique.barthel@orange.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">25 pages</small>
+        <div>
+            <a href="/doc/draft-ietf-roll-rnfd/">
+                
+                    draft-ietf-roll-rnfd-00
+                
+            </a>
+            
+            <br>
+            
+            <b>RNFD: Fast border router crash detection in RPL</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2022-03-01
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+            <br>
+            
+                WG Document
+                
+            
+        
+        
+        
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">21 pages</small>
+        <div>
+            <a href="/doc/draft-ietf-roll-rpl-observations/">
+                
+                    draft-ietf-roll-rpl-observations-07
+                
+            </a>
+            
+            <br>
+            
+            <b>RPL Observations</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2021-11-29
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+            <br>
+            
+                WG Document
+                
+            
+        
+        
+        
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+    </tbody>
+
     <tbody>
-        <tr class="info">
-          <th></th>
-          
-              <th colspan="5">
-          
-	    Active Internet-Drafts (8 hits)
-          </th>
+        <tr class="table-info">
+            <td></td>
+            
+                <th scope="col" colspan="5">
+            
+            RFCs (23 hits)
+            </th>
         </tr>
     </tbody>
-
     <tbody>
         
-          
+            
 
 
 
 
 
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-ietf-roll-aodv-rpl/">draft-ietf-roll-aodv-rpl-13</a>
-
-      
-      <br>
-      <b>Supporting Asymmetric Links in Low Power Networks: AODV-RPL</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2022-03-07
-    
-    </span>
 
 
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">21 pages</small>
+        <div>
+            <a href="/doc/rfc5548/">
+                
+                    RFC 5548
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-roll-urban-routing-reqs)</i>
+            <br>
+            
+            <b>Routing Requirements for Urban Low-Power and Lossy Networks</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2009-05
+                    
+                    
+                
+                
+            </td>
+            
 
-    
-      <br><small class="text-muted">33 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
 
 
 <td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-roll-aodv-rpl">
-    
-  </div>
-
-  
-    
-      AD is watching
-    
-
-    
-
-    <wbr>
-
-    <wbr>
     
     
-
-    
-      
-    
-
-    
-      <br>
-      
-	WG Document:<wbr>
-      
-    
-
-    
-      Proposed Standard
-    
-
-    
-
-    
-      <br>Reviews:
-      
-        genart, 
-      
-        iotdir, 
-      
-        opsdir, 
-      
-        secdir
-      
-    
-
-    
-      <br>
-      <span title="Part of roll milestone: Initial submission of a reactive P2P route discovery mechanism based on AODV-RPL protocol to the  IESG" class="milestone">Mar 2020</span>
-    
-
-    
-        <br>Action Holders:
         
-            <wbr><a title="Responsible AD" href="/person/aretana.ietf@gmail.com"><span class="">Alvaro Retana</span></a>&nbsp;<a href="mailto:aretana.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-
+        Informational RFC
+        
         
     
-  
-
-
-
 </td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/aretana.ietf@gmail.com"><span class="">Alvaro Retana</span></a>&nbsp;<a href="mailto:aretana.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/mariainesrobles@googlemail.com"><span class="small text-muted">Ines Robles</span></a>&nbsp;<a href="mailto:mariainesrobles%40googlemail.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/adrian@olddog.co.uk" >Adrian Farrel</a> <a 
+               href="mailto:adrian%40olddog.co.uk"
+               aria-label="Compose email to adrian@olddog.co.uk."
+               title="Compose email to adrian@olddog.co.uk.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
         
-          
+            
 
 
 
 
 
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-ietf-roll-capabilities/">draft-ietf-roll-capabilities-09</a>
-
-      
-      <br>
-      <b>RPL Capabilities</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2021-11-09
-    
-    </span>
 
 
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">27 pages</small>
+        <div>
+            <a href="/doc/rfc5673/">
+                
+                    RFC 5673
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-roll-indus-routing-reqs)</i>
+            <br>
+            
+            <b>Industrial Routing Requirements in Low-Power and Lossy Networks</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2009-10
+                    
+                    
+                
+                
+            </td>
+            
 
-    
-      <br><small class="text-muted">17 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
 
 
 <td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-roll-capabilities">
-    
-  </div>
-
-  
-    
-      I-D Exists
-    
-
-    
-
-    <wbr>
-
-    <wbr>
     
     
-
-    
-      
-    
-
-    
-      <br>
-      
-	WG Document
-      
-    
-
-    
-
-    
-
-    
-
-    
-      <br>
-      <span title="Part of roll milestone: Initial submission of Capabilities for RPL to the IESG" class="milestone">Jun 2023</span>
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
         
-          
-
-
-
-
-
-<tr >
-
-  <td>
+        Informational RFC
+        
+        
     
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-ietf-roll-dao-projection/">draft-ietf-roll-dao-projection-25</a>
-
-      
-      <br>
-      <b>Root initiated routing state in RPL</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2022-03-23
-    
-    </span>
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/adrian@olddog.co.uk" >Adrian Farrel</a> <a 
+               href="mailto:adrian%40olddog.co.uk"
+               aria-label="Compose email to adrian@olddog.co.uk."
+               title="Compose email to adrian@olddog.co.uk.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
 
 
 
-    
-      <br><small class="text-muted">84 pages</small>
-    
 
-    
 
-    
 
-  </td>
 
-  
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">17 pages</small>
+        <div>
+            <a href="/doc/rfc5826/">
+                
+                    RFC 5826
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-roll-home-routing-reqs)</i>
+            <br>
+            
+            <b>Home Automation Routing Requirements in Low-Power and Lossy Networks</b>
+            
+                <a class="badge bg-warning text-decoration-none float-end"
+                   href="https://www.rfc-editor.org/errata_search.php?rfc=5826">
+                    Errata
+                </a>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2010-04
+                    
+                    
+                
+                
+            </td>
+            
+
 
 
 <td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-roll-dao-projection">
-    
-  </div>
-
-  
-    
-      I-D Exists
-    
-
-    
-
-    <wbr>
-
-    <wbr>
     
     
-
-    
-      
-    
-
-    
-      <br>
-      
-	WG Document
-      
-    
-
-    
-
-    
-
-    
-
-    
-      <br>
-      <span title="Part of roll milestone: Initial submission of a root initiated routing state in RPL to the IESG" class="milestone">May 2022</span>
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-roll-dao-projection">
-        <span class="label label-default">1</span>
-      </a>
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      <a title="Shepherd" href="/person/mariainesrobles@googlemail.com"><span class="small text-muted">Ines Robles</span></a>&nbsp;<a href="mailto:mariainesrobles%40googlemail.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
         
-          
-
-
-
-
-
-<tr >
-
-  <td>
+        Informational RFC
+        
+        
     
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-ietf-roll-enrollment-priority/">draft-ietf-roll-enrollment-priority-06</a>
-
-      
-      <br>
-      <b>Controlling Secure Network Enrollment in RPL networks</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2022-02-28
-    
-    </span>
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/adrian@olddog.co.uk" >Adrian Farrel</a> <a 
+               href="mailto:adrian%40olddog.co.uk"
+               aria-label="Compose email to adrian@olddog.co.uk."
+               title="Compose email to adrian@olddog.co.uk.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
 
 
 
-    
-      <br><small class="text-muted">9 pages</small>
-    
 
-    
 
-    
 
-  </td>
 
-  
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">26 pages</small>
+        <div>
+            <a href="/doc/rfc5867/">
+                
+                    RFC 5867
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-roll-building-routing-reqs)</i>
+            <br>
+            
+            <b>Building Automation Routing Requirements in Low-Power and Lossy Networks</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2010-06
+                    
+                    
+                
+                
+            </td>
+            
+
 
 
 <td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-roll-enrollment-priority">
-    
-  </div>
-
-  
-    
-      I-D Exists
-    
-
-    
-
-    <wbr>
-
-    <wbr>
     
     
-
-    
-      
-    
-
-    
-      <br>
-      
-	WG Document
-      
-    
-
-    
-
-    
-
-    
-
-    
-      <br>
-      <span title="Part of roll milestone: Initial submission of Controlling Secure Network Enrollment in RPL networks draft to the IESG" class="milestone">Sep 2022</span>
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      <a title="Shepherd" href="/person/mariainesrobles@googlemail.com"><span class="small text-muted">Ines Robles</span></a>&nbsp;<a href="mailto:mariainesrobles%40googlemail.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
         
-          
-
-
-
-
-
-<tr >
-
-  <td>
+        Informational RFC
+        
+        
     
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-ietf-roll-mopex/">draft-ietf-roll-mopex-04</a>
-
-      
-      <br>
-      <b>Mode of Operation extension</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2021-11-09
-    
-    </span>
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/adrian@olddog.co.uk" >Adrian Farrel</a> <a 
+               href="mailto:adrian%40olddog.co.uk"
+               aria-label="Compose email to adrian@olddog.co.uk."
+               title="Compose email to adrian@olddog.co.uk.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
 
 
 
-    
-      <br><small class="text-muted">9 pages</small>
-    
 
-    
 
-    
 
-  </td>
 
-  
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">13 pages</small>
+        <div>
+            <a href="/doc/rfc6206/">
+                
+                    RFC 6206
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-roll-trickle)</i>
+            <br>
+            
+            <b>The Trickle Algorithm</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2011-03
+                    
+                    
+                
+                
+            </td>
+            
+
 
 
 <td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-roll-mopex">
-    
-  </div>
-
-  
-    
-      I-D Exists
-    
-
-    
-
-    <wbr>
-
-    <wbr>
     
     
-
-    
-      
-    
-
-    
-      <br>
-      
-	WG Document
-      
-    
-
-    
-
-    
-
-    
-
-    
-      <br>
-      <span title="Part of roll milestone: Initial submission of Mode of Operation extension for RPL to the IESG" class="milestone">Nov 2022</span>
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      <a title="Shepherd" href="/person/mariainesrobles@googlemail.com"><span class="small text-muted">Ines Robles</span></a>&nbsp;<a href="mailto:mariainesrobles%40googlemail.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
         
-          
-
-
-
-
-
-<tr >
-
-  <td>
+        Proposed Standard RFC
+        
+        
     
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-ietf-roll-nsa-extension/">draft-ietf-roll-nsa-extension-10</a>
-
-      
-      <br>
-      <b>Common Ancestor Objective Function and Parent Set DAG Metric Container Extension</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2020-10-29
-    
-    </span>
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/adrian@olddog.co.uk" >Adrian Farrel</a> <a 
+               href="mailto:adrian%40olddog.co.uk"
+               aria-label="Compose email to adrian@olddog.co.uk."
+               title="Compose email to adrian@olddog.co.uk.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
 
 
 
-    
-      <br><small class="text-muted">17 pages</small>
-    
 
-    
 
-    
 
-  </td>
 
-  
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">157 pages</small>
+        <div>
+            <a href="/doc/rfc6550/">
+                
+                    RFC 6550
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-roll-rpl)</i>
+            <br>
+            
+            <b>RPL: IPv6 Routing Protocol for Low-Power and Lossy Networks</b>
+            
+                <a class="badge bg-danger text-decoration-none float-end"
+                   href="https://www.rfc-editor.org/errata_search.php?rfc=6550">
+                    Errata
+                </a>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2012-03
+                    
+                    
+                
+                
+            </td>
+            
+
 
 
 <td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-roll-nsa-extension">
-    
-  </div>
-
-  
-    
-      AD Evaluation::<wbr>Revised I-D Needed
-    
-
-    
-
-    <wbr>
-
-    <wbr><span class="label label-warning" title="Goal is &lt;14 days">for 27 days</span>
     
     
-
-    
-      
-    
-
-    
-      <br>
-      
-	Submitted to IESG for Publication:<wbr>
-      
-    
-
-    
-      Proposed Standard
-    
-
-    
-
-    
-
-    
-      <br>
-      <span title="Part of roll milestone: Initial submission of Common Ancestor Objective Functions and Parent Set DAG Metric Container Extension to the IESG" class="milestone">Mar 2020</span>
-    
-
-    
-        <br>Action Holders:
         
-            <wbr><a title="Author" href="/person/nicolas.montavont@enst-bretagne.fr"><span class="">Nicolas Montavont</span></a>&nbsp;<a href="mailto:nicolas.montavont%40enst-bretagne.fr"><span class="fa fa-envelope-o tiny"></span></a>
-<span class="label label-danger" title="Goal is &lt;20 days">for 26 days</span>, 
+        Proposed Standard RFC
         
-            <wbr><a title="Responsible AD" href="/person/aretana.ietf@gmail.com"><span class="">Alvaro Retana</span></a>&nbsp;<a href="mailto:aretana.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-<span class="label label-danger" title="Goal is &lt;20 days">for 182 days</span>, 
         
-            <wbr><a title="Author" href="/person/pthubert@cisco.com"><span class="">Pascal Thubert</span></a>&nbsp;<a href="mailto:pthubert%40cisco.com"><span class="fa fa-envelope-o tiny"></span></a>
-<span class="label label-danger" title="Goal is &lt;20 days">for 26 days</span>, 
-        
-            <wbr><a title="Author" href="/person/georgios.papadopoulos@imt-atlantique.fr"><span class="">Georgios Papadopoulos</span></a>&nbsp;<a href="mailto:georgios.papadopoulos%40imt-atlantique.fr"><span class="fa fa-envelope-o tiny"></span></a>
-<span class="label label-danger" title="Goal is &lt;20 days">for 26 days</span>, 
-        
-            <wbr><a title="Author" href="/person/aris@ariskou.com"><span class="">Remous-Aris Koutsiamanis</span></a>&nbsp;<a href="mailto:aris%40ariskou.com"><span class="fa fa-envelope-o tiny"></span></a>
-<span class="label label-danger" title="Goal is &lt;20 days">for 26 days</span>
+            <br>
+            <span class="text-muted">Updated by <a href="/doc/rfc9008/">RFC 9008</a>, <a href="/doc/rfc9010/">RFC 9010</a></span>
         
     
-  
-
-
-
 </td>
-
-
-  <td class="ipr text-center">
-    
-      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-roll-nsa-extension">
-        <span class="label label-default">2</span>
-      </a>
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/aretana.ietf@gmail.com"><span class="">Alvaro Retana</span></a>&nbsp;<a href="mailto:aretana.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/dominique.barthel@orange.com"><span class="small text-muted">Dominique Barthel</span></a>&nbsp;<a href="mailto:dominique.barthel%40orange.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
+            <td class="text-center d-none d-sm-table-cell">
+                
+                    <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-roll-rpl">
+                        <span class="badge bg-info">4</span>
+                    </a>
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/adrian@olddog.co.uk" >Adrian Farrel</a> <a 
+               href="mailto:adrian%40olddog.co.uk"
+               aria-label="Compose email to adrian@olddog.co.uk."
+               title="Compose email to adrian@olddog.co.uk.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
         
-          
+            
 
 
 
 
 
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-ietf-roll-rnfd/">draft-ietf-roll-rnfd-00</a>
-
-      
-      <br>
-      <b>RNFD: Fast border router crash detection in RPL</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2022-03-01
-    
-    </span>
 
 
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">30 pages</small>
+        <div>
+            <a href="/doc/rfc6551/">
+                
+                    RFC 6551
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-roll-routing-metrics)</i>
+            <br>
+            
+            <b>Routing Metrics Used for Path Calculation in Low-Power and Lossy Networks</b>
+            
+                <a class="badge bg-danger text-decoration-none float-end"
+                   href="https://www.rfc-editor.org/errata_search.php?rfc=6551">
+                    Errata
+                </a>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2012-03
+                    
+                    
+                
+                
+            </td>
+            
 
-    
-      <br><small class="text-muted">25 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
 
 
 <td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-roll-rnfd">
-    
-  </div>
-
-  
-    
-      I-D Exists
-    
-
-    
-
-    <wbr>
-
-    <wbr>
     
     
-
-    
-      
-    
-
-    
-      <br>
-      
-	WG Document
-      
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
         
-          
-
-
-
-
-
-<tr >
-
-  <td>
+        Proposed Standard RFC
+        
+        
     
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-ietf-roll-rpl-observations/">draft-ietf-roll-rpl-observations-07</a>
-
-      
-      <br>
-      <b>RPL Observations</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2021-11-29
-    
-    </span>
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/adrian@olddog.co.uk" >Adrian Farrel</a> <a 
+               href="mailto:adrian%40olddog.co.uk"
+               aria-label="Compose email to adrian@olddog.co.uk."
+               title="Compose email to adrian@olddog.co.uk.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
 
 
 
-    
-      <br><small class="text-muted">21 pages</small>
-    
 
-    
 
-    
 
-  </td>
 
-  
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">14 pages</small>
+        <div>
+            <a href="/doc/rfc6552/">
+                
+                    RFC 6552
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-roll-of0)</i>
+            <br>
+            
+            <b>Objective Function Zero for the Routing Protocol for Low-Power and Lossy Networks (RPL)</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2012-03
+                    
+                    
+                
+                
+            </td>
+            
+
 
 
 <td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-roll-rpl-observations">
-    
-  </div>
-
-  
-    
-      I-D Exists
-    
-
-    
-
-    <wbr>
-
-    <wbr>
     
     
-
-    
-      
-    
-
-    
-      <br>
-      
-	WG Document
-      
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
         
-      
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/adrian@olddog.co.uk" >Adrian Farrel</a> <a 
+               href="mailto:adrian%40olddog.co.uk"
+               aria-label="Compose email to adrian@olddog.co.uk."
+               title="Compose email to adrian@olddog.co.uk.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">13 pages</small>
+        <div>
+            <a href="/doc/rfc6719/">
+                
+                    RFC 6719
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-roll-minrank-hysteresis-of)</i>
+            <br>
+            
+            <b>The Minimum Rank with Hysteresis Objective Function</b>
+            
+                <a class="badge bg-warning text-decoration-none float-end"
+                   href="https://www.rfc-editor.org/errata_search.php?rfc=6719">
+                    Errata
+                </a>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2012-09
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/adrian@olddog.co.uk" >Adrian Farrel</a> <a 
+               href="mailto:adrian%40olddog.co.uk"
+               aria-label="Compose email to adrian@olddog.co.uk."
+               title="Compose email to adrian@olddog.co.uk.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/jpv@cisco.com" >JP Vasseur</a> <a class="text-reset"
+               href="mailto:jpv%40cisco.com"
+               aria-label="Compose email to jpv@cisco.com."
+               title="Compose email to jpv@cisco.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">40 pages</small>
+        <div>
+            <a href="/doc/rfc6997/">
+                
+                    RFC 6997
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-roll-p2p-rpl)</i>
+            <br>
+            
+            <b>Reactive Discovery of Point-to-Point Routes in Low-Power and Lossy Networks</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2013-08
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Experimental RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/adrian@olddog.co.uk" >Adrian Farrel</a> <a 
+               href="mailto:adrian%40olddog.co.uk"
+               aria-label="Compose email to adrian@olddog.co.uk."
+               title="Compose email to adrian@olddog.co.uk.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/jpv@cisco.com" >JP Vasseur</a> <a class="text-reset"
+               href="mailto:jpv%40cisco.com"
+               aria-label="Compose email to jpv@cisco.com."
+               title="Compose email to jpv@cisco.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">29 pages</small>
+        <div>
+            <a href="/doc/rfc6998/">
+                
+                    RFC 6998
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-roll-p2p-measurement)</i>
+            <br>
+            
+            <b>A Mechanism to Measure the Routing Metrics along a Point-to-Point Route in a Low-Power and Lossy Network</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2013-08
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Experimental RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/adrian@olddog.co.uk" >Adrian Farrel</a> <a 
+               href="mailto:adrian%40olddog.co.uk"
+               aria-label="Compose email to adrian@olddog.co.uk."
+               title="Compose email to adrian@olddog.co.uk.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/jpv@cisco.com" >JP Vasseur</a> <a class="text-reset"
+               href="mailto:jpv%40cisco.com"
+               aria-label="Compose email to jpv@cisco.com."
+               title="Compose email to jpv@cisco.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">8 pages</small>
+        <div>
+            <a href="/doc/rfc7102/">
+                
+                    RFC 7102
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-roll-terminology)</i>
+            <br>
+            
+            <b>Terms Used in Routing for Low-Power and Lossy Networks</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2014-01
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Informational RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/adrian@olddog.co.uk" >Adrian Farrel</a> <a 
+               href="mailto:adrian%40olddog.co.uk"
+               aria-label="Compose email to adrian@olddog.co.uk."
+               title="Compose email to adrian@olddog.co.uk.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/mcr+nomcom@sandelman.ca" >Michael Richardson</a> <a class="text-reset"
+               href="mailto:mcr%2Bnomcom%40sandelman.ca"
+               aria-label="Compose email to mcr+nomcom@sandelman.ca."
+               title="Compose email to mcr+nomcom@sandelman.ca.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">40 pages</small>
+        <div>
+            <a href="/doc/rfc7416/">
+                
+                    RFC 7416
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-roll-security-threats)</i>
+            <br>
+            
+            <b>A Security Threat Analysis for the Routing Protocol for Low-Power and Lossy Networks (RPLs)</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2015-01
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Informational RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/adrian@olddog.co.uk" >Adrian Farrel</a> <a 
+               href="mailto:adrian%40olddog.co.uk"
+               aria-label="Compose email to adrian@olddog.co.uk."
+               title="Compose email to adrian@olddog.co.uk.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/robert.cragie@gridmerge.com" >Robert Cragie</a> <a class="text-reset"
+               href="mailto:robert.cragie%40gridmerge.com"
+               aria-label="Compose email to robert.cragie@gridmerge.com."
+               title="Compose email to robert.cragie@gridmerge.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">29 pages</small>
+        <div>
+            <a href="/doc/rfc7731/">
+                
+                    RFC 7731
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-roll-trickle-mcast)</i>
+            <br>
+            
+            <b>Multicast Protocol for Low-Power and Lossy Networks (MPL)</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2016-02
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+                    <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-roll-trickle-mcast">
+                        <span class="badge bg-info">1</span>
+                    </a>
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/aretana.ietf@gmail.com" >Alvaro Retana</a> <a 
+               href="mailto:aretana.ietf%40gmail.com"
+               aria-label="Compose email to aretana.ietf@gmail.com."
+               title="Compose email to aretana.ietf@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/maria.ines.robles@ericsson.com" >Ines Robles</a> <a class="text-reset"
+               href="mailto:maria.ines.robles%40ericsson.com"
+               aria-label="Compose email to maria.ines.robles@ericsson.com."
+               title="Compose email to maria.ines.robles@ericsson.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">15 pages</small>
+        <div>
+            <a href="/doc/rfc7732/">
+                
+                    RFC 7732
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-roll-admin-local-policy)</i>
+            <br>
+            
+            <b>Forwarder Policy for Multicast with Admin-Local Scope in the Multicast Protocol for Low-Power and Lossy Networks (MPL)</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2016-02
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Informational RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/aretana.ietf@gmail.com" >Alvaro Retana</a> <a 
+               href="mailto:aretana.ietf%40gmail.com"
+               aria-label="Compose email to aretana.ietf@gmail.com."
+               title="Compose email to aretana.ietf@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/maria.ines.robles@ericsson.com" >Ines Robles</a> <a class="text-reset"
+               href="mailto:maria.ines.robles%40ericsson.com"
+               aria-label="Compose email to maria.ines.robles@ericsson.com."
+               title="Compose email to maria.ines.robles@ericsson.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">38 pages</small>
+        <div>
+            <a href="/doc/rfc7733/">
+                
+                    RFC 7733
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-roll-applicability-home-building)</i>
+            <br>
+            
+            <b>Applicability Statement: The Use of the Routing Protocol for Low-Power and Lossy Networks (RPL) Protocol Suite in Home Automation and Building Control</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2016-02
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+                    <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-roll-applicability-home-building">
+                        <span class="badge bg-info">1</span>
+                    </a>
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/aretana.ietf@gmail.com" >Alvaro Retana</a> <a 
+               href="mailto:aretana.ietf%40gmail.com"
+               aria-label="Compose email to aretana.ietf@gmail.com."
+               title="Compose email to aretana.ietf@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/yvonneanne.pignolet@gmail.com" >Yvonne-Anne Pignolet</a> <a class="text-reset"
+               href="mailto:yvonneanne.pignolet%40gmail.com"
+               aria-label="Compose email to yvonneanne.pignolet@gmail.com."
+               title="Compose email to yvonneanne.pignolet@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">10 pages</small>
+        <div>
+            <a href="/doc/rfc7774/">
+                
+                    RFC 7774
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-roll-mpl-parameter-configuration)</i>
+            <br>
+            
+            <b>Multicast Protocol for Low-Power and Lossy Networks (MPL) Parameter Configuration Option for DHCPv6</b>
+            
+                <a class="badge bg-warning text-decoration-none float-end"
+                   href="https://www.rfc-editor.org/errata_search.php?rfc=7774">
+                    Errata
+                </a>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2016-03
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/aretana.ietf@gmail.com" >Alvaro Retana</a> <a 
+               href="mailto:aretana.ietf%40gmail.com"
+               aria-label="Compose email to aretana.ietf@gmail.com."
+               title="Compose email to aretana.ietf@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/maria.ines.robles@ericsson.com" >Ines Robles</a> <a class="text-reset"
+               href="mailto:maria.ines.robles%40ericsson.com"
+               aria-label="Compose email to maria.ines.robles@ericsson.com."
+               title="Compose email to maria.ines.robles@ericsson.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">24 pages</small>
+        <div>
+            <a href="/doc/rfc8036/">
+                
+                    RFC 8036
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-roll-applicability-ami)</i>
+            <br>
+            
+            <b>Applicability Statement for the Routing Protocol for Low-Power and Lossy Networks (RPL) in Advanced Metering Infrastructure (AMI) Networks</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2017-01
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/aretana.ietf@gmail.com" >Alvaro Retana</a> <a 
+               href="mailto:aretana.ietf%40gmail.com"
+               aria-label="Compose email to aretana.ietf@gmail.com."
+               title="Compose email to aretana.ietf@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/mcr+ietf@sandelman.ca" >Michael Richardson</a> <a class="text-reset"
+               href="mailto:mcr%2Bietf%40sandelman.ca"
+               aria-label="Compose email to mcr+ietf@sandelman.ca."
+               title="Compose email to mcr+ietf@sandelman.ca.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">37 pages</small>
+        <div>
+            <a href="/doc/rfc8138/">
+                
+                    RFC 8138
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-roll-routing-dispatch)</i>
+            <br>
+            
+            <b>IPv6 over Low-Power Wireless Personal Area Network (6LoWPAN) Routing Header</b>
+            
+                <a class="badge bg-warning text-decoration-none float-end"
+                   href="https://www.rfc-editor.org/errata_search.php?rfc=8138">
+                    Errata
+                </a>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2017-04
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+            <br>
+            <span class="text-muted">Updated by <a href="/doc/rfc9008/">RFC 9008</a>, <a href="/doc/rfc9035/">RFC 9035</a></span>
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/aretana.ietf@gmail.com" >Alvaro Retana</a> <a 
+               href="mailto:aretana.ietf%40gmail.com"
+               aria-label="Compose email to aretana.ietf@gmail.com."
+               title="Compose email to aretana.ietf@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/mcr+ietf@sandelman.ca" >Michael Richardson</a> <a class="text-reset"
+               href="mailto:mcr%2Bietf%40sandelman.ca"
+               aria-label="Compose email to mcr+ietf@sandelman.ca."
+               title="Compose email to mcr+ietf@sandelman.ca.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">49 pages</small>
+        <div>
+            <a href="/doc/rfc9008/">
+                
+                    RFC 9008
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-roll-useofrplinfo)</i>
+            <br>
+            
+            <b>Using RPI Option Type, Routing Header for Source Routes, and IPv6-in-IPv6 Encapsulation in the RPL Data Plane</b>
+            
+                <a class="badge bg-danger text-decoration-none float-end"
+                   href="https://www.rfc-editor.org/errata_search.php?rfc=9008">
+                    Errata
+                </a>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2021-04
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/aretana.ietf@gmail.com" >Alvaro Retana</a> <a 
+               href="mailto:aretana.ietf%40gmail.com"
+               aria-label="Compose email to aretana.ietf@gmail.com."
+               title="Compose email to aretana.ietf@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/consultancy@vanderstok.org" >Peter Van der Stok</a> <a class="text-reset"
+               href="mailto:consultancy%40vanderstok.org"
+               aria-label="Compose email to consultancy@vanderstok.org."
+               title="Compose email to consultancy@vanderstok.org.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">21 pages</small>
+        <div>
+            <a href="/doc/rfc9009/">
+                
+                    RFC 9009
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-roll-efficient-npdao)</i>
+            <br>
+            
+            <b>Efficient Route Invalidation</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2021-04
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+                    <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-roll-efficient-npdao">
+                        <span class="badge bg-info">2</span>
+                    </a>
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/aretana.ietf@gmail.com" >Alvaro Retana</a> <a 
+               href="mailto:aretana.ietf%40gmail.com"
+               aria-label="Compose email to aretana.ietf@gmail.com."
+               title="Compose email to aretana.ietf@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/consultancy@vanderstok.org" >Peter Van der Stok</a> <a class="text-reset"
+               href="mailto:consultancy%40vanderstok.org"
+               aria-label="Compose email to consultancy@vanderstok.org."
+               title="Compose email to consultancy@vanderstok.org.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">36 pages</small>
+        <div>
+            <a href="/doc/rfc9010/">
+                
+                    RFC 9010
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-roll-unaware-leaves)</i>
+            <br>
+            
+            <b>Routing for RPL (Routing Protocol for Low-Power and Lossy Networks) Leaves</b>
+            
+                <a class="badge bg-danger text-decoration-none float-end"
+                   href="https://www.rfc-editor.org/errata_search.php?rfc=9010">
+                    Errata
+                </a>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2021-04
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/aretana.ietf@gmail.com" >Alvaro Retana</a> <a 
+               href="mailto:aretana.ietf%40gmail.com"
+               aria-label="Compose email to aretana.ietf@gmail.com."
+               title="Compose email to aretana.ietf@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/rahul.ietf@gmail.com" >Rahul Jadhav</a> <a class="text-reset"
+               href="mailto:rahul.ietf%40gmail.com"
+               aria-label="Compose email to rahul.ietf@gmail.com."
+               title="Compose email to rahul.ietf@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">9 pages</small>
+        <div>
+            <a href="/doc/rfc9035/">
+                
+                    RFC 9035
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-roll-turnon-rfc8138)</i>
+            <br>
+            
+            <b>A Routing Protocol for Low-Power and Lossy Networks (RPL) Destination-Oriented Directed Acyclic Graph (DODAG) Configuration Option for the 6LoWPAN Routing Header</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2021-04
+                    
+                    
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/aretana.ietf@gmail.com" >Alvaro Retana</a> <a 
+               href="mailto:aretana.ietf%40gmail.com"
+               aria-label="Compose email to aretana.ietf@gmail.com."
+               title="Compose email to aretana.ietf@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/mariainesrobles@googlemail.com" >Ines Robles</a> <a class="text-reset"
+               href="mailto:mariainesrobles%40googlemail.com"
+               aria-label="Compose email to mariainesrobles@googlemail.com."
+               title="Compose email to mariainesrobles@googlemail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+    </tbody>
+
+
+
+    
+    
+
+
+
+
+
+
+
+
     <tbody>
-        <tr class="info">
-          <th></th>
-          
-              <th colspan="5">
-          
-	    RFCs (23 hits)
-          </th>
+        <tr class="table-info">
+            <td></td>
+            
+                <th scope="col" colspan="5">
+            
+            Related Internet-Drafts (2 hits)
+            </th>
         </tr>
     </tbody>
-
     <tbody>
         
-          
+            
 
 
 
 
 
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc5548/">RFC 5548</a>
-
-      
-        <i>(was draft-ietf-roll-urban-routing-reqs)</i>
-      
-      <br>
-      <b>Routing Requirements for Urban Low-Power and Lossy Networks</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2009-05
-    
-    </span>
 
 
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">9 pages</small>
+        <div>
+            <a href="/doc/draft-jadhav-roll-storing-rootack/">
+                
+                    draft-jadhav-roll-storing-rootack-03
+                
+            </a>
+            
+            <br>
+            
+            <b>RPL Storing Root-ACK</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2021-11-09
+                    
+                    
+                
+                
+            </td>
+            
 
-    
-      <br><small class="text-muted">21 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
 
 
 <td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-roll-urban-routing-reqs">
     
-  </div>
-
-  
-    Informational RFC
-
     
-
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+        
+        
+        
+        
+        
     
-  
-
-
-
 </td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/adrian@olddog.co.uk"><span class="">Adrian Farrel</span></a>&nbsp;<a href="mailto:adrian%40olddog.co.uk"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc5673/">RFC 5673</a>
-
-      
-        <i>(was draft-ietf-roll-indus-routing-reqs)</i>
-      
-      <br>
-      <b>Industrial Routing Requirements in Low-Power and Lossy Networks</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2009-10
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">27 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-roll-indus-routing-reqs">
-    
-  </div>
-
-  
-    Informational RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/adrian@olddog.co.uk"><span class="">Adrian Farrel</span></a>&nbsp;<a href="mailto:adrian%40olddog.co.uk"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc5826/">RFC 5826</a>
-
-      
-        <i>(was draft-ietf-roll-home-routing-reqs)</i>
-      
-      <br>
-      <b>Home Automation Routing Requirements in Low-Power and Lossy Networks</b>
-      
-        <a class="label label-warning pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=5826">Errata</a>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2010-04
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">17 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-roll-home-routing-reqs">
-    
-  </div>
-
-  
-    Informational RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/adrian@olddog.co.uk"><span class="">Adrian Farrel</span></a>&nbsp;<a href="mailto:adrian%40olddog.co.uk"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc5867/">RFC 5867</a>
-
-      
-        <i>(was draft-ietf-roll-building-routing-reqs)</i>
-      
-      <br>
-      <b>Building Automation Routing Requirements in Low-Power and Lossy Networks</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2010-06
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">26 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-roll-building-routing-reqs">
-    
-  </div>
-
-  
-    Informational RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/adrian@olddog.co.uk"><span class="">Adrian Farrel</span></a>&nbsp;<a href="mailto:adrian%40olddog.co.uk"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc6206/">RFC 6206</a>
-
-      
-        <i>(was draft-ietf-roll-trickle)</i>
-      
-      <br>
-      <b>The Trickle Algorithm</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2011-03
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">13 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-roll-trickle">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/adrian@olddog.co.uk"><span class="">Adrian Farrel</span></a>&nbsp;<a href="mailto:adrian%40olddog.co.uk"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc6550/">RFC 6550</a>
-
-      
-        <i>(was draft-ietf-roll-rpl)</i>
-      
-      <br>
-      <b>RPL: IPv6 Routing Protocol for Low-Power and Lossy Networks</b>
-      
-        <a class="label label-danger pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=6550">Errata</a>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2012-03
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">157 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-roll-rpl">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-      <br>Updated by <a href="/doc/rfc9008/">RFC 9008</a>, <a href="/doc/rfc9010/">RFC 9010</a>
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-roll-rpl">
-        <span class="label label-default">4</span>
-      </a>
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/adrian@olddog.co.uk"><span class="">Adrian Farrel</span></a>&nbsp;<a href="mailto:adrian%40olddog.co.uk"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc6551/">RFC 6551</a>
-
-      
-        <i>(was draft-ietf-roll-routing-metrics)</i>
-      
-      <br>
-      <b>Routing Metrics Used for Path Calculation in Low-Power and Lossy Networks</b>
-      
-        <a class="label label-danger pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=6551">Errata</a>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2012-03
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">30 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-roll-routing-metrics">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/adrian@olddog.co.uk"><span class="">Adrian Farrel</span></a>&nbsp;<a href="mailto:adrian%40olddog.co.uk"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc6552/">RFC 6552</a>
-
-      
-        <i>(was draft-ietf-roll-of0)</i>
-      
-      <br>
-      <b>Objective Function Zero for the Routing Protocol for Low-Power and Lossy Networks (RPL)</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2012-03
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">14 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-roll-of0">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/adrian@olddog.co.uk"><span class="">Adrian Farrel</span></a>&nbsp;<a href="mailto:adrian%40olddog.co.uk"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc6719/">RFC 6719</a>
-
-      
-        <i>(was draft-ietf-roll-minrank-hysteresis-of)</i>
-      
-      <br>
-      <b>The Minimum Rank with Hysteresis Objective Function</b>
-      
-        <a class="label label-warning pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=6719">Errata</a>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2012-09
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">13 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-roll-minrank-hysteresis-of">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/adrian@olddog.co.uk"><span class="">Adrian Farrel</span></a>&nbsp;<a href="mailto:adrian%40olddog.co.uk"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/jpv@cisco.com"><span class="small text-muted">Vasseur Jp</span></a>&nbsp;<a href="mailto:jpv%40cisco.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc6997/">RFC 6997</a>
-
-      
-        <i>(was draft-ietf-roll-p2p-rpl)</i>
-      
-      <br>
-      <b>Reactive Discovery of Point-to-Point Routes in Low-Power and Lossy Networks</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2013-08
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">40 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-roll-p2p-rpl">
-    
-  </div>
-
-  
-    Experimental RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/adrian@olddog.co.uk"><span class="">Adrian Farrel</span></a>&nbsp;<a href="mailto:adrian%40olddog.co.uk"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/jpv@cisco.com"><span class="small text-muted">Vasseur Jp</span></a>&nbsp;<a href="mailto:jpv%40cisco.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc6998/">RFC 6998</a>
-
-      
-        <i>(was draft-ietf-roll-p2p-measurement)</i>
-      
-      <br>
-      <b>A Mechanism to Measure the Routing Metrics along a Point-to-Point Route in a Low-Power and Lossy Network</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2013-08
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">29 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-roll-p2p-measurement">
-    
-  </div>
-
-  
-    Experimental RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/adrian@olddog.co.uk"><span class="">Adrian Farrel</span></a>&nbsp;<a href="mailto:adrian%40olddog.co.uk"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/jpv@cisco.com"><span class="small text-muted">Vasseur Jp</span></a>&nbsp;<a href="mailto:jpv%40cisco.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc7102/">RFC 7102</a>
-
-      
-        <i>(was draft-ietf-roll-terminology)</i>
-      
-      <br>
-      <b>Terms Used in Routing for Low-Power and Lossy Networks</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2014-01
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">8 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-roll-terminology">
-    
-  </div>
-
-  
-    Informational RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/adrian@olddog.co.uk"><span class="">Adrian Farrel</span></a>&nbsp;<a href="mailto:adrian%40olddog.co.uk"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/mcr+nomcom@sandelman.ca"><span class="small text-muted">Michael Richardson</span></a>&nbsp;<a href="mailto:mcr%2Bnomcom%40sandelman.ca"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc7416/">RFC 7416</a>
-
-      
-        <i>(was draft-ietf-roll-security-threats)</i>
-      
-      <br>
-      <b>A Security Threat Analysis for the Routing Protocol for Low-Power and Lossy Networks (RPLs)</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2015-01
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">40 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-roll-security-threats">
-    
-  </div>
-
-  
-    Informational RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/adrian@olddog.co.uk"><span class="">Adrian Farrel</span></a>&nbsp;<a href="mailto:adrian%40olddog.co.uk"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/robert.cragie@gridmerge.com"><span class="small text-muted">Robert Cragie</span></a>&nbsp;<a href="mailto:robert.cragie%40gridmerge.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc7731/">RFC 7731</a>
-
-      
-        <i>(was draft-ietf-roll-trickle-mcast)</i>
-      
-      <br>
-      <b>Multicast Protocol for Low-Power and Lossy Networks (MPL)</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2016-02
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">29 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-roll-trickle-mcast">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-roll-trickle-mcast">
-        <span class="label label-default">1</span>
-      </a>
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/aretana.ietf@gmail.com"><span class="">Alvaro Retana</span></a>&nbsp;<a href="mailto:aretana.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/maria.ines.robles@ericsson.com"><span class="small text-muted">Ines Robles</span></a>&nbsp;<a href="mailto:maria.ines.robles%40ericsson.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc7732/">RFC 7732</a>
-
-      
-        <i>(was draft-ietf-roll-admin-local-policy)</i>
-      
-      <br>
-      <b>Forwarder Policy for Multicast with Admin-Local Scope in the Multicast Protocol for Low-Power and Lossy Networks (MPL)</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2016-02
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">15 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-roll-admin-local-policy">
-    
-  </div>
-
-  
-    Informational RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/aretana.ietf@gmail.com"><span class="">Alvaro Retana</span></a>&nbsp;<a href="mailto:aretana.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/maria.ines.robles@ericsson.com"><span class="small text-muted">Ines Robles</span></a>&nbsp;<a href="mailto:maria.ines.robles%40ericsson.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc7733/">RFC 7733</a>
-
-      
-        <i>(was draft-ietf-roll-applicability-home-building)</i>
-      
-      <br>
-      <b>Applicability Statement: The Use of the Routing Protocol for Low-Power and Lossy Networks (RPL) Protocol Suite in Home Automation and Building Control</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2016-02
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">38 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-roll-applicability-home-building">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-roll-applicability-home-building">
-        <span class="label label-default">1</span>
-      </a>
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/aretana.ietf@gmail.com"><span class="">Alvaro Retana</span></a>&nbsp;<a href="mailto:aretana.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/yvonneanne.pignolet@gmail.com"><span class="small text-muted">Yvonne-Anne Pignolet</span></a>&nbsp;<a href="mailto:yvonneanne.pignolet%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc7774/">RFC 7774</a>
-
-      
-        <i>(was draft-ietf-roll-mpl-parameter-configuration)</i>
-      
-      <br>
-      <b>Multicast Protocol for Low-Power and Lossy Networks (MPL) Parameter Configuration Option for DHCPv6</b>
-      
-        <a class="label label-warning pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=7774">Errata</a>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2016-03
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">10 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-roll-mpl-parameter-configuration">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/aretana.ietf@gmail.com"><span class="">Alvaro Retana</span></a>&nbsp;<a href="mailto:aretana.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/maria.ines.robles@ericsson.com"><span class="small text-muted">Ines Robles</span></a>&nbsp;<a href="mailto:maria.ines.robles%40ericsson.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc8036/">RFC 8036</a>
-
-      
-        <i>(was draft-ietf-roll-applicability-ami)</i>
-      
-      <br>
-      <b>Applicability Statement for the Routing Protocol for Low-Power and Lossy Networks (RPL) in Advanced Metering Infrastructure (AMI) Networks</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2017-01
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">24 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-roll-applicability-ami">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/aretana.ietf@gmail.com"><span class="">Alvaro Retana</span></a>&nbsp;<a href="mailto:aretana.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/mcr+ietf@sandelman.ca"><span class="small text-muted">Michael Richardson</span></a>&nbsp;<a href="mailto:mcr%2Bietf%40sandelman.ca"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc8138/">RFC 8138</a>
-
-      
-        <i>(was draft-ietf-roll-routing-dispatch)</i>
-      
-      <br>
-      <b>IPv6 over Low-Power Wireless Personal Area Network (6LoWPAN) Routing Header</b>
-      
-        <a class="label label-warning pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=8138">Errata</a>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2017-04
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">37 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-roll-routing-dispatch">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-      <br>Updated by <a href="/doc/rfc9008/">RFC 9008</a>, <a href="/doc/rfc9035/">RFC 9035</a>
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/aretana.ietf@gmail.com"><span class="">Alvaro Retana</span></a>&nbsp;<a href="mailto:aretana.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/mcr+ietf@sandelman.ca"><span class="small text-muted">Michael Richardson</span></a>&nbsp;<a href="mailto:mcr%2Bietf%40sandelman.ca"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc9008/">RFC 9008</a>
-
-      
-        <i>(was draft-ietf-roll-useofrplinfo)</i>
-      
-      <br>
-      <b>Using RPI Option Type, Routing Header for Source Routes, and IPv6-in-IPv6 Encapsulation in the RPL Data Plane</b>
-      
-        <a class="label label-danger pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=9008">Errata</a>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2021-04
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">49 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-roll-useofrplinfo">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/aretana.ietf@gmail.com"><span class="">Alvaro Retana</span></a>&nbsp;<a href="mailto:aretana.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/consultancy@vanderstok.org"><span class="small text-muted">Peter Van der Stok</span></a>&nbsp;<a href="mailto:consultancy%40vanderstok.org"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc9009/">RFC 9009</a>
-
-      
-        <i>(was draft-ietf-roll-efficient-npdao)</i>
-      
-      <br>
-      <b>Efficient Route Invalidation</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2021-04
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">21 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-roll-efficient-npdao">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-      <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-roll-efficient-npdao">
-        <span class="label label-default">2</span>
-      </a>
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/aretana.ietf@gmail.com"><span class="">Alvaro Retana</span></a>&nbsp;<a href="mailto:aretana.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/consultancy@vanderstok.org"><span class="small text-muted">Peter Van der Stok</span></a>&nbsp;<a href="mailto:consultancy%40vanderstok.org"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc9010/">RFC 9010</a>
-
-      
-        <i>(was draft-ietf-roll-unaware-leaves)</i>
-      
-      <br>
-      <b>Routing for RPL (Routing Protocol for Low-Power and Lossy Networks) Leaves</b>
-      
-        <a class="label label-danger pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=9010">Errata</a>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2021-04
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">36 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-roll-unaware-leaves">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/aretana.ietf@gmail.com"><span class="">Alvaro Retana</span></a>&nbsp;<a href="mailto:aretana.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/rahul.ietf@gmail.com"><span class="small text-muted">Rahul Jadhav</span></a>&nbsp;<a href="mailto:rahul.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc9035/">RFC 9035</a>
-
-      
-        <i>(was draft-ietf-roll-turnon-rfc8138)</i>
-      
-      <br>
-      <b>A Routing Protocol for Low-Power and Lossy Networks (RPL) Destination-Oriented Directed Acyclic Graph (DODAG) Configuration Option for the 6LoWPAN Routing Header</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2021-04
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">9 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-roll-turnon-rfc8138">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/aretana.ietf@gmail.com"><span class="">Alvaro Retana</span></a>&nbsp;<a href="mailto:aretana.ietf%40gmail.com"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/mariainesrobles@googlemail.com"><span class="small text-muted">Ines Robles</span></a>&nbsp;<a href="mailto:mariainesrobles%40googlemail.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
-        
-      
-    </tbody>
-  </table>
-
-
-  
-  
-
-
-
-
-  
-
-  
-  <table class="table table-condensed table-striped tablesorter">
-    <thead>
-      <tr>
-        <th class="sorter-false"></th>
-
-        
-          
-            <th data-header="document">
-	      
-	        Document
-	      
-            </th>
-          
-        
-          
-        
-          
-            <th data-header="date">
-	      
-	        Date
-	      
-            </th>
-          
-        
-          
-            <th data-header="status">
-	      
-	        Status
-	      
-            </th>
-          
-        
-          
-            <th data-header="ipr">
-	      
-	        IPR
-	      
-            </th>
-          
-        
-          
-            <th data-header="ad">
-	      
-	        AD / Shepherd
-	      
-            </th>
-          
-        
-
-        
-      </tr>
-    </thead>
-
-    
-
-      
-    <tbody>
-        <tr class="info">
-          <th></th>
-          
-              <th colspan="5">
-          
-	    Related Internet-Drafts (2 hits)
-          </th>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
         </tr>
-    </tbody>
-
-    <tbody>
         
-          
+            
 
 
 
 
 
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/draft-jadhav-roll-storing-rootack/">draft-jadhav-roll-storing-rootack-03</a>
-
-      
-      <br>
-      <b>RPL Storing Root-ACK</b>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2021-11-09
-    
-    </span>
 
 
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">6 pages</small>
+        <div>
+            <a href="/doc/rfc7346/">
+                
+                    RFC 7346
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-6man-multicast-scopes)</i>
+            <br>
+            
+            <b>IPv6 Multicast Address Scopes</b>
+            
+                <a class="badge bg-warning text-decoration-none float-end"
+                   href="https://www.rfc-editor.org/errata_search.php?rfc=7346">
+                    Errata
+                </a>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2014-08
+                    
+                    
+                
+                
+            </td>
+            
 
-    
-      <br><small class="text-muted">9 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
 
 
 <td class="status">
-  <div class="pull-right" id="ballot-icon-draft-jadhav-roll-storing-rootack">
-    
-  </div>
-
-  
-    
-      I-D Exists
-    
-
-    
-
-    <wbr>
-
-    <wbr>
     
     
-
-    
-      
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-      
-    </td>
-  
-
-  
-  
-</tr>
-
         
-          
-
-
-
-
-
-<tr >
-
-  <td>
-    
-    
-
-    
-  </td>
-
-  <td class="doc">
-    <div>
-      <a href="/doc/rfc7346/">RFC 7346</a>
-
-      
-        <i>(was draft-ietf-6man-multicast-scopes)</i>
-      
-      <br>
-      <b>IPv6 Multicast Address Scopes</b>
-      
-        <a class="label label-warning pull-right" href="https://www.rfc-editor.org/errata_search.php?rfc=7346">Errata</a>
-      
-    </div>
-
-    
-  </td>
-
-  <td>
-    <span class="text-nowrap">
-
-    
-          2014-08
-    
-    </span>
-
-
-
-    
-      <br><small class="text-muted">6 pages</small>
-    
-
-    
-
-    
-
-  </td>
-
-  
-
-
-<td class="status">
-  <div class="pull-right" id="ballot-icon-draft-ietf-6man-multicast-scopes">
-    
-  </div>
-
-  
-    Proposed Standard RFC
-
-    
-
-    
-  
-
-
-
-</td>
-
-
-  <td class="ipr text-center">
-    
-  </td>
-
-  
-    <td class="area-director">
-      
-        <a title="Area Director" href="/person/brian@innovationslab.net"><span class="">Brian Haberman</span></a>&nbsp;<a href="mailto:brian%40innovationslab.net"><span class="fa fa-envelope-o tiny"></span></a>
-<br>
-      
-      <a title="Shepherd" href="/person/ot@cisco.com"><span class="small text-muted">Ole Trøan</span></a>&nbsp;<a href="mailto:ot%40cisco.com"><span class="fa fa-envelope-o tiny"></span></a>
-
-    </td>
-  
-
-  
-  
-</tr>
-
+        Proposed Standard RFC
         
-      
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/brian@innovationslab.net" >Brian Haberman</a> <a 
+               href="mailto:brian%40innovationslab.net"
+               aria-label="Compose email to brian@innovationslab.net."
+               title="Compose email to brian@innovationslab.net.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/ot@cisco.com" >Ole Trøan</a> <a class="text-reset"
+               href="mailto:ot%40cisco.com"
+               aria-label="Compose email to ot@cisco.com."
+               title="Compose email to ot@cisco.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
     </tbody>
-  </table>
 
+</table>
 
-  <ul class="list-inline pull-right" style="margin-top:1em;">
-  <li>
+    <div class="text-end">
     <label id="list-feeds">Atom feed:</label>
     <div class="btn-group" role="group" aria-labelledby="list-feeds">
-      <a class="btn btn-default" title="Feed of all changes" href="/group/roll/documents/feed/">All changes</a>
-      <a class="btn btn-default" title="Feed of only significant state changes" href="/group/roll/documents/feed/?significant=1">Significant</a>
+        <a class="btn btn-primary"
+           title="Feed of all changes"
+           href="/group/roll/documents/feed/">
+            <i class="bi bi-rss"></i> All changes
+        </a>
+        <a class="btn btn-primary"
+           title="Feed of only significant state changes"
+           href="/group/roll/documents/feed/?significant=1">
+            <i class="bi bi-rss"></i> Significant
+        </a>
     </div>
-  </li>
-
-  
-    <li><a class="btn btn-default" href="/group/roll/documents/subscription/">
-      <i class="glyphicon glyphicon-envelope"></i>
-      
-        Subscribe to changes
-      
-    </a></li>
-  
-
-  <li><a class="btn btn-default" href="/group/roll/documents/csv/"><i class="glyphicon glyphicon-list"></i> Export as CSV</a></li>
-</ul>
-
-
-
+    
+        <a class="btn btn-primary"
+           href="/group/roll/documents/subscription/">
+            <i class="bi bi-envelope"></i>
+            
+                Subscribe to changes
+            
+        </a>
+    
+    <a class="btn btn-primary"
+       href="/group/roll/documents/csv/">
+        <i class="bi bi-file-ruled"></i> Export as CSV
+    </a>
+</div>
 
 
+                    
+                </div>
+            </div>
+            <hr>
+            
+                <footer class="col-md-12 col-sm-12 text-center">
+                    <a href="https://www.ietf.org/" class="p-3">IETF</a>
+                    <a href="https://www.ietf.org/iesg/" class="p-3">IESG</a>
+                    <a href="https://www.iab.org/" class="p-3">IAB</a>
+                    <a href="https://www.irtf.org/" class="p-3">IRTF</a>
+                    <a href="https://www.ietf.org/llc/" class="p-3">IETF&nbsp;LLC</a>
+                    <a href="https://trustee.ietf.org/" class="p-3">IETF&nbsp;Trust</a>
+                    <a href="https://www.rfc-editor.org/" class="p-3">RFC&nbsp;Editor</a>
+                    <a href="https://www.iana.org/" class="p-3">IANA</a>
+                    <a href="https://www.ietf.org/privacy-statement/" class="p-3">Privacy&nbsp;Statement</a>
+                    <div class="small text-muted p-3">
+                        
+                            <a href="/release/about">About</a>
+                            <a href="https://github.com/ietf-tools/datatracker/">IETF Datatracker</a>
+                            
+                                <a href="https://github.com/ietf-tools/datatracker/releases/tag/8.0.0">Version 8.0.0</a>
+                            
+                            (main - 87fac4e)
+                        
+                        Report a bug:
+                        <a href="https://github.com/ietf-tools/datatracker/issues/new/choose">
+                            GitHub
+                            <i class="bi bi-bug"></i>
+                        </a>
+                        
+                            <a href="mailto:datatracker-project@ietf.org">
+                                Email
+                                <i class="bi bi-envelope"></i>
+                            </a>
+                        
+                        <br>
+                        Python 3.6.12
+                        Django 2.2.28
+                        <br>
+                        
+
+
+
+
+
+                    </div>
+                </footer>
+            
+        </div>
         
-        
-	  </div>
-        
+    <script src="https://www.ietf.org/lib/dt/8.0.0/ietf/js/list.js"></script>
 
-	
-	<hr>
-	  <div class="col-md-12 col-sm-12">
-	    <div class="text-center padded">
-	        <a href="https://www.rfc-editor.org/" class="padded">RFC&nbsp;Editor</a>
-	        <a href="https://www.ietf.org/llc/" class="padded">IASA&nbsp;&amp;&nbsp;IETF&nbsp;LLC</a>
-	        <a href="https://trustee.ietf.org/" class="padded">IETF&nbsp;Trust</a>
-	        <a href="https://www.irtf.org/" class="padded">IRTF</a>
-	        <a href="https://www.ietf.org/" class="padded">IETF</a>
-	        <a href="https://www.ietf.org/iesg/" class="padded">IESG</a>
-	        <a href="https://www.iab.org/" class="padded">IAB</a>
-	        <a href="https://www.iana.org/" class="padded">IANA</a>
-	        <a href="https://www.ietf.org/privacy-statement/" class="padded">Privacy&nbsp;Statement</a>
-	    </div>
-	  </div>
-
-
-        <footer class="col-md-12 col-sm-12">
-	  <div class="col-md-12">
-	    <div class="text-center">
-	      <p class="small text-muted">
-	        
-		  <a href="/release/about">About</a> |
-	          IETF Datatracker |
-	          <a href="/release/7.46.0.p4/">Version 7.46.0.p4</a> |
-	          2022-03-10 |
-	        
-		Report a bug:
-	        <a href="https://trac.ietf.org/trac/ietfdb/newticket">Tracker:<span class="fa fa-bug"></span></a>
-                
-	        <a href="mailto:datatracker-project@ietf.org">Email:<span class="fa fa-envelope"></span></a>
-                
-		<br>
-                Python 3.6.12 |
-		Django 2.2.27
-	      </p>
-	    </div>
-	  </div>
-        </footer>
-	
-
-      </div>
-
-      
-
-
-
-
-      <script src="https://www.ietf.org/lib/dt/7.46.0/jquery/jquery.min.js"></script>
-      
-      <script>$(".visible-nojs").removeClass("visible-nojs");</script>
-      <script>$(".hidden-nojs").removeClass("hidden-nojs");</script>
-      <script src="https://www.ietf.org/lib/dt/7.46.0/js-cookie/src/js.cookie.js"></script>
-      <script src="https://www.ietf.org/lib/dt/7.46.0/ietf/bootstrap/js/bootstrap.min.js"></script>
-      <script src="https://www.ietf.org/lib/dt/7.46.0/ietf/js/ietf.js"></script>
-      
-<script src="https://www.ietf.org/lib/dt/7.46.0/jquery.tablesorter/js/jquery.tablesorter.combined.min.js"></script>
-
-      
-  <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6fb2adc0a8bda337',m:'ai7ppYxrSdG1pGN5CNb3S1eYFZ4Oe_wRRLb9RXOK.jc-1649836941-0-AVG0cS3A/+tyFiqyqAiRZEmiyj6XldZ4AzvdGsetpefS/0TN0pnXSZuCnKbvGdYhuUy4FDAZ+3FjzYuiOQLvzJTqJOQID39Inr419vrFvejAFBTBYOZbJd6asjI4LtaQO91U/klUJqX3UfauYzH7cyI=',s:[0xaf0b44f6e9,0xd47ef32167],}})();</script></body>
+        <script src="https://www.ietf.org/lib/dt/8.0.0/ietf/js/select2.js"></script>
+        <script>
+            $('#navbar-doc-search').on('select2:select', function (e) {
+                window.location.href = e.params.data.url;
+            });
+        </script>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6ff490168aa4313b',m:'KTDHx7y0C5davC20tp8m0YNNnZiWSPN9pcMtsDJU2.4-1650527786-0-Ac+xiZjicsup9gZ+4C1Ob6JBgY3Ic1tYhi14lEZ/Phf6qmbHDWlg5o2HGKq6ziuAfgDbxXeKTGLn4J4jCZ9dasJMI1mMsmlr7+JdzcGoLqveZg6ExeXPUc0FmNuUJyaB52AHYokl4dDeuWgIuGpagjI=',s:[0xa6e939e098,0xb31c4275b0],}})();</script></body>
 </html>
