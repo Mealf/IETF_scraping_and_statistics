@@ -1478,7 +1478,7 @@
             : <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-netconf-sztp-csr">MISSREF</a>
         
         
-        <span class="badge bg-success">for 49 days</span>
+        <span class="badge bg-success">for 51 days</span>
         
         
             
@@ -5100,5 +5100,5 @@
                 window.location.href = e.params.data.url;
             });
         </script>
-    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6ff48cbeeec56a92',m:'5nuOUnVsM9AnAKLjWLJjq0oHoNV8yrnMNe2UAWjmJ1w-1650527649-0-AXpjvq9OTkxQl9yFFItBorVRZ8m0SH+pUd+EqbY7gZO8Ex1K34yZrdJ3nvftXUvHzbYacu6knlT659+z+Jb5cCE2EJzJ395tnWknkQI+NY9e/5sJZCJlP+OzcvDkkv3cMTZTx1cNIupjzYt8XVzK64o=',s:[0xead5ed8b2c,0x825f5eb7dd],}})();</script></body>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'7007e20bcc684105',m:'HBqsUDSDkVgdtaSG8UKRW0ibiKAd66I0siVWC5.KanA-1650730373-0-AbgCnC2l8ngBzlHy0ZNiI6pv1wND267qRGgewUh7JTLnAomGG+KgrBF9ukSJylLbYyFp0MA5euTLycsHZT9B9siCyogz7czCCqiFcJklTgoKqO2YZWphOMTTk0wSNZt0wGQVfEMCFX8HS4v1BWjyB44=',s:[0xeb123fdcf3,0xe8e7b7039b],}})();</script></body>
 </html>

@@ -848,7 +848,7 @@
         
         
         
-        <span class="badge bg-danger" title="Goal is &lt;14 days">for 296 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;14 days">for 298 days</span>
         
         
             
@@ -887,7 +887,7 @@
                href="mailto:ek.ietf%40gmail.com"
                aria-label="Compose email to ek.ietf@gmail.com."
                title="Compose email to ek.ietf@gmail.com.">
-                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 295 days</span>
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 297 days</span>
             
         
     
@@ -975,7 +975,7 @@
         
         
         
-        <span class="badge bg-danger" title="Goal is &lt;14 days">for 581 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;14 days">for 583 days</span>
         
         
             
@@ -1087,7 +1087,7 @@
             : <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-ntp-yang-data-model">EDIT</a>
         
         
-        <span class="badge bg-success">for 30 days</span>
+        <span class="badge bg-success">for 32 days</span>
         
         
             
@@ -2081,7 +2081,7 @@
             
                 <th scope="col" colspan="5">
             
-            Related Internet-Drafts (4 hits)
+            Related Internet-Drafts (3 hits)
             </th>
         </tr>
     </tbody>
@@ -2318,86 +2318,6 @@
             
         </tr>
         
-            
-
-
-
-
-
-
-
-<tr>
-    <td>
-        
-        
-        
-    </td>
-    <td class="doc">
-        <small class="float-end text-muted d-none d-sm-block">6 pages</small>
-        <div>
-            <a href="/doc/draft-mlichvar-ntp-over-ptp/">
-                
-                    draft-mlichvar-ntp-over-ptp-01
-                
-            </a>
-            
-            <br>
-            
-            <b>NTP Over PTP</b>
-            
-        </div>
-        
-    </td>
-    <td>
-            
-                    
-                        2021-10-20
-                    
-                    
-                
-                
-                    <br>
-                    <span class="badge bg-warning">Expires soon</span>
-                
-            </td>
-            
-
-
-
-<td class="status">
-    
-    
-        
-            I-D Exists
-        
-        
-        
-        
-        
-        
-            
-        
-        
-        
-        
-        
-        
-        
-    
-</td>
-            <td class="text-center d-none d-sm-table-cell">
-                
-            </td>
-            
-                <td class="d-none d-sm-table-cell">
-                    
-                    <br>
-                    
-                </td>
-            
-            
-        </tr>
-        
     </tbody>
 
 </table>
@@ -2490,5 +2410,5 @@
                 window.location.href = e.params.data.url;
             });
         </script>
-    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6ff48bdec8176a98',m:'j9TGAtfqLmijZzDHtBJKYkWWNgnHUg90pSayFRo6_Ws-1650527612-0-AcWorn7ZwPyrk1kybmPrPw0vtNoOBb44iqLBbLvaswF/Tc6VdPE1LVZ7KLBlOAjyh1TayH12Ws3585zmrVRA2KlslzT1UD9/IjgSJFZxn5NeGw9qEow7+QcSNzSU/OSsCD2UHBFqq7V3jdvL/3Arb1E=',s:[0xa0ecdea39f,0x078b7d336d],}})();</script></body>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'7007e0f83a7b5706',m:'uLNlX1ZYQuVeuup1dGsOOnT_O.nA4suKzq2h4WmVaK8-1650730327-0-AXXeW7KmCU6RJ6m0M3/2JqMLRHjwWkyLIUgSEKbeUe1CbPzYFRaJtr9w1bNw+VIsliQNxXU/nAr4XZTqbPLqW3jDCulY8pWcSGPxAZpy5RCI+wgtPxC+ufKH8GLk9bns6hnfI1yU/9R3gDe+KX1/X6E=',s:[0xf28a566040,0x47678f058b],}})();</script></body>
 </html>

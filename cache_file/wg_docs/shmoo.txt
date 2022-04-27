@@ -763,7 +763,7 @@
         
         
         
-        <span class="badge bg-danger" title="Goal is &lt;7 days">for 28 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;7 days">for 30 days</span>
         
         
             
@@ -1185,5 +1185,5 @@
                 window.location.href = e.params.data.url;
             });
         </script>
-    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6ff48aaf0d1f0734',m:'SndnD3IO4rnz.fgX0Oex1DPyErIr1GA.jmN_qQP.Qu0-1650527563-0-AS9t5Q9FWZ+NMsFeinLTNYyunHQLIhCRN11A79eRIJiUqyeT0CLRFNgmQ2AjGfNjB2y7BvOo/OWbKSZVVBJkfsub2il0f+TvArifgbpzLbNXOaXWJQdLQekW/z/kCahkzMtq0zsqVx/BvyQ572y8zXg=',s:[0x7ac2655145,0x7881dd22e8],}})();</script></body>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'7007df9a8a0da34f',m:'tROM6O5C1ehY1XDTCJX18J9Fyi7.TC8A0Loa6.ZORiA-1650730270-0-AUBYusvr7akXTFS7/y6bMP6Bm+EUe0uOw/+B2BCkJvtp0OOB5IhkxT+bLA5dLTu7VnR/+RgbEAKe2zdoCiLbb3FfcTLYRpLR1XwtBRu2eObZGDMyT4oxePYB6wY6k/WiinPnfUH0A87Ryg1nbh7sC4A=',s:[0x8118213dcb,0x529a9c6e25],}})();</script></body>
 </html>

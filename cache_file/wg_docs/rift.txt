@@ -763,7 +763,7 @@
         
         
         
-        <span class="badge bg-danger" title="Goal is &lt;7 days">for 124 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;7 days">for 126 days</span>
         
         
             
@@ -968,7 +968,7 @@
         
         
         
-        <span class="badge bg-danger" title="Goal is &lt;14 days">for 331 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;14 days">for 333 days</span>
         
         
             
@@ -1014,7 +1014,7 @@
                href="mailto:aretana.ietf%40gmail.com"
                aria-label="Compose email to aretana.ietf@gmail.com."
                title="Compose email to aretana.ietf@gmail.com.">
-                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 167 days</span>
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 170 days</span>
             
         
     
@@ -1350,5 +1350,5 @@
                 window.location.href = e.params.data.url;
             });
         </script>
-    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6ff49009ce07a349',m:'Z82fCHXtwsoc9m49nF8xZ9hDgDlRk8HoAj.5vHuzhuM-1650527782-0-AZInWKIFY08QzYv0DUP981QHhjEJptfwEKN4GulJRK9Dmy9G2OfHNcjwgiAsXQi82W1LQV3JmxJRoYOMfxJcpSleni/91rdkex7IDFTcDKv+3MFriNRbb4Km/d6Iq3X8pERzM11cYaDlEKUsh1Hpiu0=',s:[0xea77f063a4,0x25f793c098],}})();</script></body>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'7007e6096f816b6f',m:'1Ct_rkNVp52LFtujaXxRamGwk3Vmhoy3QVn4FnTiCGs-1650730534-0-AfDj0r5q9R9k0RKgUzwI9Ot4nQuf7aVCiPoER/7MRNbQhCOrQzirmWgUZwDZuGhAn++i+y98O5yf6Cd1Ti/hJwkg0UVPmujdJrM3cPePkiUF2WYtdqdt6G8yrljge2f61EnUXRC43JKjCOuGGo1Flo8=',s:[0x1d7389b04a,0xbdb591b2e8],}})();</script></body>
 </html>

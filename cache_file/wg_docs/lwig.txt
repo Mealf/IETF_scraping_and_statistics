@@ -765,7 +765,7 @@
             : <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-lwig-cellular">AUTH48</a>
         
         <span class="badge bg-info" title="AUTH48">AUTH48</span>
-        <span class="badge bg-danger" title="Goal is &lt;60 days">for 2298 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;60 days">for 2300 days</span>
         
         
             
@@ -877,7 +877,7 @@
         
         
         
-        <span class="badge bg-danger" title="Goal is &lt;14 days">for 254 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;14 days">for 256 days</span>
         
         
             
@@ -913,7 +913,7 @@
                href="mailto:ek.ietf%40gmail.com"
                aria-label="Compose email to ek.ietf@gmail.com."
                title="Compose email to ek.ietf@gmail.com.">
-                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 253 days</span>
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 255 days</span>
             
         
     
@@ -980,21 +980,10 @@
     </td>
     <td>
             
-                
-                    <a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-lwig-minimal-esp-10">
-                    
-                    
                     
                         2022-04-08
                     
                     
-                        </a>
-                    
-                
-                    <br>
-                    <div class="float-end">
-                        <span class="badge bg-success">New</span>
-                    </div>
                 
                 
             </td>
@@ -1012,7 +1001,7 @@
         
         
         
-        <span class="badge bg-success">for 14 days</span>
+        <span class="badge bg-warning" title="Goal is &lt;14 days">for 16 days</span>
         
         
             
@@ -1052,7 +1041,7 @@
                href="mailto:ek.ietf%40gmail.com"
                aria-label="Compose email to ek.ietf@gmail.com."
                title="Compose email to ek.ietf@gmail.com.">
-                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 29 days</span>
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 31 days</span>
             
         
     
@@ -1783,5 +1772,5 @@
                 window.location.href = e.params.data.url;
             });
         </script>
-    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6ff48bc849bc56fb',m:'JCIlSrHZgn2OAmeMKDz08SC_b2CP0r3y_ugNQ9GAWcg-1650527608-0-Ack3jt1BVyrbyGhrRy3Kf1tixNMrOc2sXYclZmnxRffHL8aHOn7bOxb7dqNmmuZUZhsLhjlE4vzmaWyB1HQFV0RlAJtiygtwvuOlT3ecATFw/Ms36kSGPZEyJVtJ3RPxeGDS4abNeUqCeassV48Ue2w=',s:[0x88faad4162,0x4296cfb430],}})();</script></body>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'7007e0de0cfb6a93',m:'U5j2CdJuc87xm101ABpuDtUJ94IINZm0dqjQ7R762y0-1650730323-0-AUxF6WR9xoqIB5fq1KZ01f+nhMHaiHGpDFnwrLyUzGva8UXboy+fg5dBuFExqhK1OFkxa7+yb020c0Lic7T6X0MUKtckLV2NJ8sgj0q1qNgoajpySyxvlODAzCV2nUMEXf7zeagaD7LHWxyYRVV7iOI=',s:[0x9680b3f1b1,0xfa8d3a773b],}})();</script></body>
 </html>

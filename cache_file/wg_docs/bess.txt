@@ -706,7 +706,7 @@
             
                 <th scope="col" colspan="5">
             
-            Active Internet-Drafts (27 hits)
+            Active Internet-Drafts (26 hits)
             </th>
         </tr>
     </tbody>
@@ -1123,7 +1123,7 @@
             : <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-bess-evpn-bum-procedure-updates">MISSREF</a>
         
         
-        <span class="badge bg-warning" title="Goal is &lt;60 days">for 107 days</span>
+        <span class="badge bg-warning" title="Goal is &lt;60 days">for 109 days</span>
         
         
             
@@ -1320,7 +1320,7 @@
             : <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-bess-evpn-igmp-mld-proxy">EDIT</a>
         
         
-        <span class="badge bg-success">for 29 days</span>
+        <span class="badge bg-success">for 31 days</span>
         
         
             
@@ -1534,7 +1534,7 @@
         
         
         
-        <span class="badge bg-danger" title="Goal is &lt;7 days">for 184 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;7 days">for 186 days</span>
         
         
             
@@ -1727,7 +1727,7 @@
         
         
         
-        <span class="badge bg-danger" title="Goal is &lt;7 days">for 37 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;7 days">for 39 days</span>
         
         
             
@@ -2087,7 +2087,7 @@
             : <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-bess-evpn-optimized-ir">MISSREF</a>
         
         
-        <span class="badge bg-warning" title="Goal is &lt;60 days">for 86 days</span>
+        <span class="badge bg-warning" title="Goal is &lt;60 days">for 88 days</span>
         
         
             
@@ -2290,7 +2290,7 @@
         
         
         
-        <span class="badge bg-danger" title="Goal is &lt;7 days">for 51 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;7 days">for 53 days</span>
         
         
             
@@ -2318,7 +2318,7 @@
                href="mailto:andrew-ietf%40liquid.tech"
                aria-label="Compose email to andrew-ietf@liquid.tech."
                title="Compose email to andrew-ietf@liquid.tech.">
-                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 28 days</span>
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 30 days</span>
             
         
     
@@ -2583,7 +2583,7 @@
         
         
         
-        <span class="badge bg-danger" title="Goal is &lt;7 days">for 51 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;7 days">for 53 days</span>
         
         
             
@@ -2611,7 +2611,7 @@
                href="mailto:andrew-ietf%40liquid.tech"
                aria-label="Compose email to andrew-ietf@liquid.tech."
                title="Compose email to andrew-ietf@liquid.tech.">
-                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 28 days</span>
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 30 days</span>
             
         
     
@@ -2886,7 +2886,7 @@
         
         
         
-        <span class="badge bg-danger" title="Goal is &lt;7 days">for 51 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;7 days">for 53 days</span>
         
         
             
@@ -2914,7 +2914,7 @@
                href="mailto:andrew-ietf%40liquid.tech"
                aria-label="Compose email to andrew-ietf@liquid.tech."
                title="Compose email to andrew-ietf@liquid.tech.">
-                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 28 days</span>
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 30 days</span>
             
         
     
@@ -2947,92 +2947,6 @@
                aria-label="Compose email to slitkows.ietf@gmail.com."
                title="Compose email to slitkows.ietf@gmail.com.">
                 <i class="bi bi-envelope"></i></a></span>
-                    
-                </td>
-            
-            
-        </tr>
-        
-            
-
-
-
-
-
-
-
-<tr>
-    <td>
-        
-        
-        
-    </td>
-    <td class="doc">
-        <small class="float-end text-muted d-none d-sm-block">18 pages</small>
-        <div>
-            <a href="/doc/draft-ietf-bess-mvpn-evpn-sr-p2mp/">
-                
-                    draft-ietf-bess-mvpn-evpn-sr-p2mp-04
-                
-            </a>
-            
-            <br>
-            
-            <b>Multicast and Ethernet VPN with Segment Routing P2MP</b>
-            
-        </div>
-        
-    </td>
-    <td>
-            
-                    
-                        2021-10-19
-                    
-                    
-                
-                
-                    <br>
-                    <span class="badge bg-warning">Expires soon</span>
-                
-            </td>
-            
-
-
-
-<td class="status">
-    
-    
-        
-            I-D Exists
-        
-        
-        
-        
-        
-        
-            
-        
-        
-            <br>
-            
-                WG Document
-                
-            
-        
-        
-        
-        
-        
-        
-    
-</td>
-            <td class="text-center d-none d-sm-table-cell">
-                
-            </td>
-            
-                <td class="d-none d-sm-table-cell">
-                    
-                    <br>
                     
                 </td>
             
@@ -3262,7 +3176,7 @@
             : <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-bess-srv6-services">EDIT</a>
         
         
-        <span class="badge bg-success">for 29 days</span>
+        <span class="badge bg-success">for 31 days</span>
         
         
             
@@ -7030,7 +6944,7 @@
         
         
         
-        <span class="badge bg-danger" title="Goal is &lt;7 days">for 409 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;7 days">for 411 days</span>
         
         
             
@@ -7058,7 +6972,7 @@
                href="mailto:andrew-ietf%40liquid.tech"
                aria-label="Compose email to andrew-ietf@liquid.tech."
                title="Compose email to andrew-ietf@liquid.tech.">
-                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 28 days</span>
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 30 days</span>
             
         
     
@@ -9073,5 +8987,5 @@
                 window.location.href = e.params.data.url;
             });
         </script>
-    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6ff48d7d1fdf6a9e',m:'0wDsfZF6wXoM_gqP_b3m_Avetd3Xk8eRoq3gqNNhgUw-1650527682-0-AUbzyWh4HVuwoBUpM6PAO5TlD60ijTIHoD513BgwH4pXgOPD7H/zeIgdB5JJp8Xeq6SqCwGX2UNoMRkPUWt24BioxIw2gXYTm2TE4cZRgk7J1cwx/dsTGJ/Y/N+B8L/7lLRnwcgwg2qUpuphr9lv8Tk=',s:[0x9c16225722,0x9632371333],}})();</script></body>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'7007e2fb8a40a9cb',m:'FDCnChi8wMPBLVLFesdBMRSh3IbHzOO_4u.LKGSZ6ow-1650730414-0-AcqFC+omYd6V8lG9uQXA70nWRZmjq4YUwdtm4IZ6CiAG3aODRvZFNn7uMVNX10lwdw6aSQpwjZNP6O3XboLBN2el26aEiI/gsCUdgjuqoGaLFC+h4VOsClHhsb6vblWgHNELl8xj6jMGmLGQZILWfmM=',s:[0x126f8f3059,0xbbcd8a6559],}})();</script></body>
 </html>

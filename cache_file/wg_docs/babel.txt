@@ -765,7 +765,7 @@
             : <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-babel-v4viav6">AUTH48</a>
         
         <span class="badge bg-info" title="AUTH48">AUTH48</span>
-        <span class="badge bg-success">for 51 days</span>
+        <span class="badge bg-success">for 53 days</span>
         
         
             
@@ -885,7 +885,7 @@
             : <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-babel-yang-model">MISSREF</a>
         
         
-        <span class="badge bg-danger" title="Goal is &lt;60 days">for 213 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;60 days">for 215 days</span>
         
         
             
@@ -1564,5 +1564,5 @@
                 window.location.href = e.params.data.url;
             });
         </script>
-    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6ff48d6f7b56a361',m:'nIMELBUA.FBUikDBL2J7WDR4KuAY.vlo3LerfjCh58M-1650527676-0-AScx6Avja1XzORaIgU7tw9gpa0z0X7W+0s9Sworp5LWHiubRWhPLPtywhNJsjotSmmtrD5zTfLXVaEdiUvGKRd6Rb+B/dCrgqhQMDVbDl8DDhIq0O3GBdHZMy5sM78pjiGaRnqYrA9FF7TDyP/acdGw=',s:[0xb79fb49879,0x2c0141a690],}})();</script></body>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'7007e2ebed096a92',m:'huJW8sCgVuUJzpwkKkTjxhoFrpKJUOrQeVhLrF0e1Rc-1650730407-0-AXL5QQ9UKl7bpVhmXBxGjUe9aROombDwCC+rmpRuF+mL5hdjDIDdKfuD22PfBpBYl73tTr57/51as1gk5qpU/CZLkmm4MUoKW61ui2q61u5GxJ1jZFb17VA6tnohpn13MfQmszXQRo2oIpIjztSj07A=',s:[0x05df8bdf65,0xbfa5658732],}})();</script></body>
 </html>

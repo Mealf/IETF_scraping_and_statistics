@@ -1012,7 +1012,7 @@
         
         
         
-        <span class="badge bg-danger" title="Goal is &lt;7 days">for 119 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;7 days">for 121 days</span>
         
         
             
@@ -1129,7 +1129,7 @@
         
         
         
-        <span class="badge bg-danger" title="Goal is &lt;7 days">for 134 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;7 days">for 136 days</span>
         
         
             
@@ -1417,7 +1417,7 @@
             : <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-spring-segment-routing-policy">EDIT</a>
         
         
-        <span class="badge bg-success">for 28 days</span>
+        <span class="badge bg-success">for 30 days</span>
         
         
             
@@ -3084,7 +3084,7 @@
         <div>
             <a href="/doc/draft-acee-lsr-ospfv3-sr-yang/">
                 
-                    draft-acee-lsr-ospfv3-sr-yang-06
+                    draft-acee-lsr-ospfv3-sr-yang-07
                 
             </a>
             
@@ -3097,14 +3097,22 @@
     </td>
     <td>
             
-                    
-                        2021-10-19
-                    
-                    
                 
+                    <a href="https://www.ietf.org/rfcdiff?url2=draft-acee-lsr-ospfv3-sr-yang-07">
+                    
+                    
+                    
+                        2022-04-21
+                    
+                    
+                        </a>
+                    
                 
                     <br>
-                    <span class="badge bg-warning">Expires soon</span>
+                    <div class="float-end">
+                        <span class="badge bg-success">New</span>
+                    </div>
+                
                 
             </td>
             
@@ -3803,6 +3811,92 @@
         
     </td>
     <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">5 pages</small>
+        <div>
+            <a href="/doc/draft-chen-idr-bgp-ls-sr-policy-nrp/">
+                
+                    draft-chen-idr-bgp-ls-sr-policy-nrp-00
+                
+            </a>
+            
+            <br>
+            
+            <b>SR Policies Extensions for NRP in BGP-LS</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                
+                    
+                    
+                        2022-04-22
+                    
+                    
+                        
+                    
+                
+                    <br>
+                    <div class="float-end">
+                        <span class="badge bg-success">New</span>
+                    </div>
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+        
+        
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
         <small class="float-end text-muted d-none d-sm-block">16 pages</small>
         <div>
             <a href="/doc/draft-chen-idr-sr-ingress-protection/">
@@ -4378,19 +4472,10 @@
     </td>
     <td>
             
-                
-                    
                     
                         2022-04-08
                     
                     
-                        
-                    
-                
-                    <br>
-                    <div class="float-end">
-                        <span class="badge bg-success">New</span>
-                    </div>
                 
                 
             </td>
@@ -6879,7 +6964,7 @@
             : <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-6man-spring-srv6-oam">EDIT</a>
         
         
-        <span class="badge bg-success">for 29 days</span>
+        <span class="badge bg-success">for 31 days</span>
         
         
             
@@ -6959,92 +7044,6 @@
         
     </td>
     <td class="doc">
-        <small class="float-end text-muted d-none d-sm-block">18 pages</small>
-        <div>
-            <a href="/doc/draft-ietf-bess-mvpn-evpn-sr-p2mp/">
-                
-                    draft-ietf-bess-mvpn-evpn-sr-p2mp-04
-                
-            </a>
-            
-            <br>
-            
-            <b>Multicast and Ethernet VPN with Segment Routing P2MP</b>
-            
-        </div>
-        
-    </td>
-    <td>
-            
-                    
-                        2021-10-19
-                    
-                    
-                
-                
-                    <br>
-                    <span class="badge bg-warning">Expires soon</span>
-                
-            </td>
-            
-
-
-
-<td class="status">
-    
-    
-        
-            I-D Exists
-        
-        
-        
-        
-        
-        
-            
-        
-        
-            <br>
-            
-                WG Document
-                
-            
-        
-        
-        
-        
-        
-        
-    
-</td>
-            <td class="text-center d-none d-sm-table-cell">
-                
-            </td>
-            
-                <td class="d-none d-sm-table-cell">
-                    
-                    <br>
-                    
-                </td>
-            
-            
-        </tr>
-        
-            
-
-
-
-
-
-
-
-<tr>
-    <td>
-        
-        
-        
-    </td>
-    <td class="doc">
         <small class="float-end text-muted d-none d-sm-block">34 pages</small>
         <div>
             <a href="/doc/draft-ietf-bess-srv6-services/">
@@ -7083,7 +7082,7 @@
             : <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-bess-srv6-services">EDIT</a>
         
         
-        <span class="badge bg-success">for 29 days</span>
+        <span class="badge bg-success">for 31 days</span>
         
         
             
@@ -7643,7 +7642,7 @@
         
         
         
-        <span class="badge bg-success">for 14 days</span>
+        <span class="badge bg-warning" title="Goal is &lt;14 days">for 16 days</span>
         
         
             
@@ -7748,21 +7747,10 @@
     </td>
     <td>
             
-                
-                    <a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-idr-flowspec-srv6-01">
-                    
-                    
                     
                         2022-04-08
                     
                     
-                        </a>
-                    
-                
-                    <br>
-                    <div class="float-end">
-                        <span class="badge bg-success">New</span>
-                    </div>
                 
                 
             </td>
@@ -8034,7 +8022,7 @@
         <div>
             <a href="/doc/draft-ietf-idr-sr-policy-path-mtu/">
                 
-                    draft-ietf-idr-sr-policy-path-mtu-04
+                    draft-ietf-idr-sr-policy-path-mtu-05
                 
             </a>
             
@@ -8047,14 +8035,22 @@
     </td>
     <td>
             
-                    
-                        2021-10-20
-                    
-                    
                 
+                    <a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-idr-sr-policy-path-mtu-05">
+                    
+                    
+                    
+                        2022-04-21
+                    
+                    
+                        </a>
+                    
                 
                     <br>
-                    <span class="badge bg-warning">Expires soon</span>
+                    <div class="float-end">
+                        <span class="badge bg-success">New</span>
+                    </div>
+                
                 
             </td>
             
@@ -8501,7 +8497,7 @@
             : <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-lsr-isis-srv6-extensions">MISSREF</a>
         
         
-        <span class="badge bg-danger" title="Goal is &lt;60 days">for 183 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;60 days">for 185 days</span>
         
         
             
@@ -9278,11 +9274,11 @@
         
     </td>
     <td class="doc">
-        <small class="float-end text-muted d-none d-sm-block">24 pages</small>
+        <small class="float-end text-muted d-none d-sm-block">25 pages</small>
         <div>
             <a href="/doc/draft-ietf-pce-segment-routing-policy-cp/">
                 
-                    draft-ietf-pce-segment-routing-policy-cp-06
+                    draft-ietf-pce-segment-routing-policy-cp-07
                 
             </a>
             
@@ -9295,14 +9291,22 @@
     </td>
     <td>
             
-                    
-                        2021-10-22
-                    
-                    
                 
+                    <a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-pce-segment-routing-policy-cp-07">
+                    
+                    
+                    
+                        2022-04-21
+                    
+                    
+                        </a>
+                    
                 
                     <br>
-                    <span class="badge bg-warning">Expires soon</span>
+                    <div class="float-end">
+                        <span class="badge bg-success">New</span>
+                    </div>
+                
                 
             </td>
             
@@ -10763,11 +10767,11 @@
         
     </td>
     <td class="doc">
-        <small class="float-end text-muted d-none d-sm-block">12 pages</small>
+        <small class="float-end text-muted d-none d-sm-block">13 pages</small>
         <div>
             <a href="/doc/draft-li-spring-sr-sfc-control-plane-framework/">
                 
-                    draft-li-spring-sr-sfc-control-plane-framework-05
+                    draft-li-spring-sr-sfc-control-plane-framework-06
                 
             </a>
             
@@ -10780,14 +10784,22 @@
     </td>
     <td>
             
-                    
-                        2021-10-21
-                    
-                    
                 
+                    <a href="https://www.ietf.org/rfcdiff?url2=draft-li-spring-sr-sfc-control-plane-framework-06">
+                    
+                    
+                    
+                        2022-04-21
+                    
+                    
+                        </a>
+                    
                 
                     <br>
-                    <span class="badge bg-warning">Expires soon</span>
+                    <div class="float-end">
+                        <span class="badge bg-success">New</span>
+                    </div>
+                
                 
             </td>
             
@@ -10924,7 +10936,7 @@
         <div>
             <a href="/doc/draft-li-spring-srv6-security-consideration/">
                 
-                    draft-li-spring-srv6-security-consideration-07
+                    draft-li-spring-srv6-security-consideration-08
                 
             </a>
             
@@ -10937,14 +10949,22 @@
     </td>
     <td>
             
-                    
-                        2021-10-21
-                    
-                    
                 
+                    <a href="https://www.ietf.org/rfcdiff?url2=draft-li-spring-srv6-security-consideration-08">
+                    
+                    
+                    
+                        2022-04-21
+                    
+                    
+                        </a>
+                    
                 
                     <br>
-                    <span class="badge bg-warning">Expires soon</span>
+                    <div class="float-end">
+                        <span class="badge bg-success">New</span>
+                    </div>
+                
                 
             </td>
             
@@ -13501,5 +13521,5 @@
                 window.location.href = e.params.data.url;
             });
         </script>
-    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6ff49071b97756f5',m:'WqkMx4327SxsWOlEOMag8iuHyc8hMeEwaPhCqTSAMpI-1650527806-0-ARSZKkGY5fqv27siVa7wbr41lv0w/z88XywvOgDHGIBJ74tNBkJd0HjBB6Wq4SgyZDHs5YhpR4iww8XlipMuv2bmUmTnH2iIgnSudHSY2hSSMs8ciHf4f/i3OTM8d1SSgLONAEygQAMzUQ51XZ6Xcd4=',s:[0x126f8f3059,0x3435c04457],}})();</script></body>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'7007e676ef086b6c',m:'9cRDW_kxOAi6CP.uMNm7paBJM42AcnNKudTCltZNeGM-1650730558-0-AcFnM+JuJ0St1658krQoIxlUBS74CAbmCeT3pAW4WGhaaSan8MqRPmWYXCBBGsnnJTWiIwAe4OG8XYy6N98brf6Qr4UxD8GFH6usXNaaqBdIO98E1/bc0AUS8jFRUTJoujEHTEtEbjwmTZNcqtZ9Fwk=',s:[0xd3c49d15a0,0xe511a00b40],}})();</script></body>
 </html>

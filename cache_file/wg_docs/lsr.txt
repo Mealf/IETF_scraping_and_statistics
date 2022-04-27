@@ -859,7 +859,7 @@
             : <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-isis-yang-isis-cfg">AUTH48</a>
         
         <span class="badge bg-info" title="AUTH48">AUTH48</span>
-        <span class="badge bg-danger" title="Goal is &lt;60 days">for 916 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;60 days">for 918 days</span>
         
         
             
@@ -1135,21 +1135,10 @@
     </td>
     <td>
             
-                
-                    <a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-lsr-flex-algo-19">
-                    
-                    
                     
                         2022-04-07
                     
                     
-                        </a>
-                    
-                
-                    <br>
-                    <div class="float-end">
-                        <span class="badge bg-success">New</span>
-                    </div>
                 
                 
             </td>
@@ -1165,7 +1154,7 @@
         
         
         
-        <span class="badge bg-danger" title="Goal is &lt;14 days">for 49 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;14 days">for 51 days</span>
         
         
             
@@ -1197,7 +1186,7 @@
                href="mailto:jgs%40juniper.net"
                aria-label="Compose email to jgs@juniper.net."
                title="Compose email to jgs@juniper.net.">
-                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 48 days</span>
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 50 days</span>
             
         
     
@@ -1858,7 +1847,7 @@
         
         
         
-        <span class="badge bg-danger" title="Goal is &lt;7 days">for 91 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;7 days">for 93 days</span>
         
         
             
@@ -1968,7 +1957,7 @@
         
         
         
-        <span class="badge bg-danger" title="Goal is &lt;7 days">for 249 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;7 days">for 251 days</span>
         
         
             
@@ -2159,7 +2148,7 @@
             : <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-lsr-isis-srv6-extensions">MISSREF</a>
         
         
-        <span class="badge bg-danger" title="Goal is &lt;60 days">for 183 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;60 days">for 185 days</span>
         
         
             
@@ -2629,7 +2618,7 @@
         
         
         
-        <span class="badge bg-danger" title="Goal is &lt;7 days">for 70 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;7 days">for 72 days</span>
         
         
             
@@ -3383,7 +3372,7 @@
         
         
         
-        <span class="badge bg-danger" title="Goal is &lt;7 days">for 244 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;7 days">for 246 days</span>
         
         
             
@@ -3497,7 +3486,7 @@
             : <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-lsr-yang-isis-reverse-metric">AUTH48-DONE</a>
         
         
-        <span class="badge bg-warning" title="Goal is &lt;60 days">for 107 days</span>
+        <span class="badge bg-warning" title="Goal is &lt;60 days">for 109 days</span>
         
         
             
@@ -3705,7 +3694,7 @@
             : <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-ospf-yang">AUTH48</a>
         
         <span class="badge bg-info" title="AUTH48">AUTH48</span>
-        <span class="badge bg-danger" title="Goal is &lt;60 days">for 968 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;60 days">for 970 days</span>
         
         
             
@@ -5160,7 +5149,7 @@
             
                 <th scope="col" colspan="5">
             
-            Related Internet-Drafts (33 hits)
+            Related Internet-Drafts (32 hits)
             </th>
         </tr>
     </tbody>
@@ -5185,7 +5174,7 @@
         <div>
             <a href="/doc/draft-acee-lsr-ospfv3-sr-yang/">
                 
-                    draft-acee-lsr-ospfv3-sr-yang-06
+                    draft-acee-lsr-ospfv3-sr-yang-07
                 
             </a>
             
@@ -5198,14 +5187,22 @@
     </td>
     <td>
             
-                    
-                        2021-10-19
-                    
-                    
                 
+                    <a href="https://www.ietf.org/rfcdiff?url2=draft-acee-lsr-ospfv3-sr-yang-07">
+                    
+                    
+                    
+                        2022-04-21
+                    
+                    
+                        </a>
+                    
                 
                     <br>
-                    <span class="badge bg-warning">Expires soon</span>
+                    <div class="float-end">
+                        <span class="badge bg-success">New</span>
+                    </div>
+                
                 
             </td>
             
@@ -5748,19 +5745,10 @@
     </td>
     <td>
             
-                
-                    
                     
                         2022-04-08
                     
                     
-                        
-                    
-                
-                    <br>
-                    <div class="float-end">
-                        <span class="badge bg-success">New</span>
-                    </div>
                 
                 
             </td>
@@ -6303,19 +6291,10 @@
     </td>
     <td>
             
-                
-                    
                     
                         2022-04-08
                     
                     
-                        
-                    
-                
-                    <br>
-                    <div class="float-end">
-                        <span class="badge bg-success">New</span>
-                    </div>
                 
                 
             </td>
@@ -6471,86 +6450,6 @@
                     
                     
                 
-                
-            </td>
-            
-
-
-
-<td class="status">
-    
-    
-        
-            I-D Exists
-        
-        
-        
-        
-        
-        
-            
-        
-        
-        
-        
-        
-        
-        
-    
-</td>
-            <td class="text-center d-none d-sm-table-cell">
-                
-            </td>
-            
-                <td class="d-none d-sm-table-cell">
-                    
-                    <br>
-                    
-                </td>
-            
-            
-        </tr>
-        
-            
-
-
-
-
-
-
-
-<tr>
-    <td>
-        
-        
-        
-    </td>
-    <td class="doc">
-        <small class="float-end text-muted d-none d-sm-block">9 pages</small>
-        <div>
-            <a href="/doc/draft-hu-lsr-igp-path-mtu/">
-                
-                    draft-hu-lsr-igp-path-mtu-00
-                
-            </a>
-            
-            <br>
-            
-            <b>IGP Extensions for Path MTU</b>
-            
-        </div>
-        
-    </td>
-    <td>
-            
-                    
-                        2021-10-19
-                    
-                    
-                
-                
-                    <br>
-                    <span class="badge bg-warning">Expires soon</span>
                 
             </td>
             
@@ -7891,5 +7790,5 @@
                 window.location.href = e.params.data.url;
             });
         </script>
-    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6ff48eacbb175700',m:'DzkuxmrMBrgkwb0Z2rSlRtvJjh7TE.UEe.E82TI.qYg-1650527730-0-Abf0nyrryOEgwecpi4U2dQeNxt+Q9sWvN2WmTJeK7yxD9WykEKHbf3K9Z2YxvN5FwtkpRrxGMFWyN+X4/TpSx+vwnXjozL2uGWiqgCPXkWVg0q86kUk94gBZFkvcgCgRVMWezevpnh1tJZZZQEhisY0=',s:[0x5735ede9aa,0x55ac5202d0],}})();</script></body>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'7007e45ab97b6b6e',m:'GCmxvDdRNA21GOPIR3QcKuaH7IjjOyJ9yMnKK0qXOf8-1650730470-0-AaD6mCKTjKTrN30Jnn5q+r2HH6VzSsvmLpf/07SBdzLkQ9RhavtyYwi5FLXeVmmqgQO0AMdE86XlhyPsMRhJfMV/Jm6mN2YvmaFc8HRxS7LUKGkHp16/U7xDh4rrABVUqUdgvDpKi9AKM39ynJkbNz0=',s:[0x351a470365,0xbd1bf9ac55],}})();</script></body>
 </html>

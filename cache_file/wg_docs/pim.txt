@@ -951,7 +951,7 @@
         
         
         
-        <span class="badge bg-danger" title="Goal is &lt;7 days">for 132 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;7 days">for 134 days</span>
         
         
             
@@ -1248,7 +1248,7 @@
         
         
         
-        <span class="badge bg-danger" title="Goal is &lt;14 days">for 77 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;14 days">for 79 days</span>
         
         
             
@@ -1290,7 +1290,7 @@
                href="mailto:stig%40venaas.com"
                aria-label="Compose email to stig@venaas.com."
                title="Compose email to stig@venaas.com.">
-                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 76 days</span>,
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 79 days</span>,
             
                 <span ><a 
            title="Author"
@@ -1298,7 +1298,7 @@
                href="mailto:asaeda%40ieee.org"
                aria-label="Compose email to asaeda@ieee.org."
                title="Compose email to asaeda@ieee.org.">
-                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 76 days</span>,
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 79 days</span>,
             
                 <span ><a 
            title="Author"
@@ -1306,7 +1306,7 @@
                href="mailto:zhang.zheng%40zte.com.cn"
                aria-label="Compose email to zhang.zheng@zte.com.cn."
                title="Compose email to zhang.zheng@zte.com.cn.">
-                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 76 days</span>,
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 79 days</span>,
             
                 <span ><a 
            title="Author"
@@ -1314,7 +1314,7 @@
                href="mailto:sivakumar.mahesh%40gmail.com"
                aria-label="Compose email to sivakumar.mahesh@gmail.com."
                title="Compose email to sivakumar.mahesh@gmail.com.">
-                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 76 days</span>
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 79 days</span>
             
         
     
@@ -1400,7 +1400,7 @@
         
         
         
-        <span class="badge bg-danger" title="Goal is &lt;7 days">for 132 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;7 days">for 134 days</span>
         
         
             
@@ -1600,7 +1600,7 @@
         
         
         
-        <span class="badge bg-danger" title="Goal is &lt;7 days">for 45 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;7 days">for 47 days</span>
         
         
             
@@ -1632,7 +1632,7 @@
                href="mailto:aretana.ietf%40gmail.com"
                aria-label="Compose email to aretana.ietf@gmail.com."
                title="Compose email to aretana.ietf@gmail.com.">
-                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 44 days</span>
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 47 days</span>
             
         
     
@@ -1890,7 +1890,7 @@
             : <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-pim-yang">AUTH48</a>
         
         <span class="badge bg-info" title="AUTH48">AUTH48</span>
-        <span class="badge bg-danger" title="Goal is &lt;60 days">for 1436 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;60 days">for 1438 days</span>
         
         
             
@@ -5176,5 +5176,5 @@
                 window.location.href = e.params.data.url;
             });
         </script>
-    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6ff48fd7bfbca3ab',m:'Jqqp4SWL7zvrK0NfU_nmL3ClST9LjL8wjYD.KxLYlqk-1650527777-0-AdZVY9iR+geOFZjBubafp5rPK6AxroSePLiA4g9uY9jo91u8wLtv44l0yDL1mnX4SkoJb6M1JfbQCmpIqBtkt0WQDKG46WTGlX+4SZYghGRhDLhAh5aBihHGXZA78xjtslqUbexd+Va01pMRzyjSuBE=',s:[0x4721499c16,0xb28aa65613],}})();</script></body>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'7007e5c41c74a39f',m:'r9KgTs_L.Ua8ytxDFI5gQ4SNAD8EDNi0GUxumfpr2v4-1650730526-0-Ad7syk/Sq/hLpmXinjSdmtnwO7AxWDxN8Lj6X2DUHfBVrs/g0JNgauoK5uL573VPm3Vew098rok0YtFJ2FdCl+tDdqHlIRhRzJdUWadGBvMuVfNjV5Aldzlph+kC+7P197X6YrANtjQMeyAQt3g+SSs=',s:[0xf7369ab9ee,0x8f623c1dea],}})();</script></body>
 </html>

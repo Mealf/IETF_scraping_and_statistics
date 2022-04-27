@@ -765,7 +765,7 @@
         
         
         
-        <span class="badge bg-danger" title="Goal is &lt;14 days">for 140 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;14 days">for 142 days</span>
         
         
             
@@ -805,7 +805,7 @@
                href="mailto:mary.ietf.barnes%40gmail.com"
                aria-label="Compose email to mary.ietf.barnes@gmail.com."
                title="Compose email to mary.ietf.barnes@gmail.com.">
-                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 139 days</span>,
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 142 days</span>,
             
                 <span ><a 
            title="Author"
@@ -813,7 +813,7 @@
                href="mailto:jon.peterson%40team.neustar"
                aria-label="Compose email to jon.peterson@team.neustar."
                title="Compose email to jon.peterson@team.neustar.">
-                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 139 days</span>,
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 142 days</span>,
             
                 <span ><a 
            title="Responsible AD"
@@ -821,7 +821,7 @@
                href="mailto:rdd%40cert.org"
                aria-label="Compose email to rdd@cert.org."
                title="Compose email to rdd@cert.org.">
-                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 155 days</span>,
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 157 days</span>,
             
                 <span ><a 
            title="Author"
@@ -829,7 +829,7 @@
                href="mailto:david_hancock%40comcast.com"
                aria-label="Compose email to david_hancock@comcast.com."
                title="Compose email to david_hancock@comcast.com.">
-                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 139 days</span>,
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 142 days</span>,
             
                 <span ><a 
            title="Author"
@@ -837,7 +837,7 @@
                href="mailto:chris-ietf%40chriswendt.net"
                aria-label="Compose email to chris-ietf@chriswendt.net."
                title="Compose email to chris-ietf@chriswendt.net.">
-                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 139 days</span>
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 142 days</span>
             
         
     
@@ -925,7 +925,7 @@
         
         
         
-        <span class="badge bg-danger" title="Goal is &lt;14 days">for 140 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;14 days">for 142 days</span>
         
         
             
@@ -962,12 +962,20 @@
             Action Holders:
             
                 <span ><a 
+           title="Responsible AD"
+            href="/person/rdd@cert.org" >Roman Danyliw</a> <a 
+               href="mailto:rdd%40cert.org"
+               aria-label="Compose email to rdd@cert.org."
+               title="Compose email to rdd@cert.org.">
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 157 days</span>,
+            
+                <span ><a 
            title="Author"
             href="/person/mary.ietf.barnes@gmail.com" >Mary Barnes</a> <a 
                href="mailto:mary.ietf.barnes%40gmail.com"
                aria-label="Compose email to mary.ietf.barnes@gmail.com."
                title="Compose email to mary.ietf.barnes@gmail.com.">
-                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 139 days</span>,
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 142 days</span>,
             
                 <span ><a 
            title="Author"
@@ -975,23 +983,7 @@
                href="mailto:jon.peterson%40team.neustar"
                aria-label="Compose email to jon.peterson@team.neustar."
                title="Compose email to jon.peterson@team.neustar.">
-                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 139 days</span>,
-            
-                <span ><a 
-           title="Responsible AD"
-            href="/person/rdd@cert.org" >Roman Danyliw</a> <a 
-               href="mailto:rdd%40cert.org"
-               aria-label="Compose email to rdd@cert.org."
-               title="Compose email to rdd@cert.org.">
-                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 155 days</span>,
-            
-                <span ><a 
-           title="Author"
-            href="/person/david_hancock@comcast.com" >David Hancock</a> <a 
-               href="mailto:david_hancock%40comcast.com"
-               aria-label="Compose email to david_hancock@comcast.com."
-               title="Compose email to david_hancock@comcast.com.">
-                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 139 days</span>,
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 142 days</span>,
             
                 <span ><a 
            title="Author"
@@ -999,7 +991,15 @@
                href="mailto:chris-ietf%40chriswendt.net"
                aria-label="Compose email to chris-ietf@chriswendt.net."
                title="Compose email to chris-ietf@chriswendt.net.">
-                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 139 days</span>
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 142 days</span>,
+            
+                <span ><a 
+           title="Author"
+            href="/person/david_hancock@comcast.com" >David Hancock</a> <a 
+               href="mailto:david_hancock%40comcast.com"
+               aria-label="Compose email to david_hancock@comcast.com."
+               title="Compose email to david_hancock@comcast.com.">
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 142 days</span>
             
         
     
@@ -1172,7 +1172,7 @@
         
         
         
-        <span class="badge bg-danger" title="Goal is &lt;14 days">for 32 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;14 days">for 34 days</span>
         
         
             
@@ -1212,7 +1212,7 @@
                href="mailto:rdd%40cert.org"
                aria-label="Compose email to rdd@cert.org."
                title="Compose email to rdd@cert.org.">
-                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 143 days</span>
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 145 days</span>
             
         
     
@@ -2205,5 +2205,5 @@
                 window.location.href = e.params.data.url;
             });
         </script>
-    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6ff490fa0816a367',m:'zmqWv0Vp8OTIti7NZzyCymVWQPiyHekk9T4GWNYhkbI-1650527821-0-AbN7t6cB44Q+XX5XGnrXXxQU7YzsqEROLOeZu6v9ReXqzATQIXWrfOBrKr5PVYwUBRJFYkbyqg2WCmkQhcrRrEFoKbwNsnZX/HLYEcR17No8M+cIReicCKY3r7JaKfKZmBbvt+JeYd+k+XP8EUfczog=',s:[0x32db88c491,0xc9c5c01ab0],}})();</script></body>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'7007e6f6284c56e9',m:'7xqdbBYVltGFVkHhfMHpg3W0Nn8aUs_j2uVD9R7RYcM-1650730573-0-AV77pESbP7zWdag99EIZOer88gacdijrr7HH3+QHIEg2ThALtmxjIjmHd1VO55VW1XLLrub9xeFxiI7fAJP4MMoOAopCzDBUvj4Mjd5AmFFbGaGei/ikxGO+z6mAwOb6gtTTOR6n9z+VvuttlYEs1Rc=',s:[0xf7369ab9ee,0x26d3458899],}})();</script></body>
 </html>

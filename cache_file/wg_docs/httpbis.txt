@@ -705,7 +705,7 @@
             
                 <th scope="col" colspan="5">
             
-            Active Internet-Drafts (18 hits)
+            Active Internet-Drafts (17 hits)
             </th>
         </tr>
     </tbody>
@@ -764,7 +764,7 @@
             : <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-httpbis-bcp56bis">AUTH48-DONE</a>
         
         
-        <span class="badge bg-danger" title="Goal is &lt;60 days">for 234 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;60 days">for 236 days</span>
         
         
             
@@ -974,7 +974,7 @@
             : <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-httpbis-cache">AUTH48</a>
         
         <span class="badge bg-info" title="AUTH48">AUTH48</span>
-        <span class="badge bg-danger" title="Goal is &lt;60 days">for 220 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;60 days">for 222 days</span>
         
         
             
@@ -1090,7 +1090,7 @@
             : <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-httpbis-cache-header">AUTH48-DONE</a>
         
         
-        <span class="badge bg-danger" title="Goal is &lt;60 days">for 246 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;60 days">for 248 days</span>
         
         
             
@@ -1376,7 +1376,7 @@
             : <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-httpbis-expect-ct">AUTH48-DONE</a>
         
         
-        <span class="badge bg-danger" title="Goal is &lt;60 days">for 1217 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;60 days">for 1219 days</span>
         
         
             
@@ -1485,10 +1485,10 @@
             RFC Ed Queue
         
         
-            : <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-httpbis-h3-websockets">AUTH48</a>
+            : <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-httpbis-h3-websockets">AUTH48-DONE</a>
         
-        <span class="badge bg-info" title="AUTH48">AUTH48</span>
-        <span class="badge bg-warning" title="Goal is &lt;60 days">for 72 days</span>
+        
+        <span class="badge bg-warning" title="Goal is &lt;60 days">for 74 days</span>
         
         
             
@@ -1602,7 +1602,7 @@
             : <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-httpbis-http2bis">AUTH48-DONE</a>
         
         
-        <span class="badge bg-warning" title="Goal is &lt;60 days">for 80 days</span>
+        <span class="badge bg-warning" title="Goal is &lt;60 days">for 82 days</span>
         
         
             
@@ -1803,7 +1803,7 @@
             : <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-httpbis-messaging">AUTH48</a>
         
         <span class="badge bg-info" title="AUTH48">AUTH48</span>
-        <span class="badge bg-danger" title="Goal is &lt;60 days">for 220 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;60 days">for 222 days</span>
         
         
             
@@ -1921,7 +1921,7 @@
             : <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-httpbis-priority">AUTH48</a>
         
         <span class="badge bg-info" title="AUTH48">AUTH48</span>
-        <span class="badge bg-warning" title="Goal is &lt;60 days">for 93 days</span>
+        <span class="badge bg-warning" title="Goal is &lt;60 days">for 95 days</span>
         
         
             
@@ -2035,7 +2035,7 @@
             : <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-httpbis-proxy-status">AUTH48</a>
         
         <span class="badge bg-info" title="AUTH48">AUTH48</span>
-        <span class="badge bg-danger" title="Goal is &lt;60 days">for 183 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;60 days">for 185 days</span>
         
         
             
@@ -2202,96 +2202,6 @@
         
     </td>
     <td class="doc">
-        <small class="float-end text-muted d-none d-sm-block">59 pages</small>
-        <div>
-            <a href="/doc/draft-ietf-httpbis-rfc6265bis/">
-                
-                    draft-ietf-httpbis-rfc6265bis-09
-                
-            </a>
-            
-            <br>
-            
-            <b>Cookies: HTTP State Management Mechanism</b>
-            
-        </div>
-        
-    </td>
-    <td>
-            
-                    
-                        2021-10-19
-                    
-                    
-                
-                
-                    <br>
-                    <span class="badge bg-warning">Expires soon</span>
-                
-            </td>
-            
-
-
-
-<td class="status">
-    
-    
-        
-            I-D Exists
-        
-        
-        
-        
-        
-        
-            
-        
-        
-            <br>
-            
-                WG Document
-                
-            
-        
-        
-        
-        
-        
-            <br>
-            <span title="Part of httpbis milestone: Submit RFC6265bis (Cookies)"
-                  class="milestone"></span>
-        
-        
-    
-</td>
-            <td class="text-center d-none d-sm-table-cell">
-                
-            </td>
-            
-                <td class="d-none d-sm-table-cell">
-                    
-                    <br>
-                    
-                </td>
-            
-            
-        </tr>
-        
-            
-
-
-
-
-
-
-
-<tr>
-    <td>
-        
-        
-        
-    </td>
-    <td class="doc">
         <small class="float-end text-muted d-none d-sm-block">9 pages</small>
         <div>
             <a href="/doc/draft-ietf-httpbis-safe-method-w-body/">
@@ -2413,7 +2323,7 @@
             : <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-httpbis-semantics">AUTH48</a>
         
         <span class="badge bg-info" title="AUTH48">AUTH48</span>
-        <span class="badge bg-danger" title="Goal is &lt;60 days">for 220 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;60 days">for 222 days</span>
         
         
             
@@ -2529,7 +2439,7 @@
             : <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-httpbis-targeted-cache-control">AUTH48-DONE</a>
         
         
-        <span class="badge bg-warning" title="Goal is &lt;60 days">for 87 days</span>
+        <span class="badge bg-warning" title="Goal is &lt;60 days">for 89 days</span>
         
         
             
@@ -5823,5 +5733,5 @@
                 window.location.href = e.params.data.url;
             });
         </script>
-    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6ff489859bd7a9c5',m:'VvaMxITjEDjMEGKy_BUCp86lqIt24F9JdGQ_vGV7CBU-1650527518-0-AT3Iw2DPdvI1OYcLXJhPb79+XEAeFkNcv0u1ufw17QinitbMom3dCkcUx7dE7haB/aC6WqaZClCCOO9s20Xj2KAeA8HoogBc82AUCK3GMyCSbUSwhZRZ1il+Si6LmHk2w6qsDt3LyH4AG5xdhR9QOKA=',s:[0x7e8793a128,0x5cc6672139],}})();</script></body>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'7007de3fe89356f5',m:'RgloOLeT.nprAFYDyd.4ddQ3mBcddhQiJe5pzbVqat4-1650730219-0-AeWiTXJtOmRpDxF2fXztb02E6jO8H1eby9TlvPzNAj0i7e8Q3hEM1aqW6+PCsQPlfiA0JnSlrWLHGc/9tS58aLlKpvA9lVzDnuIM8ZltH2yS+Q7M/GQP6DJYiQhc1u2J+dQYP/f0zSlN3IjGDlWPpcU=',s:[0xdb1f17840b,0x2f292ad8cd],}})();</script></body>
 </html>

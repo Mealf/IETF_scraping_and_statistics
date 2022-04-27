@@ -765,7 +765,7 @@
         
         
         
-        <span class="badge bg-success">for 14 days</span>
+        <span class="badge bg-warning" title="Goal is &lt;14 days">for 16 days</span>
         
         
             
@@ -1461,5 +1461,5 @@
                 window.location.href = e.params.data.url;
             });
         </script>
-    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6ff489797fab6b62',m:'ZCeAN5an8rGBIsJrQTxZ670V7mh.j.JUQGvNXZ6XACI-1650527513-0-ARJyfnbJFhAkXAacQ0fiHT51/ifYC6D+uWRxvRKLeyrzrJ9IbQHodF9QDLe8POrit0PKhk8OvOHrzYkMmY2tDu0d1oXkpvcPt7u+OsCM8cftb2bkV2P/rbJOVDDRTGDtSqJsFxuX5u6oTdydREkdFLA=',s:[0xc62f987ad4,0x2d556e17c3],}})();</script></body>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'7007de31bc02a9a7',m:'mDuAilanj3Blrnm4E8WtisY17NBRUNcqAnWE1406_M4-1650730213-0-AVQgFkPmOVHbs5fHRquWV71F2vMM3D1KGxpNucGlFoOGJV9MaTSgA0TSsYkQBLqTm0EV2lS6tvcYZwEcH7+YlxS7zh4LLmyLGZOPWOSPczPlbbzjlvk4WxYxv0hXetz79uUZYombZV8eNcd7Zy/LkuQ=',s:[0xd2b505e66a,0xe511a00b40],}})();</script></body>
 </html>

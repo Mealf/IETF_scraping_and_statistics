@@ -1093,19 +1093,10 @@
     </td>
     <td>
             
-                
-                    
                     
                         2022-04-07
                     
                     
-                        
-                    
-                
-                    <br>
-                    <div class="float-end">
-                        <span class="badge bg-success">New</span>
-                    </div>
                 
                 
             </td>
@@ -1239,5 +1230,5 @@
                 window.location.href = e.params.data.url;
             });
         </script>
-    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6ff491e56ab5a3a6',m:'i0SPsh5kC6485rB5rFKKg63KGyrgkdftmGd2vgXYh1A-1650527858-0-AV0ORqBnaNjhBfnoi/TolTxtQTxhrvqFh2D8SQYmt+RrylFVlEMxOTedWzJrMOQaM3H2yR5193TY6fVFeO3dSPhnTjygdOlue7b0sq/av76tTY+IJJo4/Ab0LkeJcUa+xaWwnqALZyOh6FZuylhauIA=',s:[0x0b02082886,0x5a65eea366],}})();</script></body>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'7007e80dd9c56a98',m:'vLjanuEUQmmwKfuXywUkvYKAFldxHwhgHABzCOoHM.c-1650730617-0-AUo9iskg0c16NYTvnvtktan8bHtBR0wCoUdO/3KSgwctS4TliZzvVkaGvTQNnSndJ2BC1hYsj4lgUcm7CWz0agPpPhKsySr/rPK5h/ZUYPzuP1aFuotv+qEq9caH4EMWz4J5klaag/BdKnnYeNmo7NE=',s:[0x4a32825bfe,0xd00e11ce71],}})();</script></body>
 </html>

@@ -852,7 +852,7 @@
         
         
         
-        <span class="badge bg-danger" title="Goal is &lt;14 days">for 1134 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;14 days">for 1136 days</span>
         
         
             
@@ -974,7 +974,7 @@
         
         
         
-        <span class="badge bg-danger" title="Goal is &lt;14 days">for 252 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;14 days">for 254 days</span>
         
         
             
@@ -1014,7 +1014,7 @@
                href="mailto:ek.ietf%40gmail.com"
                aria-label="Compose email to ek.ietf@gmail.com."
                title="Compose email to ek.ietf@gmail.com.">
-                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 273 days</span>
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 275 days</span>
             
         
     
@@ -1100,7 +1100,7 @@
         
         
         
-        <span class="badge bg-warning" title="Goal is &lt;14 days">for 15 days</span>
+        <span class="badge bg-warning" title="Goal is &lt;14 days">for 17 days</span>
         
         
             
@@ -2945,5 +2945,5 @@
                 window.location.href = e.params.data.url;
             });
         </script>
-    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6ff48abaafa0a34f',m:'D.xVf5pzf_bv3uD2oreIx_Dds.ZPC_2iabBCoiicaLM-1650527566-0-AelxQ0Lts6fntqc7rVBxBVa3TfjDd5kfMr/BUiJN9LLUW3+4b9zxxpE7IRxiQWZP/CPpM0nvIv4SGmLUkLigxnSfvh/JOTwk3WQTTMh2/rcpushlnUVSJinrKhk8Zc0SjB229heraOoII3bvQSzbHlM=',s:[0xfdaf1a39d9,0x94c81b5787],}})();</script></body>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'7007dfa73a5d6a84',m:'RqK0DYDJKXo9CJJmf19hyKHdrAEAjjSsf6kzaVBlCrU-1650730274-0-AXkJQYvs2xSzvbgFc7I9nmoydA2G+Wkzsmbie6d12M/jXe6DQX0FJc6j5XFzH3k3A1GecabYNCR9LCnhNhmSO8t+b1jyDHC1KmIi7UeqbbEO4gjLpTZoBZqzY4wNVdHlg88Ij0C8BdO5bFUiCA6apYs=',s:[0xd496bb0421,0xfa8d3a773b],}})();</script></body>
 </html>

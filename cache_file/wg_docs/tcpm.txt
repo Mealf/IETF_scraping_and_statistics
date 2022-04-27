@@ -862,7 +862,7 @@
             : <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-tcpm-ao-test-vectors">RFC-EDITOR</a>
         
         
-        <span class="badge bg-success">for 37 days</span>
+        <span class="badge bg-success">for 39 days</span>
         
         
             
@@ -1163,7 +1163,7 @@
             : <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-tcpm-rfc793bis">EDIT</a>
         
         
-        <span class="badge bg-success">for 17 days</span>
+        <span class="badge bg-success">for 19 days</span>
         
         
             
@@ -1466,7 +1466,7 @@
         
         
         
-        <span class="badge bg-danger" title="Goal is &lt;14 days">for 50 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;14 days">for 52 days</span>
         
         
             
@@ -1510,7 +1510,7 @@
                href="mailto:martin.h.duke%40gmail.com"
                aria-label="Compose email to martin.h.duke@gmail.com."
                title="Compose email to martin.h.duke@gmail.com.">
-                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 50 days</span>,
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 52 days</span>,
             
                 <span ><a 
            title="Author"
@@ -1518,7 +1518,7 @@
                href="mailto:mjethanandani%40gmail.com"
                aria-label="Compose email to mjethanandani@gmail.com."
                title="Compose email to mjethanandani@gmail.com.">
-                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 49 days</span>,
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 52 days</span>,
             
                 <span ><a 
            title="Author"
@@ -1526,7 +1526,7 @@
                href="mailto:michael.scharf%40hs-esslingen.de"
                aria-label="Compose email to michael.scharf@hs-esslingen.de."
                title="Compose email to michael.scharf@hs-esslingen.de.">
-                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 49 days</span>,
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 52 days</span>,
             
                 <span ><a 
            title="Author"
@@ -1534,7 +1534,7 @@
                href="mailto:vmurgai%40gmail.com"
                aria-label="Compose email to vmurgai@gmail.com."
                title="Compose email to vmurgai@gmail.com.">
-                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 49 days</span>
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 52 days</span>
             
         
     
@@ -5382,5 +5382,5 @@
                 window.location.href = e.params.data.url;
             });
         </script>
-    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6ff4933e8f306a8a',m:'lXBpGhJKVnqURKwdGipiElL4sRRnL9e8YIvV3q5jfjE-1650527916-0-ARJyeLDqOVEsW2ASR7xFP/z/ws5xsryW/ujpnbxeosFcBfz6N5WxJj3EM3dHtDhF1jfDstQ/TsiP0OmotZkx6cJEl0gOJf16bNXVtWdWaUB/sWXi8EZ1W3nsJryqYoHTXz7ULh780j/st9qN2TJkl5I=',s:[0x973cd17ac8,0x654fc2b754],}})();</script></body>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'7007e990ca5d0750',m:'jTNW7dvc4wMnkwLFQ14FAsH72z8SKkBwdNl7M6MOIJ0-1650730682-0-AXYmTDVMNX+4gnpG3mDUILYHsmzTMAK7avAH8WTEoejvep0SAqZs6PGmbTzeML5xa00gaSnBLOQyjYWHGDnEvzS/5ZbT2s9edtnppMUQMGii6yhs6KbtLHUWHzrdTi5fPoM8FdUYr/XVfqcc255FSG0=',s:[0x7de04aa6eb,0x93c7c838a4],}})();</script></body>
 </html>

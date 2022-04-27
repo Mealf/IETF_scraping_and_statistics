@@ -1164,27 +1164,132 @@
         
     </td>
     <td class="doc">
-        <small class="float-end text-muted d-none d-sm-block">10 pages</small>
+        <small class="float-end text-muted d-none d-sm-block">14 pages</small>
         <div>
-            <a href="/doc/draft-ietf-dnsop-glue-is-not-optional/">
+            <a href="/doc/draft-ietf-dnsop-dnssec-bootstrapping/">
                 
-                    draft-ietf-dnsop-glue-is-not-optional-04
+                    draft-ietf-dnsop-dnssec-bootstrapping-00
                 
             </a>
             
             <br>
             
-            <b>DNS Referral Glue Requirements</b>
+            <b>Automatic DNSSEC Bootstrapping using Authenticated Signals from the Zone&#39;s Operator</b>
             
         </div>
         
     </td>
     <td>
             
+                
+                        <a href="https://www.ietf.org/rfcdiff?url1=draft-thomassen-dnsop-dnssec-bootstrapping-03.txt&amp;url2=draft-ietf-dnsop-dnssec-bootstrapping-00">
+                        
                     
-                        2022-02-08
+                    
+                        2022-04-21
                     
                     
+                        </a>
+                    
+                
+                    <br>
+                    <div class="float-end">
+                        <span class="badge bg-success">New</span>
+                    </div>
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+            <br>
+            
+                WG Document
+                
+            
+        
+        
+        
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">12 pages</small>
+        <div>
+            <a href="/doc/draft-ietf-dnsop-glue-is-not-optional/">
+                
+                    draft-ietf-dnsop-glue-is-not-optional-05
+                
+            </a>
+            
+            <br>
+            
+            <b>DNS Glue Requirements in Referral Responses</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                
+                    <a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-dnsop-glue-is-not-optional-05">
+                    
+                    
+                    
+                        2022-04-22
+                    
+                    
+                        </a>
+                    
+                
+                    <br>
+                    <div class="float-end">
+                        <span class="badge bg-success">New</span>
+                    </div>
                 
                 
             </td>
@@ -1377,7 +1482,7 @@
         
         
         
-        <span class="badge bg-success">for 3 days</span>
+        <span class="badge bg-success">for 5 days</span>
         
         
             
@@ -1393,6 +1498,12 @@
         
         Best Current Practice
         
+        
+            <br>
+            Reviews:
+            <a href="/group/genart/">genart</a>,
+                
+                    <a href="/group/opsdir/">opsdir</a>
         
         
         
@@ -1540,89 +1651,6 @@
         
     </td>
     <td class="doc">
-        <small class="float-end text-muted d-none d-sm-block">6 pages</small>
-        <div>
-            <a href="/doc/draft-ietf-dnsop-rrserial/">
-                
-                    draft-ietf-dnsop-rrserial-01
-                
-            </a>
-            
-            <br>
-            
-            <b>The &quot;RRSERIAL&quot; EDNS option for the SOA serial of a RR&#39;s zone</b>
-            
-        </div>
-        
-    </td>
-    <td>
-            
-                    
-                        2022-04-06
-                    
-                    
-                
-                
-            </td>
-            
-
-
-
-<td class="status">
-    
-    
-        
-            I-D Exists
-        
-        
-        
-        
-        
-        
-            
-        
-        
-            <br>
-            
-                WG Document
-                
-            
-        
-        
-        
-        
-        
-        
-    
-</td>
-            <td class="text-center d-none d-sm-table-cell">
-                
-            </td>
-            
-                <td class="d-none d-sm-table-cell">
-                    
-                    <br>
-                    
-                </td>
-            
-            
-        </tr>
-        
-            
-
-
-
-
-
-
-
-<tr>
-    <td>
-        
-        
-        
-    </td>
-    <td class="doc">
         <small class="float-end text-muted d-none d-sm-block">60 pages</small>
         <div>
             <a href="/doc/draft-ietf-dnsop-svcb-https/">
@@ -1661,7 +1689,7 @@
         
         
         
-        <span class="badge bg-danger" title="Goal is &lt;14 days">for 49 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;14 days">for 51 days</span>
         
         
             
@@ -1703,7 +1731,7 @@
                href="mailto:warren%40kumari.net"
                aria-label="Compose email to warren@kumari.net."
                title="Compose email to warren@kumari.net.">
-                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 189 days</span>,
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 191 days</span>,
             
                 <span ><a 
            title="Author"
@@ -1711,7 +1739,7 @@
                href="mailto:erik%2Bietf%40nygren.org"
                aria-label="Compose email to erik+ietf@nygren.org."
                title="Compose email to erik+ietf@nygren.org.">
-                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 48 days</span>,
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 51 days</span>,
             
                 <span ><a 
            title="Author"
@@ -1719,7 +1747,7 @@
                href="mailto:mbishop%40evequefou.be"
                aria-label="Compose email to mbishop@evequefou.be."
                title="Compose email to mbishop@evequefou.be.">
-                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 48 days</span>,
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 51 days</span>,
             
                 <span ><a 
            title="Author"
@@ -1727,7 +1755,7 @@
                href="mailto:bemasc%40google.com"
                aria-label="Compose email to bemasc@google.com."
                title="Compose email to bemasc@google.com.">
-                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 48 days</span>
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 51 days</span>
             
         
     
@@ -1777,27 +1805,38 @@
         
     </td>
     <td class="doc">
-        <small class="float-end text-muted d-none d-sm-block">14 pages</small>
+        <small class="float-end text-muted d-none d-sm-block">9 pages</small>
         <div>
-            <a href="/doc/draft-thomassen-dnsop-dnssec-bootstrapping/">
+            <a href="/doc/draft-ietf-dnsop-zoneversion/">
                 
-                    draft-thomassen-dnsop-dnssec-bootstrapping-03
+                    draft-ietf-dnsop-zoneversion-00
                 
             </a>
             
             <br>
             
-            <b>Automatic DNSSEC Bootstrapping using Authenticated Signals from the Zone&#39;s Operator</b>
+            <b>The &quot;ZONEVERSION&quot; EDNS option for the version token of a RR&#39;s zone</b>
             
         </div>
         
     </td>
     <td>
             
+                
+                        <a href="https://www.ietf.org/rfcdiff?url1=draft-ietf-dnsop-rrserial-01.txt&amp;url2=draft-ietf-dnsop-zoneversion-00">
+                        
                     
-                        2021-11-29
+                    
+                        2022-04-21
                     
                     
+                        </a>
+                    
+                
+                    <br>
+                    <div class="float-end">
+                        <span class="badge bg-success">New</span>
+                    </div>
                 
                 
             </td>
@@ -1821,7 +1860,7 @@
         
             <br>
             
-                Adopted by a WG
+                WG Document
                 
             
         
@@ -1893,103 +1932,6 @@
     
         
             I-D Exists
-        
-        
-        
-        
-        
-        
-            
-        
-        
-            <br>
-            
-                Adopted by a WG
-                
-            
-        
-        
-        
-        
-        
-        
-    
-</td>
-            <td class="text-center d-none d-sm-table-cell">
-                
-            </td>
-            
-                <td class="d-none d-sm-table-cell">
-                    
-                    <br>
-                    
-                </td>
-            
-            
-        </tr>
-        
-    </tbody>
-
-    <tbody>
-        <tr class="table-info">
-            <td></td>
-            
-                <th scope="col" colspan="5">
-            
-            Replaced Internet-Draft (1 hit)
-            </th>
-        </tr>
-    </tbody>
-    <tbody>
-        
-            
-
-
-
-
-
-
-
-<tr>
-    <td>
-        
-        
-        
-    </td>
-    <td class="doc">
-        <small class="float-end text-muted d-none d-sm-block">7 pages</small>
-        <div>
-            <a href="/doc/draft-hoffman-dnssec/">
-                
-                    draft-hoffman-dnssec-00
-                
-            </a>
-            
-            <br>
-            
-            <b>DNS Security Extensions (DNSSEC)</b>
-            
-        </div>
-        
-    </td>
-    <td>
-            
-                    
-                        2022-03-19
-                    
-                    
-                
-                
-            </td>
-            
-
-
-
-<td class="status">
-    
-    
-        
-            Replaced by <a href="/doc/draft-ietf-dnsop-dnssec-bcp/">draft-ietf-dnsop-dnssec-bcp</a>
         
         
         
@@ -7344,19 +7286,10 @@
     </td>
     <td>
             
-                
-                    
                     
                         2022-04-07
                     
                     
-                        
-                    
-                
-                    <br>
-                    <div class="float-end">
-                        <span class="badge bg-success">New</span>
-                    </div>
                 
                 
             </td>
@@ -7449,7 +7382,7 @@
         
         
         
-        <span class="badge bg-success">for 23 days</span>
+        <span class="badge bg-success">for 25 days</span>
         
         
             
@@ -7485,7 +7418,7 @@
                href="mailto:warren%40kumari.net"
                aria-label="Compose email to warren@kumari.net."
                title="Compose email to warren@kumari.net.">
-                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 22 days</span>
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 25 days</span>
             
         
     
@@ -8086,11 +8019,11 @@
         
     </td>
     <td class="doc">
-        <small class="float-end text-muted d-none d-sm-block">10 pages</small>
+        <small class="float-end text-muted d-none d-sm-block">11 pages</small>
         <div>
             <a href="/doc/draft-ietf-add-svcb-dns/">
                 
-                    draft-ietf-add-svcb-dns-02
+                    draft-ietf-add-svcb-dns-03
                 
             </a>
             
@@ -8103,10 +8036,21 @@
     </td>
     <td>
             
+                
+                    <a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-add-svcb-dns-03">
                     
-                        2022-02-01
                     
                     
+                        2022-04-22
+                    
+                    
+                        </a>
+                    
+                
+                    <br>
+                    <div class="float-end">
+                        <span class="badge bg-success">New</span>
+                    </div>
                 
                 
             </td>
@@ -8130,7 +8074,7 @@
         
             <br>
             
-                In WG Last Call
+                WG Consensus: Waiting for Write-Up
                 
             
         
@@ -8148,6 +8092,15 @@
                 <td class="d-none d-sm-table-cell">
                     
                     <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/Andrew.Campling@419.Consulting" >Andrew Campling</a> <a class="text-reset"
+               href="mailto:Andrew.Campling%40419.Consulting"
+               aria-label="Compose email to Andrew.Campling@419.Consulting."
+               title="Compose email to Andrew.Campling@419.Consulting.">
+                <i class="bi bi-envelope"></i></a></span>
                     
                 </td>
             
@@ -9119,5 +9072,5 @@
                 window.location.href = e.params.data.url;
             });
         </script>
-    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6ff48c4878056b6e',m:'qbbDt3xROJKxLSbWLHAwtC6ZHZYuk8Heu_l1r6ZDlyI-1650527633-0-AU9rr1z7Z/B9xqBC7x3Pd2tCpO9bBUJMrGa/0YsGTrDrRkTMrwHFeB3Lv2OMJSBSVyruCb7EmBcGEIVlG9v8bykXkkp/fYgFRAxE/LskHR/bK+IbdqIaHaHbIhELhcYC3FJJNtvQ3/CBT3dlloVCYjo=',s:[0xc91ef6c450,0x7aa97d74c0],}})();</script></body>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'7007e1807b356a9c',m:'Z9UuZwHb5B7AYzxhbbayJVlSZB.v1ydJ.gMlIOA0dLw-1650730353-0-ATMikINhpdfIXlR+DV0x/vBWmGB5hNysQOIQR0SdILfGZ8ZQCR/dm6JhLfCg8OxDH7GgNDVxvkzoZHxKmQ1KjGtvoLfdehrTiPPtc10GilFT5ferlO0K7tGK4HKHXP2TIbYC2R8pY7MFlUslxHDgvqI=',s:[0xd5719042b5,0x4296cfb430],}})();</script></body>
 </html>

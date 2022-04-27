@@ -1052,7 +1052,7 @@
         
         
         
-        <span class="badge bg-danger" title="Goal is &lt;14 days">for 140 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;14 days">for 142 days</span>
         
         
             
@@ -1092,7 +1092,7 @@
                href="mailto:andrew-ietf%40liquid.tech"
                aria-label="Compose email to andrew-ietf@liquid.tech."
                title="Compose email to andrew-ietf@liquid.tech.">
-                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 28 days</span>
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 30 days</span>
             
         
     
@@ -1931,91 +1931,11 @@
             
                 <th scope="col" colspan="5">
             
-            Related Internet-Drafts (8 hits)
+            Related Internet-Drafts (7 hits)
             </th>
         </tr>
     </tbody>
     <tbody>
-        
-            
-
-
-
-
-
-
-
-<tr>
-    <td>
-        
-        
-        
-    </td>
-    <td class="doc">
-        <small class="float-end text-muted d-none d-sm-block">9 pages</small>
-        <div>
-            <a href="/doc/draft-bernardos-sfc-discovery/">
-                
-                    draft-bernardos-sfc-discovery-07
-                
-            </a>
-            
-            <br>
-            
-            <b>Service Function discovery in fog environments</b>
-            
-        </div>
-        
-    </td>
-    <td>
-            
-                    
-                        2021-10-20
-                    
-                    
-                
-                
-                    <br>
-                    <span class="badge bg-warning">Expires soon</span>
-                
-            </td>
-            
-
-
-
-<td class="status">
-    
-    
-        
-            I-D Exists
-        
-        
-        
-        
-        
-        
-            
-        
-        
-        
-        
-        
-        
-        
-    
-</td>
-            <td class="text-center d-none d-sm-table-cell">
-                
-            </td>
-            
-                <td class="d-none d-sm-table-cell">
-                    
-                    <br>
-                    
-                </td>
-            
-            
-        </tr>
         
             
 
@@ -2659,5 +2579,5 @@
                 window.location.href = e.params.data.url;
             });
         </script>
-    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6ff4905a8b68a343',m:'L1A905G44N4ff4cJgQMgvK0_AFzjJUae_zOiTyG112o-1650527796-0-Ae62w7/MfBJS2jRTMXGXfxhEKM3vnHlyC8/+7X+IS0BlS7seomkzlRm3qpFsD72qPzhdGqeP0Cka2JL2slDAEcv/03OXQdiwRntcyxC5vXgBjKiwvPsL2twVu3Enyd8OoVjUUD1tsNemGQdFg2Y8juA=',s:[0x9680b3f1b1,0x9632371333],}})();</script></body>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'7007e6610d8e075c',m:'dLeKWF.zUVPUEjHH45RMIP7mrPyifbbCiyhyLhSryFM-1650730549-0-ATABtbq1cfjYFVrIAIo0nXtCU9dXVuFyby9EX66BC7nPd+TIDdC4pAOvc8IqiGY5Dh/zAt9KguK5g+JMBqUB6dwG/ZVdY87mfT83sN7v+XrLdQM/YtYeZHZtiewy0gDEsAn+NWD9aIaKH+LwIyFdXh8=',s:[0x1d7389b04a,0x25f793c098],}})();</script></body>
 </html>

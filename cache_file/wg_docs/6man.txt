@@ -1109,7 +1109,7 @@
         
         
         
-        <span class="badge bg-danger" title="Goal is &lt;14 days">for 252 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;14 days">for 254 days</span>
         
         
             
@@ -1149,7 +1149,7 @@
                href="mailto:ek.ietf%40gmail.com"
                aria-label="Compose email to ek.ietf@gmail.com."
                title="Compose email to ek.ietf@gmail.com.">
-                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 272 days</span>
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 274 days</span>
             
         
     
@@ -1252,7 +1252,7 @@
         
         
         
-        <span class="badge bg-success">for 14 days</span>
+        <span class="badge bg-warning" title="Goal is &lt;14 days">for 16 days</span>
         
         
             
@@ -1294,7 +1294,7 @@
                href="mailto:ek.ietf%40gmail.com"
                aria-label="Compose email to ek.ietf@gmail.com."
                title="Compose email to ek.ietf@gmail.com.">
-                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 29 days</span>
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 32 days</span>
             
         
     
@@ -1365,21 +1365,10 @@
     </td>
     <td>
             
-                
-                    <a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-6man-rfc6874bis-01">
-                    
-                    
                     
                         2022-04-07
                     
                     
-                        </a>
-                    
-                
-                    <br>
-                    <div class="float-end">
-                        <span class="badge bg-success">New</span>
-                    </div>
                 
                 
             </td>
@@ -1460,12 +1449,14 @@
     <td>
             
                 
+                        <a href="https://www.ietf.org/rfcdiff?url1=draft-krishnan-6man-sids-00.txt&amp;url2=draft-ietf-6man-sids-00">
+                        
                     
                     
                         2022-04-14
                     
                     
-                        
+                        </a>
                     
                 
                     <br>
@@ -1574,7 +1565,7 @@
             : <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-6man-spring-srv6-oam">EDIT</a>
         
         
-        <span class="badge bg-success">for 29 days</span>
+        <span class="badge bg-success">for 31 days</span>
         
         
             
@@ -5858,7 +5849,7 @@
             
                 <th scope="col" colspan="5">
             
-            Related Internet-Drafts (25 hits)
+            Related Internet-Drafts (24 hits)
             </th>
         </tr>
     </tbody>
@@ -6598,89 +6589,6 @@
         
     </td>
     <td class="doc">
-        <small class="float-end text-muted d-none d-sm-block">7 pages</small>
-        <div>
-            <a href="/doc/draft-krishnan-6man-sids/">
-                
-                    draft-krishnan-6man-sids-00
-                
-            </a>
-            
-            <br>
-            
-            <b>Segment Identifiers in SRv6</b>
-            
-        </div>
-        
-    </td>
-    <td>
-            
-                    
-                        2022-02-10
-                    
-                    
-                
-                
-            </td>
-            
-
-
-
-<td class="status">
-    
-    
-        
-            I-D Exists
-        
-        
-        
-        
-        
-        
-            
-        
-        
-            <br>
-            
-                Call For Adoption By WG Issued
-                
-            
-        
-        
-        
-        
-        
-        
-    
-</td>
-            <td class="text-center d-none d-sm-table-cell">
-                
-            </td>
-            
-                <td class="d-none d-sm-table-cell">
-                    
-                    <br>
-                    
-                </td>
-            
-            
-        </tr>
-        
-            
-
-
-
-
-
-
-
-<tr>
-    <td>
-        
-        
-        
-    </td>
-    <td class="doc">
         <small class="float-end text-muted d-none d-sm-block">5 pages</small>
         <div>
             <a href="/doc/draft-li-6man-topology-id/">
@@ -7147,7 +7055,7 @@
         <div>
             <a href="/doc/draft-templin-6man-aero/">
                 
-                    draft-templin-6man-aero-43
+                    draft-templin-6man-aero-45
                 
             </a>
             
@@ -7161,11 +7069,11 @@
     <td>
             
                 
-                    <a href="https://www.ietf.org/rfcdiff?url2=draft-templin-6man-aero-43">
+                    <a href="https://www.ietf.org/rfcdiff?url2=draft-templin-6man-aero-45">
                     
                     
                     
-                        2022-04-19
+                        2022-04-22
                     
                     
                         </a>
@@ -7402,11 +7310,11 @@
         
     </td>
     <td class="doc">
-        <small class="float-end text-muted d-none d-sm-block">139 pages</small>
+        <small class="float-end text-muted d-none d-sm-block">140 pages</small>
         <div>
             <a href="/doc/draft-templin-6man-omni/">
                 
-                    draft-templin-6man-omni-58
+                    draft-templin-6man-omni-60
                 
             </a>
             
@@ -7420,11 +7328,11 @@
     <td>
             
                 
-                    <a href="https://www.ietf.org/rfcdiff?url2=draft-templin-6man-omni-58">
+                    <a href="https://www.ietf.org/rfcdiff?url2=draft-templin-6man-omni-60">
                     
                     
                     
-                        2022-04-19
+                        2022-04-22
                     
                     
                         </a>
@@ -7980,5 +7888,5 @@
                 window.location.href = e.params.data.url;
             });
         </script>
-    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6ff48ad1e91f313b',m:'Ls8NrBNN9xVpAHoOFpfAt2lWMvRW.DpJhrNDGNyYAd0-1650527573-0-Aaks4KIdRuBH8/r0nQmRVzm+mA5BB7o02oYzJvQsQEmcM/0CQg4fGW7wXuajrx8WD+CptLv50x5jMEd7BXdRygK+NfbC/9aJbLo212a9PCw6uHaLaUI+/+sQnFLJAh+esLYiYv8MdltTj3HglEK9rfg=',s:[0x0e7a8d0dc5,0x91012306ae],}})();</script></body>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'7007dfc08e9e56f4',m:'fm9QOqflhCHG0cYltgqG7WBvrSoXG.ZEEsHt4KAR7Kw-1650730281-0-AftitF9GVI53JJJoqX5avp/fOVSFNrofHqif5agWy9whEnQxpVoYU+z4075NKCbKC6MiisgozFFHyCEU//vyJ/HNFW+n5vxfyczqUhIoZLTVrgezA2voVs9UBrcmGtNsAFNw67qzqkR7NmA0xJcNZlc=',s:[0x4c9f3e456f,0xb7ed8c1def],}})();</script></body>
 </html>

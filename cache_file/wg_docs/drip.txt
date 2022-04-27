@@ -763,7 +763,7 @@
         
         
         
-        <span class="badge bg-warning" title="Goal is &lt;14 days">for 15 days</span>
+        <span class="badge bg-warning" title="Goal is &lt;14 days">for 17 days</span>
         
         
             
@@ -1112,7 +1112,7 @@
         <div>
             <a href="/doc/draft-ietf-drip-rid/">
                 
-                    draft-ietf-drip-rid-22
+                    draft-ietf-drip-rid-23
                 
             </a>
             
@@ -1126,11 +1126,11 @@
     <td>
             
                 
-                    <a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-drip-rid-22">
+                    <a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-drip-rid-23">
                     
                     
                     
-                        2022-04-13
+                        2022-04-21
                     
                     
                         </a>
@@ -1155,7 +1155,7 @@
         
         
         
-        <span class="badge bg-success">for 10 days</span>
+        <span class="badge bg-success">for 12 days</span>
         
         
             
@@ -1386,21 +1386,10 @@
     </td>
     <td>
             
-                
-                    <a href="https://www.ietf.org/rfcdiff?url2=draft-moskowitz-drip-operator-privacy-10">
-                    
-                    
                     
                         2022-04-08
                     
                     
-                        </a>
-                    
-                
-                    <br>
-                    <div class="float-end">
-                        <span class="badge bg-success">New</span>
-                    </div>
                 
                 
             </td>
@@ -1457,11 +1446,11 @@
         
     </td>
     <td class="doc">
-        <small class="float-end text-muted d-none d-sm-block">12 pages</small>
+        <small class="float-end text-muted d-none d-sm-block">14 pages</small>
         <div>
             <a href="/doc/draft-moskowitz-drip-secure-nrid-c2/">
                 
-                    draft-moskowitz-drip-secure-nrid-c2-04
+                    draft-moskowitz-drip-secure-nrid-c2-05
                 
             </a>
             
@@ -1474,14 +1463,22 @@
     </td>
     <td>
             
-                    
-                        2021-10-21
-                    
-                    
                 
+                    <a href="https://www.ietf.org/rfcdiff?url2=draft-moskowitz-drip-secure-nrid-c2-05">
+                    
+                    
+                    
+                        2022-04-21
+                    
+                    
+                        </a>
+                    
                 
                     <br>
-                    <span class="badge bg-warning">Expires soon</span>
+                    <div class="float-end">
+                        <span class="badge bg-success">New</span>
+                    </div>
+                
                 
             </td>
             
@@ -1614,5 +1611,5 @@
                 window.location.href = e.params.data.url;
             });
         </script>
-    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6ff48b7d0c30a9c1',m:'UI8MQKuSEAsk5rdgEm_w9OJwYwcQG1VT9zxlJH.FnFE-1650527596-0-ARwRkqLEjWUZmbTUZr1Ylg2cumORVL277/Rmjz9qqfhpKkPxYeTVlBB7zwd1UySVDl1/v4Cqy9Wfm9kXXwcnHy4s63OWDN/WrY5wWkTyy7Uthi813d7koHPf/eb2dki52dclXwjXnuYrguoVty+IAOU=',s:[0xb3378c44ad,0x25f793c098],}})();</script></body>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'7007e08a3b45a3ab',m:'xvC9.ddiQtdjuG5urIvTjBlaeOOWCwV845uNNNZ_kKo-1650730309-0-AQkFtpltSgmw51xIIWliBuk3xyl2Rx1MWhdwuxHgRBETHeSwRhNt4VI510otg9MQ1LUITNhnn2Q/Pa/HQKNwLoUkiRjBLm92NVOf/4sST+EDVjT1k8awXTb3RhZg3Bqi8nsioQ3ZrluqKRYKrXKOyms=',s:[0xa806fde898,0xf014804387],}})();</script></body>
 </html>

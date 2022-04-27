@@ -1102,7 +1102,7 @@
             : <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-ipsecme-ikev2-intermediate">RFC-EDITOR</a>
         
         
-        <span class="badge bg-success">for 31 days</span>
+        <span class="badge bg-success">for 33 days</span>
         
         
             
@@ -1312,7 +1312,7 @@
         
         
         
-        <span class="badge bg-danger" title="Goal is &lt;7 days">for 154 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;7 days">for 156 days</span>
         
         
             
@@ -1514,7 +1514,7 @@
         
         
         
-        <span class="badge bg-danger" title="Goal is &lt;7 days">for 154 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;7 days">for 156 days</span>
         
         
             
@@ -1616,7 +1616,7 @@
         
         
         
-        <span class="badge bg-danger" title="Goal is &lt;7 days">for 29 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;7 days">for 31 days</span>
         
         
             
@@ -1722,7 +1722,7 @@
         
         
         
-        <span class="badge bg-danger" title="Goal is &lt;7 days">for 154 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;7 days">for 156 days</span>
         
         
             
@@ -5146,5 +5146,5 @@
                 window.location.href = e.params.data.url;
             });
         </script>
-    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6ff491664a0e6b74',m:'LP5xhtnbUj8Hqec0uhl1.OUiRWpEDf_HKj5dDedgcqA-1650527840-0-AbIHbjjWccBO1wTWb0+a5gYtiROKCPQcCUVBBOHN2A/DPx9bgoNhdfZ6SskIa1dGX0cJlqaUsz9w0XBWp7tjWBhMKgFyGC+9tSmHdmUetLseHAyTEbokpT8WTVgoQ4PFi6TnWhyVWH/nPmpKuw6ObaU=',s:[0x331d0b6dc7,0x34f5fb2dc7],}})();</script></body>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'7007e778fe7aa9af',m:'eOK7gmfFIUWmuYxThupiBQCMl3YpdZqs3Pcx9TZlq04-1650730595-0-AZE8aZlo/5QPXnMT7BDuRfkhnPXwFRif0cdZp/wx79TgyPQ3Qln6L2y3wicHcgPS0hlv2rqYyhvpKsq0J8XijWcIubyvIkO8qbNar6wFrDPb17/G8AIqNPS5UMusho2TmSsS5Rkf/eH9PvqGpqebttg=',s:[0x92f923c576,0x9569be454d],}})();</script></body>
 </html>

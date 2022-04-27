@@ -1272,7 +1272,7 @@
         
         
         
-        <span class="badge bg-danger" title="Goal is &lt;14 days">for 35 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;14 days">for 37 days</span>
         
         
             
@@ -1304,7 +1304,7 @@
                href="mailto:nicolas.montavont%40enst-bretagne.fr"
                aria-label="Compose email to nicolas.montavont@enst-bretagne.fr."
                title="Compose email to nicolas.montavont@enst-bretagne.fr.">
-                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 34 days</span>,
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 36 days</span>,
             
                 <span ><a 
            title="Responsible AD"
@@ -1312,7 +1312,7 @@
                href="mailto:aretana.ietf%40gmail.com"
                aria-label="Compose email to aretana.ietf@gmail.com."
                title="Compose email to aretana.ietf@gmail.com.">
-                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 190 days</span>,
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 192 days</span>,
             
                 <span ><a 
            title="Author"
@@ -1320,7 +1320,7 @@
                href="mailto:pthubert%40cisco.com"
                aria-label="Compose email to pthubert@cisco.com."
                title="Compose email to pthubert@cisco.com.">
-                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 34 days</span>,
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 36 days</span>,
             
                 <span ><a 
            title="Author"
@@ -1328,7 +1328,7 @@
                href="mailto:georgios.papadopoulos%40imt-atlantique.fr"
                aria-label="Compose email to georgios.papadopoulos@imt-atlantique.fr."
                title="Compose email to georgios.papadopoulos@imt-atlantique.fr.">
-                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 34 days</span>,
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 36 days</span>,
             
                 <span ><a 
            title="Author"
@@ -1336,7 +1336,7 @@
                href="mailto:aris%40ariskou.com"
                aria-label="Compose email to aris@ariskou.com."
                title="Compose email to aris@ariskou.com.">
-                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 34 days</span>
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 36 days</span>
             
         
     
@@ -3713,5 +3713,5 @@
                 window.location.href = e.params.data.url;
             });
         </script>
-    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6ff490168aa4313b',m:'KTDHx7y0C5davC20tp8m0YNNnZiWSPN9pcMtsDJU2.4-1650527786-0-Ac+xiZjicsup9gZ+4C1Ob6JBgY3Ic1tYhi14lEZ/Phf6qmbHDWlg5o2HGKq6ziuAfgDbxXeKTGLn4J4jCZ9dasJMI1mMsmlr7+JdzcGoLqveZg6ExeXPUc0FmNuUJyaB52AHYokl4dDeuWgIuGpagjI=',s:[0xa6e939e098,0xb31c4275b0],}})();</script></body>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'7007e6176b8f074c',m:'alBm28XFrYfjpcE07KVe00uzRKva7mUWsP1yw7MVen4-1650730538-0-AUXHx9YIzCs9GCK6mGBSq9KL1qe6pjZFUyl4HArELwcYhERf/FND1P98NouNb+7mbHMYszX/neFsA1rbqJa43iPWA3Zl3ot7iLgpnqJ+Q7WK0cWRtEWjiPO/XirBYvNnwo10ssdBWx4aH7SzpcRRkqY=',s:[0xb4aa896c5d,0x5cc6672139],}})();</script></body>
 </html>

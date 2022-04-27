@@ -765,7 +765,7 @@
             : <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-pce-binding-label-sid">MISSREF</a>
         
         
-        <span class="badge bg-success">for 31 days</span>
+        <span class="badge bg-success">for 33 days</span>
         
         
             
@@ -1706,11 +1706,11 @@
         
     </td>
     <td class="doc">
-        <small class="float-end text-muted d-none d-sm-block">24 pages</small>
+        <small class="float-end text-muted d-none d-sm-block">25 pages</small>
         <div>
             <a href="/doc/draft-ietf-pce-segment-routing-policy-cp/">
                 
-                    draft-ietf-pce-segment-routing-policy-cp-06
+                    draft-ietf-pce-segment-routing-policy-cp-07
                 
             </a>
             
@@ -1723,14 +1723,22 @@
     </td>
     <td>
             
-                    
-                        2021-10-22
-                    
-                    
                 
+                    <a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-pce-segment-routing-policy-cp-07">
+                    
+                    
+                    
+                        2022-04-21
+                    
+                    
+                        </a>
+                    
                 
                     <br>
-                    <span class="badge bg-warning">Expires soon</span>
+                    <div class="float-end">
+                        <span class="badge bg-success">New</span>
+                    </div>
+                
                 
             </td>
             
@@ -2140,7 +2148,7 @@
         <div>
             <a href="/doc/draft-ietf-pce-state-sync/">
                 
-                    draft-ietf-pce-state-sync-01
+                    draft-ietf-pce-state-sync-02
                 
             </a>
             
@@ -2153,14 +2161,22 @@
     </td>
     <td>
             
-                    
-                        2021-10-20
-                    
-                    
                 
+                    <a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-pce-state-sync-02">
+                    
+                    
+                    
+                        2022-04-21
+                    
+                    
+                        </a>
+                    
                 
                     <br>
-                    <span class="badge bg-warning">Expires soon</span>
+                    <div class="float-end">
+                        <span class="badge bg-success">New</span>
+                    </div>
+                
                 
             </td>
             
@@ -2309,7 +2325,7 @@
         <div>
             <a href="/doc/draft-ietf-pce-stateful-pce-optional/">
                 
-                    draft-ietf-pce-stateful-pce-optional-02
+                    draft-ietf-pce-stateful-pce-optional-03
                 
             </a>
             
@@ -2322,14 +2338,22 @@
     </td>
     <td>
             
-                    
-                        2021-10-23
-                    
-                    
                 
+                    <a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-pce-stateful-pce-optional-03">
+                    
+                    
+                    
+                        2022-04-21
+                    
+                    
+                        </a>
+                    
                 
                     <br>
-                    <span class="badge bg-warning">Expires soon</span>
+                    <div class="float-end">
+                        <span class="badge bg-success">New</span>
+                    </div>
+                
                 
             </td>
             
@@ -9440,7 +9464,7 @@
         
         
         
-        <span class="badge bg-danger" title="Goal is &lt;7 days">for 244 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;7 days">for 246 days</span>
         
         
             
@@ -10768,5 +10792,5 @@
                 window.location.href = e.params.data.url;
             });
         </script>
-    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6ff48f8f1aa20768',m:'B94uxyxSfwQExfyD70_jYl.ilTzCNu8SfEgh9bHwEAo-1650527770-0-AUyEAY4Mr67V7IYnK7IA76c+hLJKsSdBgvLV1I33a+QZK6c1RTlHNL8TNclMFZdAfvL/P8wF9YfKsNh5Fu8TVdsl5B7WijUdov0dsMIJ3kjzJ9mvqXxHSi4WSw1gh4YV5l4U1RNduxsVxaCIoMVflvA=',s:[0x4c9f3e456f,0x2d374d3680],}})();</script></body>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'7007e56e7af54105',m:'2qYfkXGGFT3WlEA3m9bg6_cKU8eoOVFXWrgfm1mmId4-1650730516-0-Ab4QGkzVZTH1GInXaKoZNsfQsZwG/DjFslYAK9JE6BxjrFxCh9IzipzPL7+s3RsHRaD0AmH2RvQI4ZsEWpxvdHo9aZFUJWzRf/6ugpwJKBgwA8V29JNXYunIq/XeDAlESH4rBa7nNrvSraQozPwGSpA=',s:[0xc62f987ad4,0x99f5fa0f4f],}})();</script></body>
 </html>

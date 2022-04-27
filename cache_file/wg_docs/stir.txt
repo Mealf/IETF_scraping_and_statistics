@@ -706,7 +706,7 @@
             
                 <th scope="col" colspan="5">
             
-            Active Internet-Drafts (3 hits)
+            Active Internet-Drafts (6 hits)
             </th>
         </tr>
     </tbody>
@@ -724,6 +724,110 @@
     <td>
         
         
+        
+            <a href="/meeting/interim-2022-stir-01/session/29520.ics"
+               title="Calendar entry: document is on the agenda for stir@interim-2022-stir-01">
+                <i class="bi bi-calendar"></i>
+            </a>
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">13 pages</small>
+        <div>
+            <a href="/doc/draft-ietf-stir-certificates-ocsp/">
+                
+                    draft-ietf-stir-certificates-ocsp-01
+                
+            </a>
+            
+            <br>
+            
+            <b>OCSP Usage for Secure Telephone Identity Certificates</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                
+                    <a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-stir-certificates-ocsp-01">
+                    
+                    
+                    
+                        2022-04-21
+                    
+                    
+                        </a>
+                    
+                
+                    <br>
+                    <div class="float-end">
+                        <span class="badge bg-success">New</span>
+                    </div>
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+            <br>
+            
+                Dead WG Document
+                
+            
+        
+        
+        
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+            <a href="/meeting/interim-2022-stir-01/session/29520.ics"
+               title="Calendar entry: document is on the agenda for stir@interim-2022-stir-01">
+                <i class="bi bi-calendar"></i>
+            </a>
         
     </td>
     <td class="doc">
@@ -819,13 +923,18 @@
         
         
         
+            <a href="/meeting/interim-2022-stir-01/session/29520.ics"
+               title="Calendar entry: document is on the agenda for stir@interim-2022-stir-01">
+                <i class="bi bi-calendar"></i>
+            </a>
+        
     </td>
     <td class="doc">
-        <small class="float-end text-muted d-none d-sm-block">10 pages</small>
+        <small class="float-end text-muted d-none d-sm-block">11 pages</small>
         <div>
             <a href="/doc/draft-ietf-stir-messaging/">
                 
-                    draft-ietf-stir-messaging-01
+                    draft-ietf-stir-messaging-02
                 
             </a>
             
@@ -838,10 +947,21 @@
     </td>
     <td>
             
+                
+                    <a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-stir-messaging-02">
                     
-                        2021-11-09
                     
                     
+                        2022-04-21
+                    
+                    
+                        </a>
+                    
+                
+                    <br>
+                    <div class="float-end">
+                        <span class="badge bg-success">New</span>
+                    </div>
                 
                 
             </td>
@@ -901,6 +1021,11 @@
     <td>
         
         
+        
+            <a href="/meeting/interim-2022-stir-01/session/29520.ics"
+               title="Calendar entry: document is on the agenda for stir@interim-2022-stir-01">
+                <i class="bi bi-calendar"></i>
+            </a>
         
     </td>
     <td class="doc">
@@ -992,6 +1117,204 @@
                aria-label="Compose email to housley@vigilsec.com."
                title="Compose email to housley@vigilsec.com.">
                 <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+            <a href="/meeting/interim-2022-stir-01/session/29520.ics"
+               title="Calendar entry: document is on the agenda for stir@interim-2022-stir-01">
+                <i class="bi bi-calendar"></i>
+            </a>
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">14 pages</small>
+        <div>
+            <a href="/doc/draft-ietf-stir-rfc4916-update/">
+                
+                    draft-ietf-stir-rfc4916-update-00
+                
+            </a>
+            
+            <br>
+            
+            <b>Connected Identity for STIR</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                
+                        <a href="https://www.ietf.org/rfcdiff?url1=draft-peterson-stir-rfc4916-update-04.txt&amp;url2=draft-ietf-stir-rfc4916-update-00">
+                        
+                    
+                    
+                        2022-04-21
+                    
+                    
+                        </a>
+                    
+                
+                    <br>
+                    <div class="float-end">
+                        <span class="badge bg-success">New</span>
+                    </div>
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+            <br>
+            
+                WG Document
+                
+            
+        
+        
+        
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+            <a href="/meeting/interim-2022-stir-01/session/29520.ics"
+               title="Calendar entry: document is on the agenda for stir@interim-2022-stir-01">
+                <i class="bi bi-calendar"></i>
+            </a>
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">10 pages</small>
+        <div>
+            <a href="/doc/draft-ietf-stir-servprovider-oob/">
+                
+                    draft-ietf-stir-servprovider-oob-02
+                
+            </a>
+            
+            <br>
+            
+            <b>Out-of-Band STIR for Service Providers</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                
+                    <a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-stir-servprovider-oob-02">
+                    
+                    
+                    
+                        2022-04-21
+                    
+                    
+                        </a>
+                    
+                
+                    <br>
+                    <div class="float-end">
+                        <span class="badge bg-success">New</span>
+                    </div>
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+            <br>
+            
+                WG Document
+                
+            
+        
+        
+        
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
                     
                 </td>
             
@@ -2046,11 +2369,104 @@
             
                 <th scope="col" colspan="5">
             
-            Related Internet-Draft (1 hit)
+            Related Internet-Drafts (2 hits)
             </th>
         </tr>
     </tbody>
     <tbody>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+            <a href="/meeting/interim-2022-stir-01/session/29520.ics"
+               title="Calendar entry: document is on the agenda for stir@interim-2022-stir-01">
+                <i class="bi bi-calendar"></i>
+            </a>
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">11 pages</small>
+        <div>
+            <a href="/doc/draft-peterson-stir-certificates-shortlived/">
+                
+                    draft-peterson-stir-certificates-shortlived-03
+                
+            </a>
+            
+            <br>
+            
+            <b>Short-Lived Certificates for Secure Telephone Identity</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                
+                    <a href="https://www.ietf.org/rfcdiff?url2=draft-peterson-stir-certificates-shortlived-03">
+                    
+                    
+                    
+                        2022-04-21
+                    
+                    
+                        </a>
+                    
+                
+                    <br>
+                    <div class="float-end">
+                        <span class="badge bg-success">New</span>
+                    </div>
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+        
+        
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
         
             
 
@@ -2224,5 +2640,5 @@
                 window.location.href = e.params.data.url;
             });
         </script>
-    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6ff48a628a4c0760',m:'EE265yRFDD5IkB7iNAqU1mccrMKAmv1JhzApOtroPy4-1650527551-0-Ae9OCD2j+nmRs/15xCloe+IS8C1SlpoSqTe54hfKvlB7yOrnPDWkWXb8fZ+p+BJFhkaYAtmr0QPv7Uok+JVEHjB0oesWN/j7SUFS8K7aHoJgXJjOnFZLjnMRO8ax6GRToDklrateHL3sCGLbyuKiU30=',s:[0x9df19d1f3a,0xebd3eccdc3],}})();</script></body>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'7007df468f326a93',m:'puBDgO9dJzxuKsDKWBCPr6nmnjNe0t1FtpF4ZxyFFq8-1650730258-0-AS8SothoW7bq1BWasqLPk8rbKfijcDPTmm/kj9IamFn73oEwjgaWZP/HHj7L9ppr2yOfHac1OOtBGGFNWv+asf3kezHeLMb6OD2UJYYKuOmTze4oY6E5zGj6FdJzlXWk6P7tYY4+rOnlUZWAgqMrazw=',s:[0xf1f5849426,0xa6d305658b],}})();</script></body>
 </html>

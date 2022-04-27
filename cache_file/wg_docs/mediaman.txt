@@ -791,7 +791,7 @@
                href="mailto:superuser%40gmail.com"
                aria-label="Compose email to superuser@gmail.com."
                title="Compose email to superuser@gmail.com.">
-                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 28 days</span>
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 31 days</span>
             
         
     
@@ -896,7 +896,7 @@
                href="mailto:superuser%40gmail.com"
                aria-label="Compose email to superuser@gmail.com."
                title="Compose email to superuser@gmail.com.">
-                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 63 days</span>
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 65 days</span>
             
         
     
@@ -1117,5 +1117,5 @@
                 window.location.href = e.params.data.url;
             });
         </script>
-    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6ff489bda89a6a99',m:'0UZ9SiDDBVqpUAMVj50la5l22cjpXrMgICTEEhcu62E-1650527524-0-AZjBeoSRAJqS9caApF9dg6JQhmRzBZQ1fvx/MObi2HwM7Tz0bKKzNCkozwbMOnnxh7eIptuMF56GcUTvNkF5LM50LR4yVkiaVRI2ErkW3I9FIGbKJea4S7RLW5gi0UHBDQEtCo6FhCKHEzWRopNCpBc=',s:[0x3de5f1b3b3,0x484cd72a86],}})();</script></body>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'7007de8c0c3f0734',m:'KFK6_WADVyxDJUKNpvrqVMl9t6GXJyk79klmQH0fVBc-1650730227-0-AU+8j5dYoqFACeiB5o5Wc6vVDa3yWraNMLACR39n09SP2h6EAWaQbpN/mBO8S4mF6fqMTjFRaWa5mI1uFodPzuJIz/32aZXVGTItvUk8ENAbN1b1HSJtya/uNB/CASpZCC8b+QIwzTSdHS0DvazJ8nY=',s:[0xbaedcdd52d,0xe44ac97f67],}})();</script></body>
 </html>

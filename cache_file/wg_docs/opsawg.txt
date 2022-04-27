@@ -706,7 +706,7 @@
             
                 <th scope="col" colspan="5">
             
-            Active Internet-Drafts (12 hits)
+            Active Internet-Drafts (11 hits)
             </th>
         </tr>
     </tbody>
@@ -774,7 +774,7 @@
         
         
         
-        <span class="badge bg-danger" title="Goal is &lt;14 days">for 35 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;14 days">for 37 days</span>
         
         
             
@@ -810,7 +810,7 @@
                href="mailto:rwilton%40cisco.com"
                aria-label="Compose email to rwilton@cisco.com."
                title="Compose email to rwilton@cisco.com.">
-                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 96 days</span>
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 99 days</span>
             
         
     
@@ -1076,7 +1076,7 @@
             : <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-opsawg-ntf">AUTH48-DONE</a>
         
         
-        <span class="badge bg-success">for 58 days</span>
+        <span class="badge bg-success">for 60 days</span>
         
         
             
@@ -1135,92 +1135,6 @@
                aria-label="Compose email to ludwig@clemm.org."
                title="Compose email to ludwig@clemm.org.">
                 <i class="bi bi-envelope"></i></a></span>
-                    
-                </td>
-            
-            
-        </tr>
-        
-            
-
-
-
-
-
-
-
-<tr>
-    <td>
-        
-        
-        
-    </td>
-    <td class="doc">
-        <small class="float-end text-muted d-none d-sm-block">8 pages</small>
-        <div>
-            <a href="/doc/draft-ietf-opsawg-ol/">
-                
-                    draft-ietf-opsawg-ol-00
-                
-            </a>
-            
-            <br>
-            
-            <b>Ownership and licensing statements in YANG</b>
-            
-        </div>
-        
-    </td>
-    <td>
-            
-                    
-                        2021-10-20
-                    
-                    
-                
-                
-                    <br>
-                    <span class="badge bg-warning">Expires soon</span>
-                
-            </td>
-            
-
-
-
-<td class="status">
-    
-    
-        
-            I-D Exists
-        
-        
-        
-        
-        
-        
-            
-        
-        
-            <br>
-            
-                WG Document
-                
-            
-        
-        
-        
-        
-        
-        
-    
-</td>
-            <td class="text-center d-none d-sm-table-cell">
-                
-            </td>
-            
-                <td class="d-none d-sm-table-cell">
-                    
-                    <br>
                     
                 </td>
             
@@ -1391,8 +1305,10 @@
         
         
             <br>
-            Review:
-            <a href="/group/yangdoctors/">yangdoctors</a>
+            Reviews:
+            <a href="/group/rtgdir/">rtgdir</a>,
+                
+                    <a href="/group/yangdoctors/">yangdoctors</a>
         
         
         
@@ -5449,5 +5365,5 @@
                 window.location.href = e.params.data.url;
             });
         </script>
-    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6ff48cf70f1856fb',m:'Yjp9Q.OKpx9dJ8jXXMQdSvzMBaLPSxPt5RZUc9aMHPk-1650527659-0-AY46I6kGi2x6W/r6ovyJ7crcNxN2QMr8t/PvCI8KIgJ6v0P+s8tAAMvtNdBpMTxy5pvie89osicz09s26sqAmZK10P5WhzKVaLcJluWQJb2qxYlygXdWRzDGcpSGOxPC6grd7khx5nL80XYXdFEjvKk=',s:[0x588fe572b9,0xa7af244d78],}})();</script></body>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'7007e25b481b6b6c',m:'xSf_cM1_.6vL2Tlz2Qw.VM4PnEnl5Bl3fHwxuxb.Okc-1650730386-0-Acm6z44TX3wQfWVKGwjENNCb1+5mhGnJgFxOv3VqSl5Yy4+6pzG0DfbVbqz+fOnlBfD6X6yNzWZOEEClf5gtHyNkPVz5ghmFxOYmvvz58Bza/ua/x1HrDH5d+Fj1LJQExfN7cApOk/sOJql0MU+/n3s=',s:[0xefaac9ea12,0xf7f1ef5742],}})();</script></body>
 </html>

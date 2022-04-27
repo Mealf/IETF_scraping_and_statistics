@@ -771,7 +771,7 @@
         
             <br>
             
-                In WG Last Call
+                WG Consensus: Waiting for Write-Up
                 
             
         
@@ -789,6 +789,15 @@
                 <td class="d-none d-sm-table-cell">
                     
                     <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/Andrew.Campling@419.Consulting" >Andrew Campling</a> <a class="text-reset"
+               href="mailto:Andrew.Campling%40419.Consulting"
+               aria-label="Compose email to Andrew.Campling@419.Consulting."
+               title="Compose email to Andrew.Campling@419.Consulting.">
+                <i class="bi bi-envelope"></i></a></span>
                     
                 </td>
             
@@ -865,7 +874,7 @@
         
             <br>
             
-                In WG Last Call
+                WG Consensus: Waiting for Write-Up
                 
             
         
@@ -883,6 +892,15 @@
                 <td class="d-none d-sm-table-cell">
                     
                     <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/Andrew.Campling@419.Consulting" >Andrew Campling</a> <a class="text-reset"
+               href="mailto:Andrew.Campling%40419.Consulting"
+               aria-label="Compose email to Andrew.Campling@419.Consulting."
+               title="Compose email to Andrew.Campling@419.Consulting.">
+                <i class="bi bi-envelope"></i></a></span>
                     
                 </td>
             
@@ -904,11 +922,11 @@
         
     </td>
     <td class="doc">
-        <small class="float-end text-muted d-none d-sm-block">10 pages</small>
+        <small class="float-end text-muted d-none d-sm-block">11 pages</small>
         <div>
             <a href="/doc/draft-ietf-add-svcb-dns/">
                 
-                    draft-ietf-add-svcb-dns-02
+                    draft-ietf-add-svcb-dns-03
                 
             </a>
             
@@ -921,10 +939,21 @@
     </td>
     <td>
             
+                
+                    <a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-add-svcb-dns-03">
                     
-                        2022-02-01
                     
                     
+                        2022-04-22
+                    
+                    
+                        </a>
+                    
+                
+                    <br>
+                    <div class="float-end">
+                        <span class="badge bg-success">New</span>
+                    </div>
                 
                 
             </td>
@@ -948,7 +977,7 @@
         
             <br>
             
-                In WG Last Call
+                WG Consensus: Waiting for Write-Up
                 
             
         
@@ -966,6 +995,15 @@
                 <td class="d-none d-sm-table-cell">
                     
                     <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/Andrew.Campling@419.Consulting" >Andrew Campling</a> <a class="text-reset"
+               href="mailto:Andrew.Campling%40419.Consulting"
+               aria-label="Compose email to Andrew.Campling@419.Consulting."
+               title="Compose email to Andrew.Campling@419.Consulting.">
+                <i class="bi bi-envelope"></i></a></span>
                     
                 </td>
             
@@ -1757,5 +1795,5 @@
                 window.location.href = e.params.data.url;
             });
         </script>
-    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6ff48b0e189ea355',m:'B0SwgMrF4u0fg3WdFFn0Cgs8Kh_SDyBzeiSloRSHlgM-1650527578-0-AThuNH7xQOoXLQJNxElO/twqpRVTg1v3kZI2ZoCEMsVl1+PvLhx/F1Oy0DNCnoPrzXSGYrXQvGcanj730IPxaZ0gdp0OozGv8jFWDBku5I1h7g/oMYqZBgr2YYKEOJHpVXYzQxXQhXASAu+3dtGIodA=',s:[0xad03e01321,0xbbcd8a6559],}})();</script></body>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'7007e0068df9a9c7',m:'brvFl.K7RgKkvlj4Vcuo6MxefVwyO9ZEijb6WeiJ1hU-1650730288-0-AeBQgBJQDcv7yCKoowbWHQrQggse5xcBbq4RS4ELFpLDJwab2LyPnfZbrgyQYyoEfuNMgOhTN/VQ6/hjUlxkHfpNcd2LKi/JrZGFSGGmvY5/lOke+/Sigmb0r12CTnA4iO+sVyWQUgWYdTPEnhOkdtQ=',s:[0x0e7a8d0dc5,0xb71ae29046],}})();</script></body>
 </html>

@@ -706,7 +706,7 @@
             
                 <th scope="col" colspan="5">
             
-            Active Internet-Drafts (9 hits)
+            Active Internet-Drafts (8 hits)
             </th>
         </tr>
     </tbody>
@@ -763,7 +763,7 @@
         
         
         
-        <span class="badge bg-success">for 2 days</span>
+        <span class="badge bg-success">for 4 days</span>
         
         
             
@@ -865,7 +865,7 @@
         
         
         
-        <span class="badge bg-danger" title="Goal is &lt;14 days">for 100 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;14 days">for 102 days</span>
         
         
             
@@ -893,7 +893,7 @@
                href="mailto:rdd%40cert.org"
                aria-label="Compose email to rdd@cert.org."
                title="Compose email to rdd@cert.org.">
-                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 176 days</span>
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 178 days</span>
             
         
     
@@ -979,7 +979,7 @@
         
         
         
-        <span class="badge bg-danger" title="Goal is &lt;14 days">for 76 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;14 days">for 78 days</span>
         
         
             
@@ -1007,7 +1007,7 @@
                href="mailto:rdd%40cert.org"
                aria-label="Compose email to rdd@cert.org."
                title="Compose email to rdd@cert.org.">
-                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 75 days</span>
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 77 days</span>
             
         
     
@@ -1353,7 +1353,7 @@
         
         
         
-        <span class="badge bg-danger" title="Goal is &lt;7 days">for 79 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;7 days">for 81 days</span>
         
         
             
@@ -1487,118 +1487,6 @@
             
         </tr>
         
-            
-
-
-
-
-
-
-
-<tr>
-    <td>
-        
-        
-        
-    </td>
-    <td class="doc">
-        <small class="float-end text-muted d-none d-sm-block">37 pages</small>
-        <div>
-            <a href="/doc/draft-ietf-lamps-samples/">
-                
-                    draft-ietf-lamps-samples-08
-                
-            </a>
-            
-            <br>
-            
-            <b>S/MIME Example Keys and Certificates</b>
-            
-        </div>
-        
-    </td>
-    <td>
-            
-                    
-                        2022-02-02
-                    
-                    
-                
-                
-            </td>
-            
-
-
-
-<td class="status">
-    
-    
-        
-            RFC Ed Queue
-        
-        
-            : <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-lamps-samples">AUTH48-DONE</a>
-        
-        
-        <span class="badge bg-warning" title="Goal is &lt;60 days">for 73 days</span>
-        
-        
-            
-        
-        
-            <br>
-            
-                Submitted to IESG for Publication
-                
-                    :
-                
-            
-        
-        Informational
-        
-        
-            <br>
-            Reviews:
-            <a href="/group/genart/">genart</a>,
-                
-                    <a href="/group/opsdir/">opsdir</a>,
-                
-                    <a href="/group/secdir/">secdir</a>
-        
-        
-        
-    
-</td>
-            <td class="text-center d-none d-sm-table-cell">
-                
-            </td>
-            
-                <td class="d-none d-sm-table-cell">
-                    
-                        <span ><a 
-           title="Area Director"
-            href="/person/rdd@cert.org" >Roman Danyliw</a> <a 
-               href="mailto:rdd%40cert.org"
-               aria-label="Compose email to rdd@cert.org."
-               title="Compose email to rdd@cert.org.">
-                <i class="bi bi-envelope"></i></a></span>
-                    
-                    <br>
-                    
-                        <span class="small text-muted"
-      ><a class="text-reset"
-           title="Shepherd"
-            href="/person/tim.hollebeek@digicert.com" >Tim Hollebeek</a> <a class="text-reset"
-               href="mailto:tim.hollebeek%40digicert.com"
-               aria-label="Compose email to tim.hollebeek@digicert.com."
-               title="Compose email to tim.hollebeek@digicert.com.">
-                <i class="bi bi-envelope"></i></a></span>
-                    
-                </td>
-            
-            
-        </tr>
-        
     </tbody>
 
     <tbody>
@@ -1607,7 +1495,7 @@
             
                 <th scope="col" colspan="5">
             
-            RFCs (17 hits)
+            RFCs (18 hits)
             </th>
         </tr>
     </tbody>
@@ -3030,6 +2918,93 @@
             
         </tr>
         
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">32 pages</small>
+        <div>
+            <a href="/doc/rfc9216/">
+                
+                    RFC 9216
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-lamps-samples)</i>
+            <br>
+            
+            <b>S/MIME Example Keys and Certificates</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2022-04
+                    
+                    
+                
+                    <br>
+                    <div class="float-end">
+                        <span class="badge bg-success">New</span>
+                    </div>
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Informational RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/rdd@cert.org" >Roman Danyliw</a> <a 
+               href="mailto:rdd%40cert.org"
+               aria-label="Compose email to rdd@cert.org."
+               title="Compose email to rdd@cert.org.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/tim.hollebeek@digicert.com" >Tim Hollebeek</a> <a class="text-reset"
+               href="mailto:tim.hollebeek%40digicert.com"
+               aria-label="Compose email to tim.hollebeek@digicert.com."
+               title="Compose email to tim.hollebeek@digicert.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
     </tbody>
 
 
@@ -3386,5 +3361,5 @@
                 window.location.href = e.params.data.url;
             });
         </script>
-    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6ff491a8e963a9af',m:'fter_94kd2UI6jNRTK4WlFZIoNJX20Nq7T82mn6nK8w-1650527850-0-AaiHlY0ia4u/5VBZiyRatX6C045Q9bIAIwVOWNazKIqRn8/lyEa9noMMUh3T+5gfZaRxbRBGW9ux6BUw0aKb65fGvuO/SSYs4QpLd4V/HtYxa3IqPEvBwXjBuYliPI1FslZDwV9tgAb6LaSIKcHgKkE=',s:[0x6fbbc226d7,0x732828f83d],}})();</script></body>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'7007e7c6af816a8a',m:'iE5bu0WCEjy5b9_0cNqn1F9.uYmnmVywPKFK83haFSg-1650730607-0-AYD47FKFr9TS4PO93bX8hhRY0BgVb8/HooSSbxYq65X6StzEGlq6p7O2KNGFSL3wB0BK6j0Wmf4o4lhMoqBN70XHy/t2L3IQqXRAWr+P2hcGBOWe6g/cbl54pfBbYNGuge1OPm53QGWHVys6g5PXabg=',s:[0x9286c4fb57,0x213cc74ba3],}})();</script></body>
 </html>

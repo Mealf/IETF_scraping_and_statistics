@@ -731,7 +731,7 @@
         <div>
             <a href="/doc/draft-ietf-dots-multihoming/">
                 
-                    draft-ietf-dots-multihoming-11
+                    draft-ietf-dots-multihoming-12
                 
             </a>
             
@@ -744,10 +744,21 @@
     </td>
     <td>
             
+                
+                    <a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-dots-multihoming-12">
                     
-                        2022-02-10
                     
                     
+                        2022-04-21
+                    
+                    
+                        </a>
+                    
+                
+                    <br>
+                    <div class="float-end">
+                        <span class="badge bg-success">New</span>
+                    </div>
                 
                 
             </td>
@@ -757,18 +768,15 @@
 
 <td class="status">
     
-        <div class="float-end ms-1 mb-1" id="ballot-icon-draft-ietf-dots-multihoming"><a  href="/doc/draft-ietf-dots-multihoming/ballotpopup/857264/" data-bs-toggle="modal" data-bs-target="#modal-857264" aria-label="IESG positions" title="IESG positions (click to show more)" class="ballot-icon"><table><tbody><tr><td class="position-discuss"></td><td class="position-discuss"></td><td class="position-yes"></td><td class="position-noobj"></td><td class="position-noobj"></td></tr><tr><td class="position-noobj"></td><td class="position-noobj"></td><td class="position-noobj"></td><td class="position-noobj"></td><td class="position-norecord"></td></tr><tr><td class="position-norecord"></td><td class="position-norecord"></td><td class="position-norecord"></td><td class="position-norecord"></td><td class="position-empty"></td></tr></tbody></table></a><div id="modal-857264" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable modal-xl"><div class="modal-content"></div></div></div></div>
+        <div class="float-end ms-1 mb-1" id="ballot-icon-draft-ietf-dots-multihoming"><a  href="/doc/draft-ietf-dots-multihoming/ballotpopup/857264/" data-bs-toggle="modal" data-bs-target="#modal-857264" aria-label="IESG positions" title="IESG positions (click to show more)" class="ballot-icon"><table><tbody><tr><td class="position-discuss"></td><td class="position-yes"></td><td class="position-yes"></td><td class="position-noobj"></td><td class="position-noobj"></td></tr><tr><td class="position-noobj"></td><td class="position-noobj"></td><td class="position-noobj"></td><td class="position-noobj"></td><td class="position-norecord"></td></tr><tr><td class="position-norecord"></td><td class="position-norecord"></td><td class="position-norecord"></td><td class="position-norecord"></td><td class="position-empty"></td></tr></tbody></table></a><div id="modal-857264" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable modal-xl"><div class="modal-content"></div></div></div></div>
     
     
         
-            IESG Evaluation
+            IESG Evaluation::AD Followup
         
         
         
-        <span class="badge bg-success">for 7 days</span>
-        
-            <br>
-            IESG telechat: 2022-04-21
+        <span class="badge bg-success">for 2 days</span>
         
         
             
@@ -787,9 +795,7 @@
         
             <br>
             Reviews:
-            <a href="/group/artart/">artart</a>,
-                
-                    <a href="/group/genart/">genart</a>,
+            <a href="/group/genart/">genart</a>,
                 
                     <a href="/group/intdir/">intdir</a>,
                 
@@ -900,7 +906,7 @@
         
         
         
-        <span class="badge bg-danger" title="Goal is &lt;7 days">for 69 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;7 days">for 71 days</span>
         
         
             
@@ -1008,7 +1014,7 @@
             : <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-dots-telemetry">EDIT</a>
         
         
-        <span class="badge bg-success">for 30 days</span>
+        <span class="badge bg-success">for 32 days</span>
         
         
             
@@ -1124,7 +1130,7 @@
         
         
         
-        <span class="badge bg-warning" title="Goal is &lt;7 days">for 10 days</span>
+        <span class="badge bg-warning" title="Goal is &lt;7 days">for 12 days</span>
         
         
             
@@ -2147,5 +2153,5 @@
                 window.location.href = e.params.data.url;
             });
         </script>
-    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6ff491279f415700',m:'D5OooL_ZIZa7TiRguTYqHyfOS8QP_eh80h1v1C6p4LI-1650527828-0-AYf5VLbkMW/H8uAb06rYV1qQBW5riMokQuEbOnwGHWfLWtMpOdYQ6K3C3PZoLDJmffRdvR2KG06UhFfEsDeNJ173TFReo/FxWvQCapzGtt62sTmfXC33uMEorRx3kBR7g/O6ZztvLuPVe1hVFwB2loU=',s:[0xa31c966479,0x18f5905f93],}})();</script></body>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'7007e7302f846b63',m:'m.Po60JXAe4AVK_RpV5uw69EPO2rqyeL2gVKUuZpOuU-1650730582-0-AQ8FXh85Z++WPzULQWOsDxFK8btRghDGCq8zgsV0D1RSkwCEmfrXzYSQzwZ0uZ/E7IHa20x4otT/c4+m78Cea6IqETnbqqZGipph2yyoUcBI6631rAYrqCraFbzDPIY/+Y14/gXHA74WoxOszGR680Q=',s:[0x28385b0275,0x4684b8f807],}})();</script></body>
 </html>

@@ -765,7 +765,7 @@
         
         
         
-        <span class="badge bg-success">for 14 days</span>
+        <span class="badge bg-warning" title="Goal is &lt;14 days">for 16 days</span>
         
         
             
@@ -801,7 +801,7 @@
                href="mailto:ek.ietf%40gmail.com"
                aria-label="Compose email to ek.ietf@gmail.com."
                title="Compose email to ek.ietf@gmail.com.">
-                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 73 days</span>,
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 75 days</span>,
             
                 <span ><a 
            title="Author"
@@ -1597,5 +1597,5 @@
                 window.location.href = e.params.data.url;
             });
         </script>
-    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6ff48bacc89d3138',m:'h2pUX0c0cFBm36UoPM5heuEGRKeVax6nIJCI5plW2sw-1650527603-0-AfvdYHd3l1on5U6UUU/XT1N94M2lxMB6IzLszDXo6jSvtJ5JcJHfYrnDENpLhFwngh/SazUK56fwmFD/T07mnqyCy+zCFRXd0C3D9lbRRQXNV0dc4Pr20EmQxYe4fSgjD+8kUOKqG77SdouR6zU0k60=',s:[0x6cdb0ca37c,0x7934d1935d],}})();</script></body>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'7007e0bf3bfca3a6',m:'LklGN_AdftriUZeXxp7xEMZTH_sNWYiXjc1TOltrtOE-1650730317-0-ARHB8l87TTpDyglU2Hxk3iSd7oShe0mR9fqAJUctY5BEn4l2I73q5tjIU1Magm3HUNJOsFzBezfjrNAn4fdsGPgQu628l7JJXADsLWWhmfy2Ii5zxa87UxQgL3K/DlYGvklkhiFmt7PevzxKRoA1Lek=',s:[0x8118213dcb,0xcd69e357ac],}})();</script></body>
 </html>

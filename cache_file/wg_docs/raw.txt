@@ -1022,18 +1022,15 @@
 
 <td class="status">
     
-        <div class="float-end ms-1 mb-1" id="ballot-icon-draft-ietf-raw-ldacs"><a  href="/doc/draft-ietf-raw-ldacs/ballotpopup/856357/" data-bs-toggle="modal" data-bs-target="#modal-856357" aria-label="IESG positions" title="IESG positions (click to show more)" class="ballot-icon"><table><tbody><tr><td class="position-discuss"></td><td class="position-discuss"></td><td class="position-discuss"></td><td class="position-discuss"></td><td class="position-yes"></td></tr><tr><td class="position-noobj"></td><td class="position-noobj"></td><td class="position-noobj"></td><td class="position-norecord"></td><td class="position-norecord"></td></tr><tr><td class="position-norecord"></td><td class="position-norecord"></td><td class="position-norecord"></td><td class="position-norecord"></td><td class="position-empty"></td></tr></tbody></table></a><div id="modal-856357" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable modal-xl"><div class="modal-content"></div></div></div></div>
+        <div class="float-end ms-1 mb-1" id="ballot-icon-draft-ietf-raw-ldacs"><a  href="/doc/draft-ietf-raw-ldacs/ballotpopup/856357/" data-bs-toggle="modal" data-bs-target="#modal-856357" aria-label="IESG positions" title="IESG positions (click to show more)" class="ballot-icon"><table><tbody><tr><td class="position-discuss"></td><td class="position-discuss"></td><td class="position-discuss"></td><td class="position-discuss"></td><td class="position-yes"></td></tr><tr><td class="position-noobj"></td><td class="position-noobj"></td><td class="position-noobj"></td><td class="position-noobj"></td><td class="position-norecord"></td></tr><tr><td class="position-norecord"></td><td class="position-norecord"></td><td class="position-norecord"></td><td class="position-norecord"></td><td class="position-empty"></td></tr></tbody></table></a><div id="modal-856357" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable modal-xl"><div class="modal-content"></div></div></div></div>
     
     
         
-            IESG Evaluation
+            IESG Evaluation::AD Followup
         
         
         
-        <span class="badge bg-warning" title="Goal is &lt;14 days">for 15 days</span>
-        
-            <br>
-            IESG telechat: 2022-04-21
+        <span class="badge bg-success">for 2 days</span>
         
         
             
@@ -1349,7 +1346,7 @@
         
         
         
-        <span class="badge bg-danger" title="Goal is &lt;7 days">for 44 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;7 days">for 46 days</span>
         
         
             
@@ -1765,5 +1762,5 @@
                 window.location.href = e.params.data.url;
             });
         </script>
-    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6ff48ffbef0c6a81',m:'iBqLVZqsxmvXFsdJCpE.4iTsV_XYjjpHAXBWz1sLXKs-1650527780-0-AaU93K6s7N5syIsoTY5tsDzvflk8DfjdN9gAkrHeQ0jOtyxT6QOFxc5Ywh0fINbMgEsNtcHZbMHtycMCZXzq7OO50NBgleSUGBDuNl/jFzuWKpR3ShQWYw3K70ggpR5ANAnJVIvLXCtoYcnIKlPT8lM=',s:[0xe374361528,0x06271659f2],}})();</script></body>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'7007e5f9cd606a84',m:'8PLNMzaSiqb.YGGXFDZ8MrH0PHYGpZFCugvCWAe6jiQ-1650730532-0-AWllWeqAW3EnBaeitI4w+s7b1gtT4zaxxPmplV2xfeFvzPi0ONM8U5OfrBH83qhvWPtOXmNyEVpP4cWQk+ns2eHOzUcRUAM0qR7T+y0Hmi+uwuMbqQG6Rcsn2Vd6AEvg0dhF74xHI0E6tyH07HMYIR4=',s:[0x42a1996ce1,0xcecd358df6],}})();</script></body>
 </html>

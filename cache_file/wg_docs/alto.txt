@@ -762,10 +762,10 @@
             RFC Ed Queue
         
         
-            : <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-alto-cdni-request-routing-alto">EDIT</a>
+            : <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-alto-cdni-request-routing-alto">RFC-EDITOR</a>
         
         
-        <span class="badge bg-success">for 57 days</span>
+        <span class="badge bg-success">for 59 days</span>
         
         
             
@@ -890,7 +890,7 @@
         
         
         
-        <span class="badge bg-success">for 2 days</span>
+        <span class="badge bg-success">for 4 days</span>
         
         
             
@@ -1098,7 +1098,7 @@
             : <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-alto-path-vector">MISSREF</a>
         
         
-        <span class="badge bg-success">for 31 days</span>
+        <span class="badge bg-success">for 33 days</span>
         
         
             
@@ -1212,7 +1212,7 @@
             : <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-alto-performance-metrics">MISSREF</a>
         
         
-        <span class="badge bg-success">for 31 days</span>
+        <span class="badge bg-success">for 33 days</span>
         
         
             
@@ -1326,7 +1326,7 @@
             : <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-alto-unified-props-new">RFC-EDITOR</a>
         
         
-        <span class="badge bg-success">for 52 days</span>
+        <span class="badge bg-success">for 54 days</span>
         
         
             
@@ -2586,7 +2586,7 @@
         <div>
             <a href="/doc/draft-xing-alto-sdn-controller-aware-mptcp-mpquic/">
                 
-                    draft-xing-alto-sdn-controller-aware-mptcp-mpquic-02
+                    draft-xing-alto-sdn-controller-aware-mptcp-mpquic-03
                 
             </a>
             
@@ -2600,11 +2600,11 @@
     <td>
             
                 
-                    <a href="https://www.ietf.org/rfcdiff?url2=draft-xing-alto-sdn-controller-aware-mptcp-mpquic-02">
+                    <a href="https://www.ietf.org/rfcdiff?url2=draft-xing-alto-sdn-controller-aware-mptcp-mpquic-03">
                     
                     
                     
-                        2022-04-12
+                        2022-04-21
                     
                     
                         </a>
@@ -2984,5 +2984,5 @@
                 window.location.href = e.params.data.url;
             });
         </script>
-    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6ff492887c000760',m:'qllk5edt9tb0EvYp76cWHcR1gtbkOlDTHSjLQ.Tl0yo-1650527885-0-Aa3WSN/QR4Y5ElpJncog7sR+7btGaatpLpciu1djKF+1xczAkAb7UdSbMzTFVRIsvTlUxbjizhFev2J0iLeYjR6aC0DQaEOEKb7Cgf/y/1iprD8HFTJAqwC3zP49xQZcwHCN+YZKDLwtmp0EKvZlvkI=',s:[0x231627ec6e,0x5e722f69f2],}})();</script></body>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'7007e8c94bc6a9ad',m:'Nh33Knam6mA3z_W4EvpJOu4N8UBrxY7UveXXendzGew-1650730648-0-AZ3xUXk9Z6udgyufxAUFk9e8QVTSp/DZrB3sl+8xlXjHPaPCJ/eMLSL0CGib/pZDBp2KXTRyrN2XEKXtDFJ9gIzOI2dUYM6iHXbYaaQqsSDOTEY0dq0d8WLxk3UJcn3vTTv7uw2ST7Q/qF5SKj6hN+g=',s:[0x5e77380678,0xc29c5e3f4b],}})();</script></body>
 </html>

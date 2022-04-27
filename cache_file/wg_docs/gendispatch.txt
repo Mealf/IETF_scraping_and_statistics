@@ -779,7 +779,7 @@
             : <a href="https://www.rfc-editor.org/queue2.html#draft-eggert-bcp45bis">AUTH48</a>
         
         <span class="badge bg-info" title="AUTH48">AUTH48</span>
-        <span class="badge bg-success">for 56 days</span>
+        <span class="badge bg-success">for 58 days</span>
         
         
             
@@ -1007,5 +1007,5 @@
                 window.location.href = e.params.data.url;
             });
         </script>
-    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6ff48aa419606a90',m:'p1L8P3fOtd5HqaBIsHr0ITWFbUQapqENliCZBK.I1vA-1650527561-0-AaGGi10BEQkKnDqF14zzIuJrSeSNx1ZjE0UQijltL2pikBNu1b87KRL4ElOsfcS4SSu12y3Jm8nncM4YZh8q3EbEk7JoVKE2I84V5nSgbrhLmsxKDNuCZMUOU6p0J3asacjdbXJ5pW9y55liIwl65jk=',s:[0xeba643044f,0xc399d6a17a],}})();</script></body>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'7007df91bcaca9b6',m:'yvjT5ziUYYSVZr.fHqlZj4BCNNc5epMolCc.93aVZMc-1650730269-0-AQkFcUf86ubUzwt505Zq1Bnxhe1GHg3pnrjidQLMdTStc28cU6kwLceLwycAn8ParKljVaAcq22rUqx9RxhoIqd4TPJMmdp88JHxg1VuywB3ixLUKJH3hvuD/+jcVqWRykVI9oRrKr502bmWhVZxGUw=',s:[0xb5e9a4c418,0xebd3eccdc3],}})();</script></body>
 </html>

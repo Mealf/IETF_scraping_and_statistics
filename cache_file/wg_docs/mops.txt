@@ -818,11 +818,11 @@
         
     </td>
     <td class="doc">
-        <small class="float-end text-muted d-none d-sm-block">49 pages</small>
+        <small class="float-end text-muted d-none d-sm-block">41 pages</small>
         <div>
             <a href="/doc/draft-ietf-mops-streaming-opcons/">
                 
-                    draft-ietf-mops-streaming-opcons-09
+                    draft-ietf-mops-streaming-opcons-10
                 
             </a>
             
@@ -835,10 +835,21 @@
     </td>
     <td>
             
+                
+                    <a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-mops-streaming-opcons-10">
                     
-                        2022-03-01
                     
                     
+                        2022-04-21
+                    
+                    
+                        </a>
+                    
+                
+                    <br>
+                    <div class="float-end">
+                        <span class="badge bg-success">New</span>
+                    </div>
                 
                 
             </td>
@@ -850,11 +861,11 @@
     
     
         
-            AD Evaluation::Revised I-D Needed
+            In Last Call (ends 2022-05-06)
         
         
         
-        <span class="badge bg-danger" title="Goal is &lt;14 days">for 33 days</span>
+        <span class="badge bg-success">for 1 day</span>
         
         
             
@@ -871,10 +882,16 @@
         Informational
         
         
+            <br>
+            Reviews:
+            <a href="/group/artart/">artart</a>,
+                
+                    <a href="/group/intdir/">intdir</a>
+        
         
         
             <br>
-            Action Holders:
+            Action Holder:
             
                 <span ><a 
            title="Responsible AD"
@@ -882,31 +899,7 @@
                href="mailto:evyncke%40cisco.com"
                aria-label="Compose email to evyncke@cisco.com."
                title="Compose email to evyncke@cisco.com.">
-                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 50 days</span>,
-            
-                <span ><a 
-           title="Author"
-            href="/person/spencerdawkins.ietf@gmail.com" >Spencer Dawkins</a> <a 
-               href="mailto:spencerdawkins.ietf%40gmail.com"
-               aria-label="Compose email to spencerdawkins.ietf@gmail.com."
-               title="Compose email to spencerdawkins.ietf@gmail.com.">
-                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 32 days</span>,
-            
-                <span ><a 
-           title="Author"
-            href="/person/ali.begen@networked.media" >Ali C. Begen</a> <a 
-               href="mailto:ali.begen%40networked.media"
-               aria-label="Compose email to ali.begen@networked.media."
-               title="Compose email to ali.begen@networked.media.">
-                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 32 days</span>,
-            
-                <span ><a 
-           title="Author"
-            href="/person/jakeholland.net@gmail.com" >Jake Holland</a> <a 
-               href="mailto:jakeholland.net%40gmail.com"
-               aria-label="Compose email to jakeholland.net@gmail.com."
-               title="Compose email to jakeholland.net@gmail.com.">
-                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 32 days</span>
+                <i class="bi bi-envelope"></i></a></span>
             
         
     
@@ -1047,5 +1040,5 @@
                 window.location.href = e.params.data.url;
             });
         </script>
-    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6ff48cb5df9f6b68',m:'X7_kbol6KoFBVADeJDb9pzP_.VR8pZsSFSUhZimvRuk-1650527645-0-AYW5OJvab0XHEwFr7kKjsspf5uXXLkL1Ie+n7d/ZyRREC4rz9Xx3e8sEi4632PdLAqy/mwO0zhek+b+Mc+haoBCxfac5t1y1pD2PISHOjcLFfYQTdM2K/iMsuIjNt6oPcH1BF9aBr5V4VLgAdDM9NZQ=',s:[0x4a32825bfe,0x4ff9090648],}})();</script></body>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'7007e1ff7879a337',m:'BIA6PYnGhw84.CDeH9qPCh2My_DA6jzQ4vKJTrTdD20-1650730369-0-AdYp2QXyj6Lte1jNCW8lYzU6bHPl62MEvgC4V5kIHSfWMns5/FQLio+k6ESkbHV2pWTLw1Sg90VBdcIx2cxzBAVKO8F1vNHP79M0x9E8pS38WmU2wp82Uu7WEwse1KcsbqVH4ywnYl3rpLPPFwuv+yA=',s:[0x44f5d7d11b,0xb16d584a95],}})();</script></body>
 </html>

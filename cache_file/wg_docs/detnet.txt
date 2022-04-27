@@ -744,21 +744,10 @@
     </td>
     <td>
             
-                
-                    <a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-detnet-bounded-latency-10">
-                    
-                    
                     
                         2022-04-08
                     
                     
-                        </a>
-                    
-                
-                    <br>
-                    <div class="float-end">
-                        <span class="badge bg-success">New</span>
-                    </div>
                 
                 
             </td>
@@ -776,7 +765,7 @@
         
         
         
-        <span class="badge bg-success">for 14 days</span>
+        <span class="badge bg-warning" title="Goal is &lt;14 days">for 16 days</span>
         
         
             
@@ -1245,7 +1234,7 @@
         
         
         
-        <span class="badge bg-danger" title="Goal is &lt;7 days">for 177 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;7 days">for 179 days</span>
         
         
             
@@ -2408,7 +2397,7 @@
             
                 <th scope="col" colspan="5">
             
-            Related Internet-Drafts (14 hits)
+            Related Internet-Drafts (15 hits)
             </th>
         </tr>
     </tbody>
@@ -3227,6 +3216,92 @@
         
     </td>
     <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">7 pages</small>
+        <div>
+            <a href="/doc/draft-xiong-detnet-6man-queuing-option/">
+                
+                    draft-xiong-detnet-6man-queuing-option-00
+                
+            </a>
+            
+            <br>
+            
+            <b>DetNet Queuing Option for IPv6</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                
+                    
+                    
+                        2022-04-21
+                    
+                    
+                        
+                    
+                
+                    <br>
+                    <div class="float-end">
+                        <span class="badge bg-success">New</span>
+                    </div>
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+        
+        
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
         <small class="float-end text-muted d-none d-sm-block">13 pages</small>
         <div>
             <a href="/doc/draft-xiong-detnet-large-scale-enhancements/">
@@ -3612,5 +3687,5 @@
                 window.location.href = e.params.data.url;
             });
         </script>
-    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6ff48e25dfb8a33d',m:'Pxv.MW2_hecL8._.8d.QVxvWV0uPh9Y0MG4FmGBAhTs-1650527706-0-AXez8D9gTPB6TCsZtUqtIC+LJT6n7+mxBBKorIjzwUIcOX/uaGvAFp//wgRoxsg9kQLqpTxCK+UCLfuBX2Nvi9AiRINB+s1g1kZU1nKPgrM4ppunQRQZW1tG4iwja1U4wYFcdwhil+X1sqQ+zmNdAn0=',s:[0xf26d527c37,0x0bdcded2d3],}})();</script></body>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'7007e3bf69036a98',m:'fZ8sL1aYX6zPTXAttjmubA2pHLAUFcZFZc65KLag4NI-1650730442-0-ARyJxNgu8FY7mIQo/Tcho6Myp7FUDylEkBTLQ2FsuSxe1xtHiPRsmJb26ul1X3H9DZZP1AV239RzHMFe+yKfMKSfhTcZp60lUdEBpz3S8LpejBrDFolWtw3N8PPp+mNuE9EQd3wBmDwvGaKLj1k28EM=',s:[0xef81550008,0x6fee55e02f],}})();</script></body>
 </html>

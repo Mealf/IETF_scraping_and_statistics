@@ -776,7 +776,7 @@
             : <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-dprive-dnsoquic">EDIT</a>
         
         
-        <span class="badge bg-success">for 30 days</span>
+        <span class="badge bg-success">for 32 days</span>
         
         
             
@@ -1921,7 +1921,7 @@
             I-D Exists
         
         
-            : <a href="https://www.rfc-editor.org/queue2.html#draft-pauly-dprive-oblivious-doh">AUTH48</a>
+            : <a href="https://www.rfc-editor.org/queue2.html#draft-pauly-dprive-oblivious-doh">AUTH48-DONE</a>
         
         
         
@@ -2136,5 +2136,5 @@
                 window.location.href = e.params.data.url;
             });
         </script>
-    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6ff48b6d2f9d075c',m:'MqfDjL9mEMwJ0Lv6fRs4xNGDjb9rBI.3iTJYNLNoVRw-1650527594-0-ASk4GP5hXYoHYsb8pj7X0GeCjTjWNJgrlhUER43s8ti5nm8gVcciDHZ63ICkOwGWL7D0a6usQsZmbmtDmlr770NqQWzijLkR5oVGdxQkV9K1nGgJjtLyWYH3ozCrBW6DHtSW4vSjFzcqbu+T2Bpe8wU=',s:[0x3659a13577,0x09795340c8],}})();</script></body>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'7007e077bcf46a93',m:'J3SkSjQ9JQTVQlOxn1ZgHcqFtCmDkkXOnUks7ndrNDs-1650730307-0-AbmZlKuiIuuSkXa0EOLEtWp/y0dhE5OyqZ+mN55bKFbUG/F5sh5FSzIzlukXOhof8B4FQRH343/w+hzgtyS6X1+iv9J5rVkSDFp+kQaLzY9c2vvgW6xxM0uSJWeyMwmYq2V9RaEscxUzxkx0AfWkQEc=',s:[0x894bf49d08,0x28290a52c8],}})();</script></body>
 </html>

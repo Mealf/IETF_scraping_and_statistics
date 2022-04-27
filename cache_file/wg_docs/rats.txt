@@ -854,7 +854,7 @@
         
         
         
-        <span class="badge bg-danger" title="Goal is &lt;7 days">for 62 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;7 days">for 64 days</span>
         
         
             
@@ -886,7 +886,7 @@
                href="mailto:rdd%40cert.org"
                aria-label="Compose email to rdd@cert.org."
                title="Compose email to rdd@cert.org.">
-                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 61 days</span>
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 63 days</span>
             
         
     
@@ -1322,7 +1322,7 @@
             : <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-rats-tpm-based-network-device-attest">MISSREF</a>
         
         
-        <span class="badge bg-success">for 30 days</span>
+        <span class="badge bg-success">for 32 days</span>
         
         
             
@@ -1536,7 +1536,7 @@
         
         
         
-        <span class="badge bg-danger" title="Goal is &lt;14 days">for 30 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;14 days">for 32 days</span>
         
         
             
@@ -1621,7 +1621,7 @@
             
                 <th scope="col" colspan="5">
             
-            Related Internet-Drafts (7 hits)
+            Related Internet-Drafts (8 hits)
             </th>
         </tr>
     </tbody>
@@ -2030,6 +2030,92 @@
         
     </td>
     <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">15 pages</small>
+        <div>
+            <a href="/doc/draft-tschofenig-rats-aiss-token/">
+                
+                    draft-tschofenig-rats-aiss-token-00
+                
+            </a>
+            
+            <br>
+            
+            <b>Automatic Integration of Secure Silicon (AISS) Attestation Token</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                
+                    
+                    
+                        2022-04-22
+                    
+                    
+                        
+                    
+                
+                    <br>
+                    <div class="float-end">
+                        <span class="badge bg-success">New</span>
+                    </div>
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+        
+        
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
         <small class="float-end text-muted d-none d-sm-block">26 pages</small>
         <div>
             <a href="/doc/draft-tschofenig-rats-psa-token/">
@@ -2265,5 +2351,5 @@
                 window.location.href = e.params.data.url;
             });
         </script>
-    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6ff49213ca87a9bf',m:'YFiUhlCwU1qLS5XyZV.mkjeW36akM5OwZqcrkcv8Bz8-1650527866-0-AWqMiVX2DdLc6fxpgLxfqq7NBC/xTMzGeEkwhNg+seuVPEhE52G+AOUX2VDj3RGJsgLRGNc8+Z8vu8ZyNSTiqAsagfPfjGPhlQtVdZuEHBigvpz401nkvQFRchmuzM/xE8qIr2FZCGDSVhaUqD8UOPg=',s:[0xbaedcdd52d,0xc399d6a17a],}})();</script></body>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'7007e8421e220728',m:'LG3Zk0HK_JjVrEZOenNGrVf90pVa7s11nUsIH2BWW9o-1650730626-0-AbrAEJcPKQRbAMzVFue+R+SYcnkJ8wVsD8Lfu4kU/cfboE2LWwF7Nv+8DAxgx9MapwekH9f+nDgr7oYF67FwKGXJ/o3TiizZFyvvRjaqhsXpR9e2dI1BEaUys0yEWeYMlvfUnmJxRdvSqj8AhlnHj40=',s:[0xc62f987ad4,0x00e8ac094f],}})();</script></body>
 </html>

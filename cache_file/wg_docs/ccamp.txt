@@ -1224,10 +1224,10 @@
                         <span class="small text-muted"
       ><a class="text-reset"
            title="Shepherd"
-            href="/person/oscar.gonzalezdedios@telefonica.com" >Oscar Gonzalez de Dios</a> <a class="text-reset"
-               href="mailto:oscar.gonzalezdedios%40telefonica.com"
-               aria-label="Compose email to oscar.gonzalezdedios@telefonica.com."
-               title="Compose email to oscar.gonzalezdedios@telefonica.com.">
+            href="/person/adrian@olddog.co.uk" >Adrian Farrel</a> <a class="text-reset"
+               href="mailto:adrian%40olddog.co.uk"
+               aria-label="Compose email to adrian@olddog.co.uk."
+               title="Compose email to adrian@olddog.co.uk.">
                 <i class="bi bi-envelope"></i></a></span>
                     
                 </td>
@@ -1354,21 +1354,10 @@
     </td>
     <td>
             
-                
-                    <a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-ccamp-layer1-types-13">
-                    
-                    
                     
                         2022-04-08
                     
                     
-                        </a>
-                    
-                
-                    <br>
-                    <div class="float-end">
-                        <span class="badge bg-success">New</span>
-                    </div>
                 
                 
             </td>
@@ -1708,21 +1697,10 @@
     </td>
     <td>
             
-                
-                    <a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-ccamp-otn-tunnel-model-16">
-                    
-                    
                     
                         2022-04-08
                     
                     
-                        </a>
-                    
-                
-                    <br>
-                    <div class="float-end">
-                        <span class="badge bg-success">New</span>
-                    </div>
                 
                 
             </td>
@@ -11690,5 +11668,5 @@
                 window.location.href = e.params.data.url;
             });
         </script>
-    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6ff48de17c730768',m:'mbCO4D9.N2KMmiaPJY4UFBxR3YtbrqzvpezYBbFhKp4-1650527700-0-AfcRqNB6WC3HYYQVa+BU+0jaUWOzbZhcwslxo8cmjHsLz4nD34ZKIXjmawee0BQuS3vMkXMb3Mesbce2ZnNhy5uUcfxVQacz9nXiUtNVNzAhekuCWYYUqPV2zKf+IhV/68w2UpuIhsVi3LiFPUCExCk=',s:[0x039e3ef0f5,0xe59e0cbf9f],}})();</script></body>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'7007e36af8de6a9e',m:'bkueFHhubx1Sj.kf2Y3C7P4DJm4cxL6J0dv5gD1i6dQ-1650730434-0-AULSzUNH4dkc/ee2K1GzFxntWMmVtO2LRo6N91G4N5mSW3zkUIbliMMu9Z+wexwwGSAq/oUs9F29C9Wh9Cc36i/pts5w1d8sQ+MHM41DcGSUgPEuoYoqBeb9y56dkOOyMPt/PLx5iUcfpNfiFxLzt0E=',s:[0x7ac2655145,0xed16049fcd],}})();</script></body>
 </html>

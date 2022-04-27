@@ -731,7 +731,7 @@
         <div>
             <a href="/doc/draft-ietf-secevent-subject-identifiers/">
                 
-                    draft-ietf-secevent-subject-identifiers-10
+                    draft-ietf-secevent-subject-identifiers-11
                 
             </a>
             
@@ -744,10 +744,21 @@
     </td>
     <td>
             
+                
+                    <a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-secevent-subject-identifiers-11">
                     
-                        2022-03-07
                     
                     
+                        2022-04-21
+                    
+                    
+                        </a>
+                    
+                
+                    <br>
+                    <div class="float-end">
+                        <span class="badge bg-success">New</span>
+                    </div>
                 
                 
             </td>
@@ -1171,5 +1182,5 @@
                 window.location.href = e.params.data.url;
             });
         </script>
-    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6ff4923a2b3f6b63',m:'vtUsu9lyisKIlQiawx9c_UZsfqAVU3fmW5BKC6XNnfs-1650527872-0-ATr+umxtaA7r8IfYCi9kN3VowK19JjKY4GxDvS0ESF+D3em9dAtjIwT+iQHizKgboZ3QKpdmxjQ3fXZ73+kJ3XeSIFeR/W3fQifuyZxxD9dBYgXTLyRT9xsLjDivX9vXDG5B90y6eo7KlsVbze5Yj7Q=',s:[0x5462892be3,0x4ae3b8225a],}})();</script></body>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'7007e86d4ae96a96',m:'irUgWxgsignWcsrrCAbfixbdPRv7ZsbSd_pAzOHtlig-1650730632-0-AQw2xVvyu1VW3HsCQI8jozKue+RLs0IKQ9Qu003GvZU91mO7Y8esLA16v81oP34RX7aXM+1pF2xevLbPgAjsMn7kSDIkTnA+XyH5v9waLbo1TwBi6OR/u5lNfHdQew82NRzUGtd3N4B2fplX4iBHGkQ=',s:[0x4df018ef3c,0x5e722f69f2],}})();</script></body>
 </html>

@@ -731,7 +731,7 @@
         <div>
             <a href="/doc/draft-ietf-asap-sip-auto-peer/">
                 
-                    draft-ietf-asap-sip-auto-peer-04
+                    draft-ietf-asap-sip-auto-peer-05
                 
             </a>
             
@@ -744,14 +744,22 @@
     </td>
     <td>
             
-                    
-                        2021-10-24
-                    
-                    
                 
+                    <a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-asap-sip-auto-peer-05">
+                    
+                    
+                    
+                        2022-04-21
+                    
+                    
+                        </a>
+                    
                 
                     <br>
-                    <span class="badge bg-warning">Expires soon</span>
+                    <div class="float-end">
+                        <span class="badge bg-success">New</span>
+                    </div>
+                
                 
             </td>
             
@@ -1001,5 +1009,5 @@
                 window.location.href = e.params.data.url;
             });
         </script>
-    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6ff488939fdba3a5',m:'Xx5_lD4ij3hHx8jINLn4.zj7jfto_y4hwHdl26TJdW4-1650527476-0-AXcBxh8FYQoTPQy/kwGrJm7xwdVJk5FceeD0kXT9a/wPDYssvitaOgC0YeNy23nYJL7fObGFvbPcfrGb/l6zfgZ3C7EBjHz8Vn3eB5ptS+0+tkZuWEw5KfoprjZ0mqBT+OasZJ+3KpeD0KwURzOZxb4=',s:[0xa31c966479,0x4a33f4c730],}})();</script></body>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'7007dd323aa46b6c',m:'K8cmXq_5aYTwksfih2DYUAmypYDLzEmwbt5Q9PVBaAI-1650730172-0-AZT0b1bCGvf4q+VO2OrAnmDDHA3EOB6zOurIM5xscXw24N3wPw3Ia5W6upmQYJhJexqUzF4KfyoicxicJ6Bupe3W0bKM1TvjIC6ClyY7QzSI1Ls+iSW5nwC+ShTps6iZ0elWy1Kpef2oBotkW90ti50=',s:[0x36edb550bf,0xebd3eccdc3],}})();</script></body>
 </html>

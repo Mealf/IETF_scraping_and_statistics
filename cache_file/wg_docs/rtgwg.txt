@@ -889,7 +889,7 @@
         
         
         
-        <span class="badge bg-danger" title="Goal is &lt;7 days">for 187 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;7 days">for 189 days</span>
         
         
             
@@ -3865,7 +3865,7 @@
             
                 <th scope="col" colspan="5">
             
-            Related Internet-Drafts (24 hits)
+            Related Internet-Drafts (23 hits)
             </th>
         </tr>
     </tbody>
@@ -3886,11 +3886,11 @@
         
     </td>
     <td class="doc">
-        <small class="float-end text-muted d-none d-sm-block">37 pages</small>
+        <small class="float-end text-muted d-none d-sm-block">38 pages</small>
         <div>
             <a href="/doc/draft-addogra-rtgwg-vrrp-rfc5798bis/">
                 
-                    draft-addogra-rtgwg-vrrp-rfc5798bis-07
+                    draft-addogra-rtgwg-vrrp-rfc5798bis-08
                 
             </a>
             
@@ -3904,11 +3904,11 @@
     <td>
             
                 
-                    <a href="https://www.ietf.org/rfcdiff?url2=draft-addogra-rtgwg-vrrp-rfc5798bis-07">
+                    <a href="https://www.ietf.org/rfcdiff?url2=draft-addogra-rtgwg-vrrp-rfc5798bis-08">
                     
                     
                     
-                        2022-04-12
+                        2022-04-22
                     
                     
                         </a>
@@ -4107,90 +4107,6 @@
             <td class="text-center d-none d-sm-table-cell">
                 
                     <a href="/ipr/search/?submit=draft&amp;id=draft-bashandy-rtgwg-segment-routing-uloop">
-                        <span class="badge bg-info">2</span>
-                    </a>
-                
-            </td>
-            
-                <td class="d-none d-sm-table-cell">
-                    
-                    <br>
-                    
-                </td>
-            
-            
-        </tr>
-        
-            
-
-
-
-
-
-
-
-<tr>
-    <td>
-        
-        
-        
-    </td>
-    <td class="doc">
-        <small class="float-end text-muted d-none d-sm-block">39 pages</small>
-        <div>
-            <a href="/doc/draft-bcx-rtgwg-tcr/">
-                
-                    draft-bcx-rtgwg-tcr-01
-                
-            </a>
-            
-            <br>
-            
-            <b>Token Cell Routing Data Plane Concepts</b>
-            
-        </div>
-        
-    </td>
-    <td>
-            
-                    
-                        2021-10-19
-                    
-                    
-                
-                
-                    <br>
-                    <span class="badge bg-warning">Expires soon</span>
-                
-            </td>
-            
-
-
-
-<td class="status">
-    
-    
-        
-            I-D Exists
-        
-        
-        
-        
-        
-        
-            
-        
-        
-        
-        
-        
-        
-        
-    
-</td>
-            <td class="text-center d-none d-sm-table-cell">
-                
-                    <a href="/ipr/search/?submit=draft&amp;id=draft-bcx-rtgwg-tcr">
                         <span class="badge bg-info">2</span>
                     </a>
                 
@@ -4858,7 +4774,7 @@
         <div>
             <a href="/doc/draft-li-rtgwg-enhanced-ti-lfa/">
                 
-                    draft-li-rtgwg-enhanced-ti-lfa-05
+                    draft-li-rtgwg-enhanced-ti-lfa-06
                 
             </a>
             
@@ -4871,14 +4787,22 @@
     </td>
     <td>
             
-                    
-                        2021-10-21
-                    
-                    
                 
+                    <a href="https://www.ietf.org/rfcdiff?url2=draft-li-rtgwg-enhanced-ti-lfa-06">
+                    
+                    
+                    
+                        2022-04-21
+                    
+                    
+                        </a>
+                    
                 
                     <br>
-                    <span class="badge bg-warning">Expires soon</span>
+                    <div class="float-end">
+                        <span class="badge bg-success">New</span>
+                    </div>
+                
                 
             </td>
             
@@ -5893,5 +5817,5 @@
                 window.location.href = e.params.data.url;
             });
         </script>
-    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6ff490321d096b69',m:'p2Jn0tjOmrIi2oXnVk_j4E4vOYbLDC4nFwUVfSpZ8gk-1650527792-0-AX9SOU1JBqkjS4r5aHhtockHv7LV2V5ztJM6H1ugZfvT/xVK1Iq+tW0fLuOZVOYeT7xEVbHgvz6PAQiVVzlZm0pJfWwEbsVqCguopjSWJsf/EZPNCVFJmTeMn6wP8XKdUkqdbasOCJAxntEW2mEDyZ8=',s:[0x88faad4162,0xf2195e4626],}})();</script></body>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'7007e6390b44a343',m:'jbzIsSBW6KN78I7.76RlOmsadZHz6UI3h1HX4MTOCYI-1650730545-0-AXv5YkhvYNFxGny6CgNc2av17QKTzFzdYCIUrtQ5y5aI80zsODsGxJJKVI+mUNxHGA5CCJoMiKME/F3ugOEOwMf24/2hgavyPi7mJZaIakeqzc015tkHGIJD/tBLkJZFEt4fYsxlsvGKONmhCArbQ9g=',s:[0x0e7a8d0dc5,0x332ecf2a75],}})();</script></body>
 </html>

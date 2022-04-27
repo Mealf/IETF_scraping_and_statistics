@@ -14,6 +14,7 @@
 - 根據WG取得文件(RFC、draft)的清單，包含id、名稱與網址資訊 (ietf_info.py / get_doc_list)
 - 對關鍵字進行正規化(轉小寫、去連接符號與去掉前後空白) (keyword_normalize.py / keyword_normalize)
 - 分析過往IETF會議或mail list，來分析該WG的活躍度 (maillist.py / rank_wg_by_maillist)
+- 使用關鍵字的關聯表對關鍵字進行擴充(keyword_extend.py)
 ---
 
 ## 快取檔案
@@ -26,5 +27,5 @@
 ---
 
 ## TODO
-- 使用關鍵字的關聯表對關鍵字進行擴充
+
 - 使用多執行緒或非同步的方式進行爬蟲

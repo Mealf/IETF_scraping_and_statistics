@@ -706,7 +706,7 @@
             
                 <th scope="col" colspan="5">
             
-            Active Internet-Drafts (15 hits)
+            Active Internet-Drafts (14 hits)
             </th>
         </tr>
     </tbody>
@@ -994,118 +994,6 @@
         
     </td>
     <td class="doc">
-        <small class="float-end text-muted d-none d-sm-block">71 pages</small>
-        <div>
-            <a href="/doc/draft-ietf-tls-dtls13/">
-                
-                    draft-ietf-tls-dtls13-43
-                
-            </a>
-            
-            <br>
-            
-            <b>The Datagram Transport Layer Security (DTLS) Protocol Version 1.3</b>
-            
-        </div>
-        
-    </td>
-    <td>
-            
-                    
-                        2021-04-30
-                    
-                    
-                
-                
-            </td>
-            
-
-
-
-<td class="status">
-    
-    
-        
-            RFC Ed Queue
-        
-        
-            : <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-tls-dtls13">AUTH48-DONE</a>
-        
-        
-        <span class="badge bg-danger" title="Goal is &lt;60 days">for 353 days</span>
-        
-        
-            
-        
-        
-            <br>
-            
-                Submitted to IESG for Publication
-                
-                    :
-                
-            
-        
-        Proposed Standard
-        
-        
-            <br>
-            Reviews:
-            <a href="/group/genart/">genart</a>,
-                
-                    <a href="/group/opsdir/">opsdir</a>,
-                
-                    <a href="/group/tsvart/">tsvart</a>
-        
-        
-        
-    
-</td>
-            <td class="text-center d-none d-sm-table-cell">
-                
-            </td>
-            
-                <td class="d-none d-sm-table-cell">
-                    
-                        <span ><a 
-           title="Area Director"
-            href="/person/kaduk@mit.edu" >Benjamin Kaduk</a> <a 
-               href="mailto:kaduk%40mit.edu"
-               aria-label="Compose email to kaduk@mit.edu."
-               title="Compose email to kaduk@mit.edu.">
-                <i class="bi bi-envelope"></i></a></span>
-                    
-                    <br>
-                    
-                        <span class="small text-muted"
-      ><a class="text-reset"
-           title="Shepherd"
-            href="/person/sean@sn3rd.com" >Sean Turner</a> <a class="text-reset"
-               href="mailto:sean%40sn3rd.com"
-               aria-label="Compose email to sean@sn3rd.com."
-               title="Compose email to sean@sn3rd.com.">
-                <i class="bi bi-envelope"></i></a></span>
-                    
-                </td>
-            
-            
-        </tr>
-        
-            
-
-
-
-
-
-
-
-<tr>
-    <td>
-        
-        
-        
-    </td>
-    <td class="doc">
         <small class="float-end text-muted d-none d-sm-block">48 pages</small>
         <div>
             <a href="/doc/draft-ietf-tls-esni/">
@@ -1231,7 +1119,7 @@
         
         
         
-        <span class="badge bg-danger" title="Goal is &lt;14 days">for 33 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;14 days">for 35 days</span>
         
         
             
@@ -1267,7 +1155,7 @@
                href="mailto:nick%40cloudflare.com"
                aria-label="Compose email to nick@cloudflare.com."
                title="Compose email to nick@cloudflare.com.">
-                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 32 days</span>
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 34 days</span>
             
         
     
@@ -1355,7 +1243,7 @@
             : <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-tls-external-psk-guidance">MISSREF</a>
         
         
-        <span class="badge bg-warning" title="Goal is &lt;60 days">for 77 days</span>
+        <span class="badge bg-warning" title="Goal is &lt;60 days">for 79 days</span>
         
         
             
@@ -1433,7 +1321,7 @@
         <div>
             <a href="/doc/draft-ietf-tls-external-psk-importer/">
                 
-                    draft-ietf-tls-external-psk-importer-07
+                    draft-ietf-tls-external-psk-importer-08
                 
             </a>
             
@@ -1446,10 +1334,21 @@
     </td>
     <td>
             
+                
+                    <a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-tls-external-psk-importer-08">
                     
-                        2022-03-07
                     
                     
+                        2022-04-22
+                    
+                    
+                        </a>
+                    
+                
+                    <br>
+                    <div class="float-end">
+                        <span class="badge bg-success">New</span>
+                    </div>
                 
                 
             </td>
@@ -1463,11 +1362,11 @@
     
     
         
-            Approved-announcement to be sent::Revised I-D Needed
+            Approved-announcement to be sent::AD Followup
         
         
         
-        <span class="badge bg-success">for 14 days</span>
+        <span class="badge bg-warning" title="Goal is &lt;14 days">for 16 days</span>
         
         
             
@@ -1499,26 +1398,6 @@
             <span title="Part of tls milestone: Submit &quot;Importing External PSKs for TLS&quot; to the IESG"
                   class="milestone">Jan 2021</span>
         
-        
-            <br>
-            Action Holders:
-            
-                <span ><a 
-           title="Author, Group Chair"
-            href="/person/caw@heapingbits.net" >Christopher A. Wood</a> <a 
-               href="mailto:caw%40heapingbits.net"
-               aria-label="Compose email to caw@heapingbits.net."
-               title="Compose email to caw@heapingbits.net.">
-                <i class="bi bi-envelope"></i></a></span>,
-            
-                <span ><a 
-           title="Author"
-            href="/person/davidben@google.com" >David Benjamin</a> <a 
-               href="mailto:davidben%40google.com"
-               aria-label="Compose email to davidben@google.com."
-               title="Compose email to davidben@google.com.">
-                <i class="bi bi-envelope"></i></a></span>
-            
         
     
 </td>
@@ -1953,7 +1832,7 @@
         
         
         
-        <span class="badge bg-success">for 13 days</span>
+        <span class="badge bg-warning" title="Goal is &lt;14 days">for 15 days</span>
         
         
             
@@ -2083,7 +1962,7 @@
             : <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-tls-ticketrequests">AUTH48-DONE</a>
         
         
-        <span class="badge bg-danger" title="Goal is &lt;60 days">for 444 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;60 days">for 446 days</span>
         
         
             
@@ -2250,7 +2129,7 @@
             
                 <th scope="col" colspan="5">
             
-            RFCs (53 hits)
+            RFCs (54 hits)
             </th>
         </tr>
     </tbody>
@@ -4262,6 +4141,9 @@
     
         
         Proposed Standard RFC
+        
+            <br>
+            <span class="text-muted">Obsoleted by <a href="/doc/rfc9147/">RFC 9147</a></span>
         
         
             <br>
@@ -6525,6 +6407,97 @@
         
     </td>
     <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">61 pages</small>
+        <div>
+            <a href="/doc/rfc9147/">
+                
+                    RFC 9147
+                
+            </a>
+            <i class="text-muted">(was draft-ietf-tls-dtls13)</i>
+            <br>
+            
+            <b>The Datagram Transport Layer Security (DTLS) Protocol Version 1.3</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                    
+                        2022-04
+                    
+                    
+                
+                    <br>
+                    <div class="float-end">
+                        <span class="badge bg-success">New</span>
+                    </div>
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+        Proposed Standard RFC
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+                    <a href="/ipr/search/?submit=draft&amp;id=draft-ietf-tls-dtls13">
+                        <span class="badge bg-info">3</span>
+                    </a>
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                        <span ><a 
+           title="Area Director"
+            href="/person/kaduk@mit.edu" >Benjamin Kaduk</a> <a 
+               href="mailto:kaduk%40mit.edu"
+               aria-label="Compose email to kaduk@mit.edu."
+               title="Compose email to kaduk@mit.edu.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                    <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/sean@sn3rd.com" >Sean Turner</a> <a class="text-reset"
+               href="mailto:sean%40sn3rd.com"
+               aria-label="Compose email to sean@sn3rd.com."
+               title="Compose email to sean@sn3rd.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
         <small class="float-end text-muted d-none d-sm-block">5 pages</small>
         <div>
             <a href="/doc/rfc9155/">
@@ -6612,7 +6585,7 @@
             
                 <th scope="col" colspan="5">
             
-            Related Internet-Drafts (8 hits)
+            Related Internet-Drafts (7 hits)
             </th>
         </tr>
     </tbody>
@@ -6695,106 +6668,6 @@
                 <td class="d-none d-sm-table-cell">
                     
                     <br>
-                    
-                </td>
-            
-            
-        </tr>
-        
-            
-
-
-
-
-
-
-
-<tr>
-    <td>
-        
-        
-        
-    </td>
-    <td class="doc">
-        <small class="float-end text-muted d-none d-sm-block">11 pages</small>
-        <div>
-            <a href="/doc/draft-camwinget-tls-ts13-macciphersuites/">
-                
-                    draft-camwinget-tls-ts13-macciphersuites-12
-                
-            </a>
-            
-            <br>
-            
-            <b>TLS 1.3 Authentication and Integrity only Cipher Suites</b>
-            
-        </div>
-        
-    </td>
-    <td>
-            
-                    
-                        2021-06-17
-                    
-                    
-                
-                
-            </td>
-            
-
-
-
-<td class="status">
-    
-    
-        
-            I-D Exists
-        
-        
-            : <a href="https://www.rfc-editor.org/queue2.html#draft-camwinget-tls-ts13-macciphersuites">AUTH48-DONE</a>
-        
-        
-        
-        
-        
-            
-        
-        
-            <br>
-            
-                Sent to the RFC Editor
-                
-                    :
-                
-            
-        
-        Informational
-        
-        
-            <br>
-            Review:
-            <a href="/group/iotdir/">iotdir</a>
-        
-        
-        
-    
-</td>
-            <td class="text-center d-none d-sm-table-cell">
-                
-            </td>
-            
-                <td class="d-none d-sm-table-cell">
-                    
-                    <br>
-                    
-                        <span class="small text-muted"
-      ><a class="text-reset"
-           title="Shepherd"
-            href="/person/rfc-ise@rfc-editor.org" >Eliot Lear</a> <a class="text-reset"
-               href="mailto:rfc-ise%40rfc-editor.org"
-               aria-label="Compose email to rfc-ise@rfc-editor.org."
-               title="Compose email to rfc-ise@rfc-editor.org.">
-                <i class="bi bi-envelope"></i></a></span>
                     
                 </td>
             
@@ -7355,5 +7228,5 @@
                 window.location.href = e.params.data.url;
             });
         </script>
-    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6ff4925c89d5a9b3',m:'FG0GlXywnL7W4iH3NhY2mRVJTAvwibmfN1GNGOa7Gls-1650527881-0-AV8YXVRUQZL7j1BOun2ZhuweLJNiXnOGjfpt76/STHtBVqj47nkyGN+WOvFHBx87HfTCdie599vxD8OqzdEh79fOf58JJmLGfNFijpiBLwPGNPMh01jVgP+lcz6hzAsqs1Q3T04FDzh/Wt/M+VVhTYM=',s:[0x0df2505da2,0xc45f63b0a0],}})();</script></body>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'7007e894de92a343',m:'8QWi8JcAjWt2LdhkYPgxaWk9vxS0OzxYm9l3Dz_x7aI-1650730642-0-AXS6mDa5UpDQbE45QPaEooah83ZKD5iYIAgZbEhyy4lEVcdTCC4xsFBloDdeW7x7qr4cv6/7AbYN4XAI2a0jV8NC6TrOzXJ4wMDvgnFYWNI+lxhBS1GgQGV2SBXA32qOxBCgd8TDXUbSffETFKKcIt8=',s:[0x36edb550bf,0x3c4747a64e],}})();</script></body>
 </html>

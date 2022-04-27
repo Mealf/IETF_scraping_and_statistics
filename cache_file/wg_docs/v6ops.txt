@@ -936,18 +936,15 @@
 
 <td class="status">
     
-        <div class="float-end ms-1 mb-1" id="ballot-icon-draft-ietf-v6ops-transition-comparison"><a  href="/doc/draft-ietf-v6ops-transition-comparison/ballotpopup/848825/" data-bs-toggle="modal" data-bs-target="#modal-848825" aria-label="IESG positions" title="IESG positions (click to show more)" class="ballot-icon"><table><tbody><tr><td class="position-discuss"></td><td class="position-yes"></td><td class="position-noobj"></td><td class="position-noobj"></td><td class="position-noobj"></td></tr><tr><td class="position-noobj"></td><td class="position-norecord"></td><td class="position-norecord"></td><td class="position-norecord"></td><td class="position-norecord"></td></tr><tr><td class="position-norecord"></td><td class="position-norecord"></td><td class="position-norecord"></td><td class="position-norecord"></td><td class="position-empty"></td></tr></tbody></table></a><div id="modal-848825" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable modal-xl"><div class="modal-content"></div></div></div></div>
+        <div class="float-end ms-1 mb-1" id="ballot-icon-draft-ietf-v6ops-transition-comparison"><a  href="/doc/draft-ietf-v6ops-transition-comparison/ballotpopup/848825/" data-bs-toggle="modal" data-bs-target="#modal-848825" aria-label="IESG positions" title="IESG positions (click to show more)" class="ballot-icon"><table><tbody><tr><td class="position-discuss"></td><td class="position-discuss"></td><td class="position-yes"></td><td class="position-noobj"></td><td class="position-noobj"></td></tr><tr><td class="position-noobj"></td><td class="position-noobj"></td><td class="position-noobj"></td><td class="position-noobj"></td><td class="position-norecord"></td></tr><tr><td class="position-norecord"></td><td class="position-norecord"></td><td class="position-norecord"></td><td class="position-norecord"></td><td class="position-empty"></td></tr></tbody></table></a><div id="modal-848825" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable modal-xl"><div class="modal-content"></div></div></div></div>
     
     
         
-            IESG Evaluation
+            IESG Evaluation::Revised I-D Needed
         
         
         
-        <span class="badge bg-success">for 4 days</span>
-        
-            <br>
-            IESG telechat: 2022-04-21
+        <span class="badge bg-success">for 2 days</span>
         
         
             
@@ -979,7 +976,23 @@
         
         
             <br>
-            Action Holder:
+            Action Holders:
+            
+                <span ><a 
+           title="Author"
+            href="/person/jordi.palet@theipv6company.com" >Jordi Palet Martinez</a> <a 
+               href="mailto:jordi.palet%40theipv6company.com"
+               aria-label="Compose email to jordi.palet@theipv6company.com."
+               title="Compose email to jordi.palet@theipv6company.com.">
+                <i class="bi bi-envelope"></i></a></span>,
+            
+                <span ><a 
+           title="Author"
+            href="/person/lee@asgard.org" >Lee Howard</a> <a 
+               href="mailto:lee%40asgard.org"
+               aria-label="Compose email to lee@asgard.org."
+               title="Compose email to lee@asgard.org.">
+                <i class="bi bi-envelope"></i></a></span>,
             
                 <span ><a 
            title="Responsible AD"
@@ -987,6 +1000,30 @@
                href="mailto:warren%40kumari.net"
                aria-label="Compose email to warren@kumari.net."
                title="Compose email to warren@kumari.net.">
+                <i class="bi bi-envelope"></i></a></span>,
+            
+                <span ><a 
+           title="Author"
+            href="/person/ianfarrer@gmx.com" >Ian Farrer</a> <a 
+               href="mailto:ianfarrer%40gmx.com"
+               aria-label="Compose email to ianfarrer@gmx.com."
+               title="Compose email to ianfarrer@gmx.com.">
+                <i class="bi bi-envelope"></i></a></span>,
+            
+                <span ><a 
+           title="Author"
+            href="/person/lencse@hit.bme.hu" >Gábor Lencse</a> <a 
+               href="mailto:lencse%40hit.bme.hu"
+               aria-label="Compose email to lencse@hit.bme.hu."
+               title="Compose email to lencse@hit.bme.hu.">
+                <i class="bi bi-envelope"></i></a></span>,
+            
+                <span ><a 
+           title="Author"
+            href="/person/richard.patterson@sky.uk" >Richard Patterson</a> <a 
+               href="mailto:richard.patterson%40sky.uk"
+               aria-label="Compose email to richard.patterson@sky.uk."
+               title="Compose email to richard.patterson@sky.uk.">
                 <i class="bi bi-envelope"></i></a></span>
             
         
@@ -7430,11 +7467,99 @@
             
                 <th scope="col" colspan="5">
             
-            Related Internet-Drafts (10 hits)
+            Related Internet-Drafts (11 hits)
             </th>
         </tr>
     </tbody>
     <tbody>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">8 pages</small>
+        <div>
+            <a href="/doc/draft-buraglio-v6ops-ula/">
+                
+                    draft-buraglio-v6ops-ula-01
+                
+            </a>
+            
+            <br>
+            
+            <b>Unintended Operational Issues With ULA</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                
+                    <a href="https://www.ietf.org/rfcdiff?url2=draft-buraglio-v6ops-ula-01">
+                    
+                    
+                    
+                        2022-04-22
+                    
+                    
+                        </a>
+                    
+                
+                    <br>
+                    <div class="float-end">
+                        <span class="badge bg-success">New</span>
+                    </div>
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+        
+        
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
+                    
+                </td>
+            
+            
+        </tr>
         
             
 
@@ -8309,5 +8434,5 @@
                 window.location.href = e.params.data.url;
             });
         </script>
-    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6ff48d3f1f48a337',m:'aR.WfmtIhn0Qh9QU7GOgQ.fWbR1HOYo84zn.yhP3Shs-1650527672-0-AfqwdAZHLOOt+hILumP/tX2NV7zX5o0dPu4LEX1U4dbgNYZqwUG1wxBJVjTD1i4S/xtRiIZ2qJc0cRiib8lQZubafSlk1ODstbD1pZ28BBNOoJNyNlFqgmiuZx5+vSZFY5k4KNkoLs8YpyRTl1RqpRA=',s:[0xef81550008,0x34f5fb2dc7],}})();</script></body>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'7007e2aea8eea339',m:'Z.9UZFusXGWguq.QK8CciZn02vFNaj_um6EhuRi90NU-1650730401-0-Aata6fe/roBZLwTzoDfZSwZvVQvCnxnUgtjIEHhbOunnAYmc/M3YLj01EgiQj6t8fvnzDLPE1QlAxPsoTP65+sZze/5oZAogW9lf4GPAYztlnEkG78JDF6nlnDSWdePgp++G0fQB4dD36nwBA+feQRk=',s:[0xe0b6433368,0x478cdb8457],}})();</script></body>
 </html>

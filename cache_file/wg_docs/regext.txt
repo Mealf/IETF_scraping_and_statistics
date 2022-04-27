@@ -1232,21 +1232,10 @@
     </td>
     <td>
             
-                
-                    <a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-regext-rdap-reverse-search-10">
-                    
-                    
                     
                         2022-04-08
                     
                     
-                        </a>
-                    
-                
-                    <br>
-                    <div class="float-end">
-                        <span class="badge bg-success">New</span>
-                    </div>
                 
                 
             </td>
@@ -4471,5 +4460,5 @@
                 window.location.href = e.params.data.url;
             });
         </script>
-    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6ff489f27f1a56f4',m:'kog4F3kWfW4gJHjXGmwWDnDBi_fZRm7VuXWFkKS5dbM-1650527535-0-ATV2Inb2YTtXEbc/tpBjAIfuHwx9e9preG6GzfMJD5Ap9YvUBfHPUIOtc+oms1iuvxL3fV48CiMxcGsImYfHhh9LkU+3yA27KT/2JpFAPvQFcb2oivS+B2BZQOUQsSF8KMd1S8xIz86wk+QRRf20Jn4=',s:[0x5735ede9aa,0x556b80fda5],}})();</script></body>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'7007dec92d84a9c2',m:'u2m2Ueyxpbpls1d5AZ3LIJPlwX243sCPF8YrB59qPAU-1650730239-0-AT9WgiGXSxTLHQ+O9ql3z6ZavuBRr0xG3h48s8OlHcoKcBTA6PfYj76aBvvFJTuI68PHFttJVsIXzIv8TQnSxGiaE5ZffOgfq9PPxzAiViRwJASnFyWHK16WFtUW4/9Dw7fV7i9jlwSw1kkLKcJDIhk=',s:[0xa5b352cdfb,0x7881dd22e8],}})();</script></body>
 </html>

@@ -926,18 +926,15 @@
 
 <td class="status">
     
-        <div class="float-end ms-1 mb-1" id="ballot-icon-draft-ietf-quic-applicability"><a  href="/doc/draft-ietf-quic-applicability/ballotpopup/856987/" data-bs-toggle="modal" data-bs-target="#modal-856987" aria-label="IESG positions" title="IESG positions (click to show more)" class="ballot-icon"><table><tbody><tr><td class="position-yes"></td><td class="position-yes"></td><td class="position-yes"></td><td class="position-yes"></td><td class="position-noobj"></td></tr><tr><td class="position-noobj"></td><td class="position-noobj"></td><td class="position-noobj"></td><td class="position-norecord"></td><td class="position-norecord"></td></tr><tr><td class="position-norecord"></td><td class="position-norecord"></td><td class="position-norecord"></td><td class="position-norecord"></td><td class="position-empty"></td></tr></tbody></table></a><div id="modal-856987" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable modal-xl"><div class="modal-content"></div></div></div></div>
+        <div class="float-end ms-1 mb-1" id="ballot-icon-draft-ietf-quic-applicability"></div>
     
     
         
-            IESG Evaluation
+            Approved-announcement to be sent::AD Followup
         
         
         
-        <span class="badge bg-success">for 10 days</span>
-        
-            <br>
-            IESG telechat: 2022-04-21
+        <span class="badge bg-success">for 2 days</span>
         
         
             
@@ -956,9 +953,7 @@
         
             <br>
             Reviews:
-            <a href="/group/artart/">artart</a>,
-                
-                    <a href="/group/genart/">genart</a>,
+            <a href="/group/genart/">genart</a>,
                 
                     <a href="/group/opsdir/">opsdir</a>,
                 
@@ -969,18 +964,6 @@
             <span title="Part of quic milestone: QUIC Applicability and Manageability Statement to IESG"
                   class="milestone">May 2021</span>
         
-        
-            <br>
-            Action Holder:
-            
-                <span ><a 
-           title="Responsible AD"
-            href="/person/Zaheduzzaman.Sarker@ericsson.com" >Zaheduzzaman Sarker</a> <a 
-               href="mailto:Zaheduzzaman.Sarker%40ericsson.com"
-               aria-label="Compose email to Zaheduzzaman.Sarker@ericsson.com."
-               title="Compose email to Zaheduzzaman.Sarker@ericsson.com.">
-                <i class="bi bi-envelope"></i></a></span>
-            
         
     
 </td>
@@ -1065,7 +1048,7 @@
         
         
         
-        <span class="badge bg-success">for 11 days</span>
+        <span class="badge bg-success">for 13 days</span>
         
         
             
@@ -1179,7 +1162,7 @@
             : <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-quic-http">AUTH48</a>
         
         <span class="badge bg-info" title="AUTH48">AUTH48</span>
-        <span class="badge bg-danger" title="Goal is &lt;60 days">for 427 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;60 days">for 429 days</span>
         
         
             
@@ -1372,18 +1355,15 @@
 
 <td class="status">
     
-        <div class="float-end ms-1 mb-1" id="ballot-icon-draft-ietf-quic-manageability"><a  href="/doc/draft-ietf-quic-manageability/ballotpopup/856992/" data-bs-toggle="modal" data-bs-target="#modal-856992" aria-label="IESG positions" title="IESG positions (click to show more)" class="ballot-icon"><table><tbody><tr><td class="position-yes"></td><td class="position-noobj"></td><td class="position-noobj"></td><td class="position-noobj"></td><td class="position-noobj"></td></tr><tr><td class="position-noobj"></td><td class="position-norecord"></td><td class="position-norecord"></td><td class="position-norecord"></td><td class="position-norecord"></td></tr><tr><td class="position-norecord"></td><td class="position-norecord"></td><td class="position-norecord"></td><td class="position-norecord"></td><td class="position-empty"></td></tr></tbody></table></a><div id="modal-856992" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable modal-xl"><div class="modal-content"></div></div></div></div>
+        <div class="float-end ms-1 mb-1" id="ballot-icon-draft-ietf-quic-manageability"></div>
     
     
         
-            IESG Evaluation
+            Approved-announcement to be sent::Revised I-D Needed
         
         
         
-        <span class="badge bg-success">for 10 days</span>
-        
-            <br>
-            IESG telechat: 2022-04-21
+        <span class="badge bg-success">for 2 days</span>
         
         
             
@@ -1417,14 +1397,22 @@
         
         
             <br>
-            Action Holder:
+            Action Holders:
             
                 <span ><a 
-           title="Responsible AD"
-            href="/person/Zaheduzzaman.Sarker@ericsson.com" >Zaheduzzaman Sarker</a> <a 
-               href="mailto:Zaheduzzaman.Sarker%40ericsson.com"
-               aria-label="Compose email to Zaheduzzaman.Sarker@ericsson.com."
-               title="Compose email to Zaheduzzaman.Sarker@ericsson.com.">
+           title="Author"
+            href="/person/ietf@kuehlewind.net" >Mirja Kühlewind</a> <a 
+               href="mailto:ietf%40kuehlewind.net"
+               aria-label="Compose email to ietf@kuehlewind.net."
+               title="Compose email to ietf@kuehlewind.net.">
+                <i class="bi bi-envelope"></i></a></span>,
+            
+                <span ><a 
+           title="Author"
+            href="/person/ietf@trammell.ch" >Brian Trammell</a> <a 
+               href="mailto:ietf%40trammell.ch"
+               aria-label="Compose email to ietf@trammell.ch."
+               title="Compose email to ietf@trammell.ch.">
                 <i class="bi bi-envelope"></i></a></span>
             
         
@@ -1845,7 +1833,7 @@
             : <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-quic-qpack">AUTH48</a>
         
         <span class="badge bg-info" title="AUTH48">AUTH48</span>
-        <span class="badge bg-danger" title="Goal is &lt;60 days">for 427 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;60 days">for 429 days</span>
         
         
             
@@ -4188,5 +4176,5 @@
                 window.location.href = e.params.data.url;
             });
         </script>
-    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6ff4930a3e49a9ce',m:'BO9DA0WuOV7TAjefo.LbbR7i7n.FQdFka6ke_z_OvuE-1650527907-0-AedHyyQpzgc2OVUZEGqRsJxagjQX9DVbBOgNLkQCFdfHZ+XSnZ4/UoAkTFw80IqKE72MAKRKdKhPaSsOg8m1x7RvKMmhz7IvnJg2XVVlzRTpI4dUS2Jwwzje9HV4iI0gqaw3RYPZjsXN3wE54FrsF6A=',s:[0xc818984e15,0xfd578083b5],}})();</script></body>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'7007e95b0ee06a87',m:'7A3h_WNe_pvLhKAaMMB2du9WATVFzlAg3kFUjSlYu5w-1650730671-0-AeXvCIMKIgiNl/uv7do63vECaiQnfU8pVmaoFZuPnGYqdDMhgU8BVSwtQmfDG8/Q598uCyptFIr1aH7yJtWE2nWvWbSXwLZA247mzieQI/1vVBiH3jn4sV79yTsY6MAp1wyqpyj5fSKWPHx/j6YkyEM=',s:[0xa2ddbd44f1,0x247a102bf0],}})();</script></body>
 </html>

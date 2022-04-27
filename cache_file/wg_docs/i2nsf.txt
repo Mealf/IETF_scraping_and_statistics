@@ -765,7 +765,7 @@
             : <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-i2nsf-applicability">MISSREF</a>
         
         
-        <span class="badge bg-danger" title="Goal is &lt;60 days">for 857 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;60 days">for 859 days</span>
         
         
             
@@ -888,7 +888,7 @@
         
         
         
-        <span class="badge bg-danger" title="Goal is &lt;14 days">for 77 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;14 days">for 79 days</span>
         
         
             
@@ -926,7 +926,7 @@
                href="mailto:rdd%40cert.org"
                aria-label="Compose email to rdd@cert.org."
                title="Compose email to rdd@cert.org.">
-                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 86 days</span>
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 88 days</span>
             
         
     
@@ -1131,7 +1131,7 @@
         
         
         
-        <span class="badge bg-danger" title="Goal is &lt;14 days">for 63 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;14 days">for 65 days</span>
         
         
             
@@ -1173,7 +1173,7 @@
                href="mailto:rdd%40cert.org"
                aria-label="Compose email to rdd@cert.org."
                title="Compose email to rdd@cert.org.">
-                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 84 days</span>
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 86 days</span>
             
         
     
@@ -1276,7 +1276,7 @@
         
         
         
-        <span class="badge bg-danger" title="Goal is &lt;14 days">for 63 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;14 days">for 65 days</span>
         
         
             
@@ -1320,7 +1320,7 @@
                href="mailto:rdd%40cert.org"
                aria-label="Compose email to rdd@cert.org."
                title="Compose email to rdd@cert.org.">
-                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 84 days</span>
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 86 days</span>
             
         
     
@@ -2228,5 +2228,5 @@
                 window.location.href = e.params.data.url;
             });
         </script>
-    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6ff49154e9c46b7a',m:'BIvJDCFUrWQ5tS1nCtoFN2oEKGFuzOj1yZXG8iWB38k-1650527836-0-Ab5qX6r+JuPCorm9sSJZ5wqKLYepB5tkDtmd1dhXqwkYHkhiMTh5bc3dMeMVuSmN0fSJDIaGV+I8dTbF2XIEIWWucvWIfB+k0obb2wvKBfVnBmTMy3GJey5bRWnHmpsgSGQqkI4X8Z3KdM4G252LS/g=',s:[0x7228390c69,0x9569be454d],}})();</script></body>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'7007e76548576b6e',m:'iks2e0CZG0fCPqkYBBiTDBUaoRUCqbDfLNKx0q_opUY-1650730591-0-AcfxoLq47uYIPYZ1DontI8mEDUWWFm5TBGfYd46jEFNNsmqCqPF0/nNCmLQwvDOqthHj+TKuX+n8fHHf+lC34/6w1aPpXsSaEhiRQ8Z1HBd6y4Tjz/vn7DSzUQLO0jJuVCIcwhF/futaVHwZfuoDgAQ=',s:[0xcb2bfd4b20,0xd00e11ce71],}})();</script></body>
 </html>

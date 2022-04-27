@@ -1371,7 +1371,7 @@
         
         
         
-        <span class="badge bg-success">for 14 days</span>
+        <span class="badge bg-warning" title="Goal is &lt;14 days">for 16 days</span>
         
         
             
@@ -1409,7 +1409,7 @@
                href="mailto:jgs%40juniper.net"
                aria-label="Compose email to jgs@juniper.net."
                title="Compose email to jgs@juniper.net.">
-                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 29 days</span>
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 31 days</span>
             
         
     
@@ -4898,11 +4898,11 @@
         
     </td>
     <td class="doc">
-        <small class="float-end text-muted d-none d-sm-block">34 pages</small>
+        <small class="float-end text-muted d-none d-sm-block">31 pages</small>
         <div>
             <a href="/doc/draft-bestbar-teas-ns-packet/">
                 
-                    draft-bestbar-teas-ns-packet-08
+                    draft-bestbar-teas-ns-packet-09
                 
             </a>
             
@@ -4915,10 +4915,21 @@
     </td>
     <td>
             
+                
+                    <a href="https://www.ietf.org/rfcdiff?url2=draft-bestbar-teas-ns-packet-09">
                     
-                        2022-02-02
                     
                     
+                        2022-04-21
+                    
+                    
+                        </a>
+                    
+                
+                    <br>
+                    <div class="float-end">
+                        <span class="badge bg-success">New</span>
+                    </div>
                 
                 
             </td>
@@ -6716,5 +6727,5 @@
                 window.location.href = e.params.data.url;
             });
         </script>
-    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6ff490ba2cb60740',m:'nUCws7RxUmDf4M7LLrNAUgB_YrcD246X3oDAEqhbzb8-1650527814-0-ART5Q443JItszzbO6sPEjpEVoYJvEerFxuUVmztN7xJon9N3DTyiTnRZDvnzQLjtzXtMcKxjeGmFUyrObE21R3ZzWjkMm/S61BUc7V3o+meND/I3WGssTpk0IIZ3VsB3vxEdenSxrfNk/zoWrRJ+w04=',s:[0x5e77380678,0xa269b8634b],}})();</script></body>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'7007e6b00b65a9af',m:'cQizfPC3QiSgVKUSQg6LXSRoiydeGBHgOuTqslATlFg-1650730564-0-ATVQdAEqtyZR3/l8mhpHRQT6KBPY82pJl486YQTliXuyYcstzpMnUQr9Ch3aZgbCCWqqXg6Zq8PjJjbu0nTOUUTeRKE85RHjJra3thEq1zHCNB8hfuSLGzAJaZmsMYljfgjmO1x7wnbaOTuCXHjwD2I=',s:[0x1b738eeb09,0x41a70a4685],}})();</script></body>
 </html>

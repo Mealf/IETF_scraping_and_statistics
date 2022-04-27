@@ -763,7 +763,7 @@
         
         
         
-        <span class="badge bg-danger" title="Goal is &lt;14 days">for 695 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;14 days">for 697 days</span>
         
         
             
@@ -881,7 +881,7 @@
         
         
         
-        <span class="badge bg-danger" title="Goal is &lt;14 days">for 596 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;14 days">for 598 days</span>
         
         
             
@@ -1072,7 +1072,7 @@
         
         
         
-        <span class="badge bg-danger" title="Goal is &lt;14 days">for 49 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;14 days">for 51 days</span>
         
         
             
@@ -1112,7 +1112,7 @@
                href="mailto:paul.wouters%40aiven.io"
                aria-label="Compose email to paul.wouters@aiven.io."
                title="Compose email to paul.wouters@aiven.io.">
-                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 28 days</span>
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 30 days</span>
             
         
     
@@ -3235,5 +3235,5 @@
                 window.location.href = e.params.data.url;
             });
         </script>
-    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6ff49186eff86b62',m:'qQW7SxsIAI.l95.dllcmYn6gIh5SY3H86vycKVfCW9w-1650527844-0-Aad5uhlUJASP/a+umNjtl7d3+hsy6tUbGZFsCPH92Cf1ifsgLpfBmv0yu3VbwB8EMUU7Pz1yk/KIu+Oari3sTYcmLKGXA/gXVHTFkRo3jJXw/cwkEsGmRWUyFUZtsDCp1k6HXrcpVz9X/2Lw2gDa358=',s:[0x05df8bdf65,0x4a33f4c730],}})();</script></body>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'7007e79f597c5701',m:'oob9kGQfVGHD41WhBkLPtpqGV3QyWCTcHhxcnhOY5oo-1650730600-0-AdLPO3fVArLefSwSqw0zqufHWKOlQp8xKNcppRVB74NbCnp3pz6gaDvMfgnVR5DvsKkVAlA04maRVkKPugbZNuRVbeuGg6Oh/A4HRGpRse9Vp5o4UBrZlseChh7xbJ6PJqtjs5yqQmgbrmfbiKkedjA=',s:[0x84c485f52f,0x3ab90b2f89],}})();</script></body>
 </html>

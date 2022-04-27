@@ -763,7 +763,7 @@
         
         
         
-        <span class="badge bg-warning" title="Goal is &lt;14 days">for 15 days</span>
+        <span class="badge bg-warning" title="Goal is &lt;14 days">for 17 days</span>
         
         
             
@@ -1055,11 +1055,11 @@
         
     </td>
     <td class="doc">
-        <small class="float-end text-muted d-none d-sm-block">65 pages</small>
+        <small class="float-end text-muted d-none d-sm-block">67 pages</small>
         <div>
             <a href="/doc/draft-ietf-avtcore-rtp-vvc/">
                 
-                    draft-ietf-avtcore-rtp-vvc-14
+                    draft-ietf-avtcore-rtp-vvc-15
                 
             </a>
             
@@ -1072,10 +1072,21 @@
     </td>
     <td>
             
+                
+                    <a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-avtcore-rtp-vvc-15">
                     
-                        2022-02-25
                     
                     
+                        2022-04-22
+                    
+                    
+                        </a>
+                    
+                
+                    <br>
+                    <div class="float-end">
+                        <span class="badge bg-success">New</span>
+                    </div>
                 
                 
             </td>
@@ -1087,11 +1098,11 @@
     
     
         
-            AD Evaluation::Revised I-D Needed
+            AD Evaluation::AD Followup
         
         
         
-        <span class="badge bg-success">for 10 days</span>
+        <span class="badge bg-success">for 12 days</span>
         
         
             
@@ -1113,50 +1124,6 @@
             <span title="Part of avtcore milestone: Submit RTP Payload format for Versatile Video Coding (VVC)"
                   class="milestone">Feb 2021</span>
         
-        
-            <br>
-            Action Holders:
-            
-                <span ><a 
-           title="Author"
-            href="/person/miska.hannuksela@nokia.com" >Miska M. Hannuksela</a> <a 
-               href="mailto:miska.hannuksela%40nokia.com"
-               aria-label="Compose email to miska.hannuksela@nokia.com."
-               title="Compose email to miska.hannuksela@nokia.com.">
-                <i class="bi bi-envelope"></i></a></span>,
-            
-                <span ><a 
-           title="Author"
-            href="/person/stewe@stewe.org" >Stephan Wenger</a> <a 
-               href="mailto:stewe%40stewe.org"
-               aria-label="Compose email to stewe@stewe.org."
-               title="Compose email to stewe@stewe.org.">
-                <i class="bi bi-envelope"></i></a></span>,
-            
-                <span ><a 
-           title="Author"
-            href="/person/yekui.wang@bytedance.com" >Ye-Kui Wang</a> <a 
-               href="mailto:yekui.wang%40bytedance.com"
-               aria-label="Compose email to yekui.wang@bytedance.com."
-               title="Compose email to yekui.wang@bytedance.com.">
-                <i class="bi bi-envelope"></i></a></span>,
-            
-                <span ><a 
-           title="Author"
-            href="/person/yago.sanchez@hhi.fraunhofer.de" >Yago Sanchez</a> <a 
-               href="mailto:yago.sanchez%40hhi.fraunhofer.de"
-               aria-label="Compose email to yago.sanchez@hhi.fraunhofer.de."
-               title="Compose email to yago.sanchez@hhi.fraunhofer.de.">
-                <i class="bi bi-envelope"></i></a></span>,
-            
-                <span ><a 
-           title="Author"
-            href="/person/shuai.zhao@ieee.org" >Shuai Zhao</a> <a 
-               href="mailto:shuai.zhao%40ieee.org"
-               aria-label="Compose email to shuai.zhao@ieee.org."
-               title="Compose email to shuai.zhao@ieee.org.">
-                <i class="bi bi-envelope"></i></a></span>
-            
         
     
 </td>
@@ -1245,7 +1212,7 @@
         
         
         
-        <span class="badge bg-success">for 12 days</span>
+        <span class="badge bg-success">for 14 days</span>
         
         
             
@@ -1395,7 +1362,7 @@
             : <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-payload-vp9">MISSREF</a>
         
         
-        <span class="badge bg-danger" title="Goal is &lt;60 days">for 314 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;60 days">for 316 days</span>
         
         
             
@@ -4357,7 +4324,7 @@
             : <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-avtext-lrr">MISSREF</a>
         
         
-        <span class="badge bg-danger" title="Goal is &lt;60 days">for 1746 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;60 days">for 1748 days</span>
         
         
             
@@ -4666,5 +4633,5 @@
                 window.location.href = e.params.data.url;
             });
         </script>
-    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6ff488a7d8dfa9c2',m:'bCCyC6fLiyp_kcwyb3LzDG0B5Mej.cKLHCpGVKiyVLQ-1650527482-0-AZz6oHtkzUaMOfBDoL6VHCue3f3SKAoZmDfEeEtXvC6vZrcEp6SpkyAf7v54556X9QFIedixUDhxs06Feh/iDFN8op1WVLfpCS1ZWH0iVfJTI51ps30JAZG7oRx0BMXlNJjbW/JqTTfBnCzXf6iSWSI=',s:[0xadc6a05451,0x0231686dd6],}})();</script></body>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'7007dd4fcbdc0760',m:'Mby1N0JKRUO0iDFcw0xepVq_erYsleJwpyLsvwbboLY-1650730179-0-Ac3GF+mcGgt4ZUFLRyLoJET8T1Bj0VXvYXqcz4IFX6SA//7Ovpn796dKqnJsEL19gP1AgSwMbB/yJPNZpw8UGJMW5ouHIX91FH0pVM/EEqy6E6ckgGWFx4qb3yTyWrC+R3z0745AWWR7eg2fh6WBA3c=',s:[0x9c3fd55d67,0xb18b7548b5],}})();</script></body>
 </html>

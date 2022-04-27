@@ -946,7 +946,7 @@
         
         
         
-        <span class="badge bg-danger" title="Goal is &lt;7 days">for 16 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;7 days">for 18 days</span>
         
         
             
@@ -1050,7 +1050,7 @@
             : <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-oauth-jwt-introspection-response">MISSREF</a>
         
         
-        <span class="badge bg-danger" title="Goal is &lt;60 days">for 226 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;60 days">for 228 days</span>
         
         
             
@@ -1139,21 +1139,10 @@
     </td>
     <td>
             
-                
-                    <a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-oauth-rar-11">
-                    
-                    
                     
                         2022-04-08
                     
                     
-                        </a>
-                    
-                
-                    <br>
-                    <div class="float-end">
-                        <span class="badge bg-success">New</span>
-                    </div>
                 
                 
             </td>
@@ -3880,5 +3869,5 @@
                 window.location.href = e.params.data.url;
             });
         </script>
-    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6ff491ccb8986a9c',m:'jfn2BOi4QxLvgkDQ4ziE0.8IReoPRkpjpf_a3RiiBvs-1650527856-0-AeH+ZCdk0xUyMoBOjH5l2wpqHbRkthHQA+BPEvJFLmy5i+56Zu6WOL51smxUiJculIRDSUAq9VqKJRXeUyuE3XHKan3saGU60cAFXNkcKfhcNRjywG+ksTLY5yNj1McCNbaANgbwCK+iZ9XVJyQgzUk=',s:[0x42a1996ce1,0x5ae3384587],}})();</script></body>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'7007e7ee28d46b6e',m:'qwX7HVMOJ_IiRrSvY.eN66Co5q.S4PAE_HkARug.F_E-1650730614-0-AfZIYulBSZEYtBiOYZRjGdAkbw4Mwc/k36UVeMgi72Sh2B4+9vqPL/ylNinEute1pMs/9A671ZfTt9CrVZImZIH0Vjgs08mpOGuHy6QCoWW169/6grHsY3Y7iA7J6PD7R4ODUwmC+JoX8EEjFmOSR1M=',s:[0x351a470365,0xbbfdea7cc0],}})();</script></body>
 </html>

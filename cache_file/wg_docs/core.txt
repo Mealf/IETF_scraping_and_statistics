@@ -1525,7 +1525,7 @@
             : <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-core-resource-directory">AUTH48-DONE</a>
         
         
-        <span class="badge bg-danger" title="Goal is &lt;60 days">for 409 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;60 days">for 411 days</span>
         
         
             
@@ -1637,7 +1637,7 @@
             : <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-core-senml-data-ct">AUTH48-DONE</a>
         
         
-        <span class="badge bg-danger" title="Goal is &lt;60 days">for 181 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;60 days">for 183 days</span>
         
         
             
@@ -1749,7 +1749,7 @@
         
         
         
-        <span class="badge bg-danger" title="Goal is &lt;14 days">for 36 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;14 days">for 38 days</span>
         
         
             
@@ -1787,39 +1787,7 @@
                href="mailto:cabo%40tzi.org"
                aria-label="Compose email to cabo@tzi.org."
                title="Compose email to cabo@tzi.org.">
-                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 35 days</span>,
-            
-                <span ><a 
-           title="Author"
-            href="/person/a@ackl.io" >Alexander Pelov</a> <a 
-               href="mailto:a%40ackl.io"
-               aria-label="Compose email to a@ackl.io."
-               title="Compose email to a@ackl.io.">
-                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 35 days</span>,
-            
-                <span ><a 
-           title="Responsible AD"
-            href="/person/francesca.palombini@ericsson.com" >Francesca Palombini</a> <a 
-               href="mailto:francesca.palombini%40ericsson.com"
-               aria-label="Compose email to francesca.palombini@ericsson.com."
-               title="Compose email to francesca.palombini@ericsson.com.">
-                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 287 days</span>,
-            
-                <span ><a 
-           title="Author"
-            href="/person/ivaylo@ackl.io" >Ivaylo Petrov</a> <a 
-               href="mailto:ivaylo%40ackl.io"
-               aria-label="Compose email to ivaylo@ackl.io."
-               title="Compose email to ivaylo@ackl.io.">
-                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 35 days</span>,
-            
-                <span ><a 
-           title="Author"
-            href="/person/michel.veillette@trilliant.com" >Michel Veillette</a> <a 
-               href="mailto:michel.veillette%40trilliant.com"
-               aria-label="Compose email to michel.veillette@trilliant.com."
-               title="Compose email to michel.veillette@trilliant.com.">
-                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 35 days</span>,
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 37 days</span>,
             
                 <span ><a 
            title="Author"
@@ -1827,7 +1795,39 @@
                href="mailto:mcr%2Bietf%40sandelman.ca"
                aria-label="Compose email to mcr+ietf@sandelman.ca."
                title="Compose email to mcr+ietf@sandelman.ca.">
-                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 35 days</span>
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 37 days</span>,
+            
+                <span ><a 
+           title="Responsible AD"
+            href="/person/francesca.palombini@ericsson.com" >Francesca Palombini</a> <a 
+               href="mailto:francesca.palombini%40ericsson.com"
+               aria-label="Compose email to francesca.palombini@ericsson.com."
+               title="Compose email to francesca.palombini@ericsson.com.">
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 290 days</span>,
+            
+                <span ><a 
+           title="Author"
+            href="/person/a@ackl.io" >Alexander Pelov</a> <a 
+               href="mailto:a%40ackl.io"
+               aria-label="Compose email to a@ackl.io."
+               title="Compose email to a@ackl.io.">
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 37 days</span>,
+            
+                <span ><a 
+           title="Author"
+            href="/person/michel.veillette@trilliant.com" >Michel Veillette</a> <a 
+               href="mailto:michel.veillette%40trilliant.com"
+               aria-label="Compose email to michel.veillette@trilliant.com."
+               title="Compose email to michel.veillette@trilliant.com.">
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 37 days</span>,
+            
+                <span ><a 
+           title="Author"
+            href="/person/ivaylo@ackl.io" >Ivaylo Petrov</a> <a 
+               href="mailto:ivaylo%40ackl.io"
+               aria-label="Compose email to ivaylo@ackl.io."
+               title="Compose email to ivaylo@ackl.io.">
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 37 days</span>
             
         
     
@@ -1926,7 +1926,7 @@
             : <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-core-yang-cbor">EDIT</a>
         
         
-        <span class="badge bg-success">for 9 days</span>
+        <span class="badge bg-success">for 11 days</span>
         
         
             
@@ -5351,5 +5351,5 @@
                 window.location.href = e.params.data.url;
             });
         </script>
-    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6ff4890b4a7d6b63',m:'JhCBj3LbgqferPpFu86SV8a5HcXP49m8feX7GHSE_QQ-1650527498-0-AY4ogH7i5vh9R8jsuPpxUS9ZXlFD69krXE7FVZSdGlkpso/7QoiVTSylYJqEODsZY1LsN3BhFO2Sb+GKZdhVB0/jdotCsGp4mSXvMLrZSa2rSvM8GMZewgEATM1+Q8dfvmkA21LD2Sr9NMMV2Ng1dY4=',s:[0xc3f1b3d01f,0xd765a4f51b],}})();</script></body>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'7007ddb9dec56a96',m:'jSOcKPxSHvDQ1GBul66TCI9epBbXk0o.GXx2zqJb_fU-1650730196-0-AeTMOrtheDV6869P1VW6xA00DhunG9ZMNSRthaQbhtm+tfqPbiPJPDWtKXGh9sf8ALW7non0wghi5R/F7NMQFjdTa/VB07Ry8CGhzC9od1qHljwcpJv7nsZKgyRn34oO5sNyWna+K55irxznALODUjA=',s:[0x3bc0fbf885,0x35c71e55b3],}})();</script></body>
 </html>

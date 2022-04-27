@@ -1228,7 +1228,7 @@
             : <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-mpls-rfc6374-sfl">MISSREF</a>
         
         
-        <span class="badge bg-danger" title="Goal is &lt;60 days">for 409 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;60 days">for 411 days</span>
         
         
             
@@ -17259,19 +17259,10 @@
     </td>
     <td>
             
-                
-                    
                     
                         2022-04-07
                     
                     
-                        
-                    
-                
-                    <br>
-                    <div class="float-end">
-                        <span class="badge bg-success">New</span>
-                    </div>
                 
                 
             </td>
@@ -18070,5 +18061,5 @@
                 window.location.href = e.params.data.url;
             });
         </script>
-    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6ff48efd0faa3138',m:'FAc4cAyu9X_hps9JiIWnY2ocrM4kZQadcFkneHk7r8Y-1650527751-0-AbrEM4khpm7hXPw/kKLmP0dTOyC/I1knNxHP+Gz1W0HlQCggIB0Ywv929H2YPbmLWEBuUNUaIAseTIMkYfSZwdZtfgAdouXX+63LuydLGkJTK8tQM4hYjHKmLM/E9fqyNmrubrfvueyc8XtQoJBWxaw=',s:[0xdd77fdf89f,0xb69bba7f98],}})();</script></body>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'7007e4bb7ad76a96',m:'b2jpeB6JkZygTmcWRPON2vg7OZgJO8XDvgfAgby.17U-1650730493-0-AS2bVBpy8Pbk9nf4Q21ycSEeC2sSGj4zinXQHmmi2pr6cQfJtMO4S50nStVGqhtVhbHDdLOLtrVSl8q/ImEhdS9hzCPImx6vWQ+LGCiUTRS+BdGJva6scLlWjdrq4Uzjnv1XjQF9LowrVkpoIRD0QbM=',s:[0x32db88c491,0x99e2a1d0c2],}})();</script></body>
 </html>

@@ -846,7 +846,7 @@
         
         
         
-        <span class="badge bg-danger" title="Goal is &lt;7 days">for 409 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;7 days">for 411 days</span>
         
         
             
@@ -874,7 +874,7 @@
                href="mailto:andrew-ietf%40liquid.tech"
                aria-label="Compose email to andrew-ietf@liquid.tech."
                title="Compose email to andrew-ietf@liquid.tech.">
-                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 28 days</span>
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 30 days</span>
             
         
     
@@ -1952,5 +1952,5 @@
                 window.location.href = e.params.data.url;
             });
         </script>
-    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6ff48f65b8fd0760',m:'uE7eXa2eA36lzECMMXEOxcHX9hnWSza.ZuZNxNdNvZo-1650527756-0-AedgRV9ydl4lUYmosglJKMIacNS1iWQ5jxxDOTFtQjsaLU+ZxXJreRvT0jspp4N50rlsr3fw4E7sQB6Oq/NzqLhwmUE1+QkZHTOdZNRh9XkMfNZv4yE9FRJAIyPymWz5MMW/G2o3OMpuSkSNkV6Ev5U=',s:[0x11dffad02d,0x71ff0d52f3],}})();</script></body>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'7007e5422d3ca367',m:'K2QjRe7J6q_20yletzPI57ZL7thyDTAMqDooNbbWoYk-1650730503-0-ARpu0VCP1Nc4pf6moAe0ZyIcBx0K7SntM+bjtaoaYh9PyxEWL9hlSraA3wYLPb/rMIyWEmZx9L15kyuiuMh5UPdHjqoE+DAlxHNS3jXpM6P/tcTSJn9q9UxSj5tuHSd7irSpRy5fDjoG4HUGA7ios9w=',s:[0xeb123fdcf3,0x078b7d336d],}})();</script></body>
 </html>

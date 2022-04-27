@@ -848,7 +848,7 @@
         
         
         
-        <span class="badge bg-danger" title="Goal is &lt;14 days">for 280 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;14 days">for 282 days</span>
         
         
             
@@ -890,7 +890,7 @@
                href="mailto:fgont%40si6networks.com"
                aria-label="Compose email to fgont@si6networks.com."
                title="Compose email to fgont@si6networks.com.">
-                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 279 days</span>,
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 282 days</span>,
             
                 <span ><a 
            title="Author"
@@ -898,7 +898,7 @@
                href="mailto:liushucheng%40huawei.com"
                aria-label="Compose email to liushucheng@huawei.com."
                title="Compose email to liushucheng@huawei.com.">
-                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 279 days</span>
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 282 days</span>
             
         
     
@@ -2429,5 +2429,5 @@
                 window.location.href = e.params.data.url;
             });
         </script>
-    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6ff48d16ac5a6a8d',m:'7ygJ.gE19k88Ps7cfU3rpvhSpWWDQSiiyADn2lf3ZO8-1650527662-0-ARF3q+yTmoqAxWwiCDID2L/Hp5Bq0F2QOBNC+ki6u7AHXoD4WuD0jXlvG2RY7UnEwJ9FJeNsPRQNgmERdBHvg0T5kdvGusqaq45THRnT8SbrfTTbccjSJYoYM4bv0Zo5dQaRL/gjDnjBoxRPMfN2uHM=',s:[0xf7369ab9ee,0xc45f63b0a0],}})();</script></body>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'7007e2809950a3ac',m:'koD09RRuK2t3ixdgEVnsjgNQ5W03F09CdmFJPdPYXkI-1650730390-0-Aa36tlnoaYcWmh+2qmvB5ePVjSSFP1R4CZxsfK6nXtC+CezPMe6HG8IH8EbmsKScytfb1Z1So01PuOk6hm+/24cscZsemF6qEUk+GCV84OLG/PTVVjP7SllrgswuEkUCbOa4+lHp/AYBQ5BpZKrCJe8=',s:[0xc91ef6c450,0xfde3de3f86],}})();</script></body>
 </html>

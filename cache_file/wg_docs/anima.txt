@@ -1034,7 +1034,7 @@
         
         
         
-        <span class="badge bg-success">for 13 days</span>
+        <span class="badge bg-warning" title="Goal is &lt;14 days">for 15 days</span>
         
         
             
@@ -1143,21 +1143,10 @@
     </td>
     <td>
             
-                
-                    <a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-anima-constrained-voucher-17">
-                    
-                    
                     
                         2022-04-07
                     
                     
-                        </a>
-                    
-                
-                    <br>
-                    <div class="float-end">
-                        <span class="badge bg-success">New</span>
-                    </div>
                 
                 
             </td>
@@ -2473,7 +2462,7 @@
             
                 <th scope="col" colspan="5">
             
-            Related Internet-Drafts (8 hits)
+            Related Internet-Drafts (7 hits)
             </th>
         </tr>
     </tbody>
@@ -2959,86 +2948,6 @@
         
     </td>
     <td class="doc">
-        <small class="float-end text-muted d-none d-sm-block">7 pages</small>
-        <div>
-            <a href="/doc/draft-yizhou-anima-l2-acp-based-ani/">
-                
-                    draft-yizhou-anima-l2-acp-based-ani-00
-                
-            </a>
-            
-            <br>
-            
-            <b>Requirement and a Reference Model of L2 ACP based ANI</b>
-            
-        </div>
-        
-    </td>
-    <td>
-            
-                    
-                        2021-10-19
-                    
-                    
-                
-                
-                    <br>
-                    <span class="badge bg-warning">Expires soon</span>
-                
-            </td>
-            
-
-
-
-<td class="status">
-    
-    
-        
-            I-D Exists
-        
-        
-        
-        
-        
-        
-            
-        
-        
-        
-        
-        
-        
-        
-    
-</td>
-            <td class="text-center d-none d-sm-table-cell">
-                
-            </td>
-            
-                <td class="d-none d-sm-table-cell">
-                    
-                    <br>
-                    
-                </td>
-            
-            
-        </tr>
-        
-            
-
-
-
-
-
-
-
-<tr>
-    <td>
-        
-        
-        
-    </td>
-    <td class="doc">
         <small class="float-end text-muted d-none d-sm-block">15 pages</small>
         <div>
             <a href="/doc/draft-richardson-enrollment-roadmap/">
@@ -3193,5 +3102,5 @@
                 window.location.href = e.params.data.url;
             });
         </script>
-    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6ff48bfe7c976b7a',m:'05o6qce1RzeazMSAMnesB28SRX.IvAyln4Mj1S9yzXk-1650527617-0-Ab6t65cJBAFunmKpwDGFwX+VYZEwmnwa8LHzX1c9TCVLwA50y6uWGPIgoKI4MIzRA0voPcwLVRftlw53wMIRbOFfYaNTTpKXBI1x6c3Izp4cGEToi9gBn51oCrbyDIGOrihjJuA2JsamaXOY+lILSaM=',s:[0x202d1adcd7,0x247a102bf0],}})();</script></body>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'7007e11a5c776a92',m:'ro4OL3DFwD5TTgATcxzeWpomzDrvEcShpel4a_jKDEw-1650730333-0-AUjK4TU5ee2nhwKSBkhWFtd85nUpWhkl1XOVB2kyz1KGV+MYC6DhU1As5Fdae7fn8hnd0VPEfVtchOCj8BLrBpqAYPsq+UtheF1LZa1lUh70N1ZchctHNxiLbjg6+QU47y/Zp7LUj2Ny+Chk8gwYleo=',s:[0x42a1996ce1,0x870e7df343],}})();</script></body>
 </html>

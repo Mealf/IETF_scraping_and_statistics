@@ -1032,7 +1032,7 @@
         
         
         
-        <span class="badge bg-success">for 6 days</span>
+        <span class="badge bg-success">for 8 days</span>
         
         
             
@@ -1066,7 +1066,7 @@
                href="mailto:aretana.ietf%40gmail.com"
                aria-label="Compose email to aretana.ietf@gmail.com."
                title="Compose email to aretana.ietf@gmail.com.">
-                <i class="bi bi-envelope"></i></a></span>,
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 22 days</span>,
             
                 <span ><a 
            title="Author"
@@ -1263,7 +1263,7 @@
         
         
         
-        <span class="badge bg-danger" title="Goal is &lt;7 days">for 258 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;7 days">for 260 days</span>
         
         
             
@@ -1297,7 +1297,7 @@
                href="mailto:aretana.ietf%40gmail.com"
                aria-label="Compose email to aretana.ietf@gmail.com."
                title="Compose email to aretana.ietf@gmail.com.">
-                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 257 days</span>
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 260 days</span>
             
         
     
@@ -1477,7 +1477,7 @@
         
         
         
-        <span class="badge bg-success">for 9 days</span>
+        <span class="badge bg-success">for 11 days</span>
         
         
             
@@ -1964,8 +1964,10 @@
             RFC Ed Queue
         
         
+            : <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-idr-bgp-open-policy">AUTH48</a>
         
-        <span class="badge bg-success">for 42 days</span>
+        <span class="badge bg-info" title="AUTH48">AUTH48</span>
+        <span class="badge bg-success">for 44 days</span>
         
         
             
@@ -2160,7 +2162,7 @@
         
         
         
-        <span class="badge bg-success">for 14 days</span>
+        <span class="badge bg-warning" title="Goal is &lt;14 days">for 16 days</span>
         
         
             
@@ -2633,21 +2635,10 @@
     </td>
     <td>
             
-                
-                    <a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-idr-flowspec-srv6-01">
-                    
-                    
                     
                         2022-04-08
                     
                     
-                        </a>
-                    
-                
-                    <br>
-                    <div class="float-end">
-                        <span class="badge bg-success">New</span>
-                    </div>
                 
                 
             </td>
@@ -2923,7 +2914,7 @@
         
         
         
-        <span class="badge bg-danger" title="Goal is &lt;7 days">for 162 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;7 days">for 164 days</span>
         
         
             
@@ -3029,7 +3020,7 @@
         
         
         
-        <span class="badge bg-danger" title="Goal is &lt;7 days">for 69 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;7 days">for 71 days</span>
         
         
             
@@ -3399,7 +3390,7 @@
         <div>
             <a href="/doc/draft-ietf-idr-sr-policy-path-mtu/">
                 
-                    draft-ietf-idr-sr-policy-path-mtu-04
+                    draft-ietf-idr-sr-policy-path-mtu-05
                 
             </a>
             
@@ -3412,14 +3403,22 @@
     </td>
     <td>
             
-                    
-                        2021-10-20
-                    
-                    
                 
+                    <a href="https://www.ietf.org/rfcdiff?url2=draft-ietf-idr-sr-policy-path-mtu-05">
+                    
+                    
+                    
+                        2022-04-21
+                    
+                    
+                        </a>
+                    
                 
                     <br>
-                    <span class="badge bg-warning">Expires soon</span>
+                    <div class="float-end">
+                        <span class="badge bg-success">New</span>
+                    </div>
+                
                 
             </td>
             
@@ -11328,7 +11327,7 @@
             
                 <th scope="col" colspan="5">
             
-            Related Internet-Drafts (48 hits)
+            Related Internet-Drafts (49 hits)
             </th>
         </tr>
     </tbody>
@@ -11420,6 +11419,92 @@
                aria-label="Compose email to jie.dong@huawei.com."
                title="Compose email to jie.dong@huawei.com.">
                 <i class="bi bi-envelope"></i></a></span>
+                    
+                </td>
+            
+            
+        </tr>
+        
+            
+
+
+
+
+
+
+
+<tr>
+    <td>
+        
+        
+        
+    </td>
+    <td class="doc">
+        <small class="float-end text-muted d-none d-sm-block">5 pages</small>
+        <div>
+            <a href="/doc/draft-chen-idr-bgp-ls-sr-policy-nrp/">
+                
+                    draft-chen-idr-bgp-ls-sr-policy-nrp-00
+                
+            </a>
+            
+            <br>
+            
+            <b>SR Policies Extensions for NRP in BGP-LS</b>
+            
+        </div>
+        
+    </td>
+    <td>
+            
+                
+                    
+                    
+                        2022-04-22
+                    
+                    
+                        
+                    
+                
+                    <br>
+                    <div class="float-end">
+                        <span class="badge bg-success">New</span>
+                    </div>
+                
+                
+            </td>
+            
+
+
+
+<td class="status">
+    
+    
+        
+            I-D Exists
+        
+        
+        
+        
+        
+        
+            
+        
+        
+        
+        
+        
+        
+        
+    
+</td>
+            <td class="text-center d-none d-sm-table-cell">
+                
+            </td>
+            
+                <td class="d-none d-sm-table-cell">
+                    
+                    <br>
                     
                 </td>
             
@@ -15446,5 +15531,5 @@
                 window.location.href = e.params.data.url;
             });
         </script>
-    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6ff48e3e7b49a3a6',m:'g7Yd4bnMVswYnhKC1Q76QP4cMndQiCpynnd5U7.kd9U-1650527717-0-AeYXn99nGn+acbUGOSK62LFRyJmcHNxL1kL/5z8sEp7JApR/xQFYUW6NzswigMMJ/S7Z/FJ45/Ry9Zj/7Ec5U7zXeKdNvm6NTFi1GHJUx1G1NrH+dRBvuk7cYAKmqBWRr0hE878S9h1y92VlbpGo+OE=',s:[0x0684a05fb2,0xcecd358df6],}})();</script></body>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'7007e3d768a85706',m:'GHtHh1msV2TBa4UzkAg5TwS2mU8LIMgBMDEOw8veppY-1650730452-0-ASM5nJ0yK8Lv0hZCkh3d1jIkvU6lpMVcRBAVXutkGTgtx+kHVXVmt1i334sUwb+TMzmjTXfzcy4mkCovWEUndVeitmKy3tdXqXDDU0yiRFBoMh/bXbq6uhDKcnUzO6/lKGBbyOa8Rm87XzObSupP5gc=',s:[0x9164cb2e3b,0x332ecf2a75],}})();</script></body>
 </html>

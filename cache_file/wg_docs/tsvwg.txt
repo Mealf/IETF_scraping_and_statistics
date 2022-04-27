@@ -1264,6 +1264,15 @@
                     
                     <br>
                     
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/wesley.m.eddy@gmail.com" >Wesley Eddy</a> <a class="text-reset"
+               href="mailto:wesley.m.eddy%40gmail.com"
+               aria-label="Compose email to wesley.m.eddy@gmail.com."
+               title="Compose email to wesley.m.eddy@gmail.com.">
+                <i class="bi bi-envelope"></i></a></span>
+                    
                 </td>
             
             
@@ -1350,6 +1359,15 @@
                 <td class="d-none d-sm-table-cell">
                     
                     <br>
+                    
+                        <span class="small text-muted"
+      ><a class="text-reset"
+           title="Shepherd"
+            href="/person/gorry@erg.abdn.ac.uk" >Gorry Fairhurst</a> <a class="text-reset"
+               href="mailto:gorry%40erg.abdn.ac.uk"
+               aria-label="Compose email to gorry@erg.abdn.ac.uk."
+               title="Compose email to gorry@erg.abdn.ac.uk.">
+                <i class="bi bi-envelope"></i></a></span>
                     
                 </td>
             
@@ -1618,7 +1636,7 @@
             : <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-tsvwg-rfc4960-bis">AUTH48</a>
         
         <span class="badge bg-info" title="AUTH48">AUTH48</span>
-        <span class="badge bg-warning" title="Goal is &lt;60 days">for 73 days</span>
+        <span class="badge bg-warning" title="Goal is &lt;60 days">for 75 days</span>
         
         
             
@@ -9136,5 +9154,5 @@
                 window.location.href = e.params.data.url;
             });
         </script>
-    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6ff49360aad2a3a5',m:'DvGQgENvpNrqA_zSdnIY1G_OQCx3hd98QRY18xTECbE-1650527924-0-Ab2QdApLAc93xMvQu/o2Tc+h9/oGkSudOGKu4WPDKcXzwdBCziqZiNvC9rGopx8kNoreC+QaY0zCeAL5FlT+GJdN/K1599aLrhIVdlwvIIrsOYSGOuEoXa6ZmilAeyVdQ3WYQeow8WSQz9KkFn/vVu4=',s:[0xd2b505e66a,0x6ed2c5b0a6],}})();</script></body>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'7007e9bb8fc6a378',m:'ouy4eIO5SCkN8ndklH49K3QaPP6qtPtE84Uyc3BFyaM-1650730691-0-AdV+baUm58dQv/igYzfzsc15rpaYj5z8KSg/uVsJmEMwRq93P8D+jOTtEm35j1CuNuPFPOD2kIALcySCROvUDhJamtZNH2lWivGqGJBci/SVbghDzGKV393ErX9H/tBF4wcYJGYj+y/DMnp7xBA2c9I=',s:[0xe22cdc458b,0xedb3b3d5ca],}})();</script></body>
 </html>

@@ -762,10 +762,8 @@
             RFC Ed Queue
         
         
-            : <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-ace-aif">RFC-EDITOR</a>
         
-        
-        <span class="badge bg-success">for 36 days</span>
+        <span class="badge bg-success">for 38 days</span>
         
         
             
@@ -881,7 +879,7 @@
         
         
         
-        <span class="badge bg-danger" title="Goal is &lt;14 days">for 66 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;14 days">for 68 days</span>
         
         
             
@@ -909,7 +907,7 @@
                href="mailto:paul.wouters%40aiven.io"
                aria-label="Compose email to paul.wouters@aiven.io."
                title="Compose email to paul.wouters@aiven.io.">
-                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 28 days</span>,
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 30 days</span>,
             
                 <span ><a 
            title="Author"
@@ -917,7 +915,7 @@
                href="mailto:msahni%40paloaltonetworks.com"
                aria-label="Compose email to msahni@paloaltonetworks.com."
                title="Compose email to msahni@paloaltonetworks.com.">
-                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 65 days</span>,
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 67 days</span>,
             
                 <span ><a 
            title="Author"
@@ -925,7 +923,7 @@
                href="mailto:stripathi%40paloaltonetworks.com"
                aria-label="Compose email to stripathi@paloaltonetworks.com."
                title="Compose email to stripathi@paloaltonetworks.com.">
-                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 65 days</span>
+                <i class="bi bi-envelope"></i></a></span> <span class="badge bg-danger" title="Goal is &lt;20 days">for 67 days</span>
             
         
     
@@ -1013,7 +1011,7 @@
             : <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-ace-coap-est">AUTH48-DONE</a>
         
         
-        <span class="badge bg-danger" title="Goal is &lt;60 days">for 826 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;60 days">for 828 days</span>
         
         
             
@@ -1125,7 +1123,7 @@
             : <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-ace-dtls-authorize">AUTH48-DONE</a>
         
         
-        <span class="badge bg-danger" title="Goal is &lt;60 days">for 272 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;60 days">for 274 days</span>
         
         
             
@@ -1330,7 +1328,7 @@
         
         
         
-        <span class="badge bg-danger" title="Goal is &lt;7 days">for 78 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;7 days">for 80 days</span>
         
         
             
@@ -1525,7 +1523,7 @@
             : <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-ace-mqtt-tls-profile">MISSREF</a>
         
         
-        <span class="badge bg-success">for 28 days</span>
+        <span class="badge bg-success">for 30 days</span>
         
         
             
@@ -1639,7 +1637,7 @@
             : <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-ace-oauth-authz">AUTH48-DONE</a>
         
         
-        <span class="badge bg-danger" title="Goal is &lt;60 days">for 273 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;60 days">for 275 days</span>
         
         
             
@@ -1744,7 +1742,7 @@
             : <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-ace-oauth-params">AUTH48</a>
         
         <span class="badge bg-info" title="AUTH48">AUTH48</span>
-        <span class="badge bg-danger" title="Goal is &lt;60 days">for 273 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;60 days">for 275 days</span>
         
         
             
@@ -1932,7 +1930,7 @@
             : <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-ace-oscore-profile">AUTH48</a>
         
         <span class="badge bg-info" title="AUTH48">AUTH48</span>
-        <span class="badge bg-danger" title="Goal is &lt;60 days">for 269 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;60 days">for 271 days</span>
         
         
             
@@ -2798,5 +2796,5 @@
                 window.location.href = e.params.data.url;
             });
         </script>
-    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6ff490e53b6ea367',m:'oq84Q2udS9E2D2Itu9XZ2KBPCL5vBK2lsLr14SknIvQ-1650527818-0-AatlYnpFsNQvzRCmsMFCXfGCnw04RHl7pdPSGVyZh7JkD8fRCt9zpD0u8dhLEJtOVpP4Lk9zNgcB8zL+6a2xSEwiWzvggfdGCjnroUzw6EaQQ7eogoNZs4yWwCGaXxudbERY96TQcpHv8N6Nlkr09Zg=',s:[0xcba9a5db53,0x484cd72a86],}})();</script></body>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'7007e6dc4d8a56fb',m:'itbigG7jKW1j93wIqboQHuLwo6rqx5nRgOyB00d85DQ-1650730569-0-AcYwUl1HoZjUES47Lu9+IAOU/UuZLiYQaDeNNXe7xqZ+i7BuAo/S6a4CzoSKlM0w2hinFY96RfghGCQykk5LBzNoKJyzrakO7bD9c7n547pME6XnKoLgXjCwzUqin4qjnqSEYntfQm6k5YEXhr0C5go=',s:[0x8256e3c8b7,0x0bdcded2d3],}})();</script></body>
 </html>

@@ -1852,6 +1852,12 @@
             
         
         
+            <br>
+            
+                Call For Adoption By WG Issued
+                
+            
+        
         
         
         
@@ -1964,5 +1970,5 @@
                 window.location.href = e.params.data.url;
             });
         </script>
-    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6ff48a73cf000750',m:'3eBDhgjba.IUKwzBPu89.GSqGwWFlVaIpIN1iQPs1W0-1650527554-0-ARbtPIe9uXq9yjE2CLd3Ymo+X3RT8wSqCNAtXVvkEnQoRQi9YRZzByQvTJddc0HEIkK+6pET7x+xh44jcF4kOug9mTMLH+7BykvMk9Z6JrnRsCVKQKP3yQhXgPNh4+IEW59FRf2ZBo7QGicaxx128hg=',s:[0x76dbfe4827,0xf554a94e7e],}})();</script></body>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'7007df5c0adea3ac',m:'0YFSRuUT0C2OKzN2peqRJIMP.3gs_UZVa9TplN.eVEc-1650730261-0-ARK3gQL2WgU2UtG8qbB7NyfcNLG1Sr7UU+Fl3CE3yo/0J0MMS/pBlij6LsNnnBSq8rBXBdSic6fA34yoHNg1YrVbDXT0hy65hKYQUSfs27yKYPAuXyKJ2zAUyG2/5sdMB6WVbAwqjmTyLtk/dRWCenA=',s:[0x76b942ff29,0xf554a94e7e],}})();</script></body>
 </html>

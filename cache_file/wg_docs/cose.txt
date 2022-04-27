@@ -846,7 +846,7 @@
         
         
         
-        <span class="badge bg-danger" title="Goal is &lt;7 days">for 149 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;7 days">for 151 days</span>
         
         
             
@@ -950,7 +950,7 @@
             : <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-cose-hash-algs">AUTH48-DONE</a>
         
         
-        <span class="badge bg-danger" title="Goal is &lt;60 days">for 584 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;60 days">for 586 days</span>
         
         
             
@@ -1145,7 +1145,7 @@
             : <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-cose-rfc8152bis-algs">AUTH48</a>
         
         <span class="badge bg-info" title="AUTH48">AUTH48</span>
-        <span class="badge bg-danger" title="Goal is &lt;60 days">for 630 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;60 days">for 632 days</span>
         
         
             
@@ -1255,7 +1255,7 @@
             : <a href="https://www.rfc-editor.org/queue2.html#draft-ietf-cose-rfc8152bis-struct">AUTH48</a>
         
         <span class="badge bg-info" title="AUTH48">AUTH48</span>
-        <span class="badge bg-danger" title="Goal is &lt;60 days">for 444 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;60 days">for 446 days</span>
         
         
             
@@ -1367,7 +1367,7 @@
         
         
         
-        <span class="badge bg-danger" title="Goal is &lt;14 days">for 455 days</span>
+        <span class="badge bg-danger" title="Goal is &lt;14 days">for 457 days</span>
         
         
             
@@ -2119,5 +2119,5 @@
                 window.location.href = e.params.data.url;
             });
         </script>
-    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6ff4910c29ba56f5',m:'McmV2ime5ECe3ibK0DPWK6bqoMvEfDjdhDaWKVi0Cwg-1650527824-0-Ab3/djFpLQk3dZO97nFIMiyTE/fuJ0WVbCamA80/kTZRl+OmwibV0iP2DNv6dctYXqoreM+gAk7GozDMnawdo81E0RGvkuYf7x8opEUG/mIpxLMO/hQ2FTRnXfFIZmo3tbEl7+8xZRkvGuzMhYHmypg=',s:[0xef81550008,0x26d3458899],}})();</script></body>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'7007e70f3b5aa33d',m:'yC7I_joerfB4ussY.t9_.2I9JjmhSnMVgwJVp0YqgJA-1650730577-0-AUyn75WAqfcYcPUQ640hdmFFvis4+RXHD2Q7rPWMoYhBDnG9QghrECKms98ZaHdovJ4ut37dLMJ0ARe4sRuq4rc09/fvCfhgXiRzgMzit6u6C5SpY8edKrgKXLBzDOHgweJLBhAK8w96f0O8N8200Ac=',s:[0x69f6ad7c6c,0xf554a94e7e],}})();</script></body>
 </html>
