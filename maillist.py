@@ -5,6 +5,8 @@ import re
 from bs4 import BeautifulSoup
 from dateutil.relativedelta import relativedelta
 from ietf_info import get_working_groups_list
+from concurrent.futures import ThreadPoolExecutor, as_completed
+from threading import Thread,local
 
 
 def get_maillist_url(wg_name:str):
@@ -23,9 +25,9 @@ def get_maillist_url(wg_name:str):
     return maillist_url
 
 
-def count_maillist(wg_name:str, start_year:int, start_month:int):
+def count_maillist(wg_name:str, start_year:int, start_month:int, session):
     if wg_name == 'httpbis':
-        return count_maillist_httpbis(start_year, start_month)
+        return count_maillist_httpbis(start_year, start_month, session)
 
     start_date = datetime.date(start_year, start_month, 1)
     now_date = datetime.date.today()
@@ -35,7 +37,7 @@ def count_maillist(wg_name:str, start_year:int, start_month:int):
 
     url = get_maillist_url(wg_name)
 
-    r = requests.get(url)
+    r = session.get(url)
     if not r.url.startswith("https://mailarchive.ietf.org/arch/browse/"):
         result['error'] = 'other website'
         result['url'] = url
@@ -88,7 +90,7 @@ def count_maillist(wg_name:str, start_year:int, start_month:int):
         }
 
         # get next mail list
-        r = requests.get('https://mailarchive.ietf.org/arch/ajax/messages/', params=data)
+        r = session.get('https://mailarchive.ietf.org/arch/ajax/messages/', params=data)
         if r.status_code != 200:
             break
         
@@ -101,12 +103,12 @@ def count_maillist(wg_name:str, start_year:int, start_month:int):
     return result
 
 
-def count_maillist_httpbis(start_year:int, start_month:int):
+def count_maillist_httpbis(start_year:int, start_month:int, session):
     start_date = datetime.date(start_year, start_month, 1)
 
     result = {'wg_name': 'httpbis', 'sum': 0}
     url = 'https://lists.w3.org/Archives/Public/ietf-http-wg/'
-    r = requests.get(url)
+    r = session.get(url)
 
     soup = BeautifulSoup(r.text, 'html.parser')
     table = soup.find('table')
@@ -116,7 +118,7 @@ def count_maillist_httpbis(start_year:int, start_month:int):
         # 每三個月的紀錄
         href = a_tag['href']
         href = url + href
-        r = requests.get(href)
+        r = session.get(href)
         soup = BeautifulSoup(r.text, 'html.parser')
 
         dates_msg = soup.find_all('dfn', text=re.compile('.*, +\d+ [a-zA-Z]+ \d{4}'))
@@ -144,16 +146,18 @@ def count_maillist_httpbis(start_year:int, start_month:int):
 
 
 def rank_wg_by_maillist(start_year=2020, start_month=1):
-    '''
-    610 sec 
-    '''
     wgs = get_working_groups_list()
 
     maillists = []
     
-    for i, wg in enumerate(wgs, start=1):
-        print(i, wg)
-        maillists.append(count_maillist(wg, start_year, start_month))
+    processes = []
+    session = requests.Session()
+    with ThreadPoolExecutor(max_workers=10) as executor:
+        for wg in wgs:
+            processes.append(executor.submit(count_maillist, wg, start_year, start_month, session))
+        
+        for _ in as_completed(processes):
+            maillists.append(_.result())
     
     keylist = []
     start_date = datetime.date(start_year, start_month, 1)
